@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/design_handoff_hai_dau_tu/Hai Dau Tu.dc.html" }
+  ]
+}

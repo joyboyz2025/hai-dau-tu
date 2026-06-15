@@ -1,5 +1,6 @@
 {
   "rewrites": [
+    { "source": "/support.js", "destination": "/design_handoff_hai_dau_tu/support.js" },
     { "source": "/", "destination": "/design_handoff_hai_dau_tu/Hai Dau Tu.dc.html" }
   ]
 }

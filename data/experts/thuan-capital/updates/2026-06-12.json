@@ -1,0 +1,45 @@
+{
+  "date": "2026-06-12",
+  "sourceType": "video",
+  "sourceLabel": "Video công khai · Shorts",
+  "tabLabel": "Shorts · 12/06",
+  "title": "FOMO Không Chỉ Xuất Hiện Trong Bull Market",
+  "summary": "Thuận mua thêm BTC khi giá test dưới 60.000 đô; tiếp tục chiến lược DCA — không cố xác định đáy, chỉ mua gần đáy. FOMO cũng xuất hiện khi thị trường giảm (sợ bỏ lỡ đáy).",
+  "stance": { "cashPercent": null, "label": "Tích lũy" },
+  "keyCalls": [
+    {
+      "tag": "Bitcoin",
+      "value": "Mua dưới $60k",
+      "note": "Thuận mua thêm số lượng lớn hơn bình thường khi BTC test xuống dưới 60.000 đô; DCA tiếp tục.",
+      "signal": "wait"
+    },
+    {
+      "tag": "Tâm lý",
+      "value": "FOMO ≠ bull",
+      "note": "FOMO xuất hiện cả khi thị trường giảm — sợ bỏ lỡ đáy. Phân biệt cảm xúc và kỷ luật DCA.",
+      "signal": "warn"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Bitcoin & Crypto",
+      "signal": "wait",
+      "signalLabel": "Tích lũy — DCA tiếp tục",
+      "para": "Thuận đã chốt lời năm ngoái (khi BTC quanh 99.000–100.000 đô), rồi bắt đầu trung bình giá trở lại từ tháng 2. Khi giá test dưới 60.000 đô cuối tuần qua, Thuận mua thêm với số lượng lớn hơn bình thường, sử dụng tiền mặt dự trữ. Quan điểm: không thể biết chắc đỉnh hay đáy — chỉ có thể bán gần đỉnh và mua gần đáy bằng chiến lược trung bình giá.",
+      "bullets": [
+        "Không cố bắt đáy chính xác — phân bổ mua tại nhiều mức giá khác nhau để hạ dần giá trung bình.",
+        "Nếu giá tiếp tục giảm, tiếp tục DCA ở mức thấp hơn.",
+        "Đầu tư dài hạn: lòng tin vào đỉnh mới trong tương lai vẫn không thay đổi, dù tâm lý thị trường hiện rất bi quan.",
+        "FOMO trong bear market: cẩn thận tâm lý mua vì sợ bỏ lỡ đáy, đối lập với FOMO trong bull market."
+      ],
+      "tickers": [
+        {
+          "ticker": "BTC",
+          "action": "Chờ mua",
+          "zone": "Dưới 60.000",
+          "note": "Vùng hấp dẫn để tích lũy; mua thêm nhiều hơn bình thường khi giá test vùng này."
+        }
+      ]
+    }
+  ]
+}

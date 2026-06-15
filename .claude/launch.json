@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "hai-dau-tu",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "5500", "--directory", "design_handoff_hai_dau_tu"],
+      "port": 5500
+    }
+  ]
+}

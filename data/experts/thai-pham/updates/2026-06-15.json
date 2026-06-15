@@ -1,0 +1,61 @@
+{
+  "date": "2026-06-15",
+  "sourceType": "member-post",
+  "sourceLabel": "Post hội viên · 5:15 sáng",
+  "tabLabel": "Post · 15/06",
+  "title": "Iran–Mỹ Thỏa Thuận Hòa Bình 19/6 — Thị Trường Phản Ứng",
+  "summary": "Sau 7.749 ngày, Iran–Mỹ chính thức xác nhận ký kết hòa bình ngày 19/6 tại Thụy Sĩ. Vàng tăng, dầu giảm đúng kỳ vọng. Futures Mỹ xanh nhưng tin có thể đã phản ánh vào giá. BTC vẫn downtrend — chờ 68–70k để short lại. VN: giữ bank chiến lược, chờ tín hiệu tỷ giá/lãi suất tốt hơn.",
+  "stance": { "cashPercent": 50, "label": "Thận trọng" },
+  "keyCalls": [
+    {
+      "tag": "Iran–Mỹ",
+      "value": "Ký 19/6 tại Thụy Sĩ",
+      "note": "Trump + Thủ tướng Pakistan xác nhận. Đã 7.749 ngày 'sắp có thỏa thuận' — lần này có vẻ thật. Nhưng thị trường đã phản ánh vào giá từ lâu.",
+      "signal": "wait"
+    },
+    {
+      "tag": "Vàng / Dầu",
+      "value": "Vàng ↑ · Dầu ↓",
+      "note": "Đúng kỳ vọng: hòa bình → dầu giảm áp lực; vàng tăng do USD yếu đi. Không thay đổi quan điểm dài hạn.",
+      "signal": "wait"
+    },
+    {
+      "tag": "Bitcoin",
+      "value": "Vẫn downtrend",
+      "note": "Không thay đổi. Chờ hồi lên vùng 68–70k để short lại. Hòa bình Iran không cứu được BTC.",
+      "signal": "down"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Địa chính trị — Iran–Mỹ ký kết 19/6",
+      "signal": "wait",
+      "signalLabel": "Sự kiện lớn — đã phản ánh vào giá",
+      "para": "Sau 7.749 ngày liên tục 'sắp có thỏa thuận', Trump và Thủ tướng Pakistan xác nhận Iran–Mỹ sẽ ký kết hòa bình ngày 19/6 tại Thụy Sĩ. Tuy nhiên từ tháng 4 đến nay, mỗi khi CK đỏ ông Trump đều tung tin 'sắp ký' — thị trường đã hấp thụ tin này rất nhiều lần. Kỳ vọng đã ăn vào giá phần lớn rồi.",
+      "bullets": [
+        "Vàng tăng sau tin — phản ứng USD yếu, không phải tín hiệu mới về cung cầu.",
+        "Dầu giảm đúng kỳ vọng — hòa bình → nới lỏng nguồn cung, xác nhận thesis dầu về 77–80.",
+        "Futures CK Mỹ xanh điểm — khả năng cao đã phản ánh vào giá; không chase lên.",
+        "Theo dõi sự kiện 19/6: nếu ký thật, dầu tiếp tục giảm; nếu đổ vỡ, dầu bật lại."
+      ]
+    },
+    {
+      "title": "Bitcoin & Crypto",
+      "signal": "down",
+      "signalLabel": "Downtrend — chờ 68–70k short lại",
+      "para": "Hòa bình Iran không thay đổi cấu trúc kỹ thuật của BTC. Vẫn là downtrend từ đỉnh 125k. Kịch bản không đổi: chờ hồi kỹ thuật lên 68.000–70.000 rồi short lại, mục tiêu về ~42k."
+    },
+    {
+      "title": "Chứng khoán Việt Nam",
+      "signal": "wait",
+      "signalLabel": "Áp lực dễ thở hơn — giữ nguyên chiến lược",
+      "para": "Không thay đổi chiến lược. Hòa bình Iran + dầu giảm + kỳ vọng lãi suất sẽ làm áp lực vĩ mô VN dễ thở hơn trong thời gian tới. Tiếp tục nắm chặt bank chiến lược và các cổ phiếu đã review. Chờ tín hiệu tỷ giá và lãi suất khả quan hơn mới mua thêm.",
+      "bullets": [
+        "Giữ nguyên 50/50 — không action vội.",
+        "Nắm chặt bank chiến lược (VCB, BID, TCB, HDB, EB, BVB).",
+        "Tín hiệu chờ để mua thêm: tỷ giá ổn định, lãi suất có dấu hiệu giảm.",
+        "Dầu giảm → lạm phát nhập khẩu giảm → áp lực tỷ giá VND giảm → tích cực cho CK VN dài hạn."
+      ]
+    }
+  ]
+}

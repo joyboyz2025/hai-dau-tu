@@ -1,0 +1,121 @@
+{
+  "$comment": "Schema dữ liệu cho Hải Đầu Tư. Phần 'schema' mô tả kiểu; phần 'example' là 1 bản cập nhật thật (08/06/2026 của Thái Phạm) đã được render trong thiết kế tham chiếu.",
+
+  "schema": {
+    "experts.json": {
+      "experts": [
+        {
+          "id": "slug, vd 'thai-pham'",
+          "name": "string",
+          "initials": "1-2 chữ cái cho avatar, vd 'TP'",
+          "channel": "url kênh, vd 'youtube.com/@ThaiPham'",
+          "sources": "mảng: 'video' | 'member-transcript' | 'community-post'",
+          "bio": "1 câu mô tả phạm vi nhận định",
+          "cadence": "vd 'hàng tuần'",
+          "active": "boolean",
+          "updatedAt": "YYYY-MM-DD của bản update mới nhất"
+        }
+      ],
+      "assetCards": [
+        {
+          "name": "vd 'Chứng khoán Mỹ'",
+          "signal": "'down' | 'warn' | 'wait' | 'up'",
+          "signalLabel": "nhãn hiển thị, vd 'Giảm'",
+          "summary": "1-2 câu tổng hợp",
+          "levels": "dòng vùng giá hiển thị font mono",
+          "expertId": "nguồn nhận định",
+          "date": "DD/MM"
+        }
+      ]
+    },
+    "experts/<id>/updates/<YYYY-MM-DD>.json": {
+      "date": "YYYY-MM-DD",
+      "sourceType": "'video' | 'post'",
+      "sourceLabel": "vd 'Video hội viên · Tập 31' hoặc 'Post hội viên'",
+      "tabLabel": "nhãn ngắn trên tab, vd 'Tập 31 · Tuần 23'",
+      "title": "tiêu đề gốc đã lược sạch",
+      "summary": "1-2 câu cho thẻ lịch sử / dashboard",
+      "stance": { "cashPercent": "0-100, tỷ lệ tiền mặt khuyến nghị (null nếu không nêu)", "label": "vd 'Thận trọng'" },
+      "keyCalls": [
+        { "tag": "vd 'CK Mỹ'", "value": "NGẮN, vd 'Black Monday?'", "note": "1 câu", "signal": "'down'|'warn'|'wait'|'up'" }
+      ],
+      "sections": [
+        {
+          "title": "tiêu đề chuẩn (xem CLAUDE.md)",
+          "signal": "'down'|'warn'|'wait'|'up'",
+          "signalLabel": "vd 'Giảm — chu kỳ chỉnh mới bắt đầu'",
+          "para": "đoạn tóm tắt, optional",
+          "bullets": ["mảng string, optional"],
+          "tickers": [
+            {
+              "ticker": "vd 'NVDA' hoặc 'DPM · DCM'",
+              "action": "'Mua'|'Bán'|'Giữ'|'Giữ ½'|'Theo dõi'|'Tránh'|'Trung lập'|'Chờ mua'",
+              "zone": "vùng giá hoặc '—'",
+              "note": "≤ 1 câu"
+            }
+          ],
+          "levels": "dòng vùng giá mono, optional"
+        }
+      ]
+    }
+  },
+
+  "example": {
+    "date": "2026-06-08",
+    "sourceType": "video",
+    "sourceLabel": "Video hội viên · Tập 31",
+    "tabLabel": "Tập 31 · Tuần 23",
+    "title": "Chứng khoán, Dầu, Vàng, Bitcoin — Tuần 23 — QUAN TRỌNG!",
+    "summary": "Kịch bản Black Monday từ Hàn–Nhật; Nasdaq chân 1 ~27.000; danh sách hành động cổ phiếu Mỹ; vàng đợi 3.900–4.000; ai cầm hàng nên chốt.",
+    "stance": { "cashPercent": 50, "label": "Thận trọng" },
+    "keyCalls": [
+      { "tag": "CK Mỹ", "value": "Black Monday?", "note": "Rủi ro phiên đầu tuần lan từ Hàn – Nhật; ai cầm hàng nên chốt.", "signal": "down" },
+      { "tag": "Hàn / Nhật", "value": "−30% / −17%", "note": "Chính phủ Hàn sẵn sàng đánh sập TTCK để bảo vệ đồng won.", "signal": "down" },
+      { "tag": "Vàng", "value": "3.900–4.000", "note": "Vùng mua tích lũy; trong nước đợi chênh về ~7 triệu.", "signal": "wait" },
+      { "tag": "Bitcoin", "value": "test ~50k", "note": "Nếu Black Monday sẽ rút chân nhanh; short 1/3, cắt lỗ 69k.", "signal": "down" }
+    ],
+    "sections": [
+      {
+        "title": "Bối cảnh vĩ mô & địa chính trị",
+        "signal": "down",
+        "signalLabel": "Rủi ro cao",
+        "bullets": [
+          "Margin nhà đầu tư cá nhân tại Mỹ cao kỷ lục; dòng tiền đòn bẩy Hàn Quốc – Nhật Bản đổ vào cổ phiếu công nghệ Mỹ (hiệu ứng \"bà ngoại Hàn Quốc\" — rút tiết kiệm, đổi won sang USD mua TQQQ).",
+          "IPO SpaceX ngày 12/06 (135 USD/cp, định giá ~1.800 tỷ USD) cần hút ~100 tỷ USD thanh khoản — động lực để \"đánh xuống rồi kéo lên\" toàn thị trường.",
+          "Hàn – Nhật rủi ro điều chỉnh mạnh: chính phủ Hàn sẵn sàng can thiệp bảo vệ đồng won (nhóm đầu cơ có thể chỉnh 30–40%); Nhật dự kiến chỉnh 15–17%.",
+          "Việt Nam: thặng dư 178 tỷ USD với Mỹ → bị ép minh bạch tỷ giá, điều tra Section 301; khả năng phá giá VND 4–5%, lãi suất cao kéo dài."
+        ]
+      },
+      {
+        "title": "Chứng khoán Mỹ",
+        "signal": "down",
+        "signalLabel": "Giảm — chu kỳ chỉnh mới bắt đầu",
+        "para": "Kịch bản \"Black Monday\" nếu Hàn Quốc hoảng loạn phiên đầu tuần. Nasdaq dự kiến tạo chân đầu tiên quanh 27.000, hồi về 28.600 rồi có chân sâu hơn test 25.000; S&P 500 trường hợp xấu test 7.000. VIX tạo đáy — dễ bật mạnh. Ai đang cầm hàng nên chốt, chưa vội bắt đáy.",
+        "tickers": [
+          { "ticker": "NVDA", "action": "Theo dõi", "zone": "Hỗ trợ ~189", "note": "Hoảng loạn về 189 sẽ có lực bắt đáy, hồi kỹ thuật rồi mới tính tiếp." },
+          { "ticker": "INTC", "action": "Bán", "zone": "Hồi → về ~50", "note": "Black Monday về vùng 81 sẽ hồi, nhưng đích quay về vùng 50." },
+          { "ticker": "AMD", "action": "Bán", "zone": "Hồi 330 → 240", "note": "FA yếu, tính chất meme stock, không hưởng lợi chu kỳ này." },
+          { "ticker": "AAPL", "action": "Theo dõi", "zone": "Sau WWDC", "note": "Nếu mở gap tăng sau công bố Siri + Gemini → điểm short đẹp." },
+          { "ticker": "GOOG", "action": "Trung lập", "zone": "240 → 307", "note": "Tin Gemini đã phản ánh hết vào giá, không mua đuổi." },
+          { "ticker": "ADS", "action": "Mua", "zone": "Mua ~155", "note": "Cổ phiếu World Cup — đang giữ; chỉnh về 155 là điểm mua tốt." },
+          { "ticker": "MU · SNDK", "action": "Tránh", "zone": "—", "note": "Kéo rướn quá đà, sớm chỉnh mạnh theo nhóm semiconductor." },
+          { "ticker": "AVGO", "action": "Tránh", "zone": "Có thể test 75", "note": "Ngòi nổ của chuỗi bong bóng AI — đứng ngoài hoàn toàn." }
+        ]
+      },
+      {
+        "title": "Vàng & Bạc",
+        "signal": "wait",
+        "signalLabel": "Chờ mua",
+        "para": "Vàng sớm muộn quay về vùng 3.900–4.000 — mức tích lũy hợp lý sau đà tăng từ 2023. Trong nước chênh ~20 triệu/lượng: chưa mua; đợi chênh về ~7 triệu. Nếu Black Monday, vàng và mọi tài sản đều bị bán để gom thanh khoản cho IPO SpaceX. Bạc về vùng 55 thì tính.",
+        "levels": "Vàng: mua 3.900–4.000 · Bạc: ~55 · chênh mục tiêu ≤ 7tr"
+      },
+      {
+        "title": "Tỷ giá & Vĩ mô Việt Nam",
+        "signal": "warn",
+        "signalLabel": "Áp lực",
+        "para": "Mỹ ép cam kết minh bạch tỷ giá, điều tra Section 301 (thuế ~12%, hiệu lực tháng 7). Muốn hỗ trợ xuất khẩu phải phá giá VND ~4–5% — kéo theo lạm phát hàng nhập khẩu; lãi suất buộc duy trì cao. Fed ~67% khả năng tăng lãi tháng 7/9.",
+        "levels": "USD/VND 26.100–26.400 · phá giá dự kiến 4–5% · Fed: 67% tăng lãi"
+      }
+    ]
+  }
+}

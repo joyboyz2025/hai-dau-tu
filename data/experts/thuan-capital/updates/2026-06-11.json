@@ -1,0 +1,51 @@
+{
+  "date": "2026-06-11",
+  "sourceType": "video",
+  "sourceLabel": "Video công khai · Shorts",
+  "tabLabel": "Shorts · 11/06",
+  "title": "15 Năm Bitcoin Và Chu Kỳ Chưa Từng Biến Mất",
+  "summary": "BTC giảm ~50% từ đỉnh 126.000 đô — nguyên nhân vĩ mô, không phải chuỗi phá sản như 2022. Chu kỳ 4 năm vẫn còn khả năng; nhiều người bắt đầu nghiêm túc hơn với kịch bản phục hồi T11/2026.",
+  "stance": { "cashPercent": null, "label": "Chờ đợi" },
+  "keyCalls": [
+    {
+      "tag": "Bitcoin",
+      "value": "−50% từ $126k",
+      "note": "Giảm từ đỉnh 126.000 về ~63.000; không có chuỗi phá sản — khác hoàn toàn 2022.",
+      "signal": "warn"
+    },
+    {
+      "tag": "Chu kỳ 4 năm",
+      "value": "Chờ T11/2026",
+      "note": "Khả năng chu kỳ 4 năm lặp lại — phục hồi có thể bắt đầu từ tháng 11/2026.",
+      "signal": "wait"
+    },
+    {
+      "tag": "CK Mỹ",
+      "value": "Lập đỉnh mới",
+      "note": "Chứng khoán Mỹ tiếp tục lập đỉnh mới trong tuần — divergence với crypto.",
+      "signal": "up"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Bitcoin & Crypto",
+      "signal": "warn",
+      "signalLabel": "Thận trọng — chờ chu kỳ",
+      "para": "Đợt giảm lần này khác 2018/2022: không có chuỗi phá sản sàn (FTX, Luna…), thợ đào chuyển sang AI thay vì phá sản, không có công ty lớn nào sụp đổ. Nguyên nhân xuất phát từ vĩ mô và địa chính trị — ảnh hưởng cả thị trường tài chính, không riêng crypto. Tuy nhiên crypto bị điều chỉnh mạnh hơn nhiều so với chứng khoán.",
+      "bullets": [
+        "BTC đã giảm ~50% từ đỉnh 126.000 đô — tương đương các đợt điều chỉnh lớn trước (2018: −84%, 2022: −77%).",
+        "Chu kỳ 4 năm: đây là lần thứ ba Thuận Capital nói về chu kỳ này (2018, 2022, và nay). Lần nào nghe cũng \"ảo\" nhưng đã lặp lại.",
+        "Kịch bản chu kỳ 4 năm: kết thúc đáy quanh T11/2026, rồi bắt đầu chu kỳ tăng mới.",
+        "Những người trước đây phủ nhận chu kỳ 4 năm nay đã bắt đầu nghiêm túc xem xét lại.",
+        "Thợ đào chuyển sang hỗ trợ AI — thu nhập thêm, không phá sản như 2022."
+      ],
+      "levels": "BTC: đỉnh 126.000 · hiện tại ~63.000 (−50%) · phục hồi dự kiến: T11/2026"
+    },
+    {
+      "title": "Chứng khoán Mỹ",
+      "signal": "up",
+      "signalLabel": "Tăng — divergence với crypto",
+      "para": "Chứng khoán Mỹ tiếp tục lập đỉnh mới trong tuần vừa rồi, dù có điều chỉnh nhẹ — divergence rõ rệt so với crypto. Đây là một trong các yếu tố khiến tâm lý nhà đầu tư crypto tệ hơn bình thường."
+    }
+  ]
+}

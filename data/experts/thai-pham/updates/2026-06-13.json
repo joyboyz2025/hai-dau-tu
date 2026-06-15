@@ -1,0 +1,100 @@
+{
+  "date": "2026-06-13",
+  "sourceType": "member-video",
+  "sourceLabel": "Post hội viên · Video",
+  "tabLabel": "Hội viên · 13/06",
+  "title": "Tuần Giao Dịch #32 — Mua Vàng Được Chưa? CK Mỹ/Hàn/Nhật/Việt Tuần 24",
+  "summary": "Vàng vùng hiện tại mua được (nếu đã bán cao trước). Bitcoin chờ hồi 68,5–70k rồi short, kịch bản về 42k. CK Mỹ tiếp tục chỉnh đến giữa tháng 7; SpaceX IPO ảo diệu (P/S 96x). VN vẫn 50/50 — cầm nguyên, chờ mùa xuân 2027.",
+  "stance": { "cashPercent": 50, "label": "Thận trọng" },
+  "keyCalls": [
+    {
+      "tag": "Vàng",
+      "value": "Mua được rồi",
+      "note": "Vùng $4.200 mua được nếu đã bán cao trước. Chênh trong nước 13-14 triệu/lượng — phi lý nhưng cứ mua lại phần đã bán. Dài hạn vẫn còn 1 chân về ~$3.300.",
+      "signal": "wait"
+    },
+    {
+      "tag": "Bitcoin",
+      "value": "Short 68,5–70k",
+      "note": "Có lệnh limit short ở 68.570. Kịch bản Elliott chân 5 về ~42k. Clarity Act thông qua 4/7 — BTC chính thức là mã chứng khoán Mỹ.",
+      "signal": "down"
+    },
+    {
+      "tag": "VN Portfolio",
+      "value": "5050 giữ nguyên",
+      "note": "Chỉ 20-23% cổ phiếu VN đang uptrend. Không action gì — cầm bank + phân bón + TCX + VPX, chờ mùa xuân 2027.",
+      "signal": "wait"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Vàng & Dầu",
+      "signal": "wait",
+      "signalLabel": "Mua được — nhưng còn rủi ro 1 chân nữa",
+      "para": "Giá vàng thế giới ~$4.230, chênh trong nước 13-14 triệu/lượng (phi lý — Nhà nước muốn người dân bán ra). Kịch bản: đây là chân 2, còn có thể có chân 3 về ~$3.300 (125 triệu/lượng trong nước). Nhưng nếu đã bán vùng 17-18 (triệu/lượng VN) hoặc $5.000+ thì mua lại phần đã bán ở vùng này được rồi. Dầu: về vùng 77-80 không cần quan tâm lý do — cứ về đó.",
+      "bullets": [
+        "Vàng tài khoản: mua xong đợi hồi về $4.000+ chốt lời, rồi lại mua thấp.",
+        "Chênh mục tiêu mua trong nước: ≤ 7 triệu/lượng — nếu chênh 14 triệu thì chưa tối ưu.",
+        "Dầu Brent: về test đỉnh cũ vùng 79-80 USD — thỏa thuận Iran có hay không cũng vậy.",
+        "Bạc: giảm theo vàng về vùng 55 USD/oz."
+      ]
+    },
+    {
+      "title": "Bitcoin & Crypto",
+      "signal": "down",
+      "signalLabel": "Short 68,5–70k — kịch bản 42k",
+      "para": "Bitcoin đang ở chân 3 sóng Elliott từ đỉnh 125k. Cần thêm chân 4 (hồi kỹ thuật) và chân 5 (đáy cuối). Clarity Act dự kiến thông qua ngày 4/7 — chính thức hóa crypto vào hệ thống Petrodollar Mỹ. BTC, ETH, XRP chỉ là mã giao dịch như cổ phiếu, không còn là phương tiện thanh toán thay thế.",
+      "bullets": [
+        "Lệnh limit short tại 68.570 USD — chờ hồi về vùng 68.500–70.000.",
+        "Kịch bản về ~42.000 USD (chân 5 Elliott, vùng mua dài hạn).",
+        "Không short thêm dưới vùng hiện tại — đợi hồi kỹ thuật trước.",
+        "Các sàn (Binance, OKX, M…) đang niêm yết cổ phiếu Mỹ/Hàn/Nhật bằng USDT — xu hướng rõ: crypto = kênh giao dịch CK, không phải tiền tệ."
+      ]
+    },
+    {
+      "title": "Chứng khoán Mỹ & Quốc tế",
+      "signal": "down",
+      "signalLabel": "Short đến giữa tháng 7 — SpaceX IPO ảo",
+      "para": "SpaceX IPO ngày 12/6: giá 135→mở 150→đỉnh 176→đóng 160 USD. P/S 94-96 lần doanh thu (so với Nvidia 19x, AVGO 24x) — hoàn toàn ảo. Mục đích: hút $75 tỷ từ thị trường, quỹ thụ động phải mua ~$38 tỷ khi SpaceX vào Nasdaq 100 đầu tháng 7. Tháng 7 lockup unlock → nguồn cung tăng đột biến. Nasdaq sẽ chỉnh đến giữa tháng 7.",
+      "bullets": [
+        "Nasdaq short: vào 29.600, thêm ở 31.000, cắt lỗ 32.500. Vẫn cầm vị thế từ 26.600.",
+        "Intel: sort từ hiện tại + thêm ở 140, cắt lỗ 155. Cấu trúc phân phối Wyckoff.",
+        "AMD: sort — FA yếu, sẽ chỉnh mạnh.",
+        "Tesla: đợi hồi lên 440 rồi sort.",
+        "Adidas: giữ, mục tiêu 167–170 rồi 200 — chưa chốt lời.",
+        "MU/SNDK: thận trọng, 'trò kéo rướn' — đánh ít hoặc chờ.",
+        "Apple, Nvidia, Google: không đụng vào — biến động lớn, khó cầm."
+      ],
+      "tickers": [
+        { "ticker": "NAS100", "action": "Short", "zone": "29.600 → 26.000", "note": "Thêm ở 31.000, cắt lỗ 32.500" },
+        { "ticker": "INTC", "action": "Short", "zone": "Hiện tại + 140", "note": "Cắt lỗ 155; phân phối Wyckoff" },
+        { "ticker": "AMD", "action": "Short", "zone": "Hiện tại", "note": "FA yếu, chỉnh mạnh" },
+        { "ticker": "TSLA", "action": "Short (chờ)", "zone": "440", "note": "Đợi hồi về 440 rồi sort" },
+        { "ticker": "ADS", "action": "Giữ", "zone": "167–200", "note": "Chưa chốt; mục tiêu 167 → 200" }
+      ]
+    },
+    {
+      "title": "Chứng khoán Việt Nam",
+      "signal": "wait",
+      "signalLabel": "Mùa đông — giữ nguyên 50/50, chờ 2027",
+      "para": "VN-Index: 20-23% cổ phiếu uptrend, thanh khoản yếu. Thị trường thực ở vùng 1.200-1.300 điểm nền dù VN-Index trông 1.800. Đây là 'mùa đông lãi suất cao' — chờ đến 2027 khi Fed hạ lãi, Iran ổn định, vĩ mô Mỹ dịu đi. Không action gì — cầm nguyên, không bán các bank vùng thấp.",
+      "bullets": [
+        "5050 không thay đổi — có tiền, không áp lực, không cần bán.",
+        "TCX: mua dần, mục tiêu vào VN30 T1/2027. Nếu bị dìm về 35–36 → mua thêm. Cắt lỗ không cần thiết.",
+        "BVBank: sẽ niêm yết chính thức từ tháng 7 — giữ.",
+        "Phân bón (DPM/DCM): giữ ½ vị thế ở vùng 25 — không bán.",
+        "Bank (VCB, BID, TCB, HDB, EB, BVB): không bán ở vùng thấp này. BIDV có thể có thông tin tốt từ bộ công an.",
+        "VPX (VCK): theo dõi cùng TCX, kỳ vọng vào VN30 T1/2027.",
+        "Novaland: chờ về 11–12 mới mua lại."
+      ],
+      "tickers": [
+        { "ticker": "TCX", "action": "Mua dần", "zone": "Hiện tại / 35–36", "note": "Mục tiêu VN30 T1/2027" },
+        { "ticker": "VCK", "action": "Theo dõi", "zone": "Tích lũy", "note": "Cùng TCX vào VN30 T1/2027" },
+        { "ticker": "BVB", "action": "Giữ", "zone": "Niêm yết T7/2026", "note": "Sự kiện niêm yết chính thức" },
+        { "ticker": "VCB", "action": "Giữ", "zone": "—", "note": "Bank trụ cột" },
+        { "ticker": "BID", "action": "Giữ", "zone": "Vùng tím", "note": "Tay to tích lũy, chờ thông tin" },
+        { "ticker": "DCM", "action": "Giữ ½", "zone": "~25", "note": "Không bán thêm" }
+      ]
+    }
+  ]
+}

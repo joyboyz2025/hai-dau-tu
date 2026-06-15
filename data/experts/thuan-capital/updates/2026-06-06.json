@@ -1,0 +1,51 @@
+{
+  "date": "2026-06-06",
+  "sourceType": "video",
+  "sourceLabel": "Video công khai · Shorts",
+  "tabLabel": "Shorts · 06/06",
+  "title": "Mỗi Khi Ta Có Suy Nghĩ Chắc Chắn Đây Là \"Đáy\" Rồi",
+  "summary": "Tín hiệu tiêu cực khắp nơi: ETF bán, Michael Saylor bán, thợ đào chuyển hướng. Nhắc lại bài học 2022: nghĩ 20.000 là đáy nhưng vẫn về 15.000 (−25%). Đáy chưa thể xác định — chuẩn bị tâm lý.",
+  "stance": { "cashPercent": null, "label": "Thận trọng" },
+  "keyCalls": [
+    {
+      "tag": "Bitcoin",
+      "value": "Đáy chưa chắc",
+      "note": "Tín hiệu giống 2018/2022; không ai biết đáy ở đâu — cần chuẩn bị tâm lý thay vì đặt cược vào \"đáy\".",
+      "signal": "warn"
+    },
+    {
+      "tag": "ETF / Tổ chức",
+      "value": "Đang bán",
+      "note": "ETF, Michael Saylor, công ty lưu trữ Bitcoin đồng loạt bán — áp lực nguồn cung tăng cao.",
+      "signal": "down"
+    },
+    {
+      "tag": "Bài học 2022",
+      "value": "$20k → $15k",
+      "note": "Mọi người nghĩ 20.000 là đáy, nhưng BTC giảm thêm 25% về 15.000 đô.",
+      "signal": "warn"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Bitcoin & Crypto",
+      "signal": "warn",
+      "signalLabel": "Thận trọng — chưa xác định đáy",
+      "para": "Nhìn đâu cũng thấy tín hiệu tiêu cực: công ty crypto bán ra, IPO hoãn vì tình hình quá xấu, ETF bán mạnh, ngay cả Michael Saylor (trước đây \"never sell\") cũng bán. Các công ty đào Bitcoin không chuyển sang AI được thì buộc phải bán để trả chi phí vận hành.",
+      "bullets": [
+        "Cẩn thận tâm lý \"chắc là đáy rồi\": năm 2022, BTC từ 20.000 giảm thêm 25% về 15.000 đô — ai mua 20.000 tưởng là đáy có thể lỗ thêm 25.000 trên mỗi 100.000 đầu tư.",
+        "Tín hiệu tiêu cực hiện tại giống hệt 2018 và 2022 về mặt tâm lý — không có gì bất thường nếu nhìn dài hạn.",
+        "Điểm khác biệt tích cực so với 2022: không có chuỗi phá sản (không có FTX, không có Luna), thợ đào chuyển hướng thay vì sụp đổ.",
+        "Đầu tư dài hạn: nếu tin tưởng giá sẽ tăng dài hạn, giảm thêm không sao — chỉ lỗ khi bán."
+      ],
+      "tickers": [
+        {
+          "ticker": "BTC",
+          "action": "Theo dõi",
+          "zone": "Chưa xác định",
+          "note": "Không thể biết đáy ở đâu; theo dõi tín hiệu và DCA dần — không mua dồn một lần."
+        }
+      ]
+    }
+  ]
+}

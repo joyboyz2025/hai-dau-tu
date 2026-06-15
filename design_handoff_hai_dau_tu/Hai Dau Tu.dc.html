@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+html, body { margin: 0; padding: 0; background: #F5F5F2; }
+* { box-sizing: border-box; }
+input::placeholder { color: #A3A29A; }
+</style>
+</helmet>
+
+<div style="font-family:'Be Vietnam Pro',sans-serif; color:#21211D; min-height:100vh; background:#F5F5F2;">
+
+<!-- ===================== ĐĂNG NHẬP ===================== -->
+<sc-if value="{{ showLogin }}" hint-placeholder-val="{{ false }}">
+  <div data-screen-label="Đăng nhập" style="min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px; background:linear-gradient(180deg, #F5F5F2 0%, #ECEDEA 100%);">
+    <div style="width:100%; max-width:400px; display:flex; flex-direction:column; gap:24px;">
+      <div style="display:flex; flex-direction:column; align-items:center; gap:14px;">
+        <div style="width:56px; height:56px; border-radius:16px; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:26px; font-weight:800;">H</div>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:4px;">
+          <div style="font-size:22px; font-weight:700; letter-spacing:-0.3px;">Hải Đầu Tư</div>
+          <div style="font-size:13px; color:#6E6D66;">cùng các Chuyên Gia · dành riêng cho gia đình</div>
+        </div>
+      </div>
+      <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:16px; padding:28px; display:flex; flex-direction:column; gap:16px; box-shadow:0 1px 3px rgba(20,20,15,0.05);">
+        <div style="display:flex; flex-direction:column; gap:6px;">
+          <div style="font-size:15px; font-weight:600;">Mã truy cập</div>
+          <div style="font-size:13px; color:#6E6D66; line-height:1.5;">Nhập mã chung của cả nhà để xem nhận định.</div>
+        </div>
+        <input ref="{{ pwRef }}" onKeyDown="{{ pwKey }}" type="password" inputmode="numeric" placeholder="••••••" style="width:100%; padding:14px 16px; border:1px solid #DDDCD5; border-radius:10px; font-size:20px; font-family:'IBM Plex Mono',monospace; letter-spacing:6px; text-align:center; outline:none; color:#21211D; background:#FBFBF9;"></input>
+        <sc-if value="{{ pwError }}" hint-placeholder-val="{{ false }}">
+          <div style="font-size:13px; color:oklch(0.52 0.16 27); text-align:center;">Mã chưa đúng — thử lại nhé (≥ 4 ký tự).</div>
+        </sc-if>
+        <button onClick="{{ doLogin }}" style="width:100%; padding:14px; border:none; border-radius:10px; background:oklch(0.42 0.08 235); color:#fff; font-size:15px; font-weight:600; font-family:'Be Vietnam Pro',sans-serif; cursor:pointer;" style-hover="background:oklch(0.36 0.08 235)">Vào xem nhận định</button>
+        <div style="font-size:12px; color:#9B9A92; text-align:center;">Bản thiết kế — nhập mã bất kỳ từ 4 ký tự</div>
+      </div>
+    </div>
+  </div>
+</sc-if>
+
+<!-- ===================== APP ===================== -->
+<sc-if value="{{ showApp }}" hint-placeholder-val="{{ true }}">
+
+  <!-- Header -->
+  <div style="background:#FFFFFF; border-bottom:1px solid #E7E6E1; position:sticky; top:0; z-index:50;">
+    <div style="max-width:1180px; margin:0 auto; padding:0 20px; display:flex; align-items:center; gap:20px; flex-wrap:wrap; min-height:60px;">
+      <div onClick="{{ goDashboard }}" style="display:flex; align-items:center; gap:10px; cursor:pointer; padding:10px 0;">
+        <div style="width:32px; height:32px; border-radius:9px; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:16px; font-weight:800;">H</div>
+        <div style="display:flex; flex-direction:column;">
+          <div style="font-size:15px; font-weight:700; letter-spacing:-0.2px; line-height:1.2;">Hải Đầu Tư</div>
+          <div style="font-size:10.5px; color:#9B9A92; line-height:1.2;">cùng các Chuyên Gia</div>
+        </div>
+      </div>
+      <div style="display:flex; gap:4px; flex-wrap:wrap; flex:1;">
+        <sc-for list="{{ navItems }}" as="nav" hint-placeholder-count="4">
+          <div onClick="{{ nav.onClick }}" style="padding:8px 14px; border-radius:9px; cursor:pointer; font-size:13.5px; background:{{ nav.bg }}; color:{{ nav.color }}; font-weight:{{ nav.weight }};">{{ nav.label }}</div>
+        </sc-for>
+      </div>
+      <div style="display:flex; align-items:center; gap:12px;">
+        <div style="font-size:12px; color:#9B9A92; font-family:'IBM Plex Mono',monospace;">12/06/2026</div>
+        <div onClick="{{ doLogout }}" style="font-size:13px; color:#6E6D66; cursor:pointer; padding:7px 12px; border:1px solid #E7E6E1; border-radius:9px; background:#FFFFFF;" style-hover="background:#F5F5F2">Đăng xuất</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== TỔNG QUAN ===================== -->
+  <sc-if value="{{ isDashboard }}" hint-placeholder-val="{{ true }}">
+    <div data-screen-label="Tổng quan" style="max-width:1180px; margin:0 auto; padding:28px 20px 60px; display:flex; flex-direction:column; gap:24px;">
+
+      <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+        <div style="display:flex; flex-direction:column; gap:4px;">
+          <h1 style="margin:0; font-size:24px; font-weight:700; letter-spacing:-0.4px;">Tổng quan thị trường</h1>
+          <div style="font-size:13.5px; color:#6E6D66;">Tổng hợp từ nhận định mới nhất của các chuyên gia</div>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px; background:#FFFFFF; border:1px solid #E7E6E1; border-radius:999px; padding:7px 14px;">
+          <div style="width:8px; height:8px; border-radius:50%; background:oklch(0.52 0.12 150);"></div>
+          <div style="font-size:12.5px; color:#6E6D66;">Cập nhật mới nhất: <span style="font-family:'IBM Plex Mono',monospace; color:#21211D; font-weight:500;">12/06/2026 · 9 giờ trước</span></div>
+        </div>
+      </div>
+
+      <!-- Pulse strip -->
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <sc-for list="{{ pulse }}" as="p" hint-placeholder-count="7">
+          <div style="display:flex; align-items:center; gap:8px; background:#FFFFFF; border:1px solid #E7E6E1; border-radius:10px; padding:9px 14px;">
+            <span style="font-size:13px; font-weight:600;">{{ p.name }}</span>
+            <span style="font-size:12px; font-weight:700; font-family:'IBM Plex Mono',monospace; color:{{ p.color }};">{{ p.mark }}</span>
+          </div>
+        </sc-for>
+      </div>
+
+      <!-- Asset cards -->
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(310px, 1fr)); gap:14px;">
+        <sc-for list="{{ assetCards }}" as="a" hint-placeholder-count="7">
+          <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:14px; padding:20px; display:flex; flex-direction:column; gap:12px; box-shadow:0 1px 2px rgba(20,20,15,0.04);">
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:10px;">
+              <div style="font-size:15.5px; font-weight:700;">{{ a.name }}</div>
+              <div style="font-size:11.5px; font-weight:700; padding:4px 10px; border-radius:999px; background:{{ a.sigBg }}; color:{{ a.sigColor }}; white-space:nowrap;">{{ a.sigLabel }}</div>
+            </div>
+            <div style="font-size:13.5px; color:#46453F; line-height:1.55; flex:1;">{{ a.summary }}</div>
+            <div style="font-size:12px; font-family:'IBM Plex Mono',monospace; color:#6E6D66; background:#F7F7F4; border-radius:8px; padding:8px 10px;">{{ a.levels }}</div>
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:8px; border-top:1px solid #F0EFEA; padding-top:11px;">
+              <div style="display:flex; align-items:center; gap:7px;">
+                <div style="width:22px; height:22px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:9.5px; font-weight:700;">{{ a.expertInitials }}</div>
+                <div style="font-size:12px; color:#6E6D66;">{{ a.expertName }}</div>
+              </div>
+              <div style="font-size:11.5px; font-family:'IBM Plex Mono',monospace; color:#9B9A92;">{{ a.date }}</div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+
+      <!-- Chuyên gia -->
+      <div style="display:flex; flex-direction:column; gap:14px; margin-top:8px;">
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+          <h2 style="margin:0; font-size:18px; font-weight:700; letter-spacing:-0.2px;">Chuyên gia</h2>
+          <div onClick="{{ goAdmin }}" style="font-size:13px; color:oklch(0.42 0.08 235); font-weight:600; cursor:pointer;">+ Thêm chuyên gia</div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:14px;">
+          <!-- Thái Phạm -->
+          <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:14px; padding:20px; display:flex; flex-direction:column; gap:14px; box-shadow:0 1px 2px rgba(20,20,15,0.04);">
+            <div style="display:flex; align-items:center; gap:12px;">
+              <div style="width:46px; height:46px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:17px; font-weight:700;">TP</div>
+              <div style="display:flex; flex-direction:column; gap:2px; flex:1;">
+                <div style="font-size:15.5px; font-weight:700;">Thái Phạm</div>
+                <div style="font-size:12px; color:#6E6D66;">YouTube hội viên · Post cộng đồng</div>
+              </div>
+              <div style="display:flex; align-items:center; gap:5px; background:oklch(0.95 0.04 150); border-radius:999px; padding:4px 10px;">
+                <div style="width:6px; height:6px; border-radius:50%; background:oklch(0.52 0.12 150);"></div>
+                <div style="font-size:11px; font-weight:600; color:oklch(0.42 0.1 150);">9 giờ trước</div>
+              </div>
+            </div>
+            <div style="font-size:13px; color:#46453F; line-height:1.55;">Cảnh báo nhịp chỉnh lớn từ Hàn–Nhật lan sang Mỹ; nâng tiền mặt VN lên 50%; vàng chờ 3.900–4.000; BTC chờ nhịp về 42–45k.</div>
+            <div style="display:flex; gap:6px; flex-wrap:wrap;">
+              <div style="font-size:11px; font-weight:700; padding:4px 9px; border-radius:999px; background:oklch(0.95 0.04 27); color:oklch(0.46 0.15 27);">CK Mỹ ↓</div>
+              <div style="font-size:11px; font-weight:700; padding:4px 9px; border-radius:999px; background:oklch(0.96 0.05 85); color:oklch(0.5 0.1 70);">CK Việt ⚠ 50% tiền</div>
+              <div style="font-size:11px; font-weight:700; padding:4px 9px; border-radius:999px; background:#EFEEE9; color:#5F5E57;">Vàng ◷ chờ mua</div>
+              <div style="font-size:11px; font-weight:700; padding:4px 9px; border-radius:999px; background:oklch(0.95 0.04 27); color:oklch(0.46 0.15 27);">BTC ↓</div>
+            </div>
+            <button onClick="{{ goExpert }}" style="width:100%; padding:11px; border:1px solid oklch(0.42 0.08 235); border-radius:10px; background:#FFFFFF; color:oklch(0.42 0.08 235); font-size:13.5px; font-weight:600; font-family:'Be Vietnam Pro',sans-serif; cursor:pointer;" style-hover="background:oklch(0.97 0.01 235)">Xem nhận định đầy đủ →</button>
+          </div>
+
+          <!-- Thuận Capital -->
+          <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:14px; padding:20px; display:flex; flex-direction:column; gap:14px; box-shadow:0 1px 2px rgba(20,20,15,0.04);">
+            <div style="display:flex; align-items:center; gap:12px;">
+              <div style="width:46px; height:46px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:17px; font-weight:700;">TC</div>
+              <div style="display:flex; flex-direction:column; gap:2px; flex:1;">
+                <div style="font-size:15.5px; font-weight:700;">Thuận Capital</div>
+                <div style="font-size:12px; color:#6E6D66;">YouTube · Video công khai</div>
+              </div>
+              <div style="display:flex; align-items:center; gap:5px; background:oklch(0.95 0.04 150); border-radius:999px; padding:4px 10px;">
+                <div style="width:6px; height:6px; border-radius:50%; background:oklch(0.52 0.12 150);"></div>
+                <div style="font-size:11px; font-weight:600; color:oklch(0.42 0.1 150);">1 giờ trước</div>
+              </div>
+            </div>
+            <div style="font-size:13px; color:#46453F; line-height:1.55;">BTC −50% từ đỉnh 126.000 đô; chu kỳ 4 năm vẫn còn khả năng — chờ T11/2026. Thuận mua thêm khi giá dưới 60.000 đô bằng chiến lược DCA. Không cố bắt đáy một lần.</div>
+            <div style="display:flex; gap:6px; flex-wrap:wrap;">
+              <div style="font-size:11px; font-weight:700; padding:4px 9px; border-radius:999px; background:oklch(0.96 0.05 85); color:oklch(0.5 0.1 70);">BTC ⚠ Thận trọng</div>
+              <div style="font-size:11px; font-weight:700; padding:4px 9px; border-radius:999px; background:#EFEEE9; color:#5F5E57;">Chu kỳ ◷ T11/2026</div>
+              <div style="font-size:11px; font-weight:700; padding:4px 9px; border-radius:999px; background:#EFEEE9; color:#5F5E57;">DCA ◷ dưới $60k</div>
+            </div>
+            <button onClick="{{ goThuanCapital }}" style="width:100%; padding:11px; border:1px solid oklch(0.42 0.08 235); border-radius:10px; background:#FFFFFF; color:oklch(0.42 0.08 235); font-size:13.5px; font-weight:600; font-family:'Be Vietnam Pro',sans-serif; cursor:pointer;" style-hover="background:oklch(0.97 0.01 235)">Xem nhận định đầy đủ →</button>
+          </div>
+
+          <!-- Added experts -->
+          <sc-for list="{{ addedExperts }}" as="x" hint-placeholder-count="0">
+            <div style="background:#FFFFFF; border:1px dashed #D8D7D0; border-radius:14px; padding:20px; display:flex; flex-direction:column; gap:14px;">
+              <div style="display:flex; align-items:center; gap:12px;">
+                <div style="width:46px; height:46px; border-radius:50%; background:#EFEEE9; color:#6E6D66; display:flex; align-items:center; justify-content:center; font-size:17px; font-weight:700;">{{ x.initials }}</div>
+                <div style="display:flex; flex-direction:column; gap:2px; flex:1;">
+                  <div style="font-size:15.5px; font-weight:700;">{{ x.name }}</div>
+                  <div style="font-size:12px; color:#6E6D66;">{{ x.channel }}</div>
+                </div>
+                <div style="font-size:11px; font-weight:600; color:#9B9A92; background:#F5F5F2; border-radius:999px; padding:4px 10px;">Chờ dữ liệu</div>
+              </div>
+              <div style="font-size:13px; color:#9B9A92; line-height:1.55;">Đang chờ nội dung đầu tiên từ kênh — nhận định sẽ xuất hiện tại đây sau lần quét tiếp theo.</div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+
+      <div style="font-size:12px; color:#9B9A92; text-align:center; padding-top:8px;">Nội dung được tổng hợp tự động từ video / post mới nhất của từng chuyên gia · chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</div>
+    </div>
+  </sc-if>
+
+  <!-- ===================== DANH SÁCH CHUYÊN GIA ===================== -->
+  <sc-if value="{{ isExpertsList }}" hint-placeholder-val="{{ false }}">
+    <div data-screen-label="Chuyên gia" style="max-width:1080px; margin:0 auto; padding:28px 20px 60px; display:flex; flex-direction:column; gap:20px;">
+      <div style="display:flex; flex-direction:column; gap:4px;">
+        <h1 style="margin:0; font-size:24px; font-weight:700; letter-spacing:-0.4px;">Chuyên gia</h1>
+        <div style="font-size:13.5px; color:#6E6D66;">Chọn chuyên gia để xem nhận định đầy đủ và lịch sử bài đăng</div>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(340px, 1fr)); gap:14px;">
+        <sc-for list="{{ expertsList }}" as="ex" hint-placeholder-count="2">
+          <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:16px; padding:22px; display:flex; flex-direction:column; gap:14px; box-shadow:0 1px 2px rgba(20,20,15,0.04);">
+            <!-- Header -->
+            <div style="display:flex; align-items:center; gap:13px;">
+              <div style="width:52px; height:52px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:18px; font-weight:700; flex-shrink:0;">{{ ex.initials }}</div>
+              <div style="display:flex; flex-direction:column; gap:3px; flex:1;">
+                <div style="font-size:16px; font-weight:700;">{{ ex.name }}</div>
+                <div style="font-size:12px; color:#6E6D66;">{{ ex.sourceLabel }}</div>
+              </div>
+              <div style="display:flex; align-items:center; gap:5px; background:oklch(0.95 0.04 150); border-radius:999px; padding:4px 10px; white-space:nowrap;">
+                <div style="width:6px; height:6px; border-radius:50%; background:oklch(0.52 0.12 150);"></div>
+                <div style="font-size:11px; font-weight:600; color:oklch(0.42 0.1 150);">{{ ex.timeAgo }}</div>
+              </div>
+            </div>
+            <!-- Latest post -->
+            <div style="background:#F7F7F4; border-radius:12px; padding:12px 14px; display:flex; flex-direction:column; gap:6px;">
+              <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <div style="font-size:11px; font-weight:700; padding:3px 8px; border-radius:999px; background:{{ ex.typeBg }}; color:{{ ex.typeColor }};">{{ ex.typeLabel }}</div>
+                <div style="font-size:11.5px; font-family:'IBM Plex Mono',monospace; color:#9B9A92;">{{ ex.latestDate }}</div>
+              </div>
+              <div style="font-size:13.5px; font-weight:600; color:#21211D; line-height:1.4;">{{ ex.latestTitle }}</div>
+              <div style="font-size:12.5px; color:#46453F; line-height:1.55;">{{ ex.latestSummary }}</div>
+            </div>
+            <!-- Signal chips -->
+            <div style="display:flex; gap:6px; flex-wrap:wrap;">
+              <sc-for list="{{ ex.chips }}" as="chip" hint-placeholder-count="3">
+                <div style="font-size:11px; font-weight:700; padding:4px 9px; border-radius:999px; background:{{ chip.bg }}; color:{{ chip.color }};">{{ chip.label }}</div>
+              </sc-for>
+            </div>
+            <button onClick="{{ ex.onClick }}" style="width:100%; padding:11px; border:1px solid oklch(0.42 0.08 235); border-radius:10px; background:#FFFFFF; color:oklch(0.42 0.08 235); font-size:13.5px; font-weight:600; font-family:'Be Vietnam Pro',sans-serif; cursor:pointer;" style-hover="background:oklch(0.97 0.01 235)">Xem nhận định đầy đủ →</button>
+          </div>
+        </sc-for>
+      </div>
+      <div style="font-size:12px; color:#9B9A92; text-align:center; padding-top:4px;">Nội dung được tổng hợp tự động · chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</div>
+    </div>
+  </sc-if>
+
+  <!-- ===================== CHUYÊN GIA: THÁI PHẠM ===================== -->
+  <sc-if value="{{ isExpert }}" hint-placeholder-val="{{ false }}">
+    <div data-screen-label="Chuyên gia: Thái Phạm" style="max-width:1080px; margin:0 auto; padding:28px 20px 60px; display:flex; flex-direction:column; gap:16px;">
+
+      <div onClick="{{ goDashboard }}" style="font-size:13px; color:#6E6D66; cursor:pointer; display:flex; align-items:center; gap:6px;">← Tổng quan</div>
+
+      <!-- Expert header -->
+      <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:16px; padding:26px; display:flex; gap:28px; flex-wrap:wrap; align-items:center; box-shadow:0 1px 2px rgba(20,20,15,0.04);">
+        <div style="display:flex; align-items:flex-start; gap:18px; flex:1.4; min-width:300px;">
+          <div style="width:80px; height:80px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:30px; font-weight:700; flex-shrink:0;">{{ expertInitials }}</div>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+              <div style="font-size:23px; font-weight:700; letter-spacing:-0.3px;">{{ expertName }}</div>
+              <div style="display:flex; align-items:center; gap:5px; background:oklch(0.95 0.04 150); border-radius:999px; padding:4px 10px;">
+                <div style="width:6px; height:6px; border-radius:50%; background:oklch(0.52 0.12 150);"></div>
+                <div style="font-size:11px; font-weight:600; color:oklch(0.42 0.1 150);">Đang theo dõi</div>
+              </div>
+            </div>
+            <div style="font-size:13px; color:#6E6D66; line-height:1.55; max-width:460px;">{{ expertBio }}</div>
+            <div style="display:flex; gap:6px; flex-wrap:wrap;">
+              <sc-for list="{{ expertSourceChips }}" as="sc" hint-placeholder-count="3">
+                <div style="font-size:11.5px; font-weight:600; padding:4px 10px; border-radius:999px; background:#EFEEE9; color:#5F5E57;">{{ sc.label }}</div>
+              </sc-for>
+            </div>
+            <div style="font-size:12.5px; color:#6E6D66;">Cập nhật <span style="font-family:'IBM Plex Mono',monospace; color:#21211D; font-weight:500;">{{ expertUpdatedAt }}</span> · nguồn mới nhất: {{ expertLatestSource }}</div>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px; min-width:250px; flex:1;">
+          <div style="display:flex; align-items:center; justify-content:space-between;">
+            <div style="font-size:12.5px; font-weight:600; color:#6E6D66;">{{ gaugeTitle }}</div>
+            <div style="font-size:11.5px; font-weight:700; padding:3px 9px; border-radius:999px; background:{{ gaugeBadgeBg }}; color:{{ gaugeBadgeColor }};">{{ gaugeBadge }}</div>
+          </div>
+          <div style="display:flex; height:14px; border-radius:999px; overflow:hidden; border:1px solid #E7E6E1;">
+            <div style="width:{{ gaugeBar1 }}%; background:oklch(0.42 0.08 235);"></div>
+            <div style="width:{{ gaugeBar2 }}%; background:oklch(0.85 0.04 85);"></div>
+          </div>
+          <div style="display:flex; justify-content:space-between; font-size:12px; font-family:'IBM Plex Mono',monospace; color:#6E6D66;">
+            <div style="white-space:nowrap;"><span style="display:inline-block; width:8px; height:8px; border-radius:2px; background:oklch(0.42 0.08 235); margin-right:5px;"></span>{{ gaugeLabel1 }}</div>
+            <div style="white-space:nowrap;">{{ gaugeLabel2 }}<span style="display:inline-block; width:8px; height:8px; border-radius:2px; background:oklch(0.85 0.04 85); margin-left:5px;"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabs các bản cập nhật -->
+      <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:stretch;">
+        <sc-for list="{{ updateTabs }}" as="u" hint-placeholder-count="3">
+          <div onClick="{{ u.onClick }}" style="display:flex; flex-direction:column; gap:2px; padding:9px 16px; border-radius:12px; cursor:pointer; border:1.5px solid {{ u.border }}; background:{{ u.bg }};">
+            <div style="font-size:13px; font-weight:700; font-family:'IBM Plex Mono',monospace; color:{{ u.color }};">{{ u.date }}</div>
+            <div style="font-size:11px; font-weight:500; color:{{ u.sub }};">{{ u.label }}</div>
+          </div>
+        </sc-for>
+      </div>
+
+      <!-- Tiêu đề bản cập nhật đang xem -->
+      <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; padding:2px 2px 0;">
+        <div style="font-size:11px; font-weight:700; padding:4px 10px; border-radius:999px; background:{{ updTypeBg }}; color:{{ updTypeColor }}; white-space:nowrap;">{{ updType }}</div>
+        <div style="font-size:14.5px; font-weight:700; line-height:1.4;">{{ updTitle }}</div>
+      </div>
+
+      <!-- Quan điểm chính -->
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:12px;">
+        <sc-for list="{{ keyCalls }}" as="k" hint-placeholder-count="4">
+          <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:14px; padding:16px 18px; display:flex; flex-direction:column; gap:6px; border-top:3px solid {{ k.accent }};">
+            <div style="font-size:11px; font-weight:700; color:#9B9A92; text-transform:uppercase; letter-spacing:0.5px;">{{ k.tag }}</div>
+            <div style="font-size:17px; font-weight:700; letter-spacing:-0.2px; font-family:'IBM Plex Mono',monospace; color:{{ k.accent }};">{{ k.value }}</div>
+            <div style="font-size:12.5px; color:#6E6D66; line-height:1.5;">{{ k.note }}</div>
+          </div>
+        </sc-for>
+      </div>
+
+      <!-- Các mục nhận định của bản cập nhật đang chọn -->
+      <sc-for list="{{ updSections }}" as="sec" hint-placeholder-count="4">
+        <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:16px; padding:24px; display:flex; flex-direction:column; gap:14px;">
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap;">
+            <h2 style="margin:0; font-size:16.5px; font-weight:700;">{{ sec.title }}</h2>
+            <div style="font-size:11.5px; font-weight:700; padding:4px 10px; border-radius:999px; background:{{ sec.sigBg }}; color:{{ sec.sigColor }};">{{ sec.sigLabel }}</div>
+          </div>
+          <sc-if value="{{ sec.hasPara }}" hint-placeholder-val="{{ true }}">
+            <div style="font-size:13.5px; color:#46453F; line-height:1.6;">{{ sec.para }}</div>
+          </sc-if>
+          <sc-for list="{{ sec.bullets }}" as="b" hint-placeholder-count="0">
+            <div style="display:flex; gap:10px; align-items:flex-start;">
+              <div style="width:6px; height:6px; border-radius:50%; background:oklch(0.42 0.08 235); margin-top:7px; flex-shrink:0;"></div>
+              <div style="font-size:13.5px; color:#46453F; line-height:1.6;">{{ b.text }}</div>
+            </div>
+          </sc-for>
+          <sc-if value="{{ sec.hasTickers }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex; flex-direction:column; border:1px solid #F0EFEA; border-radius:12px; overflow-x:auto;">
+              <div style="display:grid; grid-template-columns:110px 105px 150px 1fr; gap:10px; padding:10px 16px; min-width:560px; background:#F7F7F4; font-size:11px; font-weight:700; color:#9B9A92; text-transform:uppercase; letter-spacing:0.5px;">
+                <div>Mã</div><div>Hành động</div><div>Vùng giá</div><div>Ghi chú</div>
+              </div>
+              <sc-for list="{{ sec.tickers }}" as="t" hint-placeholder-count="0">
+                <div style="display:grid; grid-template-columns:110px 105px 150px 1fr; gap:10px; padding:12px 16px; min-width:560px; border-top:1px solid #F0EFEA; align-items:center;">
+                  <div style="font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:600;">{{ t.ticker }}</div>
+                  <div><span style="font-size:11px; font-weight:700; padding:4px 9px; border-radius:999px; background:{{ t.aBg }}; color:{{ t.aColor }}; white-space:nowrap;">{{ t.action }}</span></div>
+                  <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#6E6D66;">{{ t.zone }}</div>
+                  <div style="font-size:12.5px; color:#46453F; line-height:1.5;">{{ t.note }}</div>
+                </div>
+              </sc-for>
+            </div>
+          </sc-if>
+          <sc-if value="{{ sec.hasLevels }}" hint-placeholder-val="{{ false }}">
+            <div style="font-size:12px; font-family:'IBM Plex Mono',monospace; color:#6E6D66; background:#F7F7F4; border-radius:8px; padding:8px 10px;">{{ sec.levels }}</div>
+          </sc-if>
+        </div>
+      </sc-for>
+
+
+
+      <!-- Nguồn nội dung gốc -->
+      <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:16px; padding:24px; display:flex; flex-direction:column; gap:14px;">
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap;">
+          <h2 style="margin:0; font-size:16.5px; font-weight:700;">Nội dung gốc đã tổng hợp</h2>
+          <div onClick="{{ goHistory }}" style="font-size:13px; color:oklch(0.42 0.08 235); font-weight:600; cursor:pointer;">Xem toàn bộ lịch sử →</div>
+        </div>
+        <div style="display:flex; flex-direction:column; border:1px solid #F0EFEA; border-radius:12px; overflow-x:auto;">
+          <sc-for list="{{ expertSources }}" as="src" hint-placeholder-count="3">
+            <div style="display:flex; align-items:center; gap:14px; padding:14px 16px; border-top:1px solid #F0EFEA; flex-wrap:wrap;">
+              <div style="width:38px; height:38px; border-radius:10px; background:{{ src.iconBg }}; color:{{ src.iconColor }}; display:flex; align-items:center; justify-content:center; font-size:16px; flex-shrink:0;">{{ src.icon }}</div>
+              <div style="display:flex; flex-direction:column; gap:2px; flex:1; min-width:220px;">
+                <div style="font-size:13.5px; font-weight:600; line-height:1.4;">{{ src.title }}</div>
+                <div style="font-size:12px; color:#6E6D66;">{{ src.meta }}</div>
+              </div>
+              <div style="font-size:12px; font-family:'IBM Plex Mono',monospace; color:#9B9A92;">{{ src.date }}</div>
+              <div style="display:flex; align-items:center; gap:5px; background:oklch(0.95 0.04 150); border-radius:999px; padding:4px 10px;">
+                <div style="font-size:11px; font-weight:600; color:oklch(0.42 0.1 150);">✓ Đã tổng hợp</div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+
+      <div style="font-size:12px; color:#9B9A92; padding:4px 6px;">Tóm tắt được tạo tự động từ transcript / post gốc — chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</div>
+    </div>
+  </sc-if>
+
+  <!-- ===================== LỊCH SỬ ===================== -->
+  <sc-if value="{{ isHistory }}" hint-placeholder-val="{{ false }}">
+    <div data-screen-label="Lịch sử" style="max-width:880px; margin:0 auto; padding:28px 20px 60px; display:flex; flex-direction:column; gap:20px;">
+      <div style="display:flex; flex-direction:column; gap:4px;">
+        <h1 style="margin:0; font-size:24px; font-weight:700; letter-spacing:-0.4px;">Lịch sử nhận định</h1>
+        <div style="font-size:13.5px; color:#6E6D66;">Mọi bản cập nhật theo dòng thời gian — xem lại để đối chiếu với diễn biến thực tế</div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:0;">
+        <sc-for list="{{ historyItems }}" as="h" hint-placeholder-count="3">
+          <div style="display:flex; gap:18px;">
+            <div style="display:flex; flex-direction:column; align-items:center; width:14px; flex-shrink:0;">
+              <div style="width:12px; height:12px; border-radius:50%; border:3px solid oklch(0.42 0.08 235); background:#FFFFFF; margin-top:24px;"></div>
+              <div style="width:2px; flex:1; background:#E7E6E1;"></div>
+            </div>
+            <div style="flex:1; background:#FFFFFF; border:1px solid #E7E6E1; border-radius:14px; padding:20px; margin-bottom:14px; display:flex; flex-direction:column; gap:10px; box-shadow:0 1px 2px rgba(20,20,15,0.04);">
+              <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+                <div style="font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:600; color:oklch(0.42 0.08 235);">{{ h.date }}</div>
+                <div style="font-size:11px; font-weight:700; padding:3px 9px; border-radius:999px; background:{{ h.typeBg }}; color:{{ h.typeColor }};">{{ h.type }}</div>
+                <div style="display:flex; align-items:center; gap:6px; margin-left:auto;">
+                  <div style="width:20px; height:20px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:8.5px; font-weight:700;">TP</div>
+                  <div style="font-size:12px; color:#6E6D66;">Thái Phạm</div>
+                </div>
+              </div>
+              <div style="font-size:15px; font-weight:700; line-height:1.4;">{{ h.title }}</div>
+              <div style="font-size:13px; color:#46453F; line-height:1.6;">{{ h.summary }}</div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </sc-if>
+
+  <!-- ===================== QUẢN LÝ ===================== -->
+  <sc-if value="{{ isAdmin }}" hint-placeholder-val="{{ false }}">
+    <div data-screen-label="Quản lý chuyên gia" style="max-width:880px; margin:0 auto; padding:28px 20px 60px; display:flex; flex-direction:column; gap:20px;">
+      <div style="display:flex; flex-direction:column; gap:4px;">
+        <h1 style="margin:0; font-size:24px; font-weight:700; letter-spacing:-0.4px;">Quản lý chuyên gia</h1>
+        <div style="font-size:13.5px; color:#6E6D66;">Thêm kênh để hệ thống tự lấy video / transcript / post mới nhất và tổng hợp nhận định</div>
+      </div>
+
+      <!-- Current experts -->
+      <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:16px; overflow:hidden;">
+        <div style="padding:14px 20px; background:#F7F7F4; font-size:11px; font-weight:700; color:#9B9A92; text-transform:uppercase; letter-spacing:0.5px;">Đang theo dõi</div>
+        <div style="display:flex; align-items:center; gap:14px; padding:16px 20px; border-top:1px solid #F0EFEA; flex-wrap:wrap;">
+          <div style="width:40px; height:40px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:700;">TP</div>
+          <div style="display:flex; flex-direction:column; gap:2px; flex:1; min-width:200px;">
+            <div style="font-size:14.5px; font-weight:700;">Thái Phạm</div>
+            <div style="font-size:12px; color:#6E6D66;">youtube.com/@ThaiPham · transcript hội viên + post cộng đồng</div>
+          </div>
+          <div style="font-size:12px; font-family:'IBM Plex Mono',monospace; color:#6E6D66;">Quét: khi có nội dung mới</div>
+          <div style="display:flex; align-items:center; gap:5px; background:oklch(0.95 0.04 150); border-radius:999px; padding:4px 10px;">
+            <div style="width:6px; height:6px; border-radius:50%; background:oklch(0.52 0.12 150);"></div>
+            <div style="font-size:11px; font-weight:600; color:oklch(0.42 0.1 150);">Hoạt động</div>
+          </div>
+        </div>
+        <sc-for list="{{ addedExperts }}" as="x" hint-placeholder-count="0">
+          <div style="display:flex; align-items:center; gap:14px; padding:16px 20px; border-top:1px solid #F0EFEA; flex-wrap:wrap;">
+            <div style="width:40px; height:40px; border-radius:50%; background:#EFEEE9; color:#6E6D66; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:700;">{{ x.initials }}</div>
+            <div style="display:flex; flex-direction:column; gap:2px; flex:1; min-width:200px;">
+              <div style="font-size:14.5px; font-weight:700;">{{ x.name }}</div>
+              <div style="font-size:12px; color:#6E6D66;">{{ x.channel }} · {{ x.srcLabel }}</div>
+            </div>
+            <div style="font-size:12px; font-family:'IBM Plex Mono',monospace; color:#6E6D66;">Quét: khi có nội dung mới</div>
+            <div style="font-size:11px; font-weight:600; color:#9B9A92; background:#F5F5F2; border-radius:999px; padding:4px 10px;">Chờ dữ liệu</div>
+          </div>
+        </sc-for>
+      </div>
+
+      <!-- Add form -->
+      <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:16px; padding:24px; display:flex; flex-direction:column; gap:18px;">
+        <h2 style="margin:0; font-size:16.5px; font-weight:700;">Thêm chuyên gia mới</h2>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:14px;">
+          <div style="display:flex; flex-direction:column; gap:6px;">
+            <div style="font-size:13px; font-weight:600;">Tên chuyên gia</div>
+            <input ref="{{ nameRef }}" type="text" placeholder="VD: Trần Quốc Anh" style="width:100%; padding:11px 14px; border:1px solid #DDDCD5; border-radius:10px; font-size:14px; font-family:'Be Vietnam Pro',sans-serif; outline:none; color:#21211D; background:#FBFBF9;"></input>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:6px;">
+            <div style="font-size:13px; font-weight:600;">Kênh YouTube</div>
+            <input ref="{{ channelRef }}" type="text" placeholder="youtube.com/@kenh" style="width:100%; padding:11px 14px; border:1px solid #DDDCD5; border-radius:10px; font-size:14px; font-family:'IBM Plex Mono',monospace; outline:none; color:#21211D; background:#FBFBF9;"></input>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          <div style="font-size:13px; font-weight:600;">Nguồn nội dung</div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap;">
+            <sc-for list="{{ srcChips }}" as="c" hint-placeholder-count="3">
+              <div onClick="{{ c.onClick }}" style="padding:8px 14px; border-radius:999px; cursor:pointer; font-size:13px; font-weight:600; border:1px solid {{ c.border }}; background:{{ c.bg }}; color:{{ c.color }};">{{ c.label }}</div>
+            </sc-for>
+          </div>
+        </div>
+        <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap;">
+          <button onClick="{{ addExpert }}" style="padding:12px 22px; border:none; border-radius:10px; background:oklch(0.42 0.08 235); color:#fff; font-size:14px; font-weight:600; font-family:'Be Vietnam Pro',sans-serif; cursor:pointer;" style-hover="background:oklch(0.36 0.08 235)">Thêm chuyên gia</button>
+          <div style="font-size:12.5px; color:#9B9A92;">Hệ thống sẽ tự lấy video / post mới nhất và tổng hợp bằng AI.</div>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+</sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    let logged = false;
+    try { logged = localStorage.getItem('hdt_auth') === '1'; } catch (e) {}
+    this.state = { logged, screen: 'dashboard', pwError: false, srcType: 0, added: [], updIdx: 0, expertId: 'thai-pham' };
+    this.pwRef = React.createRef();
+    this.nameRef = React.createRef();
+    this.channelRef = React.createRef();
+  }
+
+  login() {
+    const v = (this.pwRef.current && this.pwRef.current.value) || '';
+    if (v.trim().length >= 4) {
+      try { localStorage.setItem('hdt_auth', '1'); } catch (e) {}
+      this.setState({ logged: true, pwError: false, screen: 'dashboard' });
+    } else {
+      this.setState({ pwError: true });
+    }
+  }
+
+  go(screen, extra) { this.setState({ screen, updIdx: 0, ...(extra || {}) }); window.scrollTo(0, 0); }
+
+  renderVals() {
+    const BRAND = 'oklch(0.42 0.08 235)';
+    const s = this.state;
+
+    const ACT = {
+      mua:     { bg: 'oklch(0.95 0.04 150)', color: 'oklch(0.42 0.1 150)' },
+      ban:     { bg: 'oklch(0.95 0.04 27)',  color: 'oklch(0.46 0.15 27)' },
+      giu:     { bg: 'oklch(0.95 0.02 235)', color: 'oklch(0.4 0.08 235)' },
+      theodoi: { bg: '#EFEEE9',              color: '#5F5E57' },
+      tranh:   { bg: '#F1E9E7',              color: 'oklch(0.45 0.08 27)' }
+    };
+    const chip = (action, key) => ({ action: action, aBg: ACT[key].bg, aColor: ACT[key].color });
+
+    const navDefs = [
+      { key: 'dashboard',     label: 'Tổng quan' },
+      { key: 'experts-list',  label: 'Chuyên gia' },
+      { key: 'history',       label: 'Lịch sử' },
+      { key: 'admin',         label: 'Quản lý' }
+    ];
+    const navItems = navDefs.map(n => ({
+      label: n.label,
+      bg: s.screen === n.key ? 'oklch(0.95 0.02 235)' : 'transparent',
+      color: s.screen === n.key ? BRAND : '#6E6D66',
+      weight: s.screen === n.key ? '700' : '500',
+      onClick: () => this.go(n.key)
+    }));
+
+    const pulse = [
+      { name: 'CK Mỹ',   mark: '↓ Chỉnh T7',    color: 'oklch(0.5 0.16 27)' },
+      { name: 'CK Việt', mark: '⚠ Thận trọng',  color: 'oklch(0.55 0.11 70)' },
+      { name: 'Vàng',    mark: '✓ Mua được',     color: 'oklch(0.42 0.1 150)' },
+      { name: 'Dầu',     mark: '↓ Về 77–80',     color: 'oklch(0.5 0.16 27)' },
+      { name: 'Bitcoin', mark: '↓ Short 68–70k', color: 'oklch(0.5 0.16 27)' },
+      { name: 'Tỷ giá',  mark: '⚠ Dễ thở hơn',  color: 'oklch(0.55 0.11 70)' },
+      { name: 'BĐS',     mark: '— Đứng ngoài',  color: '#9B9A92' }
+    ];
+
+    const SIG = {
+      down: { sigBg: 'oklch(0.95 0.04 27)', sigColor: 'oklch(0.46 0.15 27)' },
+      warn: { sigBg: 'oklch(0.96 0.05 85)', sigColor: 'oklch(0.5 0.1 70)' },
+      wait: { sigBg: '#EFEEE9', sigColor: '#5F5E57' }
+    };
+
+    const assetCards = [
+      Object.assign({ name: 'Chứng khoán Mỹ', sigLabel: 'Giảm', date: '15/06', expertInitials: 'TP', expertName: 'Thái Phạm',
+        summary: 'SpaceX IPO P/S 96x — ảo; Nasdaq chỉnh đến giữa T7. Futures xanh sau tin Iran nhưng đã phản ánh vào giá. Short Intel, AMD; chờ Tesla 440 để sort.',
+        levels: 'Nasdaq short 29.600 · thêm 31.000 · cắt lỗ 32.500' }, SIG.down),
+      Object.assign({ name: 'Chứng khoán Việt Nam', sigLabel: 'Thận trọng', date: '15/06', expertInitials: 'TP', expertName: 'Thái Phạm',
+        summary: 'Áp lực dễ thở hơn sau tin Iran–dầu giảm. Vẫn 50/50, nắm chặt bank chiến lược. Chờ tín hiệu tỷ giá và lãi suất tốt hơn mới mua thêm.',
+        levels: 'Tiền/Hàng: 50/50 · Giữ: VCB BID TCB HDB EB BVB · chờ mua thêm' }, SIG.warn),
+      Object.assign({ name: 'Vàng', sigLabel: 'Mua được', date: '15/06', expertInitials: 'TP', expertName: 'Thái Phạm',
+        summary: 'Vùng $4.200 mua được nếu đã bán cao trước. Iran ký 19/6 → vàng tăng ngắn hạn. Dài hạn còn 1 chân rủi ro về ~$3.300. Chênh trong nước 13–14tr/lượng.',
+        levels: 'Mua lại phần đã bán · chênh mục tiêu ≤ 7tr · rủi ro: ~$3.300' }, SIG.wait),
+      Object.assign({ name: 'Dầu', sigLabel: 'Giảm', date: '15/06', expertInitials: 'TP', expertName: 'Thái Phạm',
+        summary: 'Iran–Mỹ ký hòa bình 19/6 tại Thụy Sĩ — đúng kỳ vọng dầu giảm. Dù có hay không có thỏa thuận thì dầu cũng về vùng 77–80 do giảm tổng cầu toàn cầu.',
+        levels: 'Dầu Brent mục tiêu: 77–80 USD · xác nhận thesis' }, SIG.down),
+      Object.assign({ name: 'Bitcoin & Crypto', sigLabel: 'Giảm', date: '15/06', expertInitials: 'TP', expertName: 'Thái Phạm',
+        summary: 'Vẫn downtrend từ đỉnh 125k. Hòa bình Iran không thay đổi cấu trúc kỹ thuật. Chờ hồi kỹ thuật lên 68–70k để short lại, mục tiêu về ~42k (chân 5 Elliott).',
+        levels: 'Short: 68.000–70.000 · mục tiêu: ~42.000 · Clarity Act: 4/7' }, SIG.down),
+      Object.assign({ name: 'Tỷ giá & Vĩ mô VN', sigLabel: 'Dễ thở hơn', date: '15/06', expertInitials: 'TP', expertName: 'Thái Phạm',
+        summary: 'Dầu giảm → lạm phát nhập khẩu giảm → áp lực tỷ giá VND bớt dần. Section 301 vẫn hiệu lực T7 nhưng môi trường vĩ mô bắt đầu cải thiện.',
+        levels: 'USD/VND theo dõi · Fed 67% tăng T7/T9 · dầu giảm tích cực' }, SIG.warn),
+      Object.assign({ name: 'Bất động sản', sigLabel: 'Đứng ngoài', date: '01/06', expertInitials: 'TP', expertName: 'Thái Phạm',
+        summary: 'Đã thoát toàn bộ vị thế cổ phiếu BĐS. Chưa có điểm vào mới. Novaland chờ về 11–12 mới tính mua lại.',
+        levels: 'Vị thế: 0% · NVL mua lại khi về 11–12' }, SIG.wait)
+    ];
+
+    const macroBullets = [
+      { text: 'Margin nhà đầu tư cá nhân tại Mỹ cao kỷ lục; dòng tiền đòn bẩy Hàn Quốc – Nhật Bản đổ vào cổ phiếu công nghệ Mỹ (hiệu ứng "bà ngoại Hàn Quốc" — rút tiết kiệm, đổi won sang USD mua TQQQ).' },
+      { text: 'IPO SpaceX ngày 12/06 (135 USD/cp, định giá ~1.800 tỷ USD) cần hút ~100 tỷ USD thanh khoản — động lực để "đánh xuống rồi kéo lên" toàn thị trường; cảnh giác thao túng bằng tin tức Iran.' },
+      { text: 'Hàn – Nhật rủi ro điều chỉnh mạnh: chính phủ Hàn sẵn sàng can thiệp bảo vệ đồng won (nhóm đầu cơ có thể chỉnh 30–40%); Nhật dự kiến chỉnh 15–17%. Nếu Hàn hoảng loạn phiên thứ Hai → Mỹ hoảng theo.' },
+      { text: 'Việt Nam: thặng dư 178 tỷ USD với Mỹ (kỷ lục 2025) → bị ép minh bạch tỷ giá, điều tra Section 301; khả năng phá giá VND 4–5%, lãi suất cao kéo dài — bối cảnh vĩ mô mới buộc phòng thủ.' }
+    ];
+
+    const usTickers = [
+      Object.assign({ ticker: 'NVDA', zone: 'Hỗ trợ ~189', note: 'Hoảng loạn về 189 sẽ có lực bắt đáy, hồi kỹ thuật rồi mới tính tiếp.' }, chip('Theo dõi', 'theodoi')),
+      Object.assign({ ticker: 'INTC', zone: 'Hồi → về ~50', note: 'Black Monday về vùng 81 sẽ hồi, nhưng đích quay về vùng 50.' }, chip('Bán', 'ban')),
+      Object.assign({ ticker: 'AMD',  zone: 'Hồi 330 → 240', note: 'FA yếu, tính chất meme stock, không hưởng lợi chu kỳ này.' }, chip('Bán', 'ban')),
+      Object.assign({ ticker: 'AAPL', zone: 'Sau WWDC', note: 'Nếu mở gap tăng sau công bố Siri + Gemini → điểm short đẹp.' }, chip('Theo dõi', 'theodoi')),
+      Object.assign({ ticker: 'GOOG', zone: '240 → 307', note: 'Tin Gemini đã phản ánh hết vào giá, không mua đuổi.' }, chip('Trung lập', 'theodoi')),
+      Object.assign({ ticker: 'ADS',  zone: 'Mua ~155', note: 'Cổ phiếu World Cup — đang giữ; chỉnh về 155 là điểm mua tốt.' }, chip('Mua', 'mua')),
+      Object.assign({ ticker: 'MU · SNDK', zone: '—', note: 'Kéo rướn quá đà, sớm chỉnh mạnh theo nhóm semiconductor.' }, chip('Tránh', 'tranh')),
+      Object.assign({ ticker: 'AVGO', zone: 'Có thể test 75', note: 'Ngòi nổ của chuỗi bong bóng AI — đứng ngoài hoàn toàn.' }, chip('Tránh', 'tranh'))
+    ];
+
+    const vnTickers = [
+      Object.assign({ ticker: 'VCB', zone: '—', note: 'Trụ cột danh mục, không thay đổi.' }, chip('Giữ', 'giu')),
+      Object.assign({ ticker: 'BID', zone: '—', note: 'Giữ nguyên cùng nhóm bank trụ.' }, chip('Giữ', 'giu')),
+      Object.assign({ ticker: 'TCB', zone: 'Hòa vốn / lãi nhẹ', note: 'Có thể bớt hoặc giữ nguyên, không ảnh hưởng.' }, chip('Giữ', 'giu')),
+      Object.assign({ ticker: 'HDB', zone: '—', note: 'Còn câu chuyện niêm yết chứng khoán HDBank.' }, chip('Giữ', 'giu')),
+      Object.assign({ ticker: 'SCS', zone: 'Vùng tích lũy', note: '~15% tài khoản — giữ ăn cổ tức; nhịp giảm là test spring.' }, chip('Giữ', 'giu')),
+      Object.assign({ ticker: 'DPM · DCM', zone: 'Vùng thấp', note: 'Phân bón hưởng lợi mưa nhiều; đang giữ 1/2 vị thế.' }, chip('Giữ ½', 'giu')),
+      Object.assign({ ticker: 'TCX', zone: 'Vùng nén tím', note: 'Kỳ vọng vào VN30 tháng 1 năm sau — cần niềm tin giữ.' }, chip('Giữ', 'giu')),
+      Object.assign({ ticker: 'NLG', zone: 'Bán cả vùng đáy', note: 'Bán để huy động tiền mặt lên 50%.' }, chip('Bán', 'ban')),
+      Object.assign({ ticker: 'CTD', zone: 'Lỗ nhẹ 5–7%', note: 'Đổi từ "cầm" tuần trước sang bán huy động tiền.' }, chip('Bán', 'ban')),
+      Object.assign({ ticker: 'SSI · MBS', zone: '—', note: 'Không xấu, nhưng cắt để tăng tiền cho an toàn.' }, chip('Bán', 'ban')),
+      Object.assign({ ticker: 'POW', zone: 'Hòa vốn', note: 'Rời toàn bộ nhóm năng lượng để huy động tiền.' }, chip('Bán', 'ban')),
+      Object.assign({ ticker: 'FPT', zone: 'Vùng phân phối', note: 'Chưa có hướng sáng với AI; nhóm cầm hàng đang thoát.' }, chip('Tránh', 'tranh'))
+    ];
+
+    const historyItems = [
+      { date: '15/06/2026', type: 'Post hội viên · 5:15 sáng', typeBg: 'oklch(0.95 0.02 235)', typeColor: BRAND,
+        title: 'Iran–Mỹ Thỏa Thuận Hòa Bình Ký 19/6 — Thị Trường Phản Ứng',
+        summary: 'Sau 7.749 ngày, Iran–Mỹ xác nhận ký 19/6 tại Thụy Sĩ. Vàng tăng, dầu giảm đúng kỳ vọng. Futures Mỹ xanh nhưng tin đã phản ánh vào giá. BTC vẫn downtrend — chờ 68–70k short lại. VN: áp lực dễ thở hơn, giữ bank, chờ tín hiệu tỷ giá/lãi suất.' },
+      { date: '13/06/2026', type: 'Video hội viên · Tập 32 · Tuần 24', typeBg: 'oklch(0.95 0.04 27)', typeColor: 'oklch(0.46 0.15 27)',
+        title: 'Mua Vàng Được Chưa? CK Mỹ/Hàn/Nhật/Việt Tuần 24',
+        summary: 'Vàng vùng hiện tại mua được (nếu đã bán cao); limit short BTC tại 68.570 → kịch bản về 42k; SpaceX IPO ảo (P/S 96x) — CK Mỹ chỉnh đến giữa T7; short Intel, AMD, Tesla 440; VN 50/50 giữ nguyên — chờ mùa xuân 2027.' },
+      { date: '12/06/2026', type: 'Post hội viên', typeBg: 'oklch(0.95 0.02 235)', typeColor: BRAND,
+        title: 'Chuyện chứng thế giới hôm qua — Vàng, Bitcoin',
+        summary: 'Cảnh báo thao túng tin tức (Iran) trước IPO SpaceX 135 USD/cp; nhóm semiconductor (MU, SNDK, INTC) sớm chỉnh mạnh; vàng hồi quanh MA200, nghiêng kịch bản 3.900; BTC chờ nhịp chỉnh về 42–45k; quan điểm chứng Việt không đổi.' },
+      { date: '08/06/2026', type: 'Video hội viên · Tập 31 · Tuần 23', typeBg: 'oklch(0.95 0.04 27)', typeColor: 'oklch(0.46 0.15 27)',
+        title: 'Chứng khoán, Dầu, Vàng, Bitcoin — QUAN TRỌNG!',
+        summary: 'Kịch bản Black Monday từ Hàn–Nhật; Nasdaq chân 1 ~27.000, hồi 28.600 rồi chân sâu hơn 25.000; danh sách hành động cổ phiếu Mỹ (NVDA 189, INTC về 50, ADS mua 155…); vàng đợi 3.900–4.000, bạc 55; ai cầm hàng nên chốt.' },
+      { date: '01/06/2026', type: 'Video hội viên · Tập 30 · Tuần 22', typeBg: 'oklch(0.96 0.05 85)', typeColor: 'oklch(0.5 0.1 70)',
+        title: 'Chứng khoán, Dầu, Vàng, Bitcoin — PHẢI THEO DÕI',
+        summary: 'Vĩ mô đổi chiều (minh bạch tỷ giá, Section 301) → nâng tiền mặt lên 50%; giữ bank (VCB, BID, TCB, HDB) + SCS + phân bón + TCX; bán NLG, CTD, SSI/MBS và toàn bộ nhóm năng lượng; BTC cắt lỗ 74.5k, vùng 71.8k là then chốt.' }
+    ];
+
+    const RED = 'oklch(0.5 0.16 27)';
+    const SSIG = {
+      down: { sigBg: 'oklch(0.95 0.04 27)', sigColor: 'oklch(0.46 0.15 27)' },
+      warn: { sigBg: 'oklch(0.96 0.05 85)', sigColor: 'oklch(0.5 0.1 70)' },
+      wait: { sigBg: '#EFEEE9', sigColor: '#5F5E57' },
+      up:   { sigBg: 'oklch(0.95 0.04 150)', sigColor: 'oklch(0.42 0.1 150)' }
+    };
+
+    const UPDATES = [
+      { date: '15/06', tab: 'Post · 5:15 sáng', typeLabel: 'Post hội viên', typeBg: 'oklch(0.95 0.02 235)', typeColor: BRAND,
+        title: 'Iran–Mỹ Thỏa Thuận Hòa Bình Ký 19/6 — Thị Trường Phản Ứng',
+        keyCalls: [
+          { tag: 'Iran–Mỹ', value: 'Ký 19/6 Thụy Sĩ', note: 'Trump + Thủ tướng Pakistan xác nhận. 7.749 ngày "sắp có" — lần này có vẻ thật. Nhưng đã phản ánh vào giá từ lâu.', accent: '#5F5E57' },
+          { tag: 'Vàng / Dầu', value: 'Vàng ↑ · Dầu ↓', note: 'Đúng kỳ vọng: hòa bình → dầu giảm, USD yếu → vàng tăng. Không thay đổi thesis dài hạn.', accent: '#5F5E57' },
+          { tag: 'Bitcoin', value: 'Vẫn downtrend', note: 'Hòa bình Iran không cứu BTC. Chờ hồi 68–70k để short lại.', accent: RED },
+          { tag: 'CK Việt', value: 'Dễ thở hơn', note: 'Dầu giảm → lạm phát nhập khẩu giảm → áp lực tỷ giá VND bớt. Giữ bank, chờ tín hiệu tốt mua thêm.', accent: 'oklch(0.4 0.08 235)' }
+        ],
+        sections: [
+          Object.assign({ title: 'Địa chính trị — Iran–Mỹ ký 19/6', sigLabel: 'Sự kiện lớn — đã phản ánh vào giá',
+            para: 'Sau 7.749 ngày liên tục "sắp có thỏa thuận", Trump và Thủ tướng Pakistan xác nhận Iran–Mỹ ký hòa bình ngày 19/6 tại Thụy Sĩ. Từ tháng 4 đến nay, mỗi khi CK đỏ ông Trump đều tung tin "sắp ký" — thị trường đã hấp thụ tin này nhiều lần. Kỳ vọng đã ăn vào giá phần lớn rồi.',
+            bullets: ['Dầu giảm đúng kỳ vọng — xác nhận thesis dầu về 77–80 USD.', 'Vàng tăng do USD yếu — không phải tín hiệu mới về cung cầu.', 'Futures CK Mỹ xanh điểm — không chase; khả năng đã phản ánh vào giá.', 'Theo dõi 19/6: ký thật → dầu tiếp tục giảm; đổ vỡ → dầu bật lại.'] }, SSIG.wait),
+          Object.assign({ title: 'Bitcoin', sigLabel: 'Downtrend — chờ 68–70k short lại',
+            para: 'Hòa bình Iran không thay đổi cấu trúc kỹ thuật BTC. Vẫn downtrend từ đỉnh 125k. Chờ hồi kỹ thuật lên 68.000–70.000 rồi short lại, mục tiêu ~42k.',
+            levels: 'Vùng short: 68.000–70.000 · mục tiêu: ~42.000' }, SSIG.down),
+          Object.assign({ title: 'Chứng khoán Việt Nam', sigLabel: 'Áp lực dễ thở hơn — giữ nguyên',
+            para: 'Hòa bình Iran + dầu giảm → lạm phát nhập khẩu giảm → áp lực tỷ giá VND bớt dần → tích cực cho CK VN dài hạn. Không action vội — tiếp tục nắm chặt bank chiến lược, chờ tín hiệu tỷ giá và lãi suất khả quan hơn mới mua thêm.',
+            bullets: ['Giữ nguyên 50/50 — không thay đổi.', 'Nắm chặt: VCB, BID, TCB, HDB, EB, BVB.', 'Tín hiệu mua thêm: tỷ giá ổn định + lãi suất có dấu hiệu giảm.'] }, SSIG.wait)
+        ] },
+      { date: '13/06', tab: 'Tập 32 · Tuần 24', typeLabel: 'Video hội viên · Tập 32', typeBg: 'oklch(0.95 0.04 27)', typeColor: 'oklch(0.46 0.15 27)',
+        title: 'Mua Vàng Được Chưa? CK Mỹ/Hàn/Nhật/Việt Tuần 24',
+        keyCalls: [
+          { tag: 'Vàng', value: 'Mua được rồi', note: 'Vùng $4.200 mua được nếu đã bán cao. Chênh 13–14tr/lượng nhưng cứ mua lại phần đã bán. Dài hạn còn 1 chân về ~$3.300.', accent: '#5F5E57' },
+          { tag: 'Bitcoin', value: 'Short 68,5–70k', note: 'Limit short 68.570. Elliott chân 5 → ~42k. Clarity Act 4/7 — BTC thành mã CK Mỹ chính thức.', accent: RED },
+          { tag: 'CK Mỹ', value: 'Chỉnh T7', note: 'SpaceX P/S 96x — ảo. Nasdaq chỉnh đến giữa T7; short Intel, AMD, Tesla 440.', accent: RED },
+          { tag: 'CK Việt', value: '50/50 giữ', note: 'Không action. Chờ mùa xuân 2027. TCX + VPX + bank + phân bón.', accent: 'oklch(0.4 0.08 235)' }
+        ],
+        sections: [
+          Object.assign({ title: 'Vàng & Dầu', sigLabel: 'Mua được — còn 1 chân rủi ro',
+            para: 'Vàng ~$4.230, chênh trong nước 13–14 triệu/lượng (phi lý). Đây là chân 2; có thể còn chân 3 về ~$3.300 (125 triệu/lượng VN). Nhưng nếu đã bán vùng cao trước → mua lại phần đã bán ở đây được. Vàng tài khoản: mua, đợi hồi về $4.000+ rồi chốt. Dầu về 79–80 không cần quan tâm lý do.',
+            bullets: ['Chênh mục tiêu tối ưu ≤ 7 triệu/lượng, hiện 14 triệu là chưa ngon — nhưng dài hạn vẫn mua được.', 'Bạc về ~55 USD/oz theo vàng.', 'Dầu Brent test 79–80 — thỏa thuận Iran có hay không cũng vậy.'] }, SSIG.wait),
+          Object.assign({ title: 'Bitcoin & Crypto', sigLabel: 'Short 68,5–70k — kịch bản 42k',
+            para: 'BTC đang ở chân 3 Elliott từ đỉnh 125k. Chờ hồi kỹ thuật lên 68.500–70.000 rồi short. Clarity Act dự kiến thông qua 4/7 — crypto chính thức hóa vào hệ thống Petrodollar. BTC, ETH, XRP chỉ là mã giao dịch như CK, không còn là tiền tệ thay thế.',
+            levels: 'Limit short: 68.570 · kịch bản về: ~42.000 · mua dài hạn: vùng 42k' }, SSIG.down),
+          Object.assign({ title: 'Chứng khoán Mỹ', sigLabel: 'Chỉnh đến giữa tháng 7',
+            para: 'SpaceX IPO mở 150→đỉnh 176→đóng 160 USD. P/S 94–96x (Nvidia chỉ 19x, AVGO 24x) — hoàn toàn ảo. Quỹ thụ động phải mua ~$38 tỷ khi SpaceX vào Nasdaq 100 đầu T7; lockup unlock T7 → nguồn cung tăng đột biến. Nasdaq chỉnh đến giữa T7.',
+            bullets: ['Nasdaq short vào 29.600, thêm ở 31.000, cắt lỗ 32.500.', 'Intel: sort + thêm ở 140, cắt lỗ 155 — phân phối Wyckoff.', 'AMD: sort — FA yếu, chỉnh mạnh.', 'Tesla: đợi lên 440 rồi sort.', 'Adidas: giữ, mục tiêu 167–170 → 200 rồi chốt.', 'Apple, Nvidia, Google: không đụng — biến động lớn, khó cầm.'] }, SSIG.down),
+          Object.assign({ title: 'Chứng khoán Việt Nam', sigLabel: 'Mùa đông — 50/50, không action',
+            para: '20–23% cổ phiếu VN đang uptrend, thanh khoản yếu. VN-Index "áo vest bên ngoài áo ba lỗ bên trong" — chỉ VIC/VHM kéo chỉ số. Không action — cầm nguyên bank + phân bón + TCX + VPX. Chờ 2027 khi Fed hạ lãi, vĩ mô dịu.',
+            bullets: ['TCX: mua dần, mục tiêu VN30 T1/2027. Bị dìm 35–36 → mua thêm.', 'VPX (VCK): theo dõi cùng TCX, cùng kỳ vọng VN30.', 'BVBank: niêm yết chính thức T7/2026 — giữ.', 'Bank (VCB, BID, TCB, HDB, EB, BVB): không bán vùng thấp.', 'Phân bón (DPM/DCM): giữ ½ vị thế ~25 — không bán.', 'Novaland: chờ về 11–12 mới mua.'] }, SSIG.wait)
+        ] },
+      { date: '12/06', tab: 'Post hội viên', typeLabel: 'Post hội viên', typeBg: 'oklch(0.95 0.02 235)', typeColor: BRAND,
+        title: 'Chuyện chứng thế giới hôm qua — Vàng, BTC',
+        keyCalls: [
+          { tag: 'CK Mỹ', value: 'Semis ↓', note: 'MU, SNDK, INTC kéo rướn — sớm chỉnh mạnh theo NVDA, AAPL, GOOG.', accent: RED },
+          { tag: 'Vàng', value: '4.050 → 3.900', note: 'Hồi quanh MA200; vẫn nghiêng kịch bản về ~3.900.', accent: '#5F5E57' },
+          { tag: 'Bitcoin', value: '42–45k', note: 'Hồi kỹ thuật tạo nền rồi sẽ có cú chỉnh tiếp theo.', accent: RED },
+          { tag: 'CK Việt', value: 'Không đổi', note: 'Giữ nguyên quan điểm và cơ cấu danh mục.', accent: 'oklch(0.4 0.08 235)' }
+        ],
+        sections: [
+          Object.assign({ title: 'Chứng khoán Mỹ', sigLabel: 'Giảm — cảnh giác thao túng tin tức',
+            para: 'Đêm qua có màn thao túng trắng trợn: tin "thả bom Iran" khiến thị trường bán tháo, 3 tiếng sau lại tin "đàm phán tốt đẹp, đã gửi MOU". Mục đích: giữ nhà đầu tư cá nhân hưng phấn cho IPO SpaceX hôm nay — giá 135 USD/cp, định giá ~1.800 tỷ USD, bán ra thu về 75–80 tỷ.',
+            bullets: ['Nhóm semiconductor (Micron, Sandisk, Intel…) đang kéo rướn — sẽ sớm chỉnh mạnh theo Nvidia, Apple, Google.', 'Chart Nasdaq 100 và S&P 500 đều không bền vững.'] }, SSIG.down),
+          Object.assign({ title: 'Vàng', sigLabel: 'Chờ mua',
+            para: 'Hồi phục ở vùng 4.050, khả năng dao động quanh MA200 một thời gian rồi mới chọn hướng tiếp theo. Vẫn nghiêng về kịch bản về ~3.900; nếu tạo nền thành công ở đây sau 3 tháng thì có thể đi lên.',
+            levels: 'Hồi quanh MA200 ~4.050 · kịch bản chính ~3.900' }, SSIG.wait),
+          Object.assign({ title: 'Bitcoin', sigLabel: 'Giảm',
+            para: 'Đi đúng kỹ thuật: phục hồi kỹ thuật, tạo nền "banana" số 3 rồi sẽ có cú chỉnh tiếp theo. Không short trừ khi kéo tới 68–69k.',
+            levels: 'Vùng tiếp theo: 42–45k · không short dưới 68–69k' }, SSIG.down),
+          Object.assign({ title: 'Chứng khoán Việt Nam', sigLabel: 'Không thay đổi',
+            para: 'Quan điểm với chứng Việt không thay đổi — giữ nguyên cơ cấu như tuần trước: 50% tiền mặt; danh mục bank – SCS – phân bón – TCX.' }, SSIG.wait)
+        ] },
+      { date: '08/06', tab: 'Tập 31 · Tuần 23', typeLabel: 'Video hội viên · Tập 31', typeBg: 'oklch(0.95 0.04 27)', typeColor: 'oklch(0.46 0.15 27)',
+        title: 'Chứng khoán, Dầu, Vàng, Bitcoin — Tuần 23 — QUAN TRỌNG!',
+        keyCalls: [
+          { tag: 'CK Mỹ', value: 'Black Monday?', note: 'Rủi ro phiên đầu tuần lan từ Hàn – Nhật; ai cầm hàng nên chốt.', accent: RED },
+          { tag: 'Hàn / Nhật', value: '−30% / −17%', note: 'Chính phủ Hàn sẵn sàng đánh sập TTCK để bảo vệ đồng won.', accent: RED },
+          { tag: 'Vàng', value: '3.900–4.000', note: 'Vùng mua tích lũy; trong nước đợi chênh về ~7 triệu.', accent: '#5F5E57' },
+          { tag: 'Bitcoin', value: 'test ~50k', note: 'Nếu Black Monday sẽ rút chân nhanh; short 1/3, cắt lỗ 69k.', accent: RED }
+        ],
+        sections: [
+          Object.assign({ title: 'Bối cảnh vĩ mô & địa chính trị', sigLabel: 'Rủi ro cao',
+            bullets: macroBullets.map(m => m.text) }, SSIG.down),
+          Object.assign({ title: 'Chứng khoán Mỹ', sigLabel: 'Giảm — chu kỳ chỉnh mới bắt đầu',
+            para: 'Kịch bản "Black Monday" nếu Hàn Quốc hoảng loạn phiên đầu tuần. Nasdaq dự kiến tạo chân đầu tiên quanh 27.000, hồi về 28.600 rồi có chân sâu hơn test 25.000; S&P 500 trường hợp xấu test 7.000. VIX tạo đáy — dễ bật mạnh. Ai đang cầm hàng nên chốt, chưa vội bắt đáy.',
+            tickers: usTickers }, SSIG.down),
+          Object.assign({ title: 'Vàng & Bạc', sigLabel: 'Chờ mua',
+            para: 'Vàng sớm muộn quay về vùng 3.900–4.000 — mức tích lũy hợp lý sau đà tăng từ 2023. Trong nước chênh ~20 triệu/lượng, chiều mua–bán chênh 4 triệu: chưa mua; đợi chênh về ~7 triệu. Nếu Black Monday, vàng và mọi tài sản đều bị bán để gom thanh khoản cho IPO SpaceX. Bạc về vùng 55 thì tính.',
+            levels: 'Vàng: mua 3.900–4.000 · Bạc: ~55 · chênh mục tiêu ≤ 7tr' }, SSIG.wait),
+          Object.assign({ title: 'Tỷ giá & Vĩ mô Việt Nam', sigLabel: 'Áp lực',
+            para: 'Mỹ ép cam kết minh bạch tỷ giá, điều tra Section 301 (thuế ~12%, hiệu lực tháng 7). Muốn hỗ trợ xuất khẩu phải phá giá VND ~4–5% — kéo theo lạm phát hàng nhập khẩu; lãi suất buộc duy trì cao. Fed ~67% khả năng tăng lãi tháng 7/9.',
+            levels: 'USD/VND 26.100–26.400 · phá giá dự kiến 4–5% · Fed: 67% tăng lãi' }, SSIG.warn)
+        ] },
+      { date: '01/06', tab: 'Tập 30 · Tuần 22', typeLabel: 'Video hội viên · Tập 30', typeBg: 'oklch(0.96 0.05 85)', typeColor: 'oklch(0.5 0.1 70)',
+        title: 'Chứng khoán, Dầu, Vàng, Bitcoin — Tuần 22 — PHẢI THEO DÕI',
+        keyCalls: [
+          { tag: 'Danh mục VN', value: '50% tiền mặt', note: 'Quyết đoán bán bớt — kể cả lỗ 5–7% — để chờ mua giá thấp.', accent: 'oklch(0.55 0.11 70)' },
+          { tag: 'CK Việt', value: '70% downtrend', note: 'VN-Index không phản ánh thị trường (phụ thuộc nhóm Vin).', accent: RED },
+          { tag: 'Vàng', value: '3.900–4.000', note: 'Kiên trì đợi vùng tích lũy; bạc đợi 59–60.', accent: '#5F5E57' },
+          { tag: 'Bitcoin', value: '71.8k then chốt', note: 'Đã cắt lỗ ở 74.5k; gãy 71.8k là gãy nền "banana".', accent: RED }
+        ],
+        sections: [
+          Object.assign({ title: 'Chứng khoán Việt Nam', sigLabel: 'Thận trọng — nâng tiền mặt lên 50%',
+            para: 'VN-Index không phản ánh thị trường (phụ thuộc nhóm Vin); ~70% cổ phiếu đang downtrend, khối ngoại bán ròng ~700 tỷ/phiên. Vĩ mô đổi chiều nên phòng thủ: giữ trụ bank, SCS, phân bón, TCX — bán nhóm còn lại để huy động tiền chờ giá thấp.',
+            tickers: vnTickers }, SSIG.warn),
+          Object.assign({ title: 'Vĩ mô Việt Nam', sigLabel: 'Đổi chiều',
+            bullets: [
+              'Thỏa hiệp minh bạch tỷ giá NHNN – Bộ Tài chính Mỹ: công khai dữ liệu mua ngoại tệ theo chuẩn quốc tế từ 2027 — ít không gian can thiệp tỷ giá hơn.',
+              'Thặng dư thương mại với Mỹ 178,2 tỷ USD (kỷ lục 2025) → bị điều tra Section 301, đưa vào danh sách theo dõi thao túng tiền tệ.',
+              'Tiết kiệm dân Mỹ tụt còn 2,6%, Canada rơi vào suy thoái kỹ thuật, BoK diều hâu — hiệu ứng domino vĩ mô dội ngược về Việt Nam.'
+            ] }, SSIG.warn),
+          Object.assign({ title: 'Vàng & Bạc', sigLabel: 'Chờ mua',
+            para: 'Các ngân hàng trung ương phi-đô-la-hóa sẽ tranh thủ mua khi giá thấp nên vàng khá resilient, nhưng vẫn đợi vùng 3.900–4.000 xây nền mới mua tích lũy (chênh trong nước ~10 triệu). Đã chốt 1/3–1/2 vị thế vàng từ đầu năm. Bạc: nhu cầu bị phá hủy, đợi 59–60.',
+            levels: 'Vàng: 3.900–4.000 · Bạc: 59–60' }, SSIG.wait),
+          Object.assign({ title: 'Bitcoin & Crypto', sigLabel: 'Giảm',
+            para: 'Bị cắt lỗ ở 74.5k (mua 76k kỳ vọng 84k). Vùng 71.8k là then chốt — gãy là gãy nền "banana". Đạo luật Genius/Clarity đã trói crypto vào USD: chỉ còn là một mã trading như 500 mã trên S&P 500, ETF cũng đang rút. Mỗi lần Fed chair thay đổi đều chỉnh mạnh.',
+            levels: 'Then chốt: 71.8k · ETH: chỉ để lướt sóng' }, SSIG.down)
+        ] }
+    ];
+
+    // ── Thuận Capital updates ──────────────────────────────────────────
+    const TC_UPDATES = [
+      { date: '12/06', tab: 'Shorts · 12/06', typeLabel: 'Video công khai', typeBg: 'oklch(0.95 0.04 27)', typeColor: 'oklch(0.46 0.15 27)',
+        title: 'FOMO Không Chỉ Xuất Hiện Trong Bull Market',
+        keyCalls: [
+          { tag: 'Bitcoin', value: 'Mua dưới $60k', note: 'Thuận mua thêm số lượng lớn hơn bình thường khi BTC test dưới 60.000 đô; DCA tiếp tục.', accent: '#5F5E57' },
+          { tag: 'Tâm lý', value: 'FOMO ≠ bull', note: 'FOMO xuất hiện cả khi thị trường giảm — sợ bỏ lỡ đáy. Phân biệt cảm xúc và kỷ luật DCA.', accent: 'oklch(0.55 0.11 70)' }
+        ],
+        sections: [
+          Object.assign({ title: 'Bitcoin & Crypto', sigLabel: 'Tích lũy — DCA tiếp tục',
+            para: 'Thuận đã chốt lời năm ngoái (khi BTC quanh 99.000–100.000 đô), rồi bắt đầu trung bình giá trở lại từ tháng 2. Khi giá test dưới 60.000 đô cuối tuần qua, Thuận mua thêm với số lượng lớn hơn bình thường, sử dụng tiền mặt dự trữ. Quan điểm: không thể biết chắc đỉnh hay đáy — chỉ có thể bán gần đỉnh và mua gần đáy bằng chiến lược trung bình giá.',
+            bullets: [
+              'Không cố bắt đáy chính xác — phân bổ mua tại nhiều mức giá khác nhau để hạ dần giá trung bình.',
+              'Nếu giá tiếp tục giảm, tiếp tục DCA ở mức thấp hơn.',
+              'Đầu tư dài hạn: lòng tin vào đỉnh mới trong tương lai vẫn không thay đổi, dù tâm lý thị trường hiện rất bi quan.',
+              'FOMO trong bear market: cẩn thận tâm lý mua vì sợ bỏ lỡ đáy — cần quản lý kỷ luật.'
+            ],
+            tickers: [
+              Object.assign({ ticker: 'BTC', zone: 'Dưới 60.000', note: 'Vùng hấp dẫn để tích lũy; mua thêm nhiều hơn bình thường khi giá test vùng này.' }, chip('Chờ mua', 'giu'))
+            ]
+          }, SSIG.wait)
+        ]
+      },
+      { date: '11/06', tab: 'Shorts · 11/06', typeLabel: 'Video công khai', typeBg: 'oklch(0.95 0.04 27)', typeColor: 'oklch(0.46 0.15 27)',
+        title: '15 Năm Bitcoin Và Chu Kỳ Chưa Từng Biến Mất',
+        keyCalls: [
+          { tag: 'Bitcoin', value: '−50% từ $126k', note: 'Giảm từ đỉnh 126.000 về ~63.000; lần này nguyên nhân vĩ mô, không có chuỗi phá sản.', accent: RED },
+          { tag: 'Chu kỳ 4 năm', value: 'Chờ T11/2026', note: 'Khả năng chu kỳ 4 năm lặp lại — phục hồi có thể bắt đầu từ tháng 11/2026.', accent: '#5F5E57' },
+          { tag: 'CK Mỹ', value: 'Lập đỉnh mới', note: 'Chứng khoán Mỹ tiếp tục lập đỉnh trong tuần — divergence rõ rệt với crypto.', accent: 'oklch(0.42 0.1 150)' }
+        ],
+        sections: [
+          Object.assign({ title: 'Bitcoin & Crypto', sigLabel: 'Thận trọng — chờ chu kỳ',
+            para: 'Đợt giảm lần này khác 2018/2022: không có chuỗi phá sản sàn (FTX, Luna…), thợ đào chuyển sang AI thay vì phá sản, không có công ty lớn nào sụp đổ. Nguyên nhân xuất phát từ vĩ mô và địa chính trị.',
+            bullets: [
+              'BTC đã giảm ~50% từ đỉnh 126.000 đô — tương đương các đợt điều chỉnh lớn trước (2018: −84%, 2022: −77%).',
+              'Chu kỳ 4 năm: đây là lần thứ ba Thuận Capital nói về chu kỳ này (2018, 2022, và nay). Lần nào nghe cũng "ảo" nhưng đã lặp lại.',
+              'Kịch bản chu kỳ 4 năm: kết thúc đáy quanh T11/2026, rồi bắt đầu chu kỳ tăng mới.',
+              'Thợ đào chuyển sang hỗ trợ AI — thu nhập thêm, không phá sản như 2022.'
+            ],
+            levels: 'BTC: đỉnh 126.000 · hiện tại ~63.000 (−50%) · phục hồi dự kiến: T11/2026'
+          }, SSIG.warn),
+          Object.assign({ title: 'Chứng khoán Mỹ', sigLabel: 'Tăng — divergence với crypto',
+            para: 'Chứng khoán Mỹ tiếp tục lập đỉnh mới trong tuần, dù có điều chỉnh nhẹ — divergence rõ rệt so với crypto. Đây là yếu tố khiến tâm lý nhà đầu tư crypto tệ hơn bình thường.'
+          }, SSIG.up)
+        ]
+      },
+      { date: '06/06', tab: 'Shorts · 06/06', typeLabel: 'Video công khai', typeBg: 'oklch(0.95 0.04 27)', typeColor: 'oklch(0.46 0.15 27)',
+        title: 'Mỗi Khi Ta Có Suy Nghĩ Chắc Chắn Đây Là "Đáy" Rồi',
+        keyCalls: [
+          { tag: 'Bitcoin', value: 'Đáy chưa chắc', note: 'Tín hiệu giống 2018/2022; đáy có thể sâu hơn kỳ vọng — cần chuẩn bị tâm lý.', accent: 'oklch(0.55 0.11 70)' },
+          { tag: 'ETF / Tổ chức', value: 'Đang bán', note: 'ETF, Michael Saylor, công ty lưu trữ Bitcoin đồng loạt bán — áp lực nguồn cung cao.', accent: RED },
+          { tag: 'Bài học 2022', value: '$20k → $15k', note: 'Mọi người nghĩ 20.000 là đáy, nhưng BTC giảm thêm 25% về 15.000 đô.', accent: 'oklch(0.55 0.11 70)' }
+        ],
+        sections: [
+          Object.assign({ title: 'Bitcoin & Crypto', sigLabel: 'Thận trọng — chưa xác định đáy',
+            para: 'Nhìn đâu cũng thấy tín hiệu tiêu cực: công ty crypto bán ra, IPO hoãn vì tình hình quá xấu, ETF bán mạnh, ngay cả Michael Saylor ("never sell") cũng bán. Các công ty đào Bitcoin không chuyển sang AI được thì buộc phải bán để trả chi phí vận hành.',
+            bullets: [
+              'Cẩn thận tâm lý "chắc là đáy rồi": năm 2022, BTC từ 20.000 giảm thêm 25% về 15.000 đô — ai mua 20.000 tưởng đáy lỗ thêm 25.000 trên mỗi 100.000 đầu tư.',
+              'Tín hiệu tiêu cực hiện tại giống hệt 2018 và 2022 về mặt tâm lý — không có gì bất thường nếu nhìn dài hạn.',
+              'Điểm khác biệt tích cực so với 2022: không có chuỗi phá sản, thợ đào chuyển hướng thay vì sụp đổ.',
+              'Đầu tư dài hạn: nếu tin tưởng giá sẽ tăng dài hạn, giảm thêm không sao — chỉ lỗ khi bán.'
+            ],
+            tickers: [
+              Object.assign({ ticker: 'BTC', zone: 'Chưa xác định', note: 'Không thể biết đáy ở đâu; theo dõi tín hiệu và DCA dần — không mua dồn một lần.' }, chip('Theo dõi', 'theodoi'))
+            ]
+          }, SSIG.warn)
+        ]
+      }
+    ];
+
+    const TC_SOURCES = [
+      { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '12/06/2026',
+        title: 'FOMO Không Chỉ Xuất Hiện Trong Bull Market', meta: 'Video công khai · ThuanCapital Shorts' },
+      { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '11/06/2026',
+        title: '15 Năm Bitcoin Và Chu Kỳ Chưa Từng Biến Mất', meta: 'Video công khai · ThuanCapital Shorts' },
+      { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '06/06/2026',
+        title: 'Mỗi Khi Ta Có Suy Nghĩ Chắc Chắn Đây Là "Đáy" Rồi', meta: 'Video công khai · ThuanCapital Shorts' }
+    ];
+
+    // ── Expert metadata map ────────────────────────────────────────────
+    const expertSourcesTP = [
+      { icon: '✎', iconBg: 'oklch(0.95 0.02 235)', iconColor: BRAND, date: '12/06/2026',
+        title: '12/6 — Chuyện chứng thế giới hôm qua, Vàng, BTC', meta: 'Post cộng đồng · chỉ dành cho hội viên' },
+      { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '08/06/2026',
+        title: 'Tập 31 — Chứng khoán, Dầu, Vàng, Bitcoin · Tuần 23 — QUAN TRỌNG!', meta: 'Video hội viên · transcript tự động' },
+      { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '01/06/2026',
+        title: 'Tập 30 — Chứng khoán, Dầu, Vàng, Bitcoin · Tuần 22 — PHẢI THEO DÕI', meta: 'Video hội viên · transcript tự động' }
+    ];
+
+    const EXPERTS = {
+      'thai-pham': {
+        initials: 'TP', name: 'Thái Phạm',
+        bio: 'Nhận định vĩ mô – địa chính trị và hành động danh mục theo tuần: chứng khoán Mỹ, chứng khoán Việt Nam, vàng bạc, dầu và crypto.',
+        sourceChips: ['▶ YouTube hội viên', '✎ Post cộng đồng', 'Tần suất: hàng tuần'],
+        updatedAt: '15/06/2026 · 5:15 sáng', latestSource: 'Post hội viên',
+        gaugeTitle: 'Tỷ lệ tiền – hàng khuyến nghị (VN)',
+        gaugeBadge: 'Thận trọng', gaugeBadgeBg: 'oklch(0.96 0.05 85)', gaugeBadgeColor: 'oklch(0.5 0.1 70)',
+        gaugeBar1: 50, gaugeBar2: 50, gaugeLabel1: 'Tiền mặt 50%', gaugeLabel2: 'Cổ phiếu 50%',
+        updates: UPDATES, sources: expertSourcesTP
+      },
+      'thuan-capital': {
+        initials: 'TC', name: 'Thuận Capital',
+        bio: 'Tâm lý đầu tư và quản lý rủi ro trong thị trường crypto; hơn 10 năm kinh nghiệm. Focus: Bitcoin & Crypto.',
+        sourceChips: ['▶ Video công khai', 'Tần suất: hàng ngày'],
+        updatedAt: '12/06/2026 · 1 giờ trước', latestSource: 'Video công khai',
+        gaugeTitle: 'Phạm vi nhận định',
+        gaugeBadge: 'Crypto', gaugeBadgeBg: 'oklch(0.95 0.02 235)', gaugeBadgeColor: 'oklch(0.42 0.08 235)',
+        gaugeBar1: 100, gaugeBar2: 0, gaugeLabel1: 'Bitcoin & Crypto 100%', gaugeLabel2: '',
+        updates: TC_UPDATES, sources: TC_SOURCES
+      }
+    };
+
+    const expertsList = [
+      {
+        initials: 'TP', name: 'Thái Phạm', sourceLabel: 'YouTube hội viên · Post cộng đồng', timeAgo: '5:15 sáng',
+        typeLabel: 'Post hội viên', typeBg: 'oklch(0.95 0.02 235)', typeColor: BRAND,
+        latestDate: '15/06/2026',
+        latestTitle: 'Iran–Mỹ Thỏa Thuận Hòa Bình Ký 19/6 — Thị Trường Phản Ứng',
+        latestSummary: 'Vàng tăng, dầu giảm đúng kỳ vọng. Futures Mỹ xanh nhưng tin đã phản ánh vào giá. BTC vẫn downtrend — chờ 68–70k short lại. VN áp lực dễ thở hơn, giữ bank.',
+        chips: [
+          { label: 'Iran ✓ ký 19/6',        bg: '#EFEEE9',              color: '#5F5E57' },
+          { label: 'Dầu ↓ về 77–80',        bg: '#EFEEE9',              color: '#5F5E57' },
+          { label: 'BTC ↓ chờ 68–70k',      bg: 'oklch(0.95 0.04 27)',  color: 'oklch(0.46 0.15 27)' },
+          { label: 'CK Việt ⚠ 50% tiền',   bg: 'oklch(0.96 0.05 85)',  color: 'oklch(0.5 0.1 70)' }
+        ],
+        onClick: () => this.go('expert', { expertId: 'thai-pham' })
+      },
+      {
+        initials: 'TC', name: 'Thuận Capital', sourceLabel: 'YouTube · Video công khai', timeAgo: '1 giờ trước',
+        typeLabel: 'Video công khai', typeBg: 'oklch(0.95 0.04 27)', typeColor: 'oklch(0.46 0.15 27)',
+        latestDate: '12/06/2026',
+        latestTitle: 'FOMO Không Chỉ Xuất Hiện Trong Bull Market',
+        latestSummary: 'Thuận mua thêm BTC khi giá test dưới 60.000 đô; chiến lược DCA tiếp tục — không cố bắt đáy. FOMO xuất hiện cả khi thị trường giảm.',
+        chips: [
+          { label: 'BTC ⚠ Thận trọng',      bg: 'oklch(0.96 0.05 85)',  color: 'oklch(0.5 0.1 70)' },
+          { label: 'Chu kỳ ◷ T11/2026',     bg: '#EFEEE9',              color: '#5F5E57' },
+          { label: 'DCA ◷ dưới $60k',        bg: '#EFEEE9',              color: '#5F5E57' }
+        ],
+        onClick: () => this.go('expert', { expertId: 'thuan-capital' })
+      }
+    ];
+
+    const curExpert = EXPERTS[s.expertId] || EXPERTS['thai-pham'];
+    const curUpdates = curExpert.updates;
+
+    const srcDefs = ['Video công khai', 'Transcript hội viên', 'Post cộng đồng'];
+    const srcChips = srcDefs.map((label, i) => ({
+      label, bg: s.srcType === i ? 'oklch(0.95 0.02 235)' : '#FFFFFF',
+      color: s.srcType === i ? BRAND : '#6E6D66', border: s.srcType === i ? BRAND : '#DDDCD5',
+      onClick: () => this.setState({ srcType: i })
+    }));
+
+    return {
+      showLogin: !s.logged, showApp: s.logged,
+      isDashboard: s.screen === 'dashboard', isExpertsList: s.screen === 'experts-list',
+      isExpert: s.screen === 'expert',
+      isHistory: s.screen === 'history', isAdmin: s.screen === 'admin',
+      pwError: s.pwError, pwRef: this.pwRef, nameRef: this.nameRef, channelRef: this.channelRef,
+      doLogin: () => this.login(),
+      pwKey: (e) => { if (e.key === 'Enter') this.login(); },
+      doLogout: () => { try { localStorage.setItem('hdt_auth', '0'); } catch (e) {} this.setState({ logged: false }); },
+      goDashboard: () => this.go('dashboard'),
+      goExpert: () => this.go('expert', { expertId: 'thai-pham' }),
+      goThuanCapital: () => this.go('expert', { expertId: 'thuan-capital' }),
+      goAdmin: () => this.go('admin'),
+      goHistory: () => this.go('history'),
+      navItems, pulse, assetCards, macroBullets, usTickers, vnTickers, historyItems, srcChips, expertsList,
+      // Expert page vars
+      expertInitials: curExpert.initials,
+      expertName: curExpert.name,
+      expertBio: curExpert.bio,
+      expertSourceChips: curExpert.sourceChips.map(label => ({ label })),
+      expertUpdatedAt: curExpert.updatedAt,
+      expertLatestSource: curExpert.latestSource,
+      gaugeTitle: curExpert.gaugeTitle,
+      gaugeBadge: curExpert.gaugeBadge,
+      gaugeBadgeBg: curExpert.gaugeBadgeBg,
+      gaugeBadgeColor: curExpert.gaugeBadgeColor,
+      gaugeBar1: curExpert.gaugeBar1,
+      gaugeBar2: curExpert.gaugeBar2,
+      gaugeLabel1: curExpert.gaugeLabel1,
+      gaugeLabel2: curExpert.gaugeLabel2,
+      expertSources: curExpert.sources || [],
+      updateTabs: curUpdates.map((u, i) => ({
+        date: u.date, label: u.tab,
+        border: s.updIdx === i ? BRAND : '#E7E6E1',
+        bg: s.updIdx === i ? 'oklch(0.95 0.02 235)' : '#FFFFFF',
+        color: s.updIdx === i ? BRAND : '#21211D',
+        sub: s.updIdx === i ? '#6E6D66' : '#9B9A92',
+        onClick: () => this.setState({ updIdx: i })
+      })),
+      updType: curUpdates[s.updIdx].typeLabel,
+      updTypeBg: curUpdates[s.updIdx].typeBg,
+      updTypeColor: curUpdates[s.updIdx].typeColor,
+      updTitle: curUpdates[s.updIdx].title,
+      keyCalls: curUpdates[s.updIdx].keyCalls,
+      updSections: curUpdates[s.updIdx].sections.map(sec => Object.assign({}, sec, {
+        hasPara: !!sec.para, para: sec.para || '',
+        bullets: (sec.bullets || []).map(t => ({ text: t })),
+        hasTickers: !!(sec.tickers && sec.tickers.length),
+        tickers: sec.tickers || [],
+        hasLevels: !!sec.levels, levels: sec.levels || ''
+      })),
+      addedExperts: s.added,
+      addExpert: () => {
+        const name = ((this.nameRef.current && this.nameRef.current.value) || '').trim() || 'Chuyên gia mới';
+        const channel = ((this.channelRef.current && this.channelRef.current.value) || '').trim() || 'youtube.com/@kenh';
+        const initials = name.split(/\s+/).filter(Boolean).slice(-2).map(w => w[0].toUpperCase()).join('');
+        const srcLabel = srcDefs[s.srcType];
+        this.setState({ added: s.added.concat([{ name, channel, initials, srcLabel }]) });
+        if (this.nameRef.current) this.nameRef.current.value = '';
+        if (this.channelRef.current) this.channelRef.current.value = '';
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>

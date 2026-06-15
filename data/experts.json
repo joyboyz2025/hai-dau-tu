@@ -1,0 +1,26 @@
+{
+  "experts": [
+    {
+      "id": "thuan-capital",
+      "name": "Thuận Capital",
+      "initials": "TC",
+      "channel": "youtube.com/c/ThuanCapitalAnalytics",
+      "sources": ["video"],
+      "bio": "Tâm lý đầu tư và quản lý rủi ro trong thị trường crypto; hơn 10 năm kinh nghiệm.",
+      "cadence": "hàng ngày",
+      "active": true,
+      "updatedAt": "2026-06-12"
+    }
+  ],
+  "assetCards": [
+    {
+      "name": "Bitcoin & Crypto",
+      "signal": "warn",
+      "signalLabel": "Thận trọng",
+      "summary": "BTC giảm ~50% từ đỉnh 126.000 đô, nguyên nhân vĩ mô — khác 2022 (không có chuỗi phá sản). Chu kỳ 4 năm vẫn còn khả năng; phục hồi có thể chờ đến T11/2026. Khuyến nghị DCA thay vì bắt đáy một lần.",
+      "levels": "BTC: mua dưới 60.000 · đỉnh 2025: 126.000 · chu kỳ: ~T11/2026",
+      "expertId": "thuan-capital",
+      "date": "12/06"
+    }
+  ]
+}

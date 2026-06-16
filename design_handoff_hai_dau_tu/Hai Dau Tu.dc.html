@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="./support.js"></script>
+<script src="./data.js"></script>
 </head>
 <body>
 <x-dc>
@@ -186,12 +187,12 @@ input::placeholder { color: #A3A29A; }
           <sc-for list="{{ dashExperts }}" as="de" hint-placeholder-count="3">
             <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:14px; padding:20px; display:flex; flex-direction:column; gap:14px; box-shadow:0 1px 2px rgba(20,20,15,0.04);">
               <div style="display:flex; align-items:center; gap:12px;">
-                <sc-if value="{{ de.hasAvatar }}" hint-placeholder-val="{{ false }}">
-                  <img src="{{ de.avatarSrc }}" style="width:46px; height:46px; border-radius:50%; object-fit:cover; flex-shrink:0;">
-                </sc-if>
-                <sc-if value="{{ de.noAvatar }}" hint-placeholder-val="{{ true }}">
-                  <div style="width:46px; height:46px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:17px; font-weight:700; flex-shrink:0;">{{ de.initials }}</div>
-                </sc-if>
+                <div style="position:relative; width:46px; height:46px; flex-shrink:0;">
+                  <div style="position:absolute; inset:0; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:17px; font-weight:700;">{{ de.initials }}</div>
+                  <sc-if value="{{ de.hasAvatar }}" hint-placeholder-val="{{ false }}">
+                    <div style="position:absolute; inset:0; border-radius:50%; background:url({{ de.avatarSrc }}) center/cover;"></div>
+                  </sc-if>
+                </div>
                 <div style="display:flex; flex-direction:column; gap:2px; flex:1;">
                   <div style="font-size:15.5px; font-weight:700;">{{ de.name }}</div>
                   <div style="font-size:12px; color:#6E6D66;">{{ de.sourceLabel }}</div>
@@ -243,12 +244,12 @@ input::placeholder { color: #A3A29A; }
           <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:16px; padding:22px; display:flex; flex-direction:column; gap:14px; box-shadow:0 1px 2px rgba(20,20,15,0.04);">
             <!-- Header -->
             <div style="display:flex; align-items:center; gap:13px;">
-              <sc-if value="{{ ex.hasAvatar }}" hint-placeholder-val="{{ false }}">
-                <img src="{{ ex.avatarSrc }}" style="width:52px; height:52px; border-radius:50%; object-fit:cover; flex-shrink:0;">
-              </sc-if>
-              <sc-if value="{{ ex.noAvatar }}" hint-placeholder-val="{{ true }}">
-                <div style="width:52px; height:52px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:18px; font-weight:700; flex-shrink:0;">{{ ex.initials }}</div>
-              </sc-if>
+              <div style="position:relative; width:52px; height:52px; flex-shrink:0;">
+                <div style="position:absolute; inset:0; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:18px; font-weight:700;">{{ ex.initials }}</div>
+                <sc-if value="{{ ex.hasAvatar }}" hint-placeholder-val="{{ false }}">
+                  <div style="position:absolute; inset:0; border-radius:50%; background:url({{ ex.avatarSrc }}) center/cover;"></div>
+                </sc-if>
+              </div>
               <div style="display:flex; flex-direction:column; gap:3px; flex:1;">
                 <div style="font-size:16px; font-weight:700;">{{ ex.name }}</div>
                 <div style="font-size:12px; color:#6E6D66;">{{ ex.sourceLabel }}</div>
@@ -290,12 +291,12 @@ input::placeholder { color: #A3A29A; }
       <!-- Expert header -->
       <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:16px; padding:26px; display:flex; gap:28px; flex-wrap:wrap; align-items:center; box-shadow:0 1px 2px rgba(20,20,15,0.04);">
         <div style="display:flex; align-items:flex-start; gap:18px; flex:1.4; min-width:300px;">
-          <sc-if value="{{ expertHasAvatar }}" hint-placeholder-val="{{ false }}">
-            <img src="{{ expertAvatarSrc }}" style="width:80px; height:80px; border-radius:50%; object-fit:cover; flex-shrink:0;">
-          </sc-if>
-          <sc-if value="{{ expertNoAvatar }}" hint-placeholder-val="{{ true }}">
-            <div style="width:80px; height:80px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:30px; font-weight:700; flex-shrink:0;">{{ expertInitials }}</div>
-          </sc-if>
+          <div style="position:relative; width:80px; height:80px; flex-shrink:0;">
+            <div style="position:absolute; inset:0; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:30px; font-weight:700;">{{ expertInitials }}</div>
+            <sc-if value="{{ expertHasAvatar }}" hint-placeholder-val="{{ false }}">
+              <div style="position:absolute; inset:0; border-radius:50%; background:url({{ expertAvatarSrc }}) center/cover;"></div>
+            </sc-if>
+          </div>
           <div style="display:flex; flex-direction:column; gap:8px;">
             <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
               <div style="font-size:23px; font-weight:700; letter-spacing:-0.3px;">{{ expertName }}</div>
@@ -597,16 +598,6 @@ class Component extends DCLogic {
       onClick: () => this.go(n.key)
     }));
 
-    const pulse = [
-      { name: 'CK Việt', mark: '↑ Tăng 70%',     color: 'oklch(0.42 0.1 150)' },
-      { name: 'CK Mỹ',   mark: '↓ Chỉnh T7',     color: 'oklch(0.5 0.16 27)' },
-      { name: 'Vàng',    mark: '✓ Mua được',      color: 'oklch(0.42 0.1 150)' },
-      { name: 'Dầu',     mark: '↓ Về 70–80',      color: 'oklch(0.5 0.16 27)' },
-      { name: 'Bitcoin', mark: '↓ Short 68–70k',  color: 'oklch(0.5 0.16 27)' },
-      { name: 'Tỷ giá',  mark: '⚠ Dễ thở hơn',   color: 'oklch(0.55 0.11 70)' },
-      { name: 'BĐS',     mark: '— Đứng ngoài',   color: '#9B9A92' }
-    ];
-
     const RED = 'oklch(0.5 0.16 27)';
     const mkAvatar = (src) => ({ avatarSrc: src, hasAvatar: !!src, noAvatar: !src });
     const SIG = {
@@ -620,8 +611,37 @@ class Component extends DCLogic {
       wait: { sigBg: '#EFEEE9', sigColor: '#5F5E57' },
       up:   { sigBg: 'oklch(0.95 0.04 150)', sigColor: 'oklch(0.42 0.1 150)' }
     };
+    const SOURCE_TYPE = {
+      'member-post':  { typeBg: 'oklch(0.95 0.02 235)', typeColor: BRAND },
+      'public-video': { typeBg: 'oklch(0.95 0.04 27)',  typeColor: 'oklch(0.46 0.15 27)' },
+      'member-video': { typeBg: 'oklch(0.95 0.04 27)',  typeColor: 'oklch(0.46 0.15 27)' }
+    };
+    const CHIP_SIG = {
+      up:   { bg: 'oklch(0.95 0.04 150)', color: 'oklch(0.42 0.1 150)' },
+      down: { bg: 'oklch(0.95 0.04 27)',  color: 'oklch(0.46 0.15 27)' },
+      warn: { bg: 'oklch(0.96 0.05 85)',  color: 'oklch(0.5 0.1 70)'  },
+      wait: { bg: '#EFEEE9',              color: '#5F5E57'             }
+    };
+    const HDT = window.HDT_DATA;
 
-    const assetCards = [
+    const PULSE_COLOR = { up: 'oklch(0.42 0.1 150)', down: 'oklch(0.5 0.16 27)', warn: 'oklch(0.55 0.11 70)', wait: '#9B9A92' };
+    const pulse = HDT.pulse.map(p => ({ name: p.name, mark: p.mark, color: PULSE_COLOR[p.sig] || '#9B9A92' }));
+
+    const assetCards = HDT.assetCards.map(a => {
+      const ex = HDT.experts[a.expertId] || {};
+      return {
+        name: a.name, sigLabel: a.sigLabel, date: a.date, summary: a.summary, levels: a.levels,
+        expertInitials: ex.initials || a.expertId, expertName: ex.name || a.expertId,
+        ...SSIG[a.sig],
+        hasAlt: !!(a.altViews && a.altViews.length),
+        altViews: (a.altViews || []).map(av => {
+          const aex = HDT.experts[av.expertId] || {};
+          return { initials: aex.initials || '', name: aex.name || '', sigLabel: av.sigLabel, note: av.note, ...SSIG[av.sig] };
+        })
+      };
+    });
+    // ── LEGACY PLACEHOLDER (replaced by HDT.assetCards above) ───────────
+    const _UNUSED_assetCards_old = [
       Object.assign({ name: 'Chứng khoán Mỹ', sigLabel: 'Giảm', date: '13/06', expertInitials: 'TP', expertName: 'Thái Phạm',
         summary: 'SpaceX IPO P/S 96x — ảo; Nasdaq chỉnh đến giữa T7. Futures xanh sau tin Iran nhưng đã phản ánh vào giá. Short Intel, AMD; chờ Tesla 440 để sort.',
         levels: 'Nasdaq short 29.600 · thêm 31.000 · cắt lỗ 32.500',
@@ -664,7 +684,7 @@ class Component extends DCLogic {
         ] }, SIG.warn)
     ];
 
-    const recentFeed = [
+    const _rf_old = [
       { expertInitials: 'TP', expertName: 'Thái Phạm', date: '16/06',
         typeBg: 'oklch(0.95 0.02 235)', typeColor: BRAND, typeLabel: 'Post hội viên',
         title: 'TĂNG CỔ PHIẾU LÊN 70% — Chợ Huyện Sắp Có Sức Sống',
@@ -725,7 +745,7 @@ class Component extends DCLogic {
         onClick: () => this.go('expert', { expertId: 'azfin' }) }
     ];
 
-    const dashExperts = [
+    const _de_old = [
       { initials: 'TP', name: 'Thái Phạm', sourceLabel: 'YouTube hội viên · Post cộng đồng', timeAgo: 'Hôm nay',
         ...mkAvatar('/avatars/thai-pham.jpg'),
         summary: 'Tăng cổ phiếu VN lên 70% (tiền còn 30%). Bank tích nền ổn, TCX/CK có sức sống đầu tiên. Đạm/phân sắp về vùng ngon. Dầu 70–80 → tỷ giá dễ thở hơn. CK Mỹ/Hàn/Nhật chỉnh nhưng không ảnh hưởng chợ huyện.',
@@ -757,13 +777,45 @@ class Component extends DCLogic {
         onClick: () => this.go('expert', { expertId: 'thuan-capital' }) }
     ];
 
-    const macroBullets = [
+    // ── Derived from HDT_DATA ─────────────────────────────────────────────────
+    const _allItems = [];
+    Object.entries(HDT.experts).forEach(([id, ex]) => {
+      (ex.updates || []).forEach(u => _allItems.push({ expertId: id, ex, u }));
+    });
+    _allItems.sort((a, b) => b.u.date.localeCompare(a.u.date));
+
+    const historyItems = _allItems.map(({ ex, u }) => {
+      const d = u.date.split('-');
+      return { date: d[2]+'/'+d[1]+'/'+d[0], type: u.typeLabel, ...(SOURCE_TYPE[u.sourceType] || SOURCE_TYPE['public-video']), title: u.title, summary: u.summary || '' };
+    });
+
+    const recentFeed = _allItems.slice(0, 6).map(({ expertId, ex, u }) => ({
+      expertInitials: ex.initials, expertName: ex.name, date: u.dateShort,
+      ...(SOURCE_TYPE[u.sourceType] || SOURCE_TYPE['public-video']),
+      typeLabel: u.typeLabel, title: u.title,
+      chips: (u.feedChips || []).map(c => ({ label: c.label, ...CHIP_SIG[c.sig] })),
+      onClick: () => this.go('expert', { expertId })
+    }));
+
+    const dashExperts = Object.entries(HDT.experts).map(([id, ex]) => {
+      const latest = (ex.updates || [])[0] || {};
+      return {
+        initials: ex.initials, name: ex.name, sourceLabel: ex.sourceLabel, timeAgo: latest.timeAgo || '',
+        ...mkAvatar(ex.avatarSrc),
+        summary: latest.summary || '',
+        chips: (latest.feedChips || []).map(c => ({ label: c.label, ...CHIP_SIG[c.sig] })),
+        onClick: () => this.go('expert', { expertId: id })
+      };
+    });
+
+    const _mb_old = [
       { text: 'Margin nhà đầu tư cá nhân tại Mỹ cao kỷ lục; dòng tiền đòn bẩy Hàn Quốc – Nhật Bản đổ vào cổ phiếu công nghệ Mỹ (hiệu ứng "bà ngoại Hàn Quốc" — rút tiết kiệm, đổi won sang USD mua TQQQ).' },
       { text: 'IPO SpaceX ngày 12/06 (135 USD/cp, định giá ~1.800 tỷ USD) cần hút ~100 tỷ USD thanh khoản — động lực để "đánh xuống rồi kéo lên" toàn thị trường; cảnh giác thao túng bằng tin tức Iran.' },
       { text: 'Hàn – Nhật rủi ro điều chỉnh mạnh: chính phủ Hàn sẵn sàng can thiệp bảo vệ đồng won (nhóm đầu cơ có thể chỉnh 30–40%); Nhật dự kiến chỉnh 15–17%. Nếu Hàn hoảng loạn phiên thứ Hai → Mỹ hoảng theo.' },
       { text: 'Việt Nam: thặng dư 178 tỷ USD với Mỹ (kỷ lục 2025) → bị ép minh bạch tỷ giá, điều tra Section 301; khả năng phá giá VND 4–5%, lãi suất cao kéo dài — bối cảnh vĩ mô mới buộc phòng thủ.' }
     ];
 
+    const macroBullets = _mb_old;
     const usTickers = [
       Object.assign({ ticker: 'NVDA', zone: 'Hỗ trợ ~189', note: 'Hoảng loạn về 189 sẽ có lực bắt đáy, hồi kỹ thuật rồi mới tính tiếp.' }, chip('Theo dõi', 'theodoi')),
       Object.assign({ ticker: 'INTC', zone: 'Hồi → về ~50', note: 'Black Monday về vùng 81 sẽ hồi, nhưng đích quay về vùng 50.' }, chip('Bán', 'ban')),
@@ -790,7 +842,7 @@ class Component extends DCLogic {
       Object.assign({ ticker: 'FPT', zone: 'Vùng phân phối', note: 'Chưa có hướng sáng với AI; nhóm cầm hàng đang thoát.' }, chip('Tránh', 'tranh'))
     ];
 
-    const historyItems = [
+    const _hi_old = [
       { date: '16/06/2026', type: 'Post hội viên', typeBg: 'oklch(0.95 0.02 235)', typeColor: BRAND,
         title: 'TĂNG CỔ PHIẾU LÊN 70% — Chợ Huyện Sắp Có Sức Sống',
         summary: 'Bank tích nền ổn, Trung Đông ổn → nâng cổ phiếu từ 50% lên 70% (tiền còn 30%). TCX/chứng khoán hôm qua thể hiện — có hàng giữ chặt, chưa có mua vào. Đạm/phân sắp về vùng ngon. CK Mỹ/Hàn/Nhật chỉnh không ảnh hưởng chợ huyện.' },
@@ -811,7 +863,7 @@ class Component extends DCLogic {
         summary: 'Vĩ mô đổi chiều (minh bạch tỷ giá, Section 301) → nâng tiền mặt lên 50%; giữ bank (VCB, BID, TCB, HDB) + SCS + phân bón + TCX; bán NLG, CTD, SSI/MBS và toàn bộ nhóm năng lượng; BTC cắt lỗ 74.5k, vùng 71.8k là then chốt.' }
     ];
 
-    const UPDATES = [
+    const _UPDATES_old = [
       { date: '16/06', tab: 'Post · 16/06', typeLabel: 'Post hội viên', typeBg: 'oklch(0.95 0.02 235)', typeColor: BRAND,
         title: 'TĂNG CỔ PHIẾU LÊN 70% — Chợ Huyện Sắp Có Sức Sống',
         keyCalls: [
@@ -944,8 +996,7 @@ class Component extends DCLogic {
         ] }
     ];
 
-    // ── Thuận Capital updates ──────────────────────────────────────────
-    const TC_UPDATES = [
+    const _TC_old = [
       { date: '12/06', tab: 'Shorts · 12/06', typeLabel: 'Video công khai', typeBg: 'oklch(0.95 0.04 27)', typeColor: 'oklch(0.46 0.15 27)',
         title: 'FOMO Không Chỉ Xuất Hiện Trong Bull Market',
         keyCalls: [
@@ -1023,8 +1074,7 @@ class Component extends DCLogic {
         title: 'Mỗi Khi Ta Có Suy Nghĩ Chắc Chắn Đây Là "Đáy" Rồi', meta: 'Video công khai · ThuanCapital Shorts' }
     ];
 
-    // ── AzFin updates ─────────────────────────────────────────────────
-    const AZ_UPDATES = [
+    const _AZ_old = [
       { date: '14/06', tab: 'Video · 14/06', typeLabel: 'Video công khai', typeBg: 'oklch(0.95 0.04 27)', typeColor: 'oklch(0.46 0.15 27)',
         title: 'Nhà Đầu Tư Nước Ngoài Bán Ròng Mạnh: Rủi Ro Hay Cơ Hội?',
         keyCalls: [
@@ -1105,8 +1155,7 @@ class Component extends DCLogic {
         title: '#12: Hành động gì khi thị trường chán nản?', meta: 'Video công khai · Tích sản cổ phiếu AzFin' }
     ];
 
-    // ── Expert metadata map ────────────────────────────────────────────
-    const expertSourcesTP = [
+    const _srcTP_old = [
       { icon: '✎', iconBg: 'oklch(0.95 0.02 235)', iconColor: BRAND, date: '16/06/2026',
         title: '16/6 — TĂNG CỔ PHIẾU LÊN 70% — Chợ Huyện Sắp Có Sức Sống', meta: 'Post cộng đồng · chỉ dành cho hội viên' },
       { icon: '✎', iconBg: 'oklch(0.95 0.02 235)', iconColor: BRAND, date: '15/06/2026',
@@ -1119,43 +1168,46 @@ class Component extends DCLogic {
         title: 'Tập 30 — Chứng khoán, Dầu, Vàng, Bitcoin · Tuần 22 — PHẢI THEO DÕI', meta: 'Video hội viên · transcript tự động' }
     ];
 
-    const EXPERTS = {
-      'thai-pham': {
-        initials: 'TP', name: 'Thái Phạm',
-        avatarSrc: '/avatars/thai-pham.jpg',
-        bio: 'Nhận định vĩ mô – địa chính trị và hành động danh mục theo tuần: chứng khoán Mỹ, chứng khoán Việt Nam, vàng bạc, dầu và crypto.',
-        sourceChips: ['▶ YouTube hội viên', '✎ Post cộng đồng', 'Tần suất: hàng tuần'],
-        updatedAt: '16/06/2026 · Hôm nay', latestSource: 'Post hội viên',
-        gaugeTitle: 'Tỷ lệ tiền – hàng khuyến nghị (VN)',
-        gaugeBadge: 'Tích cực', gaugeBadgeBg: 'oklch(0.95 0.04 150)', gaugeBadgeColor: 'oklch(0.42 0.1 150)',
-        gaugeBar1: 30, gaugeBar2: 70, gaugeLabel1: 'Tiền mặt 30%', gaugeLabel2: 'Cổ phiếu 70%',
-        updates: UPDATES, sources: expertSourcesTP
-      },
-      'thuan-capital': {
-        initials: 'TC', name: 'Thuận Capital',
-        avatarSrc: '/avatars/thuan-capital.png',
-        bio: 'Tâm lý đầu tư và quản lý rủi ro trong thị trường crypto; hơn 10 năm kinh nghiệm. Focus: Bitcoin & Crypto.',
-        sourceChips: ['▶ Video công khai', 'Tần suất: hàng ngày'],
-        updatedAt: '12/06/2026 · 1 giờ trước', latestSource: 'Video công khai',
-        gaugeTitle: 'Phạm vi nhận định',
-        gaugeBadge: 'Crypto', gaugeBadgeBg: 'oklch(0.95 0.02 235)', gaugeBadgeColor: 'oklch(0.42 0.08 235)',
-        gaugeBar1: 100, gaugeBar2: 0, gaugeLabel1: 'Bitcoin & Crypto 100%', gaugeLabel2: '',
-        updates: TC_UPDATES, sources: TC_SOURCES
-      },
-      'azfin': {
-        initials: 'AZ', name: 'AzFin',
-        avatarSrc: '/avatars/azfin.png',
-        bio: 'Đầu tư giá trị dài hạn — tích sản cổ phiếu VN. Phân tích cơ bản, quản lý danh mục kỷ luật, không dùng margin. Cộng đồng 4.000+ nhà đầu tư.',
-        sourceChips: ['▶ Video công khai', 'Tần suất: hàng tuần'],
-        updatedAt: '14/06/2026 · 2 ngày trước', latestSource: 'Video công khai',
-        gaugeTitle: 'Quan điểm thị trường VN',
-        gaugeBadge: 'Cơ hội tốt', gaugeBadgeBg: 'oklch(0.95 0.04 150)', gaugeBadgeColor: 'oklch(0.42 0.1 150)',
-        gaugeBar1: 35, gaugeBar2: 65, gaugeLabel1: 'Phòng thủ 35%', gaugeLabel2: 'Tấn công 65%',
-        updates: AZ_UPDATES, sources: AZ_SOURCES
-      }
-    };
+    const EXPERTS = {};
+    Object.entries(HDT.experts).forEach(([id, ex]) => {
+      const d0 = (ex.updates || [])[0] || {};
+      EXPERTS[id] = {
+        initials: ex.initials, name: ex.name, avatarSrc: ex.avatarSrc || '', bio: ex.bio,
+        sourceChips: ex.sourceChips, updatedAt: HDT.lastUpdated, latestSource: d0.typeLabel || '',
+        gaugeTitle: ex.gauge.title,
+        gaugeBadge: ex.gauge.badge, gaugeBadgeBg: ex.gauge.badgeBg, gaugeBadgeColor: ex.gauge.badgeColor,
+        gaugeBar1: ex.gauge.bar1, gaugeBar2: ex.gauge.bar2, gaugeLabel1: ex.gauge.label1, gaugeLabel2: ex.gauge.label2,
+        updates: (ex.updates || []).map(u => ({
+          date: u.dateShort, tab: u.tab,
+          ...(SOURCE_TYPE[u.sourceType] || SOURCE_TYPE['public-video']),
+          typeLabel: u.typeLabel, title: u.title,
+          keyCalls: (u.keyCalls || []).map(kc => ({ ...kc, accent: (CHIP_SIG[kc.signal] || {}).color || '#21211D' })),
+          sections: (u.sections || []).map(sec => Object.assign({}, sec, {
+            ...SSIG[sec.signal],
+            hasPara: !!sec.para, para: sec.para || '',
+            bullets: (sec.bullets || []).map(t => ({ text: t })),
+            hasTickers: !!(sec.tickers && sec.tickers.length), tickers: (sec.tickers || []),
+            hasLevels: !!sec.levels, levels: sec.levels || ''
+          }))
+        })),
+        sources: ex.sources || []
+      };
+    });
 
-    const expertsList = [
+    const expertsList = Object.entries(HDT.experts).map(([id, ex]) => {
+      const latest = (ex.updates || [])[0] || {};
+      const st = SOURCE_TYPE[latest.sourceType] || SOURCE_TYPE['public-video'];
+      const d = (latest.date || '').split('-');
+      return {
+        initials: ex.initials, name: ex.name, sourceLabel: ex.sourceLabel, timeAgo: latest.timeAgo || '',
+        ...mkAvatar(ex.avatarSrc), ...st, typeLabel: latest.typeLabel || '',
+        latestDate: d.length === 3 ? d[2]+'/'+d[1]+'/'+d[0] : '',
+        latestTitle: latest.title || '', latestSummary: latest.summary || '',
+        chips: (latest.feedChips || []).map(c => ({ label: c.label, ...CHIP_SIG[c.sig] })),
+        onClick: () => this.go('expert', { expertId: id })
+      };
+    });
+    const _el_old = [
       {
         initials: 'TP', name: 'Thái Phạm', sourceLabel: 'YouTube hội viên · Post cộng đồng', timeAgo: 'Hôm nay',
         ...mkAvatar('/avatars/thai-pham.jpg'),
@@ -1228,7 +1280,7 @@ class Component extends DCLogic {
       goAdmin: () => this.go('admin'),
       goHistory: () => this.go('history'),
       goExpertsList: () => this.go('experts-list'),
-      navItems, pulse, assetCards, recentFeed, dashExperts, macroBullets, usTickers, vnTickers, historyItems, srcChips, expertsList,
+      navItems, pulse, assetCards, recentFeed, dashExperts, historyItems, srcChips, expertsList,
       // Expert page vars
       expertInitials: curExpert.initials,
       expertAvatarSrc: curExpert.avatarSrc || '',

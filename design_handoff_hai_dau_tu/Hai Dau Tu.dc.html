@@ -592,10 +592,17 @@ class Component extends DCLogic {
       { name: 'BĐS',     mark: '— Đứng ngoài',   color: '#9B9A92' }
     ];
 
+    const RED = 'oklch(0.5 0.16 27)';
     const SIG = {
       down: { sigBg: 'oklch(0.95 0.04 27)', sigColor: 'oklch(0.46 0.15 27)' },
       warn: { sigBg: 'oklch(0.96 0.05 85)', sigColor: 'oklch(0.5 0.1 70)' },
       wait: { sigBg: '#EFEEE9', sigColor: '#5F5E57' }
+    };
+    const SSIG = {
+      down: { sigBg: 'oklch(0.95 0.04 27)', sigColor: 'oklch(0.46 0.15 27)' },
+      warn: { sigBg: 'oklch(0.96 0.05 85)', sigColor: 'oklch(0.5 0.1 70)' },
+      wait: { sigBg: '#EFEEE9', sigColor: '#5F5E57' },
+      up:   { sigBg: 'oklch(0.95 0.04 150)', sigColor: 'oklch(0.42 0.1 150)' }
     };
 
     const assetCards = [
@@ -784,14 +791,6 @@ class Component extends DCLogic {
         title: 'Chứng khoán, Dầu, Vàng, Bitcoin — PHẢI THEO DÕI',
         summary: 'Vĩ mô đổi chiều (minh bạch tỷ giá, Section 301) → nâng tiền mặt lên 50%; giữ bank (VCB, BID, TCB, HDB) + SCS + phân bón + TCX; bán NLG, CTD, SSI/MBS và toàn bộ nhóm năng lượng; BTC cắt lỗ 74.5k, vùng 71.8k là then chốt.' }
     ];
-
-    const RED = 'oklch(0.5 0.16 27)';
-    const SSIG = {
-      down: { sigBg: 'oklch(0.95 0.04 27)', sigColor: 'oklch(0.46 0.15 27)' },
-      warn: { sigBg: 'oklch(0.96 0.05 85)', sigColor: 'oklch(0.5 0.1 70)' },
-      wait: { sigBg: '#EFEEE9', sigColor: '#5F5E57' },
-      up:   { sigBg: 'oklch(0.95 0.04 150)', sigColor: 'oklch(0.42 0.1 150)' }
-    };
 
     const UPDATES = [
       { date: '16/06', tab: 'Post · 16/06', typeLabel: 'Post hội viên', typeBg: 'oklch(0.95 0.02 235)', typeColor: BRAND,

@@ -75,16 +75,17 @@ input::placeholder { color: #A3A29A; }
 
   <!-- ===================== TỔNG QUAN ===================== -->
   <sc-if value="{{ isDashboard }}" hint-placeholder-val="{{ true }}">
-    <div data-screen-label="Tổng quan" style="max-width:1180px; margin:0 auto; padding:28px 20px 60px; display:flex; flex-direction:column; gap:24px;">
+    <div data-screen-label="Tổng quan" style="max-width:1180px; margin:0 auto; padding:28px 20px 60px; display:flex; flex-direction:column; gap:28px;">
 
+      <!-- Header -->
       <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap;">
         <div style="display:flex; flex-direction:column; gap:4px;">
           <h1 style="margin:0; font-size:24px; font-weight:700; letter-spacing:-0.4px;">Tổng quan thị trường</h1>
-          <div style="font-size:13.5px; color:#6E6D66;">Tổng hợp từ nhận định mới nhất của các chuyên gia</div>
+          <div style="font-size:13.5px; color:#6E6D66;">Tổng hợp từ nhận định mới nhất của 3 chuyên gia</div>
         </div>
         <div style="display:flex; align-items:center; gap:8px; background:#FFFFFF; border:1px solid #E7E6E1; border-radius:999px; padding:7px 14px;">
           <div style="width:8px; height:8px; border-radius:50%; background:oklch(0.52 0.12 150);"></div>
-          <div style="font-size:12.5px; color:#6E6D66;">Cập nhật mới nhất: <span style="font-family:'IBM Plex Mono',monospace; color:#21211D; font-weight:500;">12/06/2026 · 9 giờ trước</span></div>
+          <div style="font-size:12.5px; color:#6E6D66;">Cập nhật mới nhất: <span style="font-family:'IBM Plex Mono',monospace; color:#21211D; font-weight:500;">16/06/2026 · Hôm nay</span></div>
         </div>
       </div>
 
@@ -98,103 +99,113 @@ input::placeholder { color: #A3A29A; }
         </sc-for>
       </div>
 
-      <!-- Asset cards -->
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(310px, 1fr)); gap:14px;">
-        <sc-for list="{{ assetCards }}" as="a" hint-placeholder-count="7">
-          <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:14px; padding:20px; display:flex; flex-direction:column; gap:12px; box-shadow:0 1px 2px rgba(20,20,15,0.04);">
-            <div style="display:flex; align-items:center; justify-content:space-between; gap:10px;">
-              <div style="font-size:15.5px; font-weight:700;">{{ a.name }}</div>
-              <div style="font-size:11.5px; font-weight:700; padding:4px 10px; border-radius:999px; background:{{ a.sigBg }}; color:{{ a.sigColor }}; white-space:nowrap;">{{ a.sigLabel }}</div>
-            </div>
-            <div style="font-size:13.5px; color:#46453F; line-height:1.55; flex:1;">{{ a.summary }}</div>
-            <div style="font-size:12px; font-family:'IBM Plex Mono',monospace; color:#6E6D66; background:#F7F7F4; border-radius:8px; padding:8px 10px;">{{ a.levels }}</div>
-            <div style="display:flex; align-items:center; justify-content:space-between; gap:8px; border-top:1px solid #F0EFEA; padding-top:11px;">
-              <div style="display:flex; align-items:center; gap:7px;">
-                <div style="width:22px; height:22px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:9.5px; font-weight:700;">{{ a.expertInitials }}</div>
-                <div style="font-size:12px; color:#6E6D66;">{{ a.expertName }}</div>
+      <!-- Nhận định mới nhất -->
+      <div style="display:flex; flex-direction:column; gap:14px;">
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+          <h2 style="margin:0; font-size:18px; font-weight:700; letter-spacing:-0.2px;">Nhận định mới nhất</h2>
+          <div onClick="{{ goExpertsList }}" style="font-size:13px; color:oklch(0.42 0.08 235); font-weight:600; cursor:pointer;">Xem tất cả →</div>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); gap:10px;">
+          <sc-for list="{{ recentFeed }}" as="r" hint-placeholder-count="6">
+            <div onClick="{{ r.onClick }}" style="background:#FFFFFF; border:1.5px solid #E7E6E1; border-radius:12px; padding:15px 16px; display:flex; flex-direction:column; gap:10px; cursor:pointer; box-shadow:0 1px 2px rgba(20,20,15,0.03);" style-hover="border-color:oklch(0.6 0.08 235);">
+              <!-- Expert row -->
+              <div style="display:flex; align-items:center; gap:7px; justify-content:space-between; flex-wrap:wrap;">
+                <div style="display:flex; align-items:center; gap:7px;">
+                  <div style="width:24px; height:24px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:9px; font-weight:700; flex-shrink:0;">{{ r.expertInitials }}</div>
+                  <div style="font-size:12.5px; font-weight:600; color:#21211D;">{{ r.expertName }}</div>
+                  <div style="font-size:10.5px; font-weight:700; padding:2px 8px; border-radius:999px; background:{{ r.typeBg }}; color:{{ r.typeColor }};">{{ r.typeLabel }}</div>
+                </div>
+                <div style="font-size:11px; font-family:'IBM Plex Mono',monospace; color:#9B9A92; white-space:nowrap;">{{ r.date }}</div>
               </div>
-              <div style="font-size:11.5px; font-family:'IBM Plex Mono',monospace; color:#9B9A92;">{{ a.date }}</div>
+              <!-- Title -->
+              <div style="font-size:13.5px; font-weight:700; line-height:1.4; color:#21211D;">{{ r.title }}</div>
+              <!-- Chips -->
+              <div style="display:flex; gap:5px; flex-wrap:wrap;">
+                <sc-for list="{{ r.chips }}" as="rc" hint-placeholder-count="0">
+                  <div style="font-size:10.5px; font-weight:700; padding:3px 8px; border-radius:999px; background:{{ rc.bg }}; color:{{ rc.color }};">{{ rc.label }}</div>
+                </sc-for>
+              </div>
             </div>
-          </div>
-        </sc-for>
+          </sc-for>
+        </div>
+      </div>
+
+      <!-- Tóm tắt theo tài sản -->
+      <div style="display:flex; flex-direction:column; gap:14px;">
+        <h2 style="margin:0; font-size:18px; font-weight:700; letter-spacing:-0.2px;">Tóm tắt theo tài sản</h2>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(310px, 1fr)); gap:14px;">
+          <sc-for list="{{ assetCards }}" as="a" hint-placeholder-count="7">
+            <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:14px; padding:20px; display:flex; flex-direction:column; gap:12px; box-shadow:0 1px 2px rgba(20,20,15,0.04);">
+              <!-- Tên + nhãn tín hiệu -->
+              <div style="display:flex; align-items:center; justify-content:space-between; gap:10px;">
+                <div style="font-size:15.5px; font-weight:700;">{{ a.name }}</div>
+                <div style="font-size:11.5px; font-weight:700; padding:4px 10px; border-radius:999px; background:{{ a.sigBg }}; color:{{ a.sigColor }}; white-space:nowrap;">{{ a.sigLabel }}</div>
+              </div>
+              <!-- Mô tả -->
+              <div style="font-size:13.5px; color:#46453F; line-height:1.55; flex:1;">{{ a.summary }}</div>
+              <!-- Mức giá / vùng theo dõi -->
+              <div style="font-size:12px; font-family:'IBM Plex Mono',monospace; color:#6E6D66; background:#F7F7F4; border-radius:8px; padding:8px 10px;">{{ a.levels }}</div>
+              <!-- Chuyên gia chính -->
+              <div style="display:flex; align-items:center; justify-content:space-between; gap:8px; border-top:1px solid #F0EFEA; padding-top:11px;">
+                <div style="display:flex; align-items:center; gap:7px;">
+                  <div style="width:22px; height:22px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:9.5px; font-weight:700;">{{ a.expertInitials }}</div>
+                  <div style="font-size:12px; color:#6E6D66;">{{ a.expertName }}</div>
+                </div>
+                <div style="font-size:11.5px; font-family:'IBM Plex Mono',monospace; color:#9B9A92;">{{ a.date }}</div>
+              </div>
+              <!-- Góc nhìn khác (khi có) -->
+              <sc-if value="{{ a.hasAlt }}" hint-placeholder-val="{{ false }}">
+                <div style="border-top:1px solid #F0EFEA; padding-top:10px; display:flex; flex-direction:column; gap:8px;">
+                  <div style="font-size:10.5px; font-weight:700; color:#9B9A92; text-transform:uppercase; letter-spacing:0.5px;">Góc nhìn khác</div>
+                  <sc-for list="{{ a.altViews }}" as="av" hint-placeholder-count="0">
+                    <div style="display:flex; align-items:flex-start; gap:9px;">
+                      <div style="width:20px; height:20px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:8px; font-weight:700; flex-shrink:0; margin-top:1px;">{{ av.initials }}</div>
+                      <div style="display:flex; flex-direction:column; gap:3px; flex:1;">
+                        <div style="display:flex; align-items:center; gap:7px; flex-wrap:wrap;">
+                          <div style="font-size:11.5px; font-weight:600; color:#21211D;">{{ av.name }}</div>
+                          <div style="font-size:10.5px; font-weight:700; padding:2px 7px; border-radius:999px; background:{{ av.sigBg }}; color:{{ av.sigColor }};">{{ av.sigLabel }}</div>
+                        </div>
+                        <div style="font-size:12px; color:#6E6D66; line-height:1.5;">{{ av.note }}</div>
+                      </div>
+                    </div>
+                  </sc-for>
+                </div>
+              </sc-if>
+            </div>
+          </sc-for>
+        </div>
       </div>
 
       <!-- Chuyên gia -->
-      <div style="display:flex; flex-direction:column; gap:14px; margin-top:8px;">
+      <div style="display:flex; flex-direction:column; gap:14px;">
         <div style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
           <h2 style="margin:0; font-size:18px; font-weight:700; letter-spacing:-0.2px;">Chuyên gia</h2>
           <div onClick="{{ goAdmin }}" style="font-size:13px; color:oklch(0.42 0.08 235); font-weight:600; cursor:pointer;">+ Thêm chuyên gia</div>
         </div>
-
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:14px;">
-          <!-- Thái Phạm -->
-          <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:14px; padding:20px; display:flex; flex-direction:column; gap:14px; box-shadow:0 1px 2px rgba(20,20,15,0.04);">
-            <div style="display:flex; align-items:center; gap:12px;">
-              <div style="width:46px; height:46px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:17px; font-weight:700;">TP</div>
-              <div style="display:flex; flex-direction:column; gap:2px; flex:1;">
-                <div style="font-size:15.5px; font-weight:700;">Thái Phạm</div>
-                <div style="font-size:12px; color:#6E6D66;">YouTube hội viên · Post cộng đồng</div>
+          <sc-for list="{{ dashExperts }}" as="de" hint-placeholder-count="3">
+            <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:14px; padding:20px; display:flex; flex-direction:column; gap:14px; box-shadow:0 1px 2px rgba(20,20,15,0.04);">
+              <div style="display:flex; align-items:center; gap:12px;">
+                <div style="width:46px; height:46px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:17px; font-weight:700;">{{ de.initials }}</div>
+                <div style="display:flex; flex-direction:column; gap:2px; flex:1;">
+                  <div style="font-size:15.5px; font-weight:700;">{{ de.name }}</div>
+                  <div style="font-size:12px; color:#6E6D66;">{{ de.sourceLabel }}</div>
+                </div>
+                <div style="display:flex; align-items:center; gap:5px; background:oklch(0.95 0.04 150); border-radius:999px; padding:4px 10px;">
+                  <div style="width:6px; height:6px; border-radius:50%; background:oklch(0.52 0.12 150);"></div>
+                  <div style="font-size:11px; font-weight:600; color:oklch(0.42 0.1 150);">{{ de.timeAgo }}</div>
+                </div>
               </div>
-              <div style="display:flex; align-items:center; gap:5px; background:oklch(0.95 0.04 150); border-radius:999px; padding:4px 10px;">
-                <div style="width:6px; height:6px; border-radius:50%; background:oklch(0.52 0.12 150);"></div>
-                <div style="font-size:11px; font-weight:600; color:oklch(0.42 0.1 150);">9 giờ trước</div>
+              <div style="font-size:13px; color:#46453F; line-height:1.55;">{{ de.summary }}</div>
+              <div style="display:flex; gap:6px; flex-wrap:wrap;">
+                <sc-for list="{{ de.chips }}" as="dc" hint-placeholder-count="3">
+                  <div style="font-size:11px; font-weight:700; padding:4px 9px; border-radius:999px; background:{{ dc.bg }}; color:{{ dc.color }};">{{ dc.label }}</div>
+                </sc-for>
               </div>
+              <button onClick="{{ de.onClick }}" style="width:100%; padding:11px; border:1px solid oklch(0.42 0.08 235); border-radius:10px; background:#FFFFFF; color:oklch(0.42 0.08 235); font-size:13.5px; font-weight:600; font-family:'Be Vietnam Pro',sans-serif; cursor:pointer;" style-hover="background:oklch(0.97 0.01 235)">Xem nhận định đầy đủ →</button>
             </div>
-            <div style="font-size:13px; color:#46453F; line-height:1.55;">Cảnh báo nhịp chỉnh lớn từ Hàn–Nhật lan sang Mỹ; nâng tiền mặt VN lên 50%; vàng chờ 3.900–4.000; BTC chờ nhịp về 42–45k.</div>
-            <div style="display:flex; gap:6px; flex-wrap:wrap;">
-              <div style="font-size:11px; font-weight:700; padding:4px 9px; border-radius:999px; background:oklch(0.95 0.04 27); color:oklch(0.46 0.15 27);">CK Mỹ ↓</div>
-              <div style="font-size:11px; font-weight:700; padding:4px 9px; border-radius:999px; background:oklch(0.96 0.05 85); color:oklch(0.5 0.1 70);">CK Việt ⚠ 50% tiền</div>
-              <div style="font-size:11px; font-weight:700; padding:4px 9px; border-radius:999px; background:#EFEEE9; color:#5F5E57;">Vàng ◷ chờ mua</div>
-              <div style="font-size:11px; font-weight:700; padding:4px 9px; border-radius:999px; background:oklch(0.95 0.04 27); color:oklch(0.46 0.15 27);">BTC ↓</div>
-            </div>
-            <button onClick="{{ goExpert }}" style="width:100%; padding:11px; border:1px solid oklch(0.42 0.08 235); border-radius:10px; background:#FFFFFF; color:oklch(0.42 0.08 235); font-size:13.5px; font-weight:600; font-family:'Be Vietnam Pro',sans-serif; cursor:pointer;" style-hover="background:oklch(0.97 0.01 235)">Xem nhận định đầy đủ →</button>
-          </div>
-
-          <!-- Thuận Capital -->
-          <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:14px; padding:20px; display:flex; flex-direction:column; gap:14px; box-shadow:0 1px 2px rgba(20,20,15,0.04);">
-            <div style="display:flex; align-items:center; gap:12px;">
-              <div style="width:46px; height:46px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:17px; font-weight:700;">TC</div>
-              <div style="display:flex; flex-direction:column; gap:2px; flex:1;">
-                <div style="font-size:15.5px; font-weight:700;">Thuận Capital</div>
-                <div style="font-size:12px; color:#6E6D66;">YouTube · Video công khai</div>
-              </div>
-              <div style="display:flex; align-items:center; gap:5px; background:oklch(0.95 0.04 150); border-radius:999px; padding:4px 10px;">
-                <div style="width:6px; height:6px; border-radius:50%; background:oklch(0.52 0.12 150);"></div>
-                <div style="font-size:11px; font-weight:600; color:oklch(0.42 0.1 150);">1 giờ trước</div>
-              </div>
-            </div>
-            <div style="font-size:13px; color:#46453F; line-height:1.55;">BTC −50% từ đỉnh 126.000 đô; chu kỳ 4 năm vẫn còn khả năng — chờ T11/2026. Thuận mua thêm khi giá dưới 60.000 đô bằng chiến lược DCA. Không cố bắt đáy một lần.</div>
-            <div style="display:flex; gap:6px; flex-wrap:wrap;">
-              <div style="font-size:11px; font-weight:700; padding:4px 9px; border-radius:999px; background:oklch(0.96 0.05 85); color:oklch(0.5 0.1 70);">BTC ⚠ Thận trọng</div>
-              <div style="font-size:11px; font-weight:700; padding:4px 9px; border-radius:999px; background:#EFEEE9; color:#5F5E57;">Chu kỳ ◷ T11/2026</div>
-              <div style="font-size:11px; font-weight:700; padding:4px 9px; border-radius:999px; background:#EFEEE9; color:#5F5E57;">DCA ◷ dưới $60k</div>
-            </div>
-            <button onClick="{{ goThuanCapital }}" style="width:100%; padding:11px; border:1px solid oklch(0.42 0.08 235); border-radius:10px; background:#FFFFFF; color:oklch(0.42 0.08 235); font-size:13.5px; font-weight:600; font-family:'Be Vietnam Pro',sans-serif; cursor:pointer;" style-hover="background:oklch(0.97 0.01 235)">Xem nhận định đầy đủ →</button>
-          </div>
-
-          <!-- AzFin -->
-          <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:14px; padding:20px; display:flex; flex-direction:column; gap:14px; box-shadow:0 1px 2px rgba(20,20,15,0.04);">
-            <div style="display:flex; align-items:center; gap:12px;">
-              <div style="width:46px; height:46px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:17px; font-weight:700;">AZ</div>
-              <div style="display:flex; flex-direction:column; gap:2px; flex:1;">
-                <div style="font-size:15.5px; font-weight:700;">AzFin</div>
-                <div style="font-size:12px; color:#6E6D66;">YouTube · Video công khai</div>
-              </div>
-              <div style="display:flex; align-items:center; gap:5px; background:oklch(0.95 0.04 150); border-radius:999px; padding:4px 10px;">
-                <div style="width:6px; height:6px; border-radius:50%; background:oklch(0.52 0.12 150);"></div>
-                <div style="font-size:11px; font-weight:600; color:oklch(0.42 0.1 150);">2 ngày trước</div>
-              </div>
-            </div>
-            <div style="font-size:13px; color:#46453F; line-height:1.55;">Khối ngoại bán ròng kỷ lục 26 năm → cơ hội tích lũy, không phải rủi ro. Định giá VN ở percentile 10–15% thấp nhất lịch sử (trừ nhóm Vin). Bank tư nhân lớn và BĐS cơ hội >> rủi ro. Không dùng margin.</div>
-            <div style="display:flex; gap:6px; flex-wrap:wrap;">
-              <div style="font-size:11px; font-weight:700; padding:4px 9px; border-radius:999px; background:oklch(0.95 0.04 150); color:oklch(0.42 0.1 150);">CK Việt ↑ cơ hội</div>
-              <div style="font-size:11px; font-weight:700; padding:4px 9px; border-radius:999px; background:oklch(0.95 0.04 150); color:oklch(0.42 0.1 150);">Bank ↑ rất rẻ</div>
-              <div style="font-size:11px; font-weight:700; padding:4px 9px; border-radius:999px; background:#EFEEE9; color:#5F5E57;">Tích lũy ◷ dần dần</div>
-            </div>
-            <button onClick="{{ goAzFin }}" style="width:100%; padding:11px; border:1px solid oklch(0.42 0.08 235); border-radius:10px; background:#FFFFFF; color:oklch(0.42 0.08 235); font-size:13.5px; font-weight:600; font-family:'Be Vietnam Pro',sans-serif; cursor:pointer;" style-hover="background:oklch(0.97 0.01 235)">Xem nhận định đầy đủ →</button>
-          </div>
-
-          <!-- Added experts -->
+          </sc-for>
+          <!-- Chuyên gia đang chờ dữ liệu -->
           <sc-for list="{{ addedExperts }}" as="x" hint-placeholder-count="0">
             <div style="background:#FFFFFF; border:1px dashed #D8D7D0; border-radius:14px; padding:20px; display:flex; flex-direction:column; gap:14px;">
               <div style="display:flex; align-items:center; gap:12px;">
@@ -588,27 +599,136 @@ class Component extends DCLogic {
     };
 
     const assetCards = [
-      Object.assign({ name: 'Chứng khoán Mỹ', sigLabel: 'Giảm', date: '15/06', expertInitials: 'TP', expertName: 'Thái Phạm',
+      Object.assign({ name: 'Chứng khoán Mỹ', sigLabel: 'Giảm', date: '13/06', expertInitials: 'TP', expertName: 'Thái Phạm',
         summary: 'SpaceX IPO P/S 96x — ảo; Nasdaq chỉnh đến giữa T7. Futures xanh sau tin Iran nhưng đã phản ánh vào giá. Short Intel, AMD; chờ Tesla 440 để sort.',
-        levels: 'Nasdaq short 29.600 · thêm 31.000 · cắt lỗ 32.500' }, SIG.down),
+        levels: 'Nasdaq short 29.600 · thêm 31.000 · cắt lỗ 32.500',
+        hasAlt: true, altViews: [
+          { initials: 'AZ', name: 'AzFin', sigBg: SSIG.down.sigBg, sigColor: SSIG.down.sigColor, sigLabel: 'Gần bong bóng 2000',
+            note: 'CAPE gần mức dotcom. Buffett indicator ~300% GDP. Buffett giữ ~$400 tỷ tiền lỏng — kỷ lục.' }
+        ] }, SIG.down),
       Object.assign({ name: 'Chứng khoán Việt Nam', sigLabel: 'Tích cực', date: '16/06', expertInitials: 'TP', expertName: 'Thái Phạm',
-        summary: 'Nâng tỷ trọng cổ phiếu từ 50% lên 70%. Bank tích nền ổn, TCX/chứng khoán có tín hiệu sức sống. Đạm/phân sắp về vùng mua. CK quốc tế chỉnh không ảnh hưởng chợ huyện.',
-        levels: 'Tiền/Hàng: 30/70 · Mua: bank + TCX · Chờ: DCM/DPM · Giữ: SCS' }, SIG.wait),
-      Object.assign({ name: 'Vàng', sigLabel: 'Mua được', date: '15/06', expertInitials: 'TP', expertName: 'Thái Phạm',
+        summary: 'Nâng tỷ trọng cổ phiếu từ 50% lên 70%. Bank tích nền ổn, TCX/CK có tín hiệu sức sống đầu tiên. Đạm/phân sắp về vùng mua. CK quốc tế chỉnh không ảnh hưởng chợ huyện.',
+        levels: 'Tiền/Hàng: 30/70 · Mua: bank + TCX · Chờ: DCM/DPM · Giữ: SCS',
+        hasAlt: true, altViews: [
+          { initials: 'AZ', name: 'AzFin', sigBg: SSIG.up.sigBg, sigColor: SSIG.up.sigColor, sigLabel: 'Cơ hội tốt',
+            note: 'Bank tư nhân lớn rất rẻ — định giá percentile 10–15% thấp nhất lịch sử 26 năm. Tích lũy dần, không dùng margin.' }
+        ] }, SIG.wait),
+      Object.assign({ name: 'Vàng', sigLabel: 'Mua được', date: '13/06', expertInitials: 'TP', expertName: 'Thái Phạm',
         summary: 'Vùng $4.200 mua được nếu đã bán cao trước. Iran ký 19/6 → vàng tăng ngắn hạn. Dài hạn còn 1 chân rủi ro về ~$3.300. Chênh trong nước 13–14tr/lượng.',
-        levels: 'Mua lại phần đã bán · chênh mục tiêu ≤ 7tr · rủi ro: ~$3.300' }, SIG.wait),
+        levels: 'Mua lại phần đã bán · chênh mục tiêu ≤ 7tr · rủi ro: ~$3.300',
+        hasAlt: false, altViews: [] }, SIG.wait),
       Object.assign({ name: 'Dầu', sigLabel: 'Giảm', date: '15/06', expertInitials: 'TP', expertName: 'Thái Phạm',
-        summary: 'Iran–Mỹ ký hòa bình 19/6 tại Thụy Sĩ — đúng kỳ vọng dầu giảm. Dù có hay không có thỏa thuận thì dầu cũng về vùng 77–80 do giảm tổng cầu toàn cầu.',
-        levels: 'Dầu Brent mục tiêu: 77–80 USD · xác nhận thesis' }, SIG.down),
-      Object.assign({ name: 'Bitcoin & Crypto', sigLabel: 'Giảm', date: '15/06', expertInitials: 'TP', expertName: 'Thái Phạm',
-        summary: 'Vẫn downtrend từ đỉnh 125k. Hòa bình Iran không thay đổi cấu trúc kỹ thuật. Chờ hồi kỹ thuật lên 68–70k để short lại, mục tiêu về ~42k (chân 5 Elliott).',
-        levels: 'Short: 68.000–70.000 · mục tiêu: ~42.000 · Clarity Act: 4/7' }, SIG.down),
+        summary: 'Iran–Mỹ ký hòa bình 19/6 tại Thụy Sĩ — đúng kỳ vọng dầu giảm. Dù có hay không có thỏa thuận thì dầu cũng về vùng 77–80 do giảm tổng cầu toàn cầu. Tích cực cho tỷ giá VND.',
+        levels: 'Dầu Brent mục tiêu: 77–80 USD · xác nhận thesis',
+        hasAlt: false, altViews: [] }, SIG.down),
+      Object.assign({ name: 'Bitcoin & Crypto', sigLabel: 'Giảm', date: '13/06', expertInitials: 'TP', expertName: 'Thái Phạm',
+        summary: 'Vẫn downtrend từ đỉnh 125k. Hòa bình Iran không thay đổi cấu trúc kỹ thuật. Chờ hồi kỹ thuật lên 68–70k để short lại, mục tiêu về ~42k (chân 5 Elliott). Clarity Act 4/7 — BTC thành mã CK thường.',
+        levels: 'Short: 68.000–70.000 · mục tiêu: ~42.000 · Clarity Act: 4/7',
+        hasAlt: true, altViews: [
+          { initials: 'TC', name: 'Thuận Capital', sigBg: SSIG.wait.sigBg, sigColor: SSIG.wait.sigColor, sigLabel: 'DCA tích lũy',
+            note: 'Mua dưới $60k bằng chiến lược DCA. Chu kỳ 4 năm — phục hồi dự kiến T11/2026. Không cố bắt đáy.' }
+        ] }, SIG.down),
       Object.assign({ name: 'Tỷ giá & Vĩ mô VN', sigLabel: 'Dễ thở hơn', date: '15/06', expertInitials: 'TP', expertName: 'Thái Phạm',
-        summary: 'Dầu giảm → lạm phát nhập khẩu giảm → áp lực tỷ giá VND bớt dần. Section 301 vẫn hiệu lực T7 nhưng môi trường vĩ mô bắt đầu cải thiện.',
-        levels: 'USD/VND theo dõi · Fed 67% tăng T7/T9 · dầu giảm tích cực' }, SIG.warn),
-      Object.assign({ name: 'Bất động sản', sigLabel: 'Đứng ngoài', date: '01/06', expertInitials: 'TP', expertName: 'Thái Phạm',
-        summary: 'Đã thoát toàn bộ vị thế cổ phiếu BĐS. Chưa có điểm vào mới. Novaland chờ về 11–12 mới tính mua lại.',
-        levels: 'Vị thế: 0% · NVL mua lại khi về 11–12' }, SIG.wait)
+        summary: 'Dầu giảm → lạm phát nhập khẩu giảm → áp lực tỷ giá VND bớt dần. Section 301 vẫn hiệu lực T7 nhưng môi trường vĩ mô bắt đầu cải thiện. Fed 67% khả năng tăng lãi T7/T9.',
+        levels: 'USD/VND theo dõi · Fed 67% tăng lãi · dầu 70–80 tích cực cho VN',
+        hasAlt: false, altViews: [] }, SIG.warn),
+      Object.assign({ name: 'Bất động sản', sigLabel: 'Thận trọng', date: '14/06', expertInitials: 'AZ', expertName: 'AzFin',
+        summary: 'Cổ phiếu BĐS đang rất rẻ — cơ hội >> rủi ro theo góc nhìn giá trị. HDG định giá rất rẻ dù vướng pháp lý HDG-EVN. Tránh nhóm có rủi ro pháp lý phức tạp.',
+        levels: 'HDG: rất rẻ (chờ pháp lý) · NVL: chờ 11–12 · tránh: BĐS pháp lý xấu',
+        hasAlt: true, altViews: [
+          { initials: 'TP', name: 'Thái Phạm', sigBg: SSIG.wait.sigBg, sigColor: SSIG.wait.sigColor, sigLabel: 'Đứng ngoài',
+            note: 'Đã thoát toàn bộ vị thế cổ phiếu BĐS. NVL chờ về 11–12 mới tính mua lại.' }
+        ] }, SIG.warn)
+    ];
+
+    const recentFeed = [
+      { expertInitials: 'TP', expertName: 'Thái Phạm', date: '16/06',
+        typeBg: 'oklch(0.95 0.02 235)', typeColor: BRAND, typeLabel: 'Post hội viên',
+        title: 'TĂNG CỔ PHIẾU LÊN 70% — Chợ Huyện Sắp Có Sức Sống',
+        chips: [
+          { label: 'CK Việt ↑ 70% CP',     bg: 'oklch(0.95 0.04 150)', color: 'oklch(0.42 0.1 150)' },
+          { label: 'TCX ↑ sức sống',        bg: 'oklch(0.95 0.04 150)', color: 'oklch(0.42 0.1 150)' },
+          { label: 'Đạm/Phân ◷ vùng ngon',  bg: '#EFEEE9',              color: '#5F5E57' },
+          { label: 'BTC ↓ chờ 68–70k',      bg: 'oklch(0.95 0.04 27)',  color: 'oklch(0.46 0.15 27)' }
+        ],
+        onClick: () => this.go('expert', { expertId: 'thai-pham' }) },
+      { expertInitials: 'TP', expertName: 'Thái Phạm', date: '15/06',
+        typeBg: 'oklch(0.95 0.02 235)', typeColor: BRAND, typeLabel: 'Post hội viên · 5:15 sáng',
+        title: 'Iran–Mỹ Thỏa Thuận Hòa Bình Ký 19/6 — Thị Trường Phản Ứng',
+        chips: [
+          { label: 'Vàng ↑ tăng ngắn hạn',  bg: 'oklch(0.95 0.04 150)', color: 'oklch(0.42 0.1 150)' },
+          { label: 'Dầu ↓ đúng dự báo',      bg: 'oklch(0.95 0.04 27)',  color: 'oklch(0.46 0.15 27)' },
+          { label: 'BTC ↓ vẫn downtrend',    bg: 'oklch(0.95 0.04 27)',  color: 'oklch(0.46 0.15 27)' },
+          { label: 'CK Việt ⚠ dễ thở hơn',  bg: 'oklch(0.96 0.05 85)',  color: 'oklch(0.5 0.1 70)' }
+        ],
+        onClick: () => this.go('expert', { expertId: 'thai-pham' }) },
+      { expertInitials: 'AZ', expertName: 'AzFin', date: '14/06',
+        typeBg: 'oklch(0.95 0.04 27)', typeColor: 'oklch(0.46 0.15 27)', typeLabel: 'Video công khai',
+        title: 'Nhà Đầu Tư Nước Ngoài Bán Ròng Mạnh: Rủi Ro Hay Cơ Hội?',
+        chips: [
+          { label: 'CK Việt ↑ cơ hội tốt',  bg: 'oklch(0.95 0.04 150)', color: 'oklch(0.42 0.1 150)' },
+          { label: 'Bank ↑ rất rẻ',           bg: 'oklch(0.95 0.04 150)', color: 'oklch(0.42 0.1 150)' },
+          { label: 'Tích lũy ◷ dần dần',      bg: '#EFEEE9',              color: '#5F5E57' },
+          { label: 'CK Mỹ ↓ bong bóng 2000',  bg: 'oklch(0.95 0.04 27)',  color: 'oklch(0.46 0.15 27)' }
+        ],
+        onClick: () => this.go('expert', { expertId: 'azfin' }) },
+      { expertInitials: 'TP', expertName: 'Thái Phạm', date: '13/06',
+        typeBg: 'oklch(0.95 0.04 27)', typeColor: 'oklch(0.46 0.15 27)', typeLabel: 'Video hội viên · Tập 32',
+        title: 'Mua Vàng Được Chưa? CK Mỹ/Hàn/Nhật/Việt Tuần 24',
+        chips: [
+          { label: 'Vàng ◷ $4.200 mua được', bg: '#EFEEE9',              color: '#5F5E57' },
+          { label: 'BTC ↓ short 68.5k→42k',  bg: 'oklch(0.95 0.04 27)',  color: 'oklch(0.46 0.15 27)' },
+          { label: 'CK Mỹ ↓ chỉnh đến T7',   bg: 'oklch(0.95 0.04 27)',  color: 'oklch(0.46 0.15 27)' },
+          { label: 'CK Việt ◷ 50/50 giữ',    bg: '#EFEEE9',              color: '#5F5E57' }
+        ],
+        onClick: () => this.go('expert', { expertId: 'thai-pham' }) },
+      { expertInitials: 'TC', expertName: 'Thuận Capital', date: '12/06',
+        typeBg: 'oklch(0.95 0.04 27)', typeColor: 'oklch(0.46 0.15 27)', typeLabel: 'Video công khai',
+        title: 'FOMO Không Chỉ Xuất Hiện Trong Bull Market',
+        chips: [
+          { label: 'BTC ◷ DCA dưới $60k',    bg: '#EFEEE9',              color: '#5F5E57' },
+          { label: 'Chu kỳ ◷ T11/2026',       bg: '#EFEEE9',              color: '#5F5E57' },
+          { label: 'FOMO ⚠ cẩn thận tâm lý', bg: 'oklch(0.96 0.05 85)', color: 'oklch(0.5 0.1 70)' }
+        ],
+        onClick: () => this.go('expert', { expertId: 'thuan-capital' }) },
+      { expertInitials: 'AZ', expertName: 'AzFin', date: '11/06',
+        typeBg: 'oklch(0.95 0.04 27)', typeColor: 'oklch(0.46 0.15 27)', typeLabel: 'Podcast · Tích sản #12',
+        title: 'Hành Động Gì Khi Thị Trường Chán Nản?',
+        chips: [
+          { label: 'CK Việt ↑ tích lũy dần',  bg: 'oklch(0.95 0.04 150)', color: 'oklch(0.42 0.1 150)' },
+          { label: 'Phân bổ ◷ không all-in',   bg: '#EFEEE9',              color: '#5F5E57' },
+          { label: 'Margin ✗ không bao giờ',   bg: 'oklch(0.95 0.04 27)',  color: 'oklch(0.46 0.15 27)' }
+        ],
+        onClick: () => this.go('expert', { expertId: 'azfin' }) }
+    ];
+
+    const dashExperts = [
+      { initials: 'TP', name: 'Thái Phạm', sourceLabel: 'YouTube hội viên · Post cộng đồng', timeAgo: 'Hôm nay',
+        summary: 'Tăng cổ phiếu VN lên 70% (tiền còn 30%). Bank tích nền ổn, TCX/CK có sức sống đầu tiên. Đạm/phân sắp về vùng ngon. Dầu 70–80 → tỷ giá dễ thở hơn. CK Mỹ/Hàn/Nhật chỉnh nhưng không ảnh hưởng chợ huyện.',
+        chips: [
+          { label: 'CK Việt ↑ 70% cổ phiếu',    bg: 'oklch(0.95 0.04 150)', color: 'oklch(0.42 0.1 150)' },
+          { label: 'TCX ↑ tín hiệu sức sống',    bg: 'oklch(0.95 0.04 150)', color: 'oklch(0.42 0.1 150)' },
+          { label: 'Đạm/Phân ◷ sắp vùng ngon',   bg: '#EFEEE9',              color: '#5F5E57' },
+          { label: 'BTC ↓ short 68–70k → 42k',   bg: 'oklch(0.95 0.04 27)',  color: 'oklch(0.46 0.15 27)' }
+        ],
+        onClick: () => this.go('expert', { expertId: 'thai-pham' }) },
+      { initials: 'AZ', name: 'AzFin', sourceLabel: 'YouTube · Video công khai', timeAgo: '2 ngày trước',
+        summary: 'Khối ngoại bán ròng kỷ lục 26 năm → cơ hội tích lũy cho nhà đầu tư giá trị. Bank tư nhân lớn rất rẻ. Định giá VN percentile 10–15% thấp nhất lịch sử (trừ nhóm Vin). Nghiêng tấn công nhiều hơn thủ. Không dùng margin.',
+        chips: [
+          { label: 'CK Việt ↑ cơ hội tốt',     bg: 'oklch(0.95 0.04 150)', color: 'oklch(0.42 0.1 150)' },
+          { label: 'Bank ↑ rất rẻ',              bg: 'oklch(0.95 0.04 150)', color: 'oklch(0.42 0.1 150)' },
+          { label: 'Tích lũy ◷ dần dần',         bg: '#EFEEE9',              color: '#5F5E57' },
+          { label: 'CK Mỹ ↓ gần bong bóng',     bg: 'oklch(0.95 0.04 27)',  color: 'oklch(0.46 0.15 27)' }
+        ],
+        onClick: () => this.go('expert', { expertId: 'azfin' }) },
+      { initials: 'TC', name: 'Thuận Capital', sourceLabel: 'YouTube · Video công khai', timeAgo: '4 ngày trước',
+        summary: 'BTC −50% từ đỉnh 126.000 đô. Mua thêm khi giá test dưới 60.000 đô bằng chiến lược DCA — không cố bắt đáy. Chu kỳ 4 năm vẫn còn khả năng lặp lại — phục hồi dự kiến T11/2026.',
+        chips: [
+          { label: 'BTC ◷ DCA dưới $60k',        bg: '#EFEEE9',              color: '#5F5E57' },
+          { label: 'Chu kỳ ◷ T11/2026',           bg: '#EFEEE9',              color: '#5F5E57' },
+          { label: 'FOMO ⚠ cẩn thận tâm lý',     bg: 'oklch(0.96 0.05 85)', color: 'oklch(0.5 0.1 70)' }
+        ],
+        onClick: () => this.go('expert', { expertId: 'thuan-capital' }) }
     ];
 
     const macroBullets = [
@@ -1083,7 +1203,8 @@ class Component extends DCLogic {
       goAzFin: () => this.go('expert', { expertId: 'azfin' }),
       goAdmin: () => this.go('admin'),
       goHistory: () => this.go('history'),
-      navItems, pulse, assetCards, macroBullets, usTickers, vnTickers, historyItems, srcChips, expertsList,
+      goExpertsList: () => this.go('experts-list'),
+      navItems, pulse, assetCards, recentFeed, dashExperts, macroBullets, usTickers, vnTickers, historyItems, srcChips, expertsList,
       // Expert page vars
       expertInitials: curExpert.initials,
       expertName: curExpert.name,

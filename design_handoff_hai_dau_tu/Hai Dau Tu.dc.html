@@ -526,13 +526,13 @@ class Component extends DCLogic {
     }));
 
     const pulse = [
-      { name: 'CK Mỹ',   mark: '↓ Chỉnh T7',    color: 'oklch(0.5 0.16 27)' },
-      { name: 'CK Việt', mark: '⚠ Thận trọng',  color: 'oklch(0.55 0.11 70)' },
-      { name: 'Vàng',    mark: '✓ Mua được',     color: 'oklch(0.42 0.1 150)' },
-      { name: 'Dầu',     mark: '↓ Về 77–80',     color: 'oklch(0.5 0.16 27)' },
-      { name: 'Bitcoin', mark: '↓ Short 68–70k', color: 'oklch(0.5 0.16 27)' },
-      { name: 'Tỷ giá',  mark: '⚠ Dễ thở hơn',  color: 'oklch(0.55 0.11 70)' },
-      { name: 'BĐS',     mark: '— Đứng ngoài',  color: '#9B9A92' }
+      { name: 'CK Việt', mark: '↑ Tăng 70%',     color: 'oklch(0.42 0.1 150)' },
+      { name: 'CK Mỹ',   mark: '↓ Chỉnh T7',     color: 'oklch(0.5 0.16 27)' },
+      { name: 'Vàng',    mark: '✓ Mua được',      color: 'oklch(0.42 0.1 150)' },
+      { name: 'Dầu',     mark: '↓ Về 70–80',      color: 'oklch(0.5 0.16 27)' },
+      { name: 'Bitcoin', mark: '↓ Short 68–70k',  color: 'oklch(0.5 0.16 27)' },
+      { name: 'Tỷ giá',  mark: '⚠ Dễ thở hơn',   color: 'oklch(0.55 0.11 70)' },
+      { name: 'BĐS',     mark: '— Đứng ngoài',   color: '#9B9A92' }
     ];
 
     const SIG = {
@@ -545,9 +545,9 @@ class Component extends DCLogic {
       Object.assign({ name: 'Chứng khoán Mỹ', sigLabel: 'Giảm', date: '15/06', expertInitials: 'TP', expertName: 'Thái Phạm',
         summary: 'SpaceX IPO P/S 96x — ảo; Nasdaq chỉnh đến giữa T7. Futures xanh sau tin Iran nhưng đã phản ánh vào giá. Short Intel, AMD; chờ Tesla 440 để sort.',
         levels: 'Nasdaq short 29.600 · thêm 31.000 · cắt lỗ 32.500' }, SIG.down),
-      Object.assign({ name: 'Chứng khoán Việt Nam', sigLabel: 'Thận trọng', date: '15/06', expertInitials: 'TP', expertName: 'Thái Phạm',
-        summary: 'Áp lực dễ thở hơn sau tin Iran–dầu giảm. Vẫn 50/50, nắm chặt bank chiến lược. Chờ tín hiệu tỷ giá và lãi suất tốt hơn mới mua thêm.',
-        levels: 'Tiền/Hàng: 50/50 · Giữ: VCB BID TCB HDB EB BVB · chờ mua thêm' }, SIG.warn),
+      Object.assign({ name: 'Chứng khoán Việt Nam', sigLabel: 'Tích cực', date: '16/06', expertInitials: 'TP', expertName: 'Thái Phạm',
+        summary: 'Nâng tỷ trọng cổ phiếu từ 50% lên 70%. Bank tích nền ổn, TCX/chứng khoán có tín hiệu sức sống. Đạm/phân sắp về vùng mua. CK quốc tế chỉnh không ảnh hưởng chợ huyện.',
+        levels: 'Tiền/Hàng: 30/70 · Mua: bank + TCX · Chờ: DCM/DPM · Giữ: SCS' }, SIG.wait),
       Object.assign({ name: 'Vàng', sigLabel: 'Mua được', date: '15/06', expertInitials: 'TP', expertName: 'Thái Phạm',
         summary: 'Vùng $4.200 mua được nếu đã bán cao trước. Iran ký 19/6 → vàng tăng ngắn hạn. Dài hạn còn 1 chân rủi ro về ~$3.300. Chênh trong nước 13–14tr/lượng.',
         levels: 'Mua lại phần đã bán · chênh mục tiêu ≤ 7tr · rủi ro: ~$3.300' }, SIG.wait),
@@ -599,6 +599,9 @@ class Component extends DCLogic {
     ];
 
     const historyItems = [
+      { date: '16/06/2026', type: 'Post hội viên', typeBg: 'oklch(0.95 0.02 235)', typeColor: BRAND,
+        title: 'TĂNG CỔ PHIẾU LÊN 70% — Chợ Huyện Sắp Có Sức Sống',
+        summary: 'Bank tích nền ổn, Trung Đông ổn → nâng cổ phiếu từ 50% lên 70% (tiền còn 30%). TCX/chứng khoán hôm qua thể hiện — có hàng giữ chặt, chưa có mua vào. Đạm/phân sắp về vùng ngon. CK Mỹ/Hàn/Nhật chỉnh không ảnh hưởng chợ huyện.' },
       { date: '15/06/2026', type: 'Post hội viên · 5:15 sáng', typeBg: 'oklch(0.95 0.02 235)', typeColor: BRAND,
         title: 'Iran–Mỹ Thỏa Thuận Hòa Bình Ký 19/6 — Thị Trường Phản Ứng',
         summary: 'Sau 7.749 ngày, Iran–Mỹ xác nhận ký 19/6 tại Thụy Sĩ. Vàng tăng, dầu giảm đúng kỳ vọng. Futures Mỹ xanh nhưng tin đã phản ánh vào giá. BTC vẫn downtrend — chờ 68–70k short lại. VN: áp lực dễ thở hơn, giữ bank, chờ tín hiệu tỷ giá/lãi suất.' },
@@ -625,6 +628,28 @@ class Component extends DCLogic {
     };
 
     const UPDATES = [
+      { date: '16/06', tab: 'Post · 16/06', typeLabel: 'Post hội viên', typeBg: 'oklch(0.95 0.02 235)', typeColor: BRAND,
+        title: 'TĂNG CỔ PHIẾU LÊN 70% — Chợ Huyện Sắp Có Sức Sống',
+        keyCalls: [
+          { tag: 'VN Portfolio', value: '70% cổ phiếu ↑', note: 'Từ 50/50 → 70% cổ phiếu / 30% tiền. Bank ổn, Trung Đông ổn — đủ tín hiệu tăng tỷ trọng.', accent: 'oklch(0.42 0.1 150)' },
+          { tag: 'Bank', value: 'Giữ chặt / Mua đủ', note: 'Đã có đủ hàng → cầm chặt. Chưa có → mua đủ vào.', accent: 'oklch(0.42 0.1 150)' },
+          { tag: 'TCX / CK', value: 'Còn sớm, có sức sống', note: 'TCX và nhóm CK hôm qua thể hiện. Có hàng giữ, chưa có mua.', accent: 'oklch(0.42 0.1 150)' },
+          { tag: 'Đạm / Phân', value: 'Sắp về vùng ngon', note: 'Đang giảm thêm — tốt, sắp về vùng mua hấp dẫn. SCS cầm chặt.', accent: '#5F5E57' }
+        ],
+        sections: [
+          Object.assign({ title: 'Hành động danh mục', sigLabel: 'Tích cực — tăng lên 70% cổ phiếu',
+            para: 'Bank tích nền ổn định, Trung Đông có thỏa thuận, dầu về 70–80 đúng dự báo → đủ tín hiệu nâng tỷ trọng. Cổ phiếu tăng từ 50% lên 70%, tiền mặt còn 30%. VN-Index nếu giảm chủ yếu từ VIC/VHM/VRE — không phản ánh thực tế thị trường.',
+            bullets: ['Đã có đủ hàng hội viên → không làm gì, cầm chặt.', 'Chưa có bank hội viên → mua đủ vào.', 'VN-Index giảm từ VIC/VHM/VRE — bỏ qua, không quan trọng.'] }, SSIG.up),
+          Object.assign({ title: 'Ngành Chứng khoán', sigLabel: 'Tín hiệu sớm — có sức sống',
+            para: 'TCX và nhóm chứng khoán hôm qua thể hiện tốt. Còn sớm nhưng đây là tín hiệu đầu tiên đáng chú ý. Có hàng giữ chặt, chưa có thì mua vào.',
+            bullets: ['TCX: giữ chặt hoặc mua nếu chưa có.', 'Nhóm CK (VCI, MBS…): theo dõi xác nhận thêm.'] }, SSIG.up),
+          Object.assign({ title: 'Ngành Sản xuất & Phân bón', sigLabel: 'Chờ vùng ngon — đang về',
+            para: 'Đạm và phân bón tiếp tục giảm — đây là điều tốt, sắp về vùng mua hấp dẫn. SCS cầm chặt. HPG ai kẹt thì cầm — lù lù như xe lu.',
+            bullets: ['DCM / DPM: đang giảm → sắp về vùng ngon, chuẩn bị mua thêm.', 'SCS: cầm chặt, không bán.', 'HPG: cầm nếu kẹt — chưa có catalyst rõ.'] }, SSIG.wait),
+          Object.assign({ title: 'Vĩ mô & CK Quốc tế', sigLabel: 'Mỹ/Hàn/Nhật chỉnh — không ảnh hưởng VN',
+            para: 'CK Mỹ/Hàn/Nhật sẽ chỉnh mạnh nhưng chợ huyện VN đã chỉnh rất sâu từ trước, chán lắm rồi — họ chỉnh thì mình có khi còn tăng. Dầu 70–80 → lạm phát nhập khẩu giảm → tỷ giá VND ổn định hơn → tốt dần lên.',
+            bullets: ['Dầu 70–80 USD → áp lực tỷ giá và lạm phát VN giảm dần.', 'CK quốc tế chỉnh không kéo chợ huyện — VN đã discount sâu rồi.', 'Trung Đông ổn → rủi ro địa chính trị hạ nhiệt toàn cầu.'] }, SSIG.wait)
+        ] },
       { date: '15/06', tab: 'Post · 5:15 sáng', typeLabel: 'Post hội viên', typeBg: 'oklch(0.95 0.02 235)', typeColor: BRAND,
         title: 'Iran–Mỹ Thỏa Thuận Hòa Bình Ký 19/6 — Thị Trường Phản Ứng',
         keyCalls: [
@@ -816,6 +841,10 @@ class Component extends DCLogic {
 
     // ── Expert metadata map ────────────────────────────────────────────
     const expertSourcesTP = [
+      { icon: '✎', iconBg: 'oklch(0.95 0.02 235)', iconColor: BRAND, date: '16/06/2026',
+        title: '16/6 — TĂNG CỔ PHIẾU LÊN 70% — Chợ Huyện Sắp Có Sức Sống', meta: 'Post cộng đồng · chỉ dành cho hội viên' },
+      { icon: '✎', iconBg: 'oklch(0.95 0.02 235)', iconColor: BRAND, date: '15/06/2026',
+        title: '15/6 · 5:15 sáng — Iran–Mỹ Ký 19/6 · Vàng Tăng · Dầu Giảm', meta: 'Post cộng đồng · chỉ dành cho hội viên' },
       { icon: '✎', iconBg: 'oklch(0.95 0.02 235)', iconColor: BRAND, date: '12/06/2026',
         title: '12/6 — Chuyện chứng thế giới hôm qua, Vàng, BTC', meta: 'Post cộng đồng · chỉ dành cho hội viên' },
       { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '08/06/2026',
@@ -829,10 +858,10 @@ class Component extends DCLogic {
         initials: 'TP', name: 'Thái Phạm',
         bio: 'Nhận định vĩ mô – địa chính trị và hành động danh mục theo tuần: chứng khoán Mỹ, chứng khoán Việt Nam, vàng bạc, dầu và crypto.',
         sourceChips: ['▶ YouTube hội viên', '✎ Post cộng đồng', 'Tần suất: hàng tuần'],
-        updatedAt: '15/06/2026 · 5:15 sáng', latestSource: 'Post hội viên',
+        updatedAt: '16/06/2026 · Hôm nay', latestSource: 'Post hội viên',
         gaugeTitle: 'Tỷ lệ tiền – hàng khuyến nghị (VN)',
-        gaugeBadge: 'Thận trọng', gaugeBadgeBg: 'oklch(0.96 0.05 85)', gaugeBadgeColor: 'oklch(0.5 0.1 70)',
-        gaugeBar1: 50, gaugeBar2: 50, gaugeLabel1: 'Tiền mặt 50%', gaugeLabel2: 'Cổ phiếu 50%',
+        gaugeBadge: 'Tích cực', gaugeBadgeBg: 'oklch(0.95 0.04 150)', gaugeBadgeColor: 'oklch(0.42 0.1 150)',
+        gaugeBar1: 30, gaugeBar2: 70, gaugeLabel1: 'Tiền mặt 30%', gaugeLabel2: 'Cổ phiếu 70%',
         updates: UPDATES, sources: expertSourcesTP
       },
       'thuan-capital': {
@@ -849,16 +878,16 @@ class Component extends DCLogic {
 
     const expertsList = [
       {
-        initials: 'TP', name: 'Thái Phạm', sourceLabel: 'YouTube hội viên · Post cộng đồng', timeAgo: '5:15 sáng',
+        initials: 'TP', name: 'Thái Phạm', sourceLabel: 'YouTube hội viên · Post cộng đồng', timeAgo: 'Hôm nay',
         typeLabel: 'Post hội viên', typeBg: 'oklch(0.95 0.02 235)', typeColor: BRAND,
-        latestDate: '15/06/2026',
-        latestTitle: 'Iran–Mỹ Thỏa Thuận Hòa Bình Ký 19/6 — Thị Trường Phản Ứng',
-        latestSummary: 'Vàng tăng, dầu giảm đúng kỳ vọng. Futures Mỹ xanh nhưng tin đã phản ánh vào giá. BTC vẫn downtrend — chờ 68–70k short lại. VN áp lực dễ thở hơn, giữ bank.',
+        latestDate: '16/06/2026',
+        latestTitle: 'TĂNG CỔ PHIẾU LÊN 70% — Chợ Huyện Sắp Có Sức Sống',
+        latestSummary: 'Bank tích nền ổn, Trung Đông ổn → nâng cổ phiếu lên 70%. TCX/chứng khoán thể hiện — có hàng giữ, chưa có mua. Đạm/phân sắp về vùng ngon. CK quốc tế chỉnh không ảnh hưởng chợ huyện.',
         chips: [
-          { label: 'Iran ✓ ký 19/6',        bg: '#EFEEE9',              color: '#5F5E57' },
-          { label: 'Dầu ↓ về 77–80',        bg: '#EFEEE9',              color: '#5F5E57' },
-          { label: 'BTC ↓ chờ 68–70k',      bg: 'oklch(0.95 0.04 27)',  color: 'oklch(0.46 0.15 27)' },
-          { label: 'CK Việt ⚠ 50% tiền',   bg: 'oklch(0.96 0.05 85)',  color: 'oklch(0.5 0.1 70)' }
+          { label: 'CK Việt ↑ 70% cổ phiếu', bg: 'oklch(0.95 0.04 150)', color: 'oklch(0.42 0.1 150)' },
+          { label: 'TCX ↑ có sức sống',       bg: 'oklch(0.95 0.04 150)', color: 'oklch(0.42 0.1 150)' },
+          { label: 'Đạm/Phân ◷ chờ vùng ngon', bg: '#EFEEE9',             color: '#5F5E57' },
+          { label: 'BTC ↓ chờ 68–70k',        bg: 'oklch(0.95 0.04 27)', color: 'oklch(0.46 0.15 27)' }
         ],
         onClick: () => this.go('expert', { expertId: 'thai-pham' })
       },

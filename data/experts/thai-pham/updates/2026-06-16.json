@@ -1,0 +1,74 @@
+{
+  "date": "2026-06-16",
+  "sourceType": "member-post",
+  "sourceLabel": "Post hội viên",
+  "tabLabel": "Post · 16/06",
+  "title": "TĂNG CỔ PHIẾU LÊN 70% — Chợ Huyện Sắp Có Sức Sống",
+  "summary": "Tín hiệu đảo chiều: Trung Đông ổn, dầu về 70–80, bank tích nền tốt. Nâng tỷ lệ cổ phiếu từ 50% lên 70% (tiền mặt xuống còn 20%). TCX/chứng khoán thể hiện — còn sớm nhưng có sức sống. Đạm/phân sắp về vùng ngon. CK Mỹ/Hàn/Nhật chỉnh nhưng chợ huyện không bị ảnh hưởng.",
+  "stance": { "cashPercent": 20, "label": "Tích cực" },
+  "keyCalls": [
+    {
+      "tag": "VN Portfolio",
+      "value": "Tăng lên 70% cổ phiếu",
+      "note": "Từ 50/50 → 70% cổ phiếu / 20% tiền mặt. Trung Đông ổn, dầu giảm áp lực tỷ giá — đây là tín hiệu để tăng tỷ trọng.",
+      "signal": "up"
+    },
+    {
+      "tag": "Bank",
+      "value": "Giữ chặt / Mua đủ",
+      "note": "Bank tích nền ổn. Đang có đủ hàng → cầm chặt. Chưa có → mua đủ.",
+      "signal": "up"
+    },
+    {
+      "tag": "TCX / CK",
+      "value": "Còn sớm, có sức sống",
+      "note": "TCX và nhóm chứng khoán hôm qua thể hiện tốt. Còn sớm nhưng đã thấy tín hiệu. Có hàng giữ chặt, chưa có thì mua.",
+      "signal": "up"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Hành động danh mục — Tăng 50% → 70% cổ phiếu",
+      "signal": "up",
+      "signalLabel": "Tích cực — nâng tỷ trọng",
+      "para": "Tín hiệu hội tụ đủ để tăng tỷ trọng: Trung Đông có thỏa thuận, dầu về vùng 70–80 đúng dự báo, bank tích nền ổn định. Nâng cổ phiếu từ 50% lên 70%, tiền mặt còn 20%.",
+      "bullets": [
+        "Đang cầm đủ hàng của hội viên → không cần làm gì, cầm chặt.",
+        "Chưa có bank hội viên → mua đủ vào.",
+        "VN-Index nếu giảm thì chủ yếu từ VIC/VHM/VRE — không quan trọng, không phản ánh thực tế thị trường."
+      ]
+    },
+    {
+      "title": "Ngành Chứng khoán",
+      "signal": "up",
+      "signalLabel": "Tín hiệu sớm — có sức sống",
+      "para": "TCX và nhóm chứng khoán hôm qua đã thể hiện. Còn sớm nhưng đây là tín hiệu tốt đầu tiên. Còn hàng giữ chặt, chưa có thì mua vào.",
+      "bullets": [
+        "TCX: giữ chặt hoặc mua nếu chưa có.",
+        "Nhóm chứng khoán (VCI, MBS…): theo dõi thêm tín hiệu xác nhận."
+      ]
+    },
+    {
+      "title": "Ngành Sản xuất & Phân bón",
+      "signal": "wait",
+      "signalLabel": "Chờ vùng mua — đang về ngon",
+      "para": "Đạm và phân bón đang giảm thêm — đây là điều tốt, sắp về vùng mua hấp dẫn. SCS cứ cầm chặt. HPG ai còn kẹt thì cầm — lù lù như xe lu, không đi đâu cả.",
+      "bullets": [
+        "Đạm Cà Mau (DCM) / Đạm Phú Mỹ (DPM): đang giảm → sắp về vùng ngon, chuẩn bị mua.",
+        "SCS: cầm chặt, không bán.",
+        "HPG: ai kẹt thì cầm — chưa có catalyst rõ ràng."
+      ]
+    },
+    {
+      "title": "Vĩ mô & CK Quốc tế",
+      "signal": "wait",
+      "signalLabel": "Mỹ/Hàn/Nhật chỉnh — không ảnh hưởng VN",
+      "para": "CK Mỹ, Hàn, Nhật sẽ tiếp tục chỉnh mạnh — nhưng chợ huyện Việt Nam đã chỉnh rất sâu trước đó rồi, chán lắm rồi. Họ chỉnh thì mình có khi còn tăng. Dầu về 70–80 → áp lực tỷ giá VND và lạm phát giảm dần → môi trường lãi suất cải thiện → tốt cho CK VN.",
+      "bullets": [
+        "Dầu 70–80 USD → lạm phát nhập khẩu giảm → tỷ giá VND ổn định hơn.",
+        "CK Mỹ/Hàn/Nhật chỉnh không kéo chợ huyện xuống — VN đã discount sâu từ trước.",
+        "Trung Đông ổn → rủi ro địa chính trị giảm toàn cầu."
+      ]
+    }
+  ]
+}

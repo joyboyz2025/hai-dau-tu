@@ -186,7 +186,12 @@ input::placeholder { color: #A3A29A; }
           <sc-for list="{{ dashExperts }}" as="de" hint-placeholder-count="3">
             <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:14px; padding:20px; display:flex; flex-direction:column; gap:14px; box-shadow:0 1px 2px rgba(20,20,15,0.04);">
               <div style="display:flex; align-items:center; gap:12px;">
-                <div style="width:46px; height:46px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:17px; font-weight:700;">{{ de.initials }}</div>
+                <sc-if value="{{ de.hasAvatar }}" hint-placeholder-val="{{ false }}">
+                  <img src="{{ de.avatarSrc }}" style="width:46px; height:46px; border-radius:50%; object-fit:cover; flex-shrink:0;">
+                </sc-if>
+                <sc-if value="{{ de.noAvatar }}" hint-placeholder-val="{{ true }}">
+                  <div style="width:46px; height:46px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:17px; font-weight:700; flex-shrink:0;">{{ de.initials }}</div>
+                </sc-if>
                 <div style="display:flex; flex-direction:column; gap:2px; flex:1;">
                   <div style="font-size:15.5px; font-weight:700;">{{ de.name }}</div>
                   <div style="font-size:12px; color:#6E6D66;">{{ de.sourceLabel }}</div>
@@ -238,7 +243,12 @@ input::placeholder { color: #A3A29A; }
           <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:16px; padding:22px; display:flex; flex-direction:column; gap:14px; box-shadow:0 1px 2px rgba(20,20,15,0.04);">
             <!-- Header -->
             <div style="display:flex; align-items:center; gap:13px;">
-              <div style="width:52px; height:52px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:18px; font-weight:700; flex-shrink:0;">{{ ex.initials }}</div>
+              <sc-if value="{{ ex.hasAvatar }}" hint-placeholder-val="{{ false }}">
+                <img src="{{ ex.avatarSrc }}" style="width:52px; height:52px; border-radius:50%; object-fit:cover; flex-shrink:0;">
+              </sc-if>
+              <sc-if value="{{ ex.noAvatar }}" hint-placeholder-val="{{ true }}">
+                <div style="width:52px; height:52px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:18px; font-weight:700; flex-shrink:0;">{{ ex.initials }}</div>
+              </sc-if>
               <div style="display:flex; flex-direction:column; gap:3px; flex:1;">
                 <div style="font-size:16px; font-weight:700;">{{ ex.name }}</div>
                 <div style="font-size:12px; color:#6E6D66;">{{ ex.sourceLabel }}</div>
@@ -280,7 +290,12 @@ input::placeholder { color: #A3A29A; }
       <!-- Expert header -->
       <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:16px; padding:26px; display:flex; gap:28px; flex-wrap:wrap; align-items:center; box-shadow:0 1px 2px rgba(20,20,15,0.04);">
         <div style="display:flex; align-items:flex-start; gap:18px; flex:1.4; min-width:300px;">
-          <div style="width:80px; height:80px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:30px; font-weight:700; flex-shrink:0;">{{ expertInitials }}</div>
+          <sc-if value="{{ expertHasAvatar }}" hint-placeholder-val="{{ false }}">
+            <img src="{{ expertAvatarSrc }}" style="width:80px; height:80px; border-radius:50%; object-fit:cover; flex-shrink:0;">
+          </sc-if>
+          <sc-if value="{{ expertNoAvatar }}" hint-placeholder-val="{{ true }}">
+            <div style="width:80px; height:80px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:30px; font-weight:700; flex-shrink:0;">{{ expertInitials }}</div>
+          </sc-if>
           <div style="display:flex; flex-direction:column; gap:8px;">
             <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
               <div style="font-size:23px; font-weight:700; letter-spacing:-0.3px;">{{ expertName }}</div>
@@ -593,6 +608,7 @@ class Component extends DCLogic {
     ];
 
     const RED = 'oklch(0.5 0.16 27)';
+    const mkAvatar = (src) => ({ avatarSrc: src, hasAvatar: !!src, noAvatar: !src });
     const SIG = {
       down: { sigBg: 'oklch(0.95 0.04 27)', sigColor: 'oklch(0.46 0.15 27)' },
       warn: { sigBg: 'oklch(0.96 0.05 85)', sigColor: 'oklch(0.5 0.1 70)' },
@@ -711,6 +727,7 @@ class Component extends DCLogic {
 
     const dashExperts = [
       { initials: 'TP', name: 'Thái Phạm', sourceLabel: 'YouTube hội viên · Post cộng đồng', timeAgo: 'Hôm nay',
+        ...mkAvatar('/avatars/thai-pham.jpg'),
         summary: 'Tăng cổ phiếu VN lên 70% (tiền còn 30%). Bank tích nền ổn, TCX/CK có sức sống đầu tiên. Đạm/phân sắp về vùng ngon. Dầu 70–80 → tỷ giá dễ thở hơn. CK Mỹ/Hàn/Nhật chỉnh nhưng không ảnh hưởng chợ huyện.',
         chips: [
           { label: 'CK Việt ↑ 70% cổ phiếu',    bg: 'oklch(0.95 0.04 150)', color: 'oklch(0.42 0.1 150)' },
@@ -727,8 +744,10 @@ class Component extends DCLogic {
           { label: 'Tích lũy ◷ dần dần',         bg: '#EFEEE9',              color: '#5F5E57' },
           { label: 'CK Mỹ ↓ gần bong bóng',     bg: 'oklch(0.95 0.04 27)',  color: 'oklch(0.46 0.15 27)' }
         ],
+        ...mkAvatar('/avatars/azfin.png'),
         onClick: () => this.go('expert', { expertId: 'azfin' }) },
       { initials: 'TC', name: 'Thuận Capital', sourceLabel: 'YouTube · Video công khai', timeAgo: '4 ngày trước',
+        ...mkAvatar('/avatars/thuan-capital.png'),
         summary: 'BTC −50% từ đỉnh 126.000 đô. Mua thêm khi giá test dưới 60.000 đô bằng chiến lược DCA — không cố bắt đáy. Chu kỳ 4 năm vẫn còn khả năng lặp lại — phục hồi dự kiến T11/2026.',
         chips: [
           { label: 'BTC ◷ DCA dưới $60k',        bg: '#EFEEE9',              color: '#5F5E57' },
@@ -1103,6 +1122,7 @@ class Component extends DCLogic {
     const EXPERTS = {
       'thai-pham': {
         initials: 'TP', name: 'Thái Phạm',
+        avatarSrc: '/avatars/thai-pham.jpg',
         bio: 'Nhận định vĩ mô – địa chính trị và hành động danh mục theo tuần: chứng khoán Mỹ, chứng khoán Việt Nam, vàng bạc, dầu và crypto.',
         sourceChips: ['▶ YouTube hội viên', '✎ Post cộng đồng', 'Tần suất: hàng tuần'],
         updatedAt: '16/06/2026 · Hôm nay', latestSource: 'Post hội viên',
@@ -1113,6 +1133,7 @@ class Component extends DCLogic {
       },
       'thuan-capital': {
         initials: 'TC', name: 'Thuận Capital',
+        avatarSrc: '/avatars/thuan-capital.png',
         bio: 'Tâm lý đầu tư và quản lý rủi ro trong thị trường crypto; hơn 10 năm kinh nghiệm. Focus: Bitcoin & Crypto.',
         sourceChips: ['▶ Video công khai', 'Tần suất: hàng ngày'],
         updatedAt: '12/06/2026 · 1 giờ trước', latestSource: 'Video công khai',
@@ -1123,6 +1144,7 @@ class Component extends DCLogic {
       },
       'azfin': {
         initials: 'AZ', name: 'AzFin',
+        avatarSrc: '/avatars/azfin.png',
         bio: 'Đầu tư giá trị dài hạn — tích sản cổ phiếu VN. Phân tích cơ bản, quản lý danh mục kỷ luật, không dùng margin. Cộng đồng 4.000+ nhà đầu tư.',
         sourceChips: ['▶ Video công khai', 'Tần suất: hàng tuần'],
         updatedAt: '14/06/2026 · 2 ngày trước', latestSource: 'Video công khai',
@@ -1136,6 +1158,7 @@ class Component extends DCLogic {
     const expertsList = [
       {
         initials: 'TP', name: 'Thái Phạm', sourceLabel: 'YouTube hội viên · Post cộng đồng', timeAgo: 'Hôm nay',
+        ...mkAvatar('/avatars/thai-pham.jpg'),
         typeLabel: 'Post hội viên', typeBg: 'oklch(0.95 0.02 235)', typeColor: BRAND,
         latestDate: '16/06/2026',
         latestTitle: 'TĂNG CỔ PHIẾU LÊN 70% — Chợ Huyện Sắp Có Sức Sống',
@@ -1150,6 +1173,7 @@ class Component extends DCLogic {
       },
       {
         initials: 'TC', name: 'Thuận Capital', sourceLabel: 'YouTube · Video công khai', timeAgo: '1 giờ trước',
+        ...mkAvatar('/avatars/thuan-capital.png'),
         typeLabel: 'Video công khai', typeBg: 'oklch(0.95 0.04 27)', typeColor: 'oklch(0.46 0.15 27)',
         latestDate: '12/06/2026',
         latestTitle: 'FOMO Không Chỉ Xuất Hiện Trong Bull Market',
@@ -1163,6 +1187,7 @@ class Component extends DCLogic {
       },
       {
         initials: 'AZ', name: 'AzFin', sourceLabel: 'YouTube · Video công khai', timeAgo: '2 ngày trước',
+        ...mkAvatar('/avatars/azfin.png'),
         typeLabel: 'Video công khai', typeBg: 'oklch(0.95 0.04 27)', typeColor: 'oklch(0.46 0.15 27)',
         latestDate: '14/06/2026',
         latestTitle: 'Nhà Đầu Tư Nước Ngoài Bán Ròng Mạnh: Rủi Ro Hay Cơ Hội?',
@@ -1206,6 +1231,9 @@ class Component extends DCLogic {
       navItems, pulse, assetCards, recentFeed, dashExperts, macroBullets, usTickers, vnTickers, historyItems, srcChips, expertsList,
       // Expert page vars
       expertInitials: curExpert.initials,
+      expertAvatarSrc: curExpert.avatarSrc || '',
+      expertHasAvatar: !!curExpert.avatarSrc,
+      expertNoAvatar: !curExpert.avatarSrc,
       expertName: curExpert.name,
       expertBio: curExpert.bio,
       expertSourceChips: curExpert.sourceChips.map(label => ({ label })),

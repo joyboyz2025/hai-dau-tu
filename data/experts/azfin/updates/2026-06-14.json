@@ -1,0 +1,83 @@
+{
+  "date": "2026-06-14",
+  "sourceType": "public-video",
+  "sourceLabel": "Video công khai",
+  "tabLabel": "Video · 14/06",
+  "title": "Nhà Đầu Tư Nước Ngoài Bán Ròng Mạnh: Rủi Ro Hay Cơ Hội?",
+  "summary": "Khối ngoại bán ròng kỷ lục 26 năm — nhưng đây là cơ hội tích lũy cho nhà đầu tư giá trị. VN sắp lên EM (tháng 9), frontier funds bán ra. Định giá hiện tại ở percentile 10–15% thấp nhất lịch sử. Bank tư nhân lớn và BĐS cơ hội >> rủi ro. Không dùng margin.",
+  "keyCalls": [
+    {
+      "tag": "Khối Ngoại",
+      "value": "Cơ hội, không phải rủi ro",
+      "note": "Bán ròng kỷ lục 26 năm → giá rất rẻ. Lý do: lãi trái phiếu Mỹ/Anh hấp dẫn hơn, VN sắp lên EM nên frontier funds bán, chủ nghĩa dân tộc kinh tế toàn cầu.",
+      "signal": "up"
+    },
+    {
+      "tag": "Định giá VN",
+      "value": "Percentile 10–15%",
+      "note": "Chỉ ~10 trên 100 phiên giao dịch lịch sử có giá thấp hơn hiện tại (trừ nhóm Vin). Đây là cơ hội tích lũy tốt.",
+      "signal": "up"
+    },
+    {
+      "tag": "Bank tư nhân lớn",
+      "value": "Rất rẻ — ưu tiên",
+      "note": "Nhóm bank thương mại cổ phần lớn (ACB, MB, VP, HD) rất vững, định giá rất rẻ. Cơ hội >> rủi ro.",
+      "signal": "up"
+    },
+    {
+      "tag": "Thị trường Mỹ",
+      "value": "Gần bong bóng 2000",
+      "note": "CAPE gần mức dotcom 2000. Buffett indicator ~300% (>100% là rủi ro). Buffett giữ ~$400 tỷ tiền lỏng — kỷ lục.",
+      "signal": "down"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Vì sao khối ngoại bán ròng kỷ lục?",
+      "signal": "wait",
+      "signalLabel": "Cơ hội — không phải dấu hiệu xấu cơ bản",
+      "para": "Khối ngoại bán ròng mạnh nhất 26 năm lịch sử TTCK VN — thậm chí tỷ lệ % còn hơn 2007 (đại khủng hoảng). Tuy nhiên nguyên nhân hoàn toàn khác. Không phải vì kinh tế VN xấu.",
+      "bullets": [
+        "Trái phiếu chính phủ Mỹ 4,49%, Anh 4,83% — tài sản cực an toàn lại có lợi suất cao. Lợi suất CK VN (sau tỷ giá và chi phí quản lý quỹ) gần như bằng 0.",
+        "VN sắp lên Emerging Market tháng 9/2026 — frontier market funds phải bán VN (VN chiếm ~40% danh mục của họ). Đây là bán kỹ thuật, không phải bán vì VN xấu.",
+        "Chủ nghĩa dân tộc kinh tế và bảo hộ toàn cầu tăng → quỹ nước ngoài co về sân nhà.",
+        "Nhà đầu tư chiến lược dài hạn vẫn vào — mua khối lớn cổ phiếu doanh nghiệp VN theo kiểu đầu tư chiến lược."
+      ]
+    },
+    {
+      "title": "Định giá thị trường VN — Cơ hội lớn",
+      "signal": "up",
+      "signalLabel": "Tích cực — percentile 10–15% thấp nhất lịch sử",
+      "para": "Loại trừ nhóm Vin, định giá đa số cổ phiếu VN đang ở vùng 10–15% thấp nhất trong lịch sử. Tức là trong 100 phiên giao dịch lịch sử chỉ có ~10 phiên giá thấp hơn hiện tại. Đây chưa phải 'cơ hội rất lớn' (blue chip PB < 1 mới là rất lớn) nhưng là cơ hội tốt rõ rệt.",
+      "bullets": [
+        "Bank tư nhân lớn: định giá rất rẻ, kết quả kinh doanh vững chắc. Cơ hội >> rủi ro nhiều.",
+        "Bất động sản doanh nghiệp: cơ hội >> rủi ro nhiều (nhưng tránh nhóm pháp lý phức tạp).",
+        "Ngành chứng khoán: một số rẻ, một số trung bình — kén chọn. Có thể đảo chiều bất kỳ lúc nào sau 8 tháng điều chỉnh.",
+        "Không dùng margin (ký quỹ) trong bất kỳ trường hợp nào — nguyên tắc cốt lõi đầu tư giá trị."
+      ]
+    },
+    {
+      "title": "Thị trường Mỹ — Cảnh báo bong bóng",
+      "signal": "down",
+      "signalLabel": "Rủi ro — gần mức bong bóng dotcom 2000",
+      "para": "Trong khi VN rẻ, thị trường Mỹ đang có dấu hiệu quá nóng. Buffett giữ kỷ lục tiền lỏng ~$400 tỷ — ông không giữ tiền mặt nhiều mà để vào công cụ có thanh khoản cao.",
+      "bullets": [
+        "CAPE (Shiller P/E) đang gần mức bong bóng dotcom.com năm 2000.",
+        "Buffett Indicator (vốn hóa/GDP) khoảng 300% — >100% đã là rủi ro, 300% là cực kỳ cao.",
+        "Không có nghĩa là crash ngay — nhưng kỳ vọng lợi nhuận dài hạn từ CK Mỹ sẽ thấp hơn nhiều so với lịch sử."
+      ]
+    },
+    {
+      "title": "Hành động — Tích lũy dần, không dùng đòn bẩy",
+      "signal": "up",
+      "signalLabel": "Tích lũy — nghiêng về tấn công hơn thủ",
+      "para": "Lúc này phù hợp để nghiêng danh mục về phía tấn công (cổ phiếu tăng trưởng) nhiều hơn phòng thủ — vì giá đã giảm sâu. Phải có cả công lẫn thủ, nhưng tỷ lệ phụ thuộc cái nào rẻ hơn. Lúc này nhóm tăng trưởng đang rẻ hơn.",
+      "bullets": [
+        "Tích lũy dần dần — không mua dồn một lần, không bao giờ all-in.",
+        "Tỷ lệ cổ phiếu/tổng tài sản phụ thuộc cơ cấu tài sản và dòng tiền hàng tháng — không có công thức chung.",
+        "Cổ phiếu phòng thủ (cổ tức cao, ổn định): vẫn cần trong danh mục. Lúc này nên thêm nhóm tăng trưởng rẻ bên cạnh.",
+        "HDG: định giá rất rẻ (dù vướng pháp lý HDG-EVN chưa giải quyết xong trong nhiệm kỳ mới). ACV: tài sản rất giá trị, lợi nhuận chưa tương xứng."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-11",
+  "sourceType": "public-video",
+  "sourceLabel": "Video công khai",
+  "tabLabel": "Podcast · 11/06",
+  "title": "Hành Động Gì Khi Thị Trường Chán Nản? — Tích Sản Cổ Phiếu #12",
+  "summary": "Anh Phục (AzFin) và khách mời 20 năm kinh nghiệm: thị trường 20% thời gian tăng, 50% sideway, 30% giảm — đây là giai đoạn bình thường. Tích lũy cổ phiếu tốt, giá rẻ, ăn cổ tức và tái đầu tư. Không bao giờ all-in, duy trì kỷ luật % tỷ trọng.",
+  "keyCalls": [
+    {
+      "tag": "Thị trường",
+      "value": "20/50/30 — bình thường",
+      "note": "20% thời gian uptrend, 50% sideway, 30% downtrend. 21/26 năm TTCK VN khó khăn. Đây là giai đoạn bình thường, không phải bất thường.",
+      "signal": "wait"
+    },
+    {
+      "tag": "Hành động",
+      "value": "Tích lũy, giữ, ăn cổ tức",
+      "note": "Mua cổ phiếu tốt khi giá rẻ, thu cổ tức, tái đầu tư liên tục. Không bán khi chán — chỉ lỗ khi bán.",
+      "signal": "up"
+    },
+    {
+      "tag": "Nguyên tắc",
+      "value": "Không bao giờ all-in",
+      "note": "Duy trì kỷ luật % tỷ trọng cổ phiếu/tổng tài sản. Khi giá cao chuyển bớt sang trái phiếu/gửi tiết kiệm. Không dùng margin.",
+      "signal": "up"
+    },
+    {
+      "tag": "Cộng đồng AzFin",
+      "value": "4.000+ thành viên",
+      "note": "Cộng đồng thực hành đầu tư giá trị hàng ngày. Kết quả từ kỷ luật lặp đi lặp lại, không phải từ đánh cược.",
+      "signal": "up"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Thị trường chán nản là bình thường",
+      "signal": "wait",
+      "signalLabel": "Bình thường — không phải tín hiệu đặc biệt",
+      "para": "21 trong 26 năm lịch sử TTCK VN là năm khó khăn. Phân bổ thời gian: ~20% uptrend, ~50% sideway, ~30% downtrend. Giai đoạn 2026 hiện tại là rủi ro + cơ hội — nhiều cổ phiếu tốt đang rất rẻ dù nền tảng doanh nghiệp vẫn tốt.",
+      "bullets": [
+        "Khách mời bắt đầu đầu tư từ 2007 — tài khoản bị 'đốt' năm 2014 do dùng margin 3:7 với PVD trong sự kiện DK981.",
+        "Bài học: không dùng margin. Luôn có thesis đầu tư rõ ràng → chiến lược → chiến thuật.",
+        "Tiếp tục học liên tục — thị trường thay đổi, nhà đầu tư cũng phải cập nhật."
+      ]
+    },
+    {
+      "title": "Nguyên tắc tích sản cổ phiếu",
+      "signal": "up",
+      "signalLabel": "Tích cực — tích lũy dần trong downtrend",
+      "para": "Chiến lược cốt lõi: mua cổ phiếu chất lượng khi giá rẻ trong giai đoạn khó khăn → thu cổ tức → tái đầu tư → chờ uptrend để bảo vệ lợi nhuận. Không cần dự đoán đáy chính xác.",
+      "bullets": [
+        "Giữ tỷ lệ % cổ phiếu/tổng tài sản kỷ luật — không bao giờ all-in 100%.",
+        "Khi giá cổ phiếu cao: chuyển bớt sang trái phiếu hoặc gửi tiết kiệm.",
+        "Khi giá rẻ như hiện tại: dùng tiền từ trái phiếu/tiết kiệm để mua thêm cổ phiếu.",
+        "Ăn cổ tức, tái đầu tư liên tục — đây là nguồn sinh lời bền vững nhất dài hạn."
+      ]
+    },
+    {
+      "title": "Giai đoạn 2026 — Rủi ro + Cơ hội",
+      "signal": "up",
+      "signalLabel": "Cơ hội — tích lũy cổ phiếu chất lượng rẻ",
+      "para": "Nhiều cổ phiếu tốt đang rất rẻ dù nền tảng doanh nghiệp vẫn vững. Đây không phải cơ hội 'rất lớn' (chưa đến mức blue chip PB < 1 hàng loạt), nhưng là cơ hội tốt rõ rệt để tích lũy dần. Chờ uptrend để bảo vệ lợi nhuận — không vội bán trong downtrend.',",
+      "bullets": [
+        "Cộng đồng 4.000+ thành viên thực hành kỷ luật đầu tư giá trị hàng ngày.",
+        "Nguồn thu nhập đều đặn hàng tháng → dòng tiền liên tục mua thêm → tâm lý thoải mái hơn.",
+        "Không cần biết đáy ở đâu — cứ mua dần khi rẻ, tỷ lệ tốt dần theo thời gian."
+      ]
+    }
+  ]
+}

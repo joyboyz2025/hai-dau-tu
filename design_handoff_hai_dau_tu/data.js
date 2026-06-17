@@ -19,7 +19,7 @@
 
 window.HDT_DATA = {
 
-  lastUpdated: '16/06/2026 · Hôm nay',
+  lastUpdated: '18/06/2026 · Hôm nay',
 
   // ── Pulse strip ─────────────────────────────────────────────────────────────
   pulse: [
@@ -37,8 +37,8 @@ window.HDT_DATA = {
   assetCards: [
     {
       name: 'Chứng khoán Mỹ', sig: 'down', sigLabel: 'Giảm',
-      date: '13/06', expertId: 'thai-pham',
-      summary: 'SpaceX IPO P/S 96x — ảo; Nasdaq chỉnh đến giữa T7. Futures xanh sau tin Iran nhưng đã phản ánh vào giá. Short Intel, AMD; chờ Tesla 440 để sort.',
+      date: '17/06', expertId: 'thai-pham',
+      summary: 'SpaceX IPO chỉ bán 4,2% float để thổi định giá ~2.660 tỷ USD (Morningstar ~780 tỷ). P/S >100x, lỗ nặng — định giá ảo. Rủi ro lớn 15/7 khi ~911 triệu cp insider được bán; tài sản Elon ~100% trên giấy.',
       levels: 'Nasdaq short 29.600 · thêm 31.000 · cắt lỗ 32.500',
       altViews: [
         { expertId: 'azfin', sig: 'down', sigLabel: 'Gần bong bóng 2000',
@@ -51,8 +51,10 @@ window.HDT_DATA = {
       summary: 'Nâng tỷ trọng cổ phiếu từ 50% lên 70%. Bank tích nền ổn, TCX/CK có tín hiệu sức sống đầu tiên. Đạm/phân sắp về vùng mua. CK quốc tế chỉnh không ảnh hưởng chợ huyện.',
       levels: 'Tiền/Hàng: 30/70 · Mua: bank + TCX · Chờ: DCM/DPM · Giữ: SCS',
       altViews: [
-        { expertId: 'azfin', sig: 'up', sigLabel: 'Cơ hội tốt',
-          note: 'Bank tư nhân lớn rất rẻ — định giá percentile 10–15% thấp nhất lịch sử 26 năm. Tích lũy dần, không dùng margin.' }
+        { expertId: 'azfin', sig: 'up', sigLabel: '3 ngành 5 năm',
+          note: 'Giữ 5 năm: ngân hàng (tăng 15–20%/năm, định giá rẻ), vật liệu xây dựng (đầu tư công), bán lẻ (bùng nổ tiêu dùng). Mua khi định giá rất rẻ.' },
+        { expertId: 'ck-5-phut', sig: 'up', sigLabel: 'Tuần tích cực',
+          note: 'NHNN dự thảo nới trần vốn 40% → ngân hàng thêm dư địa cho vay. Tuần tích cực nhưng chưa có xu hướng mới — giữ tỷ trọng, hạn chế đảo hàng.' }
       ]
     },
     {
@@ -98,6 +100,36 @@ window.HDT_DATA = {
     }
   ],
 
+  // ── Tin tức (kênh tin tức · AI đánh giá tác động thị trường) ──────────────────
+  news: [
+    {
+      date: '2026-06-17', dateShort: '17/06',
+      source: 'Tài chính & Kinh doanh', sourceType: 'Video tin tức',
+      title: 'Thị trường thứ cấp đồng loạt cắt lỗ — chung cư Hà Nội đảo chiều',
+      impact: 'warn',
+      impactLabel: 'Tiêu cực ngắn hạn — lợi cho người mua ở thực',
+      summary: 'Chung cư Hà Nội phân hóa: giá sơ cấp tiếp tục leo thang nhưng nhiều căn thứ cấp phải cắt lỗ để tìm thanh khoản. Đầu tư lướt sóng nhường chỗ cho nhu cầu ở thực và tích sản dài hạn. Thị trường đảo chiều cả giá lẫn thanh khoản — "buyer market".',
+      points: [
+        'Áp lực chính: lãi vay duy trì cao từ Q4/2025 + thanh khoản yếu + sức ép giá dầu/Trung Đông (dầu ~80 USD vẫn cao hơn 63–65 USD năm ngoái).',
+        'Tín dụng năm nay bị khống chế; bất động sản, đặc biệt BĐS thương mại, bị siết mạnh.',
+        'Tác động thị trường: tiêu cực ngắn hạn cho nhóm đầu cơ & cổ phiếu BĐS; cơ hội cho người mua ở thực được quyền mặc cả.'
+      ]
+    },
+    {
+      date: '2026-06-17', dateShort: '17/06',
+      source: 'VTV Index', sourceType: 'Video tin tức',
+      title: 'Hành trình trao vàng — lộ diện chủ nhân giải tiết kiệm dự thưởng',
+      impact: 'wait',
+      impactLabel: 'Ít tác động thị trường — tin chương trình tiết kiệm',
+      summary: 'Bản tin về một chương trình tiết kiệm dự thưởng trao hàng trăm giải vàng (giải đặc biệt 10 lượng vàng SJC). Nội dung mang tính PR sản phẩm tiết kiệm, định vị gửi tiết kiệm như giải pháp tài chính an toàn.',
+      points: [
+        'Chủ yếu là tin truyền thông/PR chương trình, không phải nhận định đầu tư.',
+        'Phản ánh xu hướng kênh tiết kiệm & vàng vẫn hấp dẫn trong môi trường lãi suất cao và bất ổn.',
+        'Tác động trực tiếp tới thị trường chứng khoán: không đáng kể.'
+      ]
+    }
+  ],
+
   // ── Experts ──────────────────────────────────────────────────────────────────
   experts: {
 
@@ -114,6 +146,48 @@ window.HDT_DATA = {
         bar1: 30, bar2: 70, label1: 'Tiền mặt 30%', label2: 'Cổ phiếu 70%'
       },
       updates: [
+        {
+          date: '2026-06-17', dateShort: '17/06', timeAgo: 'Hôm qua',
+          tab: 'Video · 17/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Sự Thật Về "Nghìn Tỷ Phú" Elon Musk — Cú Bơm Thổi IPO SpaceX',
+          summary: 'IPO SpaceX chỉ bán 4,2% cổ phần (float hẹp) để thổi giá phần còn lại — định giá ~2.660 tỷ USD là ảo; Morningstar ước ~780 tỷ. Tài sản Elon ~100% trên giấy (ông tự nhận chỉ ~0,1% tiền mặt). Công ty lỗ nặng, P/S >100x. Rủi ro lớn 15/7 khi ~911 triệu cp insider được bán. Không khuyến nghị mua ở giá này.',
+          feedChips: [
+            { label: 'SpaceX ↓ định giá ảo',        sig: 'down' },
+            { label: 'P/S >100x ↓ cực đắt',          sig: 'down' },
+            { label: 'Insider xả 15/7 ↓',            sig: 'down' },
+            { label: 'Starlink ↑ mảng duy nhất lãi', sig: 'up'   }
+          ],
+          keyCalls: [
+            { tag: 'IPO SpaceX', value: 'Định giá ảo', signal: 'down', note: 'Chỉ bán 4,2% công ty ra công chúng để định giá 95,8% còn lại. Morningstar ước ~780 tỷ USD (~30% mức ~2.660 tỷ hiện tại).' },
+            { tag: 'Tài sản Elon', value: '~100% trên giấy', signal: 'down', note: 'Elon tự nhận chỉ ~0,1% là tiền mặt, phần lớn từ cổ phần Tesla & SpaceX. Bán 5–10% là thị trường sụp trước khi khớp hết.' },
+            { tag: 'Định giá', value: 'P/S >100x · lỗ nặng', signal: 'down', note: 'P/S >100x doanh thu 2025; ROE −14,7%, ROIC −9,41%, biên ròng −26,4%. Lỗ 2025 ~4,94 tỷ USD, Q1/2026 lỗ thêm ~4,28 tỷ USD.' },
+            { tag: 'Rủi ro 15/7', value: 'Insider xả ~911tr cp', signal: 'down', note: 'BCTC quý đầu 15/7 mở khóa ~911 triệu cp insider — gấp ~3 lần float 500 triệu. 15–25/7 là phép thử giá thực.' }
+          ],
+          sections: [
+            { title: 'Chứng khoán Mỹ', signal: 'down', sigLabel: 'Cảnh báo — định giá SpaceX ảo',
+              para: 'SpaceX IPO chỉ niêm yết ~4,2% công ty (float công khai ~500 triệu cp) — ví như chỉ bán "một góc vườn đẹp nhất" rồi nhân đơn giá ra cả ngôi nhà. Nguồn cung hẹp + cầu lớn đẩy giá lên mức không thật. Morningstar định giá chỉ ~780 tỷ USD so với ~2.660 tỷ hiện tại. So sánh với VinFast (VFS) 2023 từng vọt ~90 USD rồi sụp.',
+              bullets: ['Tài sản Elon gần như toàn bộ trên giấy — chỉ ~0,1% tiền mặt.', 'Công ty lỗ lớn; chỉ Starlink có lãi, mảng hàng không vũ trụ/AI/data center lỗ.', 'P/S >100x — IPO có P/S >20x thường mất ~10 năm hoàn vốn.'] },
+            { title: 'Cơ chế thổi giá & rủi ro cung cổ phiếu', signal: 'down', sigLabel: 'Áp lực bán lớn từ 15/7',
+              para: 'Quỹ thụ động buộc phải mua khi SpaceX vào index: S&P 500 hấp thụ ~19% float, sau 1 năm Russell 1000 + Nasdaq 100 thêm ~24% — tổng hơn nửa float bị mua máy móc theo quy tắc index chứ không vì giá trị. Nhưng BCTC quý đầu 15/7 mở khóa ~911 triệu cp insider (gấp ~3 lần float hiện tại); làn sóng bán của insider/Friends&Family 15–25/7 mới là phép thử giá thực.',
+              levels: 'Float công khai ~4% (~500tr cp) · Insider mở khóa 15/7: ~911tr cp · Phép thử giá: 15–25/7' }
+          ]
+        },
+        {
+          date: '2026-06-17', dateShort: '17/06', timeAgo: 'Hôm qua',
+          tab: 'Post · 17/06', sourceType: 'member-post', typeLabel: 'Post hội viên',
+          title: 'Kịch Bản FED Tối Nay — Chia Sẻ Qua Video Phỏng Vấn',
+          summary: 'Thái Phạm chia sẻ kịch bản cuộc họp FED kèm một video phỏng vấn (đăng kèm link Facebook). Phần quan điểm chi tiết nằm trong video liên kết — post trên YouTube chỉ là phần dẫn.',
+          feedChips: [
+            { label: 'FED ◷ chờ kết quả họp', sig: 'wait' }
+          ],
+          keyCalls: [
+            { tag: 'FED', value: 'Chờ kết quả họp', signal: 'wait', note: 'Chia sẻ kịch bản FED qua video phỏng vấn liên kết; nội dung chi tiết nằm trong video, không có trong post công khai.' }
+          ],
+          sections: [
+            { title: 'Bối cảnh', signal: 'wait', sigLabel: 'Chờ kết quả cuộc họp FED',
+              para: 'Bài post dẫn sang một video phỏng vấn về kịch bản FED trong cuộc họp lần này. Phần phân tích chi tiết nằm trong video liên kết (Facebook), không có trong nội dung post công khai trên YouTube.' }
+          ]
+        },
         {
           date: '2026-06-16', dateShort: '16/06', timeAgo: 'Hôm nay',
           tab: 'Post · 16/06', sourceType: 'member-post', typeLabel: 'Post hội viên',
@@ -459,6 +533,32 @@ window.HDT_DATA = {
       },
       updates: [
         {
+          date: '2026-06-17', dateShort: '17/06', timeAgo: 'Hôm qua',
+          tab: 'Video · 17/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Ba Nhóm Ngành Triển Vọng Để Giữ 5 Năm',
+          summary: 'Ba nhóm ngành ưu tiên giữ 5 năm: Ngân hàng (tăng trưởng 15–20%/năm, định giá rẻ, lợi thế cạnh tranh mạnh), Vật liệu xây dựng (hưởng lợi đầu tư công) và Bán lẻ (bùng nổ tiêu dùng theo GDP). Rủi ro chính từ vĩ mô thế giới & giá cổ phiếu — khắc phục bằng mua khi định giá rất rẻ và bảo vệ thành quả khi đạt mục tiêu.',
+          feedChips: [
+            { label: 'Ngân hàng ↑ ưu tiên', sig: 'up'   },
+            { label: 'VLXD ↑ đầu tư công',   sig: 'up'   },
+            { label: 'Bán lẻ ↑ tiêu dùng',   sig: 'up'   },
+            { label: 'Vĩ mô TG ⚠ rủi ro',   sig: 'warn' }
+          ],
+          keyCalls: [
+            { tag: 'Ngân hàng', value: 'Ưu tiên số 1', signal: 'up', note: 'Tăng trưởng tự nhiên 15–20%/năm theo tín dụng; PE/PB thấp hơn trung bình thị trường trong khi hiệu quả cao hơn; lợi thế cạnh tranh mạnh.' },
+            { tag: 'Vật liệu xây dựng', value: 'Hưởng lợi đầu tư công', signal: 'up', note: 'Đầu vào ít biến động, đầu ra hưởng nhu cầu cao từ đầu tư công. Nhà thầu thi công trực tiếp kém hấp dẫn hơn do biến động NVL & cạnh tranh.' },
+            { tag: 'Bán lẻ', value: 'Bùng nổ tiêu dùng', signal: 'up', note: 'Tăng theo tốc độ tăng GDP; VN đang bước vào giai đoạn bùng nổ tiêu dùng → ngành bán lẻ hưởng lợi lớn.' },
+            { tag: 'Chiến lược', value: 'Mua rẻ · chốt mục tiêu', signal: 'wait', note: 'Rủi ro lớn nhất nằm ở giá cổ phiếu/thị trường. Mua khi định giá rất thấp và bảo vệ thành quả khi đạt mục tiêu — không nhất thiết nắm đủ 5 năm.' }
+          ],
+          sections: [
+            { title: 'Ba nhóm ngành triển vọng 5 năm', signal: 'up', sigLabel: 'Tích cực — ưu tiên tích lũy',
+              para: 'Nếu chọn ba nhóm ngành để giữ 5 năm: ngân hàng, vật liệu xây dựng và bán lẻ. Đây là các ngành có động lực tăng trưởng nội tại rõ ràng và hưởng lợi từ xu hướng vĩ mô dài hạn của Việt Nam.',
+              bullets: ['Ngân hàng: tăng 15–20%/năm, định giá rẻ (PE/PB thấp), lợi thế cạnh tranh mạnh.', 'Vật liệu xây dựng: hưởng lợi đầu tư công nhờ đầu vào ổn, đầu ra nhu cầu cao.', 'Bán lẻ: tăng theo GDP, đón giai đoạn bùng nổ tiêu dùng.'] },
+            { title: 'Rủi ro & chiến lược', signal: 'warn', sigLabel: 'Thận trọng — rủi ro vĩ mô & thị trường',
+              para: 'Vĩ mô thế giới biến động (xung đột, mâu thuẫn chính trị, lạm phát cao) có thể làm kinh tế tăng trưởng chậm và gây áp lực tỷ giá, khiến KQKD các ngành biến động. Nhưng rủi ro lớn nhất với 3 nhóm này nằm ở giá cổ phiếu/thị trường hơn là nền tảng doanh nghiệp.',
+              bullets: ['Mua khi định giá rất rẻ để hạ rủi ro.', 'Bảo vệ thành quả khi đạt mục tiêu — không cứng nhắc nắm đủ 5 năm.'] }
+          ]
+        },
+        {
           date: '2026-06-14', dateShort: '14/06', timeAgo: '2 ngày trước',
           tab: 'Video · 14/06', sourceType: 'public-video', typeLabel: 'Video công khai',
           title: 'Nhà Đầu Tư Nước Ngoài Bán Ròng Mạnh: Rủi Ro Hay Cơ Hội?',
@@ -550,10 +650,62 @@ window.HDT_DATA = {
         }
       ],
       sources: [
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '17/06/2026',
+          title: '03 Ngành triển vọng trong tương lai?', meta: 'Video công khai · AzFin Vietnam' },
         { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '14/06/2026',
           title: 'Nhà đầu tư nước ngoài bán ròng mạnh: Rủi ro hay cơ hội | Lăng kính đầu tư giá trị', meta: 'Video công khai · AzFin Vietnam' },
         { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '11/06/2026',
           title: '#12: Hành động gì khi thị trường chán nản?', meta: 'Video công khai · Tích sản cổ phiếu AzFin' }
+      ]
+    },
+
+    'ck-5-phut': {
+      initials: 'C5',
+      name: 'Chứng khoán 5 phút',
+      avatarSrc: '',
+      bio: 'Bản tin nhanh về thị trường chứng khoán Việt Nam và vĩ mô: điểm tin, đánh giá tác động và chiến lược giao dịch ngắn hạn.',
+      sourceLabel: 'YouTube · Video công khai',
+      sourceChips: ['▶ Video công khai', 'Tần suất: hàng ngày'],
+      gauge: {
+        title: 'Trạng thái thị trường tuần',
+        badge: 'Tích cực', badgeBg: 'oklch(0.95 0.04 150)', badgeColor: 'oklch(0.42 0.1 150)',
+        bar1: 60, bar2: 40, label1: 'Giữ tỷ trọng 60%', label2: 'Chờ/ngắn hạn 40%'
+      },
+      updates: [
+        {
+          date: '2026-06-17', dateShort: '17/06', timeAgo: 'Hôm qua',
+          tab: 'Video · 17/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Fed Họp & NHNN Dự Thảo Nới Trần Vốn — Tác Động Thị Trường?',
+          summary: 'Dự báo Fed giữ nguyên lãi suất (chú ý phát biểu thống đốc mới). NHNN dự thảo nới trần vốn ngắn hạn cho vay trung–dài hạn lên 40% — ngân hàng có thêm dư địa cho vay, tích cực. Cả hai tin khó tạo cú hích mạnh ngắn hạn. Tuần tích cực nhưng chưa có xu hướng mới — giữ tỷ trọng, hạn chế đảo hàng.',
+          feedChips: [
+            { label: 'Fed ◷ giữ nguyên LS',       sig: 'wait' },
+            { label: 'NHNN ↑ nới trần 40%',        sig: 'up'   },
+            { label: 'Thị trường ↑ tuần tích cực', sig: 'up'   },
+            { label: 'Đảo hàng ⚠ hạn chế',        sig: 'warn' }
+          ],
+          keyCalls: [
+            { tag: 'Fed', value: 'Giữ nguyên lãi suất', signal: 'wait', note: 'Dự báo gần như chắc chắn Fed giữ nguyên. Chú ý phát biểu lần đầu của thống đốc mới — có thể mở đường điều chỉnh lãi suất cuối năm/sang năm. Thị trường khó phản ứng dữ dội.' },
+            { tag: 'NHNN', value: 'Dự thảo nới trần 40%', signal: 'up', note: 'Nới trần vốn ngắn hạn cho vay trung–dài hạn lên 40% (tiếp nối thông tư 08). Ngân hàng có thêm tiền cho vay; ngắn hạn chưa đua tăng lãi suất huy động → tích cực.' },
+            { tag: 'Thị trường', value: 'Tuần tích cực', signal: 'up', note: 'Tuần "vãn hồi KPI" — nhưng chưa sinh xu hướng mới. Mỗi phiên chỉ 1–2 mã tăng, không tăng cả ngành.' },
+            { tag: 'Chiến lược', value: 'Giữ tỷ trọng', signal: 'wait', note: 'Giữ như tháng 5. Cổ phiếu cơ bản dài hạn: giữ, không bán (áp lực bán không nhiều). Thanh khoản yếu → hạn chế đảo hàng.' }
+          ],
+          sections: [
+            { title: 'Vĩ mô — Fed & NHNN', signal: 'wait', sigLabel: 'Chưa tác động mạnh ngắn hạn',
+              para: 'Hai tin được quan tâm: cuộc họp Fed (dự báo giữ nguyên lãi suất, đáng chú ý là phát biểu của thống đốc mới) và dự thảo NHNN nới trần vốn ngắn hạn cho vay trung–dài hạn lên 40%. Dự thảo thể hiện ưu tiên mục tiêu tăng trưởng hai con số, chấp nhận thêm chút rủi ro hệ thống. Tuy vậy cả hai khó tạo cú hích mạnh ngắn hạn — đừng kỳ vọng nhóm ngân hàng bật tăng ngay.',
+              bullets: ['Fed: gần như chắc giữ nguyên; phát biểu thống đốc mới có thể "mở đường" điều chỉnh chính sách.', 'NHNN: nới trần 40% → ngân hàng nhiều dư địa cho vay, chưa đua tăng lãi suất huy động.', 'Tác động ngắn hạn được đánh giá là không lớn.'] },
+            { title: 'Chiến lược giao dịch', signal: 'wait', sigLabel: 'Giữ tỷ trọng — hạn chế đảo hàng',
+              para: 'Tuần này tích cực nhưng thị trường chưa củng cố xu hướng. Giữ tỷ trọng như tháng 5; cổ phiếu cơ bản dài hạn mới mua một phần thì giữ nguyên. Vị thế ngắn hạn chỉ mua vừa phải. Thanh khoản yếu khiến đảo hàng kém hiệu quả và tốn phí — nên quản trị theo setup ban đầu thay vì bán con này mua con kia.',
+              tickers: [
+                { ticker: 'MSB', action: 'Giữ', aBg: 'oklch(0.95 0.02 235)', aColor: 'oklch(0.4 0.08 235)', zone: '—', note: 'Càng giữ càng tăng, suýt vượt đỉnh — ví dụ cho việc kiên nhẫn theo setup.' },
+                { ticker: 'FRT', action: 'Theo dõi', aBg: '#EFEEE9', aColor: '#5F5E57', zone: '—', note: 'Nằm trong số ít mã tăng theo phiên.' },
+                { ticker: 'VSC', action: 'Theo dõi', aBg: '#EFEEE9', aColor: '#5F5E57', zone: '—', note: 'Mã tăng phiên gần nhất — không tăng cả ngành.' }
+              ] }
+          ]
+        }
+      ],
+      sources: [
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '17/06/2026',
+          title: '2 tin Fed họp và NHNN ra dự thảo nới trần vốn cho vay tác động đến thị trường như thế nào?', meta: 'Video công khai · Chứng khoán 5 phút' }
       ]
     }
 

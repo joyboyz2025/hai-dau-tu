@@ -283,6 +283,34 @@ input::placeholder { color: #A3A29A; }
   </sc-if>
 
   <!-- ===================== CHUYÊN GIA: THÁI PHẠM ===================== -->
+  <sc-if value="{{ isNews }}" hint-placeholder-val="{{ false }}">
+    <div data-screen-label="Tin tức" style="max-width:1080px; margin:0 auto; padding:28px 20px 60px; display:flex; flex-direction:column; gap:20px;">
+      <div>
+        <h1 style="margin:0; font-size:24px; font-weight:700; letter-spacing:-0.4px;">Tin tức thị trường</h1>
+        <div style="margin-top:6px; font-size:13.5px; color:#6E6D66; line-height:1.5;">Điểm tin từ các kênh tin tức (VTV Index, Tài chính &amp; Kinh doanh). Nhãn tác động do AI tự đánh giá tốt/xấu cho thị trường — chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</div>
+      </div>
+      <sc-for list="{{ newsItems }}" as="n" hint-placeholder-count="3">
+        <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:16px; padding:22px; display:flex; flex-direction:column; gap:12px;">
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap;">
+            <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+              <span style="font-size:11.5px; font-weight:700; padding:4px 10px; border-radius:999px; background:#EFEEE9; color:#5F5E57;">{{ n.source }}</span>
+              <span style="font-size:12px; color:#9B9A92;">{{ n.dateLabel }} · {{ n.sourceType }}</span>
+            </div>
+            <div style="font-size:11.5px; font-weight:700; padding:4px 10px; border-radius:999px; background:{{ n.sigBg }}; color:{{ n.sigColor }};">{{ n.impactLabel }}</div>
+          </div>
+          <h2 style="margin:0; font-size:16.5px; font-weight:700; line-height:1.4;">{{ n.title }}</h2>
+          <div style="font-size:13.5px; color:#46453F; line-height:1.6;">{{ n.summary }}</div>
+          <sc-for list="{{ n.points }}" as="p" hint-placeholder-count="0">
+            <div style="display:flex; gap:10px; align-items:flex-start;">
+              <div style="width:6px; height:6px; border-radius:50%; background:oklch(0.42 0.08 235); margin-top:7px; flex-shrink:0;"></div>
+              <div style="font-size:13px; color:#46453F; line-height:1.6;">{{ p.text }}</div>
+            </div>
+          </sc-for>
+        </div>
+      </sc-for>
+    </div>
+  </sc-if>
+
   <sc-if value="{{ isExpert }}" hint-placeholder-val="{{ false }}">
     <div data-screen-label="Chuyên gia: Thái Phạm" style="max-width:1080px; margin:0 auto; padding:28px 20px 60px; display:flex; flex-direction:column; gap:16px;">
 
@@ -587,6 +615,7 @@ class Component extends DCLogic {
     const navDefs = [
       { key: 'dashboard',     label: 'Tổng quan' },
       { key: 'experts-list',  label: 'Chuyên gia' },
+      { key: 'news',          label: 'Tin tức' },
       { key: 'history',       label: 'Lịch sử' },
       { key: 'admin',         label: 'Quản lý' }
     ];
@@ -1254,6 +1283,17 @@ class Component extends DCLogic {
       }
     ];
 
+    const newsItems = (HDT.news || []).map(n => {
+      const d = (n.date || '').split('-');
+      return {
+        source: n.source, sourceType: n.sourceType || 'Tin tức',
+        dateLabel: d.length === 3 ? d[2]+'/'+d[1]+'/'+d[0] : (n.dateShort || ''),
+        title: n.title, summary: n.summary || '',
+        impactLabel: n.impactLabel || '', ...(SSIG[n.impact] || SSIG.wait),
+        points: (n.points || []).map(t => ({ text: t }))
+      };
+    });
+
     const curExpert = EXPERTS[s.expertId] || EXPERTS['thai-pham'];
     const curUpdates = curExpert.updates;
 
@@ -1268,7 +1308,7 @@ class Component extends DCLogic {
       showLogin: !s.logged, showApp: s.logged,
       isDashboard: s.screen === 'dashboard', isExpertsList: s.screen === 'experts-list',
       isExpert: s.screen === 'expert',
-      isHistory: s.screen === 'history', isAdmin: s.screen === 'admin',
+      isHistory: s.screen === 'history', isAdmin: s.screen === 'admin', isNews: s.screen === 'news',
       pwError: s.pwError, pwRef: this.pwRef, nameRef: this.nameRef, channelRef: this.channelRef,
       doLogin: () => this.login(),
       pwKey: (e) => { if (e.key === 'Enter') this.login(); },
@@ -1280,7 +1320,7 @@ class Component extends DCLogic {
       goAdmin: () => this.go('admin'),
       goHistory: () => this.go('history'),
       goExpertsList: () => this.go('experts-list'),
-      navItems, pulse, assetCards, recentFeed, dashExperts, historyItems, srcChips, expertsList,
+      navItems, pulse, assetCards, recentFeed, dashExperts, historyItems, srcChips, expertsList, newsItems,
       // Expert page vars
       expertInitials: curExpert.initials,
       expertAvatarSrc: curExpert.avatarSrc || '',

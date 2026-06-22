@@ -19,7 +19,7 @@
 
 window.HDT_DATA = {
 
-  lastUpdated: '18/06/2026 · Hôm nay',
+  lastUpdated: '22/06/2026 · Hôm nay',
 
   // ── Pulse strip ─────────────────────────────────────────────────────────────
   pulse: [
@@ -147,7 +147,174 @@ window.HDT_DATA = {
       },
       updates: [
         {
-          date: '2026-06-17', dateShort: '17/06', timeAgo: 'Hôm qua',
+          date: '2026-06-21', dateShort: '21/06', timeAgo: 'Hôm qua',
+          tab: 'Video · 21/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Siêu Chu Kỳ Chip Đối Đầu Vĩ Mô Xấu — ETF Funds Cơ Cấu Mạnh Cuối Tháng 6',
+          summary: 'Siêu chu kỳ chip AI vẫn mạnh nhưng đang đối đầu với vĩ mô xấu toàn cầu. ETF funds cơ cấu lại mạnh cuối tháng 6 tạo biến động lớn. Nasdaq vẫn trong xu thế chỉnh — không chase. Quan điểm VN không đổi: giữ 70% cổ phiếu.',
+          feedChips: [
+            { label: 'Chip ↑ siêu chu kỳ AI',  sig: 'up'   },
+            { label: 'ETF ↓ cơ cấu cuối T6',   sig: 'down' },
+            { label: 'Nasdaq ↓ vĩ mô xấu',     sig: 'down' },
+            { label: 'CK Việt ◷ giữ 70%',      sig: 'wait' }
+          ],
+          keyCalls: [
+            { tag: 'Chip AI',        value: 'Siêu chu kỳ — cẩn thận giá',   signal: 'up',   note: 'Nhu cầu chip AI tiếp tục tăng mạnh từ data center và thiết bị biên. Nhưng định giá nhóm semis đã phản ánh rất nhiều kỳ vọng — không chase.' },
+            { tag: 'ETF Rebalance',  value: 'Áp lực cuối T6',               signal: 'down', note: 'Cuối quý 2 (30/6) các ETF lớn cơ cấu lại danh mục — tạo dòng bán kỹ thuật lớn không phản ánh quan điểm đầu tư. Không bán theo.' },
+            { tag: 'Nasdaq',         value: 'Vẫn chỉnh',                    signal: 'down', note: 'Vĩ mô xấu (Fed hawkish, lạm phát dai dẳng, Nhật–Hàn áp lực) vẫn đè lên chỉ số Mỹ. Không rush mua.' },
+            { tag: 'CK Việt',        value: 'Giữ 70% cổ phiếu',            signal: 'wait', note: 'Không thay đổi tỷ trọng — 70% cổ phiếu VN, 30% tiền mặt. Giữ bank, TCX, phân bón.' }
+          ],
+          sections: [
+            { title: 'Siêu chu kỳ chip AI', signal: 'up', sigLabel: 'Tăng trưởng — nhưng định giá đã cao',
+              para: 'Chip AI đang trong siêu chu kỳ thực sự: nhu cầu từ data center bùng nổ, thiết bị biên (edge AI) mới bắt đầu. Nvidia, TSMC giao hàng không kịp cầu. Tuy nhiên giá cổ phiếu đã phản ánh phần lớn kỳ vọng — không chase ở vùng hiện tại.',
+              bullets: ['Nvidia: giữ nếu có, không mua thêm ở vùng này.', 'TSMC: hưởng lợi gián tiếp nhưng rủi ro địa chính trị (Đài Loan).', 'AMD: đang yếu hơn NVDA, cẩn thận.'] },
+            { title: 'ETF Rebalance cuối tháng 6', signal: 'down', sigLabel: 'Áp lực bán kỹ thuật — không bán theo',
+              para: 'Cuối quý 2 (30/6) các ETF lớn và quỹ hưu bổng cơ cấu lại danh mục về tỷ trọng mục tiêu — tạo dòng bán kỹ thuật lớn, không phản ánh quan điểm đầu tư thực sự. Sau 1/7 áp lực này giải tỏa.',
+              bullets: ['Không bán vì hoảng sợ trước áp lực rebalance cuối tháng.', 'Cơ hội: nếu có cp tốt bị kéo xuống vô lý, có thể mua thêm sau 1/7.'] },
+            { title: 'Chứng khoán Việt Nam', signal: 'wait', sigLabel: 'Giữ nguyên — 70% cổ phiếu',
+              para: 'Không có thay đổi. 70% cổ phiếu, 30% tiền vẫn phù hợp. Bank tích nền tốt. TCX tiếp tục theo dõi. Đạm/phân bón chờ về vùng ngon hơn.',
+              bullets: ['Bank: giữ chặt, không bán vùng thấp.', 'TCX: theo dõi mục tiêu VN30.', 'DCM/DPM: chờ về sâu hơn rồi mua thêm.'] }
+          ]
+        },
+        {
+          date: '2026-06-21', dateShort: '21/06', timeAgo: 'Hôm qua',
+          tab: 'Tập 33 · Tuần 25', sourceType: 'member-video', typeLabel: 'Video hội viên · Tập 33',
+          title: 'Vàng, Bitcoin, Chứng Khoán Tuần 25 — Tập 33 Hội Viên 2026',
+          summary: 'Tập 33 độc quyền hội viên: cập nhật vàng, Bitcoin và chứng khoán VN/Mỹ tuần 25. Vàng đã về vùng mua tốt sau tin Iran; BTC vẫn xu thế chỉnh. CK VN giữ 70% — chuẩn bị cho biến động cuối tháng.',
+          feedChips: [
+            { label: 'Vàng ◷ vùng mua tốt',  sig: 'wait' },
+            { label: 'BTC ↓ vẫn chỉnh',       sig: 'down' },
+            { label: 'CK Mỹ ↓ cẩn thận T7',   sig: 'down' },
+            { label: 'CK Việt ↑ giữ 70%',     sig: 'up'   }
+          ],
+          keyCalls: [
+            { tag: 'Vàng',    value: 'Vùng mua tốt',        signal: 'wait', note: 'Sau tin Iran–Mỹ ký 19/6, vàng tăng ngắn hạn rồi hồi về vùng hấp dẫn. Đây là vùng mua tốt cho ai chưa có vị thế.' },
+            { tag: 'Bitcoin', value: 'Chờ short 68–70k',    signal: 'down', note: 'BTC vẫn trong xu thế chỉnh từ đỉnh 125k. Chờ hồi kỹ thuật lên 68–70k để short, mục tiêu 42k.' },
+            { tag: 'CK Mỹ',  value: 'Cẩn thận tháng 7',    signal: 'down', note: 'T7 có nhiều sự kiện: SpaceX insider unlock 15/7, Fed meetings, BCTC Q2. Không mua thêm.' },
+            { tag: 'CK Việt', value: '70% cổ phiếu',        signal: 'up',   note: 'Giữ nguyên 70/30. Bank + TCX + phân bón là core. Không thay đổi.' }
+          ],
+          sections: [
+            { title: 'Vàng', signal: 'wait', sigLabel: 'Mua được — vùng hấp dẫn',
+              para: 'Sau tin Iran–Mỹ ký 19/6 vàng tăng ngắn rồi điều chỉnh về vùng hấp dẫn hơn. Cơ hội tốt cho ai chưa có vị thế vàng.',
+              levels: 'Vùng mua: $4.100–4.200 · Bạc theo vàng: ~55 USD · Chênh mục tiêu: ≤7 triệu/lượng' },
+            { title: 'Bitcoin & Crypto', signal: 'down', sigLabel: 'Chỉnh — chờ 68–70k short',
+              para: 'Không có thay đổi cấu trúc kỹ thuật. BTC vẫn downtrend từ đỉnh 125k. Clarity Act dự kiến 4/7 — crypto trở thành mã giao dịch chính thức trong hệ thống Mỹ.',
+              levels: 'Short: 68.000–70.000 · Mục tiêu: ~42.000 · Mua DH: vùng 42k' },
+            { title: 'Chứng khoán Việt Nam', signal: 'up', sigLabel: 'Tích cực — giữ 70% cổ phiếu',
+              para: 'Không action. Cầm chặt bank, TCX, SCS, phân bón. Biến động cuối tháng từ ETF rebalance không phải tín hiệu bán.',
+              bullets: ['Bank: giữ chặt toàn bộ. Không bán.', 'TCX: tiếp tục theo dõi VN30.', 'DCM/DPM: sắp về vùng ngon — chuẩn bị mua thêm.', 'SCS: cầm chặt.'] }
+          ]
+        },
+        {
+          date: '2026-06-20', dateShort: '20/06', timeAgo: '2 ngày trước',
+          tab: 'Post · 20/06', sourceType: 'member-post', typeLabel: 'Post hội viên',
+          title: 'Chưa Có Điểm Thêm Từ MSCI',
+          summary: 'MSCI vẫn chưa có điểm thêm cho VN trong lần review này — chưa đáp ứng đủ tiêu chí. Không ảnh hưởng đến quan điểm đầu tư. CK Việt tiếp tục theo logic nội tại.',
+          feedChips: [
+            { label: 'MSCI ◷ chưa có điểm thêm', sig: 'wait' },
+            { label: 'CK Việt ◷ không đổi',       sig: 'wait' }
+          ],
+          keyCalls: [
+            { tag: 'MSCI',    value: 'Chưa đạt điểm thêm', signal: 'wait', note: 'Review MSCI lần này VN chưa được thêm điểm nâng hạng. Cần thêm cải tiến về market access, thanh khoản và NĐT nước ngoài.' },
+            { tag: 'CK Việt', value: 'Không ảnh hưởng',    signal: 'wait', note: 'Quan điểm không thay đổi — VN tăng nhờ yếu tố nội tại (tín dụng, lợi nhuận DN, dòng tiền nội), không phụ thuộc MSCI.' }
+          ],
+          sections: [
+            { title: 'MSCI — Chưa Có Điểm Thêm', signal: 'wait', sigLabel: 'Trung lập — không ảnh hưởng thesis',
+              para: 'MSCI review lần này VN chưa được nâng thêm điểm trên lộ trình Emerging Market. Vẫn cần cải tiến thêm về market access, thanh khoản và các điều kiện cho NĐT nước ngoài. Đây không phải tin xấu — chỉ là chậm hơn kỳ vọng.',
+              bullets: ['Quá trình nâng hạng EM vẫn tiếp tục, chỉ cần thêm thời gian.', 'CK VN vẫn tăng được nhờ yếu tố nội tại, không cần chờ MSCI.', 'Khi MSCI thực sự nâng hạng sẽ là catalyst lớn — nhưng đừng chờ trước khi đầu tư.'] }
+          ]
+        },
+        {
+          date: '2026-06-19', dateShort: '19/06', timeAgo: '3 ngày trước',
+          tab: 'Post · 19/06', sourceType: 'member-post', typeLabel: 'Post hội viên',
+          title: 'Tin Vui — Thông Tư 139: Cổ Phiếu HNX Chuyển Sang HOSE Chậm Nhất 31/12/2026',
+          summary: 'Thông tư 139/2025/TT-BTC: cổ phiếu HNX đủ tiêu chuẩn phải chuyển sang HOSE chậm nhất 31/12/2026. Tích cực cho thanh khoản và định giá — đặc biệt TCX, BVB.',
+          feedChips: [
+            { label: 'TCX ↑ sắp lên HOSE',    sig: 'up' },
+            { label: 'BVB ↑ chuyển HOSE T7',   sig: 'up' },
+            { label: 'CK Việt ↑ thanh khoản',  sig: 'up' }
+          ],
+          keyCalls: [
+            { tag: 'Thông tư 139', value: 'HNX → HOSE ≤ 31/12/2026', signal: 'up', note: 'Cổ phiếu đủ tiêu chuẩn trên HNX phải niêm yết HOSE trước 31/12/2026 — tăng thanh khoản và định giá cho nhóm này.' },
+            { tag: 'TCX',          value: 'Sắp lên HOSE',             signal: 'up', note: 'TCX đủ tiêu chuẩn và đang trong lộ trình chuyển sang HOSE — catalyst lớn cho câu chuyện VN30.' },
+            { tag: 'BVB',          value: 'Niêm yết HOSE T7/2026',    signal: 'up', note: 'BVBank chuyển chính thức sang HOSE tháng 7/2026 — tăng định giá và thanh khoản.' }
+          ],
+          sections: [
+            { title: 'Thông tư 139 — Catalyst Quan Trọng', signal: 'up', sigLabel: 'Tích cực — tăng thanh khoản HNX',
+              para: 'Thông tư 139/2025/TT-BTC quy định rõ: cổ phiếu HNX đáp ứng tiêu chuẩn niêm yết HOSE phải chuyển sàn chậm nhất 31/12/2026. Khi lên HOSE, cổ phiếu hưởng thanh khoản cao hơn, room ngoại rộng hơn, các quỹ index có thể mua vào.',
+              bullets: ['TCX: đủ tiêu chuẩn, đang trong lộ trình. Lên HOSE + VN30 là catalyst đôi.', 'BVBank (BVB): niêm yết HOSE chính thức T7/2026 — đã cầm, không bán.', 'Theo dõi thêm các cổ phiếu HNX khác đủ tiêu chuẩn.'] }
+          ]
+        },
+        {
+          date: '2026-06-19', dateShort: '19/06', timeAgo: '3 ngày trước',
+          tab: 'Post · 19/06', sourceType: 'member-post', typeLabel: 'Post hội viên',
+          title: 'Môi Trường Lãi Suất Hiện Tại — DN Nhiều Tiền Mặt & MOAT Như VNM Là Ưu Thế',
+          summary: 'Lãi suất cao kéo dài tạo bất lợi cho DN nợ nhiều, nhưng là ưu thế lớn cho DN nhiều tiền mặt + MOAT như VNM. VNM gửi tiền lãi cao, duy trì cổ tức đều đặn. Môi trường này favors quality over growth.',
+          feedChips: [
+            { label: 'VNM ↑ tiền mặt + MOAT',  sig: 'up'   },
+            { label: 'DN nợ ↓ lãi suất cao',    sig: 'down' },
+            { label: 'Quality ↑ over Growth',    sig: 'up'   }
+          ],
+          keyCalls: [
+            { tag: 'VNM',      value: 'Ưu thế tiền mặt',           signal: 'up',   note: 'VNM có lượng tiền mặt lớn → gửi tiết kiệm lãi cao → tăng thu nhập tài chính → hỗ trợ lợi nhuận và cổ tức trong môi trường lãi cao.' },
+            { tag: 'MOAT',     value: 'Lợi thế cạnh tranh bền',    signal: 'up',   note: 'DN có MOAT (thương hiệu, chi phí chuyển đổi, lợi thế mạng) giữ được biên lợi nhuận dù kinh tế chậm lại.' },
+            { tag: 'DN nợ cao', value: 'Áp lực lãi vay',           signal: 'down', note: 'Lãi suất cao bào mòn lợi nhuận DN nợ nhiều — cẩn thận nhóm BĐS nợ cao, nhà thầu xây dựng.' }
+          ],
+          sections: [
+            { title: 'Chiến lược trong môi trường lãi cao', signal: 'up', sigLabel: 'Ưu tiên DN tiền mặt + MOAT',
+              para: 'Khi lãi suất cao kéo dài, DN nhiều tiền mặt không chỉ không bị bào mòn bởi lãi vay mà còn hưởng lợi từ thu nhập tài chính. MOAT đảm bảo giữ được khách hàng và biên lợi nhuận.',
+              bullets: ['VNM: tiền mặt lớn + thương hiệu tiêu dùng → hưởng lợi kép từ lãi tiền gửi + biên vững.', 'Ngân hàng: hưởng lợi trực tiếp từ spread lãi suất cao.', 'Tránh: DN BĐS nợ nhiều, nhà thầu lệ thuộc vốn vay.'] }
+          ]
+        },
+        {
+          date: '2026-06-18', dateShort: '18/06', timeAgo: '4 ngày trước',
+          tab: 'Video · 18/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Chủ Tịch Fed Lật Kèo — Từ Bỏ Định Hướng Lãi Suất, Vàng & Bitcoin Cần Lưu Ý Gì?',
+          summary: 'Fed Chair Powell bất ngờ từ bỏ forward guidance về lãi suất — không cam kết lộ trình cắt giảm. Vàng phản ứng tăng ngắn hạn nhưng thesis chính không đổi. BTC vẫn nhạy cảm với tin Fed. CK Mỹ thêm bất định.',
+          feedChips: [
+            { label: 'Fed ↓ hawkish — lật kèo',  sig: 'down' },
+            { label: 'Vàng ↑ tăng ngắn hạn',      sig: 'up'   },
+            { label: 'BTC ↓ nhạy cảm Fed',         sig: 'down' },
+            { label: 'CK Mỹ ↓ thêm bất định',     sig: 'down' }
+          ],
+          keyCalls: [
+            { tag: 'Fed',     value: 'Không còn forward guidance', signal: 'down', note: 'Powell chính thức từ bỏ cam kết lộ trình lãi suất — quyết định theo từng cuộc họp dựa trên dữ liệu. Hawkish hơn kỳ vọng thị trường.' },
+            { tag: 'Vàng',    value: 'Tăng ngắn hạn — thesis không đổi', signal: 'up', note: 'Vàng hưởng lợi ngắn từ USD yếu sau tin Fed bất định. Vùng mua 4.100–4.200 vẫn hợp lý.' },
+            { tag: 'Bitcoin', value: 'Vẫn nhạy cảm Fed',           signal: 'down', note: 'BTC đã thành tài sản tài chính chính thức, nhạy cảm với mọi tin Fed. Không thay đổi vị thế chờ short 68–70k.' },
+            { tag: 'CK Mỹ',  value: 'Thêm bất định',               signal: 'down', note: 'Không có lộ trình lãi rõ ràng → EPS forward khó định giá → P/E sẽ được chiết khấu. Không mua thêm.' }
+          ],
+          sections: [
+            { title: 'Fed — Không Còn Forward Guidance', signal: 'down', sigLabel: 'Hawkish hơn kỳ vọng',
+              para: 'Powell từ bỏ thông lệ đưa ra định hướng lãi suất nhiều tháng trước — chuyển sang "data dependent" hoàn toàn. Thị trường không thể dựa vào Fed put truyền thống; bất định tăng lên.',
+              bullets: ['Không cam kết cắt giảm lãi suất trong phần còn lại của 2026.', 'Mỗi cuộc họp là independent — biến động cao hơn xung quanh mỗi FOMC.', 'Dữ liệu việc làm và CPI trở nên quan trọng hơn bao giờ.'] },
+            { title: 'Vàng & Bitcoin', signal: 'wait', sigLabel: 'Vàng: mua được · BTC: chờ',
+              para: 'Vàng phản ứng tích cực ngắn hạn. Không thay đổi thesis: vùng 4.100–4.200 là mua tốt. Bitcoin vẫn trong xu thế chỉnh — không có tín hiệu đảo chiều dù tin Fed.',
+              levels: 'Vàng mua: 4.100–4.200 · BTC short: 68.000–70.000 · Mục tiêu BTC: 42k' },
+            { title: 'Chứng khoán Việt Nam', signal: 'wait', sigLabel: 'Không ảnh hưởng — giữ nguyên',
+              para: 'Quyết định Fed ít ảnh hưởng trực tiếp đến chợ huyện VN. Giữ nguyên 70% cổ phiếu. Bank VN hưởng lợi từ NIM cao khi lãi suất toàn cầu duy trì cao.',
+              bullets: ['Bank VN: NIM rộng trong môi trường lãi cao toàn cầu.', 'Không action — giữ nguyên cơ cấu.'] }
+          ]
+        },
+        {
+          date: '2026-06-18', dateShort: '18/06', timeAgo: '4 ngày trước',
+          tab: 'Post · 18/06', sourceType: 'member-post', typeLabel: 'Post hội viên',
+          title: 'Hội Viên Xem Video Cập Nhật Mới Nhất Về FED — Quan Điểm Cổ Phiếu Việt Nam',
+          summary: 'Thái Phạm gửi hội viên xem video cập nhật FED hôm nay — Powell lật kèo về định hướng lãi. Quan điểm cổ phiếu Việt Nam không đổi: giữ 70% cổ phiếu, tập trung bank + TCX + phân bón.',
+          feedChips: [
+            { label: 'FED ↓ hawkish',         sig: 'down' },
+            { label: 'CK Việt ◷ không đổi',  sig: 'wait' }
+          ],
+          keyCalls: [
+            { tag: 'FED',     value: 'Hawkish — lật kèo',  signal: 'down', note: 'Powell từ bỏ forward guidance, không cam kết cắt lãi 2026. Xem chi tiết trong video công khai hôm nay.' },
+            { tag: 'CK Việt', value: 'Không thay đổi',     signal: 'wait', note: 'Quan điểm không đổi: 70% cổ phiếu / 30% tiền mặt. Bank + TCX + phân bón là cốt lõi.' }
+          ],
+          sections: [
+            { title: 'Cập nhật FED & CK Việt', signal: 'wait', sigLabel: 'Không thay đổi quan điểm',
+              para: 'Post ngắn gửi hội viên: xem video công khai hôm nay về diễn biến Fed. Quan điểm cổ phiếu Việt Nam không thay đổi — 70% cổ phiếu, tập trung bank, TCX và phân bón.',
+              bullets: ['Xem video công khai hôm nay để hiểu diễn biến Fed.', 'Không action với danh mục VN.', 'Giữ: bank (VCB, BID, TCB, HDB, EB, BVB), TCX, SCS, DCM/DPM.'] }
+          ]
+        },
+        {
+          date: '2026-06-17', dateShort: '17/06', timeAgo: '5 ngày trước',
           tab: 'Video · 17/06', sourceType: 'public-video', typeLabel: 'Video công khai',
           title: 'Sự Thật Về "Nghìn Tỷ Phú" Elon Musk — Cú Bơm Thổi IPO SpaceX',
           summary: 'IPO SpaceX chỉ bán 4,2% cổ phần (float hẹp) để thổi giá phần còn lại — định giá ~2.660 tỷ USD là ảo; Morningstar ước ~780 tỷ. Tài sản Elon ~100% trên giấy (ông tự nhận chỉ ~0,1% tiền mặt). Công ty lỗ nặng, P/S >100x. Rủi ro lớn 15/7 khi ~911 triệu cp insider được bán. Không khuyến nghị mua ở giá này.',
@@ -173,7 +340,7 @@ window.HDT_DATA = {
           ]
         },
         {
-          date: '2026-06-17', dateShort: '17/06', timeAgo: 'Hôm qua',
+          date: '2026-06-17', dateShort: '17/06', timeAgo: '5 ngày trước',
           tab: 'Post · 17/06', sourceType: 'member-post', typeLabel: 'Post hội viên',
           title: 'Kịch Bản FED Tối Nay — Chia Sẻ Qua Video Phỏng Vấn',
           summary: 'Thái Phạm chia sẻ kịch bản cuộc họp FED kèm một video phỏng vấn (đăng kèm link Facebook). Phần quan điểm chi tiết nằm trong video liên kết — post trên YouTube chỉ là phần dẫn.',
@@ -399,6 +566,20 @@ window.HDT_DATA = {
         }
       ],
       sources: [
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '21/06/2026',
+          title: 'Siêu chu kỳ chip đối đầu vĩ mô xấu — ETF Funds cơ cấu mạnh cuối tháng 6', meta: 'Video công khai · YouTube' },
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '21/06/2026',
+          title: 'Tập 33 — Vàng, Bitcoin, Chứng khoán tuần 25', meta: 'Video hội viên · chỉ dành cho hội viên' },
+        { icon: '✎', iconBg: 'oklch(0.95 0.02 235)', iconColor: 'oklch(0.42 0.08 235)', date: '20/06/2026',
+          title: '20/6 — Chưa có điểm thêm từ MSCI', meta: 'Post cộng đồng · chỉ dành cho hội viên' },
+        { icon: '✎', iconBg: 'oklch(0.95 0.02 235)', iconColor: 'oklch(0.42 0.08 235)', date: '19/06/2026',
+          title: '19/6 — Tin vui: Thông tư 139 — HNX → HOSE ≤ 31/12/2026', meta: 'Post cộng đồng · chỉ dành cho hội viên' },
+        { icon: '✎', iconBg: 'oklch(0.95 0.02 235)', iconColor: 'oklch(0.42 0.08 235)', date: '19/06/2026',
+          title: '19/6 — Môi trường lãi suất — DN nhiều tiền mặt & MOAT như VNM', meta: 'Post cộng đồng · chỉ dành cho hội viên' },
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '18/06/2026',
+          title: '18/6 — Chủ tịch Fed lật kèo, cần lưu ý gì cho vàng & Bitcoin', meta: 'Video công khai · YouTube' },
+        { icon: '✎', iconBg: 'oklch(0.95 0.02 235)', iconColor: 'oklch(0.42 0.08 235)', date: '18/06/2026',
+          title: '18/6 — Hội viên: cập nhật mới nhất về FED + CK Việt', meta: 'Post cộng đồng · chỉ dành cho hội viên' },
         { icon: '✎', iconBg: 'oklch(0.95 0.02 235)', iconColor: 'oklch(0.42 0.08 235)', date: '16/06/2026',
           title: '16/6 — TĂNG CỔ PHIẾU LÊN 70% — Chợ Huyện Sắp Có Sức Sống', meta: 'Post cộng đồng · chỉ dành cho hội viên' },
         { icon: '✎', iconBg: 'oklch(0.95 0.02 235)', iconColor: 'oklch(0.42 0.08 235)', date: '15/06/2026',
@@ -533,7 +714,175 @@ window.HDT_DATA = {
       },
       updates: [
         {
-          date: '2026-06-17', dateShort: '17/06', timeAgo: 'Hôm qua',
+          date: '2026-06-21', dateShort: '21/06', timeAgo: 'Hôm qua',
+          tab: 'Video · 21/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: '3 Tiêu Chí Lựa Chọn Cổ Phiếu Bất Bại — Lăng Kính Đầu Tư Giá Trị',
+          summary: 'Ba tiêu chí cốt lõi để lựa chọn cổ phiếu theo phương pháp giá trị: (1) Chất lượng doanh nghiệp — ROE cao, biên ổn, MOAT rõ; (2) Định giá hấp dẫn — P/B, P/E thấp hơn trung bình ngành; (3) Quản trị tốt — ban lãnh đạo có track record, ưu tiên cổ đông.',
+          feedChips: [
+            { label: 'Chất lượng ↑ ROE cao',      sig: 'up' },
+            { label: 'Định giá ↑ P/B thấp',        sig: 'up' },
+            { label: 'Quản trị ↑ track record',    sig: 'up' }
+          ],
+          keyCalls: [
+            { tag: 'Tiêu chí 1', value: 'Chất lượng doanh nghiệp', signal: 'up', note: 'ROE > 15% liên tục nhiều năm; biên lợi nhuận ổn định hoặc mở rộng; có lợi thế cạnh tranh (MOAT) khó bị sao chép.' },
+            { tag: 'Tiêu chí 2', value: 'Định giá hấp dẫn',        signal: 'up', note: 'P/B dưới trung bình ngành (tốt nhất dưới 1,5x cho bank); P/E thấp hơn tốc độ tăng trưởng (PEG < 1).' },
+            { tag: 'Tiêu chí 3', value: 'Quản trị tốt',             signal: 'up', note: 'Ban lãnh đạo có track record dài, chi cổ tức đều, không pha loãng cổ phần bừa bãi, minh bạch thông tin.' }
+          ],
+          sections: [
+            { title: '3 tiêu chí lựa chọn cổ phiếu', signal: 'up', sigLabel: 'Tích cực — framework đầu tư giá trị',
+              para: 'Đầu tư giá trị không phải là mua cổ phiếu rẻ bất kỳ — mà là mua doanh nghiệp tốt khi định giá hấp dẫn. Ba tiêu chí này là bộ lọc cơ bản để loại đi 80% cổ phiếu không đáng đầu tư.',
+              bullets: ['Chất lượng: ROE > 15% bền vững, biên lợi nhuận ổn, MOAT.', 'Định giá: P/B dưới ngưỡng lịch sử, P/E hợp lý so với tăng trưởng.', 'Quản trị: lãnh đạo có skin in the game, cổ tức đều, thông tin minh bạch.'] },
+            { title: 'Ứng dụng vào TTCK VN — Nhóm bank tư nhân lớn', signal: 'up', sigLabel: 'Đáp ứng cả 3 tiêu chí',
+              para: 'Hiện tại nhóm ngân hàng thương mại cổ phần lớn (ACB, MB, VPBank, HDBank) đang đáp ứng cả 3 tiêu chí: ROE cao, định giá P/B thấp lịch sử, quản trị ngày càng cải thiện.',
+              bullets: ['ACB, MB: ROE ổn định > 20%, P/B dưới 1,3x.', 'VPBank, HDBank: tăng trưởng tín dụng mạnh, định giá rẻ sau điều chỉnh.', 'Tránh: cổ phiếu rẻ nhưng ROE thấp, quản trị kém, không có MOAT.'] }
+          ]
+        },
+        {
+          date: '2026-06-20', dateShort: '20/06', timeAgo: '2 ngày trước',
+          tab: 'Video · 20/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Định Giá — Yếu Tố Quan Trọng Nhất Trong Đầu Tư Giá Trị | Trà Đá Brothers #02',
+          summary: 'Tập 2 Trà Đá Brothers: định giá là yếu tố quyết định lợi nhuận đầu tư, không phải tăng trưởng. DN tốt mua giá đắt vẫn lỗ; DN xấu mua giá rất rẻ vẫn có lời. Phương pháp DCF, P/B, P/E kết hợp.',
+          feedChips: [
+            { label: 'Định giá ↑ then chốt',    sig: 'up' },
+            { label: 'DCF ↑ phương pháp gốc',   sig: 'up' }
+          ],
+          keyCalls: [
+            { tag: 'Nguyên tắc', value: 'Giá mua quyết định lợi nhuận', signal: 'up', note: 'DN tốt mua quá đắt (P/E 50x) vẫn cho lợi nhuận thấp hoặc âm. Mua DN vừa phải giá rất rẻ (P/E 5x) vẫn lời tốt.' },
+            { tag: 'DCF',        value: 'Phương pháp gốc rễ',           signal: 'up', note: 'DCF (Discounted Cash Flow) là nền tảng — chiết khấu dòng tiền tương lai về hiện tại. Kết hợp P/B, P/E để cross-check.' }
+          ],
+          sections: [
+            { title: 'Tại sao định giá quan trọng hơn tăng trưởng?', signal: 'up', sigLabel: 'Nền tảng — giá mua = lợi nhuận',
+              para: 'Nhiều nhà đầu tư mắc bẫy mua doanh nghiệp "tốt" mà không quan tâm giá — kết quả là lỗ hoặc tỷ suất thấp. Buffett: "Price is what you pay, value is what you get." Định giá đúng là một nửa thành công.',
+              bullets: ['DN tốt + giá rẻ = lý tưởng.', 'DN tốt + giá đắt = có thể vẫn lỗ dài hạn.', 'DN kém + giá cực rẻ = lợi nhuận ngắn hạn nhưng rủi ro bẫy giá trị.'] },
+            { title: 'Các phương pháp định giá thực tế', signal: 'up', sigLabel: 'P/B + P/E + DCF kết hợp',
+              para: 'Kết hợp nhiều phương pháp để cross-check. DCF cho giá trị nội tại; P/B so với lịch sử và ngành; P/E điều chỉnh theo chu kỳ.',
+              bullets: ['DCF: tính dòng tiền tự do, chiết khấu về hiện tại. Nhạy cảm với giả định tăng trưởng.', 'P/B: tốt cho ngân hàng và DN nhiều tài sản. P/B < 1 thường hấp dẫn.', 'P/E: dễ dùng nhưng cẩn thận chu kỳ; dùng EPS trung bình 3–5 năm.'] }
+          ]
+        },
+        {
+          date: '2026-06-20', dateShort: '20/06', timeAgo: '2 ngày trước',
+          tab: 'Video · 20/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Góc Nhìn Cổ Phiếu BĐS Dưới Lăng Kính Giá Trị',
+          summary: 'Phân tích nhóm cổ phiếu BĐS theo tiêu chuẩn đầu tư giá trị: chỉ một số ít đáp ứng. Tập trung BĐS công nghiệp và khu đô thị pháp lý sạch. Tránh nhóm BĐS nợ cao, pháp lý phức tạp. Hiện cơ hội nhiều hơn rủi ro với nhóm chất lượng.',
+          feedChips: [
+            { label: 'BĐS CN ↑ cơ hội',      sig: 'up'   },
+            { label: 'BĐS nợ cao ↓ tránh',   sig: 'down' },
+            { label: 'Pháp lý ⚠ chọn lọc',  sig: 'warn' }
+          ],
+          keyCalls: [
+            { tag: 'BĐS công nghiệp',             value: 'Cơ hội nhiều',                 signal: 'up',   note: 'BĐS KCN hưởng lợi từ FDI, dịch chuyển sản xuất. Định giá hiện tại rẻ tương đối so với triển vọng tăng trưởng.' },
+            { tag: 'BĐS nhà ở pháp lý sạch',     value: 'Chọn lọc — cơ hội tốt',       signal: 'up',   note: 'DN BĐS có quỹ đất pháp lý rõ ràng, nợ thấp, sẵn sàng mở bán trong 1–2 năm tới.' },
+            { tag: 'BĐS nợ cao / pháp lý phức',  value: 'Tránh',                        signal: 'down', note: 'Nhóm này có rủi ro pháp lý, tái cơ cấu nợ dài hạn. Không mua dù giá rẻ — bẫy giá trị.' }
+          ],
+          sections: [
+            { title: 'BĐS công nghiệp — Cơ hội thực sự', signal: 'up', sigLabel: 'Tích cực — hưởng lợi FDI',
+              para: 'BĐS KCN là nhóm đáp ứng tốt nhất tiêu chí giá trị trong ngành BĐS: dòng tiền từ thuê đất ổn định, nhu cầu tăng từ dịch chuyển sản xuất, định giá hiện tại hấp dẫn.',
+              bullets: ['Kinh Bắc (KBC): quỹ đất lớn, đang mở rộng. Pháp lý ổn.', 'Sonadezi, Viglacera: BĐS KCN kết hợp dịch vụ.', 'Chọn DN có KCN đã cho thuê ổn định, tiền mặt dương.'] },
+            { title: 'BĐS nhà ở — Chọn lọc kỹ', signal: 'warn', sigLabel: 'Thận trọng — pháp lý là then chốt',
+              para: 'Nhóm nhà ở phân hóa rõ: DN pháp lý sạch, nợ thấp đang phục hồi. DN pháp lý phức tạp, nợ tái cơ cấu nhiều năm nên tránh dù giá trông rẻ.',
+              bullets: ['NLG, DXG: pháp lý dần cải thiện, nợ kiểm soát được — theo dõi.', 'Novaland (NVL): pháp lý phức tạp — chỉ mua vùng 11–12k nếu có.', 'Tránh: PDR, DIG và các DN nợ trái phiếu lớn chưa giải quyết.'] }
+          ]
+        },
+        {
+          date: '2026-06-20', dateShort: '20/06', timeAgo: '2 ngày trước',
+          tab: 'Video · 20/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Ngân Hàng Nào Đang Có P/B Dưới 1?',
+          summary: 'Danh sách ngân hàng VN có P/B dưới 1 — định giá thấp hơn giá trị sổ sách. Nhóm này gồm một số bank tư nhân lớn sau đợt điều chỉnh. P/B < 1 không phải lúc nào cũng là cơ hội — cần xem chất lượng tài sản và ROE.',
+          feedChips: [
+            { label: 'Bank P/B<1 ↑ rẻ lịch sử',    sig: 'up'   },
+            { label: 'ROE ↑ chọn bank chất lượng', sig: 'up'   },
+            { label: 'Nợ xấu ⚠ cần kiểm tra',      sig: 'warn' }
+          ],
+          keyCalls: [
+            { tag: 'P/B < 1',          value: 'Hấp dẫn — nhưng không phải tất cả', signal: 'up',   note: 'P/B dưới 1 có nghĩa thị trường định giá bank thấp hơn tài sản ròng. Cơ hội thực sự khi bank có ROE cao và chất lượng tài sản tốt.' },
+            { tag: 'Bank tư nhân lớn', value: 'ACB, MB, VPB, HDB',               signal: 'up',   note: 'Nhóm này đang giao dịch P/B hấp dẫn — ROE tốt, tín dụng tăng trưởng, nợ xấu kiểm soát.' },
+            { tag: 'Nợ xấu',           value: 'Check kỹ NPL',                    signal: 'warn', note: 'P/B thấp đôi khi phản ánh rủi ro nợ xấu tiềm ẩn. Cần xem tỷ lệ NPL và tỷ lệ bao phủ nợ xấu trước khi mua.' }
+          ],
+          sections: [
+            { title: 'Ngân hàng VN có P/B dưới 1', signal: 'up', sigLabel: 'Cơ hội — percentile thấp nhất lịch sử',
+              para: 'Nhiều ngân hàng tư nhân lớn VN đang giao dịch ở P/B dưới 1 — mức hiếm gặp. Không phải vì chất lượng kém mà do áp lực chung từ khối ngoại bán ròng và tâm lý thị trường.',
+              bullets: ['ACB: P/B ~0,8–1,0x — ROE >20%, chất lượng tài sản tốt nhất nhóm.', 'MB Bank: P/B ~0,9–1,1x — tăng trưởng bán lẻ mạnh, bancassurance tốt.', 'VPBank: P/B ~0,7–0,9x — tăng trưởng CASA, FE Credit đang phục hồi.', 'HDBank: P/B ~0,8x — định giá rẻ nhất nhóm big 5 tư nhân.'] },
+            { title: 'Tiêu chí chọn bank theo giá trị', signal: 'up', sigLabel: 'P/B thấp + ROE cao + NPL thấp',
+              para: 'Bộ ba tiêu chí: (1) P/B thấp hơn 1,5x; (2) ROE > 15% liên tục; (3) NPL < 2% và LLR > 100%. Tránh bank P/B thấp vì NPL cao.',
+              bullets: ['Không mua bank chỉ vì P/B < 1 — phải check ROE và NPL.', 'Bank nhà nước (VCB, BID, CTG): ROE thấp hơn nhưng rủi ro thấp nhất.', 'Cơ hội tốt nhất: bank tư nhân lớn P/B thấp lịch sử + NPL đang được kiểm soát.'] }
+          ]
+        },
+        {
+          date: '2026-06-19', dateShort: '19/06', timeAgo: '3 ngày trước',
+          tab: 'Video · 19/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Triển Vọng Nhóm Tài Chính Ngân Hàng',
+          summary: 'Phân tích toàn diện nhóm tài chính ngân hàng VN: tín dụng đang tăng tốc trở lại, NIM cải thiện, nợ xấu đỉnh đã qua. Dự phóng KQKD H2/2026 tích cực. Bank tư nhân lớn là nhóm hấp dẫn nhất hiện tại.',
+          feedChips: [
+            { label: 'Tín dụng ↑ tăng tốc',      sig: 'up'  },
+            { label: 'NIM ↑ cải thiện',            sig: 'up'  },
+            { label: 'Nợ xấu ◷ đỉnh đã qua',     sig: 'wait' },
+            { label: 'H2/2026 ↑ KQKD tích cực',   sig: 'up'  }
+          ],
+          keyCalls: [
+            { tag: 'Tín dụng', value: 'Tăng tốc H2/2026',      signal: 'up',   note: 'Tín dụng toàn hệ thống đang tăng tốc trở lại sau giai đoạn chậm. Mục tiêu NHNN 16% cả năm — H2 cần bù đắp tốc độ.' },
+            { tag: 'NIM',      value: 'Đáy đã qua',             signal: 'up',   note: 'NIM ngân hàng đã chạm đáy và đang phục hồi. Chi phí vốn ổn định + lãi cho vay tăng dần = NIM mở rộng.' },
+            { tag: 'Nợ xấu',  value: 'Đỉnh đã qua — đang giảm', signal: 'wait', note: 'NPL hệ thống đã đạt đỉnh và bắt đầu giảm nhờ kinh tế phục hồi, xử lý VAMC tích cực.' }
+          ],
+          sections: [
+            { title: 'Tín dụng và NIM', signal: 'up', sigLabel: 'Tích cực — tăng tốc H2',
+              para: 'Tín dụng H1/2026 tăng khoảng 8%, còn lại 8% cần đạt trong H2 để hoàn thành mục tiêu 16%. Điều này tạo động lực lớn cho doanh thu lãi thuần Q3–Q4/2026. NIM cải thiện dần khi chi phí huy động ổn và lãi cho vay tăng nhẹ.',
+              bullets: ['H2 cần tăng tốc tín dụng — tạo áp lực tích cực lên doanh thu.', 'NIM đáy Q4/2025–Q1/2026; H2/2026 dự kiến mở rộng.', 'CASA cải thiện → chi phí vốn giảm → hỗ trợ NIM.'] },
+            { title: 'Chất lượng tài sản', signal: 'wait', sigLabel: 'Cải thiện — NPL đang giảm',
+              para: 'Đỉnh nợ xấu hệ thống đã qua. Các ngân hàng lớn đang tích cực trích lập dự phòng và xử lý VAMC. Kinh tế phục hồi → DN trả được nợ → NPL giảm dần. H2/2026 KQKD dự kiến khởi sắc.',
+              bullets: ['VCB, BID: đã trích lập đầy đủ, sẵn sàng hoàn nhập dự phòng.', 'TCB, MB, ACB: nợ xấu kiểm soát tốt.', 'Tránh: bank NPL > 3% và chưa bao phủ đủ.'] }
+          ]
+        },
+        {
+          date: '2026-06-19', dateShort: '19/06', timeAgo: '3 ngày trước',
+          tab: 'Video · 19/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'HPG Có Bị Ảnh Hưởng Bởi Chu Kỳ Ngành Thép?',
+          summary: 'HPG (Hòa Phát) là DN thép tốt nhất VN nhưng ngành thép có chu kỳ mạnh — giá thép và nguyên liệu (quặng, than cốc) biến động lớn ảnh hưởng lợi nhuận. HPG hiện ở pha phục hồi chu kỳ; Dung Quất 2 là catalyst dài hạn.',
+          feedChips: [
+            { label: 'HPG ◷ chu kỳ phục hồi',   sig: 'wait' },
+            { label: 'Thép TG ↑ phục hồi giá',  sig: 'up'   },
+            { label: 'Dung Quất ↑ catalyst mới', sig: 'up'   },
+            { label: 'Quặng/than ⚠ biến động',  sig: 'warn' }
+          ],
+          keyCalls: [
+            { tag: 'HPG',        value: 'DN tốt — chờ giá rẻ hơn',  signal: 'wait', note: 'HPG là DN thép tốt nhất VN với lợi thế Dung Quất. Cần mua khi P/B < 1, P/E < 10 để margin of safety đủ lớn.' },
+            { tag: 'Chu kỳ thép', value: 'Phục hồi từ đáy',         signal: 'wait', note: 'Giá thép thế giới đang phục hồi từ đáy chu kỳ. TQ giảm xuất khẩu thép phế → hỗ trợ giá thép dài hạn.' },
+            { tag: 'Dung Quất 2', value: 'Catalyst lớn',             signal: 'up',   note: 'Nhà máy Dung Quất giai đoạn 2 đi vào hoạt động sẽ tăng gấp đôi công suất HPG — catalyst dài hạn quan trọng.' }
+          ],
+          sections: [
+            { title: 'HPG và chu kỳ ngành thép', signal: 'wait', sigLabel: 'Phục hồi chu kỳ — chờ vùng giá tốt',
+              para: 'HPG là DN thép tốt nhất VN nhờ quy mô lớn, tự chủ nguyên liệu một phần, và lợi thế Dung Quất. Nhưng lợi nhuận biến động mạnh theo chu kỳ giá thép và nguyên liệu đầu vào. Hiện chu kỳ đang phục hồi từ đáy.',
+              bullets: ['Chu kỳ thép đáy 2024–Q1/2026; đang phục hồi dần.', 'TQ kiểm soát xuất khẩu thép phế → hỗ trợ giá thép.', 'Dung Quất 2 tăng công suất 100% — catalyst lớn khi đi vào vận hành.'] },
+            { title: 'Định giá và thời điểm mua', signal: 'wait', sigLabel: 'Chờ P/B dưới 1 để mua',
+              para: 'HPG là DN đầu tư được nhưng cần mua đúng chu kỳ và đúng giá. Tốt nhất mua ở vùng P/B < 1 khi tâm lý thị trường bi quan nhất về thép.',
+              bullets: ['P/B mục tiêu mua: dưới 1,0x.', 'Không dùng margin — ngành thép có thể chỉnh sâu bất ngờ.', 'Nắm giữ dài hạn (3–5 năm) để capture toàn chu kỳ.'] }
+          ]
+        },
+        {
+          date: '2026-06-18', dateShort: '18/06', timeAgo: '4 ngày trước',
+          tab: 'Video · 18/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Cổ Phiếu Ngành Thép Nào Đáng Chú Ý?',
+          summary: 'Phân tích nhóm cổ phiếu thép VN: HPG là lựa chọn số 1 nhờ lợi thế quy mô và Dung Quất. Các DN nhỏ hơn (NKG, TLH, HSG) phụ thuộc nhiều vào giá thép nhập khẩu và margin mỏng hơn. Chiến lược: mua HPG khi P/B dưới 1.',
+          feedChips: [
+            { label: 'HPG ↑ lựa chọn số 1',  sig: 'up'   },
+            { label: 'NKG/TLH ◷ theo dõi',  sig: 'wait' },
+            { label: 'Chu kỳ ↑ phục hồi',    sig: 'up'   }
+          ],
+          keyCalls: [
+            { tag: 'HPG',         value: 'Lựa chọn số 1',          signal: 'up',   note: 'Quy mô lớn nhất, lợi thế chi phí thấp, Dung Quất 2 là catalyst. P/B tiếp cận vùng hấp dẫn.' },
+            { tag: 'NKG, TLH, HSG', value: 'Rủi ro hơn HPG',      signal: 'wait', note: 'Không có lợi thế quy mô như HPG; phụ thuộc thép nhập khẩu và giá NL nhiều hơn. Biến động LN lớn hơn.' },
+            { tag: 'Chiến lược',  value: 'Mua HPG vùng P/B<1',     signal: 'up',   note: 'Tập trung vào HPG. Mua khi P/B dưới 1, không dùng margin.' }
+          ],
+          sections: [
+            { title: 'Phân loại cổ phiếu thép VN', signal: 'up', sigLabel: 'HPG dẫn đầu rõ ràng',
+              para: 'Ngành thép VN phân hóa rõ: HPG là DN lớn nhất, lợi thế cạnh tranh rõ ràng. Các DN còn lại (NKG, TLH, HSG, VIS) nhỏ hơn nhiều và phụ thuộc nhiều vào giá thép thế giới.',
+              bullets: ['HPG: thép dẹt (HRC, tôn) + thép dài (cốt thép). Dung Quất cho lợi thế chi phí lớn.', 'NKG, TLH: tôn mạ và thép dài. Phụ thuộc NL nhập. Biên mỏng hơn HPG.', 'HSG: tôn mạ. Biên mỏng, nhạy cảm giá thép nhập khẩu.'] },
+            { title: 'Thời điểm và chiến lược', signal: 'up', sigLabel: 'Mua HPG vùng P/B thấp',
+              para: 'Ngành thép là ngành chu kỳ điển hình — mua vùng P/B thấp lịch sử, bán khi chu kỳ đỉnh. Không nắm giữ mãi không chốt lời khi đạt mục tiêu.',
+              bullets: ['HPG P/B mục tiêu mua: dưới 1,0–1,1x.', 'Đặt mục tiêu lợi nhuận rõ ràng (30–50%) trước khi mua.', 'Không dùng margin — thép có thể chỉnh −30% bất ngờ.'] }
+          ]
+        },
+        {
+          date: '2026-06-17', dateShort: '17/06', timeAgo: '5 ngày trước',
           tab: 'Video · 17/06', sourceType: 'public-video', typeLabel: 'Video công khai',
           title: 'Ba Nhóm Ngành Triển Vọng Để Giữ 5 Năm',
           summary: 'Ba nhóm ngành ưu tiên giữ 5 năm: Ngân hàng (tăng trưởng 15–20%/năm, định giá rẻ, lợi thế cạnh tranh mạnh), Vật liệu xây dựng (hưởng lợi đầu tư công) và Bán lẻ (bùng nổ tiêu dùng theo GDP). Rủi ro chính từ vĩ mô thế giới & giá cổ phiếu — khắc phục bằng mua khi định giá rất rẻ và bảo vệ thành quả khi đạt mục tiêu.',
@@ -559,7 +908,7 @@ window.HDT_DATA = {
           ]
         },
         {
-          date: '2026-06-14', dateShort: '14/06', timeAgo: '2 ngày trước',
+          date: '2026-06-14', dateShort: '14/06', timeAgo: '8 ngày trước',
           tab: 'Video · 14/06', sourceType: 'public-video', typeLabel: 'Video công khai',
           title: 'Nhà Đầu Tư Nước Ngoài Bán Ròng Mạnh: Rủi Ro Hay Cơ Hội?',
           summary: 'Khối ngoại bán ròng kỷ lục 26 năm → cơ hội tích lũy, không phải rủi ro. Định giá VN percentile 10–15% thấp nhất lịch sử. Bank tư nhân lớn rất rẻ, cơ hội >> rủi ro. Không dùng margin.',
@@ -609,7 +958,7 @@ window.HDT_DATA = {
           ]
         },
         {
-          date: '2026-06-11', dateShort: '11/06', timeAgo: '5 ngày trước',
+          date: '2026-06-11', dateShort: '11/06', timeAgo: '11 ngày trước',
           tab: 'Podcast · 11/06', sourceType: 'public-video', typeLabel: 'Video công khai',
           title: 'Hành Động Gì Khi Thị Trường Chán Nản? — Tích Sản Cổ Phiếu #12',
           summary: 'Thị trường 20% thời gian tăng, 50% sideway, 30% giảm — đây là giai đoạn bình thường. Tích lũy cổ phiếu tốt, giá rẻ, ăn cổ tức và tái đầu tư. Không bao giờ all-in, duy trì kỷ luật % tỷ trọng.',
@@ -650,6 +999,20 @@ window.HDT_DATA = {
         }
       ],
       sources: [
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '21/06/2026',
+          title: '3 tiêu chí lựa chọn cổ phiếu bất bại | LĂNG KÍNH ĐẦU TƯ GIÁ TRỊ', meta: 'Video công khai · AzFin YouTube' },
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '20/06/2026',
+          title: 'Định giá — Yếu tố quan trọng trong đầu tư giá trị | Trà Đá Brothers #02', meta: 'Video công khai · AzFin YouTube' },
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '20/06/2026',
+          title: 'Góc nhìn cổ phiếu BĐS dưới lăng kính giá trị', meta: 'Video công khai · AzFin YouTube' },
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '20/06/2026',
+          title: 'Ngân hàng nào đang có P/B dưới 1?', meta: 'Video công khai · AzFin YouTube' },
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '19/06/2026',
+          title: 'Triển vọng nhóm tài chính ngân hàng', meta: 'Video công khai · AzFin YouTube' },
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '19/06/2026',
+          title: 'HPG có bị ảnh hưởng bởi chu kỳ ngành thép?', meta: 'Video công khai · AzFin YouTube' },
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '18/06/2026',
+          title: 'Cổ phiếu ngành thép nào đáng chú ý?', meta: 'Video công khai · AzFin YouTube' },
         { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '17/06/2026',
           title: '03 Ngành triển vọng trong tương lai?', meta: 'Video công khai · AzFin Vietnam' },
         { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '14/06/2026',
@@ -673,7 +1036,94 @@ window.HDT_DATA = {
       },
       updates: [
         {
-          date: '2026-06-17', dateShort: '17/06', timeAgo: 'Hôm qua',
+          date: '2026-06-21', dateShort: '21/06', timeAgo: 'Hôm qua',
+          tab: 'Video · 21/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'VN-Index 21/06: Tuần Cuối Tháng 6 Kỳ Vọng Gì?',
+          summary: 'Tuần cuối tháng 6 nhiều áp lực từ ETF rebalance nhưng xu hướng tích cực được duy trì. VN-Index cần vượt và giữ vùng kháng cự. Kỳ vọng tuần này sideway — tích lũy chờ tháng 7.',
+          feedChips: [
+            { label: 'VNI ◷ sideway cuối T6',  sig: 'wait' },
+            { label: 'ETF ↓ áp lực rebalance', sig: 'down' },
+            { label: 'T7 ↑ kỳ vọng phục hồi',  sig: 'up'   }
+          ],
+          keyCalls: [
+            { tag: 'VN-Index', value: 'Sideway — chờ tháng 7', signal: 'wait', note: 'Tuần cuối tháng 6 thường có áp lực từ ETF rebalance. Không nên giao dịch mạnh trong giai đoạn này.' },
+            { tag: 'Kháng cự', value: 'Vùng cần vượt', signal: 'wait', note: 'VN-Index cần vượt và giữ vùng kháng cự hiện tại để xác nhận xu hướng tăng. Tháng 7 mới rõ ràng hơn.' }
+          ],
+          sections: [
+            { title: 'Tuần cuối tháng 6 — Áp lực kỹ thuật', signal: 'wait', sigLabel: 'Sideway — không giao dịch mạnh',
+              para: 'Tuần cuối tháng 6 thường ít biến động định hướng — ETF rebalance tạo dòng chảy ngược chiều, tâm lý nhà đầu tư chờ đợi. Tháng 7 mới có độ rõ hơn về xu hướng.',
+              bullets: ['Không nên giao dịch mạnh cuối tháng 6.', 'Giữ nguyên danh mục, quan sát.', 'Tháng 7: theo dõi thanh khoản và mức vượt kháng cự để xác nhận xu hướng.'] }
+          ]
+        },
+        {
+          date: '2026-06-19', dateShort: '19/06', timeAgo: '3 ngày trước',
+          tab: 'Video · 19/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Nhận Định Tuần: Suýt Kết Thúc Chiến Tranh & Fed Họp — Đánh Giá Sóng CK Nhỏ Trong Tuần',
+          summary: 'Tuần Iran–Mỹ suýt ký hòa bình và cuộc họp Fed: hai sự kiện lớn tạo biến động nhưng thị trường VN vẫn theo logic riêng. Nhóm sóng nhỏ (CK, phân bón, BĐS) đang có dấu hiệu tích cực. Giữ vị thế cẩn thận.',
+          feedChips: [
+            { label: 'Iran ◷ gần ký hòa bình', sig: 'wait' },
+            { label: 'Fed ◷ giữ nguyên LS',     sig: 'wait' },
+            { label: 'Sóng nhỏ ↑ tín hiệu',     sig: 'up'   }
+          ],
+          keyCalls: [
+            { tag: 'Iran–Mỹ', value: 'Suýt ký — theo dõi', signal: 'wait', note: 'Iran–Mỹ tiến rất gần ký kết. Nếu ký thật → dầu giảm → CK quốc tế hồi → tích cực gián tiếp cho VN.' },
+            { tag: 'Fed',     value: 'Giữ nguyên LS',       signal: 'wait', note: 'Fed giữ nguyên như dự báo. Phát biểu hawkish hơn gây biến động ngắn nhưng không đổi xu hướng.' },
+            { tag: 'Sóng nhỏ', value: 'CK, phân bón, BĐS', signal: 'up',   note: 'Nhóm sóng nhỏ (ngành chứng khoán, phân bón, BĐS) đang có tín hiệu phục hồi. Theo dõi xác nhận thêm.' }
+          ],
+          sections: [
+            { title: 'Sự kiện tuần — Iran & Fed', signal: 'wait', sigLabel: 'Biến động nhưng VN theo logic riêng',
+              para: 'Hai sự kiện lớn tuần qua: Iran–Mỹ gần ký hòa bình (cuối cùng ký 19/6) và cuộc họp Fed giữ nguyên lãi suất. Cả hai tạo biến động ngắn hạn nhưng TTCK VN vẫn theo logic nội tại của mình.',
+              bullets: ['Iran–Mỹ ký 19/6 → dầu giảm → áp lực tỷ giá VN giảm → tích cực.', 'Fed giữ nguyên — đúng dự báo. Phát biểu hawkish là biến số cần theo dõi.', 'VN-Index tách biệt với CK quốc tế trong tuần — tín hiệu tốt về nội lực.'] },
+            { title: 'Sóng nhỏ trong tuần', signal: 'up', sigLabel: 'Tín hiệu phục hồi nhóm nhỏ',
+              para: 'Nhóm "sóng nhỏ" (cổ phiếu ngành chứng khoán, phân bón, BĐS nhà ở) đang xuất hiện tín hiệu phục hồi sau thời gian dài chán. Cần xác nhận thêm 1–2 tuần.',
+              bullets: ['Ngành CK (VCI, MBS, SSI): tín hiệu khởi động sớm.', 'Phân bón (DCM, DPM): đang về vùng tích lũy.', 'BĐS nhà ở (NLG, DXG): tín hiệu mua ngắn hạn nhưng cần cẩn thận.'] }
+          ]
+        },
+        {
+          date: '2026-06-18', dateShort: '18/06', timeAgo: '4 ngày trước',
+          tab: 'Video · 18/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Lời Khuyên Cho Nhà Đầu Tư Rời Bỏ Phương Pháp Giữa Chừng',
+          summary: 'Phân tích tâm lý nhà đầu tư hay thay đổi phương pháp giữa chừng khi gặp khó khăn. Không có phương pháp nào hoạt động 100% thời gian — bỏ đúng lúc khó nhất là sai lầm phổ biến nhất.',
+          feedChips: [
+            { label: 'Tâm lý ⚠ kiên định PP',   sig: 'warn' },
+            { label: 'Kỷ luật ↑ then chốt',       sig: 'up'   }
+          ],
+          keyCalls: [
+            { tag: 'Sai lầm phổ biến', value: 'Bỏ PP đúng lúc khó nhất', signal: 'warn', note: 'Nhà đầu tư thường bỏ phương pháp đúng vào lúc nó sắp bắt đầu hoạt động — vì khó khăn ngắn hạn che khuất triển vọng dài hạn.' },
+            { tag: 'Kỷ luật', value: 'Yếu tố then chốt', signal: 'up', note: 'Không có phương pháp nào hoạt động 100% thời gian. Kỷ luật là thứ phân biệt nhà đầu tư thành công với không thành công.' }
+          ],
+          sections: [
+            { title: 'Tại sao nhà đầu tư hay bỏ phương pháp?', signal: 'warn', sigLabel: 'Tâm lý — sai lầm cốt lõi',
+              para: 'Phần lớn nhà đầu tư không thất bại vì phương pháp sai — mà vì không kiên trì đủ lâu để phương pháp phát huy tác dụng. Giai đoạn khó khăn là phép thử thực sự của hệ thống.',
+              bullets: ['Mọi phương pháp đều có giai đoạn drawdown — không phải tín hiệu phải bỏ.', 'Bỏ phương pháp A để chạy sang B khi A khó là mất tiền hai lần.', 'Kỷ luật + thời gian là lợi thế cạnh tranh thực sự của nhà đầu tư cá nhân.'] }
+          ]
+        },
+        {
+          date: '2026-06-18', dateShort: '18/06', timeAgo: '4 ngày trước',
+          tab: 'Video · 18/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'VN-Index 18/06: Giai Đoạn Lan Truyền Sự Tiêu Cực',
+          summary: 'VN-Index đang ở giai đoạn lan truyền sự tiêu cực — tâm lý xấu từ CK quốc tế (Fed hawkish, thị trường Mỹ chỉnh) lan sang nhà đầu tư VN dù cơ bản VN không đổi. Đây thường là giai đoạn tốt nhất để tích lũy.',
+          feedChips: [
+            { label: 'Tâm lý ↓ lan truyền',       sig: 'down' },
+            { label: 'Cơ bản VN ◷ không đổi',    sig: 'wait' },
+            { label: 'Tích lũy ↑ giai đoạn tốt',  sig: 'up'   }
+          ],
+          keyCalls: [
+            { tag: 'Tâm lý', value: 'Lan truyền tiêu cực', signal: 'down', note: 'Fed hawkish + CK Mỹ chỉnh → tâm lý xấu lan sang VN. Nhưng cơ bản VN không thay đổi — đây là cơ hội, không phải rủi ro mới.' },
+            { tag: 'Cơ bản VN', value: 'Không đổi', signal: 'wait', note: 'Tín dụng tăng tốc, lợi nhuận doanh nghiệp cải thiện, VN sắp lên EM. Cơ bản không đổi dù tâm lý xấu.' },
+            { tag: 'Hành động', value: 'Tích lũy giai đoạn này', signal: 'up', note: 'Giai đoạn lan truyền tiêu cực thường là thời điểm tốt nhất để tích lũy cổ phiếu chất lượng.' }
+          ],
+          sections: [
+            { title: 'Giai đoạn lan truyền tiêu cực', signal: 'down', sigLabel: 'Tâm lý xấu — cơ bản không đổi',
+              para: 'Sau cuộc họp Fed hawkish và CK Mỹ chỉnh, tâm lý tiêu cực lan truyền sang thị trường VN. Đây là hiện tượng tâm lý điển hình — không phản ánh thay đổi cơ bản của thị trường VN.',
+              bullets: ['Cơ bản VN vẫn tốt: tín dụng tăng, lợi nhuận DN H2 dự kiến tích cực.', 'Khối ngoại bán là kỹ thuật (EM rebalancing), không phải vì VN xấu.', 'Giai đoạn tâm lý xấu lan truyền thường kéo dài 1–2 tuần rồi qua.'] },
+            { title: 'Cơ hội trong sự tiêu cực', signal: 'up', sigLabel: 'Tích lũy — cổ phiếu chất lượng giá tốt',
+              para: 'Lịch sử cho thấy: giai đoạn lan truyền tiêu cực (khi mọi người sợ) là thời điểm tốt nhất để mua cổ phiếu chất lượng. Kiên trì theo phương pháp và tích lũy dần.',
+              bullets: ['Bank tư nhân lớn: giá càng rẻ, tích lũy càng nhiều.', 'Không bán theo hoảng loạn.', 'Giai đoạn này sẽ qua — ai kiên nhẫn sẽ thắng.'] }
+          ]
+        },
+        {
+          date: '2026-06-17', dateShort: '17/06', timeAgo: '5 ngày trước',
           tab: 'Video · 17/06', sourceType: 'public-video', typeLabel: 'Video công khai',
           title: 'Fed Họp & NHNN Dự Thảo Nới Trần Vốn — Tác Động Thị Trường?',
           summary: 'Dự báo Fed giữ nguyên lãi suất (chú ý phát biểu thống đốc mới). NHNN dự thảo nới trần vốn ngắn hạn cho vay trung–dài hạn lên 40% — ngân hàng có thêm dư địa cho vay, tích cực. Cả hai tin khó tạo cú hích mạnh ngắn hạn. Tuần tích cực nhưng chưa có xu hướng mới — giữ tỷ trọng, hạn chế đảo hàng.',
@@ -704,6 +1154,14 @@ window.HDT_DATA = {
         }
       ],
       sources: [
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '21/06/2026',
+          title: 'Vnindex 21/06: Tuần cuối tháng 6 kỳ vọng gì?', meta: 'Video công khai · Chứng khoán 5 phút' },
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '19/06/2026',
+          title: 'Nhận định tuần: Suýt kết thúc chiến tranh và Fed họp — Đánh giá sóng CK nhỏ trong tuần', meta: 'Video công khai · Chứng khoán 5 phút' },
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '18/06/2026',
+          title: 'Lời khuyên dành cho nhóm nhà đầu tư rời bỏ phương pháp giữa chừng', meta: 'Video công khai · Chứng khoán 5 phút' },
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '18/06/2026',
+          title: 'Vnindex 18/06: Giai đoạn lan truyền sự tiêu cực', meta: 'Video công khai · Chứng khoán 5 phút' },
         { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '17/06/2026',
           title: '2 tin Fed họp và NHNN ra dự thảo nới trần vốn cho vay tác động đến thị trường như thế nào?', meta: 'Video công khai · Chứng khoán 5 phút' }
       ]

@@ -1230,6 +1230,423 @@ window.HDT_DATA = {
         { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '17/06/2026',
           title: '2 tin Fed họp và NHNN ra dự thảo nới trần vốn cho vay tác động đến thị trường như thế nào?', meta: 'Video công khai · Chứng khoán 5 phút' }
       ]
+    },
+
+    'tckd': {
+      initials: 'TK',
+      name: 'Tài chính & Kinh doanh',
+      avatarSrc: '',
+      bio: 'Kênh phân tích vĩ mô, chính sách và bất động sản (VWA): Luật Đất đai, chính sách tiền tệ SBV, dòng tiền và quản trị doanh nghiệp.',
+      sourceLabel: 'YouTube · Video công khai',
+      sourceChips: ['▶ Video công khai', 'Tần suất: hàng ngày'],
+      gauge: {
+        title: 'Phạm vi nội dung',
+        badge: 'Vĩ mô & BĐS', badgeBg: 'oklch(0.95 0.02 235)', badgeColor: 'oklch(0.42 0.08 235)',
+        bar1: 55, bar2: 45, label1: 'Vĩ mô/chính sách 55%', label2: 'Bất động sản 45%'
+      },
+      updates: [
+        {
+          date: '2026-06-21', dateShort: '21/06', timeAgo: 'Hôm qua',
+          tab: 'Video · 21/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Âm Tỷ Đồng Và Bài Học Về Quản Lý Dòng Tiền | Bạn Hỏi VWA Trả Lời',
+          summary: 'Câu chuyện doanh nghiệp âm vốn lưu động và bài học quản lý dòng tiền: lợi nhuận trên giấy không bằng dòng tiền thật. Quản trị thanh khoản, kiểm soát công nợ và đòn bẩy là yếu tố sống còn — áp dụng cho cả nhà đầu tư cá nhân.',
+          feedChips: [
+            { label: 'Dòng tiền ↑ ưu tiên',     sig: 'up'   },
+            { label: 'Đòn bẩy ⚠ kiểm soát',    sig: 'warn' }
+          ],
+          keyCalls: [
+            { tag: 'Dòng tiền', value: 'Quan trọng hơn lợi nhuận', signal: 'up',   note: 'Doanh nghiệp có lãi vẫn phá sản nếu mất thanh khoản. Dòng tiền hoạt động dương mới là sức khỏe thật.' },
+            { tag: 'Đòn bẩy',  value: 'Kiểm soát công nợ',         signal: 'warn', note: 'Vốn lưu động âm là dấu hiệu rủi ro — phụ thuộc vốn vay ngắn hạn tài trợ tài sản dài hạn.' }
+          ],
+          sections: [
+            { title: 'Bài học quản lý dòng tiền', signal: 'up', sigLabel: 'Nguyên tắc — dòng tiền là vua',
+              para: 'Khi phân tích doanh nghiệp, đừng chỉ nhìn lợi nhuận kế toán. Dòng tiền từ hoạt động kinh doanh, vòng quay công nợ và cơ cấu vốn mới phản ánh khả năng tồn tại thực sự. Vốn lưu động âm kéo dài là cảnh báo lớn.',
+              bullets: ['Lợi nhuận trên giấy khác tiền thật trong tài khoản.', 'Theo dõi dòng tiền hoạt động (CFO) dương và ổn định.', 'Tránh doanh nghiệp dùng nợ ngắn hạn tài trợ tài sản dài hạn.'] }
+          ]
+        },
+        {
+          date: '2026-06-19', dateShort: '19/06', timeAgo: '3 ngày trước',
+          tab: 'Video · 19/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Dự Thảo Sửa Đổi Luật Đất Đai: Phân Tích, Đánh Giá Tác Động',
+          summary: 'Phân tích dự thảo sửa đổi Luật Đất đai và tác động tới thị trường BĐS: minh bạch định giá, gỡ vướng pháp lý dự án, ảnh hưởng tới doanh nghiệp BĐS niêm yết. Tích cực dài hạn cho nhóm pháp lý sạch.',
+          feedChips: [
+            { label: 'Luật Đất đai ↑ gỡ vướng', sig: 'up'   },
+            { label: 'BĐS ◷ phân hóa',           sig: 'wait' }
+          ],
+          keyCalls: [
+            { tag: 'Luật Đất đai', value: 'Tích cực dài hạn',    signal: 'up',   note: 'Sửa đổi hướng tới minh bạch định giá đất, gỡ vướng pháp lý dự án — tốt cho DN BĐS pháp lý sạch.' },
+            { tag: 'Tác động',     value: 'Phân hóa theo DN',     signal: 'wait', note: 'DN quỹ đất pháp lý rõ hưởng lợi; DN vướng pháp lý phức tạp vẫn cần thời gian.' }
+          ],
+          sections: [
+            { title: 'Tác động của dự thảo Luật Đất đai', signal: 'up', sigLabel: 'Tích cực — minh bạch và gỡ vướng',
+              para: 'Dự thảo tập trung vào minh bạch định giá đất theo thị trường và cơ chế gỡ vướng pháp lý cho các dự án tồn đọng. Đây là yếu tố nền tảng cho chu kỳ phục hồi BĐS, nhưng tác động phân hóa mạnh giữa các doanh nghiệp.',
+              bullets: ['DN có quỹ đất pháp lý sạch: hưởng lợi rõ khi dự án được khơi thông.', 'DN vướng pháp lý phức tạp: cần thêm thời gian, rủi ro vẫn cao.', 'Định giá đất sát thị trường làm chi phí đầu vào dự án mới có thể tăng.'] }
+          ]
+        },
+        {
+          date: '2026-06-19', dateShort: '19/06', timeAgo: '3 ngày trước',
+          tab: 'Video · 19/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'SBV Nới Trần Vốn Ngắn Hạn Cho Vay Dài Hạn Từ 30% Lên 40% — Tích Cực Hay Tiêu Cực?',
+          summary: 'SBV dự thảo nới trần vốn ngắn hạn cho vay trung-dài hạn từ 30% lên 40%: tăng dư địa tín dụng, hỗ trợ tăng trưởng nhưng tăng rủi ro thanh khoản hệ thống. Tích cực ngắn hạn cho ngân hàng và BĐS, cần theo dõi rủi ro dài hạn.',
+          feedChips: [
+            { label: 'SBV ↑ nới trần 40%',      sig: 'up'   },
+            { label: 'Ngân hàng ↑ dư địa vay',   sig: 'up'   },
+            { label: 'Thanh khoản ⚠ rủi ro DH', sig: 'warn' }
+          ],
+          keyCalls: [
+            { tag: 'Chính sách', value: 'Nới trần 30% lên 40%',   signal: 'up',   note: 'Tăng dư địa cho ngân hàng dùng vốn ngắn hạn cho vay trung-dài hạn, hỗ trợ tín dụng và tăng trưởng.' },
+            { tag: 'Hưởng lợi',  value: 'Ngân hàng và BĐS',       signal: 'up',   note: 'Ngân hàng có thêm room cho vay; BĐS và đầu tư dài hạn dễ tiếp cận vốn hơn.' },
+            { tag: 'Rủi ro',     value: 'Lệch kỳ hạn',            signal: 'warn', note: 'Dùng nhiều vốn ngắn tài trợ dài làm tăng rủi ro thanh khoản hệ thống nếu không quản trị tốt.' }
+          ],
+          sections: [
+            { title: 'Nới trần vốn ngắn hạn cho vay dài hạn', signal: 'up', sigLabel: 'Tích cực ngắn hạn — cần quản trị rủi ro',
+              para: 'Việc nâng trần từ 30% lên 40% thể hiện ưu tiên mục tiêu tăng trưởng, chấp nhận thêm một phần rủi ro hệ thống. Ngắn hạn hỗ trợ tín dụng và các ngành thâm dụng vốn dài hạn như BĐS, hạ tầng.',
+              bullets: ['Ngân hàng: thêm dư địa cho vay trung-dài hạn, tăng thu nhập lãi.', 'BĐS, hạ tầng: tiếp cận vốn dài hạn dễ hơn.', 'Rủi ro: lệch kỳ hạn nguồn và sử dụng vốn tăng, cần giám sát thanh khoản.'] }
+          ]
+        },
+        {
+          date: '2026-06-18', dateShort: '18/06', timeAgo: '4 ngày trước',
+          tab: 'Video · 18/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Giá Thị Trường Luôn Dao Động Theo Giá Trị Thực #batdongsan',
+          summary: 'Nguyên lý giá thị trường dao động quanh giá trị thực áp dụng cho BĐS: giá có thể lệch ngắn hạn do tâm lý nhưng dài hạn quay về giá trị nội tại. Mua khi giá dưới giá trị thực, tránh FOMO khi giá vượt xa giá trị.',
+          feedChips: [
+            { label: 'BĐS ↑ giá trị thực',     sig: 'up'   },
+            { label: 'FOMO ⚠ tránh mua đắt',  sig: 'warn' }
+          ],
+          keyCalls: [
+            { tag: 'Nguyên lý', value: 'Giá quanh giá trị thực', signal: 'up',   note: 'Giá thị trường dao động quanh giá trị nội tại — lệch ngắn hạn do tâm lý, dài hạn hội tụ về giá trị thực.' },
+            { tag: 'Hành động', value: 'Mua dưới giá trị',        signal: 'wait', note: 'Cơ hội khi giá thấp hơn giá trị thực; tránh FOMO mua khi giá vượt xa giá trị.' }
+          ],
+          sections: [
+            { title: 'Giá trị thực trong đầu tư BĐS', signal: 'up', sigLabel: 'Nguyên lý — kiên nhẫn theo giá trị',
+              para: 'Cũng như cổ phiếu, giá BĐS dao động quanh giá trị thực. Giai đoạn trầm lắng là lúc giá có thể thấp hơn giá trị nội tại — cơ hội cho người mua kỷ luật. Ngược lại khi sốt đất, giá vượt xa giá trị là lúc cần thận trọng.',
+              bullets: ['Định giá BĐS theo dòng tiền cho thuê, vị trí và pháp lý, không theo tin đồn.', 'Mua khi giá dưới giá trị thực; kiên nhẫn chờ định giá hội tụ.', 'Tránh FOMO trong giai đoạn sốt giá ngắn hạn.'] }
+          ]
+        },
+        {
+          date: '2026-06-18', dateShort: '18/06', timeAgo: '4 ngày trước',
+          tab: 'Video · 18/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: '5 Điểm Nhấn Và Tín Hiệu Diều Hâu — Kỷ Nguyên Mới Kevin Warsh, Áp Lực Lãi Suất',
+          summary: 'Phân tích 5 điểm nhấn vĩ mô toàn cầu và tín hiệu diều hâu (hawkish) từ Fed. Khả năng Kevin Warsh dẫn dắt kỷ nguyên chính sách mới với quan điểm cứng rắn về lãi suất. Áp lực lãi suất cao kéo dài tác động tới tỷ giá và dòng vốn VN.',
+          feedChips: [
+            { label: 'Fed ↓ diều hâu',          sig: 'down' },
+            { label: 'Lãi suất ⚠ cao kéo dài', sig: 'warn' },
+            { label: 'Tỷ giá ⚠ áp lực',        sig: 'warn' }
+          ],
+          keyCalls: [
+            { tag: 'Fed',       value: 'Tín hiệu diều hâu',       signal: 'down', note: 'Quan điểm chính sách cứng rắn hơn — Kevin Warsh được nhắc tới như nhân vật của kỷ nguyên lãi suất cao kéo dài.' },
+            { tag: 'Lãi suất',  value: 'Cao kéo dài',            signal: 'warn', note: 'Lãi suất toàn cầu duy trì cao gây áp lực lên chi phí vốn và định giá tài sản rủi ro.' },
+            { tag: 'Tỷ giá VN', value: 'Áp lực',                 signal: 'warn', note: 'Chênh lệch lãi suất và dòng vốn ngoại tạo áp lực lên VND — cần theo dõi điều hành của NHNN.' }
+          ],
+          sections: [
+            { title: 'Tín hiệu diều hâu và áp lực lãi suất', signal: 'down', sigLabel: 'Thận trọng — môi trường lãi cao',
+              para: 'Các tín hiệu cho thấy chính sách tiền tệ toàn cầu nghiêng về hướng diều hâu hơn kỳ vọng. Môi trường lãi suất cao kéo dài làm tăng chi phí vốn, gây áp lực lên định giá cổ phiếu và tỷ giá các thị trường mới nổi như VN.',
+              bullets: ['Fed và các NHTW lớn ưu tiên kiểm soát lạm phát hơn kích thích tăng trưởng.', 'Định giá tài sản rủi ro chịu áp lực khi lãi suất chiết khấu cao.', 'VN: theo dõi điều hành tỷ giá và lãi suất của NHNN để bảo vệ dòng vốn.'] }
+          ]
+        }
+      ],
+      sources: [
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '21/06/2026',
+          title: 'Âm tỷ đồng và bài học về quản lý dòng tiền | Bạn hỏi VWA trả lời', meta: 'Video công khai · Tài chính & Kinh doanh' },
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '19/06/2026',
+          title: 'Dự thảo sửa đổi Luật Đất đai: phân tích, đánh giá tác động', meta: 'Video công khai · Tài chính & Kinh doanh' },
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '19/06/2026',
+          title: 'SBV nới trần vốn ngắn hạn cho dài hạn từ 30% lên 40%', meta: 'Video công khai · Tài chính & Kinh doanh' },
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '18/06/2026',
+          title: 'Giá thị trường luôn dao động theo giá trị thực', meta: 'Video công khai · Tài chính & Kinh doanh' },
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '18/06/2026',
+          title: '5 điểm nhấn và tín hiệu diều hâu, kỷ nguyên mới Kevin Warsh', meta: 'Video công khai · Tài chính & Kinh doanh' }
+      ]
+    },
+
+    'vtv-index': {
+      initials: 'VT',
+      name: 'VTV Index',
+      avatarSrc: '',
+      bio: 'Bản tin thị trường, kinh tế và chuyển đổi số của VTV: cập nhật vĩ mô, diễn biến thị trường, chính sách và các chủ đề công nghệ – xã hội.',
+      sourceLabel: 'YouTube · Video công khai',
+      sourceChips: ['▶ Video công khai', 'Tần suất: hàng ngày'],
+      gauge: {
+        title: 'Phạm vi nội dung',
+        badge: 'Bản tin', badgeBg: '#EFEEE9', badgeColor: '#5F5E57',
+        bar1: 45, bar2: 55, label1: 'Thị trường/vĩ mô 45%', label2: 'Công nghệ/xã hội 55%'
+      },
+      updates: [
+        {
+          date: '2026-06-21', dateShort: '21/06', timeAgo: 'Hôm qua',
+          tab: 'Video · 21/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Chuẩn Bị Kịch Bản Gì Nếu Diễn Biến Thị Trường Không Như Kỳ Vọng?',
+          summary: 'Bản tin gợi ý xây dựng kịch bản phòng thủ khi thị trường không diễn biến như kỳ vọng: quản trị tỷ trọng, giữ tiền mặt dự phòng và tránh dùng đòn bẩy. Nhấn mạnh tâm lý kỷ luật trong giai đoạn bất định.',
+          feedChips: [
+            { label: 'Phòng thủ ⚠ chuẩn bị kịch bản', sig: 'warn' },
+            { label: 'Tiền mặt ◷ dự phòng',            sig: 'wait' }
+          ],
+          keyCalls: [
+            { tag: 'Quản trị rủi ro', value: 'Có kịch bản phòng thủ', signal: 'warn', note: 'Luôn chuẩn bị phương án nếu thị trường đi ngược kỳ vọng: giảm tỷ trọng, giữ tiền mặt, không margin.' }
+          ],
+          sections: [
+            { title: 'Kịch bản phòng thủ', signal: 'warn', sigLabel: 'Thận trọng — quản trị tỷ trọng',
+              para: 'Bản tin nhấn mạnh: nhà đầu tư cần có kịch bản cho cả trường hợp xấu, không chỉ kỳ vọng tích cực. Giữ tiền mặt dự phòng, kiểm soát tỷ trọng và tránh đòn bẩy giúp giữ vững tâm lý khi thị trường bất định.',
+              bullets: ['Xác định trước mức cắt lỗ và tỷ trọng tối đa cho mỗi vị thế.', 'Giữ một phần tiền mặt để chủ động khi cơ hội xuất hiện.', 'Không dùng đòn bẩy trong giai đoạn bất định.'] }
+          ]
+        },
+        {
+          date: '2026-06-21', dateShort: '21/06', timeAgo: 'Hôm qua',
+          tab: 'Video · 21/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Ai Có Thể Làm Môi Giới Bất Động Sản? | Điểm Chạm Chính Sách',
+          summary: 'Chuyên mục Điểm Chạm Chính Sách bàn về điều kiện hành nghề môi giới BĐS theo quy định mới: yêu cầu chứng chỉ, hành nghề qua sàn, nhằm minh bạch hóa thị trường. Tác động chuẩn hóa ngành môi giới.',
+          feedChips: [
+            { label: 'Môi giới BĐS ↑ chuẩn hóa',     sig: 'up'   },
+            { label: 'Chính sách ◷ siết điều kiện', sig: 'wait' }
+          ],
+          keyCalls: [
+            { tag: 'Chính sách', value: 'Siết điều kiện hành nghề', signal: 'wait', note: 'Quy định mới yêu cầu chứng chỉ và hành nghề qua sàn — minh bạch hóa hoạt động môi giới BĐS.' }
+          ],
+          sections: [
+            { title: 'Chuẩn hóa nghề môi giới BĐS', signal: 'up', sigLabel: 'Thông tin — minh bạch thị trường',
+              para: 'Quy định mới về điều kiện hành nghề môi giới BĐS (chứng chỉ, hoạt động qua sàn) hướng tới minh bạch và chuyên nghiệp hóa thị trường. Trung và dài hạn tốt cho niềm tin nhà đầu tư và người mua nhà.',
+              bullets: ['Yêu cầu chứng chỉ hành nghề và hoạt động qua sàn giao dịch.', 'Giảm môi giới tự phát, tin đồn thổi giá.', 'Tích cực cho minh bạch và niềm tin thị trường BĐS.'] }
+          ]
+        },
+        {
+          date: '2026-06-21', dateShort: '21/06', timeAgo: 'Hôm qua',
+          tab: 'Video · 21/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Giao Dịch Không Giấy Tờ — Khi Công Nghệ Thay Đổi Trải Nghiệm Tại Quầy',
+          summary: 'Bản tin chuyển đổi số ngành ngân hàng: giao dịch không giấy tờ, số hóa quy trình tại quầy giúp giảm chi phí vận hành và nâng trải nghiệm khách hàng. Xu hướng tích cực cho hiệu quả hoạt động ngân hàng.',
+          feedChips: [
+            { label: 'Ngân hàng ↑ số hóa',     sig: 'up'   },
+            { label: 'Chi phí ↓ vận hành',      sig: 'up'   }
+          ],
+          keyCalls: [
+            { tag: 'Chuyển đổi số', value: 'Giảm chi phí vận hành', signal: 'up', note: 'Số hóa quy trình giao dịch giúp ngân hàng giảm chi phí, tăng hiệu quả và cải thiện trải nghiệm khách hàng.' }
+          ],
+          sections: [
+            { title: 'Số hóa giao dịch ngân hàng', signal: 'up', sigLabel: 'Tích cực — hiệu quả vận hành',
+              para: 'Xu hướng giao dịch không giấy tờ phản ánh quá trình chuyển đổi số mạnh mẽ của ngành ngân hàng. Về dài hạn, đây là yếu tố hỗ trợ biên lợi nhuận nhờ giảm chi phí vận hành.',
+              bullets: ['Giảm chi phí giấy tờ, nhân sự và thời gian xử lý.', 'Nâng trải nghiệm và mức độ gắn kết khách hàng.', 'Hỗ trợ hiệu quả hoạt động và biên lợi nhuận ngân hàng dài hạn.'] }
+          ]
+        },
+        {
+          date: '2026-06-21', dateShort: '21/06', timeAgo: 'Hôm qua',
+          tab: 'Video · 21/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Zalo Rà Soát Tài Khoản Đăng Ký Bằng Số Điện Thoại Bị Thu Hồi',
+          summary: 'Bản tin công nghệ: Zalo rà soát các tài khoản đăng ký bằng số điện thoại đã bị thu hồi, nhằm bảo vệ người dùng và tài khoản. Lưu ý người dùng cập nhật thông tin để tránh mất quyền truy cập.',
+          feedChips: [
+            { label: 'Công nghệ ◷ bảo mật tài khoản', sig: 'wait' }
+          ],
+          keyCalls: [
+            { tag: 'Công nghệ', value: 'Rà soát số bị thu hồi', signal: 'wait', note: 'Zalo rà soát tài khoản gắn với SIM đã thu hồi — người dùng nên cập nhật số điện thoại để tránh mất tài khoản.' }
+          ],
+          sections: [
+            { title: 'Rà soát tài khoản Zalo', signal: 'wait', sigLabel: 'Thông tin — bảo mật người dùng',
+              para: 'Bản tin lưu ý người dùng về việc Zalo rà soát các tài khoản đăng ký bằng số điện thoại đã bị nhà mạng thu hồi. Người dùng nên kiểm tra và cập nhật số điện thoại liên kết để tránh rủi ro mất quyền truy cập.',
+              bullets: ['Kiểm tra số điện thoại đang liên kết với tài khoản Zalo.', 'Cập nhật thông tin nếu số cũ đã ngừng sử dụng.', 'Cảnh giác với rủi ro tài khoản bị chiếm dụng qua SIM thu hồi.'] }
+          ]
+        },
+        {
+          date: '2026-06-21', dateShort: '21/06', timeAgo: 'Hôm qua',
+          tab: 'Video · 21/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'A.I. Nâng Cấp Trải Nghiệm World Cup',
+          summary: 'Bản tin công nghệ: ứng dụng A.I. nâng cấp trải nghiệm xem World Cup 2026 — phân tích trận đấu, cá nhân hóa nội dung và tương tác người xem. Minh họa xu hướng A.I. lan rộng vào ngành truyền thông – giải trí.',
+          feedChips: [
+            { label: 'A.I. ↑ ứng dụng giải trí', sig: 'up' }
+          ],
+          keyCalls: [
+            { tag: 'A.I.', value: 'Ứng dụng truyền thông', signal: 'up', note: 'A.I. nâng cấp trải nghiệm xem thể thao — xu hướng công nghệ lan rộng, tạo cơ hội cho ngành media và công nghệ.' }
+          ],
+          sections: [
+            { title: 'A.I. trong trải nghiệm thể thao', signal: 'up', sigLabel: 'Thông tin — xu hướng công nghệ',
+              para: 'Bản tin minh họa cách A.I. được ứng dụng để nâng cấp trải nghiệm World Cup 2026. Đây là ví dụ về xu hướng A.I. thâm nhập sâu vào truyền thông, giải trí và tiêu dùng — chủ đề đầu tư công nghệ đáng theo dõi.',
+              bullets: ['A.I. phân tích trận đấu và cá nhân hóa nội dung cho người xem.', 'Phản ánh xu hướng A.I. lan rộng ngoài lĩnh vực công nghệ thuần túy.', 'Chủ đề tham khảo cho nhóm cổ phiếu công nghệ – truyền thông.'] }
+          ]
+        },
+        {
+          date: '2026-06-21', dateShort: '21/06', timeAgo: 'Hôm qua',
+          tab: 'Video · 21/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Nhân Lực Số Ở Cấp Xã Vừa Thiếu Vừa Quá Tải',
+          summary: 'Bản tin xã hội: thực trạng nhân lực số ở cấp xã vừa thiếu về số lượng vừa quá tải khối lượng công việc trong quá trình chuyển đổi số chính quyền cơ sở. Phản ánh thách thức triển khai chính phủ điện tử.',
+          feedChips: [
+            { label: 'Chuyển đổi số ⚠ thiếu nhân lực', sig: 'warn' }
+          ],
+          keyCalls: [
+            { tag: 'Chuyển đổi số', value: 'Thiếu nhân lực cơ sở', signal: 'warn', note: 'Nhân lực số cấp xã thiếu và quá tải — thách thức cho tiến độ chính phủ điện tử và chuyển đổi số.' }
+          ],
+          sections: [
+            { title: 'Nhân lực số ở chính quyền cơ sở', signal: 'warn', sigLabel: 'Thông tin — thách thức chuyển đổi số',
+              para: 'Bản tin phản ánh khó khăn về nhân lực số tại cấp xã: vừa thiếu người vừa quá tải công việc. Đây là điểm nghẽn cần tháo gỡ để chương trình chuyển đổi số quốc gia đạt mục tiêu.',
+              bullets: ['Nhân lực số cấp cơ sở thiếu cả số lượng và kỹ năng.', 'Quá tải công việc làm chậm tiến độ chuyển đổi số.', 'Cần chính sách đào tạo và bổ sung nhân lực cho chính quyền cơ sở.'] }
+          ]
+        },
+        {
+          date: '2026-06-21', dateShort: '21/06', timeAgo: 'Hôm qua',
+          tab: 'Video · 21/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Từ Cuộc Gọi Đầu Tiên Đến Cuộc Sống Kết Nối',
+          summary: 'Bản tin về hành trình phát triển hạ tầng viễn thông và chuyển đổi số trong đời sống — từ những cuộc gọi đầu tiên đến hệ sinh thái kết nối toàn diện. Phản ánh tiềm năng dài hạn ngành viễn thông và công nghệ.',
+          feedChips: [
+            { label: 'Viễn thông ↑ hạ tầng số', sig: 'up' }
+          ],
+          keyCalls: [
+            { tag: 'Viễn thông', value: 'Hạ tầng kết nối', signal: 'up', note: 'Hành trình phát triển hạ tầng viễn thông và kết nối số — nền tảng cho kinh tế số và tăng trưởng dài hạn.' }
+          ],
+          sections: [
+            { title: 'Hạ tầng kết nối và kinh tế số', signal: 'up', sigLabel: 'Thông tin — nền tảng dài hạn',
+              para: 'Bản tin nhìn lại hành trình phát triển viễn thông và vai trò của hạ tầng kết nối trong đời sống hiện đại. Hạ tầng số là nền tảng cho kinh tế số — chủ đề đầu tư dài hạn cho nhóm viễn thông và công nghệ.',
+              bullets: ['Hạ tầng viễn thông là nền tảng cho kinh tế số.', 'Kết nối toàn diện mở ra cơ hội cho dịch vụ số mới.', 'Nhóm viễn thông và công nghệ hưởng lợi xu hướng dài hạn.'] }
+          ]
+        },
+        {
+          date: '2026-06-20', dateShort: '20/06', timeAgo: '2 ngày trước',
+          tab: 'Video · 20/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Đáy Hay Lưng Chừng Miệng Đáy?',
+          summary: 'Bản tin thị trường bàn về câu hỏi liệu thị trường đã tạo đáy hay vẫn còn trong vùng dò đáy. Nhấn mạnh khó xác định đáy chính xác — chiến lược tích lũy dần và quản trị rủi ro quan trọng hơn việc bắt đáy.',
+          feedChips: [
+            { label: 'Thị trường ◷ dò đáy',    sig: 'wait' },
+            { label: 'Tích lũy ↑ mua dần',      sig: 'up'   }
+          ],
+          keyCalls: [
+            { tag: 'Thị trường', value: 'Khó xác định đáy', signal: 'wait', note: 'Không ai biết chắc đáy — chiến lược tích lũy dần và quản trị tỷ trọng hiệu quả hơn việc cố bắt đáy.' }
+          ],
+          sections: [
+            { title: 'Đáy hay vẫn dò đáy?', signal: 'wait', sigLabel: 'Thận trọng — tích lũy dần',
+              para: 'Bản tin đặt câu hỏi liệu thị trường đã tạo đáy hay còn dò đáy. Quan điểm chung: rất khó xác định đáy chính xác theo thời gian thực. Thay vì cố bắt đáy, nhà đầu tư nên tích lũy dần cổ phiếu chất lượng và quản trị tỷ trọng.',
+              bullets: ['Không thể xác định đáy chính xác theo thời gian thực.', 'Tích lũy dần ở vùng định giá thấp tốt hơn cố bắt đáy.', 'Quản trị tỷ trọng và kỷ luật quan trọng hơn dự đoán.'] }
+          ]
+        },
+        {
+          date: '2026-06-20', dateShort: '20/06', timeAgo: '2 ngày trước',
+          tab: 'Video · 20/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Nỗ Lực Gỡ Nút Thắt Nhân Lực Số Ở Chính Quyền Cơ Sở',
+          summary: 'Bản tin về các giải pháp tháo gỡ nút thắt nhân lực số tại chính quyền cơ sở: đào tạo, tuyển dụng và ứng dụng công nghệ hỗ trợ. Tiếp nối chủ đề thách thức chuyển đổi số cấp xã.',
+          feedChips: [
+            { label: 'Chuyển đổi số ◷ gỡ nút thắt', sig: 'wait' }
+          ],
+          keyCalls: [
+            { tag: 'Chính sách', value: 'Gỡ nút thắt nhân lực', signal: 'wait', note: 'Các giải pháp đào tạo và tuyển dụng nhằm tháo gỡ thiếu hụt nhân lực số ở chính quyền cơ sở.' }
+          ],
+          sections: [
+            { title: 'Giải pháp nhân lực số cơ sở', signal: 'wait', sigLabel: 'Thông tin — tháo gỡ điểm nghẽn',
+              para: 'Bản tin cập nhật các nỗ lực tháo gỡ nút thắt nhân lực số ở chính quyền cơ sở thông qua đào tạo, tuyển dụng và ứng dụng công nghệ hỗ trợ. Đây là điều kiện cần để chuyển đổi số quốc gia thành công.',
+              bullets: ['Tăng cường đào tạo kỹ năng số cho cán bộ cơ sở.', 'Ứng dụng công nghệ hỗ trợ giảm tải công việc thủ công.', 'Chính sách thu hút và giữ chân nhân lực số.'] }
+          ]
+        },
+        {
+          date: '2026-06-20', dateShort: '20/06', timeAgo: '2 ngày trước',
+          tab: 'Video · 20/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Từ Quy Trình Chuẩn Đến Thương Hiệu Quốc Gia Vươn Tầm Quốc Tế',
+          summary: 'Bản tin về xây dựng thương hiệu quốc gia: từ chuẩn hóa quy trình sản xuất đến nâng tầm thương hiệu Việt ra quốc tế. Phản ánh tiềm năng của doanh nghiệp xuất khẩu và hàng tiêu dùng có thương hiệu mạnh.',
+          feedChips: [
+            { label: 'Thương hiệu Việt ↑ vươn tầm', sig: 'up' }
+          ],
+          keyCalls: [
+            { tag: 'Thương hiệu', value: 'Vươn tầm quốc tế', signal: 'up', note: 'Chuẩn hóa quy trình và xây dựng thương hiệu quốc gia tạo lợi thế cho doanh nghiệp xuất khẩu Việt.' }
+          ],
+          sections: [
+            { title: 'Thương hiệu quốc gia vươn tầm', signal: 'up', sigLabel: 'Thông tin — tiềm năng xuất khẩu',
+              para: 'Bản tin nhấn mạnh hành trình từ chuẩn hóa quy trình sản xuất đến xây dựng thương hiệu quốc gia có khả năng cạnh tranh quốc tế. Đây là yếu tố hỗ trợ doanh nghiệp xuất khẩu và hàng tiêu dùng có thương hiệu mạnh.',
+              bullets: ['Chuẩn hóa quy trình nâng chất lượng và uy tín sản phẩm.', 'Thương hiệu mạnh tạo lợi thế cạnh tranh và biên lợi nhuận.', 'Tích cực cho nhóm doanh nghiệp xuất khẩu và tiêu dùng.'] }
+          ]
+        },
+        {
+          date: '2026-06-20', dateShort: '20/06', timeAgo: '2 ngày trước',
+          tab: 'Video · 20/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Nhiều Phòng Thí Nghiệm Trọng Điểm Còn Gặp Khó',
+          summary: 'Bản tin khoa học – công nghệ: nhiều phòng thí nghiệm trọng điểm quốc gia còn gặp khó về kinh phí, cơ chế và nhân lực, ảnh hưởng năng lực nghiên cứu và đổi mới sáng tạo. Cần tháo gỡ để hỗ trợ kinh tế tri thức.',
+          feedChips: [
+            { label: 'Nghiên cứu ⚠ thiếu nguồn lực', sig: 'warn' }
+          ],
+          keyCalls: [
+            { tag: 'Khoa học công nghệ', value: 'Phòng thí nghiệm gặp khó', signal: 'warn', note: 'Phòng thí nghiệm trọng điểm thiếu kinh phí và cơ chế — ảnh hưởng năng lực đổi mới sáng tạo quốc gia.' }
+          ],
+          sections: [
+            { title: 'Khó khăn của phòng thí nghiệm trọng điểm', signal: 'warn', sigLabel: 'Thông tin — điểm nghẽn R&D',
+              para: 'Bản tin phản ánh khó khăn của nhiều phòng thí nghiệm trọng điểm về kinh phí, cơ chế vận hành và nhân lực. Đây là điểm nghẽn cần tháo gỡ để nâng cao năng lực nghiên cứu và phát triển kinh tế tri thức.',
+              bullets: ['Thiếu kinh phí và cơ chế tài chính linh hoạt cho nghiên cứu.', 'Khó thu hút và giữ nhân lực khoa học chất lượng cao.', 'Tháo gỡ để thúc đẩy đổi mới sáng tạo và kinh tế tri thức.'] }
+          ]
+        },
+        {
+          date: '2026-06-19', dateShort: '19/06', timeAgo: '3 ngày trước',
+          tab: 'Video · 19/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Việt Nam Và Các Chỉ Số 19/06/2026: Cảm Biến Thị Trường',
+          summary: 'Bản tin cập nhật các chỉ số thị trường Việt Nam ngày 19/06: diễn biến VN-Index, thanh khoản, dòng tiền khối ngoại và tâm lý nhà đầu tư. Cung cấp bức tranh tổng quan về sức khỏe thị trường.',
+          feedChips: [
+            { label: 'VN-Index ◷ cập nhật',   sig: 'wait' },
+            { label: 'Dòng tiền ◷ theo dõi',  sig: 'wait' }
+          ],
+          keyCalls: [
+            { tag: 'Thị trường', value: 'Cảm biến chỉ số', signal: 'wait', note: 'Cập nhật diễn biến VN-Index, thanh khoản và dòng tiền khối ngoại — bức tranh tổng quan sức khỏe thị trường.' }
+          ],
+          sections: [
+            { title: 'Cảm biến thị trường 19/06', signal: 'wait', sigLabel: 'Thông tin — cập nhật chỉ số',
+              para: 'Bản tin tổng hợp các chỉ số chính của thị trường VN ngày 19/06: diễn biến VN-Index, thanh khoản, dòng tiền khối ngoại và tâm lý chung. Đây là dữ liệu tham khảo để đánh giá xu hướng ngắn hạn.',
+              bullets: ['Theo dõi VN-Index và thanh khoản phiên để đánh giá xu hướng.', 'Dòng tiền khối ngoại là chỉ báo tâm lý quan trọng.', 'Kết hợp nhiều chỉ số thay vì dựa vào một con số duy nhất.'] }
+          ]
+        },
+        {
+          date: '2026-06-19', dateShort: '19/06', timeAgo: '3 ngày trước',
+          tab: 'Video · 19/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Sức Mạnh Của Dòng Tiền Trong Nước',
+          summary: 'Bản tin phân tích vai trò ngày càng lớn của dòng tiền nội (nhà đầu tư cá nhân trong nước) trong bối cảnh khối ngoại bán ròng. Dòng tiền nội là lực đỡ quan trọng giúp thị trường ổn định.',
+          feedChips: [
+            { label: 'Dòng tiền nội ↑ lực đỡ', sig: 'up'   },
+            { label: 'Khối ngoại ↓ bán ròng',   sig: 'down' }
+          ],
+          keyCalls: [
+            { tag: 'Dòng tiền nội', value: 'Lực đỡ thị trường', signal: 'up',   note: 'Nhà đầu tư trong nước ngày càng đóng vai trò lực đỡ, bù đắp áp lực bán ròng của khối ngoại.' }
+          ],
+          sections: [
+            { title: 'Sức mạnh dòng tiền nội', signal: 'up', sigLabel: 'Tích cực — nội lực thị trường',
+              para: 'Bản tin nhấn mạnh vai trò ngày càng lớn của dòng tiền trong nước. Trong bối cảnh khối ngoại bán ròng, nhà đầu tư cá nhân nội là lực đỡ quan trọng giúp thị trường VN duy trì ổn định và thanh khoản.',
+              bullets: ['Dòng tiền nội bù đắp áp lực bán ròng khối ngoại.', 'Tỷ trọng nhà đầu tư cá nhân trong nước ngày càng lớn.', 'Nội lực thị trường giúp giảm phụ thuộc vào vốn ngoại.'] }
+          ]
+        },
+        {
+          date: '2026-06-19', dateShort: '19/06', timeAgo: '3 ngày trước',
+          tab: 'Video · 19/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'World Cup 2026: Cú Hích Kinh Tế Hay Hóa Đơn Đắt Đỏ? | Kinh Tế',
+          summary: 'Bản tin kinh tế phân tích tác động hai mặt của World Cup 2026: cú hích cho du lịch, tiêu dùng, truyền thông nhưng cũng là gánh nặng chi phí hạ tầng. Cơ hội cho một số ngành tiêu dùng – dịch vụ.',
+          feedChips: [
+            { label: 'Tiêu dùng ↑ cú hích',    sig: 'up'   },
+            { label: 'Chi phí ⚠ hạ tầng',     sig: 'warn' }
+          ],
+          keyCalls: [
+            { tag: 'Kinh tế sự kiện', value: 'Hai mặt lợi và chi phí', signal: 'wait', note: 'World Cup thúc đẩy du lịch, tiêu dùng, truyền thông nhưng đi kèm gánh nặng đầu tư hạ tầng lớn.' }
+          ],
+          sections: [
+            { title: 'Tác động kinh tế của World Cup 2026', signal: 'wait', sigLabel: 'Thông tin — cơ hội ngành tiêu dùng',
+              para: 'Bản tin phân tích tác động hai mặt của World Cup 2026: vừa là cú hích cho du lịch, tiêu dùng và truyền thông, vừa là hóa đơn chi phí hạ tầng đắt đỏ. Một số ngành tiêu dùng – dịch vụ có thể hưởng lợi ngắn hạn.',
+              bullets: ['Du lịch, F&B, bán lẻ, truyền thông hưởng lợi từ sự kiện lớn.', 'Chi phí đầu tư hạ tầng có thể vượt lợi ích kinh tế trực tiếp.', 'Cơ hội ngắn hạn cho nhóm tiêu dùng – dịch vụ liên quan.'] }
+          ]
+        },
+        {
+          date: '2026-06-19', dateShort: '19/06', timeAgo: '3 ngày trước',
+          tab: 'Video · 19/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Thu Giữ Và Lưu Trữ CO2 — Chìa Khóa Hướng Tới Net Zero',
+          summary: 'Bản tin về công nghệ thu giữ và lưu trữ CO2 (CCS) như giải pháp quan trọng hướng tới mục tiêu Net Zero. Xu hướng chuyển dịch năng lượng xanh mở ra cơ hội đầu tư dài hạn cho năng lượng tái tạo và môi trường.',
+          feedChips: [
+            { label: 'Net Zero ↑ năng lượng xanh', sig: 'up' }
+          ],
+          keyCalls: [
+            { tag: 'Năng lượng xanh', value: 'Công nghệ CCS', signal: 'up', note: 'Thu giữ và lưu trữ CO2 là giải pháp hướng tới Net Zero — xu hướng đầu tư dài hạn cho năng lượng tái tạo và môi trường.' }
+          ],
+          sections: [
+            { title: 'Công nghệ CCS và mục tiêu Net Zero', signal: 'up', sigLabel: 'Thông tin — xu hướng năng lượng xanh',
+              para: 'Bản tin giới thiệu công nghệ thu giữ và lưu trữ CO2 (CCS) như một chìa khóa cho mục tiêu Net Zero. Quá trình chuyển dịch năng lượng xanh là xu hướng dài hạn, mở ra cơ hội đầu tư cho năng lượng tái tạo và công nghệ môi trường.',
+              bullets: ['CCS hỗ trợ giảm phát thải hướng tới Net Zero.', 'Chuyển dịch năng lượng xanh là xu hướng đầu tư dài hạn.', 'Cơ hội cho nhóm năng lượng tái tạo và công nghệ môi trường.'] }
+          ]
+        }
+      ],
+      sources: [
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '21/06/2026',
+          title: 'Chuẩn bị kịch bản gì nếu diễn biến thị trường không như kỳ vọng?', meta: 'Video công khai · VTV Index' },
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '21/06/2026',
+          title: 'Ai có thể làm môi giới bất động sản? | Điểm chạm chính sách', meta: 'Video công khai · VTV Index' },
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '20/06/2026',
+          title: 'Đáy hay lưng chừng miệng đáy?', meta: 'Video công khai · VTV Index' },
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '19/06/2026',
+          title: 'Việt Nam và các chỉ số 19/06/2026: Cảm biến thị trường', meta: 'Video công khai · VTV Index' },
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '19/06/2026',
+          title: 'Sức mạnh của dòng tiền trong nước', meta: 'Video công khai · VTV Index' }
+      ]
     }
 
   } // end experts

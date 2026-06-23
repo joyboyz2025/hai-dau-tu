@@ -82,7 +82,7 @@ input::placeholder { color: #A3A29A; }
       <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap;">
         <div style="display:flex; flex-direction:column; gap:4px;">
           <h1 style="margin:0; font-size:24px; font-weight:700; letter-spacing:-0.4px;">Tổng quan thị trường</h1>
-          <div style="font-size:13.5px; color:#6E6D66;">Tổng hợp từ nhận định mới nhất của 3 chuyên gia</div>
+          <div style="font-size:13.5px; color:#6E6D66;">Tổng hợp từ nhận định mới nhất của {{ expertCount }} chuyên gia</div>
         </div>
         <div style="display:flex; align-items:center; gap:8px; background:#FFFFFF; border:1px solid #E7E6E1; border-radius:999px; padding:7px 14px;">
           <div style="width:8px; height:8px; border-radius:50%; background:oklch(0.52 0.12 150);"></div>
@@ -1321,6 +1321,7 @@ class Component extends DCLogic {
       goHistory: () => this.go('history'),
       goExpertsList: () => this.go('experts-list'),
       navItems, pulse, assetCards, recentFeed, dashExperts, historyItems, srcChips, expertsList, newsItems,
+      expertCount: Object.keys(HDT.experts).length,
       // Expert page vars
       expertInitials: curExpert.initials,
       expertAvatarSrc: curExpert.avatarSrc || '',

@@ -1353,13 +1353,7 @@ class Component extends DCLogic {
       updTypeColor: curUpdates[s.updIdx].typeColor,
       updTitle: curUpdates[s.updIdx].title,
       keyCalls: curUpdates[s.updIdx].keyCalls,
-      updSections: curUpdates[s.updIdx].sections.map(sec => Object.assign({}, sec, {
-        hasPara: !!sec.para, para: sec.para || '',
-        bullets: (sec.bullets || []).map(t => ({ text: t })),
-        hasTickers: !!(sec.tickers && sec.tickers.length),
-        tickers: sec.tickers || [],
-        hasLevels: !!sec.levels, levels: sec.levels || ''
-      })),
+      updSections: curUpdates[s.updIdx].sections,
       addedExperts: s.added,
       addExpert: () => {
         const name = ((this.nameRef.current && this.nameRef.current.value) || '').trim() || 'Chuyên gia mới';

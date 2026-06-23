@@ -103,6 +103,71 @@ window.HDT_DATA = {
   // ── Tin tức (kênh tin tức · AI đánh giá tác động thị trường) ──────────────────
   news: [
     {
+      date: '2026-06-21', dateShort: '21/06',
+      source: 'VTV Index', sourceType: 'Video tin tức',
+      title: 'Chuẩn bị kịch bản gì nếu diễn biến thị trường không như kỳ vọng?',
+      impact: 'warn',
+      impactLabel: 'Thận trọng — nhắc quản trị rủi ro',
+      summary: 'Bản tin VTV Index bàn về việc nhà đầu tư nên chuẩn bị kịch bản phòng thủ khi thị trường có thể không diễn biến như kỳ vọng. Thiên về nhắc nhở quản trị rủi ro hơn là tín hiệu xấu cụ thể.',
+      points: [
+        'Nhấn mạnh tâm thế phòng thủ, có kịch bản dự phòng cho vị thế.',
+        'Không phải tin tiêu cực cụ thể — mang tính cảnh báo tâm lý/quản trị.',
+        '(Đánh giá theo tiêu đề bản tin; chưa có transcript chi tiết.)'
+      ]
+    },
+    {
+      date: '2026-06-19', dateShort: '19/06',
+      source: 'Tài chính & Kinh doanh', sourceType: 'Video tin tức',
+      title: 'SBV nới trần vốn ngắn hạn cho vay trung–dài hạn từ 30% lên 40%',
+      impact: 'up',
+      impactLabel: 'Tích cực — nới điều kiện cho vay (lưu ý rủi ro hệ thống)',
+      summary: 'NHNN đề xuất nâng tỷ lệ tối đa nguồn vốn ngắn hạn được dùng để cho vay trung–dài hạn từ 30% lên 40%, đảo chiều lộ trình siết kéo dài nhiều năm. Ngân hàng có thêm dư địa cho vay.',
+      points: [
+        'Đảo chiều xu hướng siết → tín hiệu nới lỏng, hỗ trợ tăng trưởng tín dụng.',
+        'Tích cực cho nhóm ngân hàng và thanh khoản nền kinh tế ngắn–trung hạn.',
+        'Đánh đổi: tăng rủi ro thanh khoản/kỳ hạn của hệ thống về dài hạn.'
+      ]
+    },
+    {
+      date: '2026-06-19', dateShort: '19/06',
+      source: 'Tài chính & Kinh doanh', sourceType: 'Video tin tức',
+      title: 'Dự thảo sửa đổi Luật Đất đai 2026 — phân tích tác động',
+      impact: 'warn',
+      impactLabel: 'Tác động lớn BĐS — vừa cơ hội vừa rủi ro',
+      summary: 'Dự thảo sửa đổi Luật Đất đai 2026 đưa ra nhiều điều chỉnh mang tính hệ thống (thẩm quyền, bảng giá đất, quy trình thu hồi đất) nhằm tháo gỡ điểm nghẽn, nhưng sẽ tái định hình chi phí phát triển dự án và quyền lợi người mua nhà.',
+      points: [
+        'Thay đổi bảng giá đất & quy trình thu hồi → ảnh hưởng trực tiếp chi phí dự án BĐS.',
+        'Vừa tạo cơ hội (gỡ điểm nghẽn) vừa tạo rủi ro chính sách cho doanh nghiệp BĐS.',
+        'Cần theo dõi bản chính thức trước khi định lượng tác động.'
+      ]
+    },
+    {
+      date: '2026-06-19', dateShort: '19/06',
+      source: 'VTV Index', sourceType: 'Video tin tức',
+      title: 'Sức mạnh của dòng tiền trong nước',
+      impact: 'up',
+      impactLabel: 'Tích cực — dòng tiền nội hỗ trợ thị trường',
+      summary: 'Bản tin VTV Index về vai trò của dòng tiền nội địa trong việc nâng đỡ thị trường chứng khoán Việt Nam.',
+      points: [
+        'Dòng tiền trong nước được xem là trụ đỡ khi khối ngoại bán ròng.',
+        'Tín hiệu tích cực cho thanh khoản và sức bền của thị trường.',
+        '(Đánh giá theo tiêu đề/chủ đề; chưa có transcript chi tiết.)'
+      ]
+    },
+    {
+      date: '2026-06-18', dateShort: '18/06',
+      source: 'Tài chính & Kinh doanh', sourceType: 'Video tin tức',
+      title: 'Fed giữ lãi suất, tín hiệu diều hâu dưới tân Chủ tịch Kevin Warsh',
+      impact: 'down',
+      impactLabel: 'Tiêu cực — tín hiệu Fed diều hâu, áp lực lãi suất',
+      summary: 'Ngày 17/6 Fed giữ nguyên lãi suất 3,5–3,75% trong cuộc họp đầu tiên dưới thời tân Chủ tịch Kevin Warsh; giọng điệu được đánh giá nghiêng diều hâu, tạo áp lực lãi suất lên thị trường.',
+      points: [
+        'Giữ nguyên lãi suất nhưng định hướng cứng rắn hơn → giảm kỳ vọng nới lỏng.',
+        'Áp lực lên tỷ giá, dòng vốn và định giá tài sản rủi ro.',
+        'Liên quan trực tiếp tới tâm thế phòng thủ của nhà đầu tư VN.'
+      ]
+    },
+    {
       date: '2026-06-17', dateShort: '17/06',
       source: 'Tài chính & Kinh doanh', sourceType: 'Video tin tức',
       title: 'Thị trường thứ cấp đồng loạt cắt lỗ — chung cư Hà Nội đảo chiều',

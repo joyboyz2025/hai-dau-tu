@@ -19,7 +19,7 @@
 
 window.HDT_DATA = {
 
-  lastUpdated: '18/06/2026 · Hôm nay',
+  lastUpdated: '21/06/2026 · Mới nhất',
 
   // ── Pulse strip ─────────────────────────────────────────────────────────────
   pulse: [
@@ -146,6 +146,106 @@ window.HDT_DATA = {
         bar1: 30, bar2: 70, label1: 'Tiền mặt 30%', label2: 'Cổ phiếu 70%'
       },
       updates: [
+        {
+          date: '2026-06-21', dateShort: '21/06', timeAgo: 'Hôm qua',
+          tab: 'Video · Tuần 25', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Siêu Chu Kỳ Chip Đối Đầu Vĩ Mô Xấu — ETF Funds Cơ Cấu Mạnh Cuối Tháng 6',
+          summary: 'Nhịp đập thị trường tuần 25: giá dầu neo cao 75–85 USD dài hạn (dự trữ G7/Mỹ thiếu, eo biển Hormuz căng lại). Lạm phát không hạ vì giá chip/bộ nhớ tăng (Apple sắp tăng giá iPhone 17 & 18) → xác suất Fed tăng lãi T9 ~70%. Nasdaq +34% từ đáy, ETF cơ cấu ~160 tỷ USD cuối T6 → AI/semiconductor phải chỉnh. VN-Index thiếu thanh khoản (LDR 115%), nước ngoài bán ròng ~20.000 tỷ/tháng — chọn cổ phiếu nội lực mạnh, tích lũy kiểu "mùa đông".',
+          feedChips: [
+            { label: 'Dầu ◷ neo 75–85 dài hạn',  sig: 'wait' },
+            { label: 'Fed ↓ tăng lãi T9 ~70%',    sig: 'down' },
+            { label: 'AI/Nasdaq ↓ phải chỉnh',    sig: 'down' },
+            { label: 'CK Việt ⚠ kẹt thanh khoản', sig: 'warn' }
+          ],
+          keyCalls: [
+            { tag: 'Giá dầu',   value: 'Neo 75–85 USD',          signal: 'wait', note: 'Đàm phán Mỹ–Iran 60 ngày nhiều biến động. Dự trữ chiến lược G7/Nhật/Mỹ thiếu (cần 3–6 tháng bù), OPEC+ giữ giá → khó giảm sâu, kịch bản có thể test 90.' },
+            { tag: 'Fed',       value: 'Tăng lãi T9 ~70%',        signal: 'down', note: 'Lạm phát lõi không chỉ do dầu: giá chip/bộ nhớ AI tăng điên cuồng, Apple sắp tăng giá iPhone 17 & 18 → PCE còn cao. Kevin Warsh diều hâu, bỏ forward guidance.' },
+            { tag: 'CK Mỹ',    value: 'Nasdaq +34% → chỉnh',     signal: 'down', note: 'S&P +20% / Nasdaq +34% từ đáy, margin kỷ lục. SpaceX IPO P/S ~90x vô lý, vào rổ Nasdaq 100 trong 15 ngày + BCTC giữa T7 → rủi ro. Không chase, chờ thị trường bớt điên.' },
+            { tag: 'CK Việt',   value: 'Kẹt thanh khoản',         signal: 'warn', note: 'LDR toàn hệ thống 115% (tín dụng +5,71% / huy động +2,98%). Nước ngoài bán ròng ~20.000 tỷ/tháng. VN-Index phụ thuộc nhóm Vin — đừng nhìn index.' }
+          ],
+          sections: [
+            { title: 'Địa chính trị & Giá dầu', signal: 'wait', sigLabel: 'Neo cao — khó giảm sâu',
+              para: 'IRGC tuyên bố đóng eo biển Hormuz lần hai (cáo buộc Israel tiếp tục tấn công Nam Liban, vi phạm thỏa thuận). Mỹ–Iran đàm phán tại Thụy Sĩ trong 60 ngày — sẽ nhiều tin nhiễu. Trump thừa nhận tại G7: nếu không có thỏa thuận, dự trữ dầu Mỹ cạn trong 4 tuần. Giá dầu neo 75–85 USD: không quá cao (triệt tiêu nhu cầu) cũng không quá thấp (Petrodollar), OPEC+ và nhu cầu tích trữ giữ giá.',
+              bullets: ['Đàm phán 60 ngày: nhiều biến động tin tức, có thể test lại vùng 90.', 'Thiên về mua/long nhẹ vùng này — KHÔNG short dầu (rất nguy hiểm).', 'Dự trữ chiến lược G7/Nhật/Mỹ cần 3–6 tháng để bù đắp thiếu hụt.'] },
+            { title: 'Vĩ mô Fed — Lạm phát chip đẩy lãi suất', signal: 'down', sigLabel: 'Diều hâu — tăng lãi T9 ~70%',
+              para: 'Lạm phát lõi (PCE) không hạ được vì ngoài năng lượng còn có giá nhà, y tế, thiết bị điện tử. Nhu cầu AI data center đẩy giá chip/RAM/bộ nhớ tăng mạnh nhất một thập kỷ — CEO Apple xác nhận sẽ tăng giá cả iPhone 17 lẫn iPhone 18; Goldman dự báo nhu cầu sản phẩm Apple giảm ~10%. Kevin Warsh diều hâu, bỏ forward guidance → thị trường biến động cực mạnh hai chiều.',
+              bullets: ['Giá DDR/bộ nhớ tăng vọt do capex data center AI → đội giá thiết bị điện tử.', 'PCE còn cao → Fed không có cửa hạ lãi 2026, xác suất tăng T9 ~70%.', 'Cổ phiếu high-duration growth (Nvidia, Meta, Microsoft, ARM) chịu áp lực mạnh.'] },
+            { title: 'Chứng khoán Mỹ — Cao thì phải chỉnh', signal: 'down', sigLabel: 'Quá nóng — chờ bớt điên rồi mua',
+              para: 'S&P 500 +20%, Nasdaq 100 +34% từ đáy, margin nhà đầu tư kỷ lục → hết dư địa kéo lên. ETF thụ động cơ cấu ~160 tỷ USD cuối tháng 6 (JP Morgan) tạo biến động lớn. SpaceX IPO P/S ~90x là định giá ảo, sẽ vào rổ Nasdaq 100 trong ~15 ngày rồi gặp BCTC quý đầu giữa tháng 7 — rủi ro lớn. Không chống lại thị trường bằng short (vô lý lâu hơn sức chịu của tài khoản).',
+              bullets: ['Intel, Micron, Sandisk, SpaceX, Accenture sẽ phải điều chỉnh.', 'Hàn Quốc (Kospi), Nhật (Nikkei) cũng quá cao — sẽ chỉnh mạnh.', 'Không phải điểm mua: chốt lời ngắn hạn, chờ thị trường bớt điên rồi tham gia.'] },
+            { title: 'Chứng khoán Việt Nam — Mùa đông thanh khoản', signal: 'warn', sigLabel: 'Kẹt vốn — tích lũy cổ phiếu nội lực mạnh',
+              para: 'VN-Index ~1.824 điểm nhưng thiếu sinh khí: LDR toàn hệ thống 115% (tín dụng +5,71% nhưng huy động chỉ +2,98%) → tín dụng không chảy. NHNN chủ yếu bơm/hút ngắn hạn qua OMO lãi cao. Nước ngoài bán ròng ~20.000 tỷ (~700–800 triệu USD)/tháng. Bốn động lực thanh khoản (tiền mặt lưu thông, thu xuất khẩu Q3, FDI sang VND lãi 8–9%, đầu tư công) chưa rõ ràng.',
+              bullets: ['VN-Index phụ thuộc VIC/VHM/VRE/VPL — nhìn cổ phiếu cụ thể, đừng nhìn index.', 'Cổ phiếu nền đẹp/rẻ: VCB, BID, VNM, MSN. FPT bị bán mạnh (room ngoại 49% 2021 → 29% nay) do lợi thế AI lung lay.', 'Triết lý "mùa đông": tích lũy cổ phiếu nội lực mạnh (dòng tiền, biên LN, MOAT), chờ tín dụng nở lại.'] }
+          ]
+        },
+        {
+          date: '2026-06-20', dateShort: '20/06', timeAgo: '2 ngày trước',
+          tab: 'Tập 33 · Tuần 25', sourceType: 'member-video', typeLabel: 'Video hội viên · Tập 33',
+          title: 'Tập 33 (Hội Viên): Vàng, Bitcoin, Chứng Khoán Tuần 25 — Các Vấn Đề Cần Lưu Ý',
+          summary: 'Danh mục hội viên giữ 70% cổ phiếu / 30% tiền. Dầu neo cao đến hết T10 (thiên long nhẹ, không short). Fed có thể tăng lãi T9 (67%) do lạm phát chip → AI/SpaceX/Intel sẽ chỉnh. Vàng gãy nặng, nếu Fed tăng lãi về ~3.000; Bitcoin chờ short 69–71k, dài hạn về 47–50k. CK Việt: kẹt thanh khoản (LDR 115%) — giữ bank trụ, TCX, phân bón (DCM/DPM), SCS, VNM.',
+          feedChips: [
+            { label: 'Danh mục ↑ 70% cổ phiếu',  sig: 'up'   },
+            { label: 'Vàng ↓ về ~3.000 nếu tăng lãi', sig: 'down' },
+            { label: 'BTC ↓ short 69–71k',        sig: 'down' },
+            { label: 'AI ↓ SpaceX/Intel chỉnh',   sig: 'down' }
+          ],
+          keyCalls: [
+            { tag: 'Danh mục VN', value: '70% cổ phiếu / 30% tiền', signal: 'up',   note: 'Giữ tỷ trọng 70/30. Tuần này tăng thêm 1/4 vị thế phân bón (đang giữ 3/4 DCM/DPM), mua mới VNM.' },
+            { tag: 'Vàng',       value: 'Về ~3.000 nếu Fed tăng lãi', signal: 'down', note: 'Vàng gãy chen nặng, tích lũy lại. Chênh trong nước cao ~11 triệu/lượng — mua dần hàng uy tín được, vùng 180–190 nên chốt.' },
+            { tag: 'Bitcoin',    value: 'Short 69–71k · DH về 47–50k', signal: 'down', note: 'Chưa phải năm của BTC. Đặt mốc short 69–71k (đỉnh đám mây), không short lưng chừng. Dài hạn về 50k, kịch bản cực đoan 30k.' },
+            { tag: 'CK Mỹ',     value: 'AI/SpaceX/Intel chỉnh',   signal: 'down', note: 'S&P +20%/Nasdaq +34% từ đáy, margin kỷ lục. SpaceX về ~100, Intel là cú "mua tay trái bán tay phải". Apple có thể test 250.' }
+          ],
+          sections: [
+            { title: 'Địa chính trị & Giá dầu', signal: 'wait', sigLabel: 'Neo cao đến hết T10 — long nhẹ, không short',
+              para: 'Trump ký MU đình chiến 60 ngày với Iran tại G7 → dầu điều chỉnh về 76–80. Nhưng 20/6 IRGC lại đóng eo biển Hormuz (Israel tiếp tục tấn công Nam Liban); đàm phán chuyển sang Ai Cập 21/6 (trung gian Pakistan/Saudi/Turkey). Dự trữ chiến lược thiếu → khó để dầu giảm sâu về 65; kịch bản có thể test 90.',
+              bullets: ['Israel mới là bên chi phối — chính phủ Mỹ nhiệm kỳ này khá yếu thế.', 'Thiên về mua/long nhẹ vùng này, short dầu rất nguy hiểm.', 'Vùng giá trị neo đến khoảng hết tháng 10.'] },
+            { title: 'Vĩ mô Fed & Chứng khoán Mỹ', signal: 'down', sigLabel: 'Diều hâu — tăng lãi T9 ~67%',
+              para: 'Kevin Warsh nhấn mạnh ổn định giá cả 12 lần, bỏ forward guidance — "găng tay nhung bọc nắm đấm thép". Lợi suất TP Mỹ 2 năm tăng vọt, 10 năm 4,45%. Lạm phát chip/bộ nhớ (Apple tăng giá iPhone) giữ PCE cao → xác suất tăng lãi T9 ~67%. Nếu tăng lãi, S&P test lại đỉnh cũ tháng 1, AI phải trả giá.',
+              bullets: ['SpaceX 218→170, đáng giá <135, nhiều người cược về 100 — hình 3 đỉnh ra hàng.', 'Intel: cớ "cung chip Apple" là linh tinh (MacBook dùng chip M) — up & ra hàng, tăng 3 lần từ đầu năm.', 'Apple có thể test 250 (Tim Cook rời 10/2026); Nvidia giống FPT khó lên, giữ là hay; Google test 335–340 mua được.', 'Hàn (Kospi)/Nhật (Nikkei) 2–3 đỉnh sẽ chỉnh mạnh; Samsung đừng mua vùng này.'] },
+            { title: 'Vàng, Bạc & Bitcoin', signal: 'down', sigLabel: 'Chờ — nhạy với quyết định Fed',
+              para: 'Vàng gãy chen nặng, tích lũy lại; nếu Fed tăng lãi hoàn toàn có thể về ~3.000 (Thái Phạm là người dự báo vàng về 3.900–4.000 từ sớm). Bạc tệ hơn, nếu tăng lãi về 48–50 (mất thêm ~20%). Bitcoin chưa phải năm của nó — "banana" lần ba chưa hình thành xong.',
+              levels: 'Vàng: tích lũy, rủi ro về ~3.000 nếu tăng lãi · Bạc: 48–50 · BTC short: 69–71k, DH về 47–50k (cực đoan 30k)' },
+            { title: 'Danh mục Chứng khoán Việt Nam', signal: 'up', sigLabel: 'Giữ 70% cổ phiếu — bank trụ + TCX + phân bón',
+              para: 'Vấn đề chính là siết thanh khoản nhà nước (LDR 115%, huy động chậm hơn tín dụng). Chỉ ~28–29% mã uptrend, từ 15/6 một số mã mới nhích lên. Giữ kỷ luật, "tà tà kiếm cơm", chờ tín dụng nở lại.',
+              tickers: [
+                { ticker: 'VCB',  zone: 'Nắm 57–61',  note: 'Nắm dài hạn, không lo lắng.',                                 action: 'Giữ',  aBg: 'oklch(0.95 0.02 235)', aColor: 'oklch(0.4 0.08 235)' },
+                { ticker: 'BID',  zone: 'Nắm',        note: 'Ngân hàng nhà nước đang trở mình tốt, ban lãnh đạo mới.',     action: 'Giữ',  aBg: 'oklch(0.95 0.02 235)', aColor: 'oklch(0.4 0.08 235)' },
+                { ticker: 'TCB',  zone: 'Nắm',        note: 'Fake out một lần rồi tích lũy lại.',                          action: 'Giữ',  aBg: 'oklch(0.95 0.02 235)', aColor: 'oklch(0.4 0.08 235)' },
+                { ticker: 'EIB',  zone: 'Nắm chặt',   note: 'Nén càng chặt bung càng mạnh; fake out/spring càng tốt.',     action: 'Giữ',  aBg: 'oklch(0.95 0.02 235)', aColor: 'oklch(0.4 0.08 235)' },
+                { ticker: 'TCX',  zone: 'Mua ~40–41', note: 'Mã dẫn vốn cho Vin/VHM/Masan/Techcombank — vùng giá trị, mục tiêu 3/2027.', action: 'Mua', aBg: 'oklch(0.95 0.04 150)', aColor: 'oklch(0.42 0.1 150)' },
+                { ticker: 'DCM',  zone: 'Giữ 3/4 vị thế', note: 'Đạm Cà Mau — tăng thêm 1/4 tuần này, target cuối năm.',  action: 'Mua',  aBg: 'oklch(0.95 0.04 150)', aColor: 'oklch(0.42 0.1 150)' },
+                { ticker: 'VNM',  zone: 'Mua ~60',    note: 'Mua mới vì rẻ (không vì tăng trưởng), trong VN30, SCIC mua. Cắt lỗ nếu về 50.', action: 'Mua', aBg: 'oklch(0.95 0.04 150)', aColor: 'oklch(0.42 0.1 150)' },
+                { ticker: 'SCS',  zone: 'Cầm 2–3 năm', note: 'Cầm dài hạn; hưởng lợi Long Thành, ACV có chủ tịch mới.',     action: 'Giữ',  aBg: 'oklch(0.95 0.02 235)', aColor: 'oklch(0.4 0.08 235)' },
+                { ticker: 'SSI',  zone: 'Đắt — đợi',  note: 'Vùng 27 vẫn đắt (đắt hơn ~30%) — không mua, chờ.',           action: 'Theo dõi', aBg: '#EFEEE9',          aColor: '#5F5E57'             }
+              ] }
+          ]
+        },
+        {
+          date: '2026-06-18', dateShort: '18/06', timeAgo: '4 ngày trước',
+          tab: 'Video · 18/06', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Chủ Tịch Fed Lật Kèo — Từ Bỏ Định Hướng Lãi Suất, Lưu Ý Gì Cho Vàng, BTC, Chứng Khoán, Tỷ Giá',
+          summary: 'Fed giữ nguyên lãi suất 3,5–3,75% (lần thứ 4 liên tiếp 2026). Tân chủ tịch Kevin Warsh thay đổi căn bản: từ chối nộp dot plot, BỎ forward guidance — để thị trường tự phản ứng với dữ liệu; lập 5 tổ công tác cải tổ Fed; diều hâu về thu hẹp bảng cân đối kế toán. Dot plot: 9/18 dự tăng lãi 1 lần, PCE cuối 2026 dự 3,6%. Hệ quả: thị trường biến động cực mạnh (choppy); vàng tích lũy dưới MA200 (rủi ro về 3.000), BTC chỉ còn là một mã giao dịch, AI/semiconductor cao sẽ hạ, EM tiếp tục áp lực tỷ giá/lãi suất.',
+          feedChips: [
+            { label: 'Fed ◷ giữ nguyên lãi suất', sig: 'wait' },
+            { label: 'Warsh ↓ bỏ forward guidance', sig: 'down' },
+            { label: 'Vàng ↓ rủi ro về 3.000',     sig: 'down' },
+            { label: 'EM ⚠ áp lực tỷ giá',         sig: 'warn' }
+          ],
+          keyCalls: [
+            { tag: 'Fed',        value: 'Giữ 3,5–3,75% (lần 4)',   signal: 'wait', note: 'FOMC đồng thuận giữ lãi suất lần thứ 4 liên tiếp 2026, trong khi ECB tăng 1 lần và Nhật nâng lên 1% (cao nhất nhiều thập kỷ).' },
+            { tag: 'Kevin Warsh', value: 'Bỏ forward guidance',    signal: 'down', note: 'Từ chối nộp dot plot, không định hướng lãi suất — để thị trường tự phản ứng với dữ liệu. Lập 5 tổ công tác cải tổ Fed, nhấn mạnh ổn định giá cả.' },
+            { tag: 'Dot plot',   value: '9/18 dự tăng 1 lần',      signal: 'down', note: '6 thành viên dự tăng 2 lần (diều hâu). PCE cuối 2026 dự 3,6% (cao hơn 2,7% hồi T3); lãi suất trung vị 3,8%.' },
+            { tag: 'Thị trường mới nổi', value: 'Áp lực tỷ giá/lãi', signal: 'warn', note: 'Fed giữ lãi cao + USD mạnh → EM phải duy trì lãi cao bảo vệ đồng tiền. Tiền chỉ chảy vào EM khi Fed nới lỏng. Yên Nhật, Won Hàn mất giá kỷ lục.' }
+          ],
+          sections: [
+            { title: 'Fed dưới thời Kevin Warsh — Bỏ forward guidance', signal: 'down', sigLabel: 'Diều hâu — thị trường tự phản ứng dữ liệu',
+              para: 'Fed giữ nguyên lãi suất như dự báo, nhưng thay đổi lớn nằm ở phong cách điều hành. Kevin Warsh từ chối nộp dot plot ("không hữu ích cho điều hành"), bỏ forward guidance — không hứa hẹn lộ trình lãi suất, để thị trường phản ứng trực tiếp với dữ liệu lạm phát/việc làm. Ông lập 5 tổ công tác cải tổ Fed (truyền thông, bảng cân đối kế toán, nguồn dữ liệu, năng suất, thị trường lao động) và nhấn mạnh ổn định giá cả là nhiệm vụ trọng tâm.',
+              bullets: ['Dot plot: 9/18 thành viên dự tăng lãi 1 lần năm 2026, 6 người dự tăng 2 lần.', 'PCE cuối 2026 dự 3,6% (cao hơn nhiều mức 2,7% hồi tháng 3); lãi suất trung vị 3,8%.', 'Warsh diều hâu về thu hẹp bảng cân đối kế toán; nhìn lực cầu (GDP) chứ không tin hứa hẹn nguồn cung AI.', 'Chuyên gia (Goldman, JP Morgan, Citi, BlackRock) đều đọc là chuyển hướng diều hâu.'] },
+            { title: 'Tác động tới tài sản', signal: 'down', sigLabel: 'Biến động cực mạnh — chọn đúng thời điểm',
+              para: 'Không còn forward guidance nghĩa là không ai "dẫn đường" — thị trường sẽ biến động cực mạnh (choppy) cả hai chiều theo từng số liệu. Trong môi trường lãi cao kéo dài, vàng cần tích lũy dưới MA200; nếu có đợt thu hẹp bảng cân đối kế toán, vàng hoàn toàn có thể về vùng 3.000.',
+              bullets: ['Vàng: choppy, tích lũy dưới MA200, rủi ro về ~3.000 nếu siết tiền.', 'Bitcoin: chỉ còn là một mã giao dịch sau 3 đạo luật crypto của Mỹ.', 'CK Mỹ: AI/semiconductor (Nvidia, Meta, Microsoft, ARM) lên cao sẽ phải hạ.', 'Thị trường mới nổi: tỷ giá và lãi suất tiếp tục chịu áp lực; EM (Đài Loan, Hàn) tốt nhưng cao sẽ chỉnh.'] }
+          ]
+        },
         {
           date: '2026-06-17', dateShort: '17/06', timeAgo: 'Hôm qua',
           tab: 'Video · 17/06', sourceType: 'public-video', typeLabel: 'Video công khai',
@@ -399,6 +499,12 @@ window.HDT_DATA = {
         }
       ],
       sources: [
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '21/06/2026',
+          title: 'Siêu chu kỳ chip đối đầu vĩ mô xấu, ETF Funds cơ cấu mạnh cuối tháng 6', meta: 'Video công khai · transcript tự động' },
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '20/06/2026',
+          title: 'Tập 33 — Vàng, Bitcoin, Chứng khoán tuần 25', meta: 'Video hội viên · transcript tự động' },
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '18/06/2026',
+          title: 'Chủ tịch Fed lật kèo từ bỏ định hướng lãi suất — vàng, BTC, chứng khoán, tỷ giá', meta: 'Video công khai · transcript tự động' },
         { icon: '✎', iconBg: 'oklch(0.95 0.02 235)', iconColor: 'oklch(0.42 0.08 235)', date: '16/06/2026',
           title: '16/6 — TĂNG CỔ PHIẾU LÊN 70% — Chợ Huyện Sắp Có Sức Sống', meta: 'Post cộng đồng · chỉ dành cho hội viên' },
         { icon: '✎', iconBg: 'oklch(0.95 0.02 235)', iconColor: 'oklch(0.42 0.08 235)', date: '15/06/2026',

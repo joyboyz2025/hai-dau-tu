@@ -19,7 +19,7 @@
 
 window.HDT_DATA = {
 
-  lastUpdated: '21/06/2026 · Mới nhất',
+  lastUpdated: '04/07/2026 · Mới nhất',
 
   // ── Pulse strip ─────────────────────────────────────────────────────────────
   pulse: [
@@ -147,7 +147,49 @@ window.HDT_DATA = {
       },
       updates: [
         {
-          date: '2026-06-21', dateShort: '21/06', timeAgo: 'Hôm qua',
+          date: '2026-07-04', dateShort: '04/07', timeAgo: '2 ngày trước',
+          tab: 'Tập 36 · Tuần 27', sourceType: 'member-video', typeLabel: 'Video hội viên · Tập 36',
+          title: 'Tập 36 (Hội Viên): Vàng, Bitcoin, Chứng Khoán Tuần 27 — Tỉ Lệ Tiền Và Hàng?',
+          summary: 'Tuần đầu H2/2026. SpaceX vào rổ Nasdaq 100 ngày 7/7 → về vùng 100 (giữ short). Sóng bán dẫn tạm dừng, AI biến động mạnh do đòn bẩy lớn — Nvidia có thể về 163–172 (Meta bán bớt compute, data center dư công suất). Vàng hồi kỹ thuật, canh long khi test 4.000; Bitcoin banana lần 3, short limit 68–70k, dài hạn về 47–50k. CK Việt "mùa đông": giữ 80% cổ phiếu / 20% tiền, tập trung ngân hàng + chứng khoán, phân bón (DCM). Tránh PNJ (rủi ro pháp lý kim cương).',
+          feedChips: [
+            { label: 'SpaceX ↓ về vùng 100',   sig: 'down' },
+            { label: 'AI ↓ bán dẫn tạm dừng',   sig: 'down' },
+            { label: 'Vàng ◷ hồi về 4.000',      sig: 'wait' },
+            { label: 'CK Việt ↑ giữ 80% cổ phiếu', sig: 'up' }
+          ],
+          keyCalls: [
+            { tag: 'SpaceX',   value: 'Về vùng 100 · giữ short', signal: 'down', note: 'Vào rổ Nasdaq 100 ngày 7/7 với định giá vô lý → quỹ kẹp hàng. Giữ short (đã ăn từ 200), về 100–110 và neo ở đó ~6 tháng.' },
+            { tag: 'Nvidia',   value: 'Đừng đụng · về 163–172',  signal: 'down', note: 'Meta bán bớt compute (hạ tầng AI cloud) → data center dư công suất → nhu cầu chip GPU/RAM chậm lại. TQ/Hồng Kông xuất chip thay thế. Muốn mua đợi vùng 163.' },
+            { tag: 'Vàng',     value: 'Canh long khi test 4.000', signal: 'wait', note: 'Hồi phục kỹ thuật về vùng bình quân 4.000; Fed khó tăng lãi (nonfarm kém). Long khi test 4.000–4.085, mục tiêu ~4.350. Không long vùng hiện tại. Dài hạn vẫn cửa về ~3.000.' },
+            { tag: 'CK Việt',  value: 'Giữ 80% cổ phiếu',        signal: 'up',   note: 'Tỉ lệ hội viên 80/20, tập trung ngân hàng (45–50% danh mục) và chứng khoán (20–25%). Mùa đông — đánh chắc, cơ hội 8–10% ăn nhanh, nắm dài chờ "gió đông" giữa 2027.' }
+          ],
+          sections: [
+            { title: 'Chứng khoán Mỹ — Bán dẫn tạm dừng, AI rung lắc', signal: 'down', sigLabel: 'Giảm/rung lắc — chờ vùng thấp',
+              para: 'Dow vẫn lập đỉnh nhưng chỉ nhờ kéo Apple, thiếu thuyết phục; Nasdaq và S&P giảm mạnh phiên cuối tuần khi dòng tiền chốt lời nhóm bán dẫn. Đòn bẩy toàn thị trường quá lớn nên AI biến động cực mạnh — Trump hò hét mua Micron ở vùng cao (giống lùa Bitcoin 10/2025). Nghiêng kịch bản Dow về 24.000–24.500 và S&P về ~7.050 để tích lũy, mở cơ hội mua giai đoạn sau.',
+              bullets: ['Micron (MU): nghiêng điều chỉnh giảm ~46% bất chấp tin hô hào.', 'SpaceX vào Nasdaq 100 ngày 7/7 → về vùng 100–110, neo ~6 tháng (giữ short).', 'Nvidia: đừng đụng, về 163–172 — data center dư công suất, TQ/HK xuất chip thay thế.', 'Apple: điều chỉnh tuần tới; iPhone gập >2.000 USD khó kích cầu. Short 325–330, cắt lỗ 360; không mua dài hạn.', 'Google: EU phạt 4,1 tỷ EUR vụ Android — muốn mua dài hạn đợi 300–314. Netflix mua vùng 74–75. Adidas sắp chốt lời 190–200.', 'Bài học short: vị thế vừa phải, không margin lớn; không short đuổi theo cú kéo hồi.'] },
+            { title: 'Vàng, Bạc & Bitcoin', signal: 'wait', sigLabel: 'Hồi kỹ thuật — kiên nhẫn chờ vùng',
+              para: 'Vàng giảm sâu nên có hồi phục kỹ thuật; theo đồ thị tuần về vùng bình quân ~4.000. Fed khó tăng lãi năm nay (nonfarm payroll kém) nên thị trường kỳ vọng vàng hồi. Bitcoin đang ở "banana chuối" lần ba — chỉ còn là một mã ăn theo USD.',
+              levels: 'Vàng: long khi test 4.000–4.085 → mục tiêu ~4.350 (dài hạn vẫn cửa ~3.000) · Bạc: mua khi về ~60 · BTC: short limit 68–70k, dài hạn 47–50k (chu kỳ 4 năm có thể 28–32k)' },
+            { title: 'Chứng khoán Việt Nam — Mùa đông, giữ 80% cổ phiếu', signal: 'up', sigLabel: 'Cầm chắc — ngân hàng + chứng khoán',
+              para: 'Áp lực tỷ giá và nước ngoài bán ròng, kiều hối bù đắp phần nào. Lãi suất VND cao → không có dòng tiền đầu cơ, phải đánh chắc: cơ hội 8–10% ăn nhanh, còn lại nắm dài chờ "gió đông" (giữa 2027, dẫn dắt bởi ngân hàng và chứng khoán). Chỉ số tháng 7 có thể bị VIC/VHM đè về 1.750–1.763, thậm chí 1.573 — nhưng đừng để chỉ số ép bán hàng của mình.',
+              tickers: [
+                { ticker: 'VCB',  zone: 'Cầm', note: 'Cầm chặt, không thay đổi — tích lũy là bình thường.',                          action: 'Giữ', aBg: 'oklch(0.95 0.02 235)', aColor: 'oklch(0.4 0.08 235)' },
+                { ticker: 'BID',  zone: 'Cầm', note: 'Cầm chặt, không thay đổi.',                                                     action: 'Giữ', aBg: 'oklch(0.95 0.02 235)', aColor: 'oklch(0.4 0.08 235)' },
+                { ticker: 'CTG',  zone: 'Cầm', note: 'Đang cầm cứ cầm.',                                                              action: 'Giữ', aBg: 'oklch(0.95 0.02 235)', aColor: 'oklch(0.4 0.08 235)' },
+                { ticker: 'HDB',  zone: 'Cầm', note: 'HD Securities sắp lên sàn → có cớ để kéo.',                                     action: 'Giữ', aBg: 'oklch(0.95 0.02 235)', aColor: 'oklch(0.4 0.08 235)' },
+                { ticker: 'BVB',  zone: 'Cầm', note: 'Sắp limit lên sàn HOSE — chưa cần chốt lời, kỳ vọng rõ.',                       action: 'Giữ', aBg: 'oklch(0.95 0.02 235)', aColor: 'oklch(0.4 0.08 235)' },
+                { ticker: 'TCX',  zone: 'Giữ · chủ lực', note: 'Chưa vi phạm gì để phải bán — giữ, lướt sóng nhóm chứng khoán.',      action: 'Giữ', aBg: 'oklch(0.95 0.02 235)', aColor: 'oklch(0.4 0.08 235)' },
+                { ticker: 'VCI',  zone: 'Lướt 8–10%', note: 'Lướt sóng cùng SSI/VND/VIX; nhóm CK hồi từ đáy 18–33%.',                 action: 'Mua', aBg: 'oklch(0.95 0.04 150)', aColor: 'oklch(0.42 0.1 150)' },
+                { ticker: 'DCM',  zone: 'Vùng giá trị · cầm 8 tháng', note: 'Đạm Cà Mau tốt nhất nhóm phân bón; vùng lái dìm ăn hàng, giá dầu giảm còn tốt cho đầu vào khí.', action: 'Mua', aBg: 'oklch(0.95 0.04 150)', aColor: 'oklch(0.42 0.1 150)' },
+                { ticker: 'HPG',  zone: 'Giải ngân 1/3', note: 'Vùng này giải ngân dần 1/3 được, đừng để chỉ số ép bán.',            action: 'Mua', aBg: 'oklch(0.95 0.04 150)', aColor: 'oklch(0.42 0.1 150)' },
+                { ticker: 'SCS',  zone: 'Nắm giữ', note: 'Lỗ 6–7% không sao nếu cầm dài hạn; đánh spring kệ, cứ cầm.',                action: 'Giữ', aBg: 'oklch(0.95 0.02 235)', aColor: 'oklch(0.4 0.08 235)' },
+                { ticker: 'HVN',  zone: 'Chỉ lướt ~27–28', note: 'Hàng không VN chỉ lướt sóng 10–12%, không đầu tư dài hạn (giá vé đắt, thu hồi vốn chậm).', action: 'Theo dõi', aBg: '#EFEEE9', aColor: '#5F5E57' },
+                { ticker: 'PNJ',  zone: 'Tránh · có thể về 44', note: 'Rủi ro pháp lý: giám định làm giả mã 28.000 viên kim cương → mất niềm tin, áp lực dòng tiền hoàn hàng.', action: 'Bán', aBg: 'oklch(0.95 0.04 27)', aColor: 'oklch(0.46 0.15 27)' }
+              ] }
+          ]
+        },
+        {
+          date: '2026-06-21', dateShort: '21/06', timeAgo: '15 ngày trước',
           tab: 'Video · Tuần 25', sourceType: 'public-video', typeLabel: 'Video công khai',
           title: 'Siêu Chu Kỳ Chip Đối Đầu Vĩ Mô Xấu — ETF Funds Cơ Cấu Mạnh Cuối Tháng 6',
           summary: 'Nhịp đập thị trường tuần 25: giá dầu neo cao 75–85 USD dài hạn (dự trữ G7/Mỹ thiếu, eo biển Hormuz căng lại). Lạm phát không hạ vì giá chip/bộ nhớ tăng (Apple sắp tăng giá iPhone 17 & 18) → xác suất Fed tăng lãi T9 ~70%. Nasdaq +34% từ đáy, ETF cơ cấu ~160 tỷ USD cuối T6 → AI/semiconductor phải chỉnh. VN-Index thiếu thanh khoản (LDR 115%), nước ngoài bán ròng ~20.000 tỷ/tháng — chọn cổ phiếu nội lực mạnh, tích lũy kiểu "mùa đông".',
@@ -499,6 +541,8 @@ window.HDT_DATA = {
         }
       ],
       sources: [
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '04/07/2026',
+          title: 'Tập 36 — Vàng, Bitcoin, Chứng khoán tuần 27 · Tỉ lệ tiền và hàng?', meta: 'Video hội viên · transcript tự động' },
         { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '21/06/2026',
           title: 'Siêu chu kỳ chip đối đầu vĩ mô xấu, ETF Funds cơ cấu mạnh cuối tháng 6', meta: 'Video công khai · transcript tự động' },
         { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '20/06/2026',

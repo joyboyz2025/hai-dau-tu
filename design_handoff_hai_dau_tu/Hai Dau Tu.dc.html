@@ -112,6 +112,32 @@ input::placeholder { color: #A3A29A; }
         </div>
       </div>
 
+      <!-- Lịch sử nhận định của mã/từ khóa -->
+      <sc-if value="{{ hasCallHist }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <div style="display:flex; align-items:baseline; gap:8px; flex-wrap:wrap;">
+            <h2 style="margin:0; font-size:18px; font-weight:700; letter-spacing:-0.2px;">Lịch sử nhận định · <span style="font-family:'IBM Plex Mono',monospace; color:oklch(0.42 0.08 235);">{{ callHistQ }}</span></h2>
+            <span style="font-size:12.5px; color:#9B9A92;">{{ callHistCount }} gần nhất — bấm để mở bài gốc</span>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <sc-for list="{{ callHist }}" as="ch" hint-placeholder-count="0">
+              <div onClick="{{ ch.onClick }}" class="card-lift" style="background:#FFFFFF; border:1px solid #E7E6E1; border-left:4px solid {{ ch.accent }}; border-radius:12px; padding:12px 15px; display:flex; flex-direction:column; gap:5px; cursor:pointer;">
+                <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap;">
+                  <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                    <div style="font-size:12px; font-family:'IBM Plex Mono',monospace; font-weight:600; color:#21211D; background:#F1F0EB; border-radius:7px; padding:3px 8px;">{{ ch.dateLabel }}</div>
+                    <div style="width:22px; height:22px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:8.5px; font-weight:700;">{{ ch.initials }}</div>
+                    <div style="font-size:12.5px; font-weight:600;">{{ ch.expertName }}</div>
+                    <div style="font-size:12px; font-weight:700; color:#9B9A92;">{{ ch.tag }}</div>
+                  </div>
+                  <div style="font-size:11.5px; font-weight:700; padding:3px 10px; border-radius:999px; background:{{ ch.bg }}; color:{{ ch.color }};">{{ ch.value }}</div>
+                </div>
+                <div style="font-size:12.5px; color:#6E6D66; line-height:1.5;">{{ ch.note }}</div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </sc-if>
+
       <!-- Kết quả tìm kiếm -->
       <sc-if value="{{ showResults }}" hint-placeholder-val="{{ false }}">
         <div style="display:flex; flex-direction:column; gap:14px;">
@@ -1406,8 +1432,11 @@ class Component extends DCLogic {
         });
         (u.sections || []).forEach(sec => {
           (sec.tickers || []).forEach(t => {
+            const zoneOk = t.zone && t.zone !== '—';
+            const tval = zoneOk && strip(t.zone).startsWith(strip(t.action)) ? t.zone
+              : t.action + (zoneOk ? ' · ' + t.zone : '');
             ALL_CALLS.push({ eid, exName: ex.name, initials: ex.initials, date: u.date, dateShort: u.dateShort, updIdx: ui,
-              tag: t.ticker, value: t.action + (t.zone && t.zone !== '—' ? ' · ' + t.zone : ''), note: t.note || '',
+              tag: t.ticker, value: tval, note: t.note || '',
               signal: TICKER_SIG[t.action] || 'wait',
               asset: classify(t.ticker, t.zone, t.note) });
           });
@@ -1489,6 +1518,21 @@ class Component extends DCLogic {
       searchResults = searchResults.slice(0, 30);
     }
 
+    // ── Lịch sử nhận định của mã/từ khóa: 5 call gần nhất khớp query ─────
+    let callHist = [];
+    if (showResults) {
+      callHist = ALL_CALLS
+        .filter(c => strip(c.tag).includes(qs) || strip(c.value).includes(qs) || strip(c.note).includes(qs))
+        .slice(0, 5)
+        .map(c => ({
+          dateLabel: c.dateShort, initials: c.initials, expertName: c.exName,
+          tag: c.tag, value: c.value, note: c.note,
+          ...CHIP_SIG[c.signal],
+          accent: (CHIP_SIG[c.signal] || {}).color || '#9B9A92',
+          onClick: () => this.go('expert', { expertId: c.eid, updIdx: c.updIdx })
+        }));
+    }
+
     const curExpert = EXPERTS[s.expertId] || EXPERTS['thai-pham'];
     const curUpdates = curExpert.updates;
 
@@ -1526,6 +1570,9 @@ class Component extends DCLogic {
       hasSearch, showResults, searchResults,
       searchCount: searchResults.length,
       noResults: showResults && searchResults.length === 0,
+      callHist, hasCallHist: callHist.length > 0,
+      callHistQ: (s.q || '').trim().toUpperCase(),
+      callHistCount: callHist.length,
       // Tài sản & Khuyến nghị
       assetChips, assetItems, noAssetItems: assetItems.length === 0,
       trackerChips, trackerRows,

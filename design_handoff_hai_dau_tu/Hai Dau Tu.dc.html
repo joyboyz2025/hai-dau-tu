@@ -9,6 +9,14 @@
 <body>
 <x-dc>
 <helmet>
+<title>Hải Đầu Tư — cùng các Chuyên Gia</title>
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#1C375A">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Hải Đầu Tư">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -178,6 +186,9 @@ input::placeholder { color: #A3A29A; }
                   <div style="width:24px; height:24px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:9px; font-weight:700; flex-shrink:0;">{{ r.expertInitials }}</div>
                   <div style="font-size:12.5px; font-weight:600; color:#21211D;">{{ r.expertName }}</div>
                   <div style="font-size:10.5px; font-weight:700; padding:2px 8px; border-radius:999px; background:{{ r.typeBg }}; color:{{ r.typeColor }};">{{ r.typeLabel }}</div>
+                  <sc-if value="{{ r.isNew }}" hint-placeholder-val="{{ false }}">
+                    <div style="font-size:9.5px; font-weight:800; padding:2px 7px; border-radius:999px; background:oklch(0.55 0.19 27); color:#fff; letter-spacing:0.6px;">MỚI</div>
+                  </sc-if>
                 </div>
                 <div style="font-size:11px; font-family:'IBM Plex Mono',monospace; color:#9B9A92; white-space:nowrap;">{{ r.date }}</div>
               </div>
@@ -327,6 +338,9 @@ input::placeholder { color: #A3A29A; }
               <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
                 <div style="font-size:11px; font-weight:700; padding:3px 8px; border-radius:999px; background:{{ ex.typeBg }}; color:{{ ex.typeColor }};">{{ ex.typeLabel }}</div>
                 <div style="font-size:11.5px; font-family:'IBM Plex Mono',monospace; color:#9B9A92;">{{ ex.latestDate }}</div>
+                <sc-if value="{{ ex.isNew }}" hint-placeholder-val="{{ false }}">
+                  <div style="font-size:9.5px; font-weight:800; padding:2px 7px; border-radius:999px; background:oklch(0.55 0.19 27); color:#fff; letter-spacing:0.6px;">MỚI</div>
+                </sc-if>
               </div>
               <div style="font-size:13.5px; font-weight:600; color:#21211D; line-height:1.4;">{{ ex.latestTitle }}</div>
               <div style="font-size:12.5px; color:#46453F; line-height:1.55;">{{ ex.latestSummary }}</div>
@@ -467,7 +481,10 @@ input::placeholder { color: #A3A29A; }
       <!-- Tabs các bản cập nhật -->
       <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:stretch;">
         <sc-for list="{{ updateTabs }}" as="u" hint-placeholder-count="3">
-          <div onClick="{{ u.onClick }}" style="display:flex; flex-direction:column; gap:2px; padding:9px 16px; border-radius:12px; cursor:pointer; border:1.5px solid {{ u.border }}; background:{{ u.bg }};">
+          <div onClick="{{ u.onClick }}" style="display:flex; flex-direction:column; gap:2px; padding:9px 16px; border-radius:12px; cursor:pointer; border:1.5px solid {{ u.border }}; background:{{ u.bg }}; position:relative;">
+            <sc-if value="{{ u.isNew }}" hint-placeholder-val="{{ false }}">
+              <div style="position:absolute; top:-6px; right:-6px; font-size:8.5px; font-weight:800; padding:2px 6px; border-radius:999px; background:oklch(0.55 0.19 27); color:#fff; letter-spacing:0.5px;">MỚI</div>
+            </sc-if>
             <div style="font-size:13px; font-weight:700; font-family:'IBM Plex Mono',monospace; color:{{ u.color }};">{{ u.date }}</div>
             <div style="font-size:11px; font-weight:500; color:{{ u.sub }};">{{ u.label }}</div>
           </div>
@@ -692,6 +709,15 @@ class Component extends DCLogic {
     this.nameRef = React.createRef();
     this.channelRef = React.createRef();
     this.searchRef = React.createRef();
+    // Badge MỚI: so với ngày bài mới nhất của lần truy cập trước (localStorage)
+    let prevSeen = null, newestNow = '';
+    try { prevSeen = localStorage.getItem('hdt_seen'); } catch (e) {}
+    try {
+      Object.values(window.HDT_DATA.experts).forEach(ex =>
+        (ex.updates || []).forEach(u => { if (u.date > newestNow) newestNow = u.date; }));
+    } catch (e) {}
+    this.prevSeen = prevSeen || newestNow;
+    try { localStorage.setItem('hdt_seen', newestNow); } catch (e) {}
   }
 
   login() {
@@ -930,6 +956,7 @@ class Component extends DCLogic {
       expertInitials: ex.initials, expertName: ex.name, date: u.dateShort,
       ...(SOURCE_TYPE[u.sourceType] || SOURCE_TYPE['public-video']),
       typeLabel: u.typeLabel, title: u.title,
+      isNew: !!(this.prevSeen && u.date > this.prevSeen),
       chips: (u.feedChips || []).map(c => ({ label: c.label, ...CHIP_SIG[c.sig] })),
       onClick: () => this.go('expert', { expertId })
     }));
@@ -1315,7 +1342,7 @@ class Component extends DCLogic {
         gaugeBadge: ex.gauge.badge, gaugeBadgeBg: ex.gauge.badgeBg, gaugeBadgeColor: ex.gauge.badgeColor,
         gaugeBar1: ex.gauge.bar1, gaugeBar2: ex.gauge.bar2, gaugeLabel1: ex.gauge.label1, gaugeLabel2: ex.gauge.label2,
         updates: (ex.updates || []).map(u => ({
-          date: u.dateShort, tab: u.tab,
+          date: u.dateShort, tab: u.tab, isoDate: u.date,
           ...(SOURCE_TYPE[u.sourceType] || SOURCE_TYPE['public-video']),
           typeLabel: u.typeLabel, title: u.title,
           keyCalls: (u.keyCalls || []).map(kc => ({ ...kc, accent: (CHIP_SIG[kc.signal] || {}).color || '#21211D' })),
@@ -1340,6 +1367,7 @@ class Component extends DCLogic {
         ...mkAvatar(ex.avatarSrc), ...st, typeLabel: latest.typeLabel || '',
         latestDate: d.length === 3 ? d[2]+'/'+d[1]+'/'+d[0] : '',
         latestTitle: latest.title || '', latestSummary: latest.summary || '',
+        isNew: !!(this.prevSeen && latest.date && latest.date > this.prevSeen),
         chips: (latest.feedChips || []).map(c => ({ label: c.label, ...CHIP_SIG[c.sig] })),
         onClick: () => this.go('expert', { expertId: id })
       };
@@ -1597,6 +1625,7 @@ class Component extends DCLogic {
       expertSources: curExpert.sources || [],
       updateTabs: curUpdates.map((u, i) => ({
         date: u.date, label: u.tab,
+        isNew: !!(this.prevSeen && u.isoDate && u.isoDate > this.prevSeen),
         border: s.updIdx === i ? BRAND : '#E7E6E1',
         bg: s.updIdx === i ? 'oklch(0.95 0.02 235)' : '#FFFFFF',
         color: s.updIdx === i ? BRAND : '#21211D',

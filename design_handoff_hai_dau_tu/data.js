@@ -293,22 +293,263 @@ window.HDT_DATA = {
           "title": "Tập 36 (Hội Viên): Vàng, Bitcoin, Chứng Khoán Tuần 27 — Tỉ Lệ Tiền Và Hàng?",
           "summary": "Tuần đầu H2/2026. SpaceX vào rổ Nasdaq 100 ngày 7/7 → về vùng 100 (giữ short). Sóng bán dẫn tạm dừng, AI biến động mạnh do đòn bẩy lớn — Nvidia có thể về 163–172 (Meta bán bớt compute, data center dư công suất). Vàng hồi kỹ thuật, canh long khi test 4.000; Bitcoin banana lần 3, short limit 68–70k, dài hạn về 47–50k. CK Việt \"mùa đông\": giữ 80% cổ phiếu / 20% tiền, tập trung ngân hàng + chứng khoán, phân bón (DCM). Tránh PNJ (rủi ro pháp lý kim cương).",
           "tradeLevels": [
-            { "asset": "Vàng",        "dir": "Long",  "entry": "Canh long khi test 4.000–4.085", "target": "4.350", "stop": "Rủi ro về ~3.000", "sig": "up" },
-            { "asset": "Bạc",         "dir": "Chờ mua", "entry": "Đợi về ~60", "target": "", "stop": "Nếu Fed tăng lãi về 48–50", "sig": "wait" },
-            { "asset": "Bitcoin",     "dir": "Short", "entry": "Limit 68–71k", "target": "Dài hạn 47–50k (cực đoan 28–32k)", "stop": "", "sig": "down" },
-            { "asset": "Nasdaq",      "dir": "Short", "entry": "Giữ short", "target": "", "stop": "Cắt lỗ 31.300–32.000", "sig": "down" },
-            { "asset": "S&P 500",     "dir": "Short", "entry": "Giữ short", "target": "", "stop": "Cắt lỗ nếu vượt 7.000–7.007", "sig": "down" },
-            { "asset": "SpaceX",      "dir": "Short", "entry": "Giữ (đã vào ~200)", "target": "Về 100–110", "stop": "", "sig": "down" },
-            { "asset": "Apple",       "dir": "Short", "entry": "325–330", "target": "", "stop": "Cắt lỗ 360", "sig": "down" },
-            { "asset": "Nvidia",      "dir": "Tránh", "entry": "Chờ về 163", "target": "", "stop": "", "sig": "down" },
-            { "asset": "Netflix",     "dir": "Mua",   "entry": "74–75", "target": "", "stop": "", "sig": "up" },
-            { "asset": "Google",      "dir": "Mua DH","entry": "300–314", "target": "", "stop": "", "sig": "up" },
-            { "asset": "VIX",         "dir": "Long",  "entry": "15–16", "target": "", "stop": "", "sig": "up" },
-            { "asset": "TCX",         "dir": "Mua",   "entry": "40–41", "target": "VN30 T3/2027", "stop": "", "sig": "up" },
-            { "asset": "VNM",         "dir": "Mua",   "entry": "~60", "target": "", "stop": "Cắt lỗ nếu về 50", "sig": "up" },
-            { "asset": "DCM",         "dir": "Mua",   "entry": "Vùng giá trị", "target": "Cầm 8 tháng", "stop": "", "sig": "up" },
-            { "asset": "HPG",         "dir": "Mua",   "entry": "Giải ngân 1/3", "target": "", "stop": "", "sig": "up" },
-            { "asset": "PNJ",         "dir": "Tránh", "entry": "", "target": "Có thể về 44", "stop": "Rủi ro pháp lý", "sig": "down" }
+            {
+              "group": "Vàng & Bạc",
+              "items": [
+                {
+                  "asset": "Vàng",
+                  "dir": "Long",
+                  "entry": "Canh long khi test 4.000–4.085",
+                  "target": "4.350",
+                  "stop": "Rủi ro về ~3.000",
+                  "sig": "up"
+                },
+                {
+                  "asset": "Bạc",
+                  "dir": "Chờ mua",
+                  "entry": "Đợi về ~60",
+                  "target": "",
+                  "stop": "Nếu Fed tăng lãi về 48–50",
+                  "sig": "wait"
+                }
+              ]
+            },
+            {
+              "group": "Bitcoin & Crypto",
+              "items": [
+                {
+                  "asset": "Bitcoin",
+                  "dir": "Short",
+                  "entry": "Limit 68–71k",
+                  "target": "Dài hạn 47–50k (cực đoan 28–32k)",
+                  "stop": "",
+                  "sig": "down"
+                }
+              ]
+            },
+            {
+              "group": "Chứng khoán Mỹ",
+              "items": [
+                {
+                  "asset": "Nasdaq",
+                  "dir": "Short",
+                  "entry": "Giữ short",
+                  "target": "",
+                  "stop": "Cắt lỗ 31.300–32.000",
+                  "sig": "down"
+                },
+                {
+                  "asset": "S&P 500",
+                  "dir": "Short",
+                  "entry": "Giữ short",
+                  "target": "",
+                  "stop": "Cắt lỗ nếu vượt 7.000–7.007",
+                  "sig": "down"
+                },
+                {
+                  "asset": "Dow (US30)",
+                  "dir": "Short",
+                  "entry": "Mua short vùng này",
+                  "target": "Về 24.000–24.500",
+                  "stop": "",
+                  "sig": "down"
+                },
+                {
+                  "asset": "VIX",
+                  "dir": "Long",
+                  "entry": "15–16",
+                  "target": "",
+                  "stop": "",
+                  "sig": "up"
+                },
+                {
+                  "asset": "SpaceX",
+                  "dir": "Short",
+                  "entry": "Giữ (đã vào ~200)",
+                  "target": "Về 100–110",
+                  "stop": "",
+                  "sig": "down"
+                },
+                {
+                  "asset": "Apple",
+                  "dir": "Short",
+                  "entry": "325–330",
+                  "target": "",
+                  "stop": "Cắt lỗ 360",
+                  "sig": "down"
+                },
+                {
+                  "asset": "Nvidia",
+                  "dir": "Tránh",
+                  "entry": "Chờ về 163",
+                  "target": "",
+                  "stop": "",
+                  "sig": "down"
+                },
+                {
+                  "asset": "Netflix",
+                  "dir": "Mua",
+                  "entry": "74–75",
+                  "target": "",
+                  "stop": "",
+                  "sig": "up"
+                },
+                {
+                  "asset": "Google",
+                  "dir": "Mua DH",
+                  "entry": "300–314",
+                  "target": "",
+                  "stop": "",
+                  "sig": "up"
+                }
+              ]
+            },
+            {
+              "group": "Nhật & Hàn",
+              "items": [
+                {
+                  "asset": "Nikkei",
+                  "dir": "Short",
+                  "entry": "Giữ short",
+                  "target": "",
+                  "stop": "Cắt lỗ 74.000",
+                  "sig": "down"
+                },
+                {
+                  "asset": "Kospi",
+                  "dir": "Short",
+                  "entry": "Từ ~800",
+                  "target": "Test 4.600",
+                  "stop": "",
+                  "sig": "down"
+                },
+                {
+                  "asset": "Samsung",
+                  "dir": "Tránh",
+                  "entry": "Đừng mua vùng này",
+                  "target": "",
+                  "stop": "",
+                  "sig": "down"
+                }
+              ]
+            },
+            {
+              "group": "Chứng khoán Việt Nam",
+              "items": [
+                {
+                  "asset": "VCB",
+                  "dir": "Giữ",
+                  "entry": "Cầm chặt",
+                  "target": "",
+                  "stop": "",
+                  "sig": "wait"
+                },
+                {
+                  "asset": "BID",
+                  "dir": "Giữ",
+                  "entry": "Cầm chặt",
+                  "target": "",
+                  "stop": "",
+                  "sig": "wait"
+                },
+                {
+                  "asset": "CTG",
+                  "dir": "Giữ",
+                  "entry": "Cầm",
+                  "target": "",
+                  "stop": "",
+                  "sig": "wait"
+                },
+                {
+                  "asset": "HDB",
+                  "dir": "Giữ",
+                  "entry": "Cầm — HD Sec sắp lên sàn",
+                  "target": "",
+                  "stop": "",
+                  "sig": "wait"
+                },
+                {
+                  "asset": "BVB",
+                  "dir": "Giữ",
+                  "entry": "Cầm — sắp limit HOSE",
+                  "target": "",
+                  "stop": "",
+                  "sig": "wait"
+                },
+                {
+                  "asset": "TCX",
+                  "dir": "Mua",
+                  "entry": "40–41",
+                  "target": "VN30 T3/2027",
+                  "stop": "",
+                  "sig": "up"
+                },
+                {
+                  "asset": "VCI",
+                  "dir": "Mua",
+                  "entry": "Lướt sóng 8–10%",
+                  "target": "",
+                  "stop": "",
+                  "sig": "up"
+                },
+                {
+                  "asset": "VNM",
+                  "dir": "Mua",
+                  "entry": "~60",
+                  "target": "",
+                  "stop": "Cắt lỗ nếu về 50",
+                  "sig": "up"
+                },
+                {
+                  "asset": "DCM",
+                  "dir": "Mua",
+                  "entry": "Vùng giá trị",
+                  "target": "Cầm 8 tháng",
+                  "stop": "",
+                  "sig": "up"
+                },
+                {
+                  "asset": "HPG",
+                  "dir": "Mua",
+                  "entry": "Giải ngân 1/3",
+                  "target": "",
+                  "stop": "",
+                  "sig": "up"
+                },
+                {
+                  "asset": "SCS",
+                  "dir": "Giữ",
+                  "entry": "Nắm dài hạn",
+                  "target": "",
+                  "stop": "",
+                  "sig": "wait"
+                },
+                {
+                  "asset": "HVN",
+                  "dir": "Chỉ lướt",
+                  "entry": "~27–28",
+                  "target": "",
+                  "stop": "Không đầu tư dài hạn",
+                  "sig": "wait"
+                },
+                {
+                  "asset": "SSI",
+                  "dir": "Chờ",
+                  "entry": "Vùng 27 vẫn đắt",
+                  "target": "",
+                  "stop": "",
+                  "sig": "wait"
+                },
+                {
+                  "asset": "PNJ",
+                  "dir": "Tránh",
+                  "entry": "Rủi ro pháp lý",
+                  "target": "Có thể về 44",
+                  "stop": "",
+                  "sig": "down"
+                }
+              ]
+            }
           ],
           "feedChips": [
             {
@@ -380,105 +621,7 @@ window.HDT_DATA = {
               "title": "Chứng khoán Việt Nam — Mùa đông, giữ 80% cổ phiếu",
               "signal": "up",
               "sigLabel": "Cầm chắc — ngân hàng + chứng khoán",
-              "para": "Áp lực tỷ giá và nước ngoài bán ròng, kiều hối bù đắp phần nào. Lãi suất VND cao → không có dòng tiền đầu cơ, phải đánh chắc: cơ hội 8–10% ăn nhanh, còn lại nắm dài chờ \"gió đông\" (giữa 2027, dẫn dắt bởi ngân hàng và chứng khoán). Chỉ số tháng 7 có thể bị VIC/VHM đè về 1.750–1.763, thậm chí 1.573 — nhưng đừng để chỉ số ép bán hàng của mình.",
-              "tickers": [
-                {
-                  "ticker": "VCB",
-                  "zone": "Cầm",
-                  "note": "Cầm chặt, không thay đổi — tích lũy là bình thường.",
-                  "action": "Giữ",
-                  "aBg": "oklch(0.95 0.02 235)",
-                  "aColor": "oklch(0.4 0.08 235)"
-                },
-                {
-                  "ticker": "BID",
-                  "zone": "Cầm",
-                  "note": "Cầm chặt, không thay đổi.",
-                  "action": "Giữ",
-                  "aBg": "oklch(0.95 0.02 235)",
-                  "aColor": "oklch(0.4 0.08 235)"
-                },
-                {
-                  "ticker": "CTG",
-                  "zone": "Cầm",
-                  "note": "Đang cầm cứ cầm.",
-                  "action": "Giữ",
-                  "aBg": "oklch(0.95 0.02 235)",
-                  "aColor": "oklch(0.4 0.08 235)"
-                },
-                {
-                  "ticker": "HDB",
-                  "zone": "Cầm",
-                  "note": "HD Securities sắp lên sàn → có cớ để kéo.",
-                  "action": "Giữ",
-                  "aBg": "oklch(0.95 0.02 235)",
-                  "aColor": "oklch(0.4 0.08 235)"
-                },
-                {
-                  "ticker": "BVB",
-                  "zone": "Cầm",
-                  "note": "Sắp limit lên sàn HOSE — chưa cần chốt lời, kỳ vọng rõ.",
-                  "action": "Giữ",
-                  "aBg": "oklch(0.95 0.02 235)",
-                  "aColor": "oklch(0.4 0.08 235)"
-                },
-                {
-                  "ticker": "TCX",
-                  "zone": "Giữ · chủ lực",
-                  "note": "Chưa vi phạm gì để phải bán — giữ, lướt sóng nhóm chứng khoán.",
-                  "action": "Giữ",
-                  "aBg": "oklch(0.95 0.02 235)",
-                  "aColor": "oklch(0.4 0.08 235)"
-                },
-                {
-                  "ticker": "VCI",
-                  "zone": "Lướt 8–10%",
-                  "note": "Lướt sóng cùng SSI/VND/VIX; nhóm CK hồi từ đáy 18–33%.",
-                  "action": "Mua",
-                  "aBg": "oklch(0.95 0.04 150)",
-                  "aColor": "oklch(0.42 0.1 150)"
-                },
-                {
-                  "ticker": "DCM",
-                  "zone": "Vùng giá trị · cầm 8 tháng",
-                  "note": "Đạm Cà Mau tốt nhất nhóm phân bón; vùng lái dìm ăn hàng, giá dầu giảm còn tốt cho đầu vào khí.",
-                  "action": "Mua",
-                  "aBg": "oklch(0.95 0.04 150)",
-                  "aColor": "oklch(0.42 0.1 150)"
-                },
-                {
-                  "ticker": "HPG",
-                  "zone": "Giải ngân 1/3",
-                  "note": "Vùng này giải ngân dần 1/3 được, đừng để chỉ số ép bán.",
-                  "action": "Mua",
-                  "aBg": "oklch(0.95 0.04 150)",
-                  "aColor": "oklch(0.42 0.1 150)"
-                },
-                {
-                  "ticker": "SCS",
-                  "zone": "Nắm giữ",
-                  "note": "Lỗ 6–7% không sao nếu cầm dài hạn; đánh spring kệ, cứ cầm.",
-                  "action": "Giữ",
-                  "aBg": "oklch(0.95 0.02 235)",
-                  "aColor": "oklch(0.4 0.08 235)"
-                },
-                {
-                  "ticker": "HVN",
-                  "zone": "Chỉ lướt ~27–28",
-                  "note": "Hàng không VN chỉ lướt sóng 10–12%, không đầu tư dài hạn (giá vé đắt, thu hồi vốn chậm).",
-                  "action": "Theo dõi",
-                  "aBg": "#EFEEE9",
-                  "aColor": "#5F5E57"
-                },
-                {
-                  "ticker": "PNJ",
-                  "zone": "Tránh · có thể về 44",
-                  "note": "Rủi ro pháp lý: giám định làm giả mã 28.000 viên kim cương → mất niềm tin, áp lực dòng tiền hoàn hàng.",
-                  "action": "Bán",
-                  "aBg": "oklch(0.95 0.04 27)",
-                  "aColor": "oklch(0.46 0.15 27)"
-                }
-              ]
+              "para": "Áp lực tỷ giá và nước ngoài bán ròng, kiều hối bù đắp phần nào. Lãi suất VND cao → không có dòng tiền đầu cơ, phải đánh chắc: cơ hội 8–10% ăn nhanh, còn lại nắm dài chờ \"gió đông\" (giữa 2027, dẫn dắt bởi ngân hàng và chứng khoán). Chỉ số tháng 7 có thể bị VIC/VHM đè về 1.750–1.763, thậm chí 1.573 — nhưng đừng để chỉ số ép bán hàng của mình."
             }
           ]
         },
@@ -492,20 +635,164 @@ window.HDT_DATA = {
           "title": "Tập 33 (Hội Viên): Vàng, Bitcoin, Chứng Khoán Tuần 25 — Các Vấn Đề Cần Lưu Ý",
           "summary": "Danh mục hội viên giữ 70% cổ phiếu / 30% tiền. Dầu neo cao đến hết T10 (thiên long nhẹ, không short). Fed có thể tăng lãi T9 (67%) do lạm phát chip → AI/SpaceX/Intel sẽ chỉnh. Vàng gãy nặng, nếu Fed tăng lãi về ~3.000; Bitcoin chờ short 69–71k, dài hạn về 47–50k. CK Việt: kẹt thanh khoản (LDR 115%) — giữ bank trụ, TCX, phân bón (DCM/DPM), SCS, VNM.",
           "tradeLevels": [
-            { "asset": "Dầu",     "dir": "Long nhẹ", "entry": "Vùng hiện tại (không short)", "target": "Có thể test 90", "stop": "", "sig": "up" },
-            { "asset": "Vàng",    "dir": "Chờ",   "entry": "Tích lũy lại", "target": "", "stop": "Nếu Fed tăng lãi về ~3.000", "sig": "wait" },
-            { "asset": "Bạc",     "dir": "Chờ",   "entry": "", "target": "", "stop": "Nếu tăng lãi về 48–50 (−20%)", "sig": "wait" },
-            { "asset": "Bitcoin", "dir": "Short", "entry": "69–71k (đỉnh đám mây)", "target": "Dài hạn 47–50k (cực đoan 30k)", "stop": "", "sig": "down" },
-            { "asset": "SpaceX",  "dir": "Short", "entry": "Giữ short", "target": "Về ~100", "stop": "", "sig": "down" },
-            { "asset": "Apple",   "dir": "Tránh", "entry": "Có thể test 250", "target": "", "stop": "", "sig": "down" },
-            { "asset": "Google",  "dir": "Mua",   "entry": "Test lại 335–340", "target": "", "stop": "", "sig": "up" },
-            { "asset": "TCX",     "dir": "Mua",   "entry": "40–41", "target": "VN30 T1/2027", "stop": "", "sig": "up" },
-            { "asset": "DCM",     "dir": "Mua",   "entry": "Giữ 3/4 vị thế · tăng thêm 1/4", "target": "Cuối năm", "stop": "", "sig": "up" },
-            { "asset": "VNM",     "dir": "Mua",   "entry": "~60", "target": "", "stop": "Cắt lỗ nếu về 50", "sig": "up" },
-            { "asset": "VCB",     "dir": "Giữ",   "entry": "Nắm 57–61 dài hạn", "target": "", "stop": "", "sig": "wait" },
-            { "asset": "SCS",     "dir": "Giữ",   "entry": "Cầm 2–3 năm", "target": "", "stop": "", "sig": "wait" },
-            { "asset": "SSI",     "dir": "Chờ",   "entry": "Vùng 27 vẫn đắt — đợi", "target": "", "stop": "", "sig": "wait" },
-            { "asset": "Samsung", "dir": "Tránh", "entry": "Đừng mua vùng này", "target": "", "stop": "", "sig": "down" }
+            {
+              "group": "Dầu",
+              "items": [
+                {
+                  "asset": "Dầu",
+                  "dir": "Long nhẹ",
+                  "entry": "Vùng này (không short)",
+                  "target": "Có thể test 90",
+                  "stop": "",
+                  "sig": "up"
+                }
+              ]
+            },
+            {
+              "group": "Vàng & Bạc",
+              "items": [
+                {
+                  "asset": "Vàng",
+                  "dir": "Chờ",
+                  "entry": "Tích lũy lại",
+                  "target": "",
+                  "stop": "Nếu Fed tăng lãi về ~3.000",
+                  "sig": "wait"
+                },
+                {
+                  "asset": "Bạc",
+                  "dir": "Chờ",
+                  "entry": "",
+                  "target": "",
+                  "stop": "Nếu tăng lãi về 48–50 (−20%)",
+                  "sig": "wait"
+                }
+              ]
+            },
+            {
+              "group": "Bitcoin & Crypto",
+              "items": [
+                {
+                  "asset": "Bitcoin",
+                  "dir": "Short",
+                  "entry": "69–71k (đỉnh đám mây)",
+                  "target": "Dài hạn 47–50k (cực đoan 30k)",
+                  "stop": "",
+                  "sig": "down"
+                }
+              ]
+            },
+            {
+              "group": "Chứng khoán Mỹ",
+              "items": [
+                {
+                  "asset": "SpaceX",
+                  "dir": "Short",
+                  "entry": "Giữ short",
+                  "target": "Về ~100",
+                  "stop": "",
+                  "sig": "down"
+                },
+                {
+                  "asset": "Apple",
+                  "dir": "Tránh",
+                  "entry": "Có thể test 250",
+                  "target": "",
+                  "stop": "",
+                  "sig": "down"
+                },
+                {
+                  "asset": "Google",
+                  "dir": "Mua",
+                  "entry": "Test lại 335–340",
+                  "target": "",
+                  "stop": "",
+                  "sig": "up"
+                },
+                {
+                  "asset": "Intel",
+                  "dir": "Tránh",
+                  "entry": "Up & ra hàng",
+                  "target": "",
+                  "stop": "",
+                  "sig": "down"
+                },
+                {
+                  "asset": "Nvidia",
+                  "dir": "Giữ",
+                  "entry": "Giữ là hay",
+                  "target": "",
+                  "stop": "",
+                  "sig": "wait"
+                }
+              ]
+            },
+            {
+              "group": "Nhật & Hàn",
+              "items": [
+                {
+                  "asset": "Samsung",
+                  "dir": "Tránh",
+                  "entry": "Đừng mua — hận ngàn thu",
+                  "target": "",
+                  "stop": "",
+                  "sig": "down"
+                }
+              ]
+            },
+            {
+              "group": "Chứng khoán Việt Nam",
+              "items": [
+                {
+                  "asset": "TCX",
+                  "dir": "Mua",
+                  "entry": "40–41",
+                  "target": "VN30 T1/2027",
+                  "stop": "",
+                  "sig": "up"
+                },
+                {
+                  "asset": "DCM",
+                  "dir": "Mua",
+                  "entry": "Giữ 3/4 vị thế, tăng 1/4",
+                  "target": "Cuối năm",
+                  "stop": "",
+                  "sig": "up"
+                },
+                {
+                  "asset": "VNM",
+                  "dir": "Mua",
+                  "entry": "~60",
+                  "target": "",
+                  "stop": "Cắt lỗ nếu về 50",
+                  "sig": "up"
+                },
+                {
+                  "asset": "VCB",
+                  "dir": "Giữ",
+                  "entry": "Nắm 57–61 dài hạn",
+                  "target": "",
+                  "stop": "",
+                  "sig": "wait"
+                },
+                {
+                  "asset": "SCS",
+                  "dir": "Giữ",
+                  "entry": "Cầm 2–3 năm",
+                  "target": "",
+                  "stop": "",
+                  "sig": "wait"
+                },
+                {
+                  "asset": "SSI",
+                  "dir": "Chờ",
+                  "entry": "Vùng 27 vẫn đắt",
+                  "target": "",
+                  "stop": "",
+                  "sig": "wait"
+                }
+              ]
+            }
           ],
           "feedChips": [
             {
@@ -586,81 +873,7 @@ window.HDT_DATA = {
               "title": "Danh mục Chứng khoán Việt Nam",
               "signal": "up",
               "sigLabel": "Giữ 70% cổ phiếu — bank trụ + TCX + phân bón",
-              "para": "Vấn đề chính là siết thanh khoản nhà nước (LDR 115%, huy động chậm hơn tín dụng). Chỉ ~28–29% mã uptrend, từ 15/6 một số mã mới nhích lên. Giữ kỷ luật, \"tà tà kiếm cơm\", chờ tín dụng nở lại.",
-              "tickers": [
-                {
-                  "ticker": "VCB",
-                  "zone": "Nắm 57–61",
-                  "note": "Nắm dài hạn, không lo lắng.",
-                  "action": "Giữ",
-                  "aBg": "oklch(0.95 0.02 235)",
-                  "aColor": "oklch(0.4 0.08 235)"
-                },
-                {
-                  "ticker": "BID",
-                  "zone": "Nắm",
-                  "note": "Ngân hàng nhà nước đang trở mình tốt, ban lãnh đạo mới.",
-                  "action": "Giữ",
-                  "aBg": "oklch(0.95 0.02 235)",
-                  "aColor": "oklch(0.4 0.08 235)"
-                },
-                {
-                  "ticker": "TCB",
-                  "zone": "Nắm",
-                  "note": "Fake out một lần rồi tích lũy lại.",
-                  "action": "Giữ",
-                  "aBg": "oklch(0.95 0.02 235)",
-                  "aColor": "oklch(0.4 0.08 235)"
-                },
-                {
-                  "ticker": "EIB",
-                  "zone": "Nắm chặt",
-                  "note": "Nén càng chặt bung càng mạnh; fake out/spring càng tốt.",
-                  "action": "Giữ",
-                  "aBg": "oklch(0.95 0.02 235)",
-                  "aColor": "oklch(0.4 0.08 235)"
-                },
-                {
-                  "ticker": "TCX",
-                  "zone": "Mua ~40–41",
-                  "note": "Mã dẫn vốn cho Vin/VHM/Masan/Techcombank — vùng giá trị, mục tiêu 3/2027.",
-                  "action": "Mua",
-                  "aBg": "oklch(0.95 0.04 150)",
-                  "aColor": "oklch(0.42 0.1 150)"
-                },
-                {
-                  "ticker": "DCM",
-                  "zone": "Giữ 3/4 vị thế",
-                  "note": "Đạm Cà Mau — tăng thêm 1/4 tuần này, target cuối năm.",
-                  "action": "Mua",
-                  "aBg": "oklch(0.95 0.04 150)",
-                  "aColor": "oklch(0.42 0.1 150)"
-                },
-                {
-                  "ticker": "VNM",
-                  "zone": "Mua ~60",
-                  "note": "Mua mới vì rẻ (không vì tăng trưởng), trong VN30, SCIC mua. Cắt lỗ nếu về 50.",
-                  "action": "Mua",
-                  "aBg": "oklch(0.95 0.04 150)",
-                  "aColor": "oklch(0.42 0.1 150)"
-                },
-                {
-                  "ticker": "SCS",
-                  "zone": "Cầm 2–3 năm",
-                  "note": "Cầm dài hạn; hưởng lợi Long Thành, ACV có chủ tịch mới.",
-                  "action": "Giữ",
-                  "aBg": "oklch(0.95 0.02 235)",
-                  "aColor": "oklch(0.4 0.08 235)"
-                },
-                {
-                  "ticker": "SSI",
-                  "zone": "Đắt — đợi",
-                  "note": "Vùng 27 vẫn đắt (đắt hơn ~30%) — không mua, chờ.",
-                  "action": "Theo dõi",
-                  "aBg": "#EFEEE9",
-                  "aColor": "#5F5E57"
-                }
-              ]
+              "para": "Vấn đề chính là siết thanh khoản nhà nước (LDR 115%, huy động chậm hơn tín dụng). Chỉ ~28–29% mã uptrend, từ 15/6 một số mã mới nhích lên. Giữ kỷ luật, \"tà tà kiếm cơm\", chờ tín dụng nở lại."
             }
           ]
         },

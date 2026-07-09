@@ -1,7 +1,8 @@
 // ─────────────────────────────────────────────────────────────────────────────
 // HDT DATA — Hải Đầu Tư cùng các Chuyên Gia
-// QUY TẮC: giữ 3 bài GẦN NHẤT mỗi kênh. Thêm bài mới = prepend vào experts[id].updates
-//          (và cắt bớt bài cũ nhất để luôn còn 3). Cập nhật lastUpdated.
+// QUY TẮC: giữ 7 bài GẦN NHẤT mỗi kênh. Thêm bài mới = prepend vào experts[id].updates
+//          rồi cắt còn 7. Riêng THÁI PHẠM ưu tiên bài HỘI VIÊN (member-video/member-post)
+//          — giữ bài mới nhất + các bài hội viên gần nhất.
 // ─────────────────────────────────────────────────────────────────────────────
 window.HDT_DATA = {
   "lastUpdated": "09/07/2026 · Mới nhất",
@@ -464,101 +465,486 @@ window.HDT_DATA = {
           ]
         },
         {
-          "date": "2026-06-21",
-          "dateShort": "21/06",
-          "timeAgo": "15 ngày trước",
-          "tab": "Video · Tuần 25",
-          "sourceType": "public-video",
-          "typeLabel": "Video công khai",
-          "title": "Siêu Chu Kỳ Chip Đối Đầu Vĩ Mô Xấu — ETF Funds Cơ Cấu Mạnh Cuối Tháng 6",
-          "summary": "Nhịp đập thị trường tuần 25: giá dầu neo cao 75–85 USD dài hạn (dự trữ G7/Mỹ thiếu, eo biển Hormuz căng lại). Lạm phát không hạ vì giá chip/bộ nhớ tăng (Apple sắp tăng giá iPhone 17 & 18) → xác suất Fed tăng lãi T9 ~70%. Nasdaq +34% từ đáy, ETF cơ cấu ~160 tỷ USD cuối T6 → AI/semiconductor phải chỉnh. VN-Index thiếu thanh khoản (LDR 115%), nước ngoài bán ròng ~20.000 tỷ/tháng — chọn cổ phiếu nội lực mạnh, tích lũy kiểu \"mùa đông\".",
+          "date": "2026-06-20",
+          "dateShort": "20/06",
+          "timeAgo": "2 ngày trước",
+          "tab": "Tập 33 · Tuần 25",
+          "sourceType": "member-video",
+          "typeLabel": "Video hội viên · Tập 33",
+          "title": "Tập 33 (Hội Viên): Vàng, Bitcoin, Chứng Khoán Tuần 25 — Các Vấn Đề Cần Lưu Ý",
+          "summary": "Danh mục hội viên giữ 70% cổ phiếu / 30% tiền. Dầu neo cao đến hết T10 (thiên long nhẹ, không short). Fed có thể tăng lãi T9 (67%) do lạm phát chip → AI/SpaceX/Intel sẽ chỉnh. Vàng gãy nặng, nếu Fed tăng lãi về ~3.000; Bitcoin chờ short 69–71k, dài hạn về 47–50k. CK Việt: kẹt thanh khoản (LDR 115%) — giữ bank trụ, TCX, phân bón (DCM/DPM), SCS, VNM.",
           "feedChips": [
             {
-              "label": "Dầu ◷ neo 75–85 dài hạn",
-              "sig": "wait"
+              "label": "Danh mục ↑ 70% cổ phiếu",
+              "sig": "up"
             },
             {
-              "label": "Fed ↓ tăng lãi T9 ~70%",
+              "label": "Vàng ↓ về ~3.000 nếu tăng lãi",
               "sig": "down"
             },
             {
-              "label": "AI/Nasdaq ↓ phải chỉnh",
+              "label": "BTC ↓ short 69–71k",
               "sig": "down"
             },
             {
-              "label": "CK Việt ⚠ kẹt thanh khoản",
-              "sig": "warn"
+              "label": "AI ↓ SpaceX/Intel chỉnh",
+              "sig": "down"
             }
           ],
           "keyCalls": [
             {
-              "tag": "Giá dầu",
-              "value": "Neo 75–85 USD",
-              "signal": "wait",
-              "note": "Đàm phán Mỹ–Iran 60 ngày nhiều biến động. Dự trữ chiến lược G7/Nhật/Mỹ thiếu (cần 3–6 tháng bù), OPEC+ giữ giá → khó giảm sâu, kịch bản có thể test 90."
+              "tag": "Danh mục VN",
+              "value": "70% cổ phiếu / 30% tiền",
+              "signal": "up",
+              "note": "Giữ tỷ trọng 70/30. Tuần này tăng thêm 1/4 vị thế phân bón (đang giữ 3/4 DCM/DPM), mua mới VNM."
             },
             {
-              "tag": "Fed",
-              "value": "Tăng lãi T9 ~70%",
+              "tag": "Vàng",
+              "value": "Về ~3.000 nếu Fed tăng lãi",
               "signal": "down",
-              "note": "Lạm phát lõi không chỉ do dầu: giá chip/bộ nhớ AI tăng điên cuồng, Apple sắp tăng giá iPhone 17 & 18 → PCE còn cao. Kevin Warsh diều hâu, bỏ forward guidance."
+              "note": "Vàng gãy chen nặng, tích lũy lại. Chênh trong nước cao ~11 triệu/lượng — mua dần hàng uy tín được, vùng 180–190 nên chốt."
+            },
+            {
+              "tag": "Bitcoin",
+              "value": "Short 69–71k · DH về 47–50k",
+              "signal": "down",
+              "note": "Chưa phải năm của BTC. Đặt mốc short 69–71k (đỉnh đám mây), không short lưng chừng. Dài hạn về 50k, kịch bản cực đoan 30k."
             },
             {
               "tag": "CK Mỹ",
-              "value": "Nasdaq +34% → chỉnh",
+              "value": "AI/SpaceX/Intel chỉnh",
               "signal": "down",
-              "note": "S&P +20% / Nasdaq +34% từ đáy, margin kỷ lục. SpaceX IPO P/S ~90x vô lý, vào rổ Nasdaq 100 trong 15 ngày + BCTC giữa T7 → rủi ro. Không chase, chờ thị trường bớt điên."
-            },
-            {
-              "tag": "CK Việt",
-              "value": "Kẹt thanh khoản",
-              "signal": "warn",
-              "note": "LDR toàn hệ thống 115% (tín dụng +5,71% / huy động +2,98%). Nước ngoài bán ròng ~20.000 tỷ/tháng. VN-Index phụ thuộc nhóm Vin — đừng nhìn index."
+              "note": "S&P +20%/Nasdaq +34% từ đáy, margin kỷ lục. SpaceX về ~100, Intel là cú \"mua tay trái bán tay phải\". Apple có thể test 250."
             }
           ],
           "sections": [
             {
               "title": "Địa chính trị & Giá dầu",
               "signal": "wait",
-              "sigLabel": "Neo cao — khó giảm sâu",
-              "para": "IRGC tuyên bố đóng eo biển Hormuz lần hai (cáo buộc Israel tiếp tục tấn công Nam Liban, vi phạm thỏa thuận). Mỹ–Iran đàm phán tại Thụy Sĩ trong 60 ngày — sẽ nhiều tin nhiễu. Trump thừa nhận tại G7: nếu không có thỏa thuận, dự trữ dầu Mỹ cạn trong 4 tuần. Giá dầu neo 75–85 USD: không quá cao (triệt tiêu nhu cầu) cũng không quá thấp (Petrodollar), OPEC+ và nhu cầu tích trữ giữ giá.",
+              "sigLabel": "Neo cao đến hết T10 — long nhẹ, không short",
+              "para": "Trump ký MU đình chiến 60 ngày với Iran tại G7 → dầu điều chỉnh về 76–80. Nhưng 20/6 IRGC lại đóng eo biển Hormuz (Israel tiếp tục tấn công Nam Liban); đàm phán chuyển sang Ai Cập 21/6 (trung gian Pakistan/Saudi/Turkey). Dự trữ chiến lược thiếu → khó để dầu giảm sâu về 65; kịch bản có thể test 90.",
               "bullets": [
-                "Đàm phán 60 ngày: nhiều biến động tin tức, có thể test lại vùng 90.",
-                "Thiên về mua/long nhẹ vùng này — KHÔNG short dầu (rất nguy hiểm).",
-                "Dự trữ chiến lược G7/Nhật/Mỹ cần 3–6 tháng để bù đắp thiếu hụt."
+                "Israel mới là bên chi phối — chính phủ Mỹ nhiệm kỳ này khá yếu thế.",
+                "Thiên về mua/long nhẹ vùng này, short dầu rất nguy hiểm.",
+                "Vùng giá trị neo đến khoảng hết tháng 10."
               ]
             },
             {
-              "title": "Vĩ mô Fed — Lạm phát chip đẩy lãi suất",
+              "title": "Vĩ mô Fed & Chứng khoán Mỹ",
               "signal": "down",
-              "sigLabel": "Diều hâu — tăng lãi T9 ~70%",
-              "para": "Lạm phát lõi (PCE) không hạ được vì ngoài năng lượng còn có giá nhà, y tế, thiết bị điện tử. Nhu cầu AI data center đẩy giá chip/RAM/bộ nhớ tăng mạnh nhất một thập kỷ — CEO Apple xác nhận sẽ tăng giá cả iPhone 17 lẫn iPhone 18; Goldman dự báo nhu cầu sản phẩm Apple giảm ~10%. Kevin Warsh diều hâu, bỏ forward guidance → thị trường biến động cực mạnh hai chiều.",
+              "sigLabel": "Diều hâu — tăng lãi T9 ~67%",
+              "para": "Kevin Warsh nhấn mạnh ổn định giá cả 12 lần, bỏ forward guidance — \"găng tay nhung bọc nắm đấm thép\". Lợi suất TP Mỹ 2 năm tăng vọt, 10 năm 4,45%. Lạm phát chip/bộ nhớ (Apple tăng giá iPhone) giữ PCE cao → xác suất tăng lãi T9 ~67%. Nếu tăng lãi, S&P test lại đỉnh cũ tháng 1, AI phải trả giá.",
               "bullets": [
-                "Giá DDR/bộ nhớ tăng vọt do capex data center AI → đội giá thiết bị điện tử.",
-                "PCE còn cao → Fed không có cửa hạ lãi 2026, xác suất tăng T9 ~70%.",
-                "Cổ phiếu high-duration growth (Nvidia, Meta, Microsoft, ARM) chịu áp lực mạnh."
+                "SpaceX 218→170, đáng giá <135, nhiều người cược về 100 — hình 3 đỉnh ra hàng.",
+                "Intel: cớ \"cung chip Apple\" là linh tinh (MacBook dùng chip M) — up & ra hàng, tăng 3 lần từ đầu năm.",
+                "Apple có thể test 250 (Tim Cook rời 10/2026); Nvidia giống FPT khó lên, giữ là hay; Google test 335–340 mua được.",
+                "Hàn (Kospi)/Nhật (Nikkei) 2–3 đỉnh sẽ chỉnh mạnh; Samsung đừng mua vùng này."
               ]
             },
             {
-              "title": "Chứng khoán Mỹ — Cao thì phải chỉnh",
+              "title": "Vàng, Bạc & Bitcoin",
               "signal": "down",
-              "sigLabel": "Quá nóng — chờ bớt điên rồi mua",
-              "para": "S&P 500 +20%, Nasdaq 100 +34% từ đáy, margin nhà đầu tư kỷ lục → hết dư địa kéo lên. ETF thụ động cơ cấu ~160 tỷ USD cuối tháng 6 (JP Morgan) tạo biến động lớn. SpaceX IPO P/S ~90x là định giá ảo, sẽ vào rổ Nasdaq 100 trong ~15 ngày rồi gặp BCTC quý đầu giữa tháng 7 — rủi ro lớn. Không chống lại thị trường bằng short (vô lý lâu hơn sức chịu của tài khoản).",
+              "sigLabel": "Chờ — nhạy với quyết định Fed",
+              "para": "Vàng gãy chen nặng, tích lũy lại; nếu Fed tăng lãi hoàn toàn có thể về ~3.000 (Thái Phạm là người dự báo vàng về 3.900–4.000 từ sớm). Bạc tệ hơn, nếu tăng lãi về 48–50 (mất thêm ~20%). Bitcoin chưa phải năm của nó — \"banana\" lần ba chưa hình thành xong.",
+              "levels": "Vàng: tích lũy, rủi ro về ~3.000 nếu tăng lãi · Bạc: 48–50 · BTC short: 69–71k, DH về 47–50k (cực đoan 30k)"
+            },
+            {
+              "title": "Danh mục Chứng khoán Việt Nam",
+              "signal": "up",
+              "sigLabel": "Giữ 70% cổ phiếu — bank trụ + TCX + phân bón",
+              "para": "Vấn đề chính là siết thanh khoản nhà nước (LDR 115%, huy động chậm hơn tín dụng). Chỉ ~28–29% mã uptrend, từ 15/6 một số mã mới nhích lên. Giữ kỷ luật, \"tà tà kiếm cơm\", chờ tín dụng nở lại.",
+              "tickers": [
+                {
+                  "ticker": "VCB",
+                  "zone": "Nắm 57–61",
+                  "note": "Nắm dài hạn, không lo lắng.",
+                  "action": "Giữ",
+                  "aBg": "oklch(0.95 0.02 235)",
+                  "aColor": "oklch(0.4 0.08 235)"
+                },
+                {
+                  "ticker": "BID",
+                  "zone": "Nắm",
+                  "note": "Ngân hàng nhà nước đang trở mình tốt, ban lãnh đạo mới.",
+                  "action": "Giữ",
+                  "aBg": "oklch(0.95 0.02 235)",
+                  "aColor": "oklch(0.4 0.08 235)"
+                },
+                {
+                  "ticker": "TCB",
+                  "zone": "Nắm",
+                  "note": "Fake out một lần rồi tích lũy lại.",
+                  "action": "Giữ",
+                  "aBg": "oklch(0.95 0.02 235)",
+                  "aColor": "oklch(0.4 0.08 235)"
+                },
+                {
+                  "ticker": "EIB",
+                  "zone": "Nắm chặt",
+                  "note": "Nén càng chặt bung càng mạnh; fake out/spring càng tốt.",
+                  "action": "Giữ",
+                  "aBg": "oklch(0.95 0.02 235)",
+                  "aColor": "oklch(0.4 0.08 235)"
+                },
+                {
+                  "ticker": "TCX",
+                  "zone": "Mua ~40–41",
+                  "note": "Mã dẫn vốn cho Vin/VHM/Masan/Techcombank — vùng giá trị, mục tiêu 3/2027.",
+                  "action": "Mua",
+                  "aBg": "oklch(0.95 0.04 150)",
+                  "aColor": "oklch(0.42 0.1 150)"
+                },
+                {
+                  "ticker": "DCM",
+                  "zone": "Giữ 3/4 vị thế",
+                  "note": "Đạm Cà Mau — tăng thêm 1/4 tuần này, target cuối năm.",
+                  "action": "Mua",
+                  "aBg": "oklch(0.95 0.04 150)",
+                  "aColor": "oklch(0.42 0.1 150)"
+                },
+                {
+                  "ticker": "VNM",
+                  "zone": "Mua ~60",
+                  "note": "Mua mới vì rẻ (không vì tăng trưởng), trong VN30, SCIC mua. Cắt lỗ nếu về 50.",
+                  "action": "Mua",
+                  "aBg": "oklch(0.95 0.04 150)",
+                  "aColor": "oklch(0.42 0.1 150)"
+                },
+                {
+                  "ticker": "SCS",
+                  "zone": "Cầm 2–3 năm",
+                  "note": "Cầm dài hạn; hưởng lợi Long Thành, ACV có chủ tịch mới.",
+                  "action": "Giữ",
+                  "aBg": "oklch(0.95 0.02 235)",
+                  "aColor": "oklch(0.4 0.08 235)"
+                },
+                {
+                  "ticker": "SSI",
+                  "zone": "Đắt — đợi",
+                  "note": "Vùng 27 vẫn đắt (đắt hơn ~30%) — không mua, chờ.",
+                  "action": "Theo dõi",
+                  "aBg": "#EFEEE9",
+                  "aColor": "#5F5E57"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "date": "2026-06-17",
+          "dateShort": "17/06",
+          "timeAgo": "Hôm qua",
+          "tab": "Post · 17/06",
+          "sourceType": "member-post",
+          "typeLabel": "Post hội viên",
+          "title": "Kịch Bản FED Tối Nay — Chia Sẻ Qua Video Phỏng Vấn",
+          "summary": "Thái Phạm chia sẻ kịch bản cuộc họp FED kèm một video phỏng vấn (đăng kèm link Facebook). Phần quan điểm chi tiết nằm trong video liên kết — post trên YouTube chỉ là phần dẫn.",
+          "feedChips": [
+            {
+              "label": "FED ◷ chờ kết quả họp",
+              "sig": "wait"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "FED",
+              "value": "Chờ kết quả họp",
+              "signal": "wait",
+              "note": "Chia sẻ kịch bản FED qua video phỏng vấn liên kết; nội dung chi tiết nằm trong video, không có trong post công khai."
+            }
+          ],
+          "sections": [
+            {
+              "title": "Bối cảnh",
+              "signal": "wait",
+              "sigLabel": "Chờ kết quả cuộc họp FED",
+              "para": "Bài post dẫn sang một video phỏng vấn về kịch bản FED trong cuộc họp lần này. Phần phân tích chi tiết nằm trong video liên kết (Facebook), không có trong nội dung post công khai trên YouTube."
+            }
+          ]
+        },
+        {
+          "date": "2026-06-16",
+          "dateShort": "16/06",
+          "timeAgo": "Hôm nay",
+          "tab": "Post · 16/06",
+          "sourceType": "member-post",
+          "typeLabel": "Post hội viên",
+          "title": "TĂNG CỔ PHIẾU LÊN 70% — Chợ Huyện Sắp Có Sức Sống",
+          "summary": "Tăng cổ phiếu VN lên 70% (tiền còn 30%). Bank tích nền ổn, TCX/CK có sức sống đầu tiên. Đạm/phân sắp về vùng ngon. Dầu 70–80 → tỷ giá dễ thở hơn. CK Mỹ/Hàn/Nhật chỉnh nhưng không ảnh hưởng chợ huyện.",
+          "feedChips": [
+            {
+              "label": "CK Việt ↑ 70% cổ phiếu",
+              "sig": "up"
+            },
+            {
+              "label": "TCX ↑ tín hiệu sức sống",
+              "sig": "up"
+            },
+            {
+              "label": "Đạm/Phân ◷ sắp vùng ngon",
+              "sig": "wait"
+            },
+            {
+              "label": "BTC ↓ short 68–70k → 42k",
+              "sig": "down"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "VN Portfolio",
+              "value": "70% cổ phiếu ↑",
+              "signal": "up",
+              "note": "Từ 50/50 → 70% cổ phiếu / 30% tiền. Bank ổn, Trung Đông ổn — đủ tín hiệu tăng tỷ trọng."
+            },
+            {
+              "tag": "Bank",
+              "value": "Giữ chặt / Mua đủ",
+              "signal": "up",
+              "note": "Đã có đủ hàng → cầm chặt. Chưa có → mua đủ vào."
+            },
+            {
+              "tag": "TCX / CK",
+              "value": "Còn sớm, có sức sống",
+              "signal": "up",
+              "note": "TCX và nhóm CK hôm qua thể hiện. Có hàng giữ, chưa có mua."
+            },
+            {
+              "tag": "Đạm / Phân",
+              "value": "Sắp về vùng ngon",
+              "signal": "wait",
+              "note": "Đang giảm thêm — tốt, sắp về vùng mua hấp dẫn. SCS cầm chặt."
+            }
+          ],
+          "sections": [
+            {
+              "title": "Hành động danh mục",
+              "signal": "up",
+              "sigLabel": "Tích cực — tăng lên 70% cổ phiếu",
+              "para": "Bank tích nền ổn định, Trung Đông có thỏa thuận, dầu về 70–80 đúng dự báo → đủ tín hiệu nâng tỷ trọng. Cổ phiếu tăng từ 50% lên 70%, tiền mặt còn 30%. VN-Index nếu giảm chủ yếu từ VIC/VHM/VRE — không phản ánh thực tế thị trường.",
               "bullets": [
-                "Intel, Micron, Sandisk, SpaceX, Accenture sẽ phải điều chỉnh.",
-                "Hàn Quốc (Kospi), Nhật (Nikkei) cũng quá cao — sẽ chỉnh mạnh.",
-                "Không phải điểm mua: chốt lời ngắn hạn, chờ thị trường bớt điên rồi tham gia."
+                "Đã có đủ hàng hội viên → không làm gì, cầm chặt.",
+                "Chưa có bank hội viên → mua đủ vào.",
+                "VN-Index giảm từ VIC/VHM/VRE — bỏ qua, không quan trọng."
               ]
             },
             {
-              "title": "Chứng khoán Việt Nam — Mùa đông thanh khoản",
-              "signal": "warn",
-              "sigLabel": "Kẹt vốn — tích lũy cổ phiếu nội lực mạnh",
-              "para": "VN-Index ~1.824 điểm nhưng thiếu sinh khí: LDR toàn hệ thống 115% (tín dụng +5,71% nhưng huy động chỉ +2,98%) → tín dụng không chảy. NHNN chủ yếu bơm/hút ngắn hạn qua OMO lãi cao. Nước ngoài bán ròng ~20.000 tỷ (~700–800 triệu USD)/tháng. Bốn động lực thanh khoản (tiền mặt lưu thông, thu xuất khẩu Q3, FDI sang VND lãi 8–9%, đầu tư công) chưa rõ ràng.",
+              "title": "Ngành Chứng khoán",
+              "signal": "up",
+              "sigLabel": "Tín hiệu sớm — có sức sống",
+              "para": "TCX và nhóm chứng khoán hôm qua thể hiện tốt. Còn sớm nhưng đây là tín hiệu đầu tiên đáng chú ý. Có hàng giữ chặt, chưa có thì mua vào.",
               "bullets": [
-                "VN-Index phụ thuộc VIC/VHM/VRE/VPL — nhìn cổ phiếu cụ thể, đừng nhìn index.",
-                "Cổ phiếu nền đẹp/rẻ: VCB, BID, VNM, MSN. FPT bị bán mạnh (room ngoại 49% 2021 → 29% nay) do lợi thế AI lung lay.",
-                "Triết lý \"mùa đông\": tích lũy cổ phiếu nội lực mạnh (dòng tiền, biên LN, MOAT), chờ tín dụng nở lại."
+                "TCX: giữ chặt hoặc mua nếu chưa có.",
+                "Nhóm CK (VCI, MBS…): theo dõi xác nhận thêm."
+              ]
+            },
+            {
+              "title": "Ngành Sản xuất & Phân bón",
+              "signal": "wait",
+              "sigLabel": "Chờ vùng ngon — đang về",
+              "para": "Đạm và phân bón tiếp tục giảm — đây là điều tốt, sắp về vùng mua hấp dẫn. SCS cầm chặt. HPG ai kẹt thì cầm — lù lù như xe lu.",
+              "bullets": [
+                "DCM / DPM: đang giảm → sắp về vùng ngon, chuẩn bị mua thêm.",
+                "SCS: cầm chặt, không bán.",
+                "HPG: cầm nếu kẹt — chưa có catalyst rõ."
+              ]
+            },
+            {
+              "title": "Vĩ mô & CK Quốc tế",
+              "signal": "wait",
+              "sigLabel": "Mỹ/Hàn/Nhật chỉnh — không ảnh hưởng VN",
+              "para": "CK Mỹ/Hàn/Nhật sẽ chỉnh mạnh nhưng chợ huyện VN đã chỉnh rất sâu từ trước, chán lắm rồi — họ chỉnh thì mình có khi còn tăng. Dầu 70–80 → lạm phát nhập khẩu giảm → tỷ giá VND ổn định hơn → tốt dần lên.",
+              "bullets": [
+                "Dầu 70–80 USD → áp lực tỷ giá và lạm phát VN giảm dần.",
+                "CK quốc tế chỉnh không kéo chợ huyện — VN đã discount sâu rồi.",
+                "Trung Đông ổn → rủi ro địa chính trị hạ nhiệt toàn cầu."
+              ]
+            }
+          ]
+        },
+        {
+          "date": "2026-06-15",
+          "dateShort": "15/06",
+          "timeAgo": "Hôm qua",
+          "tab": "Post · 5:15 sáng",
+          "sourceType": "member-post",
+          "typeLabel": "Post hội viên · 5:15 sáng",
+          "title": "Iran–Mỹ Thỏa Thuận Hòa Bình Ký 19/6 — Thị Trường Phản Ứng",
+          "summary": "Iran–Mỹ ký hòa bình 19/6 — đúng kỳ vọng: vàng tăng, dầu giảm. BTC vẫn downtrend. CK Mỹ hồi nhưng đã phản ánh vào giá. VN dễ thở hơn khi dầu giảm.",
+          "feedChips": [
+            {
+              "label": "Vàng ↑ tăng ngắn hạn",
+              "sig": "up"
+            },
+            {
+              "label": "Dầu ↓ đúng dự báo",
+              "sig": "down"
+            },
+            {
+              "label": "BTC ↓ vẫn downtrend",
+              "sig": "down"
+            },
+            {
+              "label": "CK Việt ⚠ dễ thở hơn",
+              "sig": "warn"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "Iran–Mỹ",
+              "value": "Ký 19/6 Thụy Sĩ",
+              "signal": "wait",
+              "note": "Trump + Thủ tướng Pakistan xác nhận. 7.749 ngày \"sắp có\" — lần này có vẻ thật. Nhưng đã phản ánh vào giá từ lâu."
+            },
+            {
+              "tag": "Vàng / Dầu",
+              "value": "Vàng ↑ · Dầu ↓",
+              "signal": "wait",
+              "note": "Đúng kỳ vọng: hòa bình → dầu giảm, USD yếu → vàng tăng. Không thay đổi thesis dài hạn."
+            },
+            {
+              "tag": "Bitcoin",
+              "value": "Vẫn downtrend",
+              "signal": "down",
+              "note": "Hòa bình Iran không cứu BTC. Chờ hồi 68–70k để short lại."
+            },
+            {
+              "tag": "CK Việt",
+              "value": "Dễ thở hơn",
+              "signal": "wait",
+              "note": "Dầu giảm → lạm phát nhập khẩu giảm → áp lực tỷ giá VND bớt. Giữ bank, chờ tín hiệu tốt mua thêm."
+            }
+          ],
+          "sections": [
+            {
+              "title": "Địa chính trị — Iran–Mỹ ký 19/6",
+              "signal": "wait",
+              "sigLabel": "Sự kiện lớn — đã phản ánh vào giá",
+              "para": "Sau 7.749 ngày liên tục \"sắp có thỏa thuận\", Trump và Thủ tướng Pakistan xác nhận Iran–Mỹ ký hòa bình ngày 19/6 tại Thụy Sĩ. Từ tháng 4 đến nay, mỗi khi CK đỏ ông Trump đều tung tin \"sắp ký\" — thị trường đã hấp thụ tin này nhiều lần. Kỳ vọng đã ăn vào giá phần lớn rồi.",
+              "bullets": [
+                "Dầu giảm đúng kỳ vọng — xác nhận thesis dầu về 77–80 USD.",
+                "Vàng tăng do USD yếu — không phải tín hiệu mới về cung cầu.",
+                "Futures CK Mỹ xanh điểm — không chase; khả năng đã phản ánh vào giá.",
+                "Theo dõi 19/6: ký thật → dầu tiếp tục giảm; đổ vỡ → dầu bật lại."
+              ]
+            },
+            {
+              "title": "Bitcoin",
+              "signal": "down",
+              "sigLabel": "Downtrend — chờ 68–70k short lại",
+              "para": "Hòa bình Iran không thay đổi cấu trúc kỹ thuật BTC. Vẫn downtrend từ đỉnh 125k. Chờ hồi kỹ thuật lên 68.000–70.000 rồi short lại, mục tiêu ~42k.",
+              "levels": "Vùng short: 68.000–70.000 · mục tiêu: ~42.000"
+            },
+            {
+              "title": "Chứng khoán Việt Nam",
+              "signal": "wait",
+              "sigLabel": "Áp lực dễ thở hơn — giữ nguyên",
+              "para": "Hòa bình Iran + dầu giảm → lạm phát nhập khẩu giảm → áp lực tỷ giá VND bớt dần → tích cực cho CK VN dài hạn. Không action vội — tiếp tục nắm chặt bank chiến lược, chờ tín hiệu tỷ giá và lãi suất khả quan hơn mới mua thêm.",
+              "bullets": [
+                "Giữ nguyên 50/50 — không thay đổi.",
+                "Nắm chặt: VCB, BID, TCB, HDB, EB, BVB.",
+                "Tín hiệu mua thêm: tỷ giá ổn định + lãi suất có dấu hiệu giảm."
+              ]
+            }
+          ]
+        },
+        {
+          "date": "2026-06-13",
+          "dateShort": "13/06",
+          "timeAgo": "3 ngày trước",
+          "tab": "Tập 32 · Tuần 24",
+          "sourceType": "member-video",
+          "typeLabel": "Video hội viên · Tập 32",
+          "title": "Mua Vàng Được Chưa? CK Mỹ/Hàn/Nhật/Việt Tuần 24",
+          "summary": "Vàng vùng $4.200 mua được. Limit short BTC 68.570 → kịch bản về 42k. SpaceX IPO P/S 96x — CK Mỹ chỉnh đến giữa T7. VN 50/50 giữ nguyên — chờ mùa xuân 2027.",
+          "feedChips": [
+            {
+              "label": "Vàng ◷ $4.200 mua được",
+              "sig": "wait"
+            },
+            {
+              "label": "BTC ↓ short 68.5k→42k",
+              "sig": "down"
+            },
+            {
+              "label": "CK Mỹ ↓ chỉnh đến T7",
+              "sig": "down"
+            },
+            {
+              "label": "CK Việt ◷ 50/50 giữ",
+              "sig": "wait"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "Vàng",
+              "value": "Mua được rồi",
+              "signal": "wait",
+              "note": "Vùng $4.200 mua được nếu đã bán cao. Chênh 13–14tr/lượng nhưng cứ mua lại phần đã bán. Dài hạn còn 1 chân về ~$3.300."
+            },
+            {
+              "tag": "Bitcoin",
+              "value": "Short 68,5–70k",
+              "signal": "down",
+              "note": "Limit short 68.570. Elliott chân 5 → ~42k. Clarity Act 4/7 — BTC thành mã CK Mỹ chính thức."
+            },
+            {
+              "tag": "CK Mỹ",
+              "value": "Chỉnh T7",
+              "signal": "down",
+              "note": "SpaceX P/S 96x — ảo. Nasdaq chỉnh đến giữa T7; short Intel, AMD, Tesla 440."
+            },
+            {
+              "tag": "CK Việt",
+              "value": "50/50 giữ",
+              "signal": "wait",
+              "note": "Không action. Chờ mùa xuân 2027. TCX + VPX + bank + phân bón."
+            }
+          ],
+          "sections": [
+            {
+              "title": "Vàng & Dầu",
+              "signal": "wait",
+              "sigLabel": "Mua được — còn 1 chân rủi ro",
+              "para": "Vàng ~$4.230, chênh trong nước 13–14 triệu/lượng (phi lý). Đây là chân 2; có thể còn chân 3 về ~$3.300 (125 triệu/lượng VN). Nhưng nếu đã bán vùng cao trước → mua lại phần đã bán ở đây được. Vàng tài khoản: mua, đợi hồi về $4.000+ rồi chốt. Dầu về 79–80 không cần quan tâm lý do.",
+              "bullets": [
+                "Chênh mục tiêu tối ưu ≤ 7 triệu/lượng, hiện 14 triệu là chưa ngon — nhưng dài hạn vẫn mua được.",
+                "Bạc về ~55 USD/oz theo vàng.",
+                "Dầu Brent test 79–80 — thỏa thuận Iran có hay không cũng vậy."
+              ]
+            },
+            {
+              "title": "Bitcoin & Crypto",
+              "signal": "down",
+              "sigLabel": "Short 68,5–70k — kịch bản 42k",
+              "para": "BTC đang ở chân 3 Elliott từ đỉnh 125k. Chờ hồi kỹ thuật lên 68.500–70.000 rồi short. Clarity Act dự kiến thông qua 4/7 — crypto chính thức hóa vào hệ thống Petrodollar. BTC, ETH, XRP chỉ là mã giao dịch như CK, không còn là tiền tệ thay thế.",
+              "levels": "Limit short: 68.570 · kịch bản về: ~42.000 · mua dài hạn: vùng 42k"
+            },
+            {
+              "title": "Chứng khoán Mỹ",
+              "signal": "down",
+              "sigLabel": "Chỉnh đến giữa tháng 7",
+              "para": "SpaceX IPO mở 150→đỉnh 176→đóng 160 USD. P/S 94–96x (Nvidia chỉ 19x, AVGO 24x) — hoàn toàn ảo. Quỹ thụ động phải mua ~$38 tỷ khi SpaceX vào Nasdaq 100 đầu T7; lockup unlock T7 → nguồn cung tăng đột biến. Nasdaq chỉnh đến giữa T7.",
+              "bullets": [
+                "Nasdaq short vào 29.600, thêm ở 31.000, cắt lỗ 32.500.",
+                "Intel: sort + thêm ở 140, cắt lỗ 155 — phân phối Wyckoff.",
+                "AMD: sort — FA yếu, chỉnh mạnh.",
+                "Tesla: đợi lên 440 rồi sort.",
+                "Adidas: giữ, mục tiêu 167–170 → 200 rồi chốt.",
+                "Apple, Nvidia, Google: không đụng — biến động lớn, khó cầm."
+              ]
+            },
+            {
+              "title": "Chứng khoán Việt Nam",
+              "signal": "wait",
+              "sigLabel": "Mùa đông — 50/50, không action",
+              "para": "20–23% cổ phiếu VN đang uptrend, thanh khoản yếu. VN-Index \"áo vest bên ngoài áo ba lỗ bên trong\" — chỉ VIC/VHM kéo chỉ số. Không action — cầm nguyên bank + phân bón + TCX + VPX. Chờ 2027 khi Fed hạ lãi, vĩ mô dịu.",
+              "bullets": [
+                "TCX: mua dần, mục tiêu VN30 T1/2027. Bị dìm 35–36 → mua thêm.",
+                "VPX (VCK): theo dõi cùng TCX, cùng kỳ vọng VN30.",
+                "BVBank: niêm yết chính thức T7/2026 — giữ.",
+                "Bank (VCB, BID, TCB, HDB, EB, BVB): không bán vùng thấp.",
+                "Phân bón (DPM/DCM): giữ ½ vị thế ~25 — không bán.",
+                "Novaland: chờ về 11–12 mới mua."
               ]
             }
           ]
@@ -588,6 +974,38 @@ window.HDT_DATA = {
           "date": "21/06/2026",
           "title": "Siêu chu kỳ chip đối đầu vĩ mô xấu, ETF Funds cơ cấu mạnh cuối tháng 6",
           "meta": "Video công khai · transcript tự động"
+        },
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 27)",
+          "iconColor": "oklch(0.46 0.15 27)",
+          "date": "20/06/2026",
+          "title": "Tập 33 — Vàng, Bitcoin, Chứng khoán tuần 25",
+          "meta": "Video hội viên · transcript tự động"
+        },
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 27)",
+          "iconColor": "oklch(0.46 0.15 27)",
+          "date": "18/06/2026",
+          "title": "Chủ tịch Fed lật kèo từ bỏ định hướng lãi suất — vàng, BTC, chứng khoán, tỷ giá",
+          "meta": "Video công khai · transcript tự động"
+        },
+        {
+          "icon": "✎",
+          "iconBg": "oklch(0.95 0.02 235)",
+          "iconColor": "oklch(0.42 0.08 235)",
+          "date": "16/06/2026",
+          "title": "16/6 — TĂNG CỔ PHIẾU LÊN 70% — Chợ Huyện Sắp Có Sức Sống",
+          "meta": "Post cộng đồng · chỉ dành cho hội viên"
+        },
+        {
+          "icon": "✎",
+          "iconBg": "oklch(0.95 0.02 235)",
+          "iconColor": "oklch(0.42 0.08 235)",
+          "date": "15/06/2026",
+          "title": "15/6 · 5:15 sáng — Iran–Mỹ Ký 19/6 · Vàng Tăng · Dầu Giảm",
+          "meta": "Post cộng đồng · chỉ dành cho hội viên"
         }
       ]
     },
@@ -868,6 +1286,91 @@ window.HDT_DATA = {
               ]
             }
           ]
+        },
+        {
+          "date": "2026-06-11",
+          "dateShort": "11/06",
+          "timeAgo": "5 ngày trước",
+          "tab": "Podcast · 11/06",
+          "sourceType": "public-video",
+          "typeLabel": "Video công khai",
+          "title": "Hành Động Gì Khi Thị Trường Chán Nản? — Tích Sản Cổ Phiếu #12",
+          "summary": "Thị trường 20% thời gian tăng, 50% sideway, 30% giảm — đây là giai đoạn bình thường. Tích lũy cổ phiếu tốt, giá rẻ, ăn cổ tức và tái đầu tư. Không bao giờ all-in, duy trì kỷ luật % tỷ trọng.",
+          "feedChips": [
+            {
+              "label": "CK Việt ↑ tích lũy dần",
+              "sig": "up"
+            },
+            {
+              "label": "Phân bổ ◷ không all-in",
+              "sig": "wait"
+            },
+            {
+              "label": "Margin ✗ không bao giờ",
+              "sig": "down"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "Thị trường",
+              "value": "20/50/30 — bình thường",
+              "signal": "wait",
+              "note": "20% uptrend, 50% sideway, 30% downtrend. 21/26 năm VN khó. Đây là giai đoạn bình thường."
+            },
+            {
+              "tag": "Hành động",
+              "value": "Tích lũy, ăn cổ tức",
+              "signal": "up",
+              "note": "Mua cổ phiếu tốt khi rẻ, thu cổ tức, tái đầu tư liên tục. Không bán khi chán — chỉ lỗ khi bán."
+            },
+            {
+              "tag": "Nguyên tắc",
+              "value": "Không bao giờ all-in",
+              "signal": "up",
+              "note": "Duy trì kỷ luật % tỷ trọng. Khi giá cao chuyển sang TP/tiết kiệm. Không dùng margin."
+            },
+            {
+              "tag": "Cộng đồng",
+              "value": "4.000+ thành viên",
+              "signal": "up",
+              "note": "Thực hành đầu tư giá trị hàng ngày. Kết quả từ kỷ luật lặp lại."
+            }
+          ],
+          "sections": [
+            {
+              "title": "Thị trường chán nản là bình thường",
+              "signal": "wait",
+              "sigLabel": "Bình thường — không phải tín hiệu đặc biệt",
+              "para": "21/26 năm lịch sử TTCK VN là năm khó khăn. Phân bổ thời gian: ~20% uptrend, ~50% sideway, ~30% downtrend. Giai đoạn 2026 là rủi ro + cơ hội.",
+              "bullets": [
+                "Khách mời bắt đầu 2007 — tài khoản bị đốt 2014 do dùng margin 3:7 với PVD trong sự kiện DK981.",
+                "Bài học: không dùng margin. Luôn có thesis đầu tư rõ ràng → chiến lược → chiến thuật.",
+                "Tiếp tục học liên tục — thị trường thay đổi, nhà đầu tư cũng cần cập nhật."
+              ]
+            },
+            {
+              "title": "Nguyên tắc tích sản cổ phiếu",
+              "signal": "up",
+              "sigLabel": "Tích cực — tích lũy trong downtrend",
+              "para": "Mua cổ phiếu chất lượng khi rẻ → thu cổ tức → tái đầu tư → chờ uptrend bảo vệ lợi nhuận. Không cần dự đoán đáy chính xác.",
+              "bullets": [
+                "Giữ tỷ lệ % cổ phiếu/tổng tài sản kỷ luật — không bao giờ all-in 100%.",
+                "Khi giá cổ phiếu cao: chuyển bớt sang TP hoặc gửi tiết kiệm. Khi rẻ như hiện tại: dùng tiền đó mua thêm.",
+                "Ăn cổ tức, tái đầu tư liên tục — nguồn sinh lời bền vững nhất dài hạn."
+              ]
+            },
+            {
+              "title": "Giai đoạn 2026 — Tích lũy dần",
+              "signal": "up",
+              "sigLabel": "Tích cực — nhiều cổ phiếu tốt đang rẻ",
+              "para": "Nhiều cổ phiếu tốt đang rất rẻ dù nền tảng doanh nghiệp vẫn vững. Cơ hội tốt rõ rệt để tích lũy. Chờ uptrend để bảo vệ lợi nhuận — không vội bán trong downtrend.",
+              "bullets": [
+                "Cộng đồng 4.000+ thành viên thực hành kỷ luật đầu tư giá trị hàng ngày.",
+                "Nguồn thu nhập đều đặn hàng tháng → dòng tiền liên tục mua thêm → tâm lý thoải mái.",
+                "Không cần biết đáy ở đâu — cứ mua dần khi rẻ, tỷ lệ tốt dần theo thời gian."
+              ]
+            }
+          ]
         }
       ],
       "sources": [
@@ -894,6 +1397,14 @@ window.HDT_DATA = {
           "date": "14/06/2026",
           "title": "Nhà đầu tư nước ngoài bán ròng mạnh: Rủi ro hay cơ hội | Lăng kính đầu tư giá trị",
           "meta": "Video công khai · AzFin Vietnam"
+        },
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 27)",
+          "iconColor": "oklch(0.46 0.15 27)",
+          "date": "11/06/2026",
+          "title": "#12: Hành động gì khi thị trường chán nản?",
+          "meta": "Video công khai · Tích sản cổ phiếu AzFin"
         }
       ]
     },

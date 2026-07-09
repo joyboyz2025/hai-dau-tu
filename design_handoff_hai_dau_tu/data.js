@@ -19,7 +19,7 @@
 
 window.HDT_DATA = {
 
-  lastUpdated: '04/07/2026 · Mới nhất',
+  lastUpdated: '09/07/2026 · Mới nhất',
 
   // ── Pulse strip ─────────────────────────────────────────────────────────────
   pulse: [
@@ -144,7 +144,36 @@ window.HDT_DATA = {
       },
       updates: [
         {
-          date: '2026-07-04', dateShort: '04/07', timeAgo: '2 ngày trước',
+          date: '2026-07-09', dateShort: '09/07', timeAgo: 'Hôm nay',
+          tab: 'Video · 09/07', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Ông Trump Tuyên Bố Đánh Iran Tiếp Tục — Cú Sốc Địa Chính Trị & Ảnh Hưởng Thị Trường',
+          summary: 'Thỏa thuận hòa bình Iran đổ vỡ: Iran vi phạm ngừng bắn (tấn công 3 tàu ở eo biển Hormuz), Mỹ dội bom 2 đợt (80+ mục tiêu). Giá dầu WTI tăng ~8% lên 80,59, có thể lên 87–90 nếu leo thang. "Buy the dip" của trader Mỹ thất bại; lạm phát dai dẳng (dầu + hạ tầng AI + Apple tăng giá 20–60%) → Fed khả năng tăng lãi 1 lần hoặc giữ lãi cao đến giữa 2027. AI/semiconductor Mỹ, Hàn, Nhật sẽ điều chỉnh suốt Q3. Vàng 60% về ~3.000. VN đi ngang nhưng nhiều cổ phiếu đã tạo đáy — cơ hội ngắn hạn cho nhóm giảm sâu 50–60%.',
+          feedChips: [
+            { label: 'Dầu ↑ tăng 8% → 87–90',    sig: 'up'   },
+            { label: 'CK Mỹ/AI ↓ chỉnh Q3',       sig: 'down' },
+            { label: 'Fed ⚠ lãi cao lâu hơn',    sig: 'warn' },
+            { label: 'CK Việt ◷ đã tạo đáy',      sig: 'wait' }
+          ],
+          keyCalls: [
+            { tag: 'Địa chính trị', value: 'Iran tái chiến',        signal: 'down', note: 'Iran vi phạm ngừng bắn (tấn công 3 tàu ở Hormuz), Mỹ dội bom 2 đợt 80+ mục tiêu. Thỏa thuận 60 ngày đổ vỡ — sẽ đánh nhau lắt nhắt kéo dài như Nga–Ukraine.' },
+            { tag: 'Giá dầu',       value: 'Tăng 8% → 87–90',        signal: 'up',   note: 'WTI tăng ~8% lên 80,59. Vùng tái cân bằng 70–87; nếu leo thang có thể lên ~90. Giới tài phiệt dầu + Petrodollar không để giá xuống thấp.' },
+            { tag: 'Fed / Lạm phát', value: 'Lãi cao lâu hơn',       signal: 'warn', note: 'Lạm phát dai dẳng (dầu + điện/hạ tầng AI + Apple tăng giá iPhone 18/MacBook 20–60%). BofA dự lợi suất TP 10 năm chạm 4,82%. Nghiêng: tăng lãi 1 lần (~40%) hoặc giữ lãi cao đến giữa 2027.' },
+            { tag: 'CK Việt',       value: 'Nhiều cổ phiếu đã tạo đáy', signal: 'wait', note: 'Index đi ngang, đa phần cổ phiếu đã giảm 50–60% từ đỉnh và tạo đáy. Cơ hội ngắn hạn cho nhóm nằm đáy sâu; thanh khoản thấp (mùa đông). Không cầm cổ trụ đã kéo cao thì không cần lo.' }
+          ],
+          sections: [
+            { title: 'Cú sốc địa chính trị & Giá dầu', signal: 'up', sigLabel: 'Dầu tăng mạnh — rủi ro tái chiến',
+              para: 'Sau thượng đỉnh NATO, Trump tuyên bố thỏa thuận ngừng bắn với Iran đã chấm dứt. Nguồn cơn: Iran vi phạm ngừng bắn, dùng tên lửa/drone tấn công 3 tàu thương mại (Qatar, Ả Rập Saudi, Liberia) ở eo biển Hormuz; Mỹ đáp trả bằng 2 đợt không kích hơn 80 mục tiêu. Đây là cú sốc thật, không phải đòn gió — thỏa thuận 60 ngày sẽ đổ vỡ, đánh nhau lắt nhắt kéo dài.',
+              bullets: ['Giá dầu WTI tăng ~8% lên 80,59; hôm nay giảm nhẹ 1% — vùng tái cân bằng.', 'Nếu leo thang, dầu có thể hồi lên ~87–90; dao động dài hạn 70–87.', 'Mấu chốt là lợi ích: Petrodollar mạnh thì USD mạnh — thế lực đứng sau không để dầu rẻ.'] },
+            { title: 'Fed, Lạm phát & Chứng khoán Mỹ', signal: 'down', sigLabel: 'Điều chỉnh — lạm phát dai dẳng',
+              para: '"Buy the dip" của trader Mỹ đã thất bại — tin xấu không còn là tin tốt. Dầu tăng xóa sạch thành quả giảm 2 tuần, đồng thời khẳng định lạm phát dai dẳng: ngoài năng lượng còn nhu cầu điện/hạ tầng AI (Apple tăng giá iPhone 18/MacBook/iPad 20–60%). FOMC chia rẽ về lãi suất dưới thời Kevin Warsh.',
+              bullets: ['Bank of America: lợi suất TP Mỹ 10 năm có thể chạm 4,82% — hàm ý 2 đợt tăng lãi.', 'Thái Phạm nghiêng: tăng lãi 1 lần 2026 (~40%) hoặc giữ lãi cao đến giữa 2027 / hết nhiệm kỳ Trump.', 'AI/semiconductor (Intel, SanDisk, MU, chỉ số SOX) điều chỉnh xuyên suốt Q3; Nvidia/Apple kéo trụ nhưng cũng phải chỉnh.', 'Hàn Quốc (Kospi), Nhật (Nikkei) margin cao kỷ lục — hồi kỹ thuật vài ngày rồi giảm; BOJ phải tăng lãi (PPI >6%).'] },
+            { title: 'Vàng, Bitcoin & Chứng khoán Việt Nam', signal: 'wait', sigLabel: 'VN đã tạo đáy — cơ hội ngắn hạn',
+              para: 'Vàng tích lũy, xác suất hồi lên 4.300 còn ~40%, 60% về lại ~3.000. Bitcoin hình thành "banana" lần ba, chịu áp lực Strategy (Michael Saylor) bán BTC trả cổ tức — chỉ còn là một mã CK. VN chịu ảnh hưởng tâm lý nhưng đa phần cổ phiếu đã tạo đáy sau khi giảm rất sâu, đã quen "mùa lãi suất cao" — có thể là cơ hội ngắn hạn ngược dòng.',
+              levels: 'Vàng: 40% hồi 4.300 / 60% về ~3.000 · BTC: banana lần 3, áp lực bán · VN: cổ phiếu đáy sâu −50–60%, thanh khoản thấp' }
+          ]
+        },
+        {
+          date: '2026-07-04', dateShort: '04/07', timeAgo: '5 ngày trước',
           tab: 'Tập 36 · Tuần 27', sourceType: 'member-video', typeLabel: 'Video hội viên · Tập 36',
           title: 'Tập 36 (Hội Viên): Vàng, Bitcoin, Chứng Khoán Tuần 27 — Tỉ Lệ Tiền Và Hàng?',
           summary: 'Tuần đầu H2/2026. SpaceX vào rổ Nasdaq 100 ngày 7/7 → về vùng 100 (giữ short). Sóng bán dẫn tạm dừng, AI biến động mạnh do đòn bẩy lớn — Nvidia có thể về 163–172 (Meta bán bớt compute, data center dư công suất). Vàng hồi kỹ thuật, canh long khi test 4.000; Bitcoin banana lần 3, short limit 68–70k, dài hạn về 47–50k. CK Việt "mùa đông": giữ 80% cổ phiếu / 20% tiền, tập trung ngân hàng + chứng khoán, phân bón (DCM). Tránh PNJ (rủi ro pháp lý kim cương).',
@@ -538,6 +567,8 @@ window.HDT_DATA = {
         }
       ],
       sources: [
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '09/07/2026',
+          title: 'Ông Trump tuyên bố đánh Iran tiếp tục — cú sốc hay trò đùa? Ảnh hưởng thị trường', meta: 'Video công khai · transcript tự động' },
         { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '04/07/2026',
           title: 'Tập 36 — Vàng, Bitcoin, Chứng khoán tuần 27 · Tỉ lệ tiền và hàng?', meta: 'Video hội viên · transcript tự động' },
         { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '21/06/2026',
@@ -572,7 +603,33 @@ window.HDT_DATA = {
       },
       updates: [
         {
-          date: '2026-06-17', dateShort: '17/06', timeAgo: 'Hôm qua',
+          date: '2026-07-08', dateShort: '08/07', timeAgo: 'Hôm qua',
+          tab: 'Số 18 · Tích sản T43', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Số 18: Tích Sản Tháng 43 — Định Giá VN Rẻ, Giữ Kỷ Luật',
+          summary: 'Định giá TTCK Việt Nam rẻ: PE ~13 lần (loại VIC < 10,5 — ngang đáy Covid 2020 / khủng hoảng TP 2022), PB 2,11. Vĩ mô đan xen: lãi suất cao nhưng tỷ giá ổn, GDP & lợi nhuận DN tăng >20% → mặt tích cực lớn hơn tiêu cực. Tỷ trọng phù hợp: 70–80% cổ phiếu, 20–30% tiền. Tích sản tháng 43: danh mục 4,2 tỷ, cổ tức 4,6%, tiến độ triệu đô 16%, lợi suất kép 17,8%/năm.',
+          feedChips: [
+            { label: 'CK Việt ↑ định giá rẻ',   sig: 'up'   },
+            { label: 'PE ↑ ~13 (loại VIC <10,5)', sig: 'up'   },
+            { label: 'Tỷ trọng ◷ 70–80% cổ phiếu', sig: 'wait' },
+            { label: 'Lãi suất ⚠ vẫn cao',       sig: 'warn' }
+          ],
+          keyCalls: [
+            { tag: 'Định giá VN', value: 'PE ~13 — rẻ',           signal: 'up',   note: 'PE thị trường 13,69 lần; điều chỉnh KQKD Q2 (tăng >20%) còn ~13 lần, thấp hơn trung vị >8%. Loại nhóm VIC thì PE dưới 10,5 — ngang đáy Covid 2020 và khủng hoảng TP cuối 2022.' },
+            { tag: 'PB',         value: '2,11 — hợp lý',           signal: 'wait', note: 'PB 2,11 lần; sau KQKD Q2 còn ~1,95 lần, đúng bằng trung vị. Loại VIC thì PB ~1,6 lần (thấp hơn 1 độ lệch chuẩn).' },
+            { tag: 'Tỷ trọng',   value: '70–80% cổ phiếu',        signal: 'wait', note: 'Giai đoạn định giá rẻ → tỷ trọng cổ phiếu 70–80%, tiền mặt 20–30% (tùy khẩu vị rủi ro mỗi người).' },
+            { tag: 'Tích sản',   value: 'Tháng 43 · danh mục 4,2 tỷ', signal: 'up', note: 'Đã tích sản 43 tháng, bỏ vào 3,16 tỷ → danh mục 4,2 tỷ. Cổ tức 4,6%, tiến độ triệu đô 16%, lợi suất kép 17,8%/năm. Kỷ luật đầu tư giá trị.' }
+          ],
+          sections: [
+            { title: 'Định giá TTCK Việt Nam — Rẻ', signal: 'up', sigLabel: 'Tích cực — dưới trung vị',
+              para: 'Tính đến đầu tháng 7, PE thị trường là 13,69 lần (thấp hơn trung vị 3%). KQKD Q2/2026 hầu như chưa ra (mới MBS), ước tăng >20% — điều chỉnh vào thì PE thực còn ~13 lần, thấp hơn trung vị hơn 8% và trung bình hơn 10%. Loại nhóm VIC, PE chỉ dưới 10,5 lần — tương đương đáy Covid tháng 3/2020 và khủng hoảng trái phiếu cuối 2022.',
+              bullets: ['PB hiện 2,11 lần; sau KQKD Q2 còn ~1,95 — đúng bằng trung vị (hợp lý). Loại VIC còn ~1,6 lần.', 'PE rẻ hơn PB vì hiệu quả sinh lời trên vốn chủ (ROE ~14,5%) cao.', 'Kết luận: xét riêng PE thì rất rẻ; xét cả PB thì ở mức rẻ.'] },
+            { title: 'Vĩ mô & Chiến lược tỷ trọng', signal: 'wait', sigLabel: 'Cân bằng — tích cực lớn hơn tiêu cực',
+              para: 'Bối cảnh vĩ mô đan xen: lãi suất vẫn tương đối cao (yếu tố ngược), nhưng tỷ giá ổn định, GDP tăng mạnh và quan trọng nhất là KQKD doanh nghiệp niêm yết tăng trưởng cao. Mặt tích cực lớn hơn tiêu cực trong khi định giá thấp hơn trung vị/trung bình → tỷ trọng cổ phiếu phù hợp 70–80%.',
+              bullets: ['Tiền mặt giữ 20–30% tùy khẩu vị rủi ro.', 'Danh mục đang nâng tỷ trọng tăng trưởng (nên cổ tức 4,6% thấp hơn kỳ trước); khi cần thận trọng sẽ nâng phòng thủ.', 'Tích sản tháng 43: kiên trì kỷ luật, mục tiêu triệu đô trong 8–9 năm (đã đạt 16%).'] }
+          ]
+        },
+        {
+          date: '2026-06-17', dateShort: '17/06', timeAgo: '3 tuần trước',
           tab: 'Video · 17/06', sourceType: 'public-video', typeLabel: 'Video công khai',
           title: 'Ba Nhóm Ngành Triển Vọng Để Giữ 5 Năm',
           summary: 'Ba nhóm ngành ưu tiên giữ 5 năm: Ngân hàng (tăng trưởng 15–20%/năm, định giá rẻ, lợi thế cạnh tranh mạnh), Vật liệu xây dựng (hưởng lợi đầu tư công) và Bán lẻ (bùng nổ tiêu dùng theo GDP). Rủi ro chính từ vĩ mô thế giới & giá cổ phiếu — khắc phục bằng mua khi định giá rất rẻ và bảo vệ thành quả khi đạt mục tiêu.',
@@ -689,6 +746,8 @@ window.HDT_DATA = {
         }
       ],
       sources: [
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '08/07/2026',
+          title: 'Số 18: Tích sản tháng 43 — TTCK biến động nhưng vẫn kỷ luật | Hành trình triệu đô', meta: 'Video công khai · AzFin Vietnam' },
         { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '17/06/2026',
           title: '03 Ngành triển vọng trong tương lai?', meta: 'Video công khai · AzFin Vietnam' },
         { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '14/06/2026',
@@ -712,7 +771,33 @@ window.HDT_DATA = {
       },
       updates: [
         {
-          date: '2026-06-17', dateShort: '17/06', timeAgo: 'Hôm qua',
+          date: '2026-07-08', dateShort: '08/07', timeAgo: 'Hôm qua',
+          tab: 'Video · 08/07', sourceType: 'public-video', typeLabel: 'Video công khai',
+          title: 'Lúc Này Có Nên Chốt Lãi 5–7%? 3 Cách Chốt Lãi Ngắn Hạn Ở Thị Trường Đi Ngang',
+          summary: 'Thị trường đi ngang → chỉ chốt lãi ngắn hạn (người cầm dài hạn không bán ở đáy, thậm chí cân nhắc mua thêm). 3 cách: (1) theo tín hiệu kỹ thuật — mẫu hình nến/2 đỉnh (VD MSB); (2) theo xu hướng + nhật ký giao dịch, target 15–20%/năm; (3) cảm tính/bắt đáy bừa — KHÔNG khuyến nghị (bẫy "thiên kiến kẻ sống sót", dễ kẹp hàng như PNJ, GEX). Thị trường gần đáy hơn đỉnh nhưng chưa xác nhận tăng (hôm nay chỉ +5 điểm, thanh khoản 17.000 tỷ).',
+          feedChips: [
+            { label: 'Chốt lãi ◷ chỉ ngắn hạn',    sig: 'wait' },
+            { label: 'Tín hiệu ↑ nên tôn trọng',    sig: 'up'   },
+            { label: 'Bắt đáy bừa ✗ tránh',         sig: 'down' },
+            { label: 'Thị trường ◷ gần đáy',        sig: 'wait' }
+          ],
+          keyCalls: [
+            { tag: 'Bối cảnh',    value: 'Chỉ chốt lãi ngắn hạn',   signal: 'wait', note: 'Thị trường đi ngang, sóng cổ phiếu không bền, áp lực bán xuất hiện bất ngờ. Lãi trung/dài hạn không có; người cầm dài hạn không bán ở đây.' },
+            { tag: 'Cách 1',      value: 'Chốt theo tín hiệu',      signal: 'up',   note: 'Tôn trọng tín hiệu đỉnh: mẫu hình nến nhấn chìm/sao hôm/mây đen, hoặc 2 đỉnh (đỉnh sau thấp hơn, thủng MA20). VD MSB chốt ở nến đỏ 08/6. Giai đoạn này ít đất diễn — thu hẹp lệnh khi tỷ lệ sai tăng.' },
+            { tag: 'Cách 2',      value: 'Theo xu hướng + nhật ký', signal: 'up',   note: 'Giao dịch linh hoạt, có sổ nhật ký, target theo tháng/năm (15–20%/năm). Bán khi chững đà tăng ở kháng cự, mua lại khi test nền thành công.' },
+            { tag: 'Cách 3',      value: 'Cảm tính/bắt đáy — tránh', signal: 'down', note: 'Bắt đáy bừa trên đà giảm (PNJ, GEX): rủi ro kẹp hàng lớn, chỉ chốt lãi ngắn 5–10%. "Thiên kiến kẻ sống sót" — chỉ nghe người trúng đáy khoe. Không có cách gỡ ngắn hạn.' }
+          ],
+          sections: [
+            { title: '3 cách chốt lãi ngắn hạn', signal: 'up', sigLabel: 'Ưu tiên cách 1 & 2 — kỷ luật tín hiệu',
+              para: 'Ở thị trường đi ngang, chỉ nên chốt lãi ngắn hạn. Cách 1 (theo tín hiệu): mua vì tín hiệu, bán vì tín hiệu — không tiếc; ví dụ MSB (hiếm hoi thắng thị trường) chốt tại mẫu 2 đỉnh thủng MA20. Cách 2 (theo xu hướng + nhật ký giao dịch): không cần đợi tín hiệu đỉnh rõ ràng, chốt khi chững đà ở kháng cự, quản trị theo target tháng/năm.',
+              bullets: ['Cách 1 giai đoạn này ít cơ hội, nhưng rèn kỷ luật — khi thị trường tốt lại sẽ hiệu quả.', 'Cách 2 cần sổ nhật ký để không lẫn giá vốn giữa các lệnh; target thực tế 15–20%/năm, đừng kỳ vọng x3.', 'Cách 3 (cảm tính/bắt đáy bừa) KHÔNG khuyến nghị — bỏ nhiều rủi ro kẹp hàng nhưng chỉ chốt lãi ngắn.'] },
+            { title: 'Đánh giá thị trường', signal: 'wait', sigLabel: 'Gần đáy hơn đỉnh — chưa xác nhận tăng',
+              para: 'Thị trường đang trong giai đoạn chán nhưng gần đáy hơn gần đỉnh; không cần quá lo downtrend dài hạn như nhiều người dọa. Tuy nhiên có thể đi ngang thêm một thời gian — cần phương pháp thích nghi, hoặc "án binh bất động" chờ đáy thực sự và xác nhận tăng.',
+              bullets: ['Hôm nay chỉ tăng 5 điểm, thanh khoản ~17.000 tỷ — chưa xác nhận sóng tăng trở lại.', 'Với người mua bán cảm tính bị kẹp: xử lý margin, cơ cấu lại tài khoản, không mua thêm.', 'Tránh cổ phiếu giảm sâu vì tin xấu chưa có đáy (PNJ, GEX vùng 8x từ đỉnh 130).'] }
+          ]
+        },
+        {
+          date: '2026-06-17', dateShort: '17/06', timeAgo: '3 tuần trước',
           tab: 'Video · 17/06', sourceType: 'public-video', typeLabel: 'Video công khai',
           title: 'Fed Họp & NHNN Dự Thảo Nới Trần Vốn — Tác Động Thị Trường?',
           summary: 'Dự báo Fed giữ nguyên lãi suất (chú ý phát biểu thống đốc mới). NHNN dự thảo nới trần vốn ngắn hạn cho vay trung–dài hạn lên 40% — ngân hàng có thêm dư địa cho vay, tích cực. Cả hai tin khó tạo cú hích mạnh ngắn hạn. Tuần tích cực nhưng chưa có xu hướng mới — giữ tỷ trọng, hạn chế đảo hàng.',
@@ -743,6 +828,8 @@ window.HDT_DATA = {
         }
       ],
       sources: [
+        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '08/07/2026',
+          title: 'Lúc này có nên chốt lãi 5–7%? 3 cách chốt lãi ngắn hạn ở thị trường đi ngang', meta: 'Video công khai · Chứng khoán 5 phút' },
         { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '17/06/2026',
           title: '2 tin Fed họp và NHNN ra dự thảo nới trần vốn cho vay tác động đến thị trường như thế nào?', meta: 'Video công khai · Chứng khoán 5 phút' }
       ]

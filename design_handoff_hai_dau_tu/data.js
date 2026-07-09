@@ -292,6 +292,24 @@ window.HDT_DATA = {
           "typeLabel": "Video hội viên · Tập 36",
           "title": "Tập 36 (Hội Viên): Vàng, Bitcoin, Chứng Khoán Tuần 27 — Tỉ Lệ Tiền Và Hàng?",
           "summary": "Tuần đầu H2/2026. SpaceX vào rổ Nasdaq 100 ngày 7/7 → về vùng 100 (giữ short). Sóng bán dẫn tạm dừng, AI biến động mạnh do đòn bẩy lớn — Nvidia có thể về 163–172 (Meta bán bớt compute, data center dư công suất). Vàng hồi kỹ thuật, canh long khi test 4.000; Bitcoin banana lần 3, short limit 68–70k, dài hạn về 47–50k. CK Việt \"mùa đông\": giữ 80% cổ phiếu / 20% tiền, tập trung ngân hàng + chứng khoán, phân bón (DCM). Tránh PNJ (rủi ro pháp lý kim cương).",
+          "tradeLevels": [
+            { "asset": "Vàng",        "dir": "Long",  "entry": "Canh long khi test 4.000–4.085", "target": "4.350", "stop": "Rủi ro về ~3.000", "sig": "up" },
+            { "asset": "Bạc",         "dir": "Chờ mua", "entry": "Đợi về ~60", "target": "", "stop": "Nếu Fed tăng lãi về 48–50", "sig": "wait" },
+            { "asset": "Bitcoin",     "dir": "Short", "entry": "Limit 68–71k", "target": "Dài hạn 47–50k (cực đoan 28–32k)", "stop": "", "sig": "down" },
+            { "asset": "Nasdaq",      "dir": "Short", "entry": "Giữ short", "target": "", "stop": "Cắt lỗ 31.300–32.000", "sig": "down" },
+            { "asset": "S&P 500",     "dir": "Short", "entry": "Giữ short", "target": "", "stop": "Cắt lỗ nếu vượt 7.000–7.007", "sig": "down" },
+            { "asset": "SpaceX",      "dir": "Short", "entry": "Giữ (đã vào ~200)", "target": "Về 100–110", "stop": "", "sig": "down" },
+            { "asset": "Apple",       "dir": "Short", "entry": "325–330", "target": "", "stop": "Cắt lỗ 360", "sig": "down" },
+            { "asset": "Nvidia",      "dir": "Tránh", "entry": "Chờ về 163", "target": "", "stop": "", "sig": "down" },
+            { "asset": "Netflix",     "dir": "Mua",   "entry": "74–75", "target": "", "stop": "", "sig": "up" },
+            { "asset": "Google",      "dir": "Mua DH","entry": "300–314", "target": "", "stop": "", "sig": "up" },
+            { "asset": "VIX",         "dir": "Long",  "entry": "15–16", "target": "", "stop": "", "sig": "up" },
+            { "asset": "TCX",         "dir": "Mua",   "entry": "40–41", "target": "VN30 T3/2027", "stop": "", "sig": "up" },
+            { "asset": "VNM",         "dir": "Mua",   "entry": "~60", "target": "", "stop": "Cắt lỗ nếu về 50", "sig": "up" },
+            { "asset": "DCM",         "dir": "Mua",   "entry": "Vùng giá trị", "target": "Cầm 8 tháng", "stop": "", "sig": "up" },
+            { "asset": "HPG",         "dir": "Mua",   "entry": "Giải ngân 1/3", "target": "", "stop": "", "sig": "up" },
+            { "asset": "PNJ",         "dir": "Tránh", "entry": "", "target": "Có thể về 44", "stop": "Rủi ro pháp lý", "sig": "down" }
+          ],
           "feedChips": [
             {
               "label": "SpaceX ↓ về vùng 100",
@@ -473,6 +491,22 @@ window.HDT_DATA = {
           "typeLabel": "Video hội viên · Tập 33",
           "title": "Tập 33 (Hội Viên): Vàng, Bitcoin, Chứng Khoán Tuần 25 — Các Vấn Đề Cần Lưu Ý",
           "summary": "Danh mục hội viên giữ 70% cổ phiếu / 30% tiền. Dầu neo cao đến hết T10 (thiên long nhẹ, không short). Fed có thể tăng lãi T9 (67%) do lạm phát chip → AI/SpaceX/Intel sẽ chỉnh. Vàng gãy nặng, nếu Fed tăng lãi về ~3.000; Bitcoin chờ short 69–71k, dài hạn về 47–50k. CK Việt: kẹt thanh khoản (LDR 115%) — giữ bank trụ, TCX, phân bón (DCM/DPM), SCS, VNM.",
+          "tradeLevels": [
+            { "asset": "Dầu",     "dir": "Long nhẹ", "entry": "Vùng hiện tại (không short)", "target": "Có thể test 90", "stop": "", "sig": "up" },
+            { "asset": "Vàng",    "dir": "Chờ",   "entry": "Tích lũy lại", "target": "", "stop": "Nếu Fed tăng lãi về ~3.000", "sig": "wait" },
+            { "asset": "Bạc",     "dir": "Chờ",   "entry": "", "target": "", "stop": "Nếu tăng lãi về 48–50 (−20%)", "sig": "wait" },
+            { "asset": "Bitcoin", "dir": "Short", "entry": "69–71k (đỉnh đám mây)", "target": "Dài hạn 47–50k (cực đoan 30k)", "stop": "", "sig": "down" },
+            { "asset": "SpaceX",  "dir": "Short", "entry": "Giữ short", "target": "Về ~100", "stop": "", "sig": "down" },
+            { "asset": "Apple",   "dir": "Tránh", "entry": "Có thể test 250", "target": "", "stop": "", "sig": "down" },
+            { "asset": "Google",  "dir": "Mua",   "entry": "Test lại 335–340", "target": "", "stop": "", "sig": "up" },
+            { "asset": "TCX",     "dir": "Mua",   "entry": "40–41", "target": "VN30 T1/2027", "stop": "", "sig": "up" },
+            { "asset": "DCM",     "dir": "Mua",   "entry": "Giữ 3/4 vị thế · tăng thêm 1/4", "target": "Cuối năm", "stop": "", "sig": "up" },
+            { "asset": "VNM",     "dir": "Mua",   "entry": "~60", "target": "", "stop": "Cắt lỗ nếu về 50", "sig": "up" },
+            { "asset": "VCB",     "dir": "Giữ",   "entry": "Nắm 57–61 dài hạn", "target": "", "stop": "", "sig": "wait" },
+            { "asset": "SCS",     "dir": "Giữ",   "entry": "Cầm 2–3 năm", "target": "", "stop": "", "sig": "wait" },
+            { "asset": "SSI",     "dir": "Chờ",   "entry": "Vùng 27 vẫn đắt — đợi", "target": "", "stop": "", "sig": "wait" },
+            { "asset": "Samsung", "dir": "Tránh", "entry": "Đừng mua vùng này", "target": "", "stop": "", "sig": "down" }
+          ],
           "feedChips": [
             {
               "label": "Danh mục ↑ 70% cổ phiếu",

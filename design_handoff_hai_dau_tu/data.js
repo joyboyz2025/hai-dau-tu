@@ -76,10 +76,7 @@ window.HDT_DATA = {
       date: '13/06', expertId: 'thai-pham',
       summary: 'Vẫn downtrend từ đỉnh 125k. Hòa bình Iran không thay đổi cấu trúc kỹ thuật. Chờ hồi kỹ thuật lên 68–70k để short lại, mục tiêu về ~42k (chân 5 Elliott). Clarity Act 4/7 — BTC thành mã CK thường.',
       levels: 'Short: 68.000–70.000 · mục tiêu: ~42.000 · Clarity Act: 4/7',
-      altViews: [
-        { expertId: 'thuan-capital', sig: 'wait', sigLabel: 'DCA tích lũy',
-          note: 'Mua dưới $60k bằng chiến lược DCA. Chu kỳ 4 năm — phục hồi dự kiến T11/2026. Không cố bắt đáy.' }
-      ]
+      altViews: []
     },
     {
       name: 'Tỷ giá & Vĩ mô VN', sig: 'warn', sigLabel: 'Dễ thở hơn',
@@ -561,114 +558,6 @@ window.HDT_DATA = {
           title: 'Tập 30 — Chứng khoán, Dầu, Vàng, Bitcoin · Tuần 22 — PHẢI THEO DÕI', meta: 'Video hội viên · transcript tự động' }
       ]
     },
-
-    'thuan-capital': {
-      initials: 'TC',
-      name: 'Thuận Capital',
-      avatarSrc: '/avatars/thuan-capital.png',
-      bio: 'Tâm lý đầu tư và quản lý rủi ro trong thị trường crypto; hơn 10 năm kinh nghiệm. Focus: Bitcoin & Crypto.',
-      sourceLabel: 'YouTube · Video công khai',
-      sourceChips: ['▶ Video công khai', 'Tần suất: hàng ngày'],
-      gauge: {
-        title: 'Phạm vi nhận định',
-        badge: 'Crypto', badgeBg: 'oklch(0.95 0.02 235)', badgeColor: 'oklch(0.42 0.08 235)',
-        bar1: 100, bar2: 0, label1: 'Bitcoin & Crypto 100%', label2: ''
-      },
-      updates: [
-        {
-          date: '2026-06-12', dateShort: '12/06', timeAgo: '4 ngày trước',
-          tab: 'Shorts · 12/06', sourceType: 'public-video', typeLabel: 'Video công khai',
-          title: 'FOMO Không Chỉ Xuất Hiện Trong Bull Market',
-          summary: 'Thuận mua thêm BTC khi giá test dưới 60.000 đô; chiến lược DCA tiếp tục — không cố bắt đáy. FOMO xuất hiện cả khi thị trường giảm.',
-          feedChips: [
-            { label: 'BTC ◷ DCA dưới $60k',    sig: 'wait' },
-            { label: 'Chu kỳ ◷ T11/2026',       sig: 'wait' },
-            { label: 'FOMO ⚠ cẩn thận tâm lý', sig: 'warn' }
-          ],
-          keyCalls: [
-            { tag: 'Bitcoin',  value: 'Mua dưới $60k', signal: 'wait', note: 'Thuận mua thêm số lượng lớn hơn bình thường khi BTC test dưới 60.000 đô; DCA tiếp tục.' },
-            { tag: 'Tâm lý',   value: 'FOMO ≠ bull',   signal: 'warn', note: 'FOMO xuất hiện cả khi thị trường giảm — sợ bỏ lỡ đáy. Phân biệt cảm xúc và kỷ luật DCA.' }
-          ],
-          sections: [
-            { title: 'Bitcoin & Crypto', signal: 'wait', sigLabel: 'Tích lũy — DCA tiếp tục',
-              para: 'Thuận đã chốt lời năm ngoái (khi BTC quanh 99.000–100.000 đô), rồi bắt đầu trung bình giá trở lại từ tháng 2. Khi giá test dưới 60.000 đô cuối tuần qua, Thuận mua thêm với số lượng lớn hơn bình thường, sử dụng tiền mặt dự trữ. Quan điểm: không thể biết chắc đỉnh hay đáy — chỉ có thể bán gần đỉnh và mua gần đáy bằng chiến lược trung bình giá.',
-              bullets: [
-                'Không cố bắt đáy chính xác — phân bổ mua tại nhiều mức giá khác nhau để hạ dần giá trung bình.',
-                'Nếu giá tiếp tục giảm, tiếp tục DCA ở mức thấp hơn.',
-                'Đầu tư dài hạn: lòng tin vào đỉnh mới trong tương lai vẫn không thay đổi, dù tâm lý thị trường hiện rất bi quan.',
-                'FOMO trong bear market: cẩn thận tâm lý mua vì sợ bỏ lỡ đáy — cần quản lý kỷ luật.'
-              ],
-              tickers: [
-                { ticker: 'BTC', zone: 'Dưới 60.000', note: 'Vùng hấp dẫn để tích lũy; mua thêm nhiều hơn bình thường khi giá test vùng này.', action: 'Chờ mua', aBg: 'oklch(0.95 0.02 235)', aColor: 'oklch(0.4 0.08 235)' }
-              ] }
-          ]
-        },
-        {
-          date: '2026-06-11', dateShort: '11/06', timeAgo: '5 ngày trước',
-          tab: 'Shorts · 11/06', sourceType: 'public-video', typeLabel: 'Video công khai',
-          title: '15 Năm Bitcoin Và Chu Kỳ Chưa Từng Biến Mất',
-          summary: 'BTC −50% từ đỉnh 126.000 đô. Lần này nguyên nhân vĩ mô, không có chuỗi phá sản. Chu kỳ 4 năm vẫn còn khả năng lặp lại — phục hồi dự kiến T11/2026.',
-          feedChips: [
-            { label: 'BTC ↓ −50% từ $126k',    sig: 'down' },
-            { label: 'Chu kỳ ◷ T11/2026',       sig: 'wait' },
-            { label: 'CK Mỹ ↑ lập đỉnh mới',   sig: 'up'   }
-          ],
-          keyCalls: [
-            { tag: 'Bitcoin',     value: '−50% từ $126k',   signal: 'down', note: 'Giảm từ đỉnh 126.000 về ~63.000; lần này nguyên nhân vĩ mô, không có chuỗi phá sản.' },
-            { tag: 'Chu kỳ 4 năm', value: 'Chờ T11/2026', signal: 'wait', note: 'Khả năng chu kỳ 4 năm lặp lại — phục hồi có thể bắt đầu từ tháng 11/2026.' },
-            { tag: 'CK Mỹ',       value: 'Lập đỉnh mới',   signal: 'up',   note: 'Chứng khoán Mỹ tiếp tục lập đỉnh trong tuần — divergence rõ rệt với crypto.' }
-          ],
-          sections: [
-            { title: 'Bitcoin & Crypto', signal: 'warn', sigLabel: 'Thận trọng — chờ chu kỳ',
-              para: 'Đợt giảm lần này khác 2018/2022: không có chuỗi phá sản sàn (FTX, Luna…), thợ đào chuyển sang AI thay vì phá sản, không có công ty lớn nào sụp đổ. Nguyên nhân xuất phát từ vĩ mô và địa chính trị.',
-              bullets: [
-                'BTC đã giảm ~50% từ đỉnh 126.000 đô — tương đương các đợt điều chỉnh lớn trước (2018: −84%, 2022: −77%).',
-                'Chu kỳ 4 năm: đây là lần thứ ba Thuận Capital nói về chu kỳ này (2018, 2022, và nay). Lần nào nghe cũng "ảo" nhưng đã lặp lại.',
-                'Kịch bản chu kỳ 4 năm: kết thúc đáy quanh T11/2026, rồi bắt đầu chu kỳ tăng mới.',
-                'Thợ đào chuyển sang hỗ trợ AI — thu nhập thêm, không phá sản như 2022.'
-              ],
-              levels: 'BTC: đỉnh 126.000 · hiện tại ~63.000 (−50%) · phục hồi dự kiến: T11/2026' },
-            { title: 'Chứng khoán Mỹ', signal: 'up', sigLabel: 'Tăng — divergence với crypto',
-              para: 'Chứng khoán Mỹ tiếp tục lập đỉnh mới trong tuần, dù có điều chỉnh nhẹ — divergence rõ rệt so với crypto. Đây là yếu tố khiến tâm lý nhà đầu tư crypto tệ hơn bình thường.' }
-          ]
-        },
-        {
-          date: '2026-06-06', dateShort: '06/06', timeAgo: '10 ngày trước',
-          tab: 'Shorts · 06/06', sourceType: 'public-video', typeLabel: 'Video công khai',
-          title: 'Mỗi Khi Ta Có Suy Nghĩ Chắc Chắn Đây Là "Đáy" Rồi',
-          summary: 'Tín hiệu giống 2018/2022; đáy có thể sâu hơn kỳ vọng. ETF, Saylor, công ty lưu trữ BTC đang bán. Bài học: mọi người nghĩ 20k là đáy nhưng BTC còn về 15k.',
-          feedChips: [
-            { label: 'BTC ⚠ đáy chưa chắc',    sig: 'warn' },
-            { label: 'ETF/Tổ chức ↓ đang bán', sig: 'down' },
-            { label: 'Tâm lý ⚠ bài học 2022',  sig: 'warn' }
-          ],
-          keyCalls: [
-            { tag: 'Bitcoin',       value: 'Đáy chưa chắc', signal: 'warn', note: 'Tín hiệu giống 2018/2022; đáy có thể sâu hơn kỳ vọng — cần chuẩn bị tâm lý.' },
-            { tag: 'ETF / Tổ chức', value: 'Đang bán',      signal: 'down', note: 'ETF, Michael Saylor, công ty lưu trữ Bitcoin đồng loạt bán — áp lực nguồn cung cao.' },
-            { tag: 'Bài học 2022',  value: '$20k → $15k',   signal: 'warn', note: 'Mọi người nghĩ 20.000 là đáy, nhưng BTC giảm thêm 25% về 15.000 đô.' }
-          ],
-          sections: [
-            { title: 'Bitcoin & Crypto', signal: 'warn', sigLabel: 'Thận trọng — chưa xác định đáy',
-              para: 'Nhìn đâu cũng thấy tín hiệu tiêu cực: công ty crypto bán ra, IPO hoãn vì tình hình quá xấu, ETF bán mạnh, ngay cả Michael Saylor ("never sell") cũng bán. Các công ty đào Bitcoin không chuyển sang AI được thì buộc phải bán để trả chi phí vận hành.',
-              bullets: [
-                'Cẩn thận tâm lý "chắc là đáy rồi": năm 2022, BTC từ 20.000 giảm thêm 25% về 15.000 đô — ai mua 20.000 tưởng đáy lỗ thêm 25.000 trên mỗi 100.000 đầu tư.',
-                'Tín hiệu tiêu cực hiện tại giống hệt 2018 và 2022 về mặt tâm lý — không có gì bất thường nếu nhìn dài hạn.',
-                'Điểm khác biệt tích cực so với 2022: không có chuỗi phá sản, thợ đào chuyển hướng thay vì sụp đổ.',
-                'Đầu tư dài hạn: nếu tin tưởng giá sẽ tăng dài hạn, giảm thêm không sao — chỉ lỗ khi bán.'
-              ] }
-          ]
-        }
-      ],
-      sources: [
-        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '12/06/2026',
-          title: 'FOMO Không Chỉ Xuất Hiện Trong Bull Market', meta: 'Video công khai · ThuanCapital Shorts' },
-        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '11/06/2026',
-          title: '15 Năm Bitcoin Và Chu Kỳ Chưa Từng Biến Mất', meta: 'Video công khai · ThuanCapital Shorts' },
-        { icon: '▶', iconBg: 'oklch(0.95 0.04 27)', iconColor: 'oklch(0.46 0.15 27)', date: '06/06/2026',
-          title: 'Mỗi Khi Ta Có Suy Nghĩ Chắc Chắn Đây Là "Đáy" Rồi', meta: 'Video công khai · ThuanCapital Shorts' }
-      ]
-    },
-
     'azfin': {
       initials: 'AZ',
       name: 'AzFin',

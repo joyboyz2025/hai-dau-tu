@@ -302,7 +302,8 @@ window.HDT_DATA = {
                   "entry": "Canh long khi test 4.000–4.085",
                   "target": "4.350",
                   "stop": "Rủi ro về ~3.000",
-                  "sig": "up"
+                  "sig": "up",
+                  "tv": "OANDA:XAUUSD"
                 },
                 {
                   "asset": "Bạc",
@@ -310,7 +311,8 @@ window.HDT_DATA = {
                   "entry": "Đợi về ~60",
                   "target": "",
                   "stop": "Nếu Fed tăng lãi về 48–50",
-                  "sig": "wait"
+                  "sig": "wait",
+                  "tv": "OANDA:XAGUSD"
                 }
               ]
             },
@@ -323,7 +325,8 @@ window.HDT_DATA = {
                   "entry": "Limit 68–71k",
                   "target": "Dài hạn 47–50k (cực đoan 28–32k)",
                   "stop": "",
-                  "sig": "down"
+                  "sig": "down",
+                  "tv": "BINANCE:BTCUSDT"
                 }
               ]
             },
@@ -336,7 +339,8 @@ window.HDT_DATA = {
                   "entry": "Giữ short",
                   "target": "",
                   "stop": "Cắt lỗ 31.300–32.000",
-                  "sig": "down"
+                  "sig": "down",
+                  "tv": "NASDAQ:IXIC"
                 },
                 {
                   "asset": "S&P 500",
@@ -344,7 +348,8 @@ window.HDT_DATA = {
                   "entry": "Giữ short",
                   "target": "",
                   "stop": "Cắt lỗ nếu vượt 7.000–7.007",
-                  "sig": "down"
+                  "sig": "down",
+                  "tv": "SP:SPX"
                 },
                 {
                   "asset": "Dow (US30)",
@@ -352,7 +357,8 @@ window.HDT_DATA = {
                   "entry": "Mua short vùng này",
                   "target": "Về 24.000–24.500",
                   "stop": "",
-                  "sig": "down"
+                  "sig": "down",
+                  "tv": "DJ:DJI"
                 },
                 {
                   "asset": "VIX",
@@ -360,7 +366,8 @@ window.HDT_DATA = {
                   "entry": "15–16",
                   "target": "",
                   "stop": "",
-                  "sig": "up"
+                  "sig": "up",
+                  "tv": "CBOE:VIX"
                 },
                 {
                   "asset": "SpaceX",
@@ -376,7 +383,8 @@ window.HDT_DATA = {
                   "entry": "325–330",
                   "target": "",
                   "stop": "Cắt lỗ 360",
-                  "sig": "down"
+                  "sig": "down",
+                  "tv": "NASDAQ:AAPL"
                 },
                 {
                   "asset": "Nvidia",
@@ -384,7 +392,8 @@ window.HDT_DATA = {
                   "entry": "Chờ về 163",
                   "target": "",
                   "stop": "",
-                  "sig": "down"
+                  "sig": "down",
+                  "tv": "NASDAQ:NVDA"
                 },
                 {
                   "asset": "Netflix",
@@ -392,7 +401,8 @@ window.HDT_DATA = {
                   "entry": "74–75",
                   "target": "",
                   "stop": "",
-                  "sig": "up"
+                  "sig": "up",
+                  "tv": "NASDAQ:NFLX"
                 },
                 {
                   "asset": "Google",
@@ -400,7 +410,8 @@ window.HDT_DATA = {
                   "entry": "300–314",
                   "target": "",
                   "stop": "",
-                  "sig": "up"
+                  "sig": "up",
+                  "tv": "NASDAQ:GOOGL"
                 }
               ]
             },
@@ -413,7 +424,8 @@ window.HDT_DATA = {
                   "entry": "Giữ short",
                   "target": "",
                   "stop": "Cắt lỗ 74.000",
-                  "sig": "down"
+                  "sig": "down",
+                  "tv": "TVC:NI225"
                 },
                 {
                   "asset": "Kospi",
@@ -421,7 +433,8 @@ window.HDT_DATA = {
                   "entry": "Từ ~800",
                   "target": "Test 4.600",
                   "stop": "",
-                  "sig": "down"
+                  "sig": "down",
+                  "tv": "TVC:KOSPI"
                 },
                 {
                   "asset": "Samsung",
@@ -429,7 +442,8 @@ window.HDT_DATA = {
                   "entry": "Đừng mua vùng này",
                   "target": "",
                   "stop": "",
-                  "sig": "down"
+                  "sig": "down",
+                  "tv": "KRX:005930"
                 }
               ]
             },
@@ -442,7 +456,8 @@ window.HDT_DATA = {
                   "entry": "Cầm chặt",
                   "target": "",
                   "stop": "",
-                  "sig": "wait"
+                  "sig": "wait",
+                  "tv": "HOSE:VCB"
                 },
                 {
                   "asset": "BID",
@@ -450,7 +465,8 @@ window.HDT_DATA = {
                   "entry": "Cầm chặt",
                   "target": "",
                   "stop": "",
-                  "sig": "wait"
+                  "sig": "wait",
+                  "tv": "HOSE:BID"
                 },
                 {
                   "asset": "CTG",
@@ -458,7 +474,8 @@ window.HDT_DATA = {
                   "entry": "Cầm",
                   "target": "",
                   "stop": "",
-                  "sig": "wait"
+                  "sig": "wait",
+                  "tv": "HOSE:CTG"
                 },
                 {
                   "asset": "HDB",
@@ -466,7 +483,8 @@ window.HDT_DATA = {
                   "entry": "Cầm — HD Sec sắp lên sàn",
                   "target": "",
                   "stop": "",
-                  "sig": "wait"
+                  "sig": "wait",
+                  "tv": "HOSE:HDB"
                 },
                 {
                   "asset": "BVB",
@@ -474,7 +492,8 @@ window.HDT_DATA = {
                   "entry": "Cầm — sắp limit HOSE",
                   "target": "",
                   "stop": "",
-                  "sig": "wait"
+                  "sig": "wait",
+                  "tv": "HOSE:BVB"
                 },
                 {
                   "asset": "TCX",
@@ -482,7 +501,8 @@ window.HDT_DATA = {
                   "entry": "40–41",
                   "target": "VN30 T3/2027",
                   "stop": "",
-                  "sig": "up"
+                  "sig": "up",
+                  "tv": "HOSE:TCX"
                 },
                 {
                   "asset": "VCI",
@@ -490,7 +510,8 @@ window.HDT_DATA = {
                   "entry": "Lướt sóng 8–10%",
                   "target": "",
                   "stop": "",
-                  "sig": "up"
+                  "sig": "up",
+                  "tv": "HOSE:VCI"
                 },
                 {
                   "asset": "VNM",
@@ -498,7 +519,8 @@ window.HDT_DATA = {
                   "entry": "~60",
                   "target": "",
                   "stop": "Cắt lỗ nếu về 50",
-                  "sig": "up"
+                  "sig": "up",
+                  "tv": "HOSE:VNM"
                 },
                 {
                   "asset": "DCM",
@@ -506,7 +528,8 @@ window.HDT_DATA = {
                   "entry": "Vùng giá trị",
                   "target": "Cầm 8 tháng",
                   "stop": "",
-                  "sig": "up"
+                  "sig": "up",
+                  "tv": "HOSE:DCM"
                 },
                 {
                   "asset": "HPG",
@@ -514,7 +537,8 @@ window.HDT_DATA = {
                   "entry": "Giải ngân 1/3",
                   "target": "",
                   "stop": "",
-                  "sig": "up"
+                  "sig": "up",
+                  "tv": "HOSE:HPG"
                 },
                 {
                   "asset": "SCS",
@@ -522,7 +546,8 @@ window.HDT_DATA = {
                   "entry": "Nắm dài hạn",
                   "target": "",
                   "stop": "",
-                  "sig": "wait"
+                  "sig": "wait",
+                  "tv": "HOSE:SCS"
                 },
                 {
                   "asset": "HVN",
@@ -530,7 +555,8 @@ window.HDT_DATA = {
                   "entry": "~27–28",
                   "target": "",
                   "stop": "Không đầu tư dài hạn",
-                  "sig": "wait"
+                  "sig": "wait",
+                  "tv": "HOSE:HVN"
                 },
                 {
                   "asset": "SSI",
@@ -538,7 +564,8 @@ window.HDT_DATA = {
                   "entry": "Vùng 27 vẫn đắt",
                   "target": "",
                   "stop": "",
-                  "sig": "wait"
+                  "sig": "wait",
+                  "tv": "HOSE:SSI"
                 },
                 {
                   "asset": "PNJ",
@@ -546,7 +573,8 @@ window.HDT_DATA = {
                   "entry": "Rủi ro pháp lý",
                   "target": "Có thể về 44",
                   "stop": "",
-                  "sig": "down"
+                  "sig": "down",
+                  "tv": "HOSE:PNJ"
                 }
               ]
             }
@@ -644,7 +672,8 @@ window.HDT_DATA = {
                   "entry": "Vùng này (không short)",
                   "target": "Có thể test 90",
                   "stop": "",
-                  "sig": "up"
+                  "sig": "up",
+                  "tv": "TVC:USOIL"
                 }
               ]
             },
@@ -657,7 +686,8 @@ window.HDT_DATA = {
                   "entry": "Tích lũy lại",
                   "target": "",
                   "stop": "Nếu Fed tăng lãi về ~3.000",
-                  "sig": "wait"
+                  "sig": "wait",
+                  "tv": "OANDA:XAUUSD"
                 },
                 {
                   "asset": "Bạc",
@@ -665,7 +695,8 @@ window.HDT_DATA = {
                   "entry": "",
                   "target": "",
                   "stop": "Nếu tăng lãi về 48–50 (−20%)",
-                  "sig": "wait"
+                  "sig": "wait",
+                  "tv": "OANDA:XAGUSD"
                 }
               ]
             },
@@ -678,7 +709,8 @@ window.HDT_DATA = {
                   "entry": "69–71k (đỉnh đám mây)",
                   "target": "Dài hạn 47–50k (cực đoan 30k)",
                   "stop": "",
-                  "sig": "down"
+                  "sig": "down",
+                  "tv": "BINANCE:BTCUSDT"
                 }
               ]
             },
@@ -699,7 +731,8 @@ window.HDT_DATA = {
                   "entry": "Có thể test 250",
                   "target": "",
                   "stop": "",
-                  "sig": "down"
+                  "sig": "down",
+                  "tv": "NASDAQ:AAPL"
                 },
                 {
                   "asset": "Google",
@@ -707,7 +740,8 @@ window.HDT_DATA = {
                   "entry": "Test lại 335–340",
                   "target": "",
                   "stop": "",
-                  "sig": "up"
+                  "sig": "up",
+                  "tv": "NASDAQ:GOOGL"
                 },
                 {
                   "asset": "Intel",
@@ -715,7 +749,8 @@ window.HDT_DATA = {
                   "entry": "Up & ra hàng",
                   "target": "",
                   "stop": "",
-                  "sig": "down"
+                  "sig": "down",
+                  "tv": "NASDAQ:INTC"
                 },
                 {
                   "asset": "Nvidia",
@@ -723,7 +758,8 @@ window.HDT_DATA = {
                   "entry": "Giữ là hay",
                   "target": "",
                   "stop": "",
-                  "sig": "wait"
+                  "sig": "wait",
+                  "tv": "NASDAQ:NVDA"
                 }
               ]
             },
@@ -736,7 +772,8 @@ window.HDT_DATA = {
                   "entry": "Đừng mua — hận ngàn thu",
                   "target": "",
                   "stop": "",
-                  "sig": "down"
+                  "sig": "down",
+                  "tv": "KRX:005930"
                 }
               ]
             },
@@ -749,7 +786,8 @@ window.HDT_DATA = {
                   "entry": "40–41",
                   "target": "VN30 T1/2027",
                   "stop": "",
-                  "sig": "up"
+                  "sig": "up",
+                  "tv": "HOSE:TCX"
                 },
                 {
                   "asset": "DCM",
@@ -757,7 +795,8 @@ window.HDT_DATA = {
                   "entry": "Giữ 3/4 vị thế, tăng 1/4",
                   "target": "Cuối năm",
                   "stop": "",
-                  "sig": "up"
+                  "sig": "up",
+                  "tv": "HOSE:DCM"
                 },
                 {
                   "asset": "VNM",
@@ -765,7 +804,8 @@ window.HDT_DATA = {
                   "entry": "~60",
                   "target": "",
                   "stop": "Cắt lỗ nếu về 50",
-                  "sig": "up"
+                  "sig": "up",
+                  "tv": "HOSE:VNM"
                 },
                 {
                   "asset": "VCB",
@@ -773,7 +813,8 @@ window.HDT_DATA = {
                   "entry": "Nắm 57–61 dài hạn",
                   "target": "",
                   "stop": "",
-                  "sig": "wait"
+                  "sig": "wait",
+                  "tv": "HOSE:VCB"
                 },
                 {
                   "asset": "SCS",
@@ -781,7 +822,8 @@ window.HDT_DATA = {
                   "entry": "Cầm 2–3 năm",
                   "target": "",
                   "stop": "",
-                  "sig": "wait"
+                  "sig": "wait",
+                  "tv": "HOSE:SCS"
                 },
                 {
                   "asset": "SSI",
@@ -789,7 +831,8 @@ window.HDT_DATA = {
                   "entry": "Vùng 27 vẫn đắt",
                   "target": "",
                   "stop": "",
-                  "sig": "wait"
+                  "sig": "wait",
+                  "tv": "HOSE:SSI"
                 }
               ]
             }

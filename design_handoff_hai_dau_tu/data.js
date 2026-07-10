@@ -1720,9 +1720,89 @@ window.HDT_DATA = {
       },
       "updates": [
         {
+          "date": "2026-07-09",
+          "dateShort": "09/07",
+          "timeAgo": "Hôm qua",
+          "tab": "Video · 09/07",
+          "sourceType": "public-video",
+          "typeLabel": "Video công khai",
+          "title": "Lý Do Nắm Giữ Cổ Phiếu Chứng Khoán — Vì Sao Dòng Tiền Ngoại Không Phải Kỳ Vọng?",
+          "summary": "Bác bỏ kỳ vọng “nâng hạng → 2 tỷ đô ngoại tràn vào” (đếm cua trong lỗ). Dòng tiền index (passive) sẽ auto vào theo tiêu chuẩn, nhưng dòng chủ động thì không — VN >50% là tài chính (26% bank, 24% Vin), thiếu DN công nghệ/AI và công cụ phòng vệ (bán khống, quyền chọn). Vẫn nắm giữ nhóm chứng khoán dài hạn vì 3 lý do: mô hình ổn định, TTCK là kênh huy động vốn cốt lõi tương lai, thanh khoản đáy sẽ hồi. Ngắn hạn yếu — SSI chưa vượt kháng cự.",
+          "feedChips": [
+            {
+              "label": "Ngoại ↓ vẫn bán ròng",
+              "sig": "down"
+            },
+            {
+              "label": "Nâng hạng ⚠ đừng kỳ vọng 2 tỷ đô",
+              "sig": "warn"
+            },
+            {
+              "label": "Nhóm CK ↑ giữ dài hạn",
+              "sig": "up"
+            },
+            {
+              "label": "SSI ◷ chưa vượt kháng cự",
+              "sig": "wait"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "Dòng tiền ngoại",
+              "value": "Đừng kỳ vọng 2 tỷ đô",
+              "signal": "down",
+              "note": "Luận điểm nâng hạng → ngoại tràn vào là “đếm cua trong lỗ”, khẩu hiệu của Bộ Tài chính/UBCK. Dòng index auto vào theo tiêu chuẩn, nhưng dòng chủ động thì không — vài năm nay khối ngoại không mua ròng nổi quá 1 tuần."
+            },
+            {
+              "tag": "Cơ cấu thị trường",
+              "value": ">50% là tài chính",
+              "signal": "wait",
+              "note": "26% bank, 24% Vin, BĐS + bảo hiểm mười mấy %. VN thiếu DN công nghệ/AI/chăm sóc sức khỏe và thiếu công cụ phòng vệ rủi ro (bán khống, quyền chọn) — ngoài game tài chính, quỹ ngoại không có gì để chơi."
+            },
+            {
+              "tag": "Nhóm chứng khoán",
+              "value": "Giữ dài hạn",
+              "signal": "up",
+              "note": "Đầu tư thật nhưng không kỳ vọng dòng tiền đếm cua. Nắm giữ vì: mô hình kinh doanh ổn định, TTCK là kênh huy động vốn cốt lõi khi bank/trái phiếu hết dư địa, và thanh khoản đang đáy sẽ hồi."
+            },
+            {
+              "tag": "SSI",
+              "value": "Chờ vượt kháng cự",
+              "signal": "wait",
+              "note": "Chưa đóng trên “chen line” (kháng cự) thì chưa có điểm mua ngắn hạn; kể cả vượt cũng chưa đẹp vì tích lũy khối lượng kém. Nắm một phần, kiên nhẫn."
+            }
+          ],
+          "sections": [
+            {
+              "title": "Vì sao dòng tiền ngoại không phải kỳ vọng",
+              "signal": "down",
+              "sigLabel": "Thực tế — đừng đếm cua trong lỗ",
+              "para": "Nâng hạng từ cận biên lên mới nổi thứ cấp thì dòng tiền index (thụ động) sẽ tự động vào theo tiêu chuẩn đầu tư — điều này có quyền kỳ vọng. Nhưng dòng tiền CHỦ ĐỘNG thì không: quỹ ngoại ưu tiên DN có lợi thế cạnh tranh quốc tế (công nghệ, AI, chăm sóc sức khỏe) — thứ VN gần như không có.",
+              "bullets": [
+                "Quy mô thị trường VN: 26% ngân hàng, 24% Vin Group, BĐS + bảo hiểm thêm mười mấy % → hơn 50% là tài chính.",
+                "Thiếu công cụ phòng vệ rủi ro (bán khống, quyền chọn, hedging) — ví dụ PNJ “oẳng”, quỹ cầm không có cách thoát.",
+                "Game tài chính VN là game tăng vốn / chia cổ tức / tin đồn — cần tin nội bộ ban lãnh đạo mới đánh được.",
+                "Sau KRX chưa có thêm sản phẩm tài chính nào (trừ VN100 gần như vô nghĩa) → khối ngoại vẫn bán ròng."
+              ]
+            },
+            {
+              "title": "Lý do vẫn nắm giữ nhóm chứng khoán dài hạn",
+              "signal": "up",
+              "sigLabel": "Tích cực — 3 yếu tố cốt lõi",
+              "para": "Đầu tư nhóm chứng khoán là thật, nhưng dựa trên nội lực chứ không dựa vào kỳ vọng dòng tiền ngoại. Ngắn hạn nhóm CK có thể yếu, dài hạn không lo thiếu đất diễn nếu tin vào 3 yếu tố.",
+              "bullets": [
+                "Mô hình kinh doanh của công ty chứng khoán ổn định.",
+                "TTCK sẽ là kênh huy động vốn cốt lõi của nền kinh tế khi ngân hàng và trái phiếu đã hết dư địa tăng trưởng.",
+                "Thanh khoản đang ở đáy — trước sau gì cũng tăng trở lại khi cơ hội giảm giá thu hút dòng tiền.",
+                "SSI và nhóm midcap: nắm giữ một phần, kiên nhẫn — chưa vượt kháng cự thì chưa vào thêm ngắn hạn."
+              ]
+            }
+          ]
+        },
+        {
           "date": "2026-07-08",
           "dateShort": "08/07",
-          "timeAgo": "Hôm qua",
+          "timeAgo": "2 ngày trước",
           "tab": "Video · 08/07",
           "sourceType": "public-video",
           "typeLabel": "Video công khai",
@@ -1898,6 +1978,14 @@ window.HDT_DATA = {
         }
       ],
       "sources": [
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 27)",
+          "iconColor": "oklch(0.46 0.15 27)",
+          "date": "09/07/2026",
+          "title": "Lý do nắm giữ cổ phiếu chứng khoán - Tại sao dòng tiền nước ngoài không phải là kỳ vọng?",
+          "meta": "Video công khai · Chứng khoán 5 phút"
+        },
         {
           "icon": "▶",
           "iconBg": "oklch(0.95 0.04 27)",

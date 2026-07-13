@@ -5,5 +5,10 @@
     { "source": "/manifest.json", "destination": "/design_handoff_hai_dau_tu/manifest.json" },
     { "source": "/icons/:file", "destination": "/design_handoff_hai_dau_tu/icons/:file" },
     { "source": "/", "destination": "/design_handoff_hai_dau_tu/Hai Dau Tu.dc.html" }
+  ],
+  "headers": [
+    { "source": "/data.js", "headers": [{ "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }] },
+    { "source": "/support.js", "headers": [{ "key": "Cache-Control", "value": "no-cache, must-revalidate" }] },
+    { "source": "/", "headers": [{ "key": "Cache-Control", "value": "no-cache, must-revalidate" }] }
   ]
 }

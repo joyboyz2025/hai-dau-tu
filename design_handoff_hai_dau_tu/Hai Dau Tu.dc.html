@@ -469,10 +469,25 @@ input::placeholder { color: #A3A29A; }
         <h1 style="margin:0; font-size:24px; font-weight:800; letter-spacing:-0.4px;">Bảng điểm chuyên gia</h1>
         <div style="margin-top:6px; font-size:13.5px; color:#6E6D66; line-height:1.5;">Các nhận định đã ra kết quả — để cả nhà biết chuyên gia nào thực sự đáng tin. Đối chiếu từ chính nội dung video, không phải chấm điểm chủ quan.</div>
       </div>
-      <div style="display:flex; gap:10px; flex-wrap:wrap;">
-        <div style="font-size:13px; font-weight:700; padding:8px 14px; border-radius:10px; background:oklch(0.95 0.04 150); color:oklch(0.42 0.1 150);">✓ Đúng: {{ scHit }}</div>
-        <div style="font-size:13px; font-weight:700; padding:8px 14px; border-radius:10px; background:#EFEEE9; color:#5F5E57;">◷ Đang theo dõi: {{ scPending }}</div>
-        <div style="font-size:13px; font-weight:700; padding:8px 14px; border-radius:10px; background:oklch(0.95 0.04 27); color:oklch(0.46 0.15 27);">✗ Sai: {{ scMiss }}</div>
+      <!-- Thống kê theo chuyên gia -->
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:10px;">
+        <sc-for list="{{ scExpertStats }}" as="es" hint-placeholder-count="3">
+          <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:12px; padding:14px 16px; display:flex; flex-direction:column; gap:6px;">
+            <div style="display:flex; align-items:center; gap:8px;">
+              <div style="width:26px; height:26px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:9.5px; font-weight:700;">{{ es.initials }}</div>
+              <div style="font-size:13.5px; font-weight:700;">{{ es.name }}</div>
+            </div>
+            <div style="font-size:22px; font-weight:800; font-family:'IBM Plex Mono',monospace; color:{{ es.rateColor }};">{{ es.rate }}</div>
+            <div style="font-size:11.5px; color:#6E6D66;">{{ es.breakdown }}</div>
+          </div>
+        </sc-for>
+      </div>
+      <!-- Lọc theo chuyên gia + tổng -->
+      <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
+        <sc-for list="{{ scChips }}" as="sf" hint-placeholder-count="4">
+          <div onClick="{{ sf.onClick }}" style="padding:7px 14px; border-radius:999px; cursor:pointer; font-size:12.5px; font-weight:600; border:1.5px solid {{ sf.border }}; background:{{ sf.bg }}; color:{{ sf.color }};">{{ sf.label }}</div>
+        </sc-for>
+        <div style="font-size:12px; color:#9B9A92; margin-left:auto;">✓ {{ scHit }} · ◷ {{ scPending }} · ✗ {{ scMiss }}</div>
       </div>
       <div style="display:flex; flex-direction:column; gap:8px;">
         <sc-for list="{{ scorecardRows }}" as="sr" hint-placeholder-count="6">
@@ -481,6 +496,7 @@ input::placeholder { color: #A3A29A; }
               <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
                 <div style="width:22px; height:22px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:8.5px; font-weight:700;">{{ sr.initials }}</div>
                 <div style="font-size:12.5px; font-weight:600;">{{ sr.expertName }}</div>
+                <div style="font-size:10.5px; font-weight:700; padding:2px 8px; border-radius:999px; background:#EFEEE9; color:#5F5E57;">{{ sr.asset }}</div>
                 <div style="font-size:11.5px; font-family:'IBM Plex Mono',monospace; color:#9B9A92;">{{ sr.date }}</div>
               </div>
               <div style="font-size:11px; font-weight:800; padding:3px 10px; border-radius:999px; background:{{ sr.bg }}; color:{{ sr.color }}; white-space:nowrap;">{{ sr.resultLabel }}</div>
@@ -807,7 +823,7 @@ class Component extends DCLogic {
     super(props);
     let logged = false;
     try { logged = localStorage.getItem('hdt_auth') === '1'; } catch (e) {}
-    this.state = { logged, screen: 'dashboard', pwError: false, srcType: 0, added: [], updIdx: 0, expertId: 'thai-pham', q: '', assetKey: 'vn', callsExpert: 'all', chartSym: '', chartLabel: '' };
+    this.state = { logged, screen: 'dashboard', pwError: false, srcType: 0, added: [], updIdx: 0, expertId: 'thai-pham', q: '', assetKey: 'vn', callsExpert: 'all', chartSym: '', chartLabel: '', scExpert: 'all' };
     this.pwRef = React.createRef();
     this.nameRef = React.createRef();
     this.channelRef = React.createRef();
@@ -1685,12 +1701,35 @@ class Component extends DCLogic {
       pending: { label: 'Đang theo dõi',  bg: '#EFEEE9',              color: '#5F5E57' },
       miss:    { label: 'Sai',            bg: 'oklch(0.95 0.04 27)',  color: 'oklch(0.46 0.15 27)' }
     };
-    const scorecardRows = (HDT.scorecard || []).map(s2 => {
+    const SC_ALL = HDT.scorecard || [];
+    const scFiltered = SC_ALL.filter(s2 => s.scExpert === 'all' || s2.expert === s.scExpert);
+    const scorecardRows = scFiltered.map(s2 => {
       const ex = HDT.experts[s2.expert] || {};
       const r = SC_RESULT[s2.result] || SC_RESULT.pending;
       return { initials: ex.initials || s2.expert, expertName: ex.name || s2.expert,
+        asset: s2.asset || '—',
         date: s2.date, call: s2.call, note: s2.note || '', resultLabel: r.label, bg: r.bg, color: r.color };
     });
+    const scHit = scFiltered.filter(x => x.result === 'hit').length;
+    const scMiss = scFiltered.filter(x => x.result === 'miss').length;
+    const scPending = scFiltered.filter(x => x.result === 'pending').length;
+    const scExpertStats = Object.entries(HDT.experts).map(([eid, ex]) => {
+      const rows = SC_ALL.filter(x => x.expert === eid);
+      const h = rows.filter(x => x.result === 'hit').length;
+      const m = rows.filter(x => x.result === 'miss').length;
+      const p = rows.filter(x => x.result === 'pending').length;
+      const resolved = h + m;
+      const rate = resolved ? Math.round(h / resolved * 100) + '%' : '—';
+      return { initials: ex.initials, name: ex.name, rate,
+        rateColor: resolved && (h / resolved) >= 0.7 ? 'oklch(0.42 0.1 150)' : (resolved ? 'oklch(0.5 0.1 70)' : '#9B9A92'),
+        breakdown: '✓ ' + h + ' đúng · ✗ ' + m + ' sai · ◷ ' + p + ' đang chờ' };
+    });
+    const scChipDefs = [{ key: 'all', label: 'Tất cả' }].concat(
+      Object.entries(HDT.experts).map(([eid, ex]) => ({ key: eid, label: ex.name })));
+    const scChips = scChipDefs.map(d => ({
+      label: d.label, ...chipActive(s.scExpert === d.key),
+      onClick: () => this.setState({ scExpert: d.key })
+    }));
 
     const curExpert = EXPERTS[s.expertId] || EXPERTS['thai-pham'];
     const curUpdates = curExpert.updates;
@@ -1712,10 +1751,7 @@ class Component extends DCLogic {
       showWeekly: !showResults,
       weeklyRange: W.dateRange, weeklyAction: W.action,
       weeklyConsensus: W.consensus, weeklyDivergence: W.divergence,
-      scorecardRows,
-      scHit: scorecardRows.filter((r,i) => (HDT.scorecard[i]||{}).result === 'hit').length,
-      scPending: scorecardRows.filter((r,i) => (HDT.scorecard[i]||{}).result === 'pending').length,
-      scMiss: scorecardRows.filter((r,i) => (HDT.scorecard[i]||{}).result === 'miss').length,
+      scorecardRows, scHit, scPending, scMiss, scExpertStats, scChips,
       pwError: s.pwError, pwRef: this.pwRef, nameRef: this.nameRef, channelRef: this.channelRef,
       doLogin: () => this.login(),
       pwKey: (e) => { if (e.key === 'Enter') this.login(); },

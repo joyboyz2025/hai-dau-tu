@@ -2368,73 +2368,219 @@ window.HDT_DATA = {
   "scorecard": [
     {
       "expert": "thai-pham",
-      "date": "13/06",
-      "call": "Dầu về vùng 77–80",
+      "date": "01/06",
+      "asset": "CK Việt",
+      "call": "Vĩ mô đổi chiều — nâng tiền mặt lên 50%",
       "result": "hit",
-      "note": "Dầu đã giảm về 70–80 và neo ~80 (12/07) — đúng thesis."
+      "note": "Thị trường vào “mùa đông” đúng như cảnh báo: 71,75% cổ phiếu downtrend (video 12/07)."
     },
     {
       "expert": "thai-pham",
-      "date": "13/06",
-      "call": "Bitcoin hai đỉnh 124k sẽ sụp",
+      "date": "01/06",
+      "asset": "Bitcoin",
+      "call": "BTC gãy 71,8k là gãy nền “banana”",
       "result": "hit",
-      "note": "BTC đã sập về ~63–70k."
+      "note": "BTC sập từ vùng 71–74k về ~63k, đúng cấu trúc kỹ thuật đã vẽ."
     },
     {
       "expert": "thai-pham",
-      "date": "13/06",
-      "call": "Bạc sập mạnh từ đỉnh",
+      "date": "08/06",
+      "asset": "Nhật & Hàn",
+      "call": "Hàn/Nhật sẽ điều chỉnh mạnh — margin kỷ lục",
       "result": "hit",
-      "note": "Bạc giảm ~50% từ đỉnh."
+      "note": "Kospi rớt ~25% từ đỉnh, NĐT margin cháy tài khoản (Tập 37: “em ra đảo hết rồi”)."
     },
     {
       "expert": "thai-pham",
       "date": "12/06",
+      "asset": "CK Mỹ",
+      "call": "Semiconductor kéo rướn sẽ chỉnh mạnh",
+      "result": "hit",
+      "note": "Sóng bán dẫn tạm dừng; SanDisk/Micron rơi 10–14%/phiên cuối T6 (Tập 36)."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "12/06",
+      "asset": "Dầu",
+      "call": "Dầu về vùng 77–80",
+      "result": "hit",
+      "note": "Dầu giảm từ 120 về 70–80 rồi neo ~80 (12/07) — đúng thesis từ 21/04."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "15/06",
+      "asset": "Dầu",
+      "call": "Iran–Mỹ ký 19/6 → dầu giảm, vàng tăng ngắn hạn",
+      "result": "hit",
+      "note": "Đúng kịch bản: MU ký 17–19/6, dầu về 76–80, vàng bật ngắn hạn."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "12/06",
+      "asset": "Vàng",
       "call": "Vàng về 3.900–4.000",
       "result": "hit",
-      "note": "Vàng đã về vùng ~4.100 sau đỉnh ~5.500."
+      "note": "Vàng rơi từ đỉnh ~5.500 về vùng ~4.100 — đúng hướng, sát vùng dự báo."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "17/06",
+      "asset": "CK Mỹ",
+      "call": "SpaceX định giá ảo (thực ~780 tỷ vs 2.660 tỷ)",
+      "result": "hit",
+      "note": "SpaceX rơi từ ~218–225 về ~157 và tiếp tục yếu sau khi vào Nasdaq 100."
     },
     {
       "expert": "thai-pham",
       "date": "18/06",
-      "call": "Fed giữ nguyên lãi suất",
+      "asset": "Vĩ mô",
+      "call": "EM tiếp tục chịu áp lực tỷ giá/lãi suất do Fed",
       "result": "hit",
-      "note": "Fed giữ 3,5–3,75% (Kevin Warsh, bỏ forward guidance)."
+      "note": "Quỹ ngoại rút vốn, VN-Index sập dù FDI kỷ lục (video 12/07)."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "20/06",
+      "asset": "Nhật & Hàn",
+      "call": "Samsung đừng mua — hồi lên là để bán",
+      "result": "hit",
+      "note": "Samsung pump & dump, rơi thẳng về đáy cũ (Tập 37)."
     },
     {
       "expert": "thai-pham",
       "date": "21/06",
-      "call": "VN-Index phụ thuộc VIN, sẽ chỉnh",
+      "asset": "Dầu",
+      "call": "Dầu neo cao 75–85, khó giảm sâu",
       "result": "hit",
-      "note": "Index bị đè về vùng thấp, 71,75% cổ phiếu downtrend."
+      "note": "Iran tái chiến 09/07, dầu bật +8% lên 80,59 — đúng vùng neo."
     },
     {
-      "expert": "ck-5-phut",
-      "date": "09/07",
-      "call": "Đừng kỳ vọng dòng tiền ngoại 2 tỷ đô",
+      "expert": "thai-pham",
+      "date": "21/06",
+      "asset": "CK Việt",
+      "call": "VN kẹt thanh khoản (LDR 115%) — đừng nhìn index",
       "result": "hit",
-      "note": "Khối ngoại vẫn bán ròng >80.000 tỷ 6 tháng."
+      "note": "Index ~1.828 “đẹp” nhưng 71,75% cổ phiếu downtrend (12/07)."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "16/06",
+      "asset": "CK Việt",
+      "call": "Tăng cổ phiếu lên 70% — chợ huyện sắp có sức sống",
+      "result": "miss",
+      "note": "Tự thừa nhận ở Tập 37 (11/07): “định đề sai” — index chỉnh kéo cả bank/CK giảm; phải hạ về 40% cổ phiếu."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "16/06",
+      "asset": "CK Việt",
+      "call": "Lướt sóng nhóm chứng khoán (SSI/VCI/VIX)",
+      "result": "miss",
+      "note": "Tập 37: lướt sóng “bị phèo”, cắt lỗ toàn bộ vị thế lướt sóng (-6–10%)."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "20/06",
+      "asset": "Vàng",
+      "call": "Vàng về ~3.000 nếu Fed tăng lãi",
+      "result": "pending",
+      "note": "Fed chưa tăng lãi; vàng đang ~4.100. Điều kiện chưa xảy ra."
     },
     {
       "expert": "thai-pham",
       "date": "04/07",
-      "call": "SpaceX định giá ảo → về ~100",
+      "asset": "CK Mỹ",
+      "call": "SpaceX về 100–110 trong ~6 tháng",
       "result": "pending",
-      "note": "Mới vào Nasdaq 100 ngày 7/7; giữ short, chờ 6 tháng."
+      "note": "Vào Nasdaq 100 ngày 7/7; đang ~145–157, giữ short."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "04/07",
+      "asset": "CK Mỹ",
+      "call": "Apple điều chỉnh — short 325–330",
+      "result": "pending",
+      "note": "Đang theo dõi; iPhone 18 tăng giá 20–60% là catalyst giảm cầu."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "09/07",
+      "asset": "Dầu",
+      "call": "Dầu có thể lên 87–90 nếu leo thang",
+      "result": "pending",
+      "note": "Iran tái chiến; dầu 80,59 — chưa chạm 87."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "11/07",
+      "asset": "CK Việt",
+      "call": "VN-Index về ~1.600 trong 6 tháng (xác suất 78%)",
+      "result": "pending",
+      "note": "Call lớn nhất hiện tại — quyết định thời điểm giải ngân mạnh."
+    },
+    {
+      "expert": "azfin",
+      "date": "2014–17",
+      "asset": "CK Việt",
+      "call": "REE: mua 20–22 khi định giá rẻ, cổ tức 7–8%",
+      "result": "hit",
+      "note": "Tự thuật (#05): 3 năm sau tăng 45–47, chốt ~40 — lợi nhuận kép 35–40%/năm."
+    },
+    {
+      "expert": "azfin",
+      "date": "2023–25",
+      "asset": "CK Việt",
+      "call": "VPBank: tích sản 17–20, kiên nhẫn 28 tháng",
+      "result": "hit",
+      "note": "Tự thuật (#05): sập 14 (thuế 4/25) rồi tăng 38 trong 3–4 tháng; chốt 33–36 (+160%)."
+    },
+    {
+      "expert": "azfin",
+      "date": "2025",
+      "asset": "CK Việt",
+      "call": "DGC: chốt lời vùng >100 vì không còn rẻ",
+      "result": "hit",
+      "note": "Tự thuật (#05): thoát trước biến cố pháp lý nhờ kỷ luật định giá — tránh cú sập."
     },
     {
       "expert": "azfin",
       "date": "14/06",
-      "call": "Định giá VN rẻ — tích lũy dần",
+      "asset": "CK Việt",
+      "call": "Định giá VN percentile 10–15% — cơ hội tích lũy",
       "result": "pending",
-      "note": "Giá chưa chạy dù KQKD tốt; đang theo dõi."
+      "note": "Chính AzFin xác nhận (#05): giá vẫn đi ngang/giảm dù KQKD tốt — chưa được trả giá."
     },
     {
-      "expert": "thai-pham",
-      "date": "04/07",
-      "call": "Nvidia/AI Mỹ sẽ chỉnh Q3",
+      "expert": "azfin",
+      "date": "10/07",
+      "asset": "CK Việt",
+      "call": "KQKD Q2 tăng >20%; bank lớn +30–50%",
       "result": "pending",
-      "note": "Đang răng cưa; chờ Open AI lên sàn 2027."
+      "note": "Chờ mùa BCTC Q2 công bố để đối chiếu."
+    },
+    {
+      "expert": "ck-5-phut",
+      "date": "17/06",
+      "asset": "Vĩ mô",
+      "call": "Fed giữ nguyên; 2 tin khó tạo cú hích ngắn hạn",
+      "result": "hit",
+      "note": "Fed giữ 3,5–3,75%; thị trường không sinh xu hướng mới, sau đó đi ngang/giảm."
+    },
+    {
+      "expert": "ck-5-phut",
+      "date": "09/07",
+      "asset": "CK Việt",
+      "call": "Đừng kỳ vọng 2 tỷ đô ngoại sau nâng hạng",
+      "result": "hit",
+      "note": "Ngoại tiếp tục bán ròng (>80.000 tỷ 6T); VN-Index sập dù FDI kỷ lục (12/07)."
+    },
+    {
+      "expert": "ck-5-phut",
+      "date": "08/07",
+      "asset": "CK Việt",
+      "call": "Thị trường gần đáy hơn đỉnh, chưa xác nhận tăng",
+      "result": "pending",
+      "note": "Đang theo dõi thanh khoản (~17.000 tỷ/phiên) và điểm xác nhận."
     }
   ]
 };

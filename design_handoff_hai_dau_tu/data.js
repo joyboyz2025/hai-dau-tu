@@ -9,32 +9,32 @@ window.HDT_DATA = {
   "pulse": [
     {
       "name": "CK Việt",
-      "mark": "↑ Tăng 70%",
-      "sig": "up"
+      "mark": "⚠ Phòng thủ 60/40",
+      "sig": "warn"
     },
     {
       "name": "CK Mỹ",
-      "mark": "↓ Chỉnh T7",
+      "mark": "↓ Chỉnh Q3",
       "sig": "down"
     },
     {
       "name": "Vàng",
-      "mark": "✓ Mua được",
-      "sig": "up"
+      "mark": "◷ Canh 4.000",
+      "sig": "wait"
     },
     {
       "name": "Dầu",
-      "mark": "↓ Về 70–80",
-      "sig": "down"
+      "mark": "↑ Neo 75–87",
+      "sig": "up"
     },
     {
       "name": "Bitcoin",
-      "mark": "↓ Short 68–70k",
+      "mark": "↓ Short 69–71k",
       "sig": "down"
     },
     {
       "name": "Tỷ giá",
-      "mark": "⚠ Dễ thở hơn",
+      "mark": "⚠ Áp lực",
       "sig": "warn"
     },
     {

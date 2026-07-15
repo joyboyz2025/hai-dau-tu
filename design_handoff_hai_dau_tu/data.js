@@ -2328,5 +2328,113 @@ window.HDT_DATA = {
         }
       ]
     }
-  }
+  },
+  "weekly": {
+    "dateRange": "07–12/07/2026",
+    "action": "Phòng thủ mùa đông. Thái Phạm vừa NÂNG TIỀN MẶT lên 60% (cổ phiếu 40%); AzFin vẫn giữ 70–80% cổ phiếu — khác biệt lớn nhất tuần. Cả 3 đồng thuận: VN định giá rẻ/đã tạo đáy nhưng còn kẹt thanh khoản, Fed giữ lãi cao. KHÔNG đòn bẩy, KHÔNG bắt đáy cổ phiếu pháp lý (PNJ). Giữ tiền chờ VN-Index về ~1.600.",
+    "consensus": [
+      {
+        "label": "VN định giá rẻ nhưng chưa chạy",
+        "detail": "AzFin: PE ~13 (loại VIN <10,5, ngang đáy Covid). Thái Phạm: đa phần cổ phiếu đã tạo đáy sau giảm 50–60%. CK 5 phút: giữ nhóm chứng khoán dài hạn vì nội lực."
+      },
+      {
+        "label": "Fed giữ lãi cao “for longer”",
+        "detail": "Thái Phạm + AzFin: Fed kẹt (tăng không được, hạ không xong), giữ 3,5–3,75% ≥1 năm → lãi thực dương hút vốn, đè định giá EM."
+      },
+      {
+        "label": "Khối ngoại bán ròng — đừng kỳ vọng dòng tiền ngoại",
+        "detail": "CK 5 phút + Thái Phạm: bán ròng >80.000 tỷ 6 tháng; quỹ thoái vốn đổ vào AI Mỹ. Nâng hạng chưa mang 2 tỷ đô về ngay."
+      },
+      {
+        "label": "Dầu neo cao 75–87, không short",
+        "detail": "Thái Phạm: Iran tái chiến, dự trữ G7 thiếu, Petrodollar giữ giá. Thiên long nhẹ."
+      },
+      {
+        "label": "Tránh cổ phiếu pháp lý",
+        "detail": "Cả 3 nhắc PNJ (vụ kim cương, có thể về 44); Thái Phạm thêm PC1, Đức Giang; và FPT (rủi ro AI)."
+      }
+    ],
+    "divergence": [
+      {
+        "label": "Tỷ trọng tiền/cổ phiếu",
+        "detail": "Thái Phạm phòng thủ mạnh (tiền 60% / cổ 40%) vs AzFin tấn công (cổ 70–80% / tiền 20–30%). Khác biệt lớn nhất — do khẩu vị & khung thời gian khác nhau."
+      },
+      {
+        "label": "Điểm mua VN-Index",
+        "detail": "Thái Phạm chờ vùng ~1.600 (78%) mới giải ngân mạnh; AzFin cho rằng đã đủ rẻ để tích lũy dần ngay."
+      }
+    ]
+  },
+  "scorecard": [
+    {
+      "expert": "thai-pham",
+      "date": "13/06",
+      "call": "Dầu về vùng 77–80",
+      "result": "hit",
+      "note": "Dầu đã giảm về 70–80 và neo ~80 (12/07) — đúng thesis."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "13/06",
+      "call": "Bitcoin hai đỉnh 124k sẽ sụp",
+      "result": "hit",
+      "note": "BTC đã sập về ~63–70k."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "13/06",
+      "call": "Bạc sập mạnh từ đỉnh",
+      "result": "hit",
+      "note": "Bạc giảm ~50% từ đỉnh."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "12/06",
+      "call": "Vàng về 3.900–4.000",
+      "result": "hit",
+      "note": "Vàng đã về vùng ~4.100 sau đỉnh ~5.500."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "18/06",
+      "call": "Fed giữ nguyên lãi suất",
+      "result": "hit",
+      "note": "Fed giữ 3,5–3,75% (Kevin Warsh, bỏ forward guidance)."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "21/06",
+      "call": "VN-Index phụ thuộc VIN, sẽ chỉnh",
+      "result": "hit",
+      "note": "Index bị đè về vùng thấp, 71,75% cổ phiếu downtrend."
+    },
+    {
+      "expert": "ck-5-phut",
+      "date": "09/07",
+      "call": "Đừng kỳ vọng dòng tiền ngoại 2 tỷ đô",
+      "result": "hit",
+      "note": "Khối ngoại vẫn bán ròng >80.000 tỷ 6 tháng."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "04/07",
+      "call": "SpaceX định giá ảo → về ~100",
+      "result": "pending",
+      "note": "Mới vào Nasdaq 100 ngày 7/7; giữ short, chờ 6 tháng."
+    },
+    {
+      "expert": "azfin",
+      "date": "14/06",
+      "call": "Định giá VN rẻ — tích lũy dần",
+      "result": "pending",
+      "note": "Giá chưa chạy dù KQKD tốt; đang theo dõi."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "04/07",
+      "call": "Nvidia/AI Mỹ sẽ chỉnh Q3",
+      "result": "pending",
+      "note": "Đang răng cưa; chờ Open AI lên sàn 2027."
+    }
+  ]
 };

@@ -5,7 +5,7 @@
 //          — giữ bài mới nhất + các bài hội viên gần nhất.
 // ─────────────────────────────────────────────────────────────────────────────
 window.HDT_DATA = {
-  "lastUpdated": "12/07/2026 · Mới nhất",
+  "lastUpdated": "16/07/2026 · Mới nhất",
   "pulse": [
     {
       "name": "CK Việt",
@@ -188,19 +188,19 @@ window.HDT_DATA = {
       ],
       "gauge": {
         "title": "Tỷ lệ tiền – hàng khuyến nghị (VN)",
-        "badge": "Tích cực",
-        "badgeBg": "oklch(0.95 0.04 150)",
-        "badgeColor": "oklch(0.42 0.1 150)",
-        "bar1": 30,
-        "bar2": 70,
-        "label1": "Tiền mặt 30%",
-        "label2": "Cổ phiếu 70%"
+        "badge": "Phòng thủ",
+        "badgeBg": "oklch(0.95 0.05 85)",
+        "badgeColor": "oklch(0.5 0.12 85)",
+        "bar1": 60,
+        "bar2": 40,
+        "label1": "Tiền mặt 60%",
+        "label2": "Cổ phiếu 40%"
       },
       "updates": [
         {
           "date": "2026-07-12",
           "dateShort": "12/07",
-          "timeAgo": "Hôm nay",
+          "timeAgo": "4 ngày trước",
           "tab": "Video · Tuần 28",
           "sourceType": "public-video",
           "typeLabel": "Video công khai",
@@ -278,7 +278,7 @@ window.HDT_DATA = {
         {
           "date": "2026-07-11",
           "dateShort": "11/07",
-          "timeAgo": "Hôm qua",
+          "timeAgo": "5 ngày trước",
           "tab": "Tập 37 · Tuần 28",
           "sourceType": "member-video",
           "typeLabel": "Video hội viên · Tập 37",
@@ -625,7 +625,7 @@ window.HDT_DATA = {
         {
           "date": "2026-07-04",
           "dateShort": "04/07",
-          "timeAgo": "5 ngày trước",
+          "timeAgo": "Tuần trước",
           "tab": "Tập 36 · Tuần 27",
           "sourceType": "member-video",
           "typeLabel": "Video hội viên · Tập 36",
@@ -995,7 +995,7 @@ window.HDT_DATA = {
         {
           "date": "2026-06-20",
           "dateShort": "20/06",
-          "timeAgo": "2 ngày trước",
+          "timeAgo": "3 tuần trước",
           "tab": "Tập 33 · Tuần 25",
           "sourceType": "member-video",
           "typeLabel": "Video hội viên · Tập 33",
@@ -1262,7 +1262,7 @@ window.HDT_DATA = {
         {
           "date": "2026-06-17",
           "dateShort": "17/06",
-          "timeAgo": "Hôm qua",
+          "timeAgo": "Tháng trước",
           "tab": "Post · 17/06",
           "sourceType": "member-post",
           "typeLabel": "Post hội viên",
@@ -1294,7 +1294,7 @@ window.HDT_DATA = {
         {
           "date": "2026-06-16",
           "dateShort": "16/06",
-          "timeAgo": "Hôm nay",
+          "timeAgo": "Tháng trước",
           "tab": "Post · 16/06",
           "sourceType": "member-post",
           "typeLabel": "Post hội viên",
@@ -1393,7 +1393,7 @@ window.HDT_DATA = {
         {
           "date": "2026-06-15",
           "dateShort": "15/06",
-          "timeAgo": "Hôm qua",
+          "timeAgo": "Tháng trước",
           "tab": "Post · 5:15 sáng",
           "sourceType": "member-post",
           "typeLabel": "Post hội viên · 5:15 sáng",
@@ -1560,7 +1560,7 @@ window.HDT_DATA = {
         {
           "date": "2026-07-10",
           "dateShort": "10/07",
-          "timeAgo": "2 ngày trước",
+          "timeAgo": "6 ngày trước",
           "tab": "Trà Đá Brothers #05",
           "sourceType": "public-video",
           "typeLabel": "Video công khai",
@@ -1639,7 +1639,7 @@ window.HDT_DATA = {
         {
           "date": "2026-07-08",
           "dateShort": "08/07",
-          "timeAgo": "Hôm qua",
+          "timeAgo": "Tuần trước",
           "tab": "Số 18 · Tích sản T43",
           "sourceType": "public-video",
           "typeLabel": "Video công khai",
@@ -1717,7 +1717,7 @@ window.HDT_DATA = {
         {
           "date": "2026-06-17",
           "dateShort": "17/06",
-          "timeAgo": "3 tuần trước",
+          "timeAgo": "Tháng trước",
           "tab": "Video · 17/06",
           "sourceType": "public-video",
           "typeLabel": "Video công khai",
@@ -1794,7 +1794,7 @@ window.HDT_DATA = {
         {
           "date": "2026-06-14",
           "dateShort": "14/06",
-          "timeAgo": "2 ngày trước",
+          "timeAgo": "Tháng trước",
           "tab": "Video · 14/06",
           "sourceType": "public-video",
           "typeLabel": "Video công khai",
@@ -1896,7 +1896,7 @@ window.HDT_DATA = {
         {
           "date": "2026-06-11",
           "dateShort": "11/06",
-          "timeAgo": "5 ngày trước",
+          "timeAgo": "Tháng trước",
           "tab": "Podcast · 11/06",
           "sourceType": "public-video",
           "typeLabel": "Video công khai",
@@ -2034,19 +2034,230 @@ window.HDT_DATA = {
       ],
       "gauge": {
         "title": "Trạng thái thị trường tuần",
-        "badge": "Tích cực",
-        "badgeBg": "oklch(0.95 0.04 150)",
-        "badgeColor": "oklch(0.42 0.1 150)",
+        "badge": "Thận trọng",
+        "badgeBg": "oklch(0.95 0.05 85)",
+        "badgeColor": "oklch(0.5 0.12 85)",
         "bar1": 60,
         "bar2": 40,
-        "label1": "Giữ tỷ trọng 60%",
-        "label2": "Chờ/ngắn hạn 40%"
+        "label1": "Giữ tỷ trọng dài hạn 60%",
+        "label2": "Ngắn hạn đứng ngoài 40%"
       },
       "updates": [
         {
+          "date": "2026-07-15",
+          "dateShort": "15/07",
+          "timeAgo": "Hôm qua",
+          "tab": "Video · 15/07",
+          "sourceType": "public-video",
+          "typeLabel": "Video công khai",
+          "title": "Vấn Đề Của PNJ Không Phải Là Cổ Phiếu Tăng Hay Giảm",
+          "summary": "Khuyên KHÔNG đầu tư PNJ lúc này, kể cả phiên trần — giống DGC nhịp trước. Vấn đề không phải trần/sàn hay \"chiết khấu đủ chưa\", mà là: rủi ro PNJ Lào có liên đới công ty mẹ không, vụ án đang mở rộng điều tra (bắt thêm người, cả các chủ tiệm vàng lớn), hoạt động kinh doanh có dính yếu tố làm giả giấy tờ không. Mua PNJ bây giờ là chơi trò \"đoán xem nó có sập không\" bằng tiền thật. Nguyên tắc: cổ phiếu có rủi ro vận hành/niêm yết — không mua; đọc báo cáo không ăn thua vì loại rủi ro này không nằm trên giấy tờ.",
+          "feedChips": [
+            {
+              "label": "PNJ ↓ không mua, kể cả trần",
+              "sig": "down"
+            },
+            {
+              "label": "Pháp lý ⚠ điều tra đang mở rộng",
+              "sig": "warn"
+            },
+            {
+              "label": "Nguyên tắc ⚠ rủi ro vận hành = đứng ngoài",
+              "sig": "warn"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "PNJ",
+              "value": "Không mua — kể cả phiên trần",
+              "signal": "down",
+              "note": "Giống DGC nhịp trước. Câu hỏi thật: PNJ Lào có liên đới công ty mẹ? Điều tra mở rộng tới cổ đông khác/ban giám đốc? Mua lúc này là trò \"đoán xem nó có sập không\" đặt cược bằng tiền thật — \"thà làm con lô\"."
+            },
+            {
+              "tag": "Nguyên tắc rủi ro",
+              "value": "Rủi ro vận hành/niêm yết → quay đi",
+              "signal": "warn",
+              "note": "Không quy chụp doanh nghiệp đúng sai — chỉ cần nhìn thấy rủi ro là không mua, không quan tâm trần hay sàn. Báo cáo tài chính không phản ánh được loại rủi ro này."
+            }
+          ],
+          "sections": [
+            {
+              "title": "Vì sao không bắt đáy PNJ",
+              "signal": "down",
+              "sigLabel": "Rủi ro — chưa thể định lượng",
+              "para": "Thị trường đang vội: lập luận \"giảm nhiều rồi, chiết khấu đủ rồi, ai bán đã bán\" chỉ là cách né vấn đề thật. Vấn đề thật là chuỗi câu hỏi chưa ai trả lời được: rủi ro PNJ Lào có liên đới doanh nghiệp mẹ, điều tra mở rộng đến đâu, kinh doanh có bị ảnh hưởng bởi yếu tố làm giả giấy tờ.",
+              "bullets": [
+                "Cơ quan điều tra đang mở rộng vụ án, tiếp tục bắt thêm người — hôm nay (15/07) bắt thêm các chủ tiệm vàng lớn.",
+                "Những người khen \"phần này nhỏ, không ảnh hưởng\" là đoán mò từ bên ngoài — không ai biết điều gì đang diễn ra trong doanh nghiệp.",
+                "Đồ thị xanh hay đỏ, tín hiệu kỹ thuật ở PNJ lúc này đều vô nghĩa.",
+                "Ai mua lúc này là đang đánh cược \"đoán xem nó có sập không\" — xong lại khoe bắt đáy lãi 7–10% rồi chốt; \"đánh thế thà làm con lô\"."
+              ]
+            },
+            {
+              "title": "Nguyên tắc với cổ phiếu dính pháp lý",
+              "signal": "warn",
+              "sigLabel": "Kỷ luật — rủi ro là rủi ro",
+              "para": "Quan điểm rất rõ ràng: con nào có vấn đề rủi ro vận hành hay rủi ro niêm yết thì không mua, bất kể giá. Không cần đánh giá doanh nghiệp đúng hay sai — nhà đầu tư cá nhân không biết gì về vụ án bên trong.",
+              "bullets": [
+                "Những mã như PNJ lúc này đọc báo cáo tài chính không ăn thua — rủi ro không thể hiện trên giấy tờ.",
+                "Nhìn thấy rủi ro → quay đi; nhìn thấy rủi ro mà vẫn nhảy vào là \"dở hơi\".",
+                "Đây là chia sẻ quan điểm cá nhân về rủi ro, không phải nhận định doanh nghiệp đúng/sai."
+              ]
+            }
+          ]
+        },
+        {
+          "date": "2026-07-14",
+          "dateShort": "14/07",
+          "timeAgo": "2 ngày trước",
+          "tab": "Video · 14/07",
+          "sourceType": "public-video",
+          "typeLabel": "Video công khai",
+          "title": "Cổ Phiếu Đang Rẻ Hay Đắt? Tư Duy Để Vững Tin Nắm Giữ Dài Hạn",
+          "summary": "Ngắn hạn giá phản ánh tâm lý thị trường, dài hạn mới kéo về giá trị doanh nghiệp — đừng đi tìm lý do \"tại sao con này yếu\" từng mã (cả nhóm phân bón −30% từ đỉnh tháng 3, kể cả hàng cơ bản DPM/DCM). Định giá thị trường không cao: P/E VN-Index ~13.x (trung bình 15.x), loại Vin còn ~11.x — \"siêu đáy\", tương đương mua tài sản bằng 10 năm thu nhập. Cổ phiếu là tài sản \"nở ra được\" (doanh nghiệp sống, tăng trưởng) so với vàng/BĐS chỉ ghim giá trị. Chiến lược: chọn cổ phiếu cơ bản chiết khấu ~30% từ vùng giá cao, mua TỪNG PHẦN (đừng all-in), đi kèm niềm tin có cơ sở vào mô hình kinh doanh/ban lãnh đạo/ngành. Thời điểm này tốt nhất KHÔNG VAY — cả chứng khoán lẫn kinh doanh.",
+          "feedChips": [
+            {
+              "label": "VN P/E ↑ ~13.x, loại Vin ~11.x",
+              "sig": "up"
+            },
+            {
+              "label": "Chiến lược ↑ mua từng phần hàng cơ bản chiết khấu",
+              "sig": "up"
+            },
+            {
+              "label": "Đòn bẩy ⚠ không vay",
+              "sig": "warn"
+            },
+            {
+              "label": "Phân bón ◷ −30% từ đỉnh T3",
+              "sig": "wait"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "Định giá VN",
+              "value": "P/E ~13.x — vùng siêu đáy",
+              "signal": "up",
+              "note": "Trung bình hàng năm 15.x; có bên tính loại Vin ra chỉ còn ~11.x. P/E 10–11 tương đương mua tài sản bằng 10 năm thu nhập. Chỉ là chỉ số tham khảo, không phải lý do mua chính."
+            },
+            {
+              "tag": "Chiến lược mua",
+              "value": "Cổ phiếu cơ bản chiết khấu ~30%, mua từng phần",
+              "signal": "up",
+              "note": "VD DPM giảm ~30% từ đỉnh (30 → 24) có thể vào từng phần; lệnh 1–2 điều chỉnh vẫn an tâm đợi lệnh 3–4. Đừng mua hết một lần — all-in khiến khó nắm giữ dài hạn."
+            },
+            {
+              "tag": "Đòn bẩy",
+              "value": "Không vay — cả chứng khoán lẫn kinh doanh",
+              "signal": "warn",
+              "note": "Chi phí vay cao, thu nhập bất định → dòng tiền trả lãi là rủi ro. Ngược lại, ai có tài sản không vay đang nắm nguồn lực rất tốt để mua tài sản giá rẻ."
+            }
+          ],
+          "sections": [
+            {
+              "title": "Rẻ hay đắt — nhìn bằng khung nào",
+              "signal": "up",
+              "sigLabel": "Định giá — vùng giá không cao",
+              "para": "Trong ngắn hạn giá cổ phiếu phản ánh tâm lý và kỳ vọng, chỉ trong dài hạn mới kéo về giá trị doanh nghiệp — nên đừng lấy chuyện \"con này yếu\" ngắn hạn để nghi ngờ doanh nghiệp. Ở thời điểm này, dùng từ \"rẻ\" cho một số cổ phiếu midcap là không quá đáng, ít nhất là \"vùng giá không cao\".",
+              "bullets": [
+                "P/E VN-Index quanh 13.x vs trung bình hàng năm 15.x; loại Vin ra chỉ ~11.x — có thể gọi là siêu đáy.",
+                "Nhóm phân bón giảm ~30% từ đỉnh tháng 3, kể cả hàng cơ bản DPM/DCM — là hiện tượng thị trường chung, không phải từng doanh nghiệp có vấn đề.",
+                "Cổ phiếu = quyền sở hữu doanh nghiệp — \"vật sống\" vẫn hoạt động, tăng trưởng, nở ra được; vàng/BĐS chỉ ghim giữ giá trị.",
+                "Rủi ro pháp lý/chính sách tồn tại ở mọi kênh tài sản (vàng, BĐS cũng vậy) — đánh giá là tương đương."
+              ]
+            },
+            {
+              "title": "Cách nắm giữ dài hạn không gãy",
+              "signal": "wait",
+              "sigLabel": "Kỷ luật — mua từng phần + không vay",
+              "para": "Nắm giữ dài hạn cần niềm tin có cơ sở (vào mô hình kinh doanh, ban lãnh đạo, tăng trưởng ngành — phải tự tìm hiểu sâu để tin) kết hợp phương pháp mua hợp lý. \"Vững tay chèo\" không có nghĩa là mua trên đỉnh rồi gồng — như mua DPM giá 30 gồng về 24.",
+              "bullets": [
+                "Mua cổ phiếu cơ bản ở mức giá chiết khấu so với vùng giá cao (~30%) — cách an toàn nhất để giữ được dài hạn.",
+                "Mua từng phần (lệnh 1 → 4), không all-in; giá điều chỉnh sau lệnh đầu vẫn an tâm đợi mua tiếp.",
+                "Kiểm soát vốn vay tốt nhất lúc này là KHÔNG vay — kể cả làm kinh doanh.",
+                "Xác định mình đang ở giai đoạn nào (tấn công/phòng thủ): lúc này \"chết đinh ngắn hạn hay đấm nhau với tín hiệu là khó\" — lợi thế nằm ở vị thế dài hạn."
+              ]
+            }
+          ]
+        },
+        {
+          "date": "2026-07-13",
+          "dateShort": "13/07",
+          "timeAgo": "3 ngày trước",
+          "tab": "Video · 13/07",
+          "sourceType": "public-video",
+          "typeLabel": "Video công khai",
+          "title": "Điều Quan Trọng Nhất Nhà Đầu Tư Cần Nhìn Thấy Lúc Này Ở Thị Trường",
+          "summary": "Thị trường không hoảng sợ mà NẢN — \"cái gì biết thì không sợ\": xấu xa (thanh khoản thấp, thế giới biến động, chính sách vĩ mô là đường dài) đều đã nhìn thấy. Thứ Sáu tuần trước là phiên tâm trạng xuống thấp nhất từ đầu năm; hai nhịp bán thứ Hai liên tiếp do mất phương hướng. Vấn đề lúc này KHÔNG phải tranh luận downtrend/uptrend hay vẽ vùng phân phối — mà là thanh khoản thấp bóp nghẹt mọi thị trường (cả BĐS, kinh doanh). Không có đáy ngắn hạn; kể cả tạo đáy đẹp cũng không đi xa. TCB, SSI đang cố tạo đáy nhưng HPG thủng đáy. Việc cần làm: xử lý margin NGAY (đã rất muộn — bản thân và khách hàng không margin từ T10 năm ngoái), đừng cược ngắn hạn gỡ lỗ, sống sót đến khi thị trường tích lũy xong nền. Vẫn cầm nhiều cổ phiếu — không khuyên bán hết chờ giảm.",
+          "feedChips": [
+            {
+              "label": "Ngắn hạn ↓ không có đáy, view xấu",
+              "sig": "down"
+            },
+            {
+              "label": "Thanh khoản ⚠ nghẽn mọi thị trường",
+              "sig": "warn"
+            },
+            {
+              "label": "Margin ⚠ xử lý ngay — đã muộn",
+              "sig": "warn"
+            },
+            {
+              "label": "Dài hạn ◷ sống sót chờ tích lũy",
+              "sig": "wait"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "Thị trường ngắn hạn",
+              "value": "Không có đáy ngắn hạn",
+              "signal": "down",
+              "note": "Kể cả tạo đáy đẹp cũng không đi xa vì thanh khoản không cho phép. Kịch bản khả thi nhất: yếu/đi ngang thêm một thời gian. TCB, SSI cố tạo đáy nhưng HPG thủng đáy — tư duy \"đáy thì thanh khoản bé\" không áp dụng được lúc này."
+            },
+            {
+              "tag": "Margin",
+              "value": "Xử lý ngay — đã rất muộn",
+              "signal": "warn",
+              "note": "Chi phí vay và rủi ro vay đều rất cao. Bản thân và nhóm khách hàng không dùng margin từ tháng 10 năm ngoái. Xử lý xong margin mới an toàn ngồi đợi thị trường tạo đáy."
+            },
+            {
+              "tag": "Chiến lược",
+              "value": "Sống sót dài hạn — đừng đoán đáy",
+              "signal": "wait",
+              "note": "Không bán hết chờ giảm (tư duy ngắn hạn tự mâu thuẫn — người tư duy ngắn hạn không cầm được cổ phiếu lâu), không gồng bằng mọi giá, không tất tay gỡ lỗ. Giữ tài khoản đến khi thị trường tích lũy xong và tăng trở lại."
+            }
+          ],
+          "sections": [
+            {
+              "title": "Thị trường nản, không hoảng sợ",
+              "signal": "down",
+              "sigLabel": "Tâm lý — mất phương hướng",
+              "para": "\"Cái gì biết thì không sợ, cái gì sợ thì không biết\" — mọi cái xấu (thanh khoản thấp, thế giới biến động, chính sách vĩ mô chỉ tác động đường dài) thị trường đều đã nhìn thấy, nên không hoảng sợ mà bị NẢN: nghi ngờ lý do đầu tư, mất phương hướng, phản ánh ở hai nhịp bán thứ Hai liên tiếp.",
+              "bullets": [
+                "Phiên thứ Sáu tuần trước: tâm trạng thị trường xuống thấp nhất kể từ đầu năm.",
+                "Tranh luận downtrend/uptrend, vùng phân phối hay tái tích lũy lúc này không có ý nghĩa — vấn đề là thanh khoản.",
+                "Thanh khoản thấp diễn ra ở mọi thị trường từ đầu năm: chứng khoán, bất động sản, cả làm ăn kinh doanh — giai đoạn nhiều yếu tố kinh tế xoay chiều, tương lai ngắn hạn bất định.",
+                "Đừng kỳ vọng \"một sáng ATO tăng mạnh, tạo đáy, tin tốt ngập tràn, vượt đỉnh\" — điều đó không diễn ra."
+              ]
+            },
+            {
+              "title": "Việc cần làm: margin và sinh tồn",
+              "signal": "warn",
+              "sigLabel": "Hành động — xử lý margin, đợi tích lũy",
+              "para": "Kịch bản đẹp nhất: thị trường về vùng cân bằng định giá, nhỏ lẻ rụng hết hàng, tạo đáy dần và thanh khoản + niềm tin hồi phục từ từ — mất rất nhiều thời gian. Nhiệm vụ nhà đầu tư nhỏ lẻ không phải đoán đáy hay tất tay về bờ, mà là sống sót trong dài hạn.",
+              "bullets": [
+                "Xử lý phần margin ngay — chỗ này xử lý là đã \"rất muộn rồi\"; sau đó ngồi đợi, đừng cược ngắn hạn.",
+                "Ai cố so độ lì với thị trường bằng kèo gỡ lỗ đều bị đánh bại ở gần đáy — mọi giai đoạn giảm đều diễn biến như vậy.",
+                "Vẫn cầm khá nhiều cổ phiếu, chưa bao giờ rời bỏ thị trường — không khuyên bán hết đợi sập để mua lại.",
+                "Cuối phiên có vài mã \"rút chân\" (TCB khá ổn) nhưng chưa tạo ra tín hiệu nào cho phép kỳ vọng tăng lại trong tuần."
+              ]
+            }
+          ]
+        },
+        {
           "date": "2026-07-09",
           "dateShort": "09/07",
-          "timeAgo": "Hôm qua",
+          "timeAgo": "Tuần trước",
           "tab": "Video · 09/07",
           "sourceType": "public-video",
           "typeLabel": "Video công khai",
@@ -2126,7 +2337,7 @@ window.HDT_DATA = {
         {
           "date": "2026-07-08",
           "dateShort": "08/07",
-          "timeAgo": "2 ngày trước",
+          "timeAgo": "Tuần trước",
           "tab": "Video · 08/07",
           "sourceType": "public-video",
           "typeLabel": "Video công khai",
@@ -2204,7 +2415,7 @@ window.HDT_DATA = {
         {
           "date": "2026-06-17",
           "dateShort": "17/06",
-          "timeAgo": "3 tuần trước",
+          "timeAgo": "Tháng trước",
           "tab": "Video · 17/06",
           "sourceType": "public-video",
           "typeLabel": "Video công khai",
@@ -2306,6 +2517,30 @@ window.HDT_DATA = {
           "icon": "▶",
           "iconBg": "oklch(0.95 0.04 27)",
           "iconColor": "oklch(0.46 0.15 27)",
+          "date": "15/07/2026",
+          "title": "Vấn đề của PNJ không phải là cổ phiếu tăng hay giảm.",
+          "meta": "Video công khai · Chứng khoán 5 phút"
+        },
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 27)",
+          "iconColor": "oklch(0.46 0.15 27)",
+          "date": "14/07/2026",
+          "title": "Cổ phiếu đang rẻ hay đắt? - Những tư duy để vững tin đầu tư dài hạn trong thị trường hiện tại",
+          "meta": "Video công khai · Chứng khoán 5 phút"
+        },
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 27)",
+          "iconColor": "oklch(0.46 0.15 27)",
+          "date": "13/07/2026",
+          "title": "Điều quan trọng nhất nhà đầu tư cần nhìn thấy lúc này ở thị trường",
+          "meta": "Video công khai · Chứng khoán 5 phút"
+        },
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 27)",
+          "iconColor": "oklch(0.46 0.15 27)",
           "date": "09/07/2026",
           "title": "Lý do nắm giữ cổ phiếu chứng khoán - Tại sao dòng tiền nước ngoài không phải là kỳ vọng?",
           "meta": "Video công khai · Chứng khoán 5 phút"
@@ -2330,38 +2565,34 @@ window.HDT_DATA = {
     }
   },
   "weekly": {
-    "dateRange": "07–12/07/2026",
-    "action": "Phòng thủ mùa đông. Thái Phạm vừa NÂNG TIỀN MẶT lên 60% (cổ phiếu 40%); AzFin vẫn giữ 70–80% cổ phiếu — khác biệt lớn nhất tuần. Cả 3 đồng thuận: VN định giá rẻ/đã tạo đáy nhưng còn kẹt thanh khoản, Fed giữ lãi cao. KHÔNG đòn bẩy, KHÔNG bắt đáy cổ phiếu pháp lý (PNJ). Giữ tiền chờ VN-Index về ~1.600.",
+    "dateRange": "13–16/07/2026",
+    "action": "Sinh tồn qua vùng trũng thanh khoản. Tuần này mới có CK 5 phút ra video (3 bài); Thái Phạm & AzFin chưa có bài mới — giữ quan điểm tuần trước (Thái Phạm tiền mặt 60/40, AzFin cổ phiếu 70–80%). CK 5 phút: KHÔNG có đáy ngắn hạn, xử lý margin NGAY, tránh PNJ tuyệt đối; nhưng định giá dài hạn đã rẻ (P/E ~13.x, loại Vin ~11.x) — mua TỪNG PHẦN cổ phiếu cơ bản chiết khấu ~30%, tuyệt đối không vay.",
     "consensus": [
       {
-        "label": "VN định giá rẻ nhưng chưa chạy",
-        "detail": "AzFin: PE ~13 (loại VIN <10,5, ngang đáy Covid). Thái Phạm: đa phần cổ phiếu đã tạo đáy sau giảm 50–60%. CK 5 phút: giữ nhóm chứng khoán dài hạn vì nội lực."
+        "label": "Không bắt đáy cổ phiếu pháp lý (PNJ)",
+        "detail": "CK 5 phút (15/07): mua PNJ lúc này là trò \"đoán xem nó có sập không\" — điều tra đang mở rộng, bắt thêm chủ tiệm vàng lớn, rủi ro liên đới công ty mẹ. Khớp cảnh báo tuần trước của cả 3 kênh (Thái Phạm từng nói PNJ có thể về 44)."
       },
       {
-        "label": "Fed giữ lãi cao “for longer”",
-        "detail": "Thái Phạm + AzFin: Fed kẹt (tăng không được, hạ không xong), giữ 3,5–3,75% ≥1 năm → lãi thực dương hút vốn, đè định giá EM."
+        "label": "Định giá VN rẻ trong dài hạn",
+        "detail": "CK 5 phút (14/07): P/E VN-Index ~13.x vs trung bình 15.x, loại Vin ~11.x — \"siêu đáy\". Nhất quán với AzFin (percentile 10–15%) và Thái Phạm (đa số cổ phiếu đã tạo đáy sau giảm 50–60%)."
       },
       {
-        "label": "Khối ngoại bán ròng — đừng kỳ vọng dòng tiền ngoại",
-        "detail": "CK 5 phút + Thái Phạm: bán ròng >80.000 tỷ 6 tháng; quỹ thoái vốn đổ vào AI Mỹ. Nâng hạng chưa mang 2 tỷ đô về ngay."
+        "label": "Không đòn bẩy — xử lý margin ngay",
+        "detail": "CK 5 phút (13–14/07): chi phí vay cao, thu nhập bất định; bản thân và khách hàng không margin từ T10/2025, \"xử lý bây giờ là đã rất muộn\". Cùng hướng \"KHÔNG đòn bẩy\" của cả 3 kênh."
       },
       {
-        "label": "Dầu neo cao 75–87, không short",
-        "detail": "Thái Phạm: Iran tái chiến, dự trữ G7 thiếu, Petrodollar giữ giá. Thiên long nhẹ."
-      },
-      {
-        "label": "Tránh cổ phiếu pháp lý",
-        "detail": "Cả 3 nhắc PNJ (vụ kim cương, có thể về 44); Thái Phạm thêm PC1, Đức Giang; và FPT (rủi ro AI)."
+        "label": "Thanh khoản thấp chặn mọi nhịp hồi ngắn hạn",
+        "detail": "CK 5 phút (13/07): không có đáy ngắn hạn, kể cả đáy đẹp cũng không đi xa; TCB/SSI cố tạo đáy nhưng HPG thủng đáy. Trùng chẩn đoán \"kẹt thanh khoản\" của tuần trước."
       }
     ],
     "divergence": [
       {
         "label": "Tỷ trọng tiền/cổ phiếu",
-        "detail": "Thái Phạm phòng thủ mạnh (tiền 60% / cổ 40%) vs AzFin tấn công (cổ 70–80% / tiền 20–30%). Khác biệt lớn nhất — do khẩu vị & khung thời gian khác nhau."
+        "detail": "(Giữ từ tuần trước) Thái Phạm phòng thủ mạnh (tiền 60/cổ 40) vs AzFin tấn công (cổ 70–80%). CK 5 phút đứng giữa: vẫn cầm nhiều cổ phiếu, không bán hết chờ giảm, nhưng ngắn hạn \"không có cửa\"."
       },
       {
         "label": "Điểm mua VN-Index",
-        "detail": "Thái Phạm chờ vùng ~1.600 (78%) mới giải ngân mạnh; AzFin cho rằng đã đủ rẻ để tích lũy dần ngay."
+        "detail": "Thái Phạm chờ vùng ~1.600 (xác suất 78%) mới giải ngân mạnh; CK 5 phút & AzFin: đủ rẻ để mua TỪNG PHẦN cổ phiếu cơ bản ngay từ bây giờ, miễn là không vay."
       }
     ]
   },
@@ -2580,7 +2811,31 @@ window.HDT_DATA = {
       "asset": "CK Việt",
       "call": "Thị trường gần đáy hơn đỉnh, chưa xác nhận tăng",
       "result": "pending",
-      "note": "Đang theo dõi thanh khoản (~17.000 tỷ/phiên) và điểm xác nhận."
+      "note": "Video 13/07 tự cập nhật: chưa có đáy ngắn hạn, HPG thủng đáy trong khi TCB/SSI cố tạo đáy — tiếp tục theo dõi, chưa chốt."
+    },
+    {
+      "expert": "ck-5-phut",
+      "date": "13/07",
+      "asset": "CK Việt",
+      "call": "Không có đáy ngắn hạn — thị trường yếu/đi ngang thêm một thời gian",
+      "result": "pending",
+      "note": "Đối chiếu diễn biến VN-Index và thanh khoản các tuần tới."
+    },
+    {
+      "expert": "ck-5-phut",
+      "date": "14/07",
+      "asset": "CK Việt",
+      "call": "P/E ~13.x (loại Vin ~11.x) là vùng siêu đáy — mua từng phần cổ phiếu cơ bản chiết khấu ~30%",
+      "result": "pending",
+      "note": "Kiểm chứng khi thị trường xác nhận đáy/hồi phục; DPM ~24 là ví dụ điểm vào từng phần."
+    },
+    {
+      "expert": "ck-5-phut",
+      "date": "15/07",
+      "asset": "PNJ",
+      "call": "Không mua PNJ — rủi ro pháp lý liên đới, kể cả phiên trần",
+      "result": "pending",
+      "note": "Chờ kết quả điều tra và diễn biến giá PNJ để đối chiếu."
     }
   ]
 };

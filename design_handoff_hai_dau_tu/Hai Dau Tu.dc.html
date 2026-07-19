@@ -470,6 +470,102 @@ input::placeholder { color: #A3A29A; }
     </div>
   </sc-if>
 
+  <!-- ===================== HÀNH ĐỘNG GIÁ ===================== -->
+  <sc-if value="{{ isActions }}" hint-placeholder-val="{{ false }}">
+    <div data-screen-label="Hành động" style="max-width:1180px; margin:0 auto; padding:28px 20px 60px; display:flex; flex-direction:column; gap:20px;">
+      <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+        <div>
+          <h1 style="margin:0; font-size:24px; font-weight:800; letter-spacing:-0.4px;">Hành động giá</h1>
+          <div style="margin-top:6px; font-size:13.5px; color:#6E6D66; line-height:1.5;">Bảng tổng hợp việc cần làm từ nhận định mới nhất: vị thế đang chạy · lệnh chờ mức giá kích hoạt · sự kiện sắp tới.</div>
+        </div>
+        <div style="font-size:11.5px; font-family:'IBM Plex Mono',monospace; color:#9B9A92;">Cập nhật {{ actUpdated }}</div>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:16px; align-items:start;">
+
+        <!-- Cột 1: Đang chạy -->
+        <div style="background:#F4F3EE; border:1px solid #E7E6E1; border-radius:16px; padding:14px; display:flex; flex-direction:column; gap:10px;">
+          <div style="display:flex; align-items:center; gap:8px; padding:2px 4px;">
+            <div style="width:9px; height:9px; border-radius:50%; background:oklch(0.72 0.14 150);"></div>
+            <div style="font-size:13px; font-weight:800; letter-spacing:0.3px; text-transform:uppercase;">Đang chạy</div>
+            <div style="font-size:11px; font-weight:700; padding:2px 8px; border-radius:999px; background:#E7E6E1; color:#5F5E57;">{{ actNowCount }}</div>
+          </div>
+          <sc-for list="{{ actNow }}" as="an" hint-placeholder-count="5">
+            <div class="card-lift" style="background:#FFFFFF; border:1px solid #E7E6E1; border-left:4px solid {{ an.accent }}; border-radius:12px; padding:12px 14px; display:flex; flex-direction:column; gap:6px;">
+              <div style="display:flex; align-items:center; justify-content:space-between; gap:8px; flex-wrap:wrap;">
+                <div style="font-size:13.5px; font-weight:700;">{{ an.asset }}</div>
+                <div style="font-size:10.5px; font-weight:800; letter-spacing:0.4px; padding:3px 9px; border-radius:999px; background:{{ an.bg }}; color:{{ an.color }};">{{ an.dir }}</div>
+              </div>
+              <div style="font-size:12.5px; color:#46453F; line-height:1.5;">{{ an.detail }}</div>
+              <div style="display:flex; align-items:center; justify-content:space-between; gap:8px; flex-wrap:wrap;">
+                <div style="font-size:11px; font-family:'IBM Plex Mono',monospace; color:oklch(0.42 0.08 235); font-weight:600;">{{ an.level }}</div>
+                <div style="display:flex; align-items:center; gap:5px;">
+                  <div style="width:18px; height:18px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:7.5px; font-weight:700;">{{ an.initials }}</div>
+                  <div style="font-size:10.5px; color:#9B9A92;">{{ an.expertName }}</div>
+                </div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+
+        <!-- Cột 2: Chờ kích hoạt -->
+        <div style="background:#F4F3EE; border:1px solid #E7E6E1; border-radius:16px; padding:14px; display:flex; flex-direction:column; gap:10px;">
+          <div style="display:flex; align-items:center; gap:8px; padding:2px 4px;">
+            <div style="width:9px; height:9px; border-radius:50%; background:oklch(0.78 0.12 85);"></div>
+            <div style="font-size:13px; font-weight:800; letter-spacing:0.3px; text-transform:uppercase;">Chờ kích hoạt</div>
+            <div style="font-size:11px; font-weight:700; padding:2px 8px; border-radius:999px; background:#E7E6E1; color:#5F5E57;">{{ actWaitingCount }}</div>
+          </div>
+          <sc-for list="{{ actWaiting }}" as="aw" hint-placeholder-count="5">
+            <div class="card-lift" style="background:#FFFFFF; border:1px solid #E7E6E1; border-left:4px solid {{ aw.accent }}; border-radius:12px; padding:12px 14px; display:flex; flex-direction:column; gap:6px;">
+              <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <div style="font-size:13.5px; font-weight:700;">{{ aw.asset }}</div>
+                <div style="font-size:12px; font-family:'IBM Plex Mono',monospace; font-weight:700; padding:2px 9px; border-radius:8px; background:#EFEEE9; color:#33322D; border:1px dashed #C9C8C0;">{{ aw.trigger }}</div>
+              </div>
+              <div style="display:flex; align-items:center; gap:7px;">
+                <div style="font-size:12px; color:#9B9A92;">→</div>
+                <div style="font-size:10.5px; font-weight:800; letter-spacing:0.4px; padding:3px 9px; border-radius:999px; background:{{ aw.bg }}; color:{{ aw.color }};">{{ aw.action }}</div>
+              </div>
+              <div style="font-size:12px; color:#6E6D66; line-height:1.5;">{{ aw.note }}</div>
+              <div style="display:flex; align-items:center; gap:5px; justify-content:flex-end;">
+                <div style="width:18px; height:18px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:7.5px; font-weight:700;">{{ aw.initials }}</div>
+                <div style="font-size:10.5px; color:#9B9A92;">{{ aw.expertName }}</div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+
+        <!-- Cột 3: Sắp diễn ra -->
+        <div style="background:#F4F3EE; border:1px solid #E7E6E1; border-radius:16px; padding:14px; display:flex; flex-direction:column; gap:10px;">
+          <div style="display:flex; align-items:center; gap:8px; padding:2px 4px;">
+            <div style="width:9px; height:9px; border-radius:50%; background:oklch(0.62 0.19 27);"></div>
+            <div style="font-size:13px; font-weight:800; letter-spacing:0.3px; text-transform:uppercase;">Sắp diễn ra</div>
+            <div style="font-size:11px; font-weight:700; padding:2px 8px; border-radius:999px; background:#E7E6E1; color:#5F5E57;">{{ actEventsCount }}</div>
+          </div>
+          <sc-for list="{{ actEvents }}" as="ae" hint-placeholder-count="5">
+            <div class="card-lift" style="background:#FFFFFF; border:1px solid #E7E6E1; border-left:4px solid {{ ae.accent }}; border-radius:12px; padding:12px 14px; display:flex; flex-direction:column; gap:6px; opacity:{{ ae.dim }};">
+              <div style="display:flex; align-items:center; justify-content:space-between; gap:8px; flex-wrap:wrap;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                  <div style="font-size:12px; font-family:'IBM Plex Mono',monospace; font-weight:700; padding:3px 9px; border-radius:8px; background:{{ ae.bg }}; color:{{ ae.color }};">{{ ae.dLabel }}</div>
+                  <div style="font-size:13px; font-weight:700;">{{ ae.label }}</div>
+                </div>
+                <sc-if value="{{ ae.whenBold }}" hint-placeholder-val="{{ false }}">
+                  <div style="font-size:10.5px; font-weight:700; color:oklch(0.42 0.08 235);">{{ ae.when }}</div>
+                </sc-if>
+              </div>
+              <div style="font-size:12px; color:#6E6D66; line-height:1.5;">{{ ae.note }}</div>
+              <div style="display:flex; align-items:center; gap:5px; justify-content:flex-end;">
+                <div style="width:18px; height:18px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:7.5px; font-weight:700;">{{ ae.initials }}</div>
+                <div style="font-size:10.5px; color:#9B9A92;">{{ ae.expertName }}</div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+
+      </div>
+      <div style="font-size:12px; color:#9B9A92; text-align:center; padding-top:4px;">Tổng hợp tự động từ nhận định mới nhất của 3 chuyên gia · chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</div>
+    </div>
+  </sc-if>
+
   <!-- ===================== BẢNG ĐIỂM ===================== -->
   <sc-if value="{{ isScorecard }}" hint-placeholder-val="{{ false }}">
     <div data-screen-label="Bảng điểm" style="max-width:980px; margin:0 auto; padding:28px 20px 60px; display:flex; flex-direction:column; gap:18px;">
@@ -874,6 +970,7 @@ class Component extends DCLogic {
 
     const navDefs = [
       { key: 'dashboard',     label: 'Tổng quan' },
+      { key: 'actions',       label: 'Hành động' },
       { key: 'experts-list',  label: 'Chuyên gia' },
       { key: 'assets',        label: 'Tài sản' },
       { key: 'calls',         label: 'Khuyến nghị' },
@@ -1749,6 +1846,39 @@ class Component extends DCLogic {
       onClick: () => this.setState({ srcType: i })
     }));
 
+    // ── Trang Hành động giá (HDT.actions) ─────────────────────────────────
+    const ACTS = HDT.actions || { now: [], waiting: [], events: [] };
+    const ACT_ACCENT = { up: 'oklch(0.72 0.14 150)', down: 'oklch(0.62 0.19 27)', warn: 'oklch(0.78 0.12 85)', wait: '#C9C8C0' };
+    const mkActExpert = (id) => {
+      const e = HDT.experts[id] || {};
+      return { initials: e.initials || '?', expertName: e.name || id };
+    };
+    const actNow = (ACTS.now || []).map(a => ({
+      asset: a.asset, dir: a.dir, detail: a.detail, level: a.level,
+      accent: ACT_ACCENT[a.sig] || '#C9C8C0', ...CHIP_SIG[a.sig], ...mkActExpert(a.expertId)
+    }));
+    const actWaiting = (ACTS.waiting || []).map(a => ({
+      asset: a.asset, trigger: a.trigger, action: a.action, note: a.note,
+      accent: ACT_ACCENT[a.sig] || '#C9C8C0', ...CHIP_SIG[a.sig], ...mkActExpert(a.expertId)
+    }));
+    const _actToday = new Date(); _actToday.setHours(0, 0, 0, 0);
+    const actEvents = (ACTS.events || []).map(ev => {
+      let dLabel = ev.dateLabel || '', when = '', past = false;
+      if (ev.date) {
+        const d = new Date(ev.date + 'T00:00:00');
+        dLabel = ('0' + d.getDate()).slice(-2) + '/' + ('0' + (d.getMonth() + 1)).slice(-2);
+        const diff = Math.round((d - _actToday) / 86400000);
+        past = diff < 0;
+        when = diff < 0 ? 'Đã qua' : diff === 0 ? 'HÔM NAY' : diff === 1 ? 'Ngày mai' : 'Còn ' + diff + ' ngày';
+      }
+      return {
+        dLabel, when, label: ev.label, note: ev.note,
+        whenBold: !past && ev.date, dim: past ? '0.55' : '1',
+        accent: ACT_ACCENT[ev.sig] || '#C9C8C0', ...CHIP_SIG[ev.sig], ...mkActExpert(ev.expertId)
+      };
+    });
+    const actUpdated = ACTS.updated || '';
+
     return {
       showLogin: !s.logged, showApp: s.logged,
       isDashboard: s.screen === 'dashboard', isExpertsList: s.screen === 'experts-list',
@@ -1756,6 +1886,9 @@ class Component extends DCLogic {
       isHistory: s.screen === 'history', isAdmin: s.screen === 'admin',
       isAssets: s.screen === 'assets', isCalls: s.screen === 'calls',
       isScorecard: s.screen === 'scorecard',
+      isActions: s.screen === 'actions',
+      actNow, actWaiting, actEvents, actUpdated,
+      actNowCount: actNow.length, actWaitingCount: actWaiting.length, actEventsCount: actEvents.length,
       showWeekly: !showResults,
       weeklyRange: W.dateRange, weeklyAction: W.action,
       weeklyConsensus: W.consensus, weeklyDivergence: W.divergence,

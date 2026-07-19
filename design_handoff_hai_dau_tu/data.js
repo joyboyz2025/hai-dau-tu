@@ -3239,5 +3239,208 @@ window.HDT_DATA = {
       "result": "pending",
       "note": "Midcap về ngang đáy chiến tranh thương mại; BCTC Q2 sẽ không tác động nhiều lên giá."
     }
-  ]
+  ],
+  "actions": {
+    "updated": "19/07/2026",
+    "now": [
+      {
+        "asset": "Dầu WTI",
+        "dir": "LONG",
+        "sig": "up",
+        "expertId": "thai-pham",
+        "detail": "Giữ long — Trung Đông leo thang, không short 2–3 tuần tới.",
+        "level": "Đích 88–90 · cắt lỗ 78"
+      },
+      {
+        "asset": "DCM + DPM",
+        "dir": "TÍCH LŨY",
+        "sig": "up",
+        "expertId": "thai-pham",
+        "detail": "Mua dài hạn vùng đáy — đã vào 70% vị thế, cầm ăn cổ tức \"bất chấp qua sóng gió\".",
+        "level": "Trần ~30% danh mục"
+      },
+      {
+        "asset": "Tích sản hàng tháng",
+        "dir": "MUA ĐỀU",
+        "sig": "up",
+        "expertId": "azfin",
+        "detail": "Danh mục 5–10 mã đầu ngành: P/E <10, P/B <2, ROE >15%, cổ tức x2–3 thị trường.",
+        "level": "Loại ngay mã có lãnh đạo bị khởi tố"
+      },
+      {
+        "asset": "S&P 500 / US30",
+        "dir": "SHORT",
+        "sig": "down",
+        "expertId": "thai-pham",
+        "detail": "Vào vùng short — margin cá nhân Mỹ 1,4% vốn hóa, ngang đỉnh 2018, vượt dotcom.",
+        "level": "Mỹ chỉ hồi vài ngày rồi giảm tiếp"
+      },
+      {
+        "asset": "Apple",
+        "dir": "SHORT 1/2",
+        "sig": "down",
+        "expertId": "thai-pham",
+        "detail": "Đã short nửa vị thế 320–330; nửa còn lại để dành sau BCTC 30/07.",
+        "level": "Vào 320–330 · giữ qua 30/07"
+      },
+      {
+        "asset": "SpaceX",
+        "dir": "SHORT",
+        "sig": "down",
+        "expertId": "thai-pham",
+        "detail": "Giữ short từ ~155 — còn 4 đợt unlock cổ phiếu tới 12/2026, cung tăng gấp 8 lần.",
+        "level": "Đích 80–87 · giữ đến T1/2027"
+      },
+      {
+        "asset": "Intel · MU · Cyber",
+        "dir": "SHORT",
+        "sig": "down",
+        "expertId": "thai-pham",
+        "detail": "Intel đích ~77; MU/Marvell đã chốt 1/2 lời; canh short Palo Alto, Fortinet, CrowdStrike.",
+        "level": "Vị thế nhỏ · không đòn bẩy"
+      },
+      {
+        "asset": "Samsung / Kospi",
+        "dir": "SHORT",
+        "sig": "down",
+        "expertId": "thai-pham",
+        "detail": "Giữ short — Kospi margin call diện rộng, \"bạo phát bạo tàn\".",
+        "level": "214.000 → cực đoan 170.000 KRW"
+      },
+      {
+        "asset": "BID · SCS · VNM · TCX",
+        "dir": "GIỮ",
+        "sig": "wait",
+        "expertId": "thai-pham",
+        "detail": "Danh mục cổ phiếu 40%: VNM túc tắc vùng 56, bán khi +5–7%; SCS ăn cổ tức; bỏ hẳn lướt sóng.",
+        "level": "Tiền 60% · cổ 40%"
+      },
+      {
+        "asset": "Midcap VN",
+        "dir": "KHÔNG BÁN",
+        "sig": "warn",
+        "expertId": "ck-5-phut",
+        "detail": "Bán lúc này rủi ro hơn nắm giữ — nhiều mã về ngang đáy chiến tranh thương mại. Ưu tiên duy nhất: xử lý margin.",
+        "level": "Nằm yên chịu đựng · đợi tín hiệu mới"
+      }
+    ],
+    "waiting": [
+      {
+        "asset": "Vàng",
+        "trigger": "3.600–3.700",
+        "action": "MUA BẮT ĐÁY",
+        "sig": "up",
+        "expertId": "thai-pham",
+        "note": "Kịch bản quét xuống — \"sẽ mua bắt đáy tại đó\"; hồi kỹ thuật khó về 4.100."
+      },
+      {
+        "asset": "VN-Index",
+        "trigger": "~1.600",
+        "action": "GIẢI NGÂN MẠNH",
+        "sig": "up",
+        "expertId": "thai-pham",
+        "note": "Kịch bản \"rất khả thi\" — quỹ ngoại rút đồng loạt; là điểm mua lớn nhất đang chờ."
+      },
+      {
+        "asset": "Bitcoin",
+        "trigger": "~50.000",
+        "action": "MUA LẠI",
+        "sig": "up",
+        "expertId": "thai-pham",
+        "note": "Chỉ giải ngân khi test đỉnh 2021; trên đó chỉ lướt."
+      },
+      {
+        "asset": "Dầu WTI",
+        "trigger": "88–90",
+        "action": "CHỐT LONG",
+        "sig": "up",
+        "expertId": "thai-pham",
+        "note": "UK/Brent 95–96 nếu đánh lớn."
+      },
+      {
+        "asset": "SSI",
+        "trigger": "Đóng > 26",
+        "action": "MUA THEO TÍN HIỆU",
+        "sig": "wait",
+        "expertId": "ck-5-phut",
+        "note": "Rút chân đẹp nhưng chưa xác nhận; không được thì đợi sang tuần — không vội."
+      },
+      {
+        "asset": "Vàng (long cũ)",
+        "trigger": "~4.040",
+        "action": "CHỐT LỜI",
+        "sig": "wait",
+        "expertId": "thai-pham",
+        "note": "Stop loss 3.930 cho vị thế long đang giữ."
+      },
+      {
+        "asset": "Vàng trong nước",
+        "trigger": "Chênh ≤ 10–12tr",
+        "action": "MUA VẬT CHẤT",
+        "sig": "wait",
+        "expertId": "thai-pham",
+        "note": "Hiện chênh 19–20tr/lượng — không mua; chỉ mua thương hiệu uy tín 15–20 năm, mua đâu bán đấy."
+      },
+      {
+        "asset": "Bitcoin",
+        "trigger": "69–70k (fake pump)",
+        "action": "SHORT",
+        "sig": "down",
+        "expertId": "thai-pham",
+        "note": "Chỉ short nếu căng thẳng Iran đẩy giá bơm ảo lên vùng này."
+      },
+      {
+        "asset": "Nasdaq",
+        "trigger": "Hồi 1–2 phiên",
+        "action": "SHORT",
+        "sig": "down",
+        "expertId": "thai-pham",
+        "note": "Nhiều khi phiên châu Á không kịp cho hồi — canh sát."
+      }
+    ],
+    "events": [
+      {
+        "date": "2026-07-20",
+        "label": "Phiên đầu tuần châu Á",
+        "note": "Xem phản ứng Samsung/Kospi — Samsung có thể gãy về 214.000 KRW.",
+        "sig": "down",
+        "expertId": "thai-pham"
+      },
+      {
+        "date": "2026-07-21",
+        "label": "BVBank chào sàn (13.1)",
+        "note": "Thái Phạm giữ trong danh mục cổ phiếu 40%.",
+        "sig": "wait",
+        "expertId": "thai-pham"
+      },
+      {
+        "date": "2026-07-24",
+        "label": "Mỹ áp thuế điều tra mới",
+        "note": "Hết miễn thuế — chi phí chuyển sang người tiêu dùng, lạm phát T7–T8 tăng lại.",
+        "sig": "warn",
+        "expertId": "thai-pham"
+      },
+      {
+        "date": "2026-07-30",
+        "label": "BCTC Apple + guidance Q3",
+        "note": "Vào nốt 1/2 vị thế short nếu guidance xấu — kỳ vọng \"gãy sâu về chen line\".",
+        "sig": "down",
+        "expertId": "thai-pham"
+      },
+      {
+        "dateLabel": "T7–T8",
+        "label": "CPI Mỹ phản ánh dầu tăng",
+        "note": "Fed chỉ có giữ hoặc tăng lãi (BofA: +75bps) — không có cửa hạ.",
+        "sig": "warn",
+        "expertId": "thai-pham"
+      },
+      {
+        "dateLabel": "Cuối T7–T8",
+        "label": "Mùa BCTC Q2 Việt Nam",
+        "note": "\"Báo cáo ít quan trọng nhất năm\" — không mua theo BCTC; DN tốt ra báo cáo ổn mà giá giảm thì vẫn giữ.",
+        "sig": "wait",
+        "expertId": "ck-5-phut"
+      }
+    ]
+  }
 };

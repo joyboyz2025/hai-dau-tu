@@ -4059,6 +4059,47 @@ window.HDT_DATA = {
       "cautionNote": "Chủ tịch/TGĐ bị khởi tố — tiêu chí loại ngay lập tức của AzFin; chờ vào lại uptrend mới bàn tiếp."
     },
     {
+      "key": "vin",
+      "symbol": "VIC · VHM",
+      "name": "Nhóm Vin (VIC/VHM/VRE)",
+      "group": "Chứng khoán Việt Nam",
+      "tv": "HOSE:VIC",
+      "sig": "warn",
+      "stance": "KHÔNG KHUYẾN NGHỊ — CHI PHỐI CHỈ SỐ",
+      "aliases": [
+        "vic",
+        "vhm",
+        "vre",
+        "nhom vin",
+        "vin group",
+        "vinhome"
+      ],
+      "potential": 1,
+      "caution": 4,
+      "potentialNote": "Không chuyên gia nào khuyến nghị mua — định giá đã rất cao sau 2 năm tăng 5–6 lần.",
+      "cautionNote": "Chiếm >20% vốn hóa, là lý do chính index \"ảo\" so với danh mục thật — đọc sai chỉ số là hành động sai.",
+      "oneLiner": "Không phải khuyến nghị mua/bán — trang này để hiểu vì sao VN-Index không phản ánh danh mục của bạn.",
+      "thesis": [
+        {
+          "title": "Vì sao phải theo dõi dù không giao dịch",
+          "body": "Chứng khoán 5 phút (16–17/07): một nhóm ngành chỉ 3–4 cổ phiếu nhưng chiếm hơn 20% vốn hóa, hút tiền \"độc nhất vô nhị\" 2 năm qua với mức tăng 5–6 lần — làm mọi tín hiệu trên VN-Index (nến đảo chiều, đánh giá downtrend) bị chậm và nhiễu; chưa cực đoan như Hàn Quốc (Samsung + SK Hynix >50% vốn hóa) nhưng cùng bản chất. Thái Phạm (Tập 38) nhìn từ phía dòng vốn: VIC/VHM/VRE định giá đã rất cao và \"không thể tăng được nữa\" — quỹ ngoại mua cả rổ VN30/ETF bị kẹt chính vì cấu trúc này, và đó là một phần lý do họ rút. Kết luận thực dụng cho gia đình: đừng đánh giá thị trường qua điểm số index, hãy nhìn midcap."
+        }
+      ],
+      "orders": [
+        {
+          "expertId": "ck-5-phut",
+          "dir": "ĐỨNG NGOÀI",
+          "sig": "warn",
+          "entry": "—",
+          "target": "Chỉ dùng làm bộ lọc đọc chỉ số",
+          "stop": "—",
+          "status": "active",
+          "date": "17/07",
+          "note": "Điểm số VN-Index bị nhóm này chi phối — nhìn midcap để đánh giá thật."
+        }
+      ]
+    },
+    {
       "key": "aapl",
       "symbol": "AAPL",
       "name": "Apple",
@@ -4293,17 +4334,16 @@ window.HDT_DATA = {
     },
     {
       "key": "spx",
-      "symbol": "S&P 500",
-      "name": "S&P 500 / US30 / Nasdaq",
+      "symbol": "S&P 500 · US30",
+      "name": "Chỉ số Mỹ — S&P 500 & Dow Jones",
       "group": "Quốc tế",
       "tv": "TVC:SPX",
       "sig": "down",
-      "stance": "VÀO VÙNG SHORT",
+      "stance": "SHORT NGAY",
       "aliases": [
         "s&p",
         "sp500",
         "us30",
-        "nasdaq",
         "dow"
       ],
       "oneLiner": "Margin cá nhân Mỹ 1,4% vốn hóa — ngang đỉnh 2018, vượt dotcom: \"hết tiền thì phải sập\".",
@@ -4328,23 +4368,421 @@ window.HDT_DATA = {
           "status": "active",
           "date": "18/07",
           "note": "Margin 1,4% vốn hóa là căn cứ chính."
-        },
-        {
-          "expertId": "thai-pham",
-          "dir": "SHORT NASDAQ",
-          "sig": "down",
-          "entry": "Sau nhịp hồi 1–2 phiên",
-          "target": "Theo đà gãy chung",
-          "stop": "—",
-          "status": "waiting",
-          "date": "18/07",
-          "note": "Phiên châu Á có thể không cho cơ hội hồi."
         }
       ],
       "potential": 3,
       "caution": 4,
       "potentialNote": "Căn cứ vĩ mô dày: margin 1,4% vốn hóa ngang đỉnh 2018, IPO hút 220 tỷ đô — \"hết tiền thì phải sập\".",
       "cautionNote": "Chỉ số giật hai đầu trong phiên (-0,8% rồi +0,3%) quét vị thế — short cường độ cao kèm margin là chết trước khi đúng."
+    },
+    {
+      "key": "ndq",
+      "symbol": "NASDAQ",
+      "name": "Nasdaq Composite",
+      "group": "Quốc tế",
+      "tv": "TVC:NDQ",
+      "sig": "down",
+      "stance": "SHORT SAU HỒI 1–2 PHIÊN",
+      "aliases": [
+        "nasdaq"
+      ],
+      "potential": 3,
+      "caution": 4,
+      "potentialNote": "Đã gãy; hồi kỹ thuật là điểm vào short theo đà giảm chung của công nghệ Mỹ.",
+      "cautionNote": "Điểm vào phụ thuộc nhịp hồi có thể không đến — \"phiên châu Á nhiều khi cho đi luôn\"; biến động giật hai đầu.",
+      "oneLiner": "Đã gãy — kế hoạch là đợi hồi kỹ thuật 1–2 phiên rồi vào lệnh short.",
+      "thesis": [
+        {
+          "title": "Kịch bản của Thái Phạm",
+          "body": "Tập 38: \"Nasdaq gãy rồi — tuần tới sẽ hồi phục kỹ thuật một hai phiên, sau đó đà giảm tiếp tục.\" Lệnh short vì thế KHÔNG vào ngay như S&P/US30 mà đợi nhịp hồi; rủi ro duy nhất là nhịp hồi không kịp đến — cơn sốt margin Hàn Quốc lan sang và Mỹ đánh Iran có thể khiến \"phiên châu Á cho đi luôn\". Nằm trong bức tranh lớn: công nghệ Mỹ chịu 3 lực đè — IPO/phát hành hút tiền thật, AI capex dư thừa (XAI/Meta cho thuê lại công suất), và mô hình Trung Quốc giá rẻ (Kimi K3 ngang Fable 5/GPT-5.6 với 60% giá)."
+        }
+      ],
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "SHORT",
+          "sig": "down",
+          "entry": "Sau nhịp hồi kỹ thuật 1–2 phiên",
+          "target": "Theo đà gãy chung",
+          "stop": "Vị thế nhỏ, không margin",
+          "status": "waiting",
+          "date": "18/07",
+          "note": "Canh sát — nhịp hồi có thể rất ngắn hoặc không đến."
+        }
+      ]
+    },
+    {
+      "key": "nikkei",
+      "symbol": "NI225",
+      "name": "Nikkei 225 (Nhật)",
+      "group": "Quốc tế",
+      "tv": "TVC:NI225",
+      "sig": "down",
+      "stance": "CANH CAO ĐẬP XUỐNG",
+      "aliases": [
+        "nikkei",
+        "nhat ban",
+        "ni225"
+      ],
+      "potential": 3,
+      "caution": 3,
+      "potentialNote": "Cùng nhịp gãy với Mỹ/Hàn — mục tiêu test lại 58.700 khá rõ.",
+      "cautionNote": "Cần kiên nhẫn đợi nhịp hồi để vào; đòn bẩy chỉ số Nhật biến động lớn.",
+      "oneLiner": "Hồi kỹ thuật giống Mỹ 1–2 hôm rồi phải về test lại vùng 58.700.",
+      "thesis": [
+        {
+          "title": "Kịch bản",
+          "body": "Tập 38: \"Thằng Nhật thì cũng thế thôi — hồi phục kỹ thuật giống Mỹ được một hai hôm, sau đó lại phải về test lại vùng 58.700. Canh cao đập xuống, chẳng có vấn đề gì.\" Nhật nằm trong cụm Đông Á đang chịu margin call dây chuyền cùng Hàn Quốc; nếu cộng hưởng thêm nhịp Mỹ đánh Iran thì \"tuần tới nó đè nặng\"."
+        }
+      ],
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "SHORT",
+          "sig": "down",
+          "entry": "Canh nhịp hồi 1–2 hôm",
+          "target": "Test 58.700",
+          "stop": "—",
+          "status": "waiting",
+          "date": "18/07",
+          "note": "Cùng cụm short Đông Á với Samsung/Kospi."
+        }
+      ]
+    },
+    {
+      "key": "mrvl",
+      "symbol": "MRVL",
+      "name": "Marvell Technology",
+      "group": "Quốc tế",
+      "tv": "NASDAQ:MRVL",
+      "sig": "down",
+      "stance": "SHORT — ĐÃ CHỐT 1/2",
+      "aliases": [
+        "marvell",
+        "mrvl"
+      ],
+      "potential": 3,
+      "caution": 4,
+      "potentialNote": "Đã có quả ngọt sau giai đoạn chịu đau — còn dư địa giảm cùng nhóm chip.",
+      "cautionNote": "Từng kéo ngược gần 10% từ điểm vào — \"thịt lên thịt xuống\"; bắt buộc vị thế nhỏ.",
+      "oneLiner": "Vào 299–300 bị kéo lên gần 10% trước khi có quả ngọt — thứ Sáu đã chốt 1/2.",
+      "thesis": [
+        {
+          "title": "Hành trình lệnh",
+          "body": "Tập 38: vào short vùng 299–300, bị thị trường \"thịt lên thịt xuống\" kéo ngược gần 10% trước khi giảm. Thứ Sáu tuần 29 đã đóng 1/2 vị thế vì dự phòng nhịp hồi kỹ thuật 1–2 ngày, \"sau đó nó mới giảm tiếp — vài ngày nó mới giảm tiếp\". Cùng thesis với MU/Intel: chu kỳ chip đã qua đỉnh, dư cung AI bắt đầu hiện hình."
+        }
+      ],
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "SHORT (giữ 1/2)",
+          "sig": "down",
+          "entry": "299–300",
+          "target": "Giảm tiếp sau nhịp hồi 1–2 ngày",
+          "stop": "—",
+          "status": "active",
+          "date": "18/07",
+          "note": "Đã chốt 1/2 thứ Sáu."
+        }
+      ]
+    },
+    {
+      "key": "panw",
+      "symbol": "PANW",
+      "name": "Palo Alto Networks",
+      "group": "Quốc tế",
+      "tv": "NASDAQ:PANW",
+      "sig": "down",
+      "stance": "SHORT — VỊ THẾ NHỎ",
+      "aliases": [
+        "palo alto",
+        "panw",
+        "paulo"
+      ],
+      "potential": 3,
+      "caution": 3,
+      "potentialNote": "Nhóm cyber security được xác định là nhóm gãy TIẾP THEO sau AI chip/bộ nhớ.",
+      "cautionNote": "\"Làm sao vào phát gãy ngay được\" — phải vào từ từ, chấp nhận đợi; đòn bẩy gần 0.",
+      "oneLiner": "Đại diện nhóm cyber security — nhóm được gọi tên sẽ gãy sau AI chip.",
+      "thesis": [
+        {
+          "title": "Thesis nhóm cyber",
+          "body": "Tập 38: sau AI chip và bộ nhớ, nhóm gãy tiếp theo là cyber security — Palo Alto được nêu tên đầu tiên. Kỷ luật vị thế được nhấn rất kỹ ở kèo này: \"có 10.000 đô thì đánh đúng 10.000–15.000 đô\" (đòn bẩy ~0–1,5x), vào vừa phải vì không thể bắt đúng điểm gãy — \"mình đầu tư phải nhẹ nhàng, cứ hùng hổ all-in thì một nhịp tăng 20% là cháy tài khoản\"."
+        }
+      ],
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "SHORT",
+          "sig": "down",
+          "entry": "Vào từ từ, vị thế nhỏ",
+          "target": "Theo nhịp gãy nhóm cyber",
+          "stop": "Đòn bẩy ≤1,5x thay stop",
+          "status": "active",
+          "date": "18/07",
+          "note": "Không kỳ vọng gãy ngay."
+        }
+      ]
+    },
+    {
+      "key": "ftnt",
+      "symbol": "FTNT",
+      "name": "Fortinet",
+      "group": "Quốc tế",
+      "tv": "NASDAQ:FTNT",
+      "sig": "down",
+      "stance": "SHORT — VỊ THẾ NHỎ",
+      "aliases": [
+        "fortinet",
+        "ftnt"
+      ],
+      "potential": 3,
+      "caution": 3,
+      "potentialNote": "Cùng rổ cyber security với PANW — \"có thể short được\".",
+      "cautionNote": "Cùng kỷ luật với PANW: vào từ từ, không đòn bẩy, chấp nhận chờ.",
+      "oneLiner": "Mã thứ hai trong rổ short cyber security của Thái Phạm.",
+      "thesis": [
+        {
+          "title": "Vị trí trong rổ",
+          "body": "Tập 38 nêu Fortinet ngay sau Palo Alto: \"thêm một mã nữa cũng bọn cyber security là Fortinet — các anh chị có thể short được.\" Luận điểm và kỷ luật vị thế giống hệt PANW: nhóm phòng thủ mạng là ứng viên gãy kế tiếp khi chu kỳ công nghệ Mỹ đảo chiều, nhưng phải vào nhỏ và kiên nhẫn."
+        }
+      ],
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "SHORT",
+          "sig": "down",
+          "entry": "Vào từ từ, vị thế nhỏ",
+          "target": "Theo nhịp gãy nhóm cyber",
+          "stop": "Không đòn bẩy",
+          "status": "active",
+          "date": "18/07",
+          "note": "Cùng rổ với PANW, CRWD."
+        }
+      ]
+    },
+    {
+      "key": "crwd",
+      "symbol": "CRWD",
+      "name": "CrowdStrike",
+      "group": "Quốc tế",
+      "tv": "NASDAQ:CRWD",
+      "sig": "down",
+      "stance": "SHORT — ĐANG BẮT ĐẦU GÃY",
+      "aliases": [
+        "crowdstrike",
+        "crwd",
+        "cloud strike"
+      ],
+      "potential": 3,
+      "caution": 3,
+      "potentialNote": "Đã bắt đầu cho giảm 3–4%/phiên — sớm nhất rổ cyber xác nhận hướng.",
+      "cautionNote": "Mới chớm gãy, có thể còn giật; cùng kỷ luật vị thế nhỏ như cả rổ.",
+      "oneLiner": "Mã cyber đầu tiên \"bắt đầu cho giảm 3–4%\" — xác nhận sớm cho cả rổ short.",
+      "thesis": [
+        {
+          "title": "Tín hiệu sớm của rổ",
+          "body": "Tập 38: \"ngày hôm nay nhìn CrowdStrike thì nó cũng bắt đầu cho giảm 4%, 3%\" — trong rổ cyber (PANW, FTNT, CRWD) đây là mã xác nhận hướng sớm nhất. Chiến lược chung của rổ không đổi: short với vị thế rất nhỏ, không đòn bẩy, xác định đây là nhóm gãy sau AI chip/bộ nhớ chứ không phải kèo ăn nhanh."
+        }
+      ],
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "SHORT",
+          "sig": "down",
+          "entry": "Đang giảm 3–4%/phiên",
+          "target": "Theo nhịp gãy nhóm cyber",
+          "stop": "Không đòn bẩy",
+          "status": "active",
+          "date": "18/07",
+          "note": "Tín hiệu sớm nhất trong rổ."
+        }
+      ]
+    },
+    {
+      "key": "amd",
+      "symbol": "AMD",
+      "name": "AMD",
+      "group": "Quốc tế",
+      "tv": "NASDAQ:AMD",
+      "sig": "down",
+      "stance": "HỒI LÀ GÃY TIẾP",
+      "aliases": [
+        "amd"
+      ],
+      "potential": 2,
+      "caution": 3,
+      "potentialNote": "Vẫn trong đà gãy nhưng đã giảm nhiều — phần dễ của kèo đã qua.",
+      "cautionNote": "Các nhịp hồi \"loáng ngoáng\" dễ dí ngược người short mới; theo dõi hơn là mở lệnh mới.",
+      "oneLiner": "\"AMD cũng vậy thôi — có thể hồi phục chút xíu rồi lại gãy.\"",
+      "thesis": [
+        {
+          "title": "Trong bức tranh bán dẫn",
+          "body": "Tập 38 nhắc AMD ngắn gọn nhưng rõ: \"AMD cũng có thể hồi phục chút xíu, lại gãy thôi\" — cùng khuôn với Intel (đích ~77) và cả nhóm semis đã qua đỉnh kéo rướn. Call gốc \"semiconductor kéo rướn sẽ chỉnh mạnh\" từ 12/06 đã được scorecard ghi nhận ĐÚNG. Với người ngoài cuộc, đây là mã theo dõi xác nhận xu hướng nhóm hơn là kèo vào mới."
+        }
+      ],
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "THEO DÕI / SHORT NHỊP HỒI",
+          "sig": "down",
+          "entry": "Nhịp hồi kỹ thuật",
+          "target": "Gãy tiếp theo nhóm semis",
+          "stop": "—",
+          "status": "waiting",
+          "date": "18/07",
+          "note": "Không phải kèo chính — kèo chính là Intel/MU."
+        }
+      ]
+    },
+    {
+      "key": "nvda",
+      "symbol": "NVDA",
+      "name": "Nvidia",
+      "group": "Quốc tế",
+      "tv": "NASDAQ:NVDA",
+      "sig": "down",
+      "stance": "TRÁNH — KHÔNG MUA KHÔNG SHORT",
+      "aliases": [
+        "nvidia",
+        "nvda"
+      ],
+      "potential": 2,
+      "caution": 4,
+      "potentialNote": "Không có kèo cụ thể — \"ngày kéo ngày giảm\", hai chiều đều khó ăn.",
+      "cautionNote": "Trung tâm của thesis dư cung AI: khách hàng lớn FOMO xong phải cho thuê lại công suất; mô hình TQ giá 60% đe dọa trực tiếp.",
+      "oneLiner": "\"Ngày kéo ngày giảm\" — đứng ngoài; là tâm điểm của thesis dư cung AI.",
+      "thesis": [
+        {
+          "title": "Vì sao đứng ngoài cả hai chiều",
+          "body": "Từ Tập 37 Thái Phạm đã xếp Nvidia vào diện \"tránh — đụng MA200 bật, khó ăn\"; Tập 38 mô tả trạng thái \"ngày kéo ngày giảm\" và sẽ giảm chung với chỉ số. Nhưng luận điểm dài hạn mới là phần đáng đọc: nhu cầu RAM/chip đắt tiền của Nvidia đứng trước hai câu hỏi — dư thừa công suất AI (XAI, Meta đầu tư xong phải cho thuê lại) và lựa chọn Trung Quốc giá rẻ (Kimi K3 của Alibaba/Tencent ngang Fable 5/GPT-5.6 với 60% giá); \"Jensen Huang bán quốc xẻng thì phải ca ngợi câu chuyện thế kỷ, nhưng người mua phải đặt câu hỏi về tương lai.\""
+        }
+      ],
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "ĐỨNG NGOÀI",
+          "sig": "down",
+          "entry": "—",
+          "target": "—",
+          "stop": "—",
+          "status": "active",
+          "date": "18/07",
+          "note": "Khó ăn cả hai chiều; theo dõi như chỉ báo tâm lý AI."
+        }
+      ]
+    },
+    {
+      "key": "googl",
+      "symbol": "GOOGL",
+      "name": "Alphabet (Google)",
+      "group": "Quốc tế",
+      "tv": "NASDAQ:GOOGL",
+      "sig": "wait",
+      "stance": "CHỜ MUA ~320",
+      "aliases": [
+        "google",
+        "googl",
+        "alphabet"
+      ],
+      "potential": 3,
+      "caution": 3,
+      "potentialNote": "Là mã Mỹ hiếm hoi có kèo MUA đang chờ (~320) — chất lượng tài sản tốt.",
+      "cautionNote": "Vừa phát hành hút 85 tỷ đô và sẽ \"giảm chung với US500\" — đừng mua trước khi chỉnh xong.",
+      "oneLiner": "Mã Mỹ duy nhất có kèo MUA đang treo: đợi về ~320.",
+      "thesis": [
+        {
+          "title": "Kèo mua ngược dòng rổ short",
+          "body": "Trong khi gần như toàn bộ danh sách Mỹ là short/tránh, Google từ Tập 37 được đặt kèo MUA với điều kiện giá đợi về ~320. Tập 38 bổ sung bối cảnh ngắn hạn: Google vừa phát hành hút 85 tỷ đô khỏi thị trường và \"sẽ giảm chung với US500\" — tức nhịp chỉnh chưa xong, kiên nhẫn đợi về vùng mục tiêu thay vì mua đuổi."
+        }
+      ],
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "CHỜ MUA",
+          "sig": "wait",
+          "entry": "~320",
+          "target": "Nắm giữ khi chỉnh xong",
+          "stop": "—",
+          "status": "waiting",
+          "date": "18/07",
+          "note": "Ngắn hạn còn giảm chung với chỉ số."
+        }
+      ]
+    },
+    {
+      "key": "nflx",
+      "symbol": "NFLX",
+      "name": "Netflix",
+      "group": "Quốc tế",
+      "tv": "NASDAQ:NFLX",
+      "sig": "down",
+      "stance": "TRÁNH — YẾU TỐ CHÍNH TRỊ",
+      "aliases": [
+        "netflix",
+        "nflx"
+      ],
+      "potential": 1,
+      "caution": 4,
+      "potentialNote": "Không có kèo — bị loại khỏi danh sách theo dõi từ trước.",
+      "cautionNote": "Rủi ro phi tài chính: mâu thuẫn cá nhân giữa lãnh đạo Netflix và chính quyền đương nhiệm.",
+      "oneLiner": "\"Thời của Trump — đừng đầu tư vào Netflix\": rủi ro chính trị phi tài chính.",
+      "thesis": [
+        {
+          "title": "Một loại rủi ro khác",
+          "body": "Tập 38: \"May, tôi không côn các anh chị mua Netflix. Thời Donald Trump ghét Netflix lắm — trong HĐQT Netflix có nhân vật mâu thuẫn thù hằn ghê gớm với đội này. Thời của ông Trump thì đừng đầu tư vào Netflix.\" Đây là ví dụ về rủi ro phi tài chính (chính trị – quan hệ cá nhân) mà báo cáo tài chính không thể hiện — cùng họ với bài học PNJ ở Việt Nam: rủi ro ngoài sổ sách thì tránh, không phân tích nội tại nữa."
+        }
+      ],
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "TRÁNH",
+          "sig": "down",
+          "entry": "—",
+          "target": "Hết nhiệm kỳ rủi ro chính trị",
+          "stop": "—",
+          "status": "active",
+          "date": "18/07",
+          "note": "Rủi ro phi tài chính — không định lượng được."
+        }
+      ]
+    },
+    {
+      "key": "ads",
+      "symbol": "ADS",
+      "name": "Adidas",
+      "group": "Quốc tế",
+      "tv": "XETR:ADS",
+      "sig": "wait",
+      "stance": "ĐÃ CHỐT LỜI — ĐÓNG KÈO",
+      "aliases": [
+        "adidas",
+        "aidas"
+      ],
+      "potential": 1,
+      "caution": 2,
+      "potentialNote": "Kèo đã kết thúc — \"hết World Cup rồi\", không còn catalyst.",
+      "cautionNote": "Không còn vị thế; chỉ lưu làm lịch sử minh bạch các kèo đã đóng.",
+      "oneLiner": "Kèo mua từ trước đã chốt lời: \"đợi mãi không lên 190 thì thôi, chốt\".",
+      "thesis": [
+        {
+          "title": "Kèo đã đóng",
+          "body": "Tập 38 tổng kết ngắn: Adidas là kèo mua từ mùa World Cup, \"đợi mãi không lên được trăm chín mấy thì thôi chốt lời — hết World Cup rồi\". Được giữ lại trong Sổ mã làm ví dụ về kỷ luật đóng kèo khi catalyst kết thúc, thay vì gồng chờ mục tiêu cũ."
+        }
+      ],
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "ĐÃ CHỐT LỜI",
+          "sig": "wait",
+          "entry": "Mua từ mùa World Cup",
+          "target": "Kỳ vọng cũ ~190 — không đạt, chốt sớm",
+          "stop": "—",
+          "status": "done",
+          "date": "18/07",
+          "note": "Catalyst hết → đóng kèo, không tiếc."
+        }
+      ]
     },
     {
       "key": "gold",
@@ -4531,6 +4969,44 @@ window.HDT_DATA = {
       "caution": 4,
       "potentialNote": "Chỉ còn kèo short fake pump 69–70k; mua thật phải đợi ~50k — xa vùng hiện tại.",
       "cautionNote": "Cấu trúc \"banana\" gãy, không còn câu chuyện thay thế tiền pháp định; Fed không hạ lãi — thiếu nhiên liệu tăng."
+    },
+    {
+      "key": "silver",
+      "symbol": "XAG/USD",
+      "name": "Bạc",
+      "group": "Hàng hóa & Crypto",
+      "tv": "OANDA:XAGUSD",
+      "sig": "wait",
+      "stance": "ĂN THEO VÀNG",
+      "aliases": [
+        "bac",
+        "silver",
+        "xag"
+      ],
+      "potential": 2,
+      "caution": 3,
+      "potentialNote": "Kèo phụ thuộc hoàn toàn kịch bản vàng — vàng hồi 4.300 thì bạc ~68 (theo Tập 37).",
+      "cautionNote": "Fair value được ước ~50 — mua đuổi phần chênh trên đó là trả giá cho kỳ vọng; vàng chưa tạo đáy thì bạc chưa có kèo riêng.",
+      "oneLiner": "Không có kèo độc lập — đi theo vàng; vàng chưa tạo đáy thì bạc đứng ngoài.",
+      "thesis": [
+        {
+          "title": "Kèo vệ tinh của vàng",
+          "body": "Từ Tập 37: bạc được xác định \"ăn theo vàng\" — kịch bản vàng hồi 4.300 thì bạc lên ~68, trong khi fair value ước ~50. Sang Tập 38, khi vàng chuyển sang kịch bản chờ quét đáy 3.600–3.700, bạc không có kèo riêng: đợi vàng tạo đáy xong mới tính, và cũng áp dụng nguyên tắc \"đợi giá chiết khấu\" thay vì mua đuổi phần kỳ vọng."
+        }
+      ],
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "CHỜ",
+          "sig": "wait",
+          "entry": "Đợi vàng tạo đáy 3.600–3.700",
+          "target": "Vàng hồi 4.300 → bạc ~68",
+          "stop": "Fair value ~50 làm mốc định giá",
+          "status": "waiting",
+          "date": "18/07",
+          "note": "Kèo vệ tinh, không đi trước vàng."
+        }
+      ]
     }
   ]
 };

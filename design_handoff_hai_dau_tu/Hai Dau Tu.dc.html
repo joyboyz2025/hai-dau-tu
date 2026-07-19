@@ -566,6 +566,160 @@ input::placeholder { color: #A3A29A; }
     </div>
   </sc-if>
 
+  <!-- ===================== SỔ MÃ (danh sách) ===================== -->
+  <sc-if value="{{ isTickers }}" hint-placeholder-val="{{ false }}">
+    <div data-screen-label="Sổ mã" style="max-width:1180px; margin:0 auto; padding:28px 20px 60px; display:flex; flex-direction:column; gap:22px;">
+      <div>
+        <h1 style="margin:0; font-size:24px; font-weight:800; letter-spacing:-0.4px;">Sổ mã</h1>
+        <div style="margin-top:6px; font-size:13.5px; color:#6E6D66; line-height:1.5;">Trang riêng cho từng mã: luận điểm chi tiết, tổng hợp lệnh của các chuyên gia, chart và lịch sử nhắc đến. {{ tickerTotal }} mã đang theo dõi.</div>
+      </div>
+      <sc-for list="{{ tickerGroups }}" as="tg" hint-placeholder-count="3">
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <div style="font-size:13px; font-weight:800; letter-spacing:0.4px; text-transform:uppercase;">{{ tg.group }}</div>
+            <div style="font-size:11px; font-weight:700; padding:2px 8px; border-radius:999px; background:#E7E6E1; color:#5F5E57;">{{ tg.count }}</div>
+          </div>
+          <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(255px, 1fr)); gap:12px;">
+            <sc-for list="{{ tg.items }}" as="tc" hint-placeholder-count="6">
+              <div onClick="{{ tc.onClick }}" class="card-lift" style="background:#FFFFFF; border:1px solid #E7E6E1; border-top:3px solid {{ tc.accent }}; border-radius:12px; padding:14px 16px; display:flex; flex-direction:column; gap:7px; cursor:pointer;">
+                <div style="display:flex; align-items:center; justify-content:space-between; gap:8px;">
+                  <div style="font-size:16px; font-weight:800; font-family:'IBM Plex Mono',monospace; letter-spacing:-0.3px;">{{ tc.symbol }}</div>
+                  <div style="font-size:9.5px; font-weight:800; letter-spacing:0.3px; padding:3px 8px; border-radius:999px; background:{{ tc.bg }}; color:{{ tc.color }}; white-space:nowrap;">{{ tc.stance }}</div>
+                </div>
+                <div style="font-size:11.5px; color:#9B9A92; margin-top:-4px;">{{ tc.name }}</div>
+                <div style="font-size:12.5px; color:#46453F; line-height:1.5; flex:1;">{{ tc.oneLiner }}</div>
+                <div style="font-size:11px; font-family:'IBM Plex Mono',monospace; color:oklch(0.42 0.08 235); font-weight:600; border-top:1px solid #F0EFEA; padding-top:8px;">{{ tc.meta }} →</div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+      <div style="font-size:12px; color:#9B9A92; text-align:center; padding-top:4px;">Bấm vào một mã để xem trang chi tiết · chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</div>
+    </div>
+  </sc-if>
+
+  <!-- ===================== SỔ MÃ (chi tiết 1 mã) ===================== -->
+  <sc-if value="{{ isTicker }}" hint-placeholder-val="{{ false }}">
+    <div data-screen-label="Chi tiết mã" style="max-width:980px; margin:0 auto; padding:28px 20px 60px; display:flex; flex-direction:column; gap:16px;">
+      <div onClick="{{ goTickers }}" style="font-size:13px; color:#6E6D66; cursor:pointer; display:flex; align-items:center; gap:6px;">← Sổ mã</div>
+
+      <!-- Header mã -->
+      <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:16px; padding:20px; display:flex; flex-direction:column; gap:8px;">
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap;">
+          <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+            <div style="font-size:26px; font-weight:800; font-family:'IBM Plex Mono',monospace; letter-spacing:-0.5px;">{{ tkSymbol }}</div>
+            <div style="font-size:14px; color:#6E6D66;">{{ tkName }}</div>
+          </div>
+          <div style="font-size:11px; font-weight:800; letter-spacing:0.3px; padding:5px 12px; border-radius:999px; background:{{ tkStanceBg }}; color:{{ tkStanceColor }};">{{ tkStance }}</div>
+        </div>
+        <div style="font-size:13.5px; color:#46453F; line-height:1.55;">{{ tkOneLiner }}</div>
+        <div style="font-size:11px; color:#9B9A92; text-transform:uppercase; letter-spacing:0.4px;">{{ tkGroupLabel }}</div>
+      </div>
+
+      <!-- Chart -->
+      <sc-if value="{{ tkHasChart }}" hint-placeholder-val="{{ false }}">
+        <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:16px; padding:10px;">
+          <iframe src="{{ tkChartUrl }}" style="width:100%; height:380px; border:0; border-radius:10px;" loading="lazy"></iframe>
+        </div>
+      </sc-if>
+
+      <!-- Tổng hợp lệnh -->
+      <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:16px; padding:20px; display:flex; flex-direction:column; gap:12px;">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <h2 style="margin:0; font-size:16px; font-weight:800; letter-spacing:-0.2px;">Tổng hợp lệnh</h2>
+          <div style="font-size:11px; font-weight:700; padding:2px 8px; border-radius:999px; background:#E7E6E1; color:#5F5E57;">{{ tkOrderCount }}</div>
+        </div>
+        <sc-for list="{{ tkOrders }}" as="to" hint-placeholder-count="2">
+          <div style="border:1px solid #EDECE7; border-left:4px solid {{ to.accent }}; border-radius:12px; padding:12px 14px; display:flex; flex-direction:column; gap:8px;">
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:8px; flex-wrap:wrap;">
+              <div style="display:flex; align-items:center; gap:7px; flex-wrap:wrap;">
+                <div style="font-size:11px; font-weight:800; letter-spacing:0.3px; padding:3px 10px; border-radius:999px; background:{{ to.bg }}; color:{{ to.color }};">{{ to.dir }}</div>
+                <div style="font-size:10px; font-weight:700; padding:3px 9px; border-radius:999px; background:{{ to.sBg }}; color:{{ to.sColor }};">{{ to.sLabel }}</div>
+              </div>
+              <div style="display:flex; align-items:center; gap:6px;">
+                <div style="width:19px; height:19px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:8px; font-weight:700;">{{ to.initials }}</div>
+                <div style="font-size:11px; color:#9B9A92;">{{ to.expertName }} · {{ to.date }}</div>
+              </div>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:8px;">
+              <div style="background:#F7F7F4; border-radius:8px; padding:7px 10px;">
+                <div style="font-size:9.5px; font-weight:700; color:#9B9A92; text-transform:uppercase; letter-spacing:0.4px;">Vào lệnh</div>
+                <div style="font-size:12px; font-family:'IBM Plex Mono',monospace; font-weight:600; color:#33322D; margin-top:2px;">{{ to.entry }}</div>
+              </div>
+              <div style="background:#F7F7F4; border-radius:8px; padding:7px 10px;">
+                <div style="font-size:9.5px; font-weight:700; color:#9B9A92; text-transform:uppercase; letter-spacing:0.4px;">Mục tiêu</div>
+                <div style="font-size:12px; font-family:'IBM Plex Mono',monospace; font-weight:600; color:#33322D; margin-top:2px;">{{ to.target }}</div>
+              </div>
+              <div style="background:#F7F7F4; border-radius:8px; padding:7px 10px;">
+                <div style="font-size:9.5px; font-weight:700; color:#9B9A92; text-transform:uppercase; letter-spacing:0.4px;">Dừng lỗ / kỷ luật</div>
+                <div style="font-size:12px; font-family:'IBM Plex Mono',monospace; font-weight:600; color:#33322D; margin-top:2px;">{{ to.stop }}</div>
+              </div>
+            </div>
+            <div style="font-size:12px; color:#6E6D66; line-height:1.5;">{{ to.note }}</div>
+          </div>
+        </sc-for>
+      </div>
+
+      <!-- Luận điểm -->
+      <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:16px; padding:20px; display:flex; flex-direction:column; gap:14px;">
+        <h2 style="margin:0; font-size:16px; font-weight:800; letter-spacing:-0.2px;">Luận điểm chi tiết</h2>
+        <sc-for list="{{ tkThesis }}" as="tt" hint-placeholder-count="2">
+          <div style="display:flex; flex-direction:column; gap:5px;">
+            <div style="font-size:13.5px; font-weight:700; color:#21211D;">{{ tt.title }}</div>
+            <div style="font-size:13.5px; color:#46453F; line-height:1.65;">{{ tt.body }}</div>
+          </div>
+        </sc-for>
+      </div>
+
+      <!-- Bảng điểm của mã -->
+      <sc-if value="{{ tkHasSc }}" hint-placeholder-val="{{ false }}">
+        <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-radius:16px; padding:20px; display:flex; flex-direction:column; gap:10px;">
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:8px; flex-wrap:wrap;">
+            <h2 style="margin:0; font-size:16px; font-weight:800; letter-spacing:-0.2px;">Bảng điểm của mã</h2>
+            <div style="font-size:11.5px; font-family:'IBM Plex Mono',monospace; color:#6E6D66;">{{ tkScSummary }}</div>
+          </div>
+          <sc-for list="{{ tkScRows }}" as="tsr" hint-placeholder-count="2">
+            <div style="display:flex; align-items:flex-start; gap:10px; border-top:1px solid #F0EFEA; padding-top:9px;">
+              <div style="font-size:10.5px; font-weight:700; padding:3px 9px; border-radius:999px; background:{{ tsr.rBg }}; color:{{ tsr.rColor }}; white-space:nowrap; margin-top:1px;">{{ tsr.rLabel }}</div>
+              <div style="display:flex; flex-direction:column; gap:2px; flex:1;">
+                <div style="font-size:12.5px; font-weight:600; color:#21211D; line-height:1.45;">{{ tsr.call }}</div>
+                <div style="font-size:11.5px; color:#6E6D66; line-height:1.5;">{{ tsr.note }}</div>
+                <div style="font-size:10.5px; color:#9B9A92;">{{ tsr.expertName }} · {{ tsr.date }}</div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+
+      <!-- Dòng thời gian nhắc đến -->
+      <sc-if value="{{ tkHasHist }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <h2 style="margin:0; font-size:16px; font-weight:800; letter-spacing:-0.2px;">Nhắc đến gần đây</h2>
+            <div style="font-size:11px; font-weight:700; padding:2px 8px; border-radius:999px; background:#E7E6E1; color:#5F5E57;">{{ tkHistCount }}</div>
+          </div>
+          <sc-for list="{{ tkHist }}" as="th" hint-placeholder-count="3">
+            <div onClick="{{ th.onClick }}" class="card-lift" style="background:#FFFFFF; border:1px solid #E7E6E1; border-left:4px solid {{ th.accent }}; border-radius:12px; padding:13px 15px; display:flex; flex-direction:column; gap:6px; cursor:pointer;">
+              <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap;">
+                <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                  <div style="font-size:12.5px; font-weight:700;">{{ th.tag }}</div>
+                  <div style="font-size:11px; font-weight:700; padding:3px 9px; border-radius:999px; background:{{ th.bg }}; color:{{ th.color }};">{{ th.value }}</div>
+                </div>
+                <div style="display:flex; align-items:center; gap:6px;">
+                  <div style="width:19px; height:19px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:8px; font-weight:700;">{{ th.initials }}</div>
+                  <div style="font-size:11px; font-family:'IBM Plex Mono',monospace; color:#9B9A92;">{{ th.dateLabel }}</div>
+                </div>
+              </div>
+              <div style="font-size:12px; color:#6E6D66; line-height:1.5;">{{ th.note }}</div>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+
+      <div style="font-size:12px; color:#9B9A92; text-align:center; padding-top:4px;">Bấm một mục "Nhắc đến" để mở bài gốc · chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</div>
+    </div>
+  </sc-if>
+
   <!-- ===================== BẢNG ĐIỂM ===================== -->
   <sc-if value="{{ isScorecard }}" hint-placeholder-val="{{ false }}">
     <div data-screen-label="Bảng điểm" style="max-width:980px; margin:0 auto; padding:28px 20px 60px; display:flex; flex-direction:column; gap:18px;">
@@ -927,7 +1081,7 @@ class Component extends DCLogic {
     super(props);
     let logged = false;
     try { logged = localStorage.getItem('hdt_auth') === '1'; } catch (e) {}
-    this.state = { logged, screen: 'dashboard', pwError: false, srcType: 0, added: [], updIdx: 0, expertId: 'thai-pham', q: '', assetKey: 'vn', callsExpert: 'all', chartSym: '', chartLabel: '', scExpert: 'all' };
+    this.state = { logged, screen: 'dashboard', pwError: false, srcType: 0, added: [], updIdx: 0, expertId: 'thai-pham', q: '', assetKey: 'vn', callsExpert: 'all', chartSym: '', chartLabel: '', scExpert: 'all', tickerKey: '' };
     this.pwRef = React.createRef();
     this.nameRef = React.createRef();
     this.channelRef = React.createRef();
@@ -971,6 +1125,7 @@ class Component extends DCLogic {
     const navDefs = [
       { key: 'dashboard',     label: 'Tổng quan' },
       { key: 'actions',       label: 'Hành động' },
+      { key: 'tickers',       label: 'Sổ mã' },
       { key: 'experts-list',  label: 'Chuyên gia' },
       { key: 'assets',        label: 'Tài sản' },
       { key: 'calls',         label: 'Khuyến nghị' },
@@ -1879,6 +2034,74 @@ class Component extends DCLogic {
     });
     const actUpdated = ACTS.updated || '';
 
+    // ── Trang Sổ mã (HDT.tickers): trang riêng từng mã + tổng hợp lệnh ────
+    const TICKERS = HDT.tickers || [];
+    const tickerGroups = [];
+    TICKERS.forEach(t => {
+      let g = tickerGroups.find(x => x.group === t.group);
+      if (!g) { g = { group: t.group, items: [], count: 0 }; tickerGroups.push(g); }
+      const nActive = (t.orders || []).filter(o => o.status === 'active').length;
+      const nWait = (t.orders || []).filter(o => o.status === 'waiting').length;
+      g.items.push({
+        symbol: t.symbol, name: t.name, oneLiner: t.oneLiner, stance: t.stance,
+        ...CHIP_SIG[t.sig], accent: ACT_ACCENT[t.sig] || '#C9C8C0',
+        meta: ((nActive ? nActive + ' lệnh đang chạy' : '') + (nActive && nWait ? ' · ' : '') + (nWait ? nWait + ' lệnh chờ' : '')) || 'Theo dõi',
+        onClick: () => this.go('ticker', { tickerKey: t.key })
+      });
+      g.count = g.items.length;
+    });
+
+    const curTicker = TICKERS.find(t => t.key === s.tickerKey) || TICKERS[0] || null;
+    const TK_STATUS = {
+      active:  { sLabel: 'Đang chạy',     sBg: 'oklch(0.95 0.04 150)', sColor: 'oklch(0.42 0.1 150)' },
+      waiting: { sLabel: 'Chờ kích hoạt', sBg: 'oklch(0.96 0.05 85)',  sColor: 'oklch(0.5 0.1 70)' },
+      done:    { sLabel: 'Đã đóng',       sBg: '#EFEEE9',              sColor: '#5F5E57' }
+    };
+    let tkSymbol = '', tkName = '', tkStance = '', tkStanceBg = '#EFEEE9', tkStanceColor = '#5F5E57',
+        tkGroupLabel = '', tkOneLiner = '', tkHasChart = false, tkChartUrl = '',
+        tkOrders = [], tkThesis = [], tkHist = [], tkScRows = [], tkScSummary = '';
+    if (curTicker) {
+      tkSymbol = curTicker.symbol; tkName = curTicker.name; tkStance = curTicker.stance;
+      const tsig = CHIP_SIG[curTicker.sig] || {};
+      tkStanceBg = tsig.bg || '#EFEEE9'; tkStanceColor = tsig.color || '#5F5E57';
+      tkGroupLabel = curTicker.group; tkOneLiner = curTicker.oneLiner || '';
+      tkHasChart = !!curTicker.tv;
+      tkChartUrl = curTicker.tv ? ('https://s.tradingview.com/widgetembed/?symbol=' + encodeURIComponent(curTicker.tv) + '&interval=D&theme=light&style=1&locale=vi&hide_side_toolbar=1&withdateranges=1&save_image=0&hideideas=1') : '';
+      tkOrders = (curTicker.orders || []).map(o => {
+        const ex = HDT.experts[o.expertId] || {};
+        return {
+          dir: o.dir, entry: o.entry || '—', target: o.target || '—', stop: o.stop || '—',
+          note: o.note || '', date: o.date || '',
+          initials: ex.initials || '?', expertName: ex.name || o.expertId,
+          ...CHIP_SIG[o.sig], accent: ACT_ACCENT[o.sig] || '#C9C8C0',
+          ...(TK_STATUS[o.status] || TK_STATUS.active)
+        };
+      });
+      tkThesis = (curTicker.thesis || []).map(p => ({ title: p.title, body: p.body }));
+      const tkAliases = (curTicker.aliases || []).map(a => strip(a));
+      const tkMatch = (txt) => { const st = ' ' + strip(txt) + ' '; return tkAliases.some(al => st.includes(al)); };
+      tkHist = ALL_CALLS.filter(c => tkMatch([c.tag, c.value, c.note].join(' '))).slice(0, 8).map(c => ({
+        dateLabel: c.dateShort, initials: c.initials, expertName: c.exName,
+        tag: c.tag, value: c.value, note: c.note,
+        ...CHIP_SIG[c.signal], accent: (CHIP_SIG[c.signal] || {}).color || '#9B9A92',
+        onClick: () => this.go('expert', { expertId: c.eid, updIdx: c.updIdx })
+      }));
+      const scMatches = (HDT.scorecard || []).filter(sc => tkMatch([sc.asset, sc.call, sc.note].join(' ')));
+      const nH = scMatches.filter(x => x.result === 'hit').length,
+            nM = scMatches.filter(x => x.result === 'miss').length,
+            nP = scMatches.filter(x => x.result === 'pending').length;
+      tkScSummary = nH + ' đúng · ' + nM + ' sai · ' + nP + ' đang theo dõi';
+      tkScRows = scMatches.slice().reverse().slice(0, 6).map(sc => {
+        const ex = HDT.experts[sc.expert] || {};
+        const r = SC_RESULT[sc.result] || SC_RESULT.pending;
+        return {
+          date: sc.date, call: sc.call, note: sc.note || '',
+          initials: ex.initials || '?', expertName: ex.name || sc.expert,
+          rLabel: r.label, rBg: r.bg, rColor: r.color
+        };
+      });
+    }
+
     return {
       showLogin: !s.logged, showApp: s.logged,
       isDashboard: s.screen === 'dashboard', isExpertsList: s.screen === 'experts-list',
@@ -1889,6 +2112,13 @@ class Component extends DCLogic {
       isActions: s.screen === 'actions',
       actNow, actWaiting, actEvents, actUpdated,
       actNowCount: actNow.length, actWaitingCount: actWaiting.length, actEventsCount: actEvents.length,
+      isTickers: s.screen === 'tickers', isTicker: s.screen === 'ticker',
+      goTickers: () => this.go('tickers'),
+      tickerGroups, tickerTotal: TICKERS.length,
+      tkSymbol, tkName, tkStance, tkStanceBg, tkStanceColor, tkGroupLabel, tkOneLiner,
+      tkHasChart, tkChartUrl, tkOrders, tkOrderCount: tkOrders.length,
+      tkThesis, tkHist, tkHasHist: tkHist.length > 0, tkHistCount: tkHist.length,
+      tkScRows, tkHasSc: tkScRows.length > 0, tkScSummary,
       showWeekly: !showResults,
       weeklyRange: W.dateRange, weeklyAction: W.action,
       weeklyConsensus: W.consensus, weeklyDivergence: W.divergence,

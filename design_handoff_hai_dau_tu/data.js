@@ -3479,7 +3479,11 @@ window.HDT_DATA = {
           "date": "18/07",
           "note": "Đã vào 70% vị thế; trần ~30% danh mục cho cả nhóm đạm."
         }
-      ]
+      ],
+      "potential": 4,
+      "caution": 2,
+      "potentialNote": "Một trong 2 mã mua dài hạn duy nhất của Thái Phạm — đã vào 70% vị thế ở vùng đáy, có cổ tức đỡ giá.",
+      "cautionNote": "Rủi ro chính là thời gian: thị trường \"mùa đông\", có thể đi ngang lâu; không dùng margin thì áp lực thấp."
     },
     {
       "key": "dpm",
@@ -3527,7 +3531,11 @@ window.HDT_DATA = {
           "date": "14/07",
           "note": "Ví dụ mẫu về mua cổ phiếu cơ bản giá chiết khấu — không all-in."
         }
-      ]
+      ],
+      "potential": 4,
+      "caution": 2,
+      "potentialNote": "Cùng cặp dài hạn với DCM; đã chiết khấu ~30% từ đỉnh — vùng mua từng phần theo cả 2 chuyên gia.",
+      "cautionNote": "Thị trường chung yếu, giá có thể lình xình thêm; kỷ luật chia 3–4 lệnh thay cho dừng lỗ."
     },
     {
       "key": "bid",
@@ -3561,7 +3569,11 @@ window.HDT_DATA = {
           "date": "18/07",
           "note": "Ngân hàng duy nhất còn giữ; đã bỏ hẳn lướt sóng."
         }
-      ]
+      ],
+      "potential": 3,
+      "caution": 2,
+      "potentialNote": "Ngân hàng duy nhất được giữ lại — kỳ vọng câu chuyện quyết sách; nền cơ bản ổn.",
+      "cautionNote": "Chỉ số bị chi phối bởi trụ, ngắn hạn theo thị trường chung; không phải mã tăng nhanh."
     },
     {
       "key": "bvb",
@@ -3594,7 +3606,11 @@ window.HDT_DATA = {
           "date": "18/07",
           "note": "Sự kiện 21/07 — xem trang Hành động."
         }
-      ]
+      ],
+      "potential": 3,
+      "caution": 3,
+      "potentialNote": "Chào sàn 21/07 giá 13.1 — nằm trong danh mục nắm giữ của Thái Phạm.",
+      "cautionNote": "Chưa có lịch sử giao dịch trên sàn; cần quan sát các phiên đầu, thanh khoản chưa rõ."
     },
     {
       "key": "vnm",
@@ -3632,7 +3648,11 @@ window.HDT_DATA = {
           "date": "18/07",
           "note": "Tỷ trọng ~3%; mục tiêu bằng lãi tiết kiệm 1 năm."
         }
-      ]
+      ],
+      "potential": 2,
+      "caution": 2,
+      "potentialNote": "Mục tiêu khiêm tốn +5–7% (bằng lãi tiết kiệm 1 năm) từ vùng 56 — đã có lời nhẹ.",
+      "cautionNote": "Cổ phiếu phòng thủ, được dùng kéo chỉ số — biến động ngắn hạn không phản ánh cung cầu thật."
     },
     {
       "key": "scs",
@@ -3669,7 +3689,11 @@ window.HDT_DATA = {
           "date": "18/07",
           "note": "Trần 20–25% tài khoản nếu muốn cầm dài."
         }
-      ]
+      ],
+      "potential": 3,
+      "caution": 3,
+      "potentialNote": "Lợi thế cạnh tranh + cổ tức đều — cầm qua vùng trũng có dòng tiền bù đắp.",
+      "cautionNote": "Đang lỗ ~7–8%; Trung Đông leo thang bất lợi cho vận tải hàng không; trần 20–25% tài khoản."
     },
     {
       "key": "tcx",
@@ -3702,7 +3726,11 @@ window.HDT_DATA = {
           "date": "18/07",
           "note": "Không lướt thêm nhóm chứng khoán."
         }
-      ]
+      ],
+      "potential": 3,
+      "caution": 3,
+      "potentialNote": "Nhóm chứng khoán giữ dài hạn nhờ nội lực (kênh huy động vốn cốt lõi, thanh khoản đáy sẽ hồi).",
+      "cautionNote": "Chính chủ đã chốt bớt; ngắn hạn nhóm CK \"khó đánh\", không lướt thêm."
     },
     {
       "key": "tcb",
@@ -3740,7 +3768,11 @@ window.HDT_DATA = {
           "date": "13/07",
           "note": "Rút chân ok nhưng chưa đủ tín hiệu tăng trong tuần."
         }
-      ]
+      ],
+      "potential": 3,
+      "caution": 3,
+      "potentialNote": "Một trong số ít mã cơ bản đang cố tạo đáy — rút chân khá ổn phiên 13/07.",
+      "cautionNote": "Chưa có tín hiệu nào cho phép kỳ vọng tăng trong tuần; full room ngoại — thiếu lực mua mới."
     },
     {
       "key": "ssi",
@@ -3776,7 +3808,11 @@ window.HDT_DATA = {
           "date": "16/07",
           "note": "Đang nắm một phần từ trước, kiên nhẫn."
         }
-      ]
+      ],
+      "potential": 4,
+      "caution": 3,
+      "potentialNote": "Sát điểm kích hoạt nhất nhóm CK: đóng trên 26 là có tín hiệu đảo chiều; dài hạn hưởng lợi khi thanh khoản hồi.",
+      "cautionNote": "Tín hiệu chưa xác nhận — 9/10 mã \"hôm nay khỏe mai tham chiếu\"; tích lũy khối lượng còn kém."
     },
     {
       "key": "hpg",
@@ -3810,7 +3846,11 @@ window.HDT_DATA = {
           "date": "13/07",
           "note": "Dẫn chứng cho trạng thái thị trường, chưa phải khuyến nghị."
         }
-      ]
+      ],
+      "potential": 2,
+      "caution": 4,
+      "potentialNote": "Hàng cơ bản đầu ngành — sẽ hấp dẫn khi thị trường tạo đáy thật.",
+      "cautionNote": "Vừa THỦNG ĐÁY phiên 13/07 trong khi mã khác cố tạo đáy — chưa có lý do bắt."
     },
     {
       "key": "pnj",
@@ -3873,7 +3913,11 @@ window.HDT_DATA = {
           "date": "16/07",
           "note": "Không mua thêm; bài học đa dạng hóa."
         }
-      ]
+      ],
+      "potential": 1,
+      "caution": 5,
+      "potentialNote": "Chưa nhìn thấy tiềm năng nào định lượng được khi vụ án còn mở rộng.",
+      "cautionNote": "Rủi ro pháp lý chưa định lượng: liên đới công ty mẹ, điều tra mở rộng — mua là \"đoán xem nó có sập không\"."
     },
     {
       "key": "fpt",
@@ -3920,7 +3964,11 @@ window.HDT_DATA = {
           "date": "16/07",
           "note": "Ví dụ về kỷ luật chốt lời của tích sản."
         }
-      ]
+      ],
+      "potential": 2,
+      "caution": 4,
+      "potentialNote": "Doanh nghiệp tốt về dài hạn — nhưng phương pháp giá trị đã chốt lời từ giá cao, chưa tới vùng mua lại.",
+      "cautionNote": "Hở room, khối ngoại bán mạnh liên tục; thêm rủi ro cạnh tranh AI."
     },
     {
       "key": "pc1",
@@ -3952,7 +4000,11 @@ window.HDT_DATA = {
           "date": "18/07",
           "note": "Không mua mới; chưa rõ chuyện đổi chủ."
         }
-      ]
+      ],
+      "potential": 1,
+      "caution": 5,
+      "potentialNote": "Không có luận điểm mua — chỉ còn câu chuyện thoát hàng cho người kẹt.",
+      "cautionNote": "Chuyện đổi chủ chưa rõ ràng; nhóm \"lằng nhằng, đừng đụng\"."
     },
     {
       "key": "dgc",
@@ -4000,7 +4052,11 @@ window.HDT_DATA = {
           "date": "18/07",
           "note": "\"Lằng nhằng lắm.\""
         }
-      ]
+      ],
+      "potential": 1,
+      "caution": 5,
+      "potentialNote": "Không xét tiềm năng khi \"linh hồn doanh nghiệp\" dính pháp lý.",
+      "cautionNote": "Chủ tịch/TGĐ bị khởi tố — tiêu chí loại ngay lập tức của AzFin; chờ vào lại uptrend mới bàn tiếp."
     },
     {
       "key": "aapl",
@@ -4048,7 +4104,11 @@ window.HDT_DATA = {
           "date": "18/07",
           "note": "Để dành sức mua cho sau tin."
         }
-      ]
+      ],
+      "potential": 4,
+      "caution": 3,
+      "potentialNote": "Kèo short có catalyst rõ và gần (BCTC 30/07, guidance Q3 yếu vì tăng giá iPhone 18) — dư địa \"gãy về chen line\".",
+      "cautionNote": "Đang bị kéo giữ chỉ số kiểu FOMO trap — có thể gap-up dọa trước khi gãy; chỉ đi 1/2 vị thế, không đòn bẩy."
     },
     {
       "key": "spacex",
@@ -4090,7 +4150,11 @@ window.HDT_DATA = {
           "date": "18/07",
           "note": "Giữ đến T1/2027; 4 đợt unlock tới 12/2026 là catalyst."
         }
-      ]
+      ],
+      "potential": 5,
+      "caution": 3,
+      "potentialNote": "Kèo tâm đắc nhất: 4 đợt unlock nâng cung gấp 8 lần, giá trị thật 40–50 đô vs thị giá ~157 — đích 80–87.",
+      "cautionNote": "Biến động điên rồ, có thể kéo ngược mạnh — bắt buộc vị thế nhỏ, không bồi, không margin; giữ tới T1/2027."
     },
     {
       "key": "intc",
@@ -4138,7 +4202,11 @@ window.HDT_DATA = {
           "date": "18/07",
           "note": "Đợi nhịp hồi kỹ thuật."
         }
-      ]
+      ],
+      "potential": 3,
+      "caution": 3,
+      "potentialNote": "Còn dư địa về đích ~77; đã chứng minh đúng hướng (+30%, chốt 1/2).",
+      "cautionNote": "Phần dễ đã ăn xong; các nhịp hồi \"loáng ngoáng\" có thể dí ngược 10%+ như giai đoạn đầu."
     },
     {
       "key": "mu",
@@ -4175,7 +4243,11 @@ window.HDT_DATA = {
           "date": "18/07",
           "note": "Đã chốt 1/2 (+20%+) thứ Sáu tuần 29."
         }
-      ]
+      ],
+      "potential": 3,
+      "caution": 4,
+      "potentialNote": "Thesis dư cung AI/chip nhớ còn nguyên — lãi 20%+ đang chạy.",
+      "cautionNote": "Mã \"dã man\" nhất: từng dí ngược 15–16% trước khi có quả ngọt — không margin mới sống sót."
     },
     {
       "key": "samsung",
@@ -4213,7 +4285,11 @@ window.HDT_DATA = {
           "date": "18/07",
           "note": "Xem phản ứng phiên đầu tuần 20/07."
         }
-      ]
+      ],
+      "potential": 4,
+      "caution": 4,
+      "potentialNote": "Short đúng đỉnh đang thuận: margin call dây chuyền, kịch bản 214.000 rồi 170.000 KRW.",
+      "cautionNote": "Hàn Quốc \"bạo phát bạo tàn\", giật ±8%/phiên — vị thế phải rất nhỏ, biến động cực lớn."
     },
     {
       "key": "spx",
@@ -4264,7 +4340,11 @@ window.HDT_DATA = {
           "date": "18/07",
           "note": "Phiên châu Á có thể không cho cơ hội hồi."
         }
-      ]
+      ],
+      "potential": 3,
+      "caution": 4,
+      "potentialNote": "Căn cứ vĩ mô dày: margin 1,4% vốn hóa ngang đỉnh 2018, IPO hút 220 tỷ đô — \"hết tiền thì phải sập\".",
+      "cautionNote": "Chỉ số giật hai đầu trong phiên (-0,8% rồi +0,3%) quét vị thế — short cường độ cao kèm margin là chết trước khi đúng."
     },
     {
       "key": "gold",
@@ -4328,7 +4408,11 @@ window.HDT_DATA = {
           "date": "18/07",
           "note": "Hiện chênh 19–20tr — đứng ngoài; chỉ thương hiệu 15–20 năm."
         }
-      ]
+      ],
+      "potential": 4,
+      "caution": 3,
+      "potentialNote": "Nếu quét về 3.600–3.700 là \"vùng mua rất đẹp\" (đỉnh cũ trước cú parabol) — Thái Phạm tuyên bố sẽ bắt đáy.",
+      "cautionNote": "Chưa tới vùng mua; Fed giữ/tăng lãi đè giá; trong nước chênh 19–20tr — mua lúc này lỗ ngay phần chênh."
     },
     {
       "key": "oil",
@@ -4378,7 +4462,11 @@ window.HDT_DATA = {
           "date": "11/07",
           "note": "Call hồi phục Tập 36–37 — scorecard ghi nhận đúng."
         }
-      ]
+      ],
+      "potential": 3,
+      "caution": 3,
+      "potentialNote": "Còn dư địa 84 → 88–90 (UK 95–96) nếu leo thang; thesis địa chính trị đang đúng.",
+      "cautionNote": "Phần thịt ngon nhất (+12%) đã qua; biến động theo tin từng đêm — cắt lỗ 78 là bắt buộc, lót nhỏ."
     },
     {
       "key": "btc",
@@ -4438,7 +4526,11 @@ window.HDT_DATA = {
           "date": "11/07",
           "note": "Đã diễn ra — BTC sập về ~63k, scorecard: ĐÚNG."
         }
-      ]
+      ],
+      "potential": 2,
+      "caution": 4,
+      "potentialNote": "Chỉ còn kèo short fake pump 69–70k; mua thật phải đợi ~50k — xa vùng hiện tại.",
+      "cautionNote": "Cấu trúc \"banana\" gãy, không còn câu chuyện thay thế tiền pháp định; Fed không hạ lãi — thiếu nhiên liệu tăng."
     }
   ]
 };

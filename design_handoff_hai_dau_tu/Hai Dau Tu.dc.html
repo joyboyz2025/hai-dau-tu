@@ -588,6 +588,16 @@ input::placeholder { color: #A3A29A; }
                 </div>
                 <div style="font-size:11.5px; color:#9B9A92; margin-top:-4px;">{{ tc.name }}</div>
                 <div style="font-size:12.5px; color:#46453F; line-height:1.5; flex:1;">{{ tc.oneLiner }}</div>
+                <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap;">
+                  <div style="display:flex; align-items:center; gap:5px;">
+                    <span style="font-size:10px; font-weight:700; color:#9B9A92; text-transform:uppercase; letter-spacing:0.3px;">Tiềm năng</span>
+                    <span style="font-size:10px; letter-spacing:1.5px; color:oklch(0.55 0.13 150);">{{ tc.potDots }}</span>
+                  </div>
+                  <div style="display:flex; align-items:center; gap:5px;">
+                    <span style="font-size:10px; font-weight:700; color:#9B9A92; text-transform:uppercase; letter-spacing:0.3px;">Thận trọng</span>
+                    <span style="font-size:10px; letter-spacing:1.5px; color:oklch(0.58 0.15 45);">{{ tc.cauDots }}</span>
+                  </div>
+                </div>
                 <div style="font-size:11px; font-family:'IBM Plex Mono',monospace; color:oklch(0.42 0.08 235); font-weight:600; border-top:1px solid #F0EFEA; padding-top:8px;">{{ tc.meta }} →</div>
               </div>
             </sc-for>
@@ -614,6 +624,32 @@ input::placeholder { color: #A3A29A; }
         </div>
         <div style="font-size:13.5px; color:#46453F; line-height:1.55;">{{ tkOneLiner }}</div>
         <div style="font-size:11px; color:#9B9A92; text-transform:uppercase; letter-spacing:0.4px;">{{ tkGroupLabel }}</div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:16px; border-top:1px solid #F0EFEA; padding-top:14px;">
+          <div style="display:flex; flex-direction:column; gap:6px;">
+            <div style="display:flex; align-items:center; justify-content:space-between;">
+              <div style="font-size:10.5px; font-weight:800; color:oklch(0.42 0.1 150); text-transform:uppercase; letter-spacing:0.5px;">Tiềm năng</div>
+              <div style="font-size:11px; font-family:'IBM Plex Mono',monospace; font-weight:700; color:oklch(0.42 0.1 150);">{{ tkPotLabel }}</div>
+            </div>
+            <div style="display:flex; gap:4px;">
+              <sc-for list="{{ tkPotSegs }}" as="ps" hint-placeholder-count="5">
+                <div style="flex:1; height:6px; border-radius:3px; background:{{ ps.segBg }};"></div>
+              </sc-for>
+            </div>
+            <div style="font-size:11.5px; color:#6E6D66; line-height:1.5;">{{ tkPotNote }}</div>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:6px;">
+            <div style="display:flex; align-items:center; justify-content:space-between;">
+              <div style="font-size:10.5px; font-weight:800; color:oklch(0.5 0.14 45); text-transform:uppercase; letter-spacing:0.5px;">Thận trọng</div>
+              <div style="font-size:11px; font-family:'IBM Plex Mono',monospace; font-weight:700; color:oklch(0.5 0.14 45);">{{ tkCauLabel }}</div>
+            </div>
+            <div style="display:flex; gap:4px;">
+              <sc-for list="{{ tkCauSegs }}" as="cs" hint-placeholder-count="5">
+                <div style="flex:1; height:6px; border-radius:3px; background:{{ cs.segBg }};"></div>
+              </sc-for>
+            </div>
+            <div style="font-size:11.5px; color:#6E6D66; line-height:1.5;">{{ tkCauNote }}</div>
+          </div>
+        </div>
       </div>
 
       <!-- Chart -->
@@ -2042,9 +2078,11 @@ class Component extends DCLogic {
       if (!g) { g = { group: t.group, items: [], count: 0 }; tickerGroups.push(g); }
       const nActive = (t.orders || []).filter(o => o.status === 'active').length;
       const nWait = (t.orders || []).filter(o => o.status === 'waiting').length;
+      const dots = v => '●'.repeat(v || 0) + '○'.repeat(Math.max(0, 5 - (v || 0)));
       g.items.push({
         symbol: t.symbol, name: t.name, oneLiner: t.oneLiner, stance: t.stance,
         ...CHIP_SIG[t.sig], accent: ACT_ACCENT[t.sig] || '#C9C8C0',
+        potDots: dots(t.potential), cauDots: dots(t.caution),
         meta: ((nActive ? nActive + ' lệnh đang chạy' : '') + (nActive && nWait ? ' · ' : '') + (nWait ? nWait + ' lệnh chờ' : '')) || 'Theo dõi',
         onClick: () => this.go('ticker', { tickerKey: t.key })
       });
@@ -2059,12 +2097,20 @@ class Component extends DCLogic {
     };
     let tkSymbol = '', tkName = '', tkStance = '', tkStanceBg = '#EFEEE9', tkStanceColor = '#5F5E57',
         tkGroupLabel = '', tkOneLiner = '', tkHasChart = false, tkChartUrl = '',
-        tkOrders = [], tkThesis = [], tkHist = [], tkScRows = [], tkScSummary = '';
+        tkOrders = [], tkThesis = [], tkHist = [], tkScRows = [], tkScSummary = '',
+        tkPotSegs = [], tkCauSegs = [], tkPotLabel = '', tkCauLabel = '', tkPotNote = '', tkCauNote = '';
     if (curTicker) {
       tkSymbol = curTicker.symbol; tkName = curTicker.name; tkStance = curTicker.stance;
       const tsig = CHIP_SIG[curTicker.sig] || {};
       tkStanceBg = tsig.bg || '#EFEEE9'; tkStanceColor = tsig.color || '#5F5E57';
       tkGroupLabel = curTicker.group; tkOneLiner = curTicker.oneLiner || '';
+      const mkSegs = (v, onColor) => Array.from({ length: 5 }, (_, i) => ({ segBg: i < (v || 0) ? onColor : '#E7E6E1' }));
+      tkPotSegs = mkSegs(curTicker.potential, 'oklch(0.72 0.14 150)');
+      tkCauSegs = mkSegs(curTicker.caution, 'oklch(0.68 0.16 45)');
+      tkPotLabel = (curTicker.potential || 0) + '/5';
+      tkCauLabel = (curTicker.caution || 0) + '/5';
+      tkPotNote = curTicker.potentialNote || '';
+      tkCauNote = curTicker.cautionNote || '';
       tkHasChart = !!curTicker.tv;
       tkChartUrl = curTicker.tv ? ('https://s.tradingview.com/widgetembed/?symbol=' + encodeURIComponent(curTicker.tv) + '&interval=D&theme=light&style=1&locale=vi&hide_side_toolbar=1&withdateranges=1&save_image=0&hideideas=1') : '';
       tkOrders = (curTicker.orders || []).map(o => {
@@ -2119,6 +2165,7 @@ class Component extends DCLogic {
       tkHasChart, tkChartUrl, tkOrders, tkOrderCount: tkOrders.length,
       tkThesis, tkHist, tkHasHist: tkHist.length > 0, tkHistCount: tkHist.length,
       tkScRows, tkHasSc: tkScRows.length > 0, tkScSummary,
+      tkPotSegs, tkCauSegs, tkPotLabel, tkCauLabel, tkPotNote, tkCauNote,
       showWeekly: !showResults,
       weeklyRange: W.dateRange, weeklyAction: W.action,
       weeklyConsensus: W.consensus, weeklyDivergence: W.divergence,

@@ -815,8 +815,22 @@ input::placeholder { color: #A3A29A; }
         </div>
         <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-top:3px solid oklch(0.62 0.19 27); border-radius:14px; padding:14px 16px;">
           <div style="font-size:26px; font-weight:800; font-family:'IBM Plex Mono',monospace; line-height:1; color:oklch(0.46 0.15 27);">{{ tkStatAvoid }}</div>
-          <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.4px; color:#9B9A92; margin-top:5px;">Mã tiêu cực / tránh</div>
+          <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.4px; color:#9B9A92; margin-top:5px;">Mã short / bán</div>
         </div>
+        <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-top:3px solid oklch(0.63 0.13 330); border-radius:14px; padding:14px 16px;">
+          <div style="font-size:26px; font-weight:800; font-family:'IBM Plex Mono',monospace; line-height:1; color:oklch(0.45 0.11 330);">{{ tkStatSkip }}</div>
+          <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.4px; color:#9B9A92; margin-top:5px;">Mã tránh / đứng ngoài</div>
+        </div>
+      </div>
+
+      <!-- Chú thích màu -->
+      <div style="display:flex; gap:16px; flex-wrap:wrap; align-items:center; background:#FFFFFF; border:1px solid #E7E6E1; border-radius:12px; padding:11px 15px;">
+        <div style="font-size:10.5px; font-weight:800; color:#9B9A92; text-transform:uppercase; letter-spacing:0.6px;">Mã màu</div>
+        <div style="display:flex; align-items:center; gap:6px;"><span style="width:10px; height:10px; border-radius:3px; background:oklch(0.72 0.14 150); display:inline-block;"></span><span style="font-size:11.5px; color:#46453F;">Mua / giữ</span></div>
+        <div style="display:flex; align-items:center; gap:6px;"><span style="width:10px; height:10px; border-radius:3px; background:#C9C8C0; display:inline-block;"></span><span style="font-size:11.5px; color:#46453F;">Chờ / theo dõi</span></div>
+        <div style="display:flex; align-items:center; gap:6px;"><span style="width:10px; height:10px; border-radius:3px; background:oklch(0.78 0.12 85); display:inline-block;"></span><span style="font-size:11.5px; color:#46453F;">Cảnh giác</span></div>
+        <div style="display:flex; align-items:center; gap:6px;"><span style="width:10px; height:10px; border-radius:3px; background:oklch(0.62 0.19 27); display:inline-block;"></span><span style="font-size:11.5px; color:#46453F;"><b>Short / bán</b> — có vị thế</span></div>
+        <div style="display:flex; align-items:center; gap:6px;"><span style="width:10px; height:10px; border-radius:3px; background:oklch(0.63 0.13 330); display:inline-block;"></span><span style="font-size:11.5px; color:#46453F;"><b>Tránh</b> — không làm gì</span></div>
       </div>
       <sc-for list="{{ tickerGroups }}" as="tg" hint-placeholder-count="3">
         <div style="display:flex; flex-direction:column; gap:12px;">
@@ -1529,7 +1543,8 @@ class Component extends DCLogic {
       down: { sigBg: 'oklch(0.95 0.04 27)', sigColor: 'oklch(0.46 0.15 27)' },
       warn: { sigBg: 'oklch(0.96 0.05 85)', sigColor: 'oklch(0.5 0.1 70)' },
       wait: { sigBg: '#EFEEE9', sigColor: '#5F5E57' },
-      up:   { sigBg: 'oklch(0.95 0.04 150)', sigColor: 'oklch(0.42 0.1 150)' }
+      up:   { sigBg: 'oklch(0.95 0.04 150)', sigColor: 'oklch(0.42 0.1 150)' },
+      avoid:{ sigBg: 'oklch(0.95 0.028 330)', sigColor: 'oklch(0.45 0.11 330)' }
     };
     const SOURCE_TYPE = {
       'member-post':  { typeBg: 'oklch(0.95 0.02 235)', typeColor: BRAND },
@@ -1540,11 +1555,12 @@ class Component extends DCLogic {
       up:   { bg: 'oklch(0.95 0.04 150)', color: 'oklch(0.42 0.1 150)' },
       down: { bg: 'oklch(0.95 0.04 27)',  color: 'oklch(0.46 0.15 27)' },
       warn: { bg: 'oklch(0.96 0.05 85)',  color: 'oklch(0.5 0.1 70)'  },
-      wait: { bg: '#EFEEE9',              color: '#5F5E57'             }
+      wait: { bg: '#EFEEE9',              color: '#5F5E57'             },
+      avoid:{ bg: 'oklch(0.95 0.028 330)', color: 'oklch(0.45 0.11 330)' }
     };
     const HDT = window.HDT_DATA;
 
-    const PULSE_COLOR = { up: 'oklch(0.83 0.17 150)', down: 'oklch(0.78 0.15 25)', warn: 'oklch(0.87 0.13 85)', wait: 'rgba(255,255,255,0.55)' };
+    const PULSE_COLOR = { up: 'oklch(0.83 0.17 150)', down: 'oklch(0.78 0.15 25)', warn: 'oklch(0.87 0.13 85)', wait: 'rgba(255,255,255,0.55)', avoid: 'oklch(0.80 0.10 330)' };
     const pulse = HDT.pulse.map(p => ({ name: p.name, mark: p.mark, color: PULSE_COLOR[p.sig] || '#9B9A92' }));
 
     const assetCards = HDT.assetCards.map(a => {
@@ -2380,7 +2396,7 @@ class Component extends DCLogic {
 
     // ── Trang Hành động giá (HDT.actions) ─────────────────────────────────
     const ACTS = HDT.actions || { now: [], waiting: [], events: [] };
-    const ACT_ACCENT = { up: 'oklch(0.72 0.14 150)', down: 'oklch(0.62 0.19 27)', warn: 'oklch(0.78 0.12 85)', wait: '#C9C8C0' };
+    const ACT_ACCENT = { up: 'oklch(0.72 0.14 150)', down: 'oklch(0.62 0.19 27)', warn: 'oklch(0.78 0.12 85)', wait: '#C9C8C0', avoid: 'oklch(0.63 0.13 330)' };
     const mkActExpert = (id) => {
       const e = HDT.experts[id] || {};
       return { initials: e.initials || '?', expertName: e.name || id };
@@ -2497,17 +2513,18 @@ class Component extends DCLogic {
       });
       g.count = g.items.length;
     });
-    const TK_SIG_LABEL = { up: 'tích cực', wait: 'trung lập', warn: 'cảnh giác', down: 'tiêu cực/tránh' };
+    const TK_SIG_LABEL = { up: 'tích cực', wait: 'trung lập', warn: 'cảnh giác', down: 'short/bán', avoid: 'tránh — đứng ngoài' };
     tickerGroups.forEach(g0 => {
       const cnt = { up: 0, wait: 0, warn: 0, down: 0 };
       TICKERS.filter(t => t.group === g0.group).forEach(t => { cnt[t.sig] = (cnt[t.sig] || 0) + 1; });
-      const keys = ['up', 'wait', 'warn', 'down'].filter(k => cnt[k] > 0);
+      const keys = ['up', 'wait', 'warn', 'down', 'avoid'].filter(k => cnt[k] > 0);
       g0.dist = keys.map(k => ({ w: Math.round(cnt[k] / g0.count * 100) + '%', bg: ACT_ACCENT[k] }));
       g0.distLabel = keys.map(k => cnt[k] + ' ' + TK_SIG_LABEL[k]).join(' · ');
     });
     const tkStatActive = TICKERS.reduce((n, t) => n + (t.orders || []).filter(o => o.status === 'active').length, 0);
     const tkStatWaiting = TICKERS.reduce((n, t) => n + (t.orders || []).filter(o => o.status === 'waiting').length, 0);
     const tkStatAvoid = TICKERS.filter(t => t.sig === 'down').length;
+    const tkStatSkip = TICKERS.filter(t => t.sig === 'avoid').length;
 
     const curTicker = TICKERS.find(t => t.key === s.tickerKey) || TICKERS[0] || null;
     const TK_STATUS = {
@@ -2621,7 +2638,7 @@ class Component extends DCLogic {
       bncChips, bncCount, bncUpdated: BNC.updated || '',
       tkHasBnc, tkBncRows, tkBncNote, tkBncProxy,
       tkBncHasNote: !!tkBncNote,
-      tkStatActive, tkStatWaiting, tkStatAvoid,
+      tkStatActive, tkStatWaiting, tkStatAvoid, tkStatSkip,
       printPage: () => window.print(),
       tkSymbol, tkName, tkStance, tkStanceBg, tkStanceColor, tkGroupLabel, tkOneLiner,
       tkOrders, tkOrderCount: tkOrders.length,

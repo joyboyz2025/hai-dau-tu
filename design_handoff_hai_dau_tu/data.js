@@ -3943,7 +3943,7 @@ window.HDT_DATA = {
       {
         "asset": "PNJ · FPT · HPG · MWG · SSI · MSB",
         "dir": "TRÁNH",
-        "sig": "down",
+        "sig": "avoid",
         "expertId": "thai-pham",
         "detail": "PNJ phá đáy 6 năm (giám đốc bị truy tố); FPT dò đáy 95→74→62; SSI sườn phải có thể về 20; MSB chốt lời.",
         "level": "Không bắt đáy nhóm này"
@@ -3994,7 +3994,7 @@ window.HDT_DATA = {
         "asset": "Bitcoin",
         "trigger": "Nhịp hồi 71–72k",
         "action": "ĐỨNG NGOÀI / SHORT",
-        "sig": "down",
+        "sig": "avoid",
         "expertId": "thai-pham",
         "note": "Banana 3 từ 57.800; mua thật chỉ khi về 40–41k. Tổ chức rút ròng 4,5 tỷ đô tháng 6."
       },
@@ -4426,7 +4426,7 @@ window.HDT_DATA = {
       "name": "Chứng khoán SSI",
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:SSI",
-      "sig": "down",
+      "sig": "avoid",
       "stance": "SƯỜN PHẢI — CÓ THỂ VỀ 20",
       "aliases": [
         "ssi"
@@ -4446,7 +4446,7 @@ window.HDT_DATA = {
         {
           "expertId": "thai-pham",
           "dir": "TRÁNH",
-          "sig": "down",
+          "sig": "avoid",
           "entry": "Đang sườn phải",
           "target": "Có thể về 20",
           "stop": "—",
@@ -4477,7 +4477,7 @@ window.HDT_DATA = {
       "name": "Hòa Phát",
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:HPG",
-      "sig": "down",
+      "sig": "avoid",
       "stance": "TRÁNH — VIN THÉP CẠNH TRANH",
       "aliases": [
         "hpg",
@@ -4499,7 +4499,7 @@ window.HDT_DATA = {
         {
           "expertId": "thai-pham",
           "dir": "KHÔNG MUA",
-          "sig": "down",
+          "sig": "avoid",
           "entry": "—",
           "target": "Đã thủng 23 → đáy mới 21.85",
           "stop": "—",
@@ -4510,7 +4510,7 @@ window.HDT_DATA = {
         {
           "expertId": "ck-5-phut",
           "dir": "ĐỨNG NGOÀI",
-          "sig": "down",
+          "sig": "avoid",
           "entry": "—",
           "target": "Chờ hết thủng đáy",
           "stop": "—",
@@ -4530,7 +4530,7 @@ window.HDT_DATA = {
       "name": "Vàng bạc Đá quý Phú Nhuận",
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:PNJ",
-      "sig": "down",
+      "sig": "avoid",
       "stance": "PHÁ ĐÁY 6 NĂM — TRÁNH TUYỆT ĐỐI",
       "aliases": [
         "pnj",
@@ -4563,7 +4563,7 @@ window.HDT_DATA = {
         {
           "expertId": "thai-pham",
           "dir": "TRÁNH",
-          "sig": "down",
+          "sig": "avoid",
           "entry": "—",
           "target": "Kịch bản xấu: về dưới 9 (như Novaland)",
           "stop": "—",
@@ -4574,7 +4574,7 @@ window.HDT_DATA = {
         {
           "expertId": "ck-5-phut",
           "dir": "KHÔNG MUA",
-          "sig": "down",
+          "sig": "avoid",
           "entry": "—",
           "target": "Chờ kết quả điều tra rõ ràng",
           "stop": "—",
@@ -4585,7 +4585,7 @@ window.HDT_DATA = {
         {
           "expertId": "thai-pham",
           "dir": "TRÁNH",
-          "sig": "down",
+          "sig": "avoid",
           "entry": "—",
           "target": "Kịch bản xấu từng nêu: ~44",
           "stop": "—",
@@ -4616,7 +4616,7 @@ window.HDT_DATA = {
       "name": "FPT Corp",
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:FPT",
-      "sig": "down",
+      "sig": "avoid",
       "stance": "TRÁNH — HỞ ROOM, NGOẠI BÁN",
       "aliases": [
         "fpt"
@@ -4636,7 +4636,7 @@ window.HDT_DATA = {
         {
           "expertId": "thai-pham",
           "dir": "TRÁNH",
-          "sig": "down",
+          "sig": "avoid",
           "entry": "—",
           "target": "Chờ khối ngoại ngừng bán",
           "stop": "—",
@@ -4703,7 +4703,7 @@ window.HDT_DATA = {
       "name": "Hóa chất Đức Giang",
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:DGC",
-      "sig": "down",
+      "sig": "avoid",
       "stance": "LOẠI KHỎI DANH MỤC",
       "aliases": [
         "dgc",
@@ -4724,7 +4724,7 @@ window.HDT_DATA = {
         {
           "expertId": "azfin",
           "dir": "LOẠI NGAY",
-          "sig": "down",
+          "sig": "avoid",
           "entry": "—",
           "target": "—",
           "stop": "Bán bất kể giá nếu còn giữ",
@@ -4735,7 +4735,7 @@ window.HDT_DATA = {
         {
           "expertId": "thai-pham",
           "dir": "TRÁNH",
-          "sig": "down",
+          "sig": "avoid",
           "entry": "—",
           "target": "Chờ vào lại uptrend",
           "stop": "—",
@@ -4818,7 +4818,7 @@ window.HDT_DATA = {
         {
           "expertId": "thai-pham",
           "dir": "TRÁNH",
-          "sig": "down",
+          "sig": "avoid",
           "entry": "—",
           "target": "—",
           "stop": "—",
@@ -5008,7 +5008,7 @@ window.HDT_DATA = {
       "name": "Nhóm Vin (VIC/VHM/VRE)",
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:VIC",
-      "sig": "warn",
+      "sig": "avoid",
       "stance": "CHI PHỐI CHỈ SỐ — GIẢM LÀ ĐÁNG MỪNG",
       "aliases": [
         "vic",
@@ -5037,7 +5037,7 @@ window.HDT_DATA = {
         {
           "expertId": "ck-5-phut",
           "dir": "KHÔNG MUA",
-          "sig": "warn",
+          "sig": "avoid",
           "entry": "—",
           "target": "Vin giảm → index cân bằng lại",
           "stop": "Giá vốn 180–200: bán được",
@@ -5048,7 +5048,7 @@ window.HDT_DATA = {
         {
           "expertId": "ck-5-phut",
           "dir": "ĐỨNG NGOÀI",
-          "sig": "warn",
+          "sig": "avoid",
           "entry": "—",
           "target": "Chỉ dùng làm bộ lọc đọc chỉ số",
           "stop": "—",
@@ -5648,7 +5648,7 @@ window.HDT_DATA = {
       "name": "Nvidia",
       "group": "Quốc tế",
       "tv": "NASDAQ:NVDA",
-      "sig": "down",
+      "sig": "avoid",
       "stance": "TRÁNH — KHÔNG MUA KHÔNG SHORT",
       "aliases": [
         "nvidia",
@@ -5669,7 +5669,7 @@ window.HDT_DATA = {
         {
           "expertId": "thai-pham",
           "dir": "ĐỨNG NGOÀI",
-          "sig": "down",
+          "sig": "avoid",
           "entry": "—",
           "target": "—",
           "stop": "—",
@@ -5711,7 +5711,7 @@ window.HDT_DATA = {
         {
           "expertId": "thai-pham",
           "dir": "TRÁNH / SHORT",
-          "sig": "down",
+          "sig": "avoid",
           "entry": "Đã giảm 20% từ vùng ~400",
           "target": "Về 270 trong tháng 9",
           "stop": "FCF âm 5,9 tỷ đô — lần đầu lịch sử",
@@ -5727,7 +5727,7 @@ window.HDT_DATA = {
       "name": "Netflix",
       "group": "Quốc tế",
       "tv": "NASDAQ:NFLX",
-      "sig": "down",
+      "sig": "avoid",
       "stance": "TRÁNH — YẾU TỐ CHÍNH TRỊ",
       "aliases": [
         "netflix",
@@ -5748,7 +5748,7 @@ window.HDT_DATA = {
         {
           "expertId": "thai-pham",
           "dir": "TRÁNH",
-          "sig": "down",
+          "sig": "avoid",
           "entry": "—",
           "target": "Hết nhiệm kỳ rủi ro chính trị",
           "stop": "—",
@@ -5764,7 +5764,7 @@ window.HDT_DATA = {
       "name": "Dell Technologies",
       "group": "Quốc tế",
       "tv": "NYSE:DELL",
-      "sig": "down",
+      "sig": "avoid",
       "stance": "PHÂN PHỐI 467 → 370 — TRÁNH",
       "aliases": [
         "dell"
@@ -5784,7 +5784,7 @@ window.HDT_DATA = {
         {
           "expertId": "thai-pham",
           "dir": "TRÁNH / SHORT",
-          "sig": "down",
+          "sig": "avoid",
           "entry": "Phân phối khung 467 → 370",
           "target": "\"Tương tự như Intel\"",
           "stop": "—",
@@ -6027,7 +6027,7 @@ window.HDT_DATA = {
       "name": "Bitcoin",
       "group": "Hàng hóa & Crypto",
       "tv": "BINANCE:BTCUSDT",
-      "sig": "down",
+      "sig": "avoid",
       "stance": "ĐỨNG NGOÀI — BANANA 3 ĐÍCH 71–72K",
       "aliases": [
         "bitcoin",
@@ -6053,7 +6053,7 @@ window.HDT_DATA = {
         {
           "expertId": "thai-pham",
           "dir": "ĐỨNG NGOÀI",
-          "sig": "down",
+          "sig": "avoid",
           "entry": "Đang 65.000",
           "target": "Nhịp hồi tối đa 71–72k",
           "stop": "Xác suất cao về 40–41k",
@@ -6312,7 +6312,7 @@ window.HDT_DATA = {
       },
       {
         "act": "TRÁNH",
-        "sig": "down",
+        "sig": "avoid",
         "what": "PNJ · FPT · HPG · MWG · SSI",
         "why": "PNJ phá đáy 6 năm; FPT dò đáy 95→74→62; SSI sườn phải có thể về 20."
       },

@@ -6402,5 +6402,179 @@ window.HDT_DATA = {
         }
       ]
     }
+  },
+  "binance": {
+    "updated": "27/07/2026",
+    "totalSpot": 46,
+    "totalFut": 144,
+    "map": {
+      "aapl": {
+        "spot": [],
+        "fut": [
+          "AAPLUSDT"
+        ],
+        "kind": "exact"
+      },
+      "intc": {
+        "spot": [
+          "INTCBUSDT"
+        ],
+        "fut": [
+          "INTCUSDT"
+        ],
+        "kind": "exact"
+      },
+      "mu": {
+        "spot": [
+          "MUBUSDT"
+        ],
+        "fut": [
+          "MUUSDT"
+        ],
+        "kind": "exact"
+      },
+      "mrvl": {
+        "spot": [
+          "MRVLBUSDT"
+        ],
+        "fut": [
+          "MRVLUSDT"
+        ],
+        "kind": "exact"
+      },
+      "panw": {
+        "spot": [],
+        "fut": [
+          "PANWUSDT"
+        ],
+        "kind": "exact"
+      },
+      "crwd": {
+        "spot": [],
+        "fut": [
+          "CRWDUSDT"
+        ],
+        "kind": "exact"
+      },
+      "amd": {
+        "spot": [
+          "AMDBUSDT"
+        ],
+        "fut": [
+          "AMDUSDT"
+        ],
+        "kind": "exact"
+      },
+      "nvda": {
+        "spot": [
+          "NVDABUSDT"
+        ],
+        "fut": [
+          "NVDAUSDT"
+        ],
+        "kind": "exact"
+      },
+      "googl": {
+        "spot": [
+          "GOOGLBUSDT"
+        ],
+        "fut": [
+          "GOOGLUSDT"
+        ],
+        "kind": "exact"
+      },
+      "nflx": {
+        "spot": [],
+        "fut": [
+          "NFLXUSDT"
+        ],
+        "kind": "exact"
+      },
+      "dell": {
+        "spot": [],
+        "fut": [
+          "DELLUSDT"
+        ],
+        "kind": "exact"
+      },
+      "spacex": {
+        "spot": [
+          "SPCXBUSDT"
+        ],
+        "fut": [
+          "SPCXUSD1",
+          "SPCXUSDT"
+        ],
+        "kind": "exact"
+      },
+      "samsung": {
+        "spot": [],
+        "fut": [
+          "SAMSUNGUSDT"
+        ],
+        "kind": "exact"
+      },
+      "spx": {
+        "spot": [
+          "SPYBUSDT"
+        ],
+        "fut": [
+          "SPYUSDT"
+        ],
+        "kind": "proxy",
+        "note": "ETF SPY bám S&P 500 — không phải chỉ số gốc"
+      },
+      "ndq": {
+        "spot": [
+          "QQQBUSDT"
+        ],
+        "fut": [
+          "QQQUSDT"
+        ],
+        "kind": "proxy",
+        "note": "ETF QQQ bám Nasdaq-100 — không phải chỉ số gốc"
+      },
+      "nikkei": {
+        "spot": [],
+        "fut": [
+          "EWJUSDT"
+        ],
+        "kind": "proxy",
+        "note": "ETF EWJ (iShares MSCI Japan) — proxy cho CK Nhật"
+      },
+      "gold": {
+        "spot": [
+          "PAXGUSDT",
+          "XAUTUSDT"
+        ],
+        "fut": [
+          "XAUUSDT"
+        ],
+        "kind": "exact"
+      },
+      "silver": {
+        "spot": [],
+        "fut": [
+          "XAGUSDT"
+        ],
+        "kind": "exact"
+      },
+      "oil": {
+        "spot": [],
+        "fut": [
+          "BZUSDT",
+          "CLUSDT"
+        ],
+        "kind": "exact",
+        "note": "CL = WTI, BZ = Brent"
+      },
+      "btc": {
+        "spot": [
+          "BTCUSDT"
+        ],
+        "fut": [],
+        "kind": "exact"
+      }
+    }
   }
 };

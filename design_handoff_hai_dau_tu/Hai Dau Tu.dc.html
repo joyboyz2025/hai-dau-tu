@@ -718,6 +718,34 @@ input::placeholder { color: #A3A29A; }
         </div>
       </div>
 
+      <!-- ══ CỘNG ĐỒNG HỎI GÌ ══ -->
+      <sc-if value="{{ brCmHas }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex; flex-direction:column; gap:12px; margin-top:4px;">
+          <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <div style="font-size:15px; font-weight:800; letter-spacing:-0.2px;">💬 {{ brCmTitle }}</div>
+              <div style="flex:1;"></div>
+            </div>
+            <div style="font-size:11px; font-family:'IBM Plex Mono',monospace; color:#9B9A92;">{{ brCmSource }}</div>
+          </div>
+          <div style="background:#F4F3EE; border:1px dashed #C9C8C0; border-radius:10px; padding:10px 13px; font-size:11.5px; color:#6E6D66; line-height:1.55;">{{ brCmDisclaimer }}</div>
+          <sc-for list="{{ brCommunity }}" as="cm" hint-placeholder-count="4">
+            <div class="tk-card" style="background:#FFFFFF; border:1px solid #E2E1DA; border-radius:13px; padding:14px 16px; display:flex; flex-direction:column; gap:9px;">
+              <div style="display:flex; align-items:flex-start; gap:9px; flex-wrap:wrap;">
+                <div style="font-size:9.5px; font-weight:800; letter-spacing:0.4px; padding:3px 9px; border-radius:999px; background:{{ cm.cBg }}; color:{{ cm.cColor }}; white-space:nowrap; margin-top:2px;">{{ cm.statusLabel }}</div>
+                <div style="flex:1; min-width:200px; font-size:13.5px; font-weight:600; color:#1C1C18; line-height:1.55;">{{ cm.q }}</div>
+              </div>
+              <div style="font-size:11px; color:#9B9A92; font-family:'IBM Plex Mono',monospace;">{{ cm.who }}</div>
+              <div style="border-left:3px solid #E2E1DA; padding-left:12px; display:flex; flex-direction:column; gap:4px;">
+                <div style="font-size:9.5px; font-weight:800; letter-spacing:0.5px; color:#9B9A92; text-transform:uppercase;">Thái Phạm đã nói gì</div>
+                <div style="font-size:12.5px; color:#46453F; line-height:1.6;">{{ cm.a }}</div>
+                <div style="font-size:10.5px; color:#9B9A92; font-family:'IBM Plex Mono',monospace;">{{ cm.aSrc }}</div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+
       <!-- ══ TỔNG HỢP Ý KIẾN CHỨNG KHOÁN ══ -->
       <div style="display:flex; flex-direction:column; gap:14px; border-top:2px solid #1C1C18; padding-top:22px; margin-top:6px;">
         <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:12px; flex-wrap:wrap;">
@@ -2455,6 +2483,17 @@ class Component extends DCLogic {
       act: t.act, what: t.what, why: t.why,
       ...CHIP_SIG[t.sig], accent: ACT_ACCENT[t.sig] || '#C9C8C0'
     }));
+    const CM = BR.community || {};
+    const CM_STATUS = {
+      answered: { cBg: 'oklch(0.95 0.04 150)', cColor: 'oklch(0.42 0.1 150)' },
+      partial:  { cBg: 'oklch(0.96 0.05 85)',  cColor: 'oklch(0.5 0.1 70)' },
+      open:     { cBg: '#EFEEE9',              cColor: '#5F5E57' },
+      data:     { cBg: 'oklch(0.95 0.02 235)', cColor: BRAND }
+    };
+    const brCommunity = (CM.items || []).map(it => Object.assign({
+      q: it.q, who: it.who, a: it.a, aSrc: it.aSrc, statusLabel: it.statusLabel
+    }, CM_STATUS[it.status] || CM_STATUS.open));
+
     const SV = BR.stockView || {};
     const brSvExperts = (SV.experts || []).map(e => {
       const ex = HDT.experts[e.expertId] || {};
@@ -2630,6 +2669,8 @@ class Component extends DCLogic {
       brExpertName: brExpert.name || '', brExpertInitials: brExpert.initials || '',
       brTimeline, brSqueezes, brStats, brTodo,
       brQuoteText: (BR.quote || {}).text || '', brQuoteSource: (BR.quote || {}).source || '',
+      brCommunity, brCmHas: brCommunity.length > 0,
+      brCmTitle: CM.title || '', brCmSource: CM.source || '', brCmDisclaimer: CM.disclaimer || '',
       brSvTitle: SV.title || '', brSvRange: SV.dateRange || '', brSvVerdict: SV.verdict || '',
       brSvExperts, brSvAgree: SV.agree || [], brSvDiffer: SV.differ || [],
       isTickers: s.screen === 'tickers', isTicker: s.screen === 'ticker',

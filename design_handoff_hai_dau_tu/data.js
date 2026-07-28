@@ -5,7 +5,7 @@
 //          — giữ bài mới nhất + các bài hội viên gần nhất.
 // ─────────────────────────────────────────────────────────────────────────────
 window.HDT_DATA = {
-  "lastUpdated": "27/07/2026 · Mới nhất",
+  "lastUpdated": "28/07/2026 · Mới nhất",
   "pulse": [
     {
       "name": "CK Việt",
@@ -200,7 +200,7 @@ window.HDT_DATA = {
         {
           "date": "2026-07-26",
           "dateShort": "26/07",
-          "timeAgo": "Hôm qua",
+          "timeAgo": "2 ngày trước",
           "tab": "Tập 40 · Tuần 30",
           "sourceType": "member-video",
           "typeLabel": "Video hội viên · Tập 40",
@@ -529,7 +529,7 @@ window.HDT_DATA = {
         {
           "date": "2026-07-23",
           "dateShort": "23/07",
-          "timeAgo": "4 ngày trước",
+          "timeAgo": "5 ngày trước",
           "tab": "Tập 39 · Tuần 29",
           "sourceType": "member-video",
           "typeLabel": "Video hội viên · Tập 39",
@@ -2145,7 +2145,7 @@ window.HDT_DATA = {
         {
           "date": "2026-07-24",
           "dateShort": "24/07",
-          "timeAgo": "3 ngày trước",
+          "timeAgo": "4 ngày trước",
           "tab": "Podcast · 24/07",
           "sourceType": "public-video",
           "typeLabel": "Video công khai",
@@ -2805,9 +2805,90 @@ window.HDT_DATA = {
       },
       "updates": [
         {
+          "date": "2026-07-27",
+          "dateShort": "27/07",
+          "timeAgo": "Hôm qua",
+          "tab": "Video · 27/07",
+          "sourceType": "public-video",
+          "typeLabel": "Video công khai",
+          "title": "Đầu Tư Trung–Dài Hạn Đang Lỗ Có Nên Bán? — \"Bán Lúc Này Là Chậm Rồi\"",
+          "summary": "Trả lời dứt khoát câu hỏi nhận được nhiều nhất phiên 27/07 (phiên rất xấu, index về mức thấp tuần trước, tâm lý tiêu cực từ sáng dù chỉ giảm 1–2%): CHƯA phải lúc bán cổ phiếu trung–dài hạn, \"bán lúc này rủi ro hơn nắm giữ\" — chúng ta vẫn đang trong GIAI ĐOẠN MUA. Anh nhắc lại cả hệ thống đã áp dụng suốt nhịp giảm từ T9–10/2025 (khi midcap tạo đỉnh): không mua trên đỉnh, không mua trên đà giảm, chờ cổ phiếu dừng giảm + có chiết khấu + có nền giá nhỏ mới cân nhắc, mua từ tốn chia lệnh — \"chưa bao giờ hô một lệnh all-in nào\", và không dùng margin từ T10/2025 (\"khuyên 100 người như một\"). Thừa nhận thẳng: dù tiếp cận cẩn trọng như vậy thị trường vẫn giảm — \"nó là vấn đề của thị trường chung\". Về kỳ vọng: cuối năm về bờ thì \"nói thật mình cũng không tin tưởng lắm\"; sang năm có thể, sang năm nữa càng chắc chắn hơn — \"chuẩn bị tinh thần đồng hành trong thời gian rất dài\". Mã đang yếu hơn hẳn thị trường: Dabaco và IGC (IGC thủng đáy phiên 27/07), BCM \"trông cũng chán\" — đều là những mã anh đã cản mua thêm, mới vào 1–2 lệnh; chưa đảo hàng vì \"chưa nghĩ ra phương án nào tốt hơn\".",
+          "feedChips": [
+            {
+              "label": "Bán ⚠ chậm rồi — rủi ro hơn giữ",
+              "sig": "warn"
+            },
+            {
+              "label": "Giai đoạn ↑ vẫn đang là lúc MUA",
+              "sig": "up"
+            },
+            {
+              "label": "Về bờ ◷ cuối năm khó, sang năm mới có cửa",
+              "sig": "wait"
+            },
+            {
+              "label": "DBC · IGC ↓ yếu hơn hẳn thị trường",
+              "sig": "down"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "Có nên bán?",
+              "value": "Bán lúc này là CHẬM RỒI",
+              "signal": "warn",
+              "note": "Bán ở đây rủi ro hơn nắm giữ. Ai bán tuần trước mua lại tuần này thì lãi 5–7% — nhưng \"mình chưa bao giờ nhắm đầu tư trung dài hạn như vậy\". Vẫn đang trong giai đoạn MUA, không phải giai đoạn bán."
+            },
+            {
+              "tag": "Kỳ vọng về bờ",
+              "value": "Cuối năm khó — sang năm mới có cửa",
+              "signal": "wait",
+              "note": "\"Nếu anh em hỏi đến cuối năm có về được bờ không thì nói thật mình cũng không tin tưởng lắm đâu. Sang năm có thể, sang năm nữa càng lúc càng chắc chắn hơn.\" Chuẩn bị tinh thần đồng hành thời gian rất dài."
+            },
+            {
+              "tag": "DBC · IGC · BCM",
+              "value": "Yếu hơn hẳn thị trường — đừng mua thêm",
+              "signal": "down",
+              "note": "IGC thủng đáy phiên 27/07, Dabaco xấu hơn thị trường rất nhiều, BCM \"trông cũng chán\". Đây là các mã anh đã cố cản mọi người mua thêm; mới vào 1–2 lệnh. Chưa đảo hàng vì chưa có phương án tốt hơn."
+            },
+            {
+              "tag": "Tự đánh giá",
+              "value": "Cẩn trọng mà thị trường vẫn giảm",
+              "signal": "wait",
+              "note": "Thừa nhận thẳng: chọn doanh nghiệp tốt, mua giá hợp lý, chia lệnh, không margin — \"đến thời điểm hiện tại nó vẫn giảm các bạn ạ. Nó là vấn đề của thị trường chung.\""
+            }
+          ],
+          "sections": [
+            {
+              "title": "Vì sao không bán ở đây",
+              "signal": "warn",
+              "sigLabel": "Kỷ luật — bán là chậm",
+              "para": "Phiên 27/07 index chỉ về mức thấp của tuần trước nhưng tâm lý tiêu cực ngay từ sáng dù mới giảm 1–2%. Rất nhiều người hỏi có nên bán hàng trung–dài hạn để chờ mua lại rẻ hơn. Quan điểm rõ ràng: không.",
+              "bullets": [
+                "Bán ở vùng này rủi ro hơn nắm giữ — dù đúng là ai bán tuần trước và mua lại tuần này thì lãi thêm 5–7%.",
+                "Đầu tư trung–dài hạn không phải chuyện chọn mã hay chọn giá, mà là cả một hệ thống áp dụng xuyên suốt mọi giai đoạn thị trường.",
+                "Công sức kiểm soát margin và giữ sức mua từ đỉnh đến giờ \"cần được thể hiện\" — hiện không margin và vẫn còn sức mua (dù không nhiều).",
+                "\"Đây không phải lúc sợ hãi. Đây là lúc kiểm soát tốt tài khoản để chờ cơ hội giải ngân. Ai sợ hãi thì xin mời bán hết và rời bỏ thị trường.\""
+              ]
+            },
+            {
+              "title": "Hệ thống đã chạy từ T9–10/2025",
+              "signal": "up",
+              "sigLabel": "Nhất quán — có thể kiểm chứng",
+              "para": "Anh nhắc lại toàn bộ chuỗi quyết định để chứng minh tính nhất quán: từ khi midcap tạo đỉnh T9–10/2025, trong các livestream anh luôn trả lời KHÔNG có điểm mua trung–dài hạn, đặc biệt sau nhịp tăng rất mạnh T6–7/2025.",
+              "bullets": [
+                "Không mua trên đỉnh → không mua trên đà giảm → chờ dừng giảm, có chiết khấu hấp dẫn từ đỉnh và có nền giá nhỏ mới cân nhắc mua.",
+                "Mua từ tốn, chia lệnh — \"chưa bao giờ hô bất kỳ lệnh nào mua all-in\".",
+                "Không vẽ kỳ vọng thời điểm: \"chưa bao giờ nói mua thế này thì tháng 9 hay cuối năm sẽ tăng lại — bản thân mình cũng không biết\".",
+                "Không margin từ T10/2025, ai đang dùng thì khuyên hạ — \"đố ai bóc phốt được mình vấn đề này\".",
+                "Kim chỉ nam: doanh nghiệp tốt + kinh doanh ổn định + giá hợp lý + không margin. Giá hiện tại là \"hợp lý\", chưa tính là rẻ lắm."
+              ]
+            }
+          ]
+        },
+        {
           "date": "2026-07-24",
           "dateShort": "24/07",
-          "timeAgo": "3 ngày trước",
+          "timeAgo": "4 ngày trước",
           "tab": "Video · 24/07",
           "sourceType": "public-video",
           "typeLabel": "Video công khai",
@@ -2887,7 +2968,7 @@ window.HDT_DATA = {
         {
           "date": "2026-07-22",
           "dateShort": "22/07",
-          "timeAgo": "5 ngày trước",
+          "timeAgo": "6 ngày trước",
           "tab": "Video · 22/07",
           "sourceType": "public-video",
           "typeLabel": "Video công khai",
@@ -2959,7 +3040,7 @@ window.HDT_DATA = {
         {
           "date": "2026-07-21",
           "dateShort": "21/07",
-          "timeAgo": "6 ngày trước",
+          "timeAgo": "Tuần trước",
           "tab": "Video · 21/07",
           "sourceType": "public-video",
           "typeLabel": "Video công khai",
@@ -3238,72 +3319,17 @@ window.HDT_DATA = {
               ]
             }
           ]
-        },
-        {
-          "date": "2026-07-15",
-          "dateShort": "15/07",
-          "timeAgo": "Tuần trước",
-          "tab": "Video · 15/07",
-          "sourceType": "public-video",
-          "typeLabel": "Video công khai",
-          "title": "Vấn Đề Của PNJ Không Phải Là Cổ Phiếu Tăng Hay Giảm",
-          "summary": "Khuyên KHÔNG đầu tư PNJ lúc này, kể cả phiên trần — giống DGC nhịp trước. Vấn đề không phải trần/sàn hay \"chiết khấu đủ chưa\", mà là: rủi ro PNJ Lào có liên đới công ty mẹ không, vụ án đang mở rộng điều tra (bắt thêm người, cả các chủ tiệm vàng lớn), hoạt động kinh doanh có dính yếu tố làm giả giấy tờ không. Mua PNJ bây giờ là chơi trò \"đoán xem nó có sập không\" bằng tiền thật. Nguyên tắc: cổ phiếu có rủi ro vận hành/niêm yết — không mua; đọc báo cáo không ăn thua vì loại rủi ro này không nằm trên giấy tờ.",
-          "feedChips": [
-            {
-              "label": "PNJ ↓ không mua, kể cả trần",
-              "sig": "down"
-            },
-            {
-              "label": "Pháp lý ⚠ điều tra đang mở rộng",
-              "sig": "warn"
-            },
-            {
-              "label": "Nguyên tắc ⚠ rủi ro vận hành = đứng ngoài",
-              "sig": "warn"
-            }
-          ],
-          "keyCalls": [
-            {
-              "tag": "PNJ",
-              "value": "Không mua — kể cả phiên trần",
-              "signal": "down",
-              "note": "Giống DGC nhịp trước. Câu hỏi thật: PNJ Lào có liên đới công ty mẹ? Điều tra mở rộng tới cổ đông khác/ban giám đốc? Mua lúc này là trò \"đoán xem nó có sập không\" đặt cược bằng tiền thật — \"thà làm con lô\"."
-            },
-            {
-              "tag": "Nguyên tắc rủi ro",
-              "value": "Rủi ro vận hành/niêm yết → quay đi",
-              "signal": "warn",
-              "note": "Không quy chụp doanh nghiệp đúng sai — chỉ cần nhìn thấy rủi ro là không mua, không quan tâm trần hay sàn. Báo cáo tài chính không phản ánh được loại rủi ro này."
-            }
-          ],
-          "sections": [
-            {
-              "title": "Vì sao không bắt đáy PNJ",
-              "signal": "down",
-              "sigLabel": "Rủi ro — chưa thể định lượng",
-              "para": "Thị trường đang vội: lập luận \"giảm nhiều rồi, chiết khấu đủ rồi, ai bán đã bán\" chỉ là cách né vấn đề thật. Vấn đề thật là chuỗi câu hỏi chưa ai trả lời được: rủi ro PNJ Lào có liên đới doanh nghiệp mẹ, điều tra mở rộng đến đâu, kinh doanh có bị ảnh hưởng bởi yếu tố làm giả giấy tờ.",
-              "bullets": [
-                "Cơ quan điều tra đang mở rộng vụ án, tiếp tục bắt thêm người — hôm nay (15/07) bắt thêm các chủ tiệm vàng lớn.",
-                "Những người khen \"phần này nhỏ, không ảnh hưởng\" là đoán mò từ bên ngoài — không ai biết điều gì đang diễn ra trong doanh nghiệp.",
-                "Đồ thị xanh hay đỏ, tín hiệu kỹ thuật ở PNJ lúc này đều vô nghĩa.",
-                "Ai mua lúc này là đang đánh cược \"đoán xem nó có sập không\" — xong lại khoe bắt đáy lãi 7–10% rồi chốt; \"đánh thế thà làm con lô\"."
-              ]
-            },
-            {
-              "title": "Nguyên tắc với cổ phiếu dính pháp lý",
-              "signal": "warn",
-              "sigLabel": "Kỷ luật — rủi ro là rủi ro",
-              "para": "Quan điểm rất rõ ràng: con nào có vấn đề rủi ro vận hành hay rủi ro niêm yết thì không mua, bất kể giá. Không cần đánh giá doanh nghiệp đúng hay sai — nhà đầu tư cá nhân không biết gì về vụ án bên trong.",
-              "bullets": [
-                "Những mã như PNJ lúc này đọc báo cáo tài chính không ăn thua — rủi ro không thể hiện trên giấy tờ.",
-                "Nhìn thấy rủi ro → quay đi; nhìn thấy rủi ro mà vẫn nhảy vào là \"dở hơi\".",
-                "Đây là chia sẻ quan điểm cá nhân về rủi ro, không phải nhận định doanh nghiệp đúng/sai."
-              ]
-            }
-          ]
         }
       ],
       "sources": [
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 27)",
+          "iconColor": "oklch(0.46 0.15 27)",
+          "date": "27/07/2026",
+          "title": "Đầu tư Trung - Dài hạn đang lỗ lúc này thì có nên bán không?",
+          "meta": "Video công khai · Chứng khoán 5 phút"
+        },
         {
           "icon": "▶",
           "iconBg": "oklch(0.95 0.04 27)",
@@ -3351,21 +3377,13 @@ window.HDT_DATA = {
           "date": "16/07/2026",
           "title": "Đã có đáy chưa? Bây giờ hồi lên thì nên xử lý cổ phiếu lỗ thế nào?",
           "meta": "Video công khai · Chứng khoán 5 phút"
-        },
-        {
-          "icon": "▶",
-          "iconBg": "oklch(0.95 0.04 27)",
-          "iconColor": "oklch(0.46 0.15 27)",
-          "date": "15/07/2026",
-          "title": "Vấn đề của PNJ không phải là cổ phiếu tăng hay giảm.",
-          "meta": "Video công khai · Chứng khoán 5 phút"
         }
       ]
     }
   },
   "weekly": {
-    "dateRange": "20–26/07/2026",
-    "action": "Tuần −101 điểm, VN-Index đóng 1.686 — nhưng tuần đầu tiên cả 3 chuyên gia CÙNG nói định giá đã rẻ thật. Thái Phạm (Tập 40) lần đầu đưa lịch trình: đáy tháng 8–9 (khi Fed tăng lãi, xác suất 82%), hồi phục cuối năm, sóng 10–20%; tuần 30 vẫn tiền 60/cổ 40, đợi VN-Index 1.600 mới giải ngân; điểm mới: bank VCB/BID rẻ hơn cả đáy T4/2025. AzFin (#06) đo bằng số: P/E ~12x, loại Vin ~10x = chỉ 6% thời gian lịch sử — nhặt dần 6 nhóm ngành, tỉ trọng cổ phiếu 90% danh mục tài chính. CK 5 phút đồng ý với chủ tịch SSI rằng định giá rẻ, nhưng nến Harami chỉ chững đà giảm, chưa mã nào tạo đáy — bán ở 1.686 rủi ro hơn giữ. Cả 3: TUYỆT ĐỐI không margin.",
+    "dateRange": "20–27/07/2026",
+    "action": "Tuần −101 điểm, VN-Index đóng 1.686 — nhưng tuần đầu tiên cả 3 chuyên gia CÙNG nói định giá đã rẻ thật. Thái Phạm (Tập 40) lần đầu đưa lịch trình: đáy tháng 8–9 (khi Fed tăng lãi, xác suất 82%), hồi phục cuối năm, sóng 10–20%; tuần 30 vẫn tiền 60/cổ 40, đợi VN-Index 1.600 mới giải ngân; điểm mới: bank VCB/BID rẻ hơn cả đáy T4/2025. AzFin (#06) đo bằng số: P/E ~12x, loại Vin ~10x = chỉ 6% thời gian lịch sử — nhặt dần 6 nhóm ngành, tỉ trọng cổ phiếu 90% danh mục tài chính. CK 5 phút đồng ý với chủ tịch SSI rằng định giá rẻ, nhưng nến Harami chỉ chững đà giảm, chưa mã nào tạo đáy — bán ở 1.686 rủi ro hơn giữ. Cập nhật 27/07 (CK 5 phút, sau phiên rất xấu): \"bán lúc này là CHẬM RỒI, rủi ro hơn nắm giữ\" — vẫn đang trong giai đoạn MUA; nhưng hạ kỳ vọng thời gian: cuối năm khó về bờ, sang năm mới có cửa. Cả 3: TUYỆT ĐỐI không margin.",
     "consensus": [
       {
         "label": "Định giá đã rẻ thật — lần đầu cả 3 đồng thuận bằng số",
@@ -3396,6 +3414,10 @@ window.HDT_DATA = {
       {
         "label": "Ngân hàng: mua hay chọn lọc?",
         "detail": "AzFin: bank là 1 trong 6 nhóm nhặt dần, có mã P/E chưa đến 6x, ngân hàng quốc doanh nay cũng hấp dẫn. Thái Phạm chọn lọc gắt hơn: chỉ VCB/BID (rẻ hơn đáy T4/2025), TCB đợi 22, còn VPB/MB \"được ít chết nhiều\", LPB/ACB giữ giá cao \"chẳng ai dám vào\"."
+      },
+      {
+        "label": "Bao giờ về bờ?",
+        "detail": "Thái Phạm (Tập 40): đáy T8–9 rồi hồi phục khá vào CUỐI NĂM, sóng 10–20%. CK 5 phút (27/07) thận trọng hơn hẳn: \"cuối năm về bờ thì nói thật mình cũng không tin tưởng lắm đâu — sang năm có thể, sang năm nữa càng chắc chắn hơn\"."
       }
     ]
   },
@@ -3630,7 +3652,7 @@ window.HDT_DATA = {
       "asset": "CK Việt",
       "call": "Thị trường tạo đáy tháng 8–9 (khi Fed tăng lãi), hồi phục cuối năm — sóng 10–20%",
       "result": "pending",
-      "note": "Lịch trình cụ thể đầu tiên ông đưa ra; giữ tiền nhiều để thu gom cho \"mùa xuân\"."
+      "note": "CK 5 phút (27/07) thận trọng hơn về thời gian: cuối năm về bờ \"không tin tưởng lắm\", sang năm mới có cửa — lệch với kỳ vọng hồi phục cuối năm của Thái Phạm."
     },
     {
       "expert": "thai-pham",
@@ -3846,7 +3868,7 @@ window.HDT_DATA = {
       "asset": "CK Việt",
       "call": "Bán ở 1.686 rủi ro hơn giữ — bán giờ phải kỳ vọng về 1.400 mới mua lại",
       "result": "pending",
-      "note": "Đồng ý định giá rẻ với chủ tịch SSI nhưng nến Harami chỉ chững đà giảm, chưa mã nào tạo đáy."
+      "note": "Nhắc lại 27/07 sau phiên xấu: \"bán lúc này là chậm rồi, rủi ro hơn nắm giữ\" — vẫn đang trong giai đoạn MUA. Thị trường tiếp tục giảm về mức thấp tuần trước."
     },
     {
       "expert": "ck-5-phut",
@@ -3855,11 +3877,43 @@ window.HDT_DATA = {
       "call": "BCTC quý 2 không tác động nhiều lên giá (call đầu tháng 7)",
       "result": "hit",
       "note": "HIT (tự thuật + kiểm chứng): tuần 20–24/07 giảm 101 điểm ngay giữa mùa BCTC; \"mọi người cũng chẳng quan tâm đến lý do giảm nữa\"."
+    },
+    {
+      "expert": "ck-5-phut",
+      "date": "27/07",
+      "asset": "CK Việt",
+      "call": "Chưa phải lúc bán hàng trung–dài hạn — vẫn đang trong giai đoạn MUA",
+      "result": "pending",
+      "note": "Phiên 27/07 rất xấu nhưng giữ nguyên quan điểm; giá hiện tại là \"hợp lý\", chưa phải rẻ lắm."
+    },
+    {
+      "expert": "ck-5-phut",
+      "date": "27/07",
+      "asset": "CK Việt",
+      "call": "Cuối năm khó về bờ — sang năm mới có cửa",
+      "result": "pending",
+      "note": "\"Nói thật mình cũng không tin tưởng lắm đâu\"; sang năm nữa càng chắc chắn hơn."
+    },
+    {
+      "expert": "ck-5-phut",
+      "date": "27/07",
+      "asset": "CK Việt",
+      "call": "DBC, IGC, BCM yếu hơn hẳn thị trường — đừng mua thêm",
+      "result": "pending",
+      "note": "IGC thủng đáy 27/07; đã cản mua thêm từ trước, mới vào 1–2 lệnh, chưa đảo hàng."
     }
   ],
   "actions": {
-    "updated": "27/07/2026",
+    "updated": "28/07/2026",
     "now": [
+      {
+        "asset": "Hàng trung–dài hạn đang lỗ",
+        "dir": "KHÔNG BÁN",
+        "sig": "warn",
+        "expertId": "ck-5-phut",
+        "detail": "Phiên 27/07 rất xấu nhưng \"bán lúc này là chậm rồi, rủi ro hơn nắm giữ\" — vẫn đang trong giai đoạn MUA, không phải giai đoạn bán.",
+        "level": "Giữ · còn sức mua · không margin"
+      },
       {
         "asset": "Giữ tiền mặt",
         "dir": "TIỀN 60 / CỔ 40",
@@ -3947,6 +4001,14 @@ window.HDT_DATA = {
         "expertId": "thai-pham",
         "detail": "PNJ phá đáy 6 năm (giám đốc bị truy tố); FPT dò đáy 95→74→62; SSI sườn phải có thể về 20; MSB chốt lời.",
         "level": "Không bắt đáy nhóm này"
+      },
+      {
+        "asset": "DBC · IGC · BCM",
+        "dir": "KHÔNG MUA THÊM",
+        "sig": "avoid",
+        "expertId": "ck-5-phut",
+        "detail": "Nhóm yếu hơn hẳn thị trường — IGC thủng đáy 27/07, BCM đục nhiều đáy. Đã vào 1–2 lệnh thì giữ, chưa đảo hàng.",
+        "level": "\"Đừng mua bây giờ, trông nó xấu quá\""
       }
     ],
     "waiting": [
@@ -4999,6 +5061,116 @@ window.HDT_DATA = {
           "status": "active",
           "date": "26/07",
           "note": "Không mua mới."
+        }
+      ]
+    },
+    {
+      "key": "dbc",
+      "symbol": "DBC",
+      "name": "Dabaco",
+      "group": "Chứng khoán Việt Nam",
+      "tv": "HOSE:DBC",
+      "sig": "avoid",
+      "stance": "YẾU HƠN THỊ TRƯỜNG — ĐỪNG MUA THÊM",
+      "aliases": [
+        "dbc",
+        "dabaco"
+      ],
+      "potential": 2,
+      "caution": 4,
+      "potentialNote": "Vẫn nằm trong danh mục theo dõi trung–dài hạn của CK 5 phút, mới vào 1–2 lệnh nên còn dư địa mua nếu tạo nền.",
+      "cautionNote": "\"Xấu hơn thị trường rất nhiều\" — chính người khuyến nghị đang cản mua thêm; chưa có phương án đảo hàng.",
+      "oneLiner": "CK 5 phút (27/07): Dabaco đang yếu hơn hẳn thị trường — đã cản mua thêm, chỉ giữ 1–2 lệnh đã vào.",
+      "thesis": [
+        {
+          "title": "Mã trong danh mục nhưng đang yếu bất thường",
+          "body": "Trong video 27/07 khi trả lời về cổ phiếu trung–dài hạn đang lỗ, CK 5 phút nêu đích danh Dabaco cùng IGC là những mã \"xấu hơn thị trường rất nhiều\" ở thời điểm này. Điểm đáng chú ý: đây là những mã chính anh đã \"cố gắng để cản mọi người mua thêm rất nhiều rồi\" — danh mục mới vào một hoặc hai lệnh, vẫn trong giai đoạn đợi mua tiếp nhưng \"đừng mua bây giờ, trông nó xấu quá\". Anh cũng chưa đảo hàng vì \"chưa nghĩ ra được phương án nào tốt hơn\"; nếu thị trường có nhịp chững và xuất hiện cơ hội tốt hơn thì sẽ cân nhắc sau."
+        }
+      ],
+      "orders": [
+        {
+          "expertId": "ck-5-phut",
+          "dir": "GIỮ — KHÔNG MUA THÊM",
+          "sig": "avoid",
+          "entry": "Đã vào 1–2 lệnh",
+          "target": "Đợi nền giá mới",
+          "stop": "Không đảo hàng lúc này",
+          "status": "active",
+          "date": "27/07",
+          "note": "\"Đừng mua bây giờ, trông nó xấu quá.\""
+        }
+      ]
+    },
+    {
+      "key": "igc",
+      "symbol": "IGC",
+      "name": "Apax Holdings / IGC Group",
+      "group": "Chứng khoán Việt Nam",
+      "tv": "HOSE:IGC",
+      "sig": "avoid",
+      "stance": "THỦNG ĐÁY 27/07 — ĐỪNG MUA THÊM",
+      "aliases": [
+        "igc"
+      ],
+      "potential": 1,
+      "caution": 5,
+      "potentialNote": "Không có luận điểm mua mới — chỉ là mã đang kẹt trong danh mục, chờ nhịp chững để tính.",
+      "cautionNote": "Vừa thủng đáy phiên 27/07 và được xếp vào nhóm \"yếu hơn hẳn thị trường\".",
+      "oneLiner": "CK 5 phút (27/07): IGC thủng đáy ngay phiên hôm nay — nằm trong nhóm yếu hơn hẳn thị trường.",
+      "thesis": [
+        {
+          "title": "Thủng đáy trong phiên xấu 27/07",
+          "body": "CK 5 phút nêu IGC cùng Dabaco là hai mã \"xấu hơn thị trường rất nhiều\" và cho biết ngay phiên 27/07 IGC đã thủng đáy — \"hôm nay thực sự nhìn con IGC nó thủng đáy với cả con BCM trông nó cũng chán\". Cũng như Dabaco, đây là mã anh đã cản mua thêm từ trước; danh mục mới vào 1–2 lệnh và hiện chưa xử lý gì — \"thời điểm hiện tại chưa xử lý gì đâu, chúng ta cứ giữ tiếp đã\"."
+        }
+      ],
+      "orders": [
+        {
+          "expertId": "ck-5-phut",
+          "dir": "GIỮ — KHÔNG MUA THÊM",
+          "sig": "avoid",
+          "entry": "Đã vào 1–2 lệnh",
+          "target": "Chờ nhịp chững để cân nhắc đảo hàng",
+          "stop": "Chưa xử lý gì lúc này",
+          "status": "active",
+          "date": "27/07",
+          "note": "Thủng đáy phiên 27/07."
+        }
+      ]
+    },
+    {
+      "key": "bcm",
+      "symbol": "BCM",
+      "name": "Becamex IDC",
+      "group": "Chứng khoán Việt Nam",
+      "tv": "HOSE:BCM",
+      "sig": "avoid",
+      "stance": "ĐỤC NHIỀU ĐÁY — CHƯA CÓ TÍN HIỆU",
+      "aliases": [
+        "bcm",
+        "becamex"
+      ],
+      "potential": 2,
+      "caution": 4,
+      "potentialNote": "Thuộc nhóm BĐS khu công nghiệp mà AzFin xếp vào 6 nhóm nhặt dần (FDI mạnh, giá thuê tăng) — nhưng AzFin không nêu đích danh mã này.",
+      "cautionNote": "CK 5 phút: \"BCM đục bao nhiêu đáy rồi\" (22/07) và \"trông cũng chán\" (27/07) — chưa có tín hiệu tạo đáy.",
+      "oneLiner": "CK 5 phút nhắc hai lần trong tuần: BCM đã đục nhiều đáy, phiên 27/07 \"trông cũng chán\".",
+      "thesis": [
+        {
+          "title": "Đục đáy nhiều lần, chưa tạo được nền",
+          "body": "BCM được CK 5 phút nhắc hai lần: ngày 22/07 khi liệt kê các cổ phiếu cơ bản đã gãy (\"BCM đục bao nhiêu đáy rồi\"), và ngày 27/07 khi cùng IGC bị đánh giá \"trông nó cũng chán\". Đây không phải mã anh khuyến nghị mua, chỉ là ví dụ cho trạng thái chung của cổ phiếu cơ bản trong nhịp giảm. Ở góc nhìn khác, AzFin (#06, 24/07) xếp bất động sản khu công nghiệp — ngành chính của Becamex — vào 6 nhóm đáng nhặt dần nhờ FDI mạnh và giá thuê tăng, nhưng không nêu đích danh BCM."
+        }
+      ],
+      "orders": [
+        {
+          "expertId": "ck-5-phut",
+          "dir": "ĐỨNG NGOÀI",
+          "sig": "avoid",
+          "entry": "—",
+          "target": "Chờ tín hiệu tạo đáy",
+          "stop": "—",
+          "status": "active",
+          "date": "27/07",
+          "note": "Đục nhiều đáy, chưa có nền."
         }
       ]
     },
@@ -6399,6 +6571,67 @@ window.HDT_DATA = {
         {
           "label": "Bán hay giữ khi lỡ kẹt?",
           "detail": "CK 5 phút: bán ở 1.686 rủi ro hơn giữ, trừ khi bị call margin. Thái Phạm: nếu muốn bán thì đợi hồi phục rồi bán, không bán hoảng loạn — nhưng BUỘC phải bán nếu doanh nghiệp dính pháp lý, bất ổn lãnh đạo, hoặc ngành bị AI thay thế."
+        }
+      ]
+    },
+    "community": {
+      "title": "Cộng đồng hỏi gì dưới bài Thái Phạm",
+      "source": "141 bình luận dưới 2 video công khai (26/07 và 24/07)",
+      "disclaimer": "Đây là câu hỏi và ý kiến của NGƯỜI XEM — không phải nhận định của chuyên gia. Phần \"Thái Phạm đã nói\" là quan điểm ông nêu trong video, ghép lại để tiện đối chiếu, không phải câu trả lời trực tiếp cho người hỏi.",
+      "items": [
+        {
+          "q": "Tình hình vàng đang hoang mang, mọi người có mang vàng tích trữ ra bán không ạ?",
+          "who": "@congtony4438",
+          "likes": 1,
+          "status": "answered",
+          "statusLabel": "Đã có quan điểm",
+          "a": "Không phải bán. SJC là doanh nghiệp nhà nước nên \"mua đâu bán đấy\", khác PNJ đang dính kim cương/vàng rởm. Chênh trong nước đã thu hẹp còn 8–9 triệu/lượng (từ 19–20 triệu) — chính là điều kiện mua vật chất ông từng đặt ra.",
+          "aSrc": "Tập 40 · 26/07"
+        },
+        {
+          "q": "Có khi nào cổ phiếu bất động sản về mệnh giá 0 không ạ? Cứ 2–3 ngày giảm thêm 1k, sợ phá sản quá.",
+          "who": "@AnhQuoc088",
+          "likes": 0,
+          "status": "answered",
+          "statusLabel": "Đã có quan điểm",
+          "a": "Ông không mua cổ phiếu bất động sản: \"cứ mua lao đầu vào cổ phiếu bất động sản, các bạn thấy giờ khủng khiếp không — rất là kinh, nên không chơi\". Ngược lại nhóm ngân hàng quốc doanh và GAS thì \"không thể phá sản được\", nền giá tốt bị phá vỡ cũng không phải lý do bán — cầm 5 năm sẽ có lời ở vùng thấp.",
+          "aSrc": "Tập 40 + video công khai · 26/07"
+        },
+        {
+          "q": "Anh nghĩ sao về vàng lên 6.000 vào cuối năm 2026?",
+          "who": "@flockfiles",
+          "likes": 0,
+          "status": "answered",
+          "statusLabel": "Ngược quan điểm",
+          "a": "Ngược hẳn: ông thấy vàng còn \"chân\" giảm về vùng đẹp 3.600–3.700, thậm chí ~3.300 nếu Fed tăng lãi tháng 9; hồi kỹ thuật cao nhất cũng chỉ quanh 4.300. Hiện long 4.030 cắt lỗ 3.930 — tức đánh ngắn, không phải kỳ vọng tăng dài.",
+          "aSrc": "Tập 40 · 26/07 + video 24/07"
+        },
+        {
+          "q": "Fed tăng lãi suất bóp nghẹt nền kinh tế, nợ phình to — nếu nó vỡ thì vàng giảm sao được?",
+          "who": "@thuynguyenvan5548",
+          "likes": 0,
+          "status": "partial",
+          "statusLabel": "Mới trả lời một nửa",
+          "a": "Ông mới nói phần lãi suất: xác suất Fed tăng tháng 9 là 82%, \"hạ lãi suất là không thể và gần như bằng không\" — lãi thực dương là lực đè lên vàng. Kịch bản \"nợ vỡ thì vàng tăng\" thì chưa thấy ông bàn tới trong hai video này.",
+          "aSrc": "Video 24/07 · Tập 40"
+        },
+        {
+          "q": "Cổ phiếu dầu khí đang giảm mà giá dầu thế giới lại tăng — em mua PVD giá 17–18 được không anh?",
+          "who": "@thihaiyennguyen-s4t",
+          "likes": 0,
+          "status": "open",
+          "statusLabel": "Chưa được trả lời",
+          "a": "Chưa thấy ông nhắc PVD hay dầu khí Việt Nam trong hai video này. Nguyên tắc gần nhất có thể tham chiếu: CK 5 phút — \"không mua trên đà giảm\", đợi cổ phiếu dừng giảm và có nền giá mới cân nhắc.",
+          "aSrc": "CK 5 phút · 27/07"
+        },
+        {
+          "q": "Tuần qua trung bình mỗi ngày chỉ lọt ra khỏi Hormuz 2,4 triệu thùng, so với yêu cầu 6–7 triệu — hụt 4 triệu.",
+          "who": "@ThinhBuiKhang",
+          "likes": 0,
+          "status": "data",
+          "statusLabel": "Số liệu người xem đưa",
+          "a": "Cùng hướng với Thái Phạm: Hormuz bình thường chở 7 triệu thùng/ngày (~20% dầu thế giới), số tàu qua eo biển đã từ ~100/ngày năm 2025 về gần 0. Con số 2,4 triệu là của người xem, chưa kiểm chứng độc lập.",
+          "aSrc": "Đối chiếu Tập 40 · 26/07"
         }
       ]
     }

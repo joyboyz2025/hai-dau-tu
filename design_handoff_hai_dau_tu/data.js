@@ -2220,6 +2220,102 @@ window.HDT_DATA = {
       },
       "updates": [
         {
+          "date": "2026-07-26",
+          "dateShort": "26/07",
+          "timeAgo": "4 ngày trước",
+          "tab": "Lăng kính · 26/07",
+          "sourceType": "public-video",
+          "typeLabel": "Livestream công khai",
+          "title": "Điều Mấu Chốt Sẽ Giúp TTCK Trở Lại",
+          "summary": "Livestream tuần \"Lăng kính đầu tư giá trị\" (20:30 chủ nhật hàng tuần) với dữ liệu định giá 24/07: VN-Index PE 12,38 lần, PB 1,92 lần — nếu loại nhóm VIC thì PE về vùng 2 độ lệch chuẩn dưới trung bình lịch sử. Chẩn đoán căn nguyên đợt giảm: KHÔNG phải chất lượng hàng hóa hay định giá, mà là cung vượt cầu — khối ngoại bán ròng ~80 nghìn tỷ trong 7 tháng, cộng IPO + phát hành cổ phiếu mới kỷ lục lịch sử (gần 300 nghìn tỷ), trong khi cầu yếu vì lãi suất cao hút tiền vào kênh cố định, tâm lý bất ổn lan mọi kênh tài sản, và tiền ngân sách ứ đọng ở kho bạc (thu tăng nhanh hơn chi). Hai yếu tố mấu chốt để thị trường trở lại: (1) lãi suất ngừng tăng và có dấu hiệu giảm — nhận định lãi suất đang gần đỉnh, lạm phát năm nay dưới 5% dù giá dầu tăng; (2) khối ngoại giảm bán ròng — sở hữu nước ngoài chỉ còn 12,6% (thấp nhất hơn 10 năm), phần lớn còn lại là nhà đầu tư chiến lược (Sumitomo/VPBank, Mizuho/Vietcombank) không phải bên bán; áp lực bán từ quỹ cận biên tái cơ cấu sang mới nổi (tiêu chí FTSE) dự kiến giảm hoặc ngừng vào cuối quý 3 khi Việt Nam chính thức lên thị trường mới nổi tháng 9. Chỉ số bi quan nhà đầu tư hiện ~89 điểm — gần chạm đỉnh bi quan lịch sử 2022 và tháng 3/2020 (93–94 điểm); lượng xem livestream cũng giảm mạnh (80 so với bình thường 700–800) — \"lúc này mới là lúc chúng ta cần phải bám sát\". Nhắc lại nguyên tắc phân bổ theo định giá (không dự đoán chu kỳ): định giá rẻ → nâng tỉ trọng cổ phiếu lên 80–90%, đắt → hạ về mức phòng thủ; bản thân hiện đang gần full tiền vào cổ phiếu (~90%). Về cổ phiếu cụ thể: NT2 rẻ, thuận lợi ngắn hạn nhờ thiếu cung điện, EPS dự kiến 300–400 năm nay; PNJ chưa đủ dữ liệu kết luận pháp lý — tồn kho >10.000 tỷ chủ yếu là vàng (thanh khoản cao), dư nợ ngân hàng liên quan chỉ ~2.000 tỷ nên rủi ro hệ thống ngân hàng thấp, rủi ro chính là tâm lý đám đông; VPBank vs Techcombank đều rẻ, TCB bền vững hơn, VPB tăng trưởng nhanh hơn (cá nhân host thích VPB); ACB Q2 hơi thất vọng (mảng hộ kinh doanh cá thể yếu đi); Masan định giá rẻ, các mảng đều tốt lên; nhóm cổ phiếu chứng khoán được ưu tiên nhặt vì sẽ tăng mạnh nhất khi thị trường hồi phục (thứ tự: chứng khoán → ngân hàng → thép/BĐS).",
+          "feedChips": [
+            {
+              "label": "CK Việt ⚠ nguyên nhân giảm: cung > cầu",
+              "sig": "warn"
+            },
+            {
+              "label": "Mấu chốt hồi phục ◷ lãi suất tạo đỉnh + ngoại giảm bán",
+              "sig": "wait"
+            },
+            {
+              "label": "Tâm lý ⚠ chỉ số bi quan ~89 — gần đỉnh 2022/2020",
+              "sig": "warn"
+            },
+            {
+              "label": "Ngành ↑ chứng khoán sẽ tăng mạnh nhất khi hồi phục",
+              "sig": "up"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "Định giá 24/07",
+              "value": "VN-Index PE 12,38 lần · PB 1,92 lần",
+              "signal": "up",
+              "note": "Loại nhóm VIC thì PE về vùng 2 độ lệch chuẩn dưới trung bình lịch sử — rẻ nhưng chưa bằng đáy 2008–2009 (PE 7–8 lần)."
+            },
+            {
+              "tag": "Vì sao giảm",
+              "value": "Cung > cầu, không phải chất lượng hàng hóa hay định giá",
+              "signal": "warn",
+              "note": "Khối ngoại bán ròng ~80 nghìn tỷ/7 tháng + IPO + phát hành mới kỷ lục (~300 nghìn tỷ) — cầu yếu do lãi suất cao hút tiền vào kênh cố định."
+            },
+            {
+              "tag": "2 yếu tố mấu chốt",
+              "value": "Lãi suất tạo đỉnh + khối ngoại giảm bán ròng (từ Q3/T9)",
+              "signal": "wait",
+              "note": "Sở hữu ngoại còn 12,6% (thấp nhất 10+ năm), phần lớn là nhà đầu tư chiến lược không bán. Quỹ cận biên tái cơ cấu dự kiến xong cuối Q3 khi VN lên mới nổi tháng 9."
+            },
+            {
+              "tag": "Tâm lý thị trường",
+              "value": "Chỉ số bi quan ~89 điểm — gần đỉnh bi quan lịch sử",
+              "signal": "warn",
+              "note": "Gần bằng đỉnh bi quan 2022 và tháng 3/2020 (93–94 điểm). Lượng xem livestream giảm còn ~80 (bình thường 700–800) — dấu hiệu nhà đầu tư chán nản rời bỏ."
+            },
+            {
+              "tag": "Ngành ưu tiên khi hồi phục",
+              "value": "Chứng khoán trước, ngân hàng sau, rồi thép/BĐS",
+              "signal": "up",
+              "note": "\"Khi mà thị trường trở lại mấy cổ phiếu bank chứng là nó sẽ tăng điên đảo luôn\" — đang tăng tỉ trọng nhóm chứng khoán để đón đầu."
+            }
+          ],
+          "sections": [
+            {
+              "title": "Vì sao chứng khoán giảm: cung nhiều hơn cầu",
+              "signal": "warn",
+              "sigLabel": "Cảnh giác",
+              "para": "Chất lượng hàng hóa và định giá không phải vấn đề — vấn đề duy nhất là cung/cầu. Cung tăng vọt: khối ngoại bán ròng ~80 nghìn tỷ trong 7 tháng đầu năm, cộng IPO và phát hành cổ phiếu mới của doanh nghiệp — riêng huy động vốn bằng cổ phần thời gian qua là lớn nhất lịch sử, thêm gần 300 nghìn tỷ cung mới ra thị trường. Cầu yếu đi vì ba lý do: lãi suất cao khiến dòng tiền chuyển sang kênh lãi cố định (tăng chậm hơn mức bình thường ~18–20%/năm); tâm lý bất ổn lan sang mọi kênh tài sản (chứng khoán, BĐS, vàng); và tiền ngân sách bị ứ đọng ở kho bạc nhà nước — thu ngân sách tăng rất nhanh nhưng chi (lương, đầu tư công) tăng chậm hơn nhiều.",
+              "bullets": [
+                "Khối ngoại bán ròng ~80 nghìn tỷ trong 7 tháng đầu năm",
+                "Phát hành cổ phiếu mới ~300 nghìn tỷ — lớn nhất lịch sử",
+                "Lãi suất cao hút tiền vào kênh cố định, tăng chậm hơn bình thường",
+                "Tiền ngân sách ứ đọng ở kho bạc do thu >> chi"
+              ]
+            },
+            {
+              "title": "Hai yếu tố mấu chốt để thị trường trở lại",
+              "signal": "wait",
+              "sigLabel": "Đang chờ",
+              "para": "Yếu tố 1 — lãi suất: ngừng tăng và có dấu hiệu giảm sẽ là tín hiệu đảo chiều quan trọng nhất, vì lãi suất giảm khiến một phần dòng tiền chuyển từ kênh lãi cố định sang cổ phiếu. Nhận định lãi suất đang gần đỉnh (lạm phát năm nay dưới 5% dù giá dầu tăng theo căng thẳng Iran–Mỹ) nhưng khó giảm sâu vì phải giữ ổn định tỷ giá so với lãi suất Mỹ. Yếu tố 2 — khối ngoại giảm bán ròng: bán ròng chủ yếu do quỹ thị trường cận biên tái cơ cấu sang mới nổi (tiêu chí FTSE, không phải MSCI) trước khi Việt Nam chính thức nâng hạng tháng 9 — dự kiến giảm hoặc ngừng vào cuối quý 3. Sở hữu nước ngoài hiện chỉ còn 12,6% (thấp nhất hơn 10 năm), phần lớn là nhà đầu tư chiến lược dài hạn (Sumitomo tại VPBank, Mizuho tại Vietcombank) chứ không phải bên bán.",
+              "bullets": [
+                "Lãi suất ngừng tăng/giảm → tín hiệu đảo chiều quan trọng nhất",
+                "Khối ngoại bán ròng do tái cơ cấu quỹ cận biên → mới nổi, dự kiến hết vào cuối Q3",
+                "Sở hữu ngoại chỉ còn 12,6% — thấp nhất 10+ năm, phần lớn là nhà đầu tư chiến lược"
+              ]
+            },
+            {
+              "title": "Tâm lý cực đoan bi quan — lúc cần bám sát nhất",
+              "signal": "warn",
+              "sigLabel": "Cơ hội thận trọng",
+              "para": "Chỉ số đo độ bi quan của nhà đầu tư hiện ở mức ~89 điểm, gần chạm đỉnh bi quan lịch sử của 2022 và tháng 3/2020 (93–94 điểm). Lượng người xem livestream cũng giảm mạnh xuống còn ~80 (bình thường 700–800) — dấu hiệu nhiều nhà đầu tư chán nản rời bỏ thị trường hoặc tắt thông báo theo dõi. Quan điểm: đây chính là lúc cần nghiên cứu kỹ và bám sát nhất, không phải lúc buông xuôi — nhiều cổ phiếu hiện rất rẻ, dự đoán 1–2 năm tới nhiều người sẽ tiếc vì sao lúc này không mua.",
+              "bullets": [
+                "Chỉ số bi quan ~89 điểm — gần đỉnh 2022 và T3/2020 (93–94 điểm)",
+                "Lượng xem livestream giảm còn ~80 (bình thường 700–800)",
+                "PNJ: tồn kho >10.000 tỷ chủ yếu là vàng, dư nợ ngân hàng chỉ ~2.000 tỷ — rủi ro hệ thống thấp, rủi ro chính là tâm lý đám đông chứ không phải pháp lý"
+              ]
+            }
+          ]
+        },
+        {
           "date": "2026-07-24",
           "dateShort": "24/07",
           "timeAgo": "6 ngày trước",
@@ -2306,6 +2402,101 @@ window.HDT_DATA = {
           ]
         },
         {
+          "date": "2026-07-19",
+          "dateShort": "19/07",
+          "timeAgo": "Tuần trước",
+          "tab": "Lăng kính · 19/07",
+          "sourceType": "public-video",
+          "typeLabel": "Livestream công khai",
+          "title": "Nên Phân Bổ Bao Nhiêu Tài Sản Vào Cổ Phiếu?",
+          "summary": "Livestream \"Lăng kính đầu tư giá trị\" mở đầu bằng kết quả kinh doanh Q2 nhóm chứng khoán: VPBankS đạt lợi nhuận trước thuế 2.159 tỷ — kỷ lục quý, nhỉnh hơn TCBS (2.097 tỷ) — nhưng host đánh giá chất lượng lợi nhuận TCBS bền vững hơn; VPS hiện PB 1,39 lần, dự kiến cuối năm còn ~1,26–1,3 lần — rẻ so với nhóm CTCK top đầu (host có nắm giữ VPS). Chủ đề chính: không có công thức chung cho tỉ trọng tài sản vào cổ phiếu — phụ thuộc (1) triển vọng thị trường dài hạn (cần cả tăng trưởng kinh tế LẪN định giá hợp lý — dẫn chứng Trung Quốc định giá PE từng lên 50 lần khiến thị trường đi ngang 10–15 năm dù kinh tế vẫn tăng trưởng), (2) kinh nghiệm và sự yêu thích của nhà đầu tư, (3) vai trò trong tổng thể cơ cấu tài sản. Khung tham khảo chung: 10–50% tài sản vào kênh chứng khoán, mức 50% dành cho nhà đầu tư chuyên nghiệp nhất. Ví dụ thực tế 2 khách hàng quản lý gia sản: một anh phân bổ 30% (chuyển dần tiền mới từ BĐS, không bán BĐS), một anh khác ~20% — cả hai đều nhắm dòng tiền cổ tức tăng trưởng 6%/năm, số tuyệt đối tăng 10–20%/năm. Nguyên tắc cốt lõi: điều chỉnh tỉ trọng theo ĐỊNH GIÁ tại từng thời điểm (rẻ → tăng, đắt → giảm), tuyệt đối không cố dự đoán chu kỳ tăng/giảm — \"ngay cả Buffett cũng không dám dự báo thị trường\". Nhân đây host công khai minh chứng hiệu suất cá nhân (bác bỏ tin đồn lỗ 60%): tài khoản cá nhân âm 8% trong 6 tháng nhưng +64% trong 1 năm — \"làm tốt hơn 99,07% nhà đầu tư khác tại DNSE\". Về cổ phiếu cụ thể: FPT mới mua thêm rất ít (0,1–0,2% tài khoản) khi về vùng 6x, PE cuối 2026 ước 10,6 lần — nhấn mạnh AzFin không hề nhắc đến FPT lúc PE 26 lần (đỉnh 2024, mọi người hô hào 300–400) mà chỉ bắt đầu nói lại khi nó rẻ; CTG PE 6,52 lần — \"rẻ hiếm có\", vị thế ngang hoặc hơn BIDV; Hòa Phát: vốn hóa ~180 nghìn tỷ, lợi nhuận dự kiến ~27 nghìn tỷ (PE ~7 lần) — host đánh giá cao hơn cả FPT lúc này; NTC & VFG: cả hai giá trị tốt, NTC định giá rẻ so với chính công ty con NTC3; Hà Đô: giá trị tốt nhưng dự án Cham Vas bán chậm vì công ty không cần tiền gấp; nhóm cổ phiếu chứng khoán được dự báo tăng mạnh nhất khi thị trường hồi phục, kế đến là ngân hàng.",
+          "feedChips": [
+            {
+              "label": "VPS ↑ LNTT Q2 kỷ lục 2.159 tỷ, PB 1,39 lần rẻ",
+              "sig": "up"
+            },
+            {
+              "label": "Phân bổ ◷ 10–50% tài sản vào cổ phiếu, theo định giá",
+              "sig": "wait"
+            },
+            {
+              "label": "CTG ↑ PE 6,52 lần — rẻ hiếm có",
+              "sig": "up"
+            },
+            {
+              "label": "FPT ↑ PE 10,6 lần — đã vào pha rẻ, chưa siêu rẻ",
+              "sig": "up"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "Tỉ trọng cổ phiếu",
+              "value": "10–50% tài sản, điều chỉnh theo định giá — không đoán chu kỳ",
+              "signal": "wait",
+              "note": "50% dành cho nhà đầu tư chuyên nghiệp nhất. Rẻ → tăng tỉ trọng, đắt → giảm; tuyệt đối không cố dự đoán uptrend/downtrend vì \"ngay cả Buffett cũng không dám dự báo thị trường\"."
+            },
+            {
+              "tag": "VPS vs TCBS",
+              "value": "VPBankS lãi kỷ lục 2.159 tỷ (nhỉnh hơn TCBS) nhưng chất lượng kém bền vững hơn",
+              "signal": "up",
+              "note": "VPS PB 1,39 lần, dự kiến cuối năm ~1,26–1,3 lần — rẻ so với nhóm CTCK top đầu. Host có nắm giữ VPS."
+            },
+            {
+              "tag": "CTG",
+              "value": "PE 6,52 lần — rẻ hiếm có, vị thế ngang hoặc hơn BIDV",
+              "signal": "up",
+              "note": "PB chưa cập nhật KQKD Q2, nếu cập nhật sẽ còn thấp hơn."
+            },
+            {
+              "tag": "FPT",
+              "value": "PE cuối 2026 ước 10,6 lần — đã vào pha rẻ, chưa siêu rẻ",
+              "signal": "up",
+              "note": "Mới mua thêm 0,1–0,2% tài khoản khi về vùng 6x. Tăng trưởng lợi nhuận giảm còn ~14% (từ ~20%) do mảng công nghệ/Fox chậm lại + mất ~3% do yên Nhật giảm giá."
+            },
+            {
+              "tag": "Hiệu suất cá nhân",
+              "value": "Bác bỏ tin đồn lỗ 60% — thực tế âm 8% (6 tháng), +64% (1 năm)",
+              "signal": "up",
+              "note": "\"Làm tốt hơn 99,07% nhà đầu tư khác tại DNSE\" (dữ liệu tính đến 17/07/2026, tài khoản từ 18/07/2022)."
+            }
+          ],
+          "sections": [
+            {
+              "title": "Nên phân bổ bao nhiêu vào cổ phiếu",
+              "signal": "wait",
+              "sigLabel": "Khung tham khảo",
+              "para": "Không có công thức đúng cho tất cả — tỉ trọng phụ thuộc triển vọng thị trường dài hạn (cần cả tăng trưởng kinh tế lẫn định giá hợp lý; ví dụ Trung Quốc định giá PE từng lên 50 lần khiến 10–15 năm sau thị trường vẫn không tăng dù kinh tế tăng trưởng mạnh), kinh nghiệm/sự yêu thích cá nhân, và vai trò của cổ phiếu trong tổng thể cơ cấu tài sản. Khung chung: 10–50% tài sản, 50% dành cho nhà đầu tư chuyên nghiệp nhất. Ví dụ thực tế: một khách hàng quản lý gia sản phân bổ 30% (dùng tiền mới, không bán BĐS), khách khác ~20% — mục tiêu chung là dòng tiền cổ tức + trái tức tăng trưởng 6%/năm, số tuyệt đối tăng 10–20%/năm.",
+              "bullets": [
+                "Khung chung: 10–50% tài sản vào cổ phiếu; 50% cho chuyên nghiệp nhất",
+                "Ví dụ thực tế: khách hàng phân bổ 30% và ~20%, dùng tiền mới chứ không bán BĐS",
+                "Điều chỉnh theo định giá tại từng thời điểm, không dự đoán chu kỳ"
+              ]
+            },
+            {
+              "title": "Kết quả kinh doanh Q2 nhóm chứng khoán",
+              "signal": "up",
+              "sigLabel": "Tích cực",
+              "para": "VPBankS đạt lợi nhuận trước thuế 2.159 tỷ quý 2 — kỷ lục, nhỉnh hơn TCBS (2.097 tỷ), cả hai đều là quý kỷ lục. Tuy nhiên đánh giá chủ quan: chất lượng lợi nhuận VPS chưa bền vững bằng TCBS. Định giá: VPS PB hiện 1,39 lần (đã giảm từ 1,46 lần), dự kiến cuối năm chỉ còn ~1,26–1,3 lần khi có đủ KQKD cả năm — rẻ so với các công ty chứng khoán top đầu. Host công khai có nắm giữ VPS.",
+              "bullets": [
+                "VPBankS: LNTT Q2 2.159 tỷ — kỷ lục, nhỉnh hơn TCBS (2.097 tỷ)",
+                "Chất lượng lợi nhuận: TCBS được đánh giá bền vững hơn VPS",
+                "VPS định giá PB 1,39 lần, dự kiến cuối năm ~1,26–1,3 lần"
+              ]
+            },
+            {
+              "title": "FPT, CTG, Hòa Phát — vùng định giá hiện tại",
+              "signal": "up",
+              "sigLabel": "Tích cực",
+              "para": "FPT: mới mua thêm rất ít (0,1–0,2% tài khoản) khi về vùng 6x; PE cuối 2026 ước 10,6 lần — đánh giá là \"rẻ\" nhưng chưa \"siêu rẻ\". Tăng trưởng lợi nhuận chậm lại còn ~14% (từ ~20% các năm trước) do mảng công nghệ chậm, viễn thông/Fox chậm, và mất khoảng 3 điểm phần trăm tăng trưởng do đồng yên Nhật mất giá. Nhấn mạnh: AzFin hoàn toàn im lặng về FPT suốt giai đoạn 2022–2024 khi thị trường hô hào giá 300–400 và PE lên tới 26 lần — chỉ bắt đầu nhắc lại khi cổ phiếu rơi về vùng rẻ. CTG: PE 6,52 lần, được đánh giá là \"rẻ hiếm có\", vị thế ngang hoặc hơn BIDV. Hòa Phát: vốn hóa hiện ~180 nghìn tỷ trong khi lợi nhuận năm nay khả năng đạt ~27 nghìn tỷ (PE ~7 lần), PB cũng tương đối thấp — host đánh giá cao hơn cả FPT ở thời điểm này, có cổ tức tiền mặt.",
+              "bullets": [
+                "FPT: PE 10,6 lần (2026) — rẻ nhưng chưa siêu rẻ; tăng trưởng chậm còn ~14%",
+                "CTG: PE 6,52 lần — rẻ hiếm có, ngang hoặc hơn BIDV",
+                "Hòa Phát: PE ~7 lần (vốn hóa 180 nghìn tỷ / LN dự kiến 27 nghìn tỷ) — đánh giá cao hơn FPT lúc này"
+              ]
+            }
+          ]
+        },
+        {
           "date": "2026-07-16",
           "dateShort": "16/07",
           "timeAgo": "2 tuần trước",
@@ -2375,6 +2566,96 @@ window.HDT_DATA = {
                 "Khẩu vị rủi ro quyết định cơ cấu: rủi ro thấp → nặng phòng thủ (cổ tức cao, ngành ổn định) + cân bằng; chịu rủi ro cao → nặng tăng trưởng + cân bằng.",
                 "Tiền sắp cần dùng (xây nhà 3–4 tháng tới) = khẩu vị rủi ro cực thấp — không đem \"kiếm dăm 10%\".",
                 "Tư duy dòng cổ tức tăng đều theo năm (1 tỷ → 50 rồi 55, 60 triệu/năm...) giúp bất chấp giá thị trường xuống sâu; giá tăng cao vượt giá trị thì bán bảo vệ thành quả."
+              ]
+            }
+          ]
+        },
+        {
+          "date": "2026-07-12",
+          "dateShort": "12/07",
+          "timeAgo": "2 tuần trước",
+          "tab": "Lăng kính · 12/07",
+          "sourceType": "public-video",
+          "typeLabel": "Livestream công khai",
+          "title": "Phân Bổ & Quản Trị Danh Mục Trong Đầu Tư Giá Trị",
+          "summary": "Livestream trở lại sau 1 tuần nghỉ vì sức khỏe, chủ đề: làm sao xây dựng danh mục an toàn trước các \"thiên nga đen\" bất ngờ (PNJ, DGC, PC1, Vinaconex đều từng là cổ phiếu giá trị/cơ bản tốt nhưng dính biến cố pháp lý/quản trị). Quan điểm cốt lõi: không thể tránh hoàn toàn rủi ro bất ngờ — ngay cả Warren Buffett cũng từng gần như mất trắng trong thương vụ Salomon Brothers vì nhân sự vi phạm quy định, và có tới 33–34% số thương vụ của ông phải cắt lỗ. Bốn nguyên tắc xây dựng danh mục để giảm thiểu sát thương: (1) Tập trung vào doanh nghiệp đầu ngành — dữ liệu thực tế cho thấy doanh nghiệp lớn tăng trưởng mạnh hơn doanh nghiệp nhỏ (VN30 tăng ~1970 điểm so với VN-Index 1828; HNX dù có tuổi đời tương đương chỉ đạt 300 điểm dù ra đời sau; ở Mỹ, NVDA/Microsoft tăng 30–40%/năm trong khi doanh nghiệp nhỏ trì trệ); (2) Ưu tiên cổ tức cao hơn trung bình thị trường (thị trường hiện ~1,4%, danh mục nên đạt 3–5%) vì doanh nghiệp trả cổ tức tiền mặt đều đặn thường có \"tỉ lệ thật\" cao hơn; (3) QUAN TRỌNG NHẤT: chỉ mua khi định giá đủ rẻ, chiết khấu cao — phê phán trào lưu gọi cả việc mua ở đỉnh là \"tích sản\" (đúng nghĩa tích sản là mua đều đặn dưới giá trị, đã chốt lời DGC ~100, FPT ~200 cuối 2024, PNJ cũng đã chốt một phần trước khi giảm); (4) Đa dạng hóa danh mục nhiều mã, nhiều ngành (PNJ chỉ chiếm 2% danh mục cá nhân của host, giá vốn ~6x, nên dù giảm ~20% chỉ ảnh hưởng ~0,4% tổng danh mục). Minh họa lịch sử: danh mục báo cáo chiến lược 10 mã năm 2022 có cả Hòa Phát và Techcombank giảm sâu, nhưng tổng danh mục chỉ âm ~9-10% nhờ đa dạng hóa — và cả hai sau đó đều phục hồi có lãi (mất khoảng 1-2 năm). Ngoài chủ đề chính, host chia sẻ quan điểm bất động sản (ưu tiên Hà Nội/TP.HCM do tăng trưởng dân số cả nước dưới 1%/năm nhưng 2 đô thị này tiếp tục hút di cư) và vàng (chỉ nên mua sau giai đoạn đi ngang dài 3-4 năm). Công bố: AZ Gia sản sắp hợp tác với một công ty chứng khoán để triển khai dịch vụ quản lý gia sản cho khách hàng siêu lớn.",
+          "feedChips": [
+            {
+              "label": "Danh mục ↑ 4 nguyên tắc: đầu ngành · cổ tức · rẻ · đa dạng",
+              "sig": "up"
+            },
+            {
+              "label": "Rủi ro ⚠ không thể tránh hoàn toàn — kể cả Buffett",
+              "sig": "warn"
+            },
+            {
+              "label": "PNJ ◷ chỉ 2% danh mục — thiệt hại tổng thể ~0,4%",
+              "sig": "wait"
+            },
+            {
+              "label": "Tích sản ⚠ đúng nghĩa là mua rẻ đều đặn, không phải mua đỉnh",
+              "sig": "warn"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "4 nguyên tắc danh mục",
+              "value": "Đầu ngành · cổ tức cao · định giá rẻ · đa dạng hóa",
+              "signal": "up",
+              "note": "Không có khái niệm an toàn tuyệt đối — mục tiêu là giảm thiểu sát thương khi rủi ro bất ngờ xảy ra, không phải tránh hoàn toàn."
+            },
+            {
+              "tag": "Doanh nghiệp lớn thắng nhỏ",
+              "value": "VN30 tăng mạnh hơn hẳn nhóm vốn hóa nhỏ (HNX)",
+              "signal": "up",
+              "note": "VN-Index 1828 điểm, VN30 1970 điểm; HNX-Index chỉ 300 điểm dù tuổi đời tương đương. Ở Mỹ, NVDA/Microsoft tăng 30-40%/năm trong khi doanh nghiệp nhỏ trì trệ."
+            },
+            {
+              "tag": "Đa dạng hóa cứu danh mục",
+              "value": "PNJ chỉ 2% danh mục cá nhân → thiệt hại tổng thể chỉ ~0,4%",
+              "signal": "wait",
+              "note": "Giá vốn PNJ ~6x. Danh mục 2022 (có cả Hòa Phát, Techcombank giảm sâu) tổng âm chỉ ~9-10% nhờ đa dạng hóa 10 mã, sau đó cả hai đều phục hồi có lãi."
+            },
+            {
+              "tag": "Tích sản đúng nghĩa",
+              "value": "Mua đều đặn dưới giá trị, KHÔNG phải mua ở một điểm bất kỳ",
+              "signal": "warn",
+              "note": "Đã chốt lời DGC ~100 (T4/2025), FPT ~200 (cuối 2024), PNJ cũng chốt một phần trước khi giảm sâu — phê phán trào lưu gọi mua ở đỉnh là \"tích sản\" để câu view."
+            }
+          ],
+          "sections": [
+            {
+              "title": "Không thể tránh hoàn toàn rủi ro bất ngờ",
+              "signal": "warn",
+              "sigLabel": "Cảnh giác",
+              "para": "Thời gian qua nhiều cổ phiếu giá trị/cơ bản tốt (PNJ, DGC, PC1, Vinaconex) đều dính biến cố pháp lý hoặc quản trị bất ngờ. Ngay cả Warren Buffett cũng từng gần mất trắng trong thương vụ Salomon Brothers khi nhân sự công ty vi phạm quy định nghiêm trọng, thậm chí đối mặt vấn đề pháp lý — và có tới 33-34% số thương vụ đầu tư của ông phải cắt lỗ. Kết luận: không có khái niệm an toàn tuyệt đối, chỉ có thể xây dựng danh mục để giảm thiểu sát thương khi rủi ro xảy ra.",
+              "bullets": [
+                "PNJ, DGC, PC1, Vinaconex: đều từng là cổ phiếu giá trị tốt nhưng dính biến cố bất ngờ",
+                "Buffett/Salomon Brothers: gần mất trắng vì vi phạm của nhân sự, từng đối mặt pháp lý",
+                "33-34% số thương vụ của Buffett phải cắt lỗ — rủi ro là một phần tất yếu của đầu tư"
+              ]
+            },
+            {
+              "title": "4 nguyên tắc xây dựng danh mục an toàn",
+              "signal": "up",
+              "sigLabel": "Chiến lược",
+              "para": "(1) Tập trung doanh nghiệp đầu ngành — thực tế cho thấy doanh nghiệp lớn tăng trưởng mạnh hơn nhỏ, trái với suy nghĩ phổ biến rằng doanh nghiệp ngách/nhỏ mới có tiềm năng lớn. (2) Ưu tiên cổ tức tiền mặt cao hơn trung bình thị trường (thị trường ~1,4%, danh mục nên 3-5%) — cổ tức thật phản ánh chất lượng dòng tiền thật. (3) QUAN TRỌNG NHẤT: chỉ mua khi định giá đủ rẻ, chiết khấu cao — đây là yếu tố quyết định mức thiệt hại khi rủi ro xảy ra. (4) Đa dạng hóa nhiều mã, nhiều ngành trong tầm kiểm soát (không dưới 3 mã, danh mục mẫu 10 mã) để một mã gặp sự cố không ảnh hưởng nhiều đến tổng thể.",
+              "bullets": [
+                "Đầu ngành: doanh nghiệp lớn tăng trưởng mạnh hơn nhỏ (dẫn chứng VN30/HNX, NVDA/MSFT)",
+                "Cổ tức cao hơn trung bình thị trường: mục tiêu danh mục 3-5% (thị trường ~1,4%)",
+                "Định giá rẻ, chiết khấu cao — yếu tố quan trọng nhất quyết định mức thiệt hại",
+                "Đa dạng hóa nhiều mã/ngành trong tầm kiểm soát — danh mục mẫu 10 mã"
+              ]
+            },
+            {
+              "title": "Minh chứng: PNJ 2% danh mục, danh mục 2022 vẫn có lãi",
+              "signal": "wait",
+              "sigLabel": "Bài học thực tế",
+              "para": "Host công khai vị thế cá nhân: DGC không còn nắm (đã chốt lời T4/2025 ở ~100, chưa mua lại vì chưa đủ rẻ), PC1/VCG chưa bao giờ nắm giữ, FPT chỉ 0,1-0,2% (đã bán phần lớn cuối 2024), PNJ 2% danh mục với giá vốn ~6x — nên dù PNJ giảm ~20% chỉ ảnh hưởng ~0,4% tổng danh mục. Ví dụ lịch sử: danh mục báo cáo chiến lược 10 mã năm 2022 có cả Hòa Phát và Techcombank giảm rất sâu (Techcombank từ 58 về 19,x, PB có lúc chỉ 0,64 lần) nhưng tổng danh mục chỉ âm 9-10% nhờ đa dạng hóa — và cả hai cổ phiếu sau đó đều phục hồi có lãi (mất khoảng 1-2 năm để hồi phục).",
+              "bullets": [
+                "PNJ: 2% danh mục cá nhân, giá vốn ~6x → thiệt hại chỉ ~0,4% tổng danh mục",
+                "Danh mục 10 mã năm 2022: dù có Hòa Phát + Techcombank giảm sâu, tổng chỉ âm 9-10%",
+                "Techcombank 2022: giảm từ 58 về 19,x (PB chạm 0,64 lần) — sau đó phục hồi có lãi"
               ]
             }
           ]
@@ -2535,273 +2816,17 @@ window.HDT_DATA = {
               ]
             }
           ]
-        },
-        {
-          "date": "2026-06-17",
-          "dateShort": "17/06",
-          "timeAgo": "Tháng trước",
-          "tab": "Video · 17/06",
-          "sourceType": "public-video",
-          "typeLabel": "Video công khai",
-          "title": "Ba Nhóm Ngành Triển Vọng Để Giữ 5 Năm",
-          "summary": "Ba nhóm ngành ưu tiên giữ 5 năm: Ngân hàng (tăng trưởng 15–20%/năm, định giá rẻ, lợi thế cạnh tranh mạnh), Vật liệu xây dựng (hưởng lợi đầu tư công) và Bán lẻ (bùng nổ tiêu dùng theo GDP). Rủi ro chính từ vĩ mô thế giới & giá cổ phiếu — khắc phục bằng mua khi định giá rất rẻ và bảo vệ thành quả khi đạt mục tiêu.",
-          "feedChips": [
-            {
-              "label": "Ngân hàng ↑ ưu tiên",
-              "sig": "up"
-            },
-            {
-              "label": "VLXD ↑ đầu tư công",
-              "sig": "up"
-            },
-            {
-              "label": "Bán lẻ ↑ tiêu dùng",
-              "sig": "up"
-            },
-            {
-              "label": "Vĩ mô TG ⚠ rủi ro",
-              "sig": "warn"
-            }
-          ],
-          "keyCalls": [
-            {
-              "tag": "Ngân hàng",
-              "value": "Ưu tiên số 1",
-              "signal": "up",
-              "note": "Tăng trưởng tự nhiên 15–20%/năm theo tín dụng; PE/PB thấp hơn trung bình thị trường trong khi hiệu quả cao hơn; lợi thế cạnh tranh mạnh."
-            },
-            {
-              "tag": "Vật liệu xây dựng",
-              "value": "Hưởng lợi đầu tư công",
-              "signal": "up",
-              "note": "Đầu vào ít biến động, đầu ra hưởng nhu cầu cao từ đầu tư công. Nhà thầu thi công trực tiếp kém hấp dẫn hơn do biến động NVL & cạnh tranh."
-            },
-            {
-              "tag": "Bán lẻ",
-              "value": "Bùng nổ tiêu dùng",
-              "signal": "up",
-              "note": "Tăng theo tốc độ tăng GDP; VN đang bước vào giai đoạn bùng nổ tiêu dùng → ngành bán lẻ hưởng lợi lớn."
-            },
-            {
-              "tag": "Chiến lược",
-              "value": "Mua rẻ · chốt mục tiêu",
-              "signal": "wait",
-              "note": "Rủi ro lớn nhất nằm ở giá cổ phiếu/thị trường. Mua khi định giá rất thấp và bảo vệ thành quả khi đạt mục tiêu — không nhất thiết nắm đủ 5 năm."
-            }
-          ],
-          "sections": [
-            {
-              "title": "Ba nhóm ngành triển vọng 5 năm",
-              "signal": "up",
-              "sigLabel": "Tích cực — ưu tiên tích lũy",
-              "para": "Nếu chọn ba nhóm ngành để giữ 5 năm: ngân hàng, vật liệu xây dựng và bán lẻ. Đây là các ngành có động lực tăng trưởng nội tại rõ ràng và hưởng lợi từ xu hướng vĩ mô dài hạn của Việt Nam.",
-              "bullets": [
-                "Ngân hàng: tăng 15–20%/năm, định giá rẻ (PE/PB thấp), lợi thế cạnh tranh mạnh.",
-                "Vật liệu xây dựng: hưởng lợi đầu tư công nhờ đầu vào ổn, đầu ra nhu cầu cao.",
-                "Bán lẻ: tăng theo GDP, đón giai đoạn bùng nổ tiêu dùng."
-              ]
-            },
-            {
-              "title": "Rủi ro & chiến lược",
-              "signal": "warn",
-              "sigLabel": "Thận trọng — rủi ro vĩ mô & thị trường",
-              "para": "Vĩ mô thế giới biến động (xung đột, mâu thuẫn chính trị, lạm phát cao) có thể làm kinh tế tăng trưởng chậm và gây áp lực tỷ giá, khiến KQKD các ngành biến động. Nhưng rủi ro lớn nhất với 3 nhóm này nằm ở giá cổ phiếu/thị trường hơn là nền tảng doanh nghiệp.",
-              "bullets": [
-                "Mua khi định giá rất rẻ để hạ rủi ro.",
-                "Bảo vệ thành quả khi đạt mục tiêu — không cứng nhắc nắm đủ 5 năm."
-              ]
-            }
-          ]
-        },
-        {
-          "date": "2026-06-14",
-          "dateShort": "14/06",
-          "timeAgo": "Tháng trước",
-          "tab": "Video · 14/06",
-          "sourceType": "public-video",
-          "typeLabel": "Video công khai",
-          "title": "Nhà Đầu Tư Nước Ngoài Bán Ròng Mạnh: Rủi Ro Hay Cơ Hội?",
-          "summary": "Khối ngoại bán ròng kỷ lục 26 năm → cơ hội tích lũy, không phải rủi ro. Định giá VN percentile 10–15% thấp nhất lịch sử. Bank tư nhân lớn rất rẻ, cơ hội >> rủi ro. Không dùng margin.",
-          "feedChips": [
-            {
-              "label": "CK Việt ↑ cơ hội tốt",
-              "sig": "up"
-            },
-            {
-              "label": "Bank ↑ rất rẻ",
-              "sig": "up"
-            },
-            {
-              "label": "Tích lũy ◷ dần dần",
-              "sig": "wait"
-            },
-            {
-              "label": "CK Mỹ ↓ bong bóng 2000",
-              "sig": "down"
-            }
-          ],
-          "keyCalls": [
-            {
-              "tag": "Khối Ngoại",
-              "value": "Cơ hội, không rủi ro",
-              "signal": "up",
-              "note": "Bán ròng kỷ lục 26 năm → giá rẻ. Lý do: lãi TP Mỹ/Anh hấp dẫn, VN sắp lên EM, chủ nghĩa dân tộc KT toàn cầu."
-            },
-            {
-              "tag": "Định giá VN",
-              "value": "Percentile 10–15%",
-              "signal": "up",
-              "note": "Chỉ ~10/100 phiên lịch sử có giá thấp hơn hiện tại (trừ nhóm Vin). Cơ hội tích lũy tốt rõ rệt."
-            },
-            {
-              "tag": "Bank tư nhân lớn",
-              "value": "Rất rẻ — ưu tiên",
-              "signal": "up",
-              "note": "ACB, MB, VP, HD: vững mạnh, định giá rất rẻ. Cơ hội >> rủi ro."
-            },
-            {
-              "tag": "Thị trường Mỹ",
-              "value": "Gần bong bóng 2000",
-              "signal": "down",
-              "note": "CAPE gần dotcom. Buffett indicator ~300%. Buffett giữ ~$400 tỷ tiền lỏng — kỷ lục."
-            }
-          ],
-          "sections": [
-            {
-              "title": "Vì sao khối ngoại bán ròng kỷ lục?",
-              "signal": "wait",
-              "sigLabel": "Cơ hội — không phải dấu hiệu xấu cơ bản",
-              "para": "Khối ngoại bán ròng mạnh nhất 26 năm lịch sử TTCK VN. Tuy nhiên nguyên nhân hoàn toàn khác đại khủng hoảng 2007. Không phải vì kinh tế VN xấu — đây là cơ hội tích lũy cho nhà đầu tư giá trị.",
-              "bullets": [
-                "TP Chính phủ Mỹ 4,49%, Anh 4,83% — tài sản cực an toàn lại lợi suất cao hơn CK VN (sau tỷ giá và chi phí quỹ).",
-                "VN sắp lên Emerging Market tháng 9/2026 — frontier market funds phải bán VN (~40% danh mục họ). Bán kỹ thuật, không phải bán vì VN xấu.",
-                "Chủ nghĩa dân tộc kinh tế toàn cầu tăng → quỹ nước ngoài co về sân nhà.",
-                "Nhà đầu tư chiến lược dài hạn vẫn vào — mua khối lớn theo kiểu đầu tư chiến lược."
-              ]
-            },
-            {
-              "title": "Định giá thị trường VN — Cơ hội tốt",
-              "signal": "up",
-              "sigLabel": "Tích cực — percentile 10–15% thấp nhất lịch sử",
-              "para": "Loại trừ nhóm Vin, định giá đa số cổ phiếu VN đang ở vùng 10–15% thấp nhất lịch sử. Chưa phải \"rất lớn\" nhưng là cơ hội tốt rõ rệt.",
-              "bullets": [
-                "Bank tư nhân lớn: định giá rất rẻ, kết quả kinh doanh vững chắc. Cơ hội >> rủi ro nhiều.",
-                "BĐS doanh nghiệp: cơ hội >> rủi ro (tránh nhóm pháp lý phức tạp).",
-                "Ngành CK: một số rẻ, một số trung bình — kén chọn. Có thể đảo chiều bất kỳ lúc sau 8 tháng điều chỉnh.",
-                "Không dùng margin trong bất kỳ trường hợp nào — nguyên tắc cốt lõi đầu tư giá trị."
-              ]
-            },
-            {
-              "title": "Thị trường Mỹ — Cảnh báo bong bóng",
-              "signal": "down",
-              "sigLabel": "Rủi ro — gần mức bong bóng dotcom 2000",
-              "para": "Trong khi VN rẻ, thị trường Mỹ có dấu hiệu quá nóng. Buffett giữ ~$400 tỷ tiền lỏng kỷ lục — ông không tìm được nơi đầu tư hấp dẫn ở Mỹ.",
-              "bullets": [
-                "CAPE (Shiller P/E) gần mức bong bóng dotcom.com năm 2000.",
-                "Buffett Indicator (vốn hóa/GDP) ~300% — >100% đã là rủi ro.",
-                "Không có nghĩa crash ngay — nhưng kỳ vọng lợi nhuận dài hạn từ CK Mỹ sẽ thấp."
-              ]
-            },
-            {
-              "title": "Hành động — Tích lũy dần, nghiêng tấn công",
-              "signal": "up",
-              "sigLabel": "Tích lũy — lúc này tấn công nhiều hơn thủ",
-              "para": "Lúc này phù hợp nghiêng danh mục về phía tấn công (cổ phiếu tăng trưởng) nhiều hơn phòng thủ — vì giá đã giảm sâu. Phải có cả công lẫn thủ, tỷ lệ phụ thuộc cái nào rẻ hơn. Lúc này nhóm tăng trưởng đang rẻ hơn.",
-              "bullets": [
-                "Tích lũy dần — không all-in một lần. Tỷ lệ cổ phiếu/tổng tài sản phụ thuộc cơ cấu và dòng tiền hàng tháng.",
-                "HDG: định giá rất rẻ (dù vướng pháp lý HDG-EVN chưa xong trong nhiệm kỳ mới).",
-                "ACV: tài sản rất giá trị, lợi nhuận chưa tương xứng — có giá trị đấy."
-              ]
-            }
-          ]
-        },
-        {
-          "date": "2026-06-11",
-          "dateShort": "11/06",
-          "timeAgo": "Tháng trước",
-          "tab": "Podcast · 11/06",
-          "sourceType": "public-video",
-          "typeLabel": "Video công khai",
-          "title": "Hành Động Gì Khi Thị Trường Chán Nản? — Tích Sản Cổ Phiếu #12",
-          "summary": "Thị trường 20% thời gian tăng, 50% sideway, 30% giảm — đây là giai đoạn bình thường. Tích lũy cổ phiếu tốt, giá rẻ, ăn cổ tức và tái đầu tư. Không bao giờ all-in, duy trì kỷ luật % tỷ trọng.",
-          "feedChips": [
-            {
-              "label": "CK Việt ↑ tích lũy dần",
-              "sig": "up"
-            },
-            {
-              "label": "Phân bổ ◷ không all-in",
-              "sig": "wait"
-            },
-            {
-              "label": "Margin ✗ không bao giờ",
-              "sig": "down"
-            }
-          ],
-          "keyCalls": [
-            {
-              "tag": "Thị trường",
-              "value": "20/50/30 — bình thường",
-              "signal": "wait",
-              "note": "20% uptrend, 50% sideway, 30% downtrend. 21/26 năm VN khó. Đây là giai đoạn bình thường."
-            },
-            {
-              "tag": "Hành động",
-              "value": "Tích lũy, ăn cổ tức",
-              "signal": "up",
-              "note": "Mua cổ phiếu tốt khi rẻ, thu cổ tức, tái đầu tư liên tục. Không bán khi chán — chỉ lỗ khi bán."
-            },
-            {
-              "tag": "Nguyên tắc",
-              "value": "Không bao giờ all-in",
-              "signal": "up",
-              "note": "Duy trì kỷ luật % tỷ trọng. Khi giá cao chuyển sang TP/tiết kiệm. Không dùng margin."
-            },
-            {
-              "tag": "Cộng đồng",
-              "value": "4.000+ thành viên",
-              "signal": "up",
-              "note": "Thực hành đầu tư giá trị hàng ngày. Kết quả từ kỷ luật lặp lại."
-            }
-          ],
-          "sections": [
-            {
-              "title": "Thị trường chán nản là bình thường",
-              "signal": "wait",
-              "sigLabel": "Bình thường — không phải tín hiệu đặc biệt",
-              "para": "21/26 năm lịch sử TTCK VN là năm khó khăn. Phân bổ thời gian: ~20% uptrend, ~50% sideway, ~30% downtrend. Giai đoạn 2026 là rủi ro + cơ hội.",
-              "bullets": [
-                "Khách mời bắt đầu 2007 — tài khoản bị đốt 2014 do dùng margin 3:7 với PVD trong sự kiện DK981.",
-                "Bài học: không dùng margin. Luôn có thesis đầu tư rõ ràng → chiến lược → chiến thuật.",
-                "Tiếp tục học liên tục — thị trường thay đổi, nhà đầu tư cũng cần cập nhật."
-              ]
-            },
-            {
-              "title": "Nguyên tắc tích sản cổ phiếu",
-              "signal": "up",
-              "sigLabel": "Tích cực — tích lũy trong downtrend",
-              "para": "Mua cổ phiếu chất lượng khi rẻ → thu cổ tức → tái đầu tư → chờ uptrend bảo vệ lợi nhuận. Không cần dự đoán đáy chính xác.",
-              "bullets": [
-                "Giữ tỷ lệ % cổ phiếu/tổng tài sản kỷ luật — không bao giờ all-in 100%.",
-                "Khi giá cổ phiếu cao: chuyển bớt sang TP hoặc gửi tiết kiệm. Khi rẻ như hiện tại: dùng tiền đó mua thêm.",
-                "Ăn cổ tức, tái đầu tư liên tục — nguồn sinh lời bền vững nhất dài hạn."
-              ]
-            },
-            {
-              "title": "Giai đoạn 2026 — Tích lũy dần",
-              "signal": "up",
-              "sigLabel": "Tích cực — nhiều cổ phiếu tốt đang rẻ",
-              "para": "Nhiều cổ phiếu tốt đang rất rẻ dù nền tảng doanh nghiệp vẫn vững. Cơ hội tốt rõ rệt để tích lũy. Chờ uptrend để bảo vệ lợi nhuận — không vội bán trong downtrend.",
-              "bullets": [
-                "Cộng đồng 4.000+ thành viên thực hành kỷ luật đầu tư giá trị hàng ngày.",
-                "Nguồn thu nhập đều đặn hàng tháng → dòng tiền liên tục mua thêm → tâm lý thoải mái.",
-                "Không cần biết đáy ở đâu — cứ mua dần khi rẻ, tỷ lệ tốt dần theo thời gian."
-              ]
-            }
-          ]
         }
       ],
       "sources": [
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 27)",
+          "iconColor": "oklch(0.46 0.15 27)",
+          "date": "26/07/2026",
+          "title": "Điều mấu chốt sẽ giúp TTCK trở lại | Lăng kính đầu tư giá trị",
+          "meta": "Livestream công khai · AzFin Vietnam"
+        },
         {
           "icon": "▶",
           "iconBg": "oklch(0.95 0.04 27)",
@@ -2814,9 +2839,25 @@ window.HDT_DATA = {
           "icon": "▶",
           "iconBg": "oklch(0.95 0.04 27)",
           "iconColor": "oklch(0.46 0.15 27)",
+          "date": "19/07/2026",
+          "title": "Nên phân bổ bao nhiêu tài sản vào cổ phiếu | Lăng kính đầu tư giá trị",
+          "meta": "Livestream công khai · AzFin Vietnam"
+        },
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 27)",
+          "iconColor": "oklch(0.46 0.15 27)",
           "date": "16/07/2026",
           "title": "#13: Đã đến lúc nhà đầu tư cần đánh giá lại khẩu vị rủi ro mình? | Tích sản cổ phiếu",
           "meta": "Video công khai · AzFin Vietnam"
+        },
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 27)",
+          "iconColor": "oklch(0.46 0.15 27)",
+          "date": "12/07/2026",
+          "title": "Phân bổ quản trị danh mục trong đầu tư giá trị | Lăng kính đầu tư giá trị",
+          "meta": "Livestream công khai · AzFin Vietnam"
         },
         {
           "icon": "▶",
@@ -2833,30 +2874,6 @@ window.HDT_DATA = {
           "date": "08/07/2026",
           "title": "Số 18: Tích sản tháng 43 — TTCK biến động nhưng vẫn kỷ luật | Hành trình triệu đô",
           "meta": "Video công khai · AzFin Vietnam"
-        },
-        {
-          "icon": "▶",
-          "iconBg": "oklch(0.95 0.04 27)",
-          "iconColor": "oklch(0.46 0.15 27)",
-          "date": "17/06/2026",
-          "title": "03 Ngành triển vọng trong tương lai?",
-          "meta": "Video công khai · AzFin Vietnam"
-        },
-        {
-          "icon": "▶",
-          "iconBg": "oklch(0.95 0.04 27)",
-          "iconColor": "oklch(0.46 0.15 27)",
-          "date": "14/06/2026",
-          "title": "Nhà đầu tư nước ngoài bán ròng mạnh: Rủi ro hay cơ hội | Lăng kính đầu tư giá trị",
-          "meta": "Video công khai · AzFin Vietnam"
-        },
-        {
-          "icon": "▶",
-          "iconBg": "oklch(0.95 0.04 27)",
-          "iconColor": "oklch(0.46 0.15 27)",
-          "date": "11/06/2026",
-          "title": "#12: Hành động gì khi thị trường chán nản?",
-          "meta": "Video công khai · Tích sản cổ phiếu AzFin"
         }
       ]
     },
@@ -3877,6 +3894,46 @@ window.HDT_DATA = {
       "call": "Khối ngoại bán do quỹ cận biên thanh lý trước nâng hạng — quỹ mới nổi chỉ giải ngân từ tháng 9",
       "result": "pending",
       "note": "Sở hữu nước ngoài còn 12,6% (đáy 10 năm, đỉnh từng 30%)."
+    },
+    {
+      "expert": "azfin",
+      "date": "12/07",
+      "asset": "CK Việt",
+      "call": "Doanh nghiệp đầu ngành tăng trưởng mạnh hơn doanh nghiệp nhỏ (VN30 > HNX)",
+      "result": "pending",
+      "note": "Livestream Lăng kính đầu tư giá trị — luận điểm nền tảng chiến lược phân bổ danh mục."
+    },
+    {
+      "expert": "azfin",
+      "date": "19/07",
+      "asset": "CTG",
+      "call": "CTG rẻ hiếm có — PE 6,52 lần, vị thế ngang hoặc hơn BIDV",
+      "result": "pending",
+      "note": "PB chưa cập nhật KQKD Q2, dự kiến còn thấp hơn khi cập nhật."
+    },
+    {
+      "expert": "azfin",
+      "date": "26/07",
+      "asset": "CK Việt",
+      "call": "Hai yếu tố mấu chốt để TT trở lại: lãi suất tạo đỉnh + khối ngoại giảm bán ròng (hết Q3, quỹ cận biên tái cơ cấu xong)",
+      "result": "pending",
+      "note": "Sở hữu ngoại còn 12,6% — thấp nhất 10+ năm, phần lớn là nhà đầu tư chiến lược không bán."
+    },
+    {
+      "expert": "azfin",
+      "date": "26/07",
+      "asset": "CK Việt",
+      "call": "Ngành mạnh nhất khi TT hồi phục: chứng khoán trước, ngân hàng sau",
+      "result": "pending",
+      "note": "\"Khi thị trường trở lại mấy cổ phiếu bank chứng sẽ tăng điên đảo luôn\" — đang tăng tỉ trọng nhóm chứng khoán đón đầu."
+    },
+    {
+      "expert": "azfin",
+      "date": "26/07",
+      "asset": "NT2",
+      "call": "NT2 EPS dự kiến 300–400 năm nay nhờ thiếu cung điện",
+      "result": "pending",
+      "note": "Ngắn hạn thuận lợi trong ~1 năm nhờ tiêu thụ điện lớn trong khi cung còn thiếu."
     },
     {
       "expert": "ck-5-phut",

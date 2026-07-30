@@ -29,11 +29,15 @@ def video_id(link: str):
     return m.group(1) if m else None
 
 
-def list_channel_videos(channel_url: str, limit: int):
-    """Trả về list dict {id,title,url,date} cho `limit` video mới nhất của kênh."""
-    url = channel_url.rstrip("/")
-    if not url.endswith("/videos"):
-        url += "/videos"
+def list_channel_videos(channel_url: str, limit: int, tab: str = "videos"):
+    """Trả về list dict {id,title,url,date} cho `limit` video/livestream mới nhất của kênh.
+
+    tab="videos" quét tab Videos thường; tab="streams" quét tab Streams (livestream đã kết thúc) —
+    kênh có livestream định kỳ (vd AzFin "Lăng kính đầu tư giá trị") KHÔNG hiện video ở tab Videos,
+    chỉ hiện ở tab Streams, nên phải quét cả hai tab mới không bị bỏ sót.
+    """
+    url = re.sub(r"/(videos|streams)/?$", "", channel_url.rstrip("/"))
+    url += f"/{tab}"
     cmd = [
         "yt-dlp", "--cookies-from-browser", "chrome",
         "--flat-playlist", "--playlist-end", str(limit),
@@ -104,7 +108,12 @@ def main():
     added = []
     for name, link in channels:
         print(f"• Quét kênh: {name}")
-        vids = list_channel_videos(link, args.limit)
+        vids = list_channel_videos(link, args.limit, "videos")
+        seen_ids = {v["id"] for v in vids}
+        for v in list_channel_videos(link, args.limit, "streams"):
+            if v["id"] not in seen_ids:
+                vids.append(v)
+                seen_ids.add(v["id"])
         for v in vids:
             if v["id"] in existing:
                 continue

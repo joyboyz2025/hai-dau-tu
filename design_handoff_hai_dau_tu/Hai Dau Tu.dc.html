@@ -219,28 +219,44 @@ input::placeholder { color: #A3A29A; }
 
       <!-- Tuần này (tổng hợp) -->
       <sc-if value="{{ showWeekly }}" hint-placeholder-val="{{ true }}">
-        <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-left:4px solid oklch(0.42 0.08 235); border-radius:14px; padding:20px; display:flex; flex-direction:column; gap:14px;">
-          <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-            <h2 style="margin:0; font-size:18px; font-weight:700; letter-spacing:-0.2px;">Tuần này — cả nhà nên làm gì</h2>
-            <span style="font-size:12px; color:#9B9A92; font-family:'IBM Plex Mono',monospace;">{{ weeklyRange }}</span>
+        <div class="tk-card" style="position:relative; overflow:hidden; background:#FFFFFF; border:1px solid #E7E6E1; border-radius:16px; padding:22px 22px 20px; display:flex; flex-direction:column; gap:16px; box-shadow:0 10px 30px -20px rgba(23,23,18,0.2);">
+          <div style="position:absolute; top:0; left:0; width:5px; height:100%; background:linear-gradient(180deg, oklch(0.42 0.08 235), oklch(0.6 0.1 200));"></div>
+          <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; padding-left:6px;">
+            <h2 style="margin:0; font-size:19px; font-weight:800; letter-spacing:-0.3px;">📌 Tuần này — cả nhà nên làm gì</h2>
+            <span style="font-size:12px; color:#9B9A92; font-family:'IBM Plex Mono',monospace; font-weight:600;">{{ weeklyRange }}</span>
           </div>
-          <div style="font-size:14px; color:#21211D; line-height:1.6; background:oklch(0.95 0.02 235); border-radius:10px; padding:13px 15px;">{{ weeklyAction }}</div>
-          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:14px;">
-            <div style="display:flex; flex-direction:column; gap:8px;">
-              <div style="font-size:12px; font-weight:800; color:oklch(0.42 0.1 150); text-transform:uppercase; letter-spacing:0.5px;">✓ Đồng thuận</div>
+          <div style="padding-left:6px; display:flex; flex-direction:column; gap:6px;">
+            <div style="font-size:10.5px; font-weight:800; color:oklch(0.42 0.08 235); text-transform:uppercase; letter-spacing:0.8px;">Tóm tắt</div>
+            <div style="font-size:14px; color:#21211D; line-height:1.65; background:linear-gradient(135deg, oklch(0.96 0.015 235), oklch(0.97 0.01 90)); border-radius:12px; padding:14px 16px; border:1px solid oklch(0.9 0.02 235);">{{ weeklyAction }}</div>
+          </div>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px; padding-left:6px;">
+            <div style="display:flex; flex-direction:column; gap:9px;">
+              <div style="display:flex; align-items:center; gap:7px;">
+                <span style="font-size:12px; font-weight:800; color:oklch(0.42 0.1 150); text-transform:uppercase; letter-spacing:0.6px;">✓ Đồng thuận</span>
+                <span style="font-size:10.5px; font-weight:700; padding:1px 8px; border-radius:999px; background:oklch(0.95 0.04 150); color:oklch(0.42 0.1 150);">{{ weeklyConsensus.length }}</span>
+              </div>
               <sc-for list="{{ weeklyConsensus }}" as="c" hint-placeholder-count="0">
-                <div style="display:flex; flex-direction:column; gap:2px;">
-                  <div style="font-size:13px; font-weight:600; color:#21211D;">{{ c.label }}</div>
-                  <div style="font-size:12px; color:#6E6D66; line-height:1.5;">{{ c.detail }}</div>
+                <div style="display:flex; gap:10px; align-items:flex-start; background:{{ c.itemBg }}; border:1px solid {{ c.itemBorder }}; border-radius:11px; padding:11px 13px;">
+                  <div style="width:21px; height:21px; border-radius:50%; background:{{ c.badgeBg }}; color:{{ c.badgeColor }}; font-size:10.5px; font-weight:800; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:1px; font-family:'IBM Plex Mono',monospace;">{{ c.idx }}</div>
+                  <div style="display:flex; flex-direction:column; gap:3px;">
+                    <div style="font-size:{{ c.labelSize }}; font-weight:750; color:#21211D; line-height:1.35;">{{ c.star }}{{ c.label }}</div>
+                    <div style="font-size:12px; color:#6E6D66; line-height:1.55;">{{ c.detail }}</div>
+                  </div>
                 </div>
               </sc-for>
             </div>
-            <div style="display:flex; flex-direction:column; gap:8px;">
-              <div style="font-size:12px; font-weight:800; color:oklch(0.5 0.1 70); text-transform:uppercase; letter-spacing:0.5px;">⚠ Mâu thuẫn</div>
+            <div style="display:flex; flex-direction:column; gap:9px;">
+              <div style="display:flex; align-items:center; gap:7px;">
+                <span style="font-size:12px; font-weight:800; color:oklch(0.5 0.1 70); text-transform:uppercase; letter-spacing:0.6px;">⚠ Mâu thuẫn</span>
+                <span style="font-size:10.5px; font-weight:700; padding:1px 8px; border-radius:999px; background:oklch(0.96 0.05 85); color:oklch(0.5 0.1 70);">{{ weeklyDivergence.length }}</span>
+              </div>
               <sc-for list="{{ weeklyDivergence }}" as="dv" hint-placeholder-count="0">
-                <div style="display:flex; flex-direction:column; gap:2px;">
-                  <div style="font-size:13px; font-weight:600; color:#21211D;">{{ dv.label }}</div>
-                  <div style="font-size:12px; color:#6E6D66; line-height:1.5;">{{ dv.detail }}</div>
+                <div style="display:flex; gap:10px; align-items:flex-start; background:{{ dv.itemBg }}; border:1px solid {{ dv.itemBorder }}; border-radius:11px; padding:11px 13px;">
+                  <div style="width:21px; height:21px; border-radius:50%; background:{{ dv.badgeBg }}; color:{{ dv.badgeColor }}; font-size:10.5px; font-weight:800; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:1px; font-family:'IBM Plex Mono',monospace;">{{ dv.idx }}</div>
+                  <div style="display:flex; flex-direction:column; gap:3px;">
+                    <div style="font-size:{{ dv.labelSize }}; font-weight:750; color:#21211D; line-height:1.35;">{{ dv.star }}{{ dv.label }}</div>
+                    <div style="font-size:12px; color:#6E6D66; line-height:1.55;">{{ dv.detail }}</div>
+                  </div>
                 </div>
               </sc-for>
             </div>
@@ -2460,6 +2476,20 @@ class Component extends DCLogic {
     // ── Trang Hành động giá (HDT.actions) ─────────────────────────────────
     const ACTS = HDT.actions || { now: [], waiting: [], events: [] };
     const ACT_ACCENT = { up: 'oklch(0.72 0.14 150)', down: 'oklch(0.62 0.19 27)', warn: 'oklch(0.78 0.12 85)', wait: '#C9C8C0', avoid: 'oklch(0.63 0.13 330)' };
+    // ── Tuần này: điểm nhấn cho đồng thuận/mâu thuẫn (đánh số, mục đầu nổi bật) ──
+    const mkWeeklyItems = (arr, sig) => (arr || []).map((x, i) => {
+      const featured = i === 0;
+      return {
+        idx: i + 1, label: x.label, detail: x.detail, featured,
+        badgeBg: ACT_ACCENT[sig], badgeColor: '#FFFFFF',
+        itemBg: featured ? CHIP_SIG[sig].bg : '#FFFFFF',
+        itemBorder: featured ? ACT_ACCENT[sig] : '#EDECE6',
+        labelSize: featured ? '14.5px' : '13.5px',
+        star: featured ? '★ ' : ''
+      };
+    });
+    const weeklyConsensusItems = mkWeeklyItems(W.consensus, 'up');
+    const weeklyDivergenceItems = mkWeeklyItems(W.divergence, 'warn');
     const mkActExpert = (id) => {
       const e = HDT.experts[id] || {};
       return { initials: e.initials || '?', expertName: e.name || id };
@@ -2752,7 +2782,7 @@ class Component extends DCLogic {
       tkVerdict, tkVerdictBg, tkVerdictColor,
       showWeekly: !showResults,
       weeklyRange: W.dateRange, weeklyAction: W.action,
-      weeklyConsensus: W.consensus, weeklyDivergence: W.divergence,
+      weeklyConsensus: weeklyConsensusItems, weeklyDivergence: weeklyDivergenceItems,
       scorecardRows, scHit, scPending, scMiss, scExpertStats, scChips,
       pwError: s.pwError, pwRef: this.pwRef, nameRef: this.nameRef, channelRef: this.channelRef,
       doLogin: () => this.login(),

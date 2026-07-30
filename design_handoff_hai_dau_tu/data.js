@@ -5,7 +5,7 @@
 //          — giữ bài mới nhất + các bài hội viên gần nhất.
 // ─────────────────────────────────────────────────────────────────────────────
 window.HDT_DATA = {
-  "lastUpdated": "28/07/2026 · Mới nhất",
+  "lastUpdated": "30/07/2026 · Mới nhất",
   "pulse": [
     {
       "name": "CK Việt",
@@ -14,27 +14,27 @@ window.HDT_DATA = {
     },
     {
       "name": "CK Mỹ",
-      "mark": "↓ AI xẹp, Google capex âm",
+      "mark": "↓ Sập sau FOMC · 30Y 5,2%",
       "sig": "down"
     },
     {
       "name": "Vàng",
-      "mark": "◷ Long 4.030 · stop 3.930",
+      "mark": "◷ Hồi KT 4.300 · cửa 3.000",
       "sig": "wait"
     },
     {
       "name": "Dầu",
-      "mark": "↑ ~100, kịch bản 120–130",
+      "mark": "↑ Brent 88 · WTI 84,5",
       "sig": "up"
     },
     {
       "name": "Bitcoin",
-      "mark": "↓ Short 69–70k",
+      "mark": "↓ Banana 3 · né năm 2026",
       "sig": "down"
     },
     {
       "name": "Tỷ giá",
-      "mark": "⚠ Thuế 12,5% + Fed 82%",
+      "mark": "⚠ USD hồi · JPY/KRW yếu",
       "sig": "warn"
     },
     {
@@ -198,9 +198,118 @@ window.HDT_DATA = {
       },
       "updates": [
         {
+          "date": "2026-07-30",
+          "dateShort": "30/07",
+          "timeAgo": "Hôm nay",
+          "tab": "Video · 30/07",
+          "sourceType": "public-video",
+          "typeLabel": "Video công khai",
+          "title": "Fed Không Tăng Lãi Suất, Chứng Khoán Vẫn Sập — Thị Trường Hết Tin Fed",
+          "summary": "Bình luận nóng sáng 30/07 sau kỳ họp FOMC: Fed giữ nguyên lãi suất 3,5–3,75% (lần giữ nguyên thứ năm liên tiếp) nhưng chứng khoán Mỹ vẫn có phiên giảm mạnh nhất kể từ tháng 4/2025 — Dow −1.100 điểm (−2,2%), Nasdaq ~−2%, S&P 500 −1,5%. Điểm đáng chú ý không phải con số mà là tỉ lệ vote 9–3: cả ba phiếu chống (Hammack – Cleveland, Kashkari – Minneapolis, Logan – Dallas) đều đòi TĂNG ngay 0,25% — lần đầu từ 2016 có ba thành viên FOMC bất đồng theo cùng một hướng. Lý do thị trường sập: lợi suất trái phiếu Mỹ 30 năm vọt lên 5,2% (cao nhất từ 2007, +2,36% một phiên), 10 năm 4,687% — thị trường không còn tin Fed kiểm soát được lạm phát nên \"bán trước, hỏi sau\". Chủ tịch Kevin Warsh bị chê phát biểu \"nhạt như nước ốc\": nói cứng (\"không khoan nhượng với lạm phát\") nhưng không hành động, không đưa căn cứ dữ liệu, đã bỏ forward guidance — sự bất định khiến các chủ tịch Fed vùng tự lên tiếng, thị trường phải ghép thông tin rời rạc. Xác suất tăng lãi tháng 9 trên thị trường cá cược tăng từ 55% lên 72% sau họp. Hàm ý tài sản: USD tiếp tục hồi phục (yên Nhật, won Hàn, đô Đài mất giá thêm); dầu Brent +6,1% lên 88 (WTI 84,5); Nasdaq đã rơi từ đỉnh ~30.600 đầu tháng 6 về 27.000 — dòng tiền đang trú vào phòng thủ/y tế/tài chính/Apple nhưng \"sự lòng vòng này cuối cùng sẽ kết thúc bằng một đợt điều chỉnh\" cả các nhóm đó. Vàng: từ vùng 3.980–4.000 có quyền kỳ vọng hồi kỹ thuật lên ~4.300, nhưng \"vẫn còn nguyên cửa\" rơi về 3.000. Bitcoin: \"2026 không phải là năm của Bitcoin\" — đang hình thành banana lần ba. Tới kỳ họp tháng 9–10 thị trường sẽ còn phản ứng mạnh kiểu này.",
+          "feedChips": [
+            {
+              "label": "Fed ⚠ giữ 3,5–3,75% · vote 9–3",
+              "sig": "warn"
+            },
+            {
+              "label": "CK Mỹ ↓ Dow −1.100đ — mạnh nhất từ T4/2025",
+              "sig": "down"
+            },
+            {
+              "label": "Lợi suất ⚠ 30 năm 5,2% — đỉnh từ 2007",
+              "sig": "warn"
+            },
+            {
+              "label": "Vàng ◷ hồi KT 4.300 · còn cửa về 3.000",
+              "sig": "wait"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "Vì sao sập",
+              "value": "Thị trường hết tin Fed kiểm soát lạm phát",
+              "signal": "down",
+              "note": "Fed không tăng lãi nhưng lợi suất trái phiếu 30 năm vọt 5,2% (cao nhất từ 2007), 10 năm 4,687% — thị trường tự dự phóng lợi suất còn tăng và \"bán trước, hỏi sau\"."
+            },
+            {
+              "tag": "Fed tháng 9",
+              "value": "Xác suất tăng lãi 55% → 72% sau họp",
+              "signal": "warn",
+              "note": "Thị trường không nhìn quyết định hôm nay mà nhìn kỳ họp tới; ba chủ tịch Fed vùng đòi tăng ngay 0,25%. Khớp dự báo Tập 40 (82% tăng tháng 9)."
+            },
+            {
+              "tag": "Vàng",
+              "value": "Hồi kỹ thuật lên ~4.300 · vẫn còn cửa về 3.000",
+              "signal": "wait",
+              "note": "Từ vùng 3.980–4.000 \"có quyền kỳ vọng\" hồi lên ~4.300; \"sau đó tôi vẫn cho rằng vẫn còn nguyên cái cửa mà giá vàng sẽ rơi về mức 3.000\". Trước mắt cứ để hồi kỹ thuật đã."
+            },
+            {
+              "tag": "Bitcoin",
+              "value": "\"2026 không phải là năm của Bitcoin\"",
+              "signal": "down",
+              "note": "Đang hình thành \"banana\" (chuối) lần ba — như đã chia sẻ trong các tập hội viên."
+            },
+            {
+              "tag": "USD & tỷ giá",
+              "value": "USD tiếp tục hồi — JPY/KRW/TWD mất giá thêm",
+              "signal": "warn",
+              "note": "Đi cùng đà tăng của lợi suất trái phiếu Mỹ 10 và 30 năm; USD/JPY còn đà tăng mạnh thời gian tới."
+            }
+          ],
+          "sections": [
+            {
+              "title": "FOMC 29/07 — giữ nguyên nhưng chia rẽ thật",
+              "signal": "warn",
+              "sigLabel": "Cảnh giác",
+              "para": "Fed giữ nguyên 3,5–3,75%, lần thứ năm liên tiếp. Cái đáng chú ý không nằm ở con số mà ở tỉ lệ vote 9 thuận – 3 chống: cả ba phiếu chống đều là chủ tịch Fed vùng (Beth Hammack – Cleveland, Neel Kashkari – Minneapolis, Lorie Logan – Dallas) và đều muốn tăng ngay 0,25%. Đây là lần đầu tiên kể từ 2016 một cuộc họp FOMC có tới ba thành viên bất đồng theo cùng một chiều. Warsh còn đùa trong họp báo rằng ông \"muốn một cuộc cãi vã gia đình tử tế và đã có nó\" — nghe hài nhưng là tín hiệu rõ: nội bộ Fed chia rẽ thật, không phải diễn.",
+              "bullets": [
+                "Giữ nguyên 3,5–3,75% — lần thứ năm liên tiếp",
+                "Vote 9–3; cả ba phiếu chống đòi tăng ngay 0,25%",
+                "Lần đầu từ 2016: ba thành viên bất đồng cùng một hướng"
+              ]
+            },
+            {
+              "title": "Vì sao không tăng lãi mà chứng khoán vẫn sập",
+              "signal": "down",
+              "sigLabel": "Tiêu cực",
+              "para": "Dow giảm hơn 1.100 điểm (−2,2%), Nasdaq ~−2%, S&P 500 −1,5% — phiên giảm mạnh nhất kể từ tháng 4/2025. Nguyên nhân nằm ở thị trường trái phiếu: lợi suất kỳ hạn 30 năm vọt lên 5,2% (+2,36% chỉ một phiên) — cao nhất kể từ 2007; kỳ hạn 10 năm lên 4,687%. Thông điệp: thị trường đánh giá Fed đã mất tính đáng tin cậy trong kiểm soát lạm phát và tự dự phóng lợi suất còn tăng cao hơn. Dầu Brent cùng lúc tăng 6,1% lên 88 đô (WTI 84,5) càng nuôi nỗi lo lạm phát.",
+              "bullets": [
+                "Lợi suất 30 năm: 5,2% — cao nhất từ 2007, tăng 2,36% một phiên",
+                "Lợi suất 10 năm: 4,687% — vùng trước khủng hoảng 2008",
+                "Xác suất tăng lãi tháng 9 (thị trường cá cược): 55% → 72%",
+                "Dầu Brent 88 (+6,1%) · WTI 84,5 — thêm áp lực lạm phát"
+              ]
+            },
+            {
+              "title": "Kevin Warsh — \"nhạt như nước ốc\", bất định là rủi ro thật",
+              "signal": "warn",
+              "sigLabel": "Cảnh giác",
+              "para": "Sau 42 ngày nhiệm sở, Warsh đã bỏ forward guidance — thị trường không còn biết định hướng tiếp theo của Fed. Phát biểu và Q&A của ông bị Thái Phạm chê hai lần nghe đều \"nhạt như nước ốc\": nói cứng kiểu \"không có sự khoan nhượng nào với lạm phát cao\" nhưng khi phóng viên hỏi vì sao không tăng lãi suất thì trả lời vòng vo, không dựa vào dữ liệu. Sự mơ hồ giúp ông \"nay nói này mai nói kia\" nhưng cái giá là Fed phải nhường câu chuyện cho người khác kể — các chủ tịch Fed vùng tự lên tiếng trước cuộc họp, thị trường phải ghép thông tin từ nhiều nguồn rời rạc. Thị trường tài chính ghét sự bất định: không có định hướng thì nhà đầu tư tự dự đoán, và trong bối cảnh lợi suất tăng thì họ bán trước hỏi sau.",
+              "bullets": [
+                "Đã bỏ forward guidance — chiến lược mơ hồ gây phản tác dụng",
+                "Nói \"không khoan nhượng với lạm phát\" nhưng không hành động, không căn cứ",
+                "Các chủ tịch Fed vùng tự phát ngôn → nhiễu loạn thông tin",
+                "Dự báo: kỳ họp tháng 9 và 10 thị trường còn phản ứng mạnh kiểu này"
+              ]
+            },
+            {
+              "title": "Hàm ý tài sản: USD, vàng, Bitcoin, chứng khoán Mỹ",
+              "signal": "wait",
+              "sigLabel": "Chờ & cẩn trọng",
+              "para": "USD sẽ tiếp tục đà phục hồi dù có điều chỉnh sau họp; yên Nhật, won Hàn, đô Đài Loan sẽ mất giá thêm — USD/JPY còn đà tăng mạnh. Nasdaq đã giảm từ đỉnh ~30.600 điểm đầu tháng 6 về 27.000: cơn sốt AI đã điều chỉnh \"đúng như đã chia sẻ\", dòng tiền đang xoay vòng sang cổ phiếu phòng thủ, y tế, tài chính và Apple — nhưng sự lòng vòng này \"cuối cùng sẽ kết thúc bằng một đợt điều chỉnh\" ở chính các nhóm đó (kể cả cyber security). Vàng: vùng 3.980–4.000 có quyền kỳ vọng hồi kỹ thuật lên ~4.300, sau đó vẫn còn nguyên cửa rơi về 3.000. Bitcoin: 2026 không phải năm của Bitcoin — banana lần ba đang hình thành. Thông điệp chung: cẩn trọng trong giai đoạn hiện tại.",
+              "bullets": [
+                "USD hồi tiếp — JPY/KRW/TWD chịu áp lực mất giá",
+                "Nasdaq: đỉnh ~30.600 (đầu T6) → 27.000; nhóm phòng thủ/Apple rồi cũng sẽ chỉnh",
+                "Vàng: hồi kỹ thuật 3.980–4.000 → ~4.300, rồi vẫn còn cửa về 3.000",
+                "Bitcoin: banana lần 3 — đứng ngoài cả năm 2026"
+              ]
+            }
+          ]
+        },
+        {
           "date": "2026-07-26",
           "dateShort": "26/07",
-          "timeAgo": "2 ngày trước",
+          "timeAgo": "4 ngày trước",
           "tab": "Tập 40 · Tuần 30",
           "sourceType": "member-video",
           "typeLabel": "Video hội viên · Tập 40",
@@ -529,7 +638,7 @@ window.HDT_DATA = {
         {
           "date": "2026-07-23",
           "dateShort": "23/07",
-          "timeAgo": "5 ngày trước",
+          "timeAgo": "Tuần trước",
           "tab": "Tập 39 · Tuần 29",
           "sourceType": "member-video",
           "typeLabel": "Video hội viên · Tập 39",
@@ -2028,41 +2137,17 @@ window.HDT_DATA = {
               "para": "Vấn đề chính là siết thanh khoản nhà nước (LDR 115%, huy động chậm hơn tín dụng). Chỉ ~28–29% mã uptrend, từ 15/6 một số mã mới nhích lên. Giữ kỷ luật, \"tà tà kiếm cơm\", chờ tín dụng nở lại."
             }
           ]
-        },
-        {
-          "date": "2026-06-17",
-          "dateShort": "17/06",
-          "timeAgo": "Tháng trước",
-          "tab": "Post · 17/06",
-          "sourceType": "member-post",
-          "typeLabel": "Post hội viên",
-          "title": "Kịch Bản FED Tối Nay — Chia Sẻ Qua Video Phỏng Vấn",
-          "summary": "Thái Phạm chia sẻ kịch bản cuộc họp FED kèm một video phỏng vấn (đăng kèm link Facebook). Phần quan điểm chi tiết nằm trong video liên kết — post trên YouTube chỉ là phần dẫn.",
-          "feedChips": [
-            {
-              "label": "FED ◷ chờ kết quả họp",
-              "sig": "wait"
-            }
-          ],
-          "keyCalls": [
-            {
-              "tag": "FED",
-              "value": "Chờ kết quả họp",
-              "signal": "wait",
-              "note": "Chia sẻ kịch bản FED qua video phỏng vấn liên kết; nội dung chi tiết nằm trong video, không có trong post công khai."
-            }
-          ],
-          "sections": [
-            {
-              "title": "Bối cảnh",
-              "signal": "wait",
-              "sigLabel": "Chờ kết quả cuộc họp FED",
-              "para": "Bài post dẫn sang một video phỏng vấn về kịch bản FED trong cuộc họp lần này. Phần phân tích chi tiết nằm trong video liên kết (Facebook), không có trong nội dung post công khai trên YouTube."
-            }
-          ]
         }
       ],
       "sources": [
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 27)",
+          "iconColor": "oklch(0.46 0.15 27)",
+          "date": "30/07/2026",
+          "title": "FED KHÔNG TĂNG LÃI SUẤT, CHỨNG KHOÁN VẪN SẬP: CHUYỆN GÌ ĐANG XẢY RA?",
+          "meta": "Video công khai · transcript tự động"
+        },
         {
           "icon": "▶",
           "iconBg": "oklch(0.95 0.04 27)",
@@ -2110,14 +2195,6 @@ window.HDT_DATA = {
           "date": "11/07/2026",
           "title": "Tập 37 — Đổi quan điểm: tăng tiền mặt lên 60%, phòng thủ mùa đông",
           "meta": "Video hội viên · transcript tự động"
-        },
-        {
-          "icon": "▶",
-          "iconBg": "oklch(0.95 0.04 27)",
-          "iconColor": "oklch(0.46 0.15 27)",
-          "date": "09/07/2026",
-          "title": "Ông Trump tuyên bố đánh Iran tiếp tục — cú sốc hay trò đùa? Ảnh hưởng thị trường",
-          "meta": "Video công khai · transcript tự động"
         }
       ]
     },
@@ -2145,7 +2222,7 @@ window.HDT_DATA = {
         {
           "date": "2026-07-24",
           "dateShort": "24/07",
-          "timeAgo": "4 ngày trước",
+          "timeAgo": "6 ngày trước",
           "tab": "Podcast · 24/07",
           "sourceType": "public-video",
           "typeLabel": "Video công khai",
@@ -2231,7 +2308,7 @@ window.HDT_DATA = {
         {
           "date": "2026-07-16",
           "dateShort": "16/07",
-          "timeAgo": "Tuần trước",
+          "timeAgo": "2 tuần trước",
           "tab": "Podcast · 16/07",
           "sourceType": "public-video",
           "typeLabel": "Video công khai",
@@ -2384,7 +2461,7 @@ window.HDT_DATA = {
         {
           "date": "2026-07-08",
           "dateShort": "08/07",
-          "timeAgo": "2 tuần trước",
+          "timeAgo": "3 tuần trước",
           "tab": "Số 18 · Tích sản T43",
           "sourceType": "public-video",
           "typeLabel": "Video công khai",
@@ -2805,9 +2882,78 @@ window.HDT_DATA = {
       },
       "updates": [
         {
+          "date": "2026-07-28",
+          "dateShort": "28/07",
+          "timeAgo": "2 ngày trước",
+          "tab": "Video · 28/07",
+          "sourceType": "public-video",
+          "typeLabel": "Video công khai",
+          "title": "Chủ Tịch Đồng Loạt Đăng Ký Mua Cổ Phiếu — Đọc Tin Này Thế Nào?",
+          "summary": "Loạt lãnh đạo doanh nghiệp đăng ký mua cổ phiếu công ty mình vừa được tổng hợp: ông Tô Hải (VCI) đăng ký mua 31 triệu cổ phiếu, một Phó TGĐ Khang Điền (người nhà Phó chủ tịch HĐQT) 20 triệu, ông Đạt (PDR) 20 triệu, cùng rất nhiều lệnh đăng ký cỡ vài trăm nghìn tới hơn 1 triệu cổ. Cách đọc của kênh rất trực quan: chủ tịch/tổng giám đốc là những người hiểu doanh nghiệp mình nhất — họ đồng loạt đăng ký mua nghĩa là cổ phiếu ĐÃ VỀ GIÁ TRỊ HỢP LÝ và họ tin vào khả năng tăng trưởng; cộng hưởng với phát biểu tuần trước của chủ tịch SSI rằng định giá đang hấp dẫn dài hạn. Kênh bác thuyết âm mưu \"dụ mua để úp bô\": ở vùng giá đã thấp thế này \"khố rách áo ôm với nhau rồi\", có úp bô giá cũng chẳng giảm thêm bao nhiêu và không ai được lợi — điều đáng cảnh giác là chiều ngược lại, khi người nhà lãnh đạo đăng ký mua ở VÙNG GIÁ CAO. Lưu ý kỹ thuật: đây là ĐĂNG KÝ chứ không chắc chắn khớp — đăng ký giá thấp không khớp được lệnh thì chỉ cần báo cáo lại UBCK, không sai luật (ví dụ VCI đang 19.7, đăng ký mua giá 14 thì khó khớp). Kết luận quan trọng nhất: đây là DỮ LIỆU THAM CHIẾU cộng thêm, KHÔNG phải dữ liệu tạo đáy — \"Đáy thì còn lâu. Thế nhưng mà các chủ tịch đã thấy hấp dẫn rồi. Mình cũng thấy hấp dẫn rồi.\" Vẫn là xu hướng giảm: mua phải rất cẩn trọng, chiến lược là mua để NẮM GIỮ được đến lúc hiệu quả, không phải để có lãi T+ hay tuần sau.",
+          "feedChips": [
+            {
+              "label": "Chủ tịch ↑ đồng loạt đăng ký mua — cổ phiếu rẻ",
+              "sig": "up"
+            },
+            {
+              "label": "Đáy ⚠ \"còn lâu\" — chỉ là dữ liệu tham chiếu",
+              "sig": "warn"
+            },
+            {
+              "label": "VCI · KDH · PDR ◷ đăng ký chưa chắc khớp",
+              "sig": "wait"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "Ý nghĩa",
+              "value": "Cổ phiếu đã rẻ — người hiểu doanh nghiệp nhất xuống tiền",
+              "signal": "up",
+              "note": "Tô Hải (VCI) 31 triệu cp, Phó TGĐ Khang Điền 20 triệu, ông Đạt (PDR) 20 triệu… \"Nó hấp dẫn đủ để người ta đăng ký mua và sẽ nắm giữ trong dài hạn.\""
+            },
+            {
+              "tag": "Nhưng",
+              "value": "KHÔNG phải dữ liệu tạo đáy — \"đáy thì còn lâu\"",
+              "signal": "warn",
+              "note": "Chỉ là dữ liệu cộng thêm để tham chiếu khi xây chiến lược mua. Vẫn xu hướng giảm — mua làm sao nắm giữ được đến lúc hiệu quả, không phải mua để lãi T+ hay tháng sau."
+            },
+            {
+              "tag": "Thuyết âm mưu",
+              "value": "\"Úp bô\" ở vùng này vô nghĩa — lo khi họ mua ở vùng giá CAO",
+              "signal": "wait",
+              "note": "Giá đã thấp, đạp thêm không được bao nhiêu và chẳng giải quyết gì. Ngược lại mới đáng ngại: như trường hợp người nhà chủ tịch đăng ký mua ở vùng giá cao trước đây. Thị trường công bằng: họ mua vùng thấp thì phải cho họ bán vùng cao."
+            }
+          ],
+          "sections": [
+            {
+              "title": "Danh sách đăng ký và cách đọc",
+              "signal": "up",
+              "sigLabel": "Tích cực",
+              "para": "Các lệnh đăng ký thực ra rải rác từ mấy tuần, hôm nay mới được tổng hợp lại. Ai hiểu công ty nhất? Chính là chủ tịch HĐQT, tổng giám đốc, phó tổng — khi họ đồng loạt đăng ký mua cổ phiếu công ty mình thì đánh giá đơn giản: định giá đã đủ hấp dẫn để người ta xuống tiền và nắm giữ dài hạn. Tuần trước có chủ tịch SSI nói thị trường ở vùng định giá hấp dẫn dài hạn, tuần này có loạt cổ đông lớn và lãnh đạo mua vào — hai dữ kiện cùng chiều.",
+              "bullets": [
+                "Tô Hải (VCI): đăng ký mua 31 triệu cổ phiếu",
+                "Phó TGĐ Khang Điền (người nhà Phó chủ tịch HĐQT): 20 triệu",
+                "Ông Đạt (PDR): 20 triệu — và rất nhiều lệnh vài trăm nghìn tới hơn 1 triệu cp",
+                "Đăng ký ≠ chắc chắn khớp: không khớp chỉ cần báo cáo lại UBCK, không sai luật"
+              ]
+            },
+            {
+              "title": "Hấp dẫn rồi — nhưng chưa phải đáy",
+              "signal": "warn",
+              "sigLabel": "Cẩn trọng",
+              "para": "\"Nhắc lại đây là dữ liệu cộng thêm để tham chiếu mọi người nhá, chứ không phải là dữ liệu tạo đáy. Đáy thì còn lâu. Thế nhưng mà các chủ tịch đã thấy hấp dẫn rồi. Mình cũng thấy hấp dẫn rồi.\" Vẫn là xu hướng giảm nên mua phải rất cẩn trọng: đưa ra chiến lược để có thể NẮM GIỮ được cho đến lúc hiệu quả, chứ không phải chiến lược mua có lãi trong T+, tuần sau hay tháng sau — điều đó khó. Và thị trường phải công bằng: các lãnh đạo mua ở vùng thấp thì đến lúc giá lên phải chấp nhận họ bán ở vùng cao (như chủ tịch Hòa Phát từng nói thẳng).",
+              "bullets": [
+                "Dữ liệu tham chiếu để kết hợp với đánh giá thị trường của chính mình",
+                "Vẫn xu hướng giảm — chiến lược mua để nắm giữ, không phải lãi T+",
+                "Kết hợp tín hiệu: chủ tịch SSI (tuần trước) + loạt đăng ký mua (tuần này)"
+              ]
+            }
+          ]
+        },
+        {
           "date": "2026-07-27",
           "dateShort": "27/07",
-          "timeAgo": "Hôm qua",
+          "timeAgo": "3 ngày trước",
           "tab": "Video · 27/07",
           "sourceType": "public-video",
           "typeLabel": "Video công khai",
@@ -2888,7 +3034,7 @@ window.HDT_DATA = {
         {
           "date": "2026-07-24",
           "dateShort": "24/07",
-          "timeAgo": "4 ngày trước",
+          "timeAgo": "6 ngày trước",
           "tab": "Video · 24/07",
           "sourceType": "public-video",
           "typeLabel": "Video công khai",
@@ -2968,7 +3114,7 @@ window.HDT_DATA = {
         {
           "date": "2026-07-22",
           "dateShort": "22/07",
-          "timeAgo": "6 ngày trước",
+          "timeAgo": "Tuần trước",
           "tab": "Video · 22/07",
           "sourceType": "public-video",
           "typeLabel": "Video công khai",
@@ -3245,83 +3391,17 @@ window.HDT_DATA = {
               ]
             }
           ]
-        },
-        {
-          "date": "2026-07-16",
-          "dateShort": "16/07",
-          "timeAgo": "Tuần trước",
-          "tab": "Video · 16/07",
-          "sourceType": "public-video",
-          "typeLabel": "Video công khai",
-          "title": "Đã Có Đáy Chưa? Thị Trường Hồi Lên Thì Nên Mua Hay Nên Bán?",
-          "summary": "VN-Index hôm nay tạo nến xuyên thấu (gần thành nhấn chìm tăng, khối lượng đạt) — về lý thuyết là tín hiệu đảo chiều, nhưng KHÔNG đánh giá cao: điểm số bị nhóm Vin chi phối, midcap mới chỉ \"rút chân\". SSI rút chân ấn tượng nhưng cần đóng trên 26 (ít nhất 25.5) mới xác nhận; cả nhóm cap chỉ ~10 mã có tín hiệu mua, phần lớn cuối ATC. Quan trọng nhất: các lý do khiến thị trường giảm (vĩ mô, chính sách, thanh khoản) còn nguyên. Trả lời \"hồi lên nên mua hay bán\": phải RẠCH RÒI mình đang làm gì — lướt T+ thì kỷ luật như thị trường bình thường, thủng stop loss là cắt, đánh lệnh nhỏ kỳ vọng ngắn; đầu tư dài hạn thì đoạn này là lúc MUA — chia 3–4 lần ở các nền giá, giá vốn không phải đáy nhưng đủ thấp; ai sợ sụp đổ không dám mua là chưa có tư duy dài hạn. Cổ phiếu cơ bản đang là \"món hời\" — 10 chuyên gia không ai dám nói định giá đang cao.",
-          "feedChips": [
-            {
-              "label": "VN-Index ◷ nến đảo chiều, tin cậy thấp",
-              "sig": "wait"
-            },
-            {
-              "label": "SSI ◷ cần đóng >26 mới xác nhận",
-              "sig": "wait"
-            },
-            {
-              "label": "Lướt T+ ⚠ thủng stop là cắt",
-              "sig": "warn"
-            },
-            {
-              "label": "Dài hạn ↑ đây là lúc mua từng phần",
-              "sig": "up"
-            }
-          ],
-          "keyCalls": [
-            {
-              "tag": "Tín hiệu đáy",
-              "value": "Có nến đảo chiều — độ tin cậy thấp",
-              "signal": "wait",
-              "note": "Nến xuyên thấu trên VN-Index (thêm ~5 điểm thành nhấn chìm tăng, khối lượng đạt) nhưng điểm số bị nhóm Vin chi phối; midcap chỉ mới rút chân. Lý do giảm (vĩ mô, chính sách, thanh khoản) còn nguyên — \"hôm nay chả khác gì hôm qua\"."
-            },
-            {
-              "tag": "SSI",
-              "value": "Cần đóng trên 26 mới xác nhận đảo chiều",
-              "signal": "wait",
-              "note": "Rút chân \"chân siêu mẫu\" thắp hy vọng nhưng phải đóng trên 25.5, chắc chắn hơn là 26; không được thì đợi sang tuần — không vội. Cả nhóm cap chỉ ~10 mã có tín hiệu mua, 9/10 kiểu \"hôm nay khỏe mai tham chiếu\"."
-            },
-            {
-              "tag": "Mua hay bán khi hồi",
-              "value": "Rạch ròi: lướt thì cắt đúng stop, dài hạn thì mua",
-              "signal": "up",
-              "note": "Lướt T+: coi như thị trường bình thường, lệnh nhỏ hơn, kỳ vọng gần, thủng stop loss PHẢI cắt. Dài hạn: đây là vùng mua — chia 3–4 lệnh ở các nền giá khác nhau; sợ sụp đổ không dám mua tức là đang cược ngắn hạn, không phải đầu tư dài hạn."
-            }
-          ],
-          "sections": [
-            {
-              "title": "Đọc tín hiệu hôm nay cho đúng",
-              "signal": "wait",
-              "sigLabel": "Thận trọng — điểm số ≠ cổ phiếu",
-              "para": "VN-Index có nến xuyên thấu đủ tiêu chuẩn kỹ thuật, nhưng thị trường điểm số đang bị nhóm Vin tác động rất nhiều — nhìn midcap (thứ chúng ta thực sự cầm) thì hôm nay mới chỉ là phiên rút chân, vài mã tạo nến búa.",
-              "bullets": [
-                "SSI: đóng trên 26 (tối thiểu 25.5) mới có tín hiệu đảo chiều; chưa được thì đợi sang tuần.",
-                "Dưới 10 mã nhóm cap có tín hiệu mua, phần lớn xuất hiện cuối ATC — không mua được; kịch bản quen thuộc \"hôm nay khỏe, mai tham chiếu/đỏ nhẹ\".",
-                "Muốn mua theo tín hiệu đáy: tỷ trọng thấp + tuân thủ stop loss, tránh vòng xoáy \"mua hào hứng, hàng về chán, muốn cắt không dám cắt\"."
-              ]
-            },
-            {
-              "title": "Rạch ròi lướt sóng vs dài hạn",
-              "signal": "up",
-              "sigLabel": "Kỷ luật — hai cuộc chơi khác nhau",
-              "para": "Mất phương hướng đến từ việc trộn lẫn hai cuộc chơi: sợ bán xong tăng, sợ giữ thì giảm, tiếc chi phí cơ hội vì thanh khoản thị trường quá cao. Tách bạch ngay từ đầu thì câu \"hồi lên mua hay bán\" tự có đáp án.",
-              "bullets": [
-                "Lướt T+: thị trường yếu → cơ hội ít → lệnh nhỏ, kỳ vọng gần; có tín hiệu thì mua, thủng stop là cắt — không cắt thì hết vốn để lướt.",
-                "Dài hạn: chọn doanh nghiệp hiểu được mô hình, dòng tiền dương, khó khăn chỉ cục bộ — và phải mua được ở VÙNG GIÁ THẤP: chính là chỗ này; lỗ 5–10% mà đòi bán thì xem lại phương pháp.",
-                "Chia 3–4 lệnh ở các nền giá — giá vốn trung bình không phải đáy nhưng đủ thấp để có lợi thế khi thị trường tăng lại.",
-                "Không ai trong giới phân tích dám nói cổ phiếu cơ bản đang định giá cao — \"con nào cũng rẻ\"; nhưng phải giữ được đến lúc nó tăng trở lại.",
-                "\"Đôi khi các bạn không dài hạn được như các bạn nghĩ đâu\" — giai đoạn này bộc lộ hết; vượt qua được cái chán này mới đầu tư hiệu quả."
-              ]
-            }
-          ]
         }
       ],
       "sources": [
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 27)",
+          "iconColor": "oklch(0.46 0.15 27)",
+          "date": "28/07/2026",
+          "title": "Đánh giá tin tức các chủ tịch công ty đăng ký mua cổ phiếu của mình thế nào?",
+          "meta": "Video công khai · Chứng khoán 5 phút"
+        },
         {
           "icon": "▶",
           "iconBg": "oklch(0.95 0.04 27)",
@@ -3369,21 +3449,13 @@ window.HDT_DATA = {
           "date": "17/07/2026",
           "title": "Thị trường đã vào downtrend chưa? Tại sao lúc này bán cổ phiếu cũng là rủi ro",
           "meta": "Video công khai · Chứng khoán 5 phút"
-        },
-        {
-          "icon": "▶",
-          "iconBg": "oklch(0.95 0.04 27)",
-          "iconColor": "oklch(0.46 0.15 27)",
-          "date": "16/07/2026",
-          "title": "Đã có đáy chưa? Bây giờ hồi lên thì nên xử lý cổ phiếu lỗ thế nào?",
-          "meta": "Video công khai · Chứng khoán 5 phút"
         }
       ]
     }
   },
   "weekly": {
-    "dateRange": "20–27/07/2026",
-    "action": "Tuần −101 điểm, VN-Index đóng 1.686 — nhưng tuần đầu tiên cả 3 chuyên gia CÙNG nói định giá đã rẻ thật. Thái Phạm (Tập 40) lần đầu đưa lịch trình: đáy tháng 8–9 (khi Fed tăng lãi, xác suất 82%), hồi phục cuối năm, sóng 10–20%; tuần 30 vẫn tiền 60/cổ 40, đợi VN-Index 1.600 mới giải ngân; điểm mới: bank VCB/BID rẻ hơn cả đáy T4/2025. AzFin (#06) đo bằng số: P/E ~12x, loại Vin ~10x = chỉ 6% thời gian lịch sử — nhặt dần 6 nhóm ngành, tỉ trọng cổ phiếu 90% danh mục tài chính. CK 5 phút đồng ý với chủ tịch SSI rằng định giá rẻ, nhưng nến Harami chỉ chững đà giảm, chưa mã nào tạo đáy — bán ở 1.686 rủi ro hơn giữ. Cập nhật 27/07 (CK 5 phút, sau phiên rất xấu): \"bán lúc này là CHẬM RỒI, rủi ro hơn nắm giữ\" — vẫn đang trong giai đoạn MUA; nhưng hạ kỳ vọng thời gian: cuối năm khó về bờ, sang năm mới có cửa. Cả 3: TUYỆT ĐỐI không margin.",
+    "dateRange": "20–30/07/2026",
+    "action": "Tuần −101 điểm, VN-Index đóng 1.686 — nhưng tuần đầu tiên cả 3 chuyên gia CÙNG nói định giá đã rẻ thật. Thái Phạm (Tập 40) lần đầu đưa lịch trình: đáy tháng 8–9 (khi Fed tăng lãi, xác suất 82%), hồi phục cuối năm, sóng 10–20%; tuần 30 vẫn tiền 60/cổ 40, đợi VN-Index 1.600 mới giải ngân; điểm mới: bank VCB/BID rẻ hơn cả đáy T4/2025. AzFin (#06) đo bằng số: P/E ~12x, loại Vin ~10x = chỉ 6% thời gian lịch sử — nhặt dần 6 nhóm ngành, tỉ trọng cổ phiếu 90% danh mục tài chính. CK 5 phút đồng ý với chủ tịch SSI rằng định giá rẻ, nhưng nến Harami chỉ chững đà giảm, chưa mã nào tạo đáy — bán ở 1.686 rủi ro hơn giữ. Cập nhật 27/07 (CK 5 phút, sau phiên rất xấu): \"bán lúc này là CHẬM RỒI, rủi ro hơn nắm giữ\" — vẫn đang trong giai đoạn MUA; nhưng hạ kỳ vọng thời gian: cuối năm khó về bờ, sang năm mới có cửa. Cả 3: TUYỆT ĐỐI không margin. Cập nhật 30/07 (sau FOMC 29/07): Fed giữ nguyên 3,5–3,75% đúng kịch bản Tập 40 (vote 9–3, ba phiếu đòi tăng ngay) — nhưng chứng khoán Mỹ vẫn có phiên giảm mạnh nhất từ T4/2025 (Dow −1.100 điểm) vì lợi suất trái phiếu 30 năm vọt 5,2%: thị trường hết tin Fed kiểm soát được lạm phát, xác suất tăng lãi T9 lên 72%. Thái Phạm: vàng chỉ hồi kỹ thuật (~4.300) rồi vẫn còn cửa về 3.000; \"2026 không phải năm của Bitcoin\". CK 5 phút (28/07): loạt chủ tịch VCI · KDH · PDR đăng ký mua cổ phiếu — định giá đã hấp dẫn, nhưng \"đáy thì còn lâu\".",
     "consensus": [
       {
         "label": "Định giá đã rẻ thật — lần đầu cả 3 đồng thuận bằng số",
@@ -3603,8 +3675,8 @@ window.HDT_DATA = {
       "date": "18/07",
       "asset": "CK Mỹ",
       "call": "US30/S&P 500 vào vùng short — Mỹ chỉ hồi vài ngày rồi giảm tiếp",
-      "result": "pending",
-      "note": "Tập 39: US30 short tốt, chốt vùng chỉ số ~50.700; cyber (PANW/CRWD/FTNT) tăng short; AMD/Google/Tesla gãy theo báo cáo."
+      "result": "hit",
+      "note": "Chốt 30/07: sau FOMC 29/07 chứng khoán Mỹ có phiên giảm mạnh nhất từ T4/2025 (Dow −1.100đ, Nasdaq ~−2%); Nasdaq rơi từ đỉnh ~30.600 đầu T6 về 27.000 — tự thuật: \"đúng như cái mà chúng ta đã chia sẻ\"."
     },
     {
       "expert": "thai-pham",
@@ -3660,7 +3732,7 @@ window.HDT_DATA = {
       "asset": "Vĩ mô",
       "call": "Fed tăng lãi tháng 9 — xác suất 82% (họp 29/07 chỉ 38%, diều hâu nhưng chưa tăng)",
       "result": "pending",
-      "note": "Theo Polymarket; thị trường còn cược thêm một đợt T11–T12 nếu dầu giữ cao. ECB và BoE cũng để ngỏ tăng T9."
+      "note": "Theo Polymarket; thị trường còn cược thêm một đợt T11–T12 nếu dầu giữ cao. ECB và BoE cũng để ngỏ tăng T9. Cập nhật 30/07: vế 29/07 ĐÚNG — Fed giữ nguyên 3,5–3,75%, vote 9–3 (ba phiếu đòi tăng ngay 0,25%); xác suất T9 trên thị trường cá cược lên 72%. Chờ kỳ họp tháng 9 để chốt."
     },
     {
       "expert": "thai-pham",
@@ -3717,6 +3789,30 @@ window.HDT_DATA = {
       "call": "VCB & BID rẻ hơn cả đáy tháng 4/2025 — bank là nhóm rẻ hiếm có",
       "result": "pending",
       "note": "CTG rẻ nhưng chưa bằng; TCB đợi về 22; VPB/MB \"được ít chết nhiều\" không mua."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "30/07",
+      "asset": "Vàng",
+      "call": "Hồi kỹ thuật từ 3.980–4.000 lên ~4.300, sau đó vẫn còn cửa về ~3.000",
+      "result": "pending",
+      "note": "Video công khai sáng 30/07 sau FOMC — tái khẳng định kịch bản vàng giảm sâu nếu Fed tăng lãi."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "30/07",
+      "asset": "Tỷ giá",
+      "call": "USD tiếp tục hồi phục — JPY, KRW, đô Đài Loan mất giá thêm",
+      "result": "pending",
+      "note": "Đi cùng lợi suất trái phiếu Mỹ: 30 năm 5,2% (đỉnh từ 2007), 10 năm 4,687%."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "30/07",
+      "asset": "CK Mỹ",
+      "call": "Nhóm phòng thủ/y tế/Apple đang hút tiền rồi cũng sẽ điều chỉnh — biến động xấu kéo dài tới kỳ họp T9–T10",
+      "result": "pending",
+      "note": "Nasdaq đã về 27.000 từ đỉnh ~30.600; dòng tiền xoay vòng chỉ là \"sự lòng vòng\" trước đợt chỉnh sau."
     },
     {
       "expert": "azfin",
@@ -3901,10 +3997,18 @@ window.HDT_DATA = {
       "call": "DBC, IGC, BCM yếu hơn hẳn thị trường — đừng mua thêm",
       "result": "pending",
       "note": "IGC thủng đáy 27/07; đã cản mua thêm từ trước, mới vào 1–2 lệnh, chưa đảo hàng."
+    },
+    {
+      "expert": "ck-5-phut",
+      "date": "28/07",
+      "asset": "CK Việt",
+      "call": "Chủ tịch đồng loạt đăng ký mua (VCI · KDH · PDR) = định giá hấp dẫn, nhưng KHÔNG phải tín hiệu đáy — \"đáy thì còn lâu\"",
+      "result": "pending",
+      "note": "Tô Hải (VCI) 31tr cp · Phó TGĐ KDH 20tr · ông Đạt (PDR) 20tr. Dữ liệu tham chiếu, vẫn xu hướng giảm."
     }
   ],
   "actions": {
-    "updated": "28/07/2026",
+    "updated": "30/07/2026",
     "now": [
       {
         "asset": "Hàng trung–dài hạn đang lỗ",
@@ -3959,7 +4063,7 @@ window.HDT_DATA = {
         "dir": "GIẢI NGÂN DẦN",
         "sig": "up",
         "expertId": "ck-5-phut",
-        "detail": "Ai nhiều tiền chờ mua dài hạn có thể giải ngân dần; ưu tiên 6 tiêu chí cơ bản + đang giảm giá.",
+        "detail": "Ai nhiều tiền chờ mua dài hạn có thể giải ngân dần; ưu tiên 6 tiêu chí cơ bản + đang giảm giá. 28/07: loạt chủ tịch (VCI · KDH · PDR) đăng ký mua — thêm dữ liệu tham chiếu rằng định giá đã hấp dẫn, nhưng \"đáy thì còn lâu\".",
         "level": "Lệnh nhỏ · tuân thủ stop loss"
       },
       {
@@ -3967,7 +4071,7 @@ window.HDT_DATA = {
         "dir": "GIỮ LONG",
         "sig": "up",
         "expertId": "thai-pham",
-        "detail": "Đã chạm >100 (hồi 43% từ 70,87). Dự trữ cạn kiệt ba mặt trận — nghiêng kịch bản tích lũy vùng cao.",
+        "detail": "Điều chỉnh sau tin ngưng bắn rồi bật +6,1% phiên 29/07: Brent 88, WTI 84,5. Dự trữ cạn kiệt ba mặt trận — giữ kịch bản tích lũy vùng cao.",
         "level": "Đánh lớn → >120 · hòa bình → 85–90"
       },
       {
@@ -3975,8 +4079,8 @@ window.HDT_DATA = {
         "dir": "LONG",
         "sig": "wait",
         "expertId": "thai-pham",
-        "detail": "Long 4.030 cắt lỗ 3.930; chênh trong nước đã về 8–9tr/lượng — điều kiện mua vật chất đã đạt. Giữ SJC không phải bán.",
-        "level": "Hồi kỹ thuật 4.300 · dài hạn 3.600–3.700"
+        "detail": "Long 4.030 cắt lỗ 3.930; chênh trong nước đã về 8–9tr/lượng — điều kiện mua vật chất đã đạt. 30/07 tái khẳng định sau FOMC: hồi kỹ thuật lên ~4.300 rồi vẫn còn cửa về 3.000.",
+        "level": "Hồi KT 4.300 · bắt đáy 3.600–3.700 · cửa 3.000"
       },
       {
         "asset": "Google · Intel · Dell · SpaceX",
@@ -4071,16 +4175,9 @@ window.HDT_DATA = {
     ],
     "events": [
       {
-        "date": "2026-07-29",
-        "label": "Fed họp — xác suất tăng 38%",
-        "note": "Nhiều khả năng chưa tăng nhưng giọng điệu diều hâu, duy trì lãi cao lâu dài → lãi suất huy động VN cũng phải giữ cao để ổn định tỷ giá.",
-        "sig": "warn",
-        "expertId": "thai-pham"
-      },
-      {
         "dateLabel": "Tháng 9",
         "label": "Fed tăng lãi — xác suất 82%",
-        "note": "Theo Polymarket; ECB và BoE cũng để ngỏ tăng T9. Thái Phạm dự báo đây là thời điểm thị trường tạo đáy.",
+        "note": "Theo Polymarket 82%; sau họp 29/07 (giữ nguyên, vote 9–3, ba phiếu đòi tăng ngay 0,25%) xác suất trên thị trường cá cược tăng 55% → 72%. Thái Phạm dự báo đây là thời điểm thị trường tạo đáy.",
         "sig": "warn",
         "expertId": "thai-pham"
       },
@@ -5242,7 +5339,7 @@ window.HDT_DATA = {
         "apple",
         "aapl"
       ],
-      "oneLiner": "Short nửa vị thế 320–330; nửa còn lại để dành cho BCTC 30/07 — kỳ vọng guidance Q3 xấu.",
+      "oneLiner": "Short nửa vị thế 320–330; nửa còn lại để dành cho BCTC 30/07 — kỳ vọng guidance Q3 xấu. 30/07: dòng tiền trú ẩn đang xoay vào Apple/phòng thủ — nhưng \"sự lòng vòng này cuối cùng sẽ kết thúc bằng một đợt điều chỉnh\".",
       "thesis": [
         {
           "title": "Kéo trụ kiểu \"FOMO trap\"",
@@ -5514,7 +5611,7 @@ window.HDT_DATA = {
         "us30",
         "dow"
       ],
-      "oneLiner": "Năm bầu cử giữa nhiệm kỳ thường điều chỉnh 17–21% sau tháng 7 — nghiêng kịch bản S&P về ~7.000 để tích lũy.",
+      "oneLiner": "Sau FOMC 29/07: Dow −1.100 điểm (−2,2%), S&P 500 −1,5% — phiên giảm mạnh nhất từ T4/2025 vì lợi suất 30 năm vọt 5,2%. Năm bầu cử giữa nhiệm kỳ thường điều chỉnh 17–21% sau tháng 7 — chờ về ~7.000 tích lũy.",
       "thesis": [
         {
           "title": "Vết nứt thanh khoản",
@@ -5569,7 +5666,7 @@ window.HDT_DATA = {
       "caution": 4,
       "potentialNote": "Đã gãy; hồi kỹ thuật là điểm vào short theo đà giảm chung của công nghệ Mỹ.",
       "cautionNote": "Điểm vào phụ thuộc nhịp hồi có thể không đến — \"phiên châu Á nhiều khi cho đi luôn\"; biến động giật hai đầu.",
-      "oneLiner": "Đã gãy — kế hoạch là đợi hồi kỹ thuật 1–2 phiên rồi vào lệnh short.",
+      "oneLiner": "Từ đỉnh ~30.600 (đầu T6) đã về 27.000 — phiên sau FOMC giảm ~2%. Cơn sốt AI điều chỉnh \"đúng như đã chia sẻ\"; dòng tiền trú phòng thủ/y tế/Apple nhưng các nhóm đó rồi cũng sẽ chỉnh.",
       "thesis": [
         {
           "title": "Kịch bản của Thái Phạm",
@@ -6054,7 +6151,7 @@ window.HDT_DATA = {
         "gold",
         "xau"
       ],
-      "oneLiner": "Long 4.030 cắt lỗ 3.930; điểm mới: chênh vàng trong nước với thế giới đã thu hẹp còn 8–9 triệu/lượng — mức Thái Phạm từng đặt làm điều kiện mua vật chất.",
+      "oneLiner": "Long 4.030 cắt lỗ 3.930; chênh trong nước đã về 8–9tr — điều kiện mua vật chất đạt. 30/07 sau FOMC: hồi kỹ thuật từ 3.980–4.000 có thể lên ~4.300, nhưng \"vẫn còn nguyên cửa\" rơi về 3.000.",
       "thesis": [
         {
           "title": "Cập nhật 24–26/07: chênh trong nước sập về 8–9 triệu",
@@ -6071,6 +6168,10 @@ window.HDT_DATA = {
         {
           "title": "Vàng trong nước: chưa mua",
           "body": "Chênh lệch trong nước đang 19–20 triệu/lượng — mua là lỗ ngay phần chênh, \"nhà nước không khuyến khích dân mua vàng\". Chỉ mua khi chênh về 10–12 triệu, và tuyệt đối chỉ mua ở thương hiệu uy tín hoạt động 15–20 năm, mua đâu bán đấy — tránh cửa hàng mới mở, rủi ro vàng 3 số 9 trộn 4 số 9 hoặc tệ hơn là vàng giả kim cương."
+        },
+        {
+          "title": "30/07 — Sau FOMC: hồi kỹ thuật rồi vẫn hướng xuống",
+          "body": "Fed giữ nguyên lãi suất nhưng lợi suất trái phiếu Mỹ 30 năm vọt 5,2% khiến USD còn đà hồi. Vàng từ vùng 3.980–4.000 \"có quyền kỳ vọng\" hồi phục kỹ thuật lên ~4.300; sau đó Thái Phạm \"vẫn cho rằng còn nguyên cái cửa\" giá vàng rơi về mức 3.000 (kịch bản gắn với Fed tăng lãi tháng 9). Trước mắt: cứ để thị trường hồi kỹ thuật đã."
         }
       ],
       "orders": [
@@ -6131,14 +6232,14 @@ window.HDT_DATA = {
       "group": "Hàng hóa & Crypto",
       "tv": "TVC:USOIL",
       "sig": "up",
-      "stance": "ĐÃ CHẠM ~100 — TÍCH LŨY VÙNG CAO",
+      "stance": "TÍCH LŨY — ĐÃ CHỈNH VỀ 84–88",
       "aliases": [
         "dau",
         "wti",
         "brent",
         "oil"
       ],
-      "oneLiner": "Hồi 43% từ đáy 70,87 lên hơn 100 — vượt cả dự báo 90 của chính ông; kể cả có hòa bình cũng chỉ về 85–90 \"vì thế giới thiếu dầu\".",
+      "oneLiner": "Điều chỉnh sau tin ngưng bắn rồi bật +6,1% phiên 29/07: Brent 88, WTI 84,5 (từng chạm ~100). Giữ kịch bản tích lũy vùng cao; đánh lớn Iran → 120–130, hòa bình → 85–90.",
       "thesis": [
         {
           "title": "Cập nhật 24–26/07: chạm 100,81 — nguồn cung tê liệt ba mặt",
@@ -6206,7 +6307,7 @@ window.HDT_DATA = {
         "btc",
         "crypto"
       ],
-      "oneLiner": "BTC 65.000; nhịp tăng chỉ do đóng lệnh short chứ không phải tiền tổ chức (T6 rút ròng 4,5 tỷ đô) — xác suất về 40–41k rất cao.",
+      "oneLiner": "BTC 65.000; nhịp tăng chỉ do đóng lệnh short chứ không phải tiền tổ chức (T6 rút ròng 4,5 tỷ đô) — xác suất về 40–41k rất cao. 30/07: \"2026 không phải là năm của Bitcoin\" — banana lần ba đang hình thành.",
       "thesis": [
         {
           "title": "Cập nhật 24–26/07: banana lần ba + dòng tiền tổ chức rút",
@@ -6312,7 +6413,7 @@ window.HDT_DATA = {
     }
   ],
   "briefing": {
-    "updated": "27/07/2026",
+    "updated": "30/07/2026",
     "expertId": "thai-pham",
     "episode": "Tập 40 · Tuần 30",
     "dateLabel": "26/07/2026",
@@ -6449,7 +6550,7 @@ window.HDT_DATA = {
       {
         "value": "82%",
         "label": "Fed tăng lãi tháng 9",
-        "delta": "Họp 29/07 chỉ 38%",
+        "delta": "29/07 đã giữ nguyên (9–3) · cá cược lên 72%",
         "sig": "warn"
       },
       {

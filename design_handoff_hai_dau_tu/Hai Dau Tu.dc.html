@@ -38,6 +38,15 @@ input::placeholder { color: #A3A29A; }
   .card-lift { transition: none; }
   .card-lift:hover { transform: none; }
 }
+/* ── Sổ mã: hiệu ứng chuyển nhóm/lọc (fade + trượt lên, so le theo thứ tự) ── */
+@keyframes tkPop { from { opacity: 0; transform: translateY(8px) scale(.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
+.tk-pop { animation: tkPop .32s cubic-bezier(.2,.8,.2,1) both; }
+.tk-view-chip { transition: background .18s ease, color .18s ease, border-color .18s ease, transform .12s ease; }
+.tk-view-chip:active { transform: scale(.96); }
+@media (prefers-reduced-motion: reduce) {
+  .tk-pop { animation: none; }
+  .tk-view-chip { transition: none; }
+}
 @media (max-width: 700px) { .hide-m { display: none !important; } .hero { border-radius: 16px; } }
 /* ── Nhãn "có trên Binance" + tooltip ── */
 .bnc { position: relative; display: inline-flex; align-items: center; gap: 4px; cursor: help; }
@@ -819,6 +828,21 @@ input::placeholder { color: #A3A29A; }
         <div class="no-print" onClick="{{ printPage }}" style="display:flex; align-items:center; gap:7px; padding:9px 16px; border-radius:999px; cursor:pointer; background:oklch(0.42 0.08 235); color:#FFFFFF; font-size:13px; font-weight:700; white-space:nowrap; box-shadow:0 2px 8px rgba(18,40,80,0.22);">🖨 Xuất PDF</div>
       </div>
 
+      <!-- Xem theo: Thị trường / Ngành nghề / Giỏ đầu tư -->
+      <div class="no-print" style="display:flex; flex-direction:column; gap:10px;">
+        <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
+          <div style="font-size:10.5px; font-weight:800; color:#9B9A92; text-transform:uppercase; letter-spacing:0.6px; margin-right:2px;">Xem theo</div>
+          <sc-for list="{{ tkViewChips }}" as="vc" hint-placeholder-count="3">
+            <div onClick="{{ vc.onClick }}" class="tk-view-chip" style="padding:8px 15px; border-radius:999px; cursor:pointer; font-size:13px; font-weight:700; border:1.5px solid {{ vc.border }}; background:{{ vc.bg }}; color:{{ vc.color }};">{{ vc.label }}</div>
+          </sc-for>
+        </div>
+        <div class="nav-scroll" style="gap:8px;">
+          <sc-for list="{{ tkBasketChips }}" as="kc" hint-placeholder-count="4">
+            <div onClick="{{ kc.onClick }}" class="tk-view-chip" style="padding:7px 13px; border-radius:999px; cursor:pointer; font-size:12.5px; font-weight:600; border:1.5px solid {{ kc.border }}; background:{{ kc.bg }}; color:{{ kc.color }}; white-space:nowrap;">{{ kc.label }}</div>
+          </sc-for>
+        </div>
+      </div>
+
       <!-- Bộ lọc Binance -->
       <div class="no-print" style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
         <sc-for list="{{ bncChips }}" as="bc" hint-placeholder-count="2">
@@ -876,10 +900,14 @@ input::placeholder { color: #A3A29A; }
           </div>
           <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(255px, 1fr)); gap:12px;">
             <sc-for list="{{ tg.items }}" as="tc" hint-placeholder-count="6">
-              <div onClick="{{ tc.onClick }}" class="card-lift tk-card" style="background:#FFFFFF; border:1px solid #E7E6E1; border-top:3px solid {{ tc.accent }}; border-radius:12px; padding:14px 16px; display:flex; flex-direction:column; gap:7px; cursor:pointer;">
+              <div onClick="{{ tc.onClick }}" class="card-lift tk-card tk-pop" style="animation-delay:{{ tc.delay }}; background:#FFFFFF; border:1px solid #E7E6E1; border-top:3px solid {{ tc.accent }}; border-radius:12px; padding:14px 16px; display:flex; flex-direction:column; gap:7px; cursor:pointer;">
                 <div style="display:flex; align-items:center; justify-content:space-between; gap:8px;">
                   <div style="font-size:16px; font-weight:800; font-family:'IBM Plex Mono',monospace; letter-spacing:-0.3px;">{{ tc.symbol }}</div>
                   <div style="font-size:9.5px; font-weight:800; letter-spacing:0.3px; padding:3px 8px; border-radius:999px; background:{{ tc.bg }}; color:{{ tc.color }}; white-space:nowrap;">{{ tc.stance }}</div>
+                </div>
+                <div style="display:flex; align-items:center; gap:5px; flex-wrap:wrap;">
+                  <span style="font-size:9.5px; font-weight:700; padding:2px 7px; border-radius:6px; background:#F3F2ED; color:#8B8A82; letter-spacing:0.2px;">{{ tc.industryTag }}</span>
+                  <span style="display:inline-flex; align-items:center; gap:4px; font-size:9.5px; font-weight:700; padding:2px 7px; border-radius:6px; background:{{ tc.basketBg }}; color:{{ tc.basketColor }};"><span style="width:6px; height:6px; border-radius:50%; background:{{ tc.basketDot }}; display:inline-block;"></span>{{ tc.basketTag }}</span>
                 </div>
                 <div style="font-size:11.5px; color:#9B9A92; margin-top:-4px;">{{ tc.name }}</div>
                 <sc-if value="{{ tc.hasBnc }}" hint-placeholder-val="{{ false }}">
@@ -1480,7 +1508,7 @@ class Component extends DCLogic {
     super(props);
     let logged = false;
     try { logged = localStorage.getItem('hdt_auth') === '1'; } catch (e) {}
-    this.state = { logged, screen: 'dashboard', pwError: false, srcType: 0, added: [], updIdx: 0, expertId: 'thai-pham', q: '', assetKey: 'vn', callsExpert: 'all', chartSym: '', chartLabel: '', scExpert: 'all', tickerKey: '', bncOnly: false, bncPrices: {} };
+    this.state = { logged, screen: 'dashboard', pwError: false, srcType: 0, added: [], updIdx: 0, expertId: 'thai-pham', q: '', assetKey: 'vn', callsExpert: 'all', chartSym: '', chartLabel: '', scExpert: 'all', tickerKey: '', bncOnly: false, bncPrices: {}, tkView: 'market', tkIndustry: 'all', tkBasket: 'all' };
     this.pwRef = React.createRef();
     this.nameRef = React.createRef();
     this.channelRef = React.createRef();
@@ -1586,6 +1614,13 @@ class Component extends DCLogic {
       wait: { bg: '#EFEEE9',              color: '#5F5E57'             },
       avoid:{ bg: 'oklch(0.95 0.028 330)', color: 'oklch(0.45 0.11 330)' }
     };
+    // ── Sổ mã: giỏ đầu tư (dài hạn / ngắn hạn / tránh) ──
+    const BASKET_DEF = {
+      'dai-han':  { label: 'Dài hạn',  bg: 'oklch(0.95 0.04 150)',  color: 'oklch(0.42 0.1 150)', dot: 'oklch(0.72 0.14 150)' },
+      'ngan-han': { label: 'Ngắn hạn', bg: 'oklch(0.96 0.05 85)',   color: 'oklch(0.5 0.1 70)',   dot: 'oklch(0.78 0.12 85)' },
+      'tranh':    { label: 'Tránh',    bg: 'oklch(0.95 0.028 330)', color: 'oklch(0.45 0.11 330)', dot: 'oklch(0.63 0.13 330)' }
+    };
+    const BASKET_ORDER = ['dai-han', 'ngan-han', 'tranh'];
     const HDT = window.HDT_DATA;
 
     const PULSE_COLOR = { up: 'oklch(0.83 0.17 150)', down: 'oklch(0.78 0.15 25)', warn: 'oklch(0.87 0.13 85)', wait: 'rgba(255,255,255,0.55)', avoid: 'oklch(0.80 0.10 330)' };
@@ -2533,18 +2568,40 @@ class Component extends DCLogic {
       onClick: () => this.setState({ bncOnly: i === 1 })
     }));
 
+    // ── "Xem theo": Thị trường (mặc định) · Ngành nghề · Giỏ đầu tư (dài/ngắn hạn/tránh) ──
+    const TK_VIEW_DEF = [
+      { key: 'market',   label: '🗂 Thị trường' },
+      { key: 'industry', label: '🏭 Ngành nghề' },
+      { key: 'basket',   label: '⏳ Giỏ đầu tư' }
+    ];
+    const tkViewChips = TK_VIEW_DEF.map(v => Object.assign({ label: v.label }, chipActive(s.tkView === v.key), {
+      onClick: () => this.setState({ tkView: v.key })
+    }));
+    const groupKeyOf = t => s.tkView === 'industry' ? (t.industry || t.group)
+      : s.tkView === 'basket' ? (BASKET_DEF[t.basket] || {}).label || 'Khác'
+      : t.group;
+    const tkBasketChips = [{ key: 'all', label: 'Tất cả giỏ' }, ...BASKET_ORDER.map(k => ({ key: k, label: BASKET_DEF[k].label }))]
+      .map(c => Object.assign({ label: c.label + ' (' + (c.key === 'all' ? TICKERS.length : TICKERS.filter(t => t.basket === c.key).length) + ')' },
+        chipActive(s.tkBasket === c.key), { onClick: () => this.setState({ tkBasket: c.key }) }));
+
+    const tkVisible = TICKERS.filter(t => (!s.bncOnly || BNCMAP[t.key]) && (s.tkBasket === 'all' || t.basket === s.tkBasket));
     const tickerGroups = [];
-    TICKERS.filter(t => !s.bncOnly || BNCMAP[t.key]).forEach(t => {
-      let g = tickerGroups.find(x => x.group === t.group);
-      if (!g) { g = { group: t.group, items: [], count: 0 }; tickerGroups.push(g); }
+    let __tkIdx = 0;
+    tkVisible.forEach(t => {
+      const gkey = groupKeyOf(t);
+      let g = tickerGroups.find(x => x.group === gkey);
+      if (!g) { g = { group: gkey, items: [], count: 0 }; tickerGroups.push(g); }
       const nActive = (t.orders || []).filter(o => o.status === 'active').length;
       const nWait = (t.orders || []).filter(o => o.status === 'waiting').length;
+      const bd = BASKET_DEF[t.basket] || BASKET_DEF['ngan-han'];
       g.items.push({
         symbol: t.symbol, name: t.name, oneLiner: t.oneLiner, stance: t.stance,
         ...CHIP_SIG[t.sig], accent: ACT_ACCENT[t.sig] || '#C9C8C0',
         potN: t.potential || 0, cauN: t.caution || 0,
         potW: ((t.potential || 0) * 20) + '%', cauW: ((t.caution || 0) * 20) + '%',
         meta: ((nActive ? nActive + ' lệnh đang chạy' : '') + (nActive && nWait ? ' · ' : '') + (nWait ? nWait + ' lệnh chờ' : '')) || 'Theo dõi',
+        industryTag: t.industry || '', basketTag: bd.label, basketBg: bd.bg, basketColor: bd.color, basketDot: bd.dot,
+        delay: (Math.min(__tkIdx++, 23) * 28) + 'ms',
         hasBnc: !!bncInfo(t.key),
         bncLabel: (bncInfo(t.key) || {}).label || '',
         bncLines: (bncInfo(t.key) || {}).lines || [],
@@ -2552,10 +2609,15 @@ class Component extends DCLogic {
       });
       g.count = g.items.length;
     });
+    if (s.tkView === 'basket') {
+      tickerGroups.sort((a, b) => BASKET_ORDER.indexOf(Object.keys(BASKET_DEF).find(k => BASKET_DEF[k].label === a.group)) - BASKET_ORDER.indexOf(Object.keys(BASKET_DEF).find(k => BASKET_DEF[k].label === b.group)));
+    } else if (s.tkView === 'industry') {
+      tickerGroups.sort((a, b) => b.count - a.count);
+    }
     const TK_SIG_LABEL = { up: 'tích cực', wait: 'trung lập', warn: 'cảnh giác', down: 'short/bán', avoid: 'tránh — đứng ngoài' };
     tickerGroups.forEach(g0 => {
       const cnt = { up: 0, wait: 0, warn: 0, down: 0 };
-      TICKERS.filter(t => t.group === g0.group).forEach(t => { cnt[t.sig] = (cnt[t.sig] || 0) + 1; });
+      tkVisible.filter(t => groupKeyOf(t) === g0.group).forEach(t => { cnt[t.sig] = (cnt[t.sig] || 0) + 1; });
       const keys = ['up', 'wait', 'warn', 'down', 'avoid'].filter(k => cnt[k] > 0);
       g0.dist = keys.map(k => ({ w: Math.round(cnt[k] / g0.count * 100) + '%', bg: ACT_ACCENT[k] }));
       g0.distLabel = keys.map(k => cnt[k] + ' ' + TK_SIG_LABEL[k]).join(' · ');
@@ -2676,6 +2738,7 @@ class Component extends DCLogic {
       isTickers: s.screen === 'tickers', isTicker: s.screen === 'ticker',
       goTickers: () => this.go('tickers'),
       tickerGroups, tickerTotal: TICKERS.length,
+      tkViewChips, tkBasketChips,
       bncChips, bncCount, bncUpdated: BNC.updated || '',
       tkHasBnc, tkBncRows, tkBncNote, tkBncProxy,
       tkBncHasNote: !!tkBncNote,

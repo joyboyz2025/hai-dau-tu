@@ -38,6 +38,17 @@ input::placeholder { color: #A3A29A; }
   .card-lift { transition: none; }
   .card-lift:hover { transform: none; }
 }
+/* ── Sổ mã: bố cục kiểu TradingView — danh sách bên hông + chi tiết ở giữa ── */
+.tk-layout { display: flex; gap: 18px; align-items: flex-start; }
+.tk-sidebar { flex: 0 0 300px; max-width: 320px; position: sticky; top: 12px; max-height: calc(100vh - 24px); overflow-y: auto; display: flex; flex-direction: column; gap: 12px; scrollbar-width: thin; }
+.tk-detail { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 16px; }
+.tk-row { transition: background .12s ease, border-color .12s ease; }
+.tk-row:hover { background: #F6F5F0 !important; }
+@media (max-width: 860px) {
+  .tk-layout { flex-direction: column; }
+  .tk-sidebar { position: static; max-height: 380px; flex-basis: auto; max-width: 100%; width: 100%; }
+  .tk-detail { width: 100%; }
+}
 /* ── Sổ mã: hiệu ứng chuyển nhóm/lọc (fade + trượt lên, so le theo thứ tự) ── */
 @keyframes tkPop { from { opacity: 0; transform: translateY(8px) scale(.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
 .tk-pop { animation: tkPop .32s cubic-bezier(.2,.8,.2,1) both; }
@@ -857,6 +868,11 @@ input::placeholder { color: #A3A29A; }
             <div onClick="{{ kc.onClick }}" class="tk-view-chip" style="padding:7px 13px; border-radius:999px; cursor:pointer; font-size:12.5px; font-weight:600; border:1.5px solid {{ kc.border }}; background:{{ kc.bg }}; color:{{ kc.color }}; white-space:nowrap;">{{ kc.label }}</div>
           </sc-for>
         </div>
+        <div class="nav-scroll" style="gap:8px;">
+          <sc-for list="{{ tkTradeChips }}" as="tmc" hint-placeholder-count="3">
+            <div onClick="{{ tmc.onClick }}" class="tk-view-chip" style="padding:7px 13px; border-radius:999px; cursor:pointer; font-size:12.5px; font-weight:600; border:1.5px solid {{ tmc.border }}; background:{{ tmc.bg }}; color:{{ tmc.color }}; white-space:nowrap;">{{ tmc.label }}</div>
+          </sc-for>
+        </div>
       </div>
 
       <!-- Bộ lọc Binance -->
@@ -900,266 +916,245 @@ input::placeholder { color: #A3A29A; }
         <div style="display:flex; align-items:center; gap:6px;"><span style="width:10px; height:10px; border-radius:3px; background:oklch(0.62 0.19 27); display:inline-block;"></span><span style="font-size:11.5px; color:#46453F;"><b>Short / bán</b> — có vị thế</span></div>
         <div style="display:flex; align-items:center; gap:6px;"><span style="width:10px; height:10px; border-radius:3px; background:oklch(0.63 0.13 330); display:inline-block;"></span><span style="font-size:11.5px; color:#46453F;"><b>Tránh</b> — không làm gì</span></div>
       </div>
-      <sc-for list="{{ tickerGroups }}" as="tg" hint-placeholder-count="3">
-        <div style="display:flex; flex-direction:column; gap:12px;">
-          <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
-            <div style="display:flex; align-items:center; gap:8px;">
-              <div style="font-size:13px; font-weight:800; letter-spacing:0.4px; text-transform:uppercase;">{{ tg.group }}</div>
-              <div style="font-size:11px; font-weight:700; padding:2px 8px; border-radius:999px; background:#E7E6E1; color:#5F5E57;">{{ tg.count }}</div>
-            </div>
-            <div style="flex:1; min-width:140px; max-width:260px; display:flex; gap:2px; height:8px; border-radius:4px; overflow:hidden;">
-              <sc-for list="{{ tg.dist }}" as="dsg" hint-placeholder-count="3">
-                <div style="width:{{ dsg.w }}; background:{{ dsg.bg }};"></div>
+      <div class="tk-layout">
+        <!-- ===== BÊN HÔNG: danh sách mã (kiểu watchlist TradingView) ===== -->
+        <div class="tk-sidebar no-print">
+          <sc-for list="{{ tickerGroups }}" as="tg" hint-placeholder-count="3">
+            <div style="display:flex; flex-direction:column; gap:6px;">
+              <div style="display:flex; align-items:center; gap:8px; padding:0 2px;">
+                <div style="font-size:11px; font-weight:800; letter-spacing:0.3px; text-transform:uppercase; color:#6E6D66;">{{ tg.group }}</div>
+                <div style="font-size:10px; font-weight:700; padding:1px 7px; border-radius:999px; background:#E7E6E1; color:#5F5E57;">{{ tg.count }}</div>
+                <div style="flex:1; display:flex; gap:2px; height:5px; border-radius:3px; overflow:hidden;">
+                  <sc-for list="{{ tg.dist }}" as="dsg" hint-placeholder-count="3">
+                    <div style="width:{{ dsg.w }}; background:{{ dsg.bg }};"></div>
+                  </sc-for>
+                </div>
+              </div>
+              <sc-for list="{{ tg.items }}" as="tc" hint-placeholder-count="6">
+                <div onClick="{{ tc.onClick }}" class="tk-row tk-pop" style="animation-delay:{{ tc.delay }}; cursor:pointer; display:flex; align-items:center; gap:9px; background:{{ tc.rowBg }}; border:1.5px solid {{ tc.rowBorder }}; border-left:4px solid {{ tc.accent }}; border-radius:9px; padding:8px 10px;">
+                  <div style="flex:1; min-width:0; display:flex; flex-direction:column; gap:2px;">
+                    <div style="display:flex; align-items:center; gap:6px;">
+                      <span style="font-size:13px; font-weight:800; font-family:'IBM Plex Mono',monospace;">{{ tc.symbol }}</span>
+                      <span title="{{ tc.tradeTag }}" style="width:6px; height:6px; border-radius:50%; background:{{ tc.tradeDot }}; flex-shrink:0;"></span>
+                    </div>
+                    <div style="font-size:10.5px; color:#9B9A92; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{{ tc.name }}</div>
+                  </div>
+                  <div style="font-size:9px; font-weight:800; letter-spacing:0.2px; padding:3px 7px; border-radius:999px; background:{{ tc.bg }}; color:{{ tc.color }}; text-align:center; white-space:nowrap; flex-shrink:0; max-width:112px; overflow:hidden; text-overflow:ellipsis;">{{ tc.stance }}</div>
+                </div>
               </sc-for>
             </div>
-            <div style="font-size:11px; color:#9B9A92;">{{ tg.distLabel }}</div>
-          </div>
-          <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(255px, 1fr)); gap:12px;">
-            <sc-for list="{{ tg.items }}" as="tc" hint-placeholder-count="6">
-              <div onClick="{{ tc.onClick }}" class="card-lift tk-card tk-pop" style="animation-delay:{{ tc.delay }}; background:#FFFFFF; border:1px solid #E7E6E1; border-top:3px solid {{ tc.accent }}; border-radius:12px; padding:14px 16px; display:flex; flex-direction:column; gap:7px; cursor:pointer;">
-                <div style="display:flex; align-items:center; justify-content:space-between; gap:8px;">
-                  <div style="font-size:16px; font-weight:800; font-family:'IBM Plex Mono',monospace; letter-spacing:-0.3px;">{{ tc.symbol }}</div>
-                  <div style="font-size:9.5px; font-weight:800; letter-spacing:0.3px; padding:3px 8px; border-radius:999px; background:{{ tc.bg }}; color:{{ tc.color }}; white-space:nowrap;">{{ tc.stance }}</div>
-                </div>
-                <div style="display:flex; align-items:center; gap:5px; flex-wrap:wrap;">
-                  <span style="font-size:9.5px; font-weight:700; padding:2px 7px; border-radius:6px; background:#F3F2ED; color:#8B8A82; letter-spacing:0.2px;">{{ tc.industryTag }}</span>
-                  <span style="display:inline-flex; align-items:center; gap:4px; font-size:9.5px; font-weight:700; padding:2px 7px; border-radius:6px; background:{{ tc.basketBg }}; color:{{ tc.basketColor }};"><span style="width:6px; height:6px; border-radius:50%; background:{{ tc.basketDot }}; display:inline-block;"></span>{{ tc.basketTag }}</span>
-                </div>
-                <div style="font-size:11.5px; color:#9B9A92; margin-top:-4px;">{{ tc.name }}</div>
-                <sc-if value="{{ tc.hasBnc }}" hint-placeholder-val="{{ false }}">
-                  <div class="bnc" tabindex="0" style="align-self:flex-start; font-size:9.5px; font-weight:800; letter-spacing:0.4px; padding:3px 8px; border-radius:999px; background:oklch(0.96 0.10 92); color:oklch(0.45 0.12 75); border:1px solid oklch(0.85 0.13 88);">
-                    ⬡ BINANCE · {{ tc.bncLabel }}
-                    <span class="bnc-tip">
-                      <b>Mua bán được trên Binance</b>
-                      <sc-for list="{{ tc.bncLines }}" as="bl" hint-placeholder-count="2">
-                        <span style="display:block;">{{ bl.t }}</span>
-                      </sc-for>
-                      <span class="dim" style="display:block; margin-top:3px;">Bấm vào mã để xem giá thật</span>
-                    </span>
-                  </div>
-                </sc-if>
-                <div style="font-size:12.5px; color:#46453F; line-height:1.5; flex:1;">{{ tc.oneLiner }}</div>
-                <div style="display:flex; flex-direction:column; gap:4px;">
-                  <div style="display:flex; align-items:center; gap:7px;">
-                    <span style="font-size:9.5px; font-weight:700; color:#9B9A92; text-transform:uppercase; letter-spacing:0.3px; width:64px; flex-shrink:0;">Tiềm năng</span>
-                    <div style="flex:1; height:5px; background:#EFEEE9; border-radius:3px;"><div style="width:{{ tc.potW }}; height:5px; border-radius:3px; background:oklch(0.72 0.14 150);"></div></div>
-                    <span style="font-size:10px; font-family:'IBM Plex Mono',monospace; font-weight:700; color:oklch(0.42 0.1 150); width:22px; text-align:right;">{{ tc.potN }}/5</span>
-                  </div>
-                  <div style="display:flex; align-items:center; gap:7px;">
-                    <span style="font-size:9.5px; font-weight:700; color:#9B9A92; text-transform:uppercase; letter-spacing:0.3px; width:64px; flex-shrink:0;">Thận trọng</span>
-                    <div style="flex:1; height:5px; background:#EFEEE9; border-radius:3px;"><div style="width:{{ tc.cauW }}; height:5px; border-radius:3px; background:oklch(0.68 0.16 45);"></div></div>
-                    <span style="font-size:10px; font-family:'IBM Plex Mono',monospace; font-weight:700; color:oklch(0.5 0.14 45); width:22px; text-align:right;">{{ tc.cauN }}/5</span>
-                  </div>
-                </div>
-                <div style="font-size:11px; font-family:'IBM Plex Mono',monospace; color:oklch(0.42 0.08 235); font-weight:600; border-top:1px solid #F0EFEA; padding-top:8px;">{{ tc.meta }} →</div>
-              </div>
-            </sc-for>
-          </div>
-        </div>
-      </sc-for>
-      <div class="no-print" style="font-size:12px; color:#9B9A92; text-align:center; padding-top:4px;">Bấm vào một mã để xem trang chi tiết · bấm "Xuất PDF" để in/lưu toàn trang · chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</div>
-    </div>
-  </sc-if>
-
-  <!-- ===================== SỔ MÃ (chi tiết 1 mã) ===================== -->
-  <sc-if value="{{ isTicker }}" hint-placeholder-val="{{ false }}">
-    <div data-screen-label="Chi tiết mã" style="max-width:880px; margin:0 auto; padding:28px 20px 60px; display:flex; flex-direction:column; gap:16px;">
-      <div class="no-print" style="display:flex; align-items:center; justify-content:space-between; gap:10px;">
-        <div onClick="{{ goTickers }}" style="font-size:13px; color:#6E6D66; cursor:pointer; display:flex; align-items:center; gap:6px;">← Sổ mã</div>
-        <div onClick="{{ printPage }}" style="display:flex; align-items:center; gap:6px; padding:8px 14px; border-radius:999px; cursor:pointer; background:oklch(0.42 0.08 235); color:#FFFFFF; font-size:12.5px; font-weight:700; box-shadow:0 2px 8px rgba(18,40,80,0.22);">🖨 Xuất PDF</div>
-      </div>
-
-      <!-- HỒ SƠ KÈO -->
-      <div class="tk-card" style="position:relative; overflow:hidden; background:#FFFFFF; border:1px solid #E2E1DA; border-radius:20px; padding:26px 26px 22px; display:flex; flex-direction:column; gap:16px; box-shadow:0 12px 34px -20px rgba(23,23,18,0.25);">
-        <div style="position:absolute; right:-10px; bottom:-30px; font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:110px; letter-spacing:-6px; color:#F2F1EB; user-select:none; pointer-events:none; line-height:1; white-space:nowrap;">{{ tkSymbol }}</div>
-        <div style="position:relative; display:flex; align-items:flex-start; justify-content:space-between; gap:18px; flex-wrap:wrap;">
-          <div style="display:flex; flex-direction:column; gap:4px;">
-            <div style="font-size:10.5px; font-weight:800; color:#9B9A92; text-transform:uppercase; letter-spacing:1.2px;">Hồ sơ kèo · {{ tkGroupLabel }}</div>
-            <div style="font-size:40px; font-weight:600; font-family:'IBM Plex Mono',monospace; letter-spacing:-1.5px; line-height:1.05; color:#1C1C18;">{{ tkSymbol }}</div>
-            <div style="font-size:14px; font-weight:600; color:#55544D;">{{ tkName }}</div>
-          </div>
-          <div style="transform:rotate(-6deg); margin-top:6px; border:3px double {{ tkStanceColor }}; color:{{ tkStanceColor }}; background:{{ tkStanceBg }}; border-radius:8px; padding:8px 14px; font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:1.1px; text-align:center; max-width:240px; line-height:1.35;">{{ tkStance }}</div>
-        </div>
-        <div style="position:relative; font-size:14px; color:#46453F; line-height:1.6; max-width:640px;">{{ tkOneLiner }}</div>
-
-        <!-- Cán cân kèo -->
-        <div style="position:relative; border-top:1px dashed #DDDCD5; padding-top:14px; display:flex; flex-direction:column; gap:9px;">
-          <div style="display:flex; justify-content:center;">
-            <div style="font-size:10.5px; font-weight:800; text-transform:uppercase; letter-spacing:0.8px; padding:4px 13px; border-radius:999px; background:{{ tkVerdictBg }}; color:{{ tkVerdictColor }};">⚖ {{ tkVerdict }}</div>
-          </div>
-          <div style="display:flex; align-items:center;">
-            <div style="flex:1; display:flex; justify-content:flex-end; background:#F1F0EA; border-radius:5px 0 0 5px; height:10px; overflow:hidden;">
-              <div style="width:{{ tkPotFillW }}; background:linear-gradient(to left, oklch(0.72 0.14 150), oklch(0.6 0.13 155)); height:10px;"></div>
-            </div>
-            <div style="width:3px; height:18px; background:#1C1C18; border-radius:2px; flex-shrink:0;"></div>
-            <div style="flex:1; background:#F1F0EA; border-radius:0 5px 5px 0; height:10px; overflow:hidden;">
-              <div style="width:{{ tkCauFillW }}; background:linear-gradient(to right, oklch(0.68 0.16 45), oklch(0.6 0.17 35)); height:10px;"></div>
-            </div>
-          </div>
-          <div style="display:flex; justify-content:space-between; gap:10px;">
-            <div style="font-size:11px; font-weight:800; color:oklch(0.42 0.1 150); text-transform:uppercase; letter-spacing:0.5px;">◄ Tiềm năng <span style="font-family:'IBM Plex Mono',monospace;">{{ tkPotLabel }}</span></div>
-            <div style="font-size:11px; font-weight:800; color:oklch(0.5 0.14 45); text-transform:uppercase; letter-spacing:0.5px;"><span style="font-family:'IBM Plex Mono',monospace;">{{ tkCauLabel }}</span> Thận trọng ►</div>
-          </div>
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
-            <div style="font-size:11.5px; color:#6E6D66; line-height:1.55;">{{ tkPotNote }}</div>
-            <div style="font-size:11.5px; color:#6E6D66; line-height:1.55; text-align:right;">{{ tkCauNote }}</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- MUA BÁN Ở ĐÂU (Binance) -->
-      <sc-if value="{{ tkHasBnc }}" hint-placeholder-val="{{ false }}">
-        <div class="tk-card" style="background:#FFFFFF; border:1px solid oklch(0.85 0.13 88); border-left:5px solid oklch(0.78 0.16 85); border-radius:14px; padding:16px 18px; display:flex; flex-direction:column; gap:11px;">
-          <div style="display:flex; align-items:center; gap:9px; flex-wrap:wrap;">
-            <div style="font-size:13.5px; font-weight:800; color:oklch(0.45 0.12 75);">⬡ Mua bán được trên Binance</div>
-            <sc-if value="{{ tkBncProxy }}" hint-placeholder-val="{{ false }}">
-              <div style="font-size:9.5px; font-weight:800; letter-spacing:0.4px; padding:2px 8px; border-radius:999px; background:oklch(0.96 0.05 85); color:oklch(0.5 0.1 70);">ETF THAY THẾ</div>
-            </sc-if>
-          </div>
-          <div style="display:flex; flex-direction:column; gap:7px;">
-            <sc-for list="{{ tkBncRows }}" as="bn" hint-placeholder-count="2">
-              <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; background:#FAFAF7; border-radius:9px; padding:9px 12px;">
-                <div style="font-size:9.5px; font-weight:800; letter-spacing:0.4px; padding:3px 8px; border-radius:999px; background:{{ bn.kindBg }}; color:{{ bn.kindColor }}; white-space:nowrap;">{{ bn.kind }}</div>
-                <div style="font-size:13px; font-weight:700; font-family:'IBM Plex Mono',monospace;">{{ bn.sym }}</div>
-                <div style="flex:1;"></div>
-                <div style="font-size:14px; font-weight:800; font-family:'IBM Plex Mono',monospace; color:#1C1C18;">{{ bn.price }}</div>
-                <div style="font-size:11.5px; font-weight:700; font-family:'IBM Plex Mono',monospace; color:{{ bn.chgColor }}; min-width:56px; text-align:right;">{{ bn.chgText }}</div>
-                <a href="{{ bn.link }}" target="_blank" rel="noopener noreferrer" class="no-print" style="font-size:11px; font-weight:700; color:oklch(0.42 0.08 235); text-decoration:none; white-space:nowrap;">Mở ↗</a>
-              </div>
-            </sc-for>
-          </div>
-          <sc-if value="{{ tkBncHasNote }}" hint-placeholder-val="{{ false }}">
-            <div style="font-size:11.5px; color:#6E6D66; line-height:1.5;">{{ tkBncNote }}</div>
-          </sc-if>
-          <div style="font-size:10.5px; color:#9B9A92; line-height:1.5;">Giá lấy trực tiếp từ Binance khi mở trang · chỉ để đối chiếu với điểm vào/mục tiêu của chuyên gia, không phải khuyến nghị.</div>
-        </div>
-      </sc-if>
-
-      <!-- PHIẾU LỆNH -->
-      <div style="display:flex; align-items:center; gap:10px; margin-top:6px;">
-        <div style="font-size:15px; font-weight:800; letter-spacing:-0.2px;">Phiếu lệnh</div>
-        <div style="font-size:11px; font-weight:700; padding:2px 8px; border-radius:999px; background:#E7E6E1; color:#5F5E57;">{{ tkOrderCount }}</div>
-        <div style="flex:1; height:1px; background:#DDDCD5;"></div>
-      </div>
-      <sc-for list="{{ tkOrders }}" as="to" hint-placeholder-count="2">
-        <div class="tk-card" style="background:#FFFFFF; border:1px solid #E2E1DA; border-radius:14px; overflow:hidden; display:flex;">
-          <div style="width:7px; background:{{ to.accent }}; flex-shrink:0;"></div>
-          <div style="flex:1; padding:14px 17px; display:flex; flex-direction:column; gap:10px;">
-            <div style="display:flex; align-items:center; justify-content:space-between; gap:8px; flex-wrap:wrap;">
-              <div style="display:flex; align-items:center; gap:9px; flex-wrap:wrap;">
-                <div style="font-size:15px; font-weight:800; letter-spacing:0.2px; color:{{ to.color }};">{{ to.dir }}</div>
-                <div style="font-size:10px; font-weight:700; padding:3px 9px; border-radius:999px; background:{{ to.sBg }}; color:{{ to.sColor }};">{{ to.sLabel }}</div>
-              </div>
-              <div style="display:flex; align-items:center; gap:6px;">
-                <div style="width:19px; height:19px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:8px; font-weight:700;">{{ to.initials }}</div>
-                <div style="font-size:11px; color:#9B9A92;">{{ to.expertName }} · {{ to.date }}</div>
-              </div>
-            </div>
-            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:8px; border-top:1px dashed #E2E1DA; padding-top:10px;">
-              <div>
-                <div style="font-size:9.5px; font-weight:700; color:#9B9A92; text-transform:uppercase; letter-spacing:0.4px;">Vào lệnh</div>
-                <div style="font-size:12.5px; font-family:'IBM Plex Mono',monospace; font-weight:600; color:#33322D; margin-top:3px;">{{ to.entry }}</div>
-              </div>
-              <div>
-                <div style="font-size:9.5px; font-weight:700; color:#9B9A92; text-transform:uppercase; letter-spacing:0.4px;">Mục tiêu</div>
-                <div style="font-size:12.5px; font-family:'IBM Plex Mono',monospace; font-weight:600; color:#33322D; margin-top:3px;">{{ to.target }}</div>
-              </div>
-              <div>
-                <div style="font-size:9.5px; font-weight:700; color:#9B9A92; text-transform:uppercase; letter-spacing:0.4px;">Dừng lỗ / kỷ luật</div>
-                <div style="font-size:12.5px; font-family:'IBM Plex Mono',monospace; font-weight:600; color:#33322D; margin-top:3px;">{{ to.stop }}</div>
-              </div>
-            </div>
-            <div style="font-size:12px; color:#6E6D66; line-height:1.5;">{{ to.note }}</div>
-          </div>
-        </div>
-      </sc-for>
-
-      <!-- LUẬN ĐIỂM -->
-      <div style="display:flex; align-items:center; gap:10px; margin-top:6px;">
-        <div style="font-size:15px; font-weight:800; letter-spacing:-0.2px;">Luận điểm chi tiết</div>
-        <div style="flex:1; height:1px; background:#DDDCD5;"></div>
-      </div>
-      <div class="tk-card" style="background:#FFFFFF; border:1px solid #E2E1DA; border-radius:14px; padding:22px 24px; display:flex; flex-direction:column; gap:18px;">
-        <sc-for list="{{ tkThesis }}" as="tt" hint-placeholder-count="2">
-          <div style="display:flex; gap:14px;">
-            <div style="width:3px; border-radius:2px; background:{{ tkStanceColor }}; opacity:0.4; flex-shrink:0;"></div>
-            <div style="display:flex; flex-direction:column; gap:5px;">
-              <div style="font-size:13.5px; font-weight:800; color:#21211D;">{{ tt.title }}</div>
-              <div style="font-size:13.5px; color:#3F3E38; line-height:1.7;">{{ tt.body }}</div>
-            </div>
-          </div>
-        </sc-for>
-      </div>
-
-      <!-- BẢNG ĐIỂM CỦA MÃ -->
-      <sc-if value="{{ tkHasSc }}" hint-placeholder-val="{{ false }}">
-        <div style="display:flex; align-items:center; gap:10px; margin-top:6px;">
-          <div style="font-size:15px; font-weight:800; letter-spacing:-0.2px;">Bảng điểm của mã</div>
-          <div style="flex:1; height:1px; background:#DDDCD5;"></div>
-        </div>
-        <div class="tk-card" style="background:#FFFFFF; border:1px solid #E2E1DA; border-radius:14px; padding:18px 20px; display:flex; flex-direction:column; gap:14px;">
-          <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:10px;">
-            <div style="text-align:center; background:oklch(0.95 0.04 150); border-radius:10px; padding:12px 8px;">
-              <div style="font-size:26px; font-weight:800; font-family:'IBM Plex Mono',monospace; color:oklch(0.42 0.1 150); line-height:1;">{{ tkScHit }}</div>
-              <div style="font-size:10px; font-weight:800; color:oklch(0.42 0.1 150); text-transform:uppercase; letter-spacing:0.5px; margin-top:5px;">Đúng</div>
-            </div>
-            <div style="text-align:center; background:oklch(0.95 0.04 27); border-radius:10px; padding:12px 8px;">
-              <div style="font-size:26px; font-weight:800; font-family:'IBM Plex Mono',monospace; color:oklch(0.46 0.15 27); line-height:1;">{{ tkScMiss }}</div>
-              <div style="font-size:10px; font-weight:800; color:oklch(0.46 0.15 27); text-transform:uppercase; letter-spacing:0.5px; margin-top:5px;">Sai</div>
-            </div>
-            <div style="text-align:center; background:#EFEEE9; border-radius:10px; padding:12px 8px;">
-              <div style="font-size:26px; font-weight:800; font-family:'IBM Plex Mono',monospace; color:#5F5E57; line-height:1;">{{ tkScPend }}</div>
-              <div style="font-size:10px; font-weight:800; color:#5F5E57; text-transform:uppercase; letter-spacing:0.5px; margin-top:5px;">Đang theo dõi</div>
-            </div>
-          </div>
-          <sc-for list="{{ tkScRows }}" as="tsr" hint-placeholder-count="2">
-            <div style="display:flex; align-items:flex-start; gap:10px; border-top:1px solid #F0EFEA; padding-top:10px;">
-              <div style="font-size:10.5px; font-weight:700; padding:3px 9px; border-radius:999px; background:{{ tsr.rBg }}; color:{{ tsr.rColor }}; white-space:nowrap; margin-top:1px;">{{ tsr.rLabel }}</div>
-              <div style="display:flex; flex-direction:column; gap:2px; flex:1;">
-                <div style="font-size:12.5px; font-weight:600; color:#21211D; line-height:1.45;">{{ tsr.call }}</div>
-                <div style="font-size:11.5px; color:#6E6D66; line-height:1.5;">{{ tsr.note }}</div>
-                <div style="font-size:10.5px; color:#9B9A92;">{{ tsr.expertName }} · {{ tsr.date }}</div>
-              </div>
-            </div>
           </sc-for>
         </div>
-      </sc-if>
 
-      <!-- DÒNG THỜI GIAN NHẮC ĐẾN -->
-      <sc-if value="{{ tkHasHist }}" hint-placeholder-val="{{ false }}">
-        <div style="display:flex; align-items:center; gap:10px; margin-top:6px;">
-          <div style="font-size:15px; font-weight:800; letter-spacing:-0.2px;">Dòng thời gian nhắc đến</div>
-          <div style="font-size:11px; font-weight:700; padding:2px 8px; border-radius:999px; background:#E7E6E1; color:#5F5E57;">{{ tkHistCount }}</div>
-          <div style="flex:1; height:1px; background:#DDDCD5;"></div>
-        </div>
-        <div style="display:flex; flex-direction:column;">
-          <sc-for list="{{ tkHist }}" as="th" hint-placeholder-count="3">
-            <div style="display:flex; gap:12px;">
-              <div style="width:44px; flex-shrink:0; text-align:right; font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:600; color:#9B9A92; padding-top:15px;">{{ th.dateLabel }}</div>
-              <div style="width:14px; flex-shrink:0; display:flex; flex-direction:column; align-items:center;">
-                <div style="width:2px; height:12px; background:#DDDCD5;"></div>
-                <div style="width:10px; height:10px; border-radius:50%; background:{{ th.accent }}; border:2px solid #FFFFFF; box-shadow:0 0 0 1.5px #DDDCD5; margin:2px 0;"></div>
-                <div style="width:2px; flex:1; background:#DDDCD5;"></div>
+        <!-- ===== Ở GIỮA: thông tin chi tiết mã đang chọn ===== -->
+        <div class="tk-detail">
+          <!-- HỒ SƠ KÈO -->
+          <div class="tk-card" style="position:relative; overflow:hidden; background:#FFFFFF; border:1px solid #E2E1DA; border-radius:20px; padding:26px 26px 22px; display:flex; flex-direction:column; gap:16px; box-shadow:0 12px 34px -20px rgba(23,23,18,0.25);">
+            <div style="position:absolute; right:-10px; bottom:-30px; font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:110px; letter-spacing:-6px; color:#F2F1EB; user-select:none; pointer-events:none; line-height:1; white-space:nowrap;">{{ tkSymbol }}</div>
+            <div style="position:relative; display:flex; align-items:flex-start; justify-content:space-between; gap:18px; flex-wrap:wrap;">
+              <div style="display:flex; flex-direction:column; gap:4px;">
+                <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                  <div style="font-size:10.5px; font-weight:800; color:#9B9A92; text-transform:uppercase; letter-spacing:1.2px;">Hồ sơ kèo · {{ tkGroupLabel }}</div>
+                  <div style="font-size:9.5px; font-weight:800; letter-spacing:0.3px; padding:2px 8px; border-radius:999px; background:{{ tkTradeBg }}; color:{{ tkTradeColor }};">{{ tkTradeTag }}</div>
+                </div>
+                <div style="font-size:40px; font-weight:600; font-family:'IBM Plex Mono',monospace; letter-spacing:-1.5px; line-height:1.05; color:#1C1C18;">{{ tkSymbol }}</div>
+                <div style="font-size:14px; font-weight:600; color:#55544D;">{{ tkName }}</div>
               </div>
-              <div onClick="{{ th.onClick }}" class="card-lift tk-card" style="flex:1; margin-bottom:10px; background:#FFFFFF; border:1px solid #E2E1DA; border-radius:12px; padding:12px 15px; display:flex; flex-direction:column; gap:6px; cursor:pointer;">
-                <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap;">
-                  <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
-                    <div style="font-size:12.5px; font-weight:700;">{{ th.tag }}</div>
-                    <div style="font-size:11px; font-weight:700; padding:3px 9px; border-radius:999px; background:{{ th.bg }}; color:{{ th.color }};">{{ th.value }}</div>
+              <div style="display:flex; align-items:center; gap:10px;">
+                <div onClick="{{ printPage }}" class="no-print" style="padding:8px 14px; border-radius:999px; cursor:pointer; background:oklch(0.42 0.08 235); color:#FFFFFF; font-size:12px; font-weight:700; white-space:nowrap; box-shadow:0 2px 8px rgba(18,40,80,0.22);">🖨 Xuất PDF</div>
+                <div style="transform:rotate(-6deg); border:3px double {{ tkStanceColor }}; color:{{ tkStanceColor }}; background:{{ tkStanceBg }}; border-radius:8px; padding:8px 14px; font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:1.1px; text-align:center; max-width:240px; line-height:1.35;">{{ tkStance }}</div>
+              </div>
+            </div>
+            <div style="position:relative; font-size:14px; color:#46453F; line-height:1.6; max-width:640px;">{{ tkOneLiner }}</div>
+
+            <!-- Cán cân kèo -->
+            <div style="position:relative; border-top:1px dashed #DDDCD5; padding-top:14px; display:flex; flex-direction:column; gap:9px;">
+              <div style="display:flex; justify-content:center;">
+                <div style="font-size:10.5px; font-weight:800; text-transform:uppercase; letter-spacing:0.8px; padding:4px 13px; border-radius:999px; background:{{ tkVerdictBg }}; color:{{ tkVerdictColor }};">⚖ {{ tkVerdict }}</div>
+              </div>
+              <div style="display:flex; align-items:center;">
+                <div style="flex:1; display:flex; justify-content:flex-end; background:#F1F0EA; border-radius:5px 0 0 5px; height:10px; overflow:hidden;">
+                  <div style="width:{{ tkPotFillW }}; background:linear-gradient(to left, oklch(0.72 0.14 150), oklch(0.6 0.13 155)); height:10px;"></div>
+                </div>
+                <div style="width:3px; height:18px; background:#1C1C18; border-radius:2px; flex-shrink:0;"></div>
+                <div style="flex:1; background:#F1F0EA; border-radius:0 5px 5px 0; height:10px; overflow:hidden;">
+                  <div style="width:{{ tkCauFillW }}; background:linear-gradient(to right, oklch(0.68 0.16 45), oklch(0.6 0.17 35)); height:10px;"></div>
+                </div>
+              </div>
+              <div style="display:flex; justify-content:space-between; gap:10px;">
+                <div style="font-size:11px; font-weight:800; color:oklch(0.42 0.1 150); text-transform:uppercase; letter-spacing:0.5px;">◄ Tiềm năng <span style="font-family:'IBM Plex Mono',monospace;">{{ tkPotLabel }}</span></div>
+                <div style="font-size:11px; font-weight:800; color:oklch(0.5 0.14 45); text-transform:uppercase; letter-spacing:0.5px;"><span style="font-family:'IBM Plex Mono',monospace;">{{ tkCauLabel }}</span> Thận trọng ►</div>
+              </div>
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+                <div style="font-size:11.5px; color:#6E6D66; line-height:1.55;">{{ tkPotNote }}</div>
+                <div style="font-size:11.5px; color:#6E6D66; line-height:1.55; text-align:right;">{{ tkCauNote }}</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CHART TRADINGVIEW LIVE -->
+          <sc-if value="{{ tkHasChart }}" hint-placeholder-val="{{ false }}">
+            <div class="tk-card no-print" style="background:#FFFFFF; border:1px solid #E2E1DA; border-radius:14px; overflow:hidden; display:flex; flex-direction:column;">
+              <div style="padding:10px 16px; border-bottom:1px solid #F0EFEA; font-size:13px; font-weight:700;">📈 {{ tkSymbol }} <span style="color:#9B9A92; font-weight:500;">· TradingView live</span></div>
+              <iframe src="{{ tkChartEmbedUrl }}" style="width:100%; height:420px; border:none; display:block;" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+            </div>
+          </sc-if>
+
+          <!-- MUA BÁN Ở ĐÂU (Binance) -->
+          <sc-if value="{{ tkHasBnc }}" hint-placeholder-val="{{ false }}">
+            <div class="tk-card" style="background:#FFFFFF; border:1px solid oklch(0.85 0.13 88); border-left:5px solid oklch(0.78 0.16 85); border-radius:14px; padding:16px 18px; display:flex; flex-direction:column; gap:11px;">
+              <div style="display:flex; align-items:center; gap:9px; flex-wrap:wrap;">
+                <div style="font-size:13.5px; font-weight:800; color:oklch(0.45 0.12 75);">⬡ Mua bán được trên Binance</div>
+                <sc-if value="{{ tkBncProxy }}" hint-placeholder-val="{{ false }}">
+                  <div style="font-size:9.5px; font-weight:800; letter-spacing:0.4px; padding:2px 8px; border-radius:999px; background:oklch(0.96 0.05 85); color:oklch(0.5 0.1 70);">ETF THAY THẾ</div>
+                </sc-if>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:7px;">
+                <sc-for list="{{ tkBncRows }}" as="bn" hint-placeholder-count="2">
+                  <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; background:#FAFAF7; border-radius:9px; padding:9px 12px;">
+                    <div style="font-size:9.5px; font-weight:800; letter-spacing:0.4px; padding:3px 8px; border-radius:999px; background:{{ bn.kindBg }}; color:{{ bn.kindColor }}; white-space:nowrap;">{{ bn.kind }}</div>
+                    <div style="font-size:13px; font-weight:700; font-family:'IBM Plex Mono',monospace;">{{ bn.sym }}</div>
+                    <div style="flex:1;"></div>
+                    <div style="font-size:14px; font-weight:800; font-family:'IBM Plex Mono',monospace; color:#1C1C18;">{{ bn.price }}</div>
+                    <div style="font-size:11.5px; font-weight:700; font-family:'IBM Plex Mono',monospace; color:{{ bn.chgColor }}; min-width:56px; text-align:right;">{{ bn.chgText }}</div>
+                    <a href="{{ bn.link }}" target="_blank" rel="noopener noreferrer" class="no-print" style="font-size:11px; font-weight:700; color:oklch(0.42 0.08 235); text-decoration:none; white-space:nowrap;">Mở ↗</a>
+                  </div>
+                </sc-for>
+              </div>
+              <sc-if value="{{ tkBncHasNote }}" hint-placeholder-val="{{ false }}">
+                <div style="font-size:11.5px; color:#6E6D66; line-height:1.5;">{{ tkBncNote }}</div>
+              </sc-if>
+              <div style="font-size:10.5px; color:#9B9A92; line-height:1.5;">Giá lấy trực tiếp từ Binance khi mở trang · chỉ để đối chiếu với điểm vào/mục tiêu của chuyên gia, không phải khuyến nghị.</div>
+            </div>
+          </sc-if>
+
+          <!-- PHIẾU LỆNH -->
+          <div style="display:flex; align-items:center; gap:10px; margin-top:6px;">
+            <div style="font-size:15px; font-weight:800; letter-spacing:-0.2px;">Phiếu lệnh</div>
+            <div style="font-size:11px; font-weight:700; padding:2px 8px; border-radius:999px; background:#E7E6E1; color:#5F5E57;">{{ tkOrderCount }}</div>
+            <div style="flex:1; height:1px; background:#DDDCD5;"></div>
+          </div>
+          <sc-for list="{{ tkOrders }}" as="to" hint-placeholder-count="2">
+            <div class="tk-card" style="background:#FFFFFF; border:1px solid #E2E1DA; border-radius:14px; overflow:hidden; display:flex;">
+              <div style="width:7px; background:{{ to.accent }}; flex-shrink:0;"></div>
+              <div style="flex:1; padding:14px 17px; display:flex; flex-direction:column; gap:10px;">
+                <div style="display:flex; align-items:center; justify-content:space-between; gap:8px; flex-wrap:wrap;">
+                  <div style="display:flex; align-items:center; gap:9px; flex-wrap:wrap;">
+                    <div style="font-size:15px; font-weight:800; letter-spacing:0.2px; color:{{ to.color }};">{{ to.dir }}</div>
+                    <div style="font-size:10px; font-weight:700; padding:3px 9px; border-radius:999px; background:{{ to.sBg }}; color:{{ to.sColor }};">{{ to.sLabel }}</div>
                   </div>
                   <div style="display:flex; align-items:center; gap:6px;">
-                    <div style="width:19px; height:19px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:8px; font-weight:700;">{{ th.initials }}</div>
-                    <div style="font-size:11px; color:#9B9A92;">{{ th.expertName }}</div>
+                    <div style="width:19px; height:19px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:8px; font-weight:700;">{{ to.initials }}</div>
+                    <div style="font-size:11px; color:#9B9A92;">{{ to.expertName }} · {{ to.date }}</div>
                   </div>
                 </div>
-                <div style="font-size:12px; color:#6E6D66; line-height:1.5;">{{ th.note }}</div>
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:8px; border-top:1px dashed #E2E1DA; padding-top:10px;">
+                  <div>
+                    <div style="font-size:9.5px; font-weight:700; color:#9B9A92; text-transform:uppercase; letter-spacing:0.4px;">Vào lệnh</div>
+                    <div style="font-size:12.5px; font-family:'IBM Plex Mono',monospace; font-weight:600; color:#33322D; margin-top:3px;">{{ to.entry }}</div>
+                  </div>
+                  <div>
+                    <div style="font-size:9.5px; font-weight:700; color:#9B9A92; text-transform:uppercase; letter-spacing:0.4px;">Mục tiêu</div>
+                    <div style="font-size:12.5px; font-family:'IBM Plex Mono',monospace; font-weight:600; color:#33322D; margin-top:3px;">{{ to.target }}</div>
+                  </div>
+                  <div>
+                    <div style="font-size:9.5px; font-weight:700; color:#9B9A92; text-transform:uppercase; letter-spacing:0.4px;">Dừng lỗ / kỷ luật</div>
+                    <div style="font-size:12.5px; font-family:'IBM Plex Mono',monospace; font-weight:600; color:#33322D; margin-top:3px;">{{ to.stop }}</div>
+                  </div>
+                </div>
+                <div style="font-size:12px; color:#6E6D66; line-height:1.5;">{{ to.note }}</div>
               </div>
             </div>
           </sc-for>
-        </div>
-      </sc-if>
 
-      <div class="no-print" style="font-size:12px; color:#9B9A92; text-align:center; padding-top:4px;">Bấm một mục trên dòng thời gian để mở bài gốc · "Xuất PDF" để lưu hồ sơ mã này thành một trang in · chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</div>
+          <!-- LUẬN ĐIỂM -->
+          <div style="display:flex; align-items:center; gap:10px; margin-top:6px;">
+            <div style="font-size:15px; font-weight:800; letter-spacing:-0.2px;">Luận điểm chi tiết</div>
+            <div style="flex:1; height:1px; background:#DDDCD5;"></div>
+          </div>
+          <div class="tk-card" style="background:#FFFFFF; border:1px solid #E2E1DA; border-radius:14px; padding:22px 24px; display:flex; flex-direction:column; gap:18px;">
+            <sc-for list="{{ tkThesis }}" as="tt" hint-placeholder-count="2">
+              <div style="display:flex; gap:14px;">
+                <div style="width:3px; border-radius:2px; background:{{ tkStanceColor }}; opacity:0.4; flex-shrink:0;"></div>
+                <div style="display:flex; flex-direction:column; gap:5px;">
+                  <div style="font-size:13.5px; font-weight:800; color:#21211D;">{{ tt.title }}</div>
+                  <div style="font-size:13.5px; color:#3F3E38; line-height:1.7;">{{ tt.body }}</div>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+
+          <!-- BẢNG ĐIỂM CỦA MÃ -->
+          <sc-if value="{{ tkHasSc }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex; align-items:center; gap:10px; margin-top:6px;">
+              <div style="font-size:15px; font-weight:800; letter-spacing:-0.2px;">Bảng điểm của mã</div>
+              <div style="flex:1; height:1px; background:#DDDCD5;"></div>
+            </div>
+            <div class="tk-card" style="background:#FFFFFF; border:1px solid #E2E1DA; border-radius:14px; padding:18px 20px; display:flex; flex-direction:column; gap:14px;">
+              <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:10px;">
+                <div style="text-align:center; background:oklch(0.95 0.04 150); border-radius:10px; padding:12px 8px;">
+                  <div style="font-size:26px; font-weight:800; font-family:'IBM Plex Mono',monospace; color:oklch(0.42 0.1 150); line-height:1;">{{ tkScHit }}</div>
+                  <div style="font-size:10px; font-weight:800; color:oklch(0.42 0.1 150); text-transform:uppercase; letter-spacing:0.5px; margin-top:5px;">Đúng</div>
+                </div>
+                <div style="text-align:center; background:oklch(0.95 0.04 27); border-radius:10px; padding:12px 8px;">
+                  <div style="font-size:26px; font-weight:800; font-family:'IBM Plex Mono',monospace; color:oklch(0.46 0.15 27); line-height:1;">{{ tkScMiss }}</div>
+                  <div style="font-size:10px; font-weight:800; color:oklch(0.46 0.15 27); text-transform:uppercase; letter-spacing:0.5px; margin-top:5px;">Sai</div>
+                </div>
+                <div style="text-align:center; background:#EFEEE9; border-radius:10px; padding:12px 8px;">
+                  <div style="font-size:26px; font-weight:800; font-family:'IBM Plex Mono',monospace; color:#5F5E57; line-height:1;">{{ tkScPend }}</div>
+                  <div style="font-size:10px; font-weight:800; color:#5F5E57; text-transform:uppercase; letter-spacing:0.5px; margin-top:5px;">Đang theo dõi</div>
+                </div>
+              </div>
+              <sc-for list="{{ tkScRows }}" as="tsr" hint-placeholder-count="2">
+                <div style="display:flex; align-items:flex-start; gap:10px; border-top:1px solid #F0EFEA; padding-top:10px;">
+                  <div style="font-size:10.5px; font-weight:700; padding:3px 9px; border-radius:999px; background:{{ tsr.rBg }}; color:{{ tsr.rColor }}; white-space:nowrap; margin-top:1px;">{{ tsr.rLabel }}</div>
+                  <div style="display:flex; flex-direction:column; gap:2px; flex:1;">
+                    <div style="font-size:12.5px; font-weight:600; color:#21211D; line-height:1.45;">{{ tsr.call }}</div>
+                    <div style="font-size:11.5px; color:#6E6D66; line-height:1.5;">{{ tsr.note }}</div>
+                    <div style="font-size:10.5px; color:#9B9A92;">{{ tsr.expertName }} · {{ tsr.date }}</div>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+          </sc-if>
+
+          <!-- DÒNG THỜI GIAN NHẮC ĐẾN -->
+          <sc-if value="{{ tkHasHist }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex; align-items:center; gap:10px; margin-top:6px;">
+              <div style="font-size:15px; font-weight:800; letter-spacing:-0.2px;">Dòng thời gian nhắc đến</div>
+              <div style="font-size:11px; font-weight:700; padding:2px 8px; border-radius:999px; background:#E7E6E1; color:#5F5E57;">{{ tkHistCount }}</div>
+              <div style="flex:1; height:1px; background:#DDDCD5;"></div>
+            </div>
+            <div style="display:flex; flex-direction:column;">
+              <sc-for list="{{ tkHist }}" as="th" hint-placeholder-count="3">
+                <div style="display:flex; gap:12px;">
+                  <div style="width:44px; flex-shrink:0; text-align:right; font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:600; color:#9B9A92; padding-top:15px;">{{ th.dateLabel }}</div>
+                  <div style="width:14px; flex-shrink:0; display:flex; flex-direction:column; align-items:center;">
+                    <div style="width:2px; height:12px; background:#DDDCD5;"></div>
+                    <div style="width:10px; height:10px; border-radius:50%; background:{{ th.accent }}; border:2px solid #FFFFFF; box-shadow:0 0 0 1.5px #DDDCD5; margin:2px 0;"></div>
+                    <div style="width:2px; flex:1; background:#DDDCD5;"></div>
+                  </div>
+                  <div onClick="{{ th.onClick }}" class="card-lift tk-card" style="flex:1; margin-bottom:10px; background:#FFFFFF; border:1px solid #E2E1DA; border-radius:12px; padding:12px 15px; display:flex; flex-direction:column; gap:6px; cursor:pointer;">
+                    <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap;">
+                      <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                        <div style="font-size:12.5px; font-weight:700;">{{ th.tag }}</div>
+                        <div style="font-size:11px; font-weight:700; padding:3px 9px; border-radius:999px; background:{{ th.bg }}; color:{{ th.color }};">{{ th.value }}</div>
+                      </div>
+                      <div style="display:flex; align-items:center; gap:6px;">
+                        <div style="width:19px; height:19px; border-radius:50%; background:oklch(0.42 0.08 235); color:#fff; display:flex; align-items:center; justify-content:center; font-size:8px; font-weight:700;">{{ th.initials }}</div>
+                        <div style="font-size:11px; color:#9B9A92;">{{ th.expertName }}</div>
+                      </div>
+                    </div>
+                    <div style="font-size:12px; color:#6E6D66; line-height:1.5;">{{ th.note }}</div>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+          </sc-if>
+
+          <div class="no-print" style="font-size:12px; color:#9B9A92; text-align:center; padding-top:4px;">Bấm một mã bên hông để xem chi tiết · bấm "Xuất PDF" để lưu hồ sơ mã này thành một trang in · chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</div>
+        </div>
+      </div>
     </div>
   </sc-if>
 
@@ -1524,7 +1519,8 @@ class Component extends DCLogic {
     super(props);
     let logged = false;
     try { logged = localStorage.getItem('hdt_auth') === '1'; } catch (e) {}
-    this.state = { logged, screen: 'dashboard', pwError: false, srcType: 0, added: [], updIdx: 0, expertId: 'thai-pham', q: '', assetKey: 'vn', callsExpert: 'all', chartSym: '', chartLabel: '', scExpert: 'all', tickerKey: '', bncOnly: false, bncPrices: {}, tkView: 'market', tkIndustry: 'all', tkBasket: 'all' };
+    const firstTk = (window.HDT_DATA && window.HDT_DATA.tickers && window.HDT_DATA.tickers[0]) || {};
+    this.state = { logged, screen: 'dashboard', pwError: false, srcType: 0, added: [], updIdx: 0, expertId: 'thai-pham', q: '', assetKey: 'vn', callsExpert: 'all', chartSym: '', chartLabel: '', scExpert: 'all', tickerKey: firstTk.key || '', bncOnly: false, bncPrices: {}, tkView: 'market', tkIndustry: 'all', tkBasket: 'all', tkTrade: 'all' };
     this.pwRef = React.createRef();
     this.nameRef = React.createRef();
     this.channelRef = React.createRef();
@@ -1637,6 +1633,11 @@ class Component extends DCLogic {
       'tranh':    { label: 'Tránh',    bg: 'oklch(0.95 0.028 330)', color: 'oklch(0.45 0.11 330)', dot: 'oklch(0.63 0.13 330)' }
     };
     const BASKET_ORDER = ['dai-han', 'ngan-han', 'tranh'];
+    // ── Sổ mã: loại lệnh (spot / margin) ──
+    const TRADE_MODE_DEF = {
+      spot:   { label: 'Spot',   bg: 'oklch(0.95 0.03 235)', color: 'oklch(0.42 0.08 235)', dot: 'oklch(0.55 0.1 235)' },
+      margin: { label: 'Margin', bg: 'oklch(0.95 0.05 25)',  color: 'oklch(0.5 0.16 30)',   dot: 'oklch(0.6 0.18 30)' }
+    };
     const HDT = window.HDT_DATA;
 
     const PULSE_COLOR = { up: 'oklch(0.83 0.17 150)', down: 'oklch(0.78 0.15 25)', warn: 'oklch(0.87 0.13 85)', wait: 'rgba(255,255,255,0.55)', avoid: 'oklch(0.80 0.10 330)' };
@@ -2613,29 +2614,31 @@ class Component extends DCLogic {
     const tkBasketChips = [{ key: 'all', label: 'Tất cả giỏ' }, ...BASKET_ORDER.map(k => ({ key: k, label: BASKET_DEF[k].label }))]
       .map(c => Object.assign({ label: c.label + ' (' + (c.key === 'all' ? TICKERS.length : TICKERS.filter(t => t.basket === c.key).length) + ')' },
         chipActive(s.tkBasket === c.key), { onClick: () => this.setState({ tkBasket: c.key }) }));
+    const tkTradeChips = [{ key: 'all', label: 'Tất cả loại lệnh' }, { key: 'spot', label: TRADE_MODE_DEF.spot.label }, { key: 'margin', label: TRADE_MODE_DEF.margin.label }]
+      .map(c => Object.assign({ label: c.label + ' (' + (c.key === 'all' ? TICKERS.length : TICKERS.filter(t => t.tradeMode === c.key).length) + ')' },
+        chipActive(s.tkTrade === c.key), { onClick: () => this.setState({ tkTrade: c.key }) }));
 
-    const tkVisible = TICKERS.filter(t => (!s.bncOnly || BNCMAP[t.key]) && (s.tkBasket === 'all' || t.basket === s.tkBasket));
+    const selectTicker = (t) => { this.loadBnc(t.key); this.setState({ tickerKey: t.key }); };
+    const tkVisible = TICKERS.filter(t => (!s.bncOnly || BNCMAP[t.key]) && (s.tkBasket === 'all' || t.basket === s.tkBasket) && (s.tkTrade === 'all' || t.tradeMode === s.tkTrade));
     const tickerGroups = [];
     let __tkIdx = 0;
     tkVisible.forEach(t => {
       const gkey = groupKeyOf(t);
       let g = tickerGroups.find(x => x.group === gkey);
       if (!g) { g = { group: gkey, items: [], count: 0 }; tickerGroups.push(g); }
-      const nActive = (t.orders || []).filter(o => o.status === 'active').length;
-      const nWait = (t.orders || []).filter(o => o.status === 'waiting').length;
       const bd = BASKET_DEF[t.basket] || BASKET_DEF['ngan-han'];
+      const tm = TRADE_MODE_DEF[t.tradeMode] || TRADE_MODE_DEF.spot;
+      const isSel = t.key === s.tickerKey;
       g.items.push({
-        symbol: t.symbol, name: t.name, oneLiner: t.oneLiner, stance: t.stance,
+        key: t.key, symbol: t.symbol, name: t.name, stance: t.stance,
         ...CHIP_SIG[t.sig], accent: ACT_ACCENT[t.sig] || '#C9C8C0',
-        potN: t.potential || 0, cauN: t.caution || 0,
-        potW: ((t.potential || 0) * 20) + '%', cauW: ((t.caution || 0) * 20) + '%',
-        meta: ((nActive ? nActive + ' lệnh đang chạy' : '') + (nActive && nWait ? ' · ' : '') + (nWait ? nWait + ' lệnh chờ' : '')) || 'Theo dõi',
         industryTag: t.industry || '', basketTag: bd.label, basketBg: bd.bg, basketColor: bd.color, basketDot: bd.dot,
-        delay: (Math.min(__tkIdx++, 23) * 28) + 'ms',
-        hasBnc: !!bncInfo(t.key),
-        bncLabel: (bncInfo(t.key) || {}).label || '',
-        bncLines: (bncInfo(t.key) || {}).lines || [],
-        onClick: () => { this.loadBnc(t.key); this.go('ticker', { tickerKey: t.key }); }
+        tradeTag: tm.label, tradeDot: tm.dot,
+        delay: (Math.min(__tkIdx++, 23) * 22) + 'ms',
+        selected: isSel,
+        rowBg: isSel ? 'oklch(0.95 0.03 235)' : '#FFFFFF',
+        rowBorder: isSel ? 'oklch(0.55 0.1 235)' : '#EBEAE4',
+        onClick: () => selectTicker(t)
       });
       g.count = g.items.length;
     });
@@ -2670,12 +2673,17 @@ class Component extends DCLogic {
         tkPotLabel = '', tkCauLabel = '', tkPotNote = '', tkCauNote = '',
         tkPotFillW = '0%', tkCauFillW = '0%',
         tkVerdict = '', tkVerdictBg = '#EFEEE9', tkVerdictColor = '#5F5E57',
-        tkHasBnc = false, tkBncRows = [], tkBncNote = '', tkBncProxy = false;
+        tkHasBnc = false, tkBncRows = [], tkBncNote = '', tkBncProxy = false,
+        tkTradeTag = '', tkTradeBg = '#EFEEE9', tkTradeColor = '#5F5E57', tkHasChart = false, tkChartEmbedUrl = '';
     if (curTicker) {
       tkSymbol = curTicker.symbol; tkName = curTicker.name; tkStance = curTicker.stance;
       const tsig = CHIP_SIG[curTicker.sig] || {};
       tkStanceBg = tsig.bg || '#EFEEE9'; tkStanceColor = tsig.color || '#5F5E57';
       tkGroupLabel = curTicker.group; tkOneLiner = curTicker.oneLiner || '';
+      const tmc = TRADE_MODE_DEF[curTicker.tradeMode] || TRADE_MODE_DEF.spot;
+      tkTradeTag = tmc.label; tkTradeBg = tmc.bg; tkTradeColor = tmc.color;
+      tkHasChart = !!curTicker.tv;
+      tkChartEmbedUrl = tkHasChart ? ('https://s.tradingview.com/widgetembed/?symbol=' + encodeURIComponent(curTicker.tv) + '&interval=D&theme=light&style=1&locale=vi&hide_side_toolbar=1&withdateranges=1&save_image=0&hideideas=1') : '';
       const pN = curTicker.potential || 0, cN = curTicker.caution || 0;
       tkPotLabel = pN + '/5'; tkCauLabel = cN + '/5';
       tkPotNote = curTicker.potentialNote || '';
@@ -2765,13 +2773,13 @@ class Component extends DCLogic {
       brCmTitle: CM.title || '', brCmSource: CM.source || '', brCmDisclaimer: CM.disclaimer || '',
       brSvTitle: SV.title || '', brSvRange: SV.dateRange || '', brSvVerdict: SV.verdict || '',
       brSvExperts, brSvAgree: SV.agree || [], brSvDiffer: SV.differ || [],
-      isTickers: s.screen === 'tickers', isTicker: s.screen === 'ticker',
-      goTickers: () => this.go('tickers'),
+      isTickers: s.screen === 'tickers',
       tickerGroups, tickerTotal: TICKERS.length,
-      tkViewChips, tkBasketChips,
+      tkViewChips, tkBasketChips, tkTradeChips,
       bncChips, bncCount, bncUpdated: BNC.updated || '',
       tkHasBnc, tkBncRows, tkBncNote, tkBncProxy,
       tkBncHasNote: !!tkBncNote,
+      tkTradeTag, tkTradeBg, tkTradeColor, tkHasChart, tkChartEmbedUrl,
       tkStatActive, tkStatWaiting, tkStatAvoid, tkStatSkip,
       printPage: () => window.print(),
       tkSymbol, tkName, tkStance, tkStanceBg, tkStanceColor, tkGroupLabel, tkOneLiner,

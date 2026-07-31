@@ -4303,7 +4303,8 @@ window.HDT_DATA = {
       "potentialNote": "Một trong 2 mã mua dài hạn duy nhất của Thái Phạm — đã vào 70% vị thế ở vùng đáy, có cổ tức đỡ giá.",
       "cautionNote": "Rủi ro chính là thời gian: thị trường \"mùa đông\", có thể đi ngang lâu; không dùng margin thì áp lực thấp.",
       "industry": "Hóa chất & Phân bón",
-      "basket": "dai-han"
+      "basket": "dai-han",
+      "tradeMode": "spot"
     },
     {
       "key": "dpm",
@@ -4357,7 +4358,8 @@ window.HDT_DATA = {
       "potentialNote": "Cùng cặp dài hạn với DCM; đã chiết khấu ~30% từ đỉnh — vùng mua từng phần theo cả 2 chuyên gia.",
       "cautionNote": "Thị trường chung yếu, giá có thể lình xình thêm; kỷ luật chia 3–4 lệnh thay cho dừng lỗ.",
       "industry": "Hóa chất & Phân bón",
-      "basket": "dai-han"
+      "basket": "dai-han",
+      "tradeMode": "spot"
     },
     {
       "key": "bid",
@@ -4419,7 +4421,8 @@ window.HDT_DATA = {
       "potentialNote": "Định giá về dưới đáy T4/2025 — rẻ hiếm có; ngân hàng quốc doanh \"không thể phá sản được\".",
       "cautionNote": "Vẫn chưa giải ngân mạnh vì đợi VN-Index về 1.600; cần kiên nhẫn tính bằng năm.",
       "industry": "Ngân hàng",
-      "basket": "dai-han"
+      "basket": "dai-han",
+      "tradeMode": "spot"
     },
     {
       "key": "bvb",
@@ -4458,7 +4461,8 @@ window.HDT_DATA = {
       "potentialNote": "Chào sàn 21/07 giá 13.1 — nằm trong danh mục nắm giữ của Thái Phạm.",
       "cautionNote": "Chưa có lịch sử giao dịch trên sàn; cần quan sát các phiên đầu, thanh khoản chưa rõ.",
       "industry": "Ngân hàng",
-      "basket": "ngan-han"
+      "basket": "ngan-han",
+      "tradeMode": "spot"
     },
     {
       "key": "vnm",
@@ -4513,7 +4517,8 @@ window.HDT_DATA = {
       "potentialNote": "Được nâng từ \"giữ, bán khi +5–7%\" lên khuyến nghị MUA cho dài hạn; mẫu hình đẹp, là mã duy nhất có lợi nhuận trong tuần đỏ lửa.",
       "cautionNote": "Không còn tăng trưởng mạnh; ông cảnh báo mua ở vùng giá cao thì vẫn thua lỗ — chỉ mua ở vùng rẻ này.",
       "industry": "Tiêu dùng & Sữa",
-      "basket": "dai-han"
+      "basket": "dai-han",
+      "tradeMode": "spot"
     },
     {
       "key": "scs",
@@ -4556,7 +4561,8 @@ window.HDT_DATA = {
       "potentialNote": "Lợi thế cạnh tranh + cổ tức đều — cầm qua vùng trũng có dòng tiền bù đắp.",
       "cautionNote": "Đang lỗ ~7–8%; Trung Đông leo thang bất lợi cho vận tải hàng không; trần 20–25% tài khoản.",
       "industry": "Logistics & Cảng hàng không",
-      "basket": "dai-han"
+      "basket": "dai-han",
+      "tradeMode": "spot"
     },
     {
       "key": "tcx",
@@ -4595,7 +4601,8 @@ window.HDT_DATA = {
       "potentialNote": "Nhóm chứng khoán giữ dài hạn nhờ nội lực (kênh huy động vốn cốt lõi, thanh khoản đáy sẽ hồi).",
       "cautionNote": "Chính chủ đã chốt bớt; ngắn hạn nhóm CK \"khó đánh\", không lướt thêm.",
       "industry": "Chứng khoán (CTCK)",
-      "basket": "ngan-han"
+      "basket": "ngan-han",
+      "tradeMode": "spot"
     },
     {
       "key": "tcb",
@@ -4650,7 +4657,8 @@ window.HDT_DATA = {
       "potentialNote": "Một trong số ít mã cơ bản đang cố tạo đáy — rút chân khá ổn phiên 13/07.",
       "cautionNote": "Chưa có tín hiệu nào cho phép kỳ vọng tăng trong tuần; full room ngoại — thiếu lực mua mới.",
       "industry": "Ngân hàng",
-      "basket": "ngan-han"
+      "basket": "ngan-han",
+      "tradeMode": "spot"
     },
     {
       "key": "ssi",
@@ -4703,7 +4711,8 @@ window.HDT_DATA = {
       "potentialNote": "Chỉ còn kèo chờ tín hiệu của CK 5 phút (đóng >26) — chưa xảy ra suốt 10 ngày qua.",
       "cautionNote": "Thái Phạm cảnh báo \"sườn phải đánh vào cứ mua là lỗ\"; có thể về 20 — thấp hơn nhiều mốc 26.",
       "industry": "Chứng khoán (CTCK)",
-      "basket": "ngan-han"
+      "basket": "ngan-han",
+      "tradeMode": "spot"
     },
     {
       "key": "hpg",
@@ -4758,7 +4767,8 @@ window.HDT_DATA = {
       "potentialNote": "Hàng cơ bản đầu ngành — sẽ hấp dẫn khi thị trường tạo đáy thật.",
       "cautionNote": "Vừa THỦNG ĐÁY phiên 13/07 trong khi mã khác cố tạo đáy — chưa có lý do bắt.",
       "industry": "Thép",
-      "basket": "tranh"
+      "basket": "tranh",
+      "tradeMode": "spot"
     },
     {
       "key": "pnj",
@@ -4846,7 +4856,8 @@ window.HDT_DATA = {
       "potentialNote": "Chưa nhìn thấy tiềm năng nào định lượng được khi vụ án còn mở rộng.",
       "cautionNote": "Rủi ro pháp lý chưa định lượng: liên đới công ty mẹ, điều tra mở rộng — mua là \"đoán xem nó có sập không\".",
       "industry": "Trang sức & Bán lẻ cao cấp",
-      "basket": "tranh"
+      "basket": "tranh",
+      "tradeMode": "spot"
     },
     {
       "key": "fpt",
@@ -4899,7 +4910,8 @@ window.HDT_DATA = {
       "potentialNote": "Doanh nghiệp tốt về dài hạn — nhưng phương pháp giá trị đã chốt lời từ giá cao, chưa tới vùng mua lại.",
       "cautionNote": "Hở room, khối ngoại bán mạnh liên tục; thêm rủi ro cạnh tranh AI.",
       "industry": "Công nghệ",
-      "basket": "tranh"
+      "basket": "tranh",
+      "tradeMode": "spot"
     },
     {
       "key": "pc1",
@@ -4937,7 +4949,8 @@ window.HDT_DATA = {
       "potentialNote": "Không có luận điểm mua — chỉ còn câu chuyện thoát hàng cho người kẹt.",
       "cautionNote": "Chuyện đổi chủ chưa rõ ràng; nhóm \"lằng nhằng, đừng đụng\".",
       "industry": "Xây lắp điện & EPC",
-      "basket": "ngan-han"
+      "basket": "ngan-han",
+      "tradeMode": "spot"
     },
     {
       "key": "dgc",
@@ -4991,7 +5004,8 @@ window.HDT_DATA = {
       "potentialNote": "Không xét tiềm năng khi \"linh hồn doanh nghiệp\" dính pháp lý.",
       "cautionNote": "Chủ tịch/TGĐ bị khởi tố — tiêu chí loại ngay lập tức của AzFin; chờ vào lại uptrend mới bàn tiếp.",
       "industry": "Hóa chất & Phân bón",
-      "basket": "tranh"
+      "basket": "tranh",
+      "tradeMode": "spot"
     },
     {
       "key": "hdb",
@@ -5030,7 +5044,8 @@ window.HDT_DATA = {
         }
       ],
       "industry": "Ngân hàng",
-      "basket": "dai-han"
+      "basket": "dai-han",
+      "tradeMode": "spot"
     },
     {
       "key": "mwg",
@@ -5085,7 +5100,8 @@ window.HDT_DATA = {
         }
       ],
       "industry": "Bán lẻ",
-      "basket": "tranh"
+      "basket": "tranh",
+      "tradeMode": "spot"
     },
     {
       "key": "vcb",
@@ -5139,7 +5155,8 @@ window.HDT_DATA = {
         }
       ],
       "industry": "Ngân hàng",
-      "basket": "dai-han"
+      "basket": "dai-han",
+      "tradeMode": "spot"
     },
     {
       "key": "ctg",
@@ -5179,7 +5196,8 @@ window.HDT_DATA = {
         }
       ],
       "industry": "Ngân hàng",
-      "basket": "dai-han"
+      "basket": "dai-han",
+      "tradeMode": "spot"
     },
     {
       "key": "gas",
@@ -5218,7 +5236,8 @@ window.HDT_DATA = {
         }
       ],
       "industry": "Dầu khí",
-      "basket": "dai-han"
+      "basket": "dai-han",
+      "tradeMode": "spot"
     },
     {
       "key": "msb",
@@ -5256,7 +5275,8 @@ window.HDT_DATA = {
         }
       ],
       "industry": "Ngân hàng",
-      "basket": "ngan-han"
+      "basket": "ngan-han",
+      "tradeMode": "spot"
     },
     {
       "key": "dbc",
@@ -5295,7 +5315,8 @@ window.HDT_DATA = {
         }
       ],
       "industry": "Nông nghiệp & Chăn nuôi",
-      "basket": "tranh"
+      "basket": "tranh",
+      "tradeMode": "spot"
     },
     {
       "key": "igc",
@@ -5333,7 +5354,8 @@ window.HDT_DATA = {
         }
       ],
       "industry": "Giáo dục & Đa ngành",
-      "basket": "tranh"
+      "basket": "tranh",
+      "tradeMode": "spot"
     },
     {
       "key": "bcm",
@@ -5372,7 +5394,8 @@ window.HDT_DATA = {
         }
       ],
       "industry": "KCN & BĐS công nghiệp",
-      "basket": "tranh"
+      "basket": "tranh",
+      "tradeMode": "spot"
     },
     {
       "key": "vin",
@@ -5430,7 +5453,8 @@ window.HDT_DATA = {
         }
       ],
       "industry": "Bất động sản",
-      "basket": "tranh"
+      "basket": "tranh",
+      "tradeMode": "spot"
     },
     {
       "key": "aapl",
@@ -5484,7 +5508,8 @@ window.HDT_DATA = {
       "potentialNote": "Kèo short có catalyst rõ và gần (BCTC 30/07, guidance Q3 yếu vì tăng giá iPhone 18) — dư địa \"gãy về chen line\".",
       "cautionNote": "Đang bị kéo giữ chỉ số kiểu FOMO trap — có thể gap-up dọa trước khi gãy; chỉ đi 1/2 vị thế, không đòn bẩy.",
       "industry": "Công nghệ tiêu dùng",
-      "basket": "ngan-han"
+      "basket": "ngan-han",
+      "tradeMode": "margin"
     },
     {
       "key": "spacex",
@@ -5543,7 +5568,8 @@ window.HDT_DATA = {
       "potentialNote": "Kèo tâm đắc nhất: 4 đợt unlock nâng cung gấp 8 lần, giá trị thật 40–50 đô vs thị giá ~157 — đích 80–87.",
       "cautionNote": "Biến động điên rồ, có thể kéo ngược mạnh — bắt buộc vị thế nhỏ, không bồi, không margin; giữ tới T1/2027.",
       "industry": "Hàng không vũ trụ",
-      "basket": "ngan-han"
+      "basket": "ngan-han",
+      "tradeMode": "margin"
     },
     {
       "key": "intc",
@@ -5612,7 +5638,8 @@ window.HDT_DATA = {
       "potentialNote": "Còn dư địa về đích ~77; đã chứng minh đúng hướng (+30%, chốt 1/2).",
       "cautionNote": "Phần dễ đã ăn xong; các nhịp hồi \"loáng ngoáng\" có thể dí ngược 10%+ như giai đoạn đầu.",
       "industry": "Bán dẫn",
-      "basket": "ngan-han"
+      "basket": "ngan-han",
+      "tradeMode": "margin"
     },
     {
       "key": "mu",
@@ -5655,7 +5682,8 @@ window.HDT_DATA = {
       "potentialNote": "Thesis dư cung AI/chip nhớ còn nguyên — lãi 20%+ đang chạy.",
       "cautionNote": "Mã \"dã man\" nhất: từng dí ngược 15–16% trước khi có quả ngọt — không margin mới sống sót.",
       "industry": "Bán dẫn",
-      "basket": "ngan-han"
+      "basket": "ngan-han",
+      "tradeMode": "margin"
     },
     {
       "key": "samsung",
@@ -5710,7 +5738,8 @@ window.HDT_DATA = {
       "potentialNote": "Short đúng đỉnh đang thuận: margin call dây chuyền, kịch bản 214.000 rồi 170.000 KRW.",
       "cautionNote": "Hàn Quốc \"bạo phát bạo tàn\", giật ±8%/phiên — vị thế phải rất nhỏ, biến động cực lớn.",
       "industry": "Bán dẫn & Điện tử tiêu dùng",
-      "basket": "ngan-han"
+      "basket": "ngan-han",
+      "tradeMode": "margin"
     },
     {
       "key": "spx",
@@ -5766,7 +5795,8 @@ window.HDT_DATA = {
       "potentialNote": "Căn cứ vĩ mô dày: margin 1,4% vốn hóa ngang đỉnh 2018, IPO hút 220 tỷ đô — \"hết tiền thì phải sập\".",
       "cautionNote": "Chỉ số giật hai đầu trong phiên (-0,8% rồi +0,3%) quét vị thế — short cường độ cao kèm margin là chết trước khi đúng.",
       "industry": "Chỉ số",
-      "basket": "ngan-han"
+      "basket": "ngan-han",
+      "tradeMode": "margin"
     },
     {
       "key": "ndq",
@@ -5804,7 +5834,8 @@ window.HDT_DATA = {
         }
       ],
       "industry": "Chỉ số",
-      "basket": "ngan-han"
+      "basket": "ngan-han",
+      "tradeMode": "margin"
     },
     {
       "key": "nikkei",
@@ -5844,7 +5875,8 @@ window.HDT_DATA = {
         }
       ],
       "industry": "Chỉ số",
-      "basket": "ngan-han"
+      "basket": "ngan-han",
+      "tradeMode": "margin"
     },
     {
       "key": "mrvl",
@@ -5883,7 +5915,8 @@ window.HDT_DATA = {
         }
       ],
       "industry": "Bán dẫn",
-      "basket": "ngan-han"
+      "basket": "ngan-han",
+      "tradeMode": "margin"
     },
     {
       "key": "panw",
@@ -5923,7 +5956,8 @@ window.HDT_DATA = {
         }
       ],
       "industry": "An ninh mạng",
-      "basket": "ngan-han"
+      "basket": "ngan-han",
+      "tradeMode": "margin"
     },
     {
       "key": "ftnt",
@@ -5962,7 +5996,8 @@ window.HDT_DATA = {
         }
       ],
       "industry": "An ninh mạng",
-      "basket": "ngan-han"
+      "basket": "ngan-han",
+      "tradeMode": "margin"
     },
     {
       "key": "crwd",
@@ -6002,7 +6037,8 @@ window.HDT_DATA = {
         }
       ],
       "industry": "An ninh mạng",
-      "basket": "ngan-han"
+      "basket": "ngan-han",
+      "tradeMode": "margin"
     },
     {
       "key": "amd",
@@ -6040,7 +6076,8 @@ window.HDT_DATA = {
         }
       ],
       "industry": "Bán dẫn",
-      "basket": "ngan-han"
+      "basket": "ngan-han",
+      "tradeMode": "margin"
     },
     {
       "key": "nvda",
@@ -6079,7 +6116,8 @@ window.HDT_DATA = {
         }
       ],
       "industry": "Bán dẫn",
-      "basket": "tranh"
+      "basket": "tranh",
+      "tradeMode": "margin"
     },
     {
       "key": "googl",
@@ -6123,7 +6161,8 @@ window.HDT_DATA = {
         }
       ],
       "industry": "Công nghệ & Internet",
-      "basket": "ngan-han"
+      "basket": "ngan-han",
+      "tradeMode": "margin"
     },
     {
       "key": "nflx",
@@ -6162,7 +6201,8 @@ window.HDT_DATA = {
         }
       ],
       "industry": "Truyền thông & Giải trí",
-      "basket": "tranh"
+      "basket": "tranh",
+      "tradeMode": "margin"
     },
     {
       "key": "dell",
@@ -6200,7 +6240,8 @@ window.HDT_DATA = {
         }
       ],
       "industry": "Phần cứng CNTT",
-      "basket": "tranh"
+      "basket": "tranh",
+      "tradeMode": "margin"
     },
     {
       "key": "rtx",
@@ -6240,7 +6281,8 @@ window.HDT_DATA = {
         }
       ],
       "industry": "Quốc phòng",
-      "basket": "ngan-han"
+      "basket": "ngan-han",
+      "tradeMode": "spot"
     },
     {
       "key": "ads",
@@ -6279,7 +6321,8 @@ window.HDT_DATA = {
         }
       ],
       "industry": "Tiêu dùng & Thời trang",
-      "basket": "ngan-han"
+      "basket": "ngan-han",
+      "tradeMode": "spot"
     },
     {
       "key": "gold",
@@ -6368,7 +6411,8 @@ window.HDT_DATA = {
       "potentialNote": "Chênh trong nước đã về 8–9tr (từ 19–20tr) — điều kiện mua vật chất ông đặt ra đã đạt; hồi kỹ thuật có xác suất lên 4.300.",
       "cautionNote": "Nếu Fed tăng lãi T9 (82%) thì còn \"chân số 3\" về 3.600–3.700, thậm chí ~3.300; ngắn hạn có thể quét 3.890–3.900.",
       "industry": "Kim loại quý",
-      "basket": "ngan-han"
+      "basket": "ngan-han",
+      "tradeMode": "margin"
     },
     {
       "key": "oil",
@@ -6439,7 +6483,8 @@ window.HDT_DATA = {
       "potentialNote": "Còn dư địa nếu Trump đánh lớn (>120, tệ hơn >150); dự trữ cạn kiệt là nền FA vững.",
       "cautionNote": "Phần hồi 43% đã đi qua; giá giờ phụ thuộc TIN TỨC nên biến động mạnh hai chiều — ông nghiêng kịch bản tích lũy quanh 92–100.",
       "industry": "Năng lượng",
-      "basket": "ngan-han"
+      "basket": "ngan-han",
+      "tradeMode": "margin"
     },
     {
       "key": "btc",
@@ -6520,7 +6565,8 @@ window.HDT_DATA = {
       "potentialNote": "Chỉ còn kèo short fake pump 69–70k; mua thật phải đợi ~50k — xa vùng hiện tại.",
       "cautionNote": "Cấu trúc \"banana\" gãy, không còn câu chuyện thay thế tiền pháp định; Fed không hạ lãi — thiếu nhiên liệu tăng.",
       "industry": "Tiền điện tử",
-      "basket": "tranh"
+      "basket": "tranh",
+      "tradeMode": "margin"
     },
     {
       "key": "silver",
@@ -6560,7 +6606,8 @@ window.HDT_DATA = {
         }
       ],
       "industry": "Kim loại quý",
-      "basket": "ngan-han"
+      "basket": "ngan-han",
+      "tradeMode": "margin"
     }
   ],
   "briefing": {

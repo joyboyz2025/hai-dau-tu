@@ -44,6 +44,13 @@ input::placeholder { color: #A3A29A; }
 .tk-detail { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 16px; }
 .tk-row { transition: background .12s ease, border-color .12s ease; }
 .tk-row:hover { background: #F6F5F0 !important; }
+/* ── Sổ mã: segmented control (khu vực + xem theo) — thay cho hàng pill thô ── */
+.tk-segment { background: #EDECE6; border-radius: 13px; padding: 4px; gap: 3px; }
+.tk-seg-btn { flex-shrink: 0; padding: 9px 14px; border-radius: 10px; font-size: 13px; cursor: pointer; white-space: nowrap; transition: background .15s ease, box-shadow .15s ease, color .15s ease; display: flex; align-items: center; gap: 6px; }
+.tk-seg-count { font-family: 'IBM Plex Mono', monospace; font-size: 11px; opacity: .6; }
+.tk-segment--sm { background: #F3F2ED; border-radius: 10px; padding: 3px; gap: 2px; display: inline-flex; }
+.tk-seg-btn--sm { padding: 6px 11px !important; font-size: 12px !important; border: none !important; }
+@media (prefers-reduced-motion: reduce) { .tk-seg-btn { transition: none; } }
 @media (max-width: 860px) {
   .tk-layout { flex-direction: column; }
   .tk-sidebar { position: static; max-height: 380px; flex-basis: auto; max-width: 100%; width: 100%; }
@@ -855,23 +862,41 @@ input::placeholder { color: #A3A29A; }
         <div class="no-print" onClick="{{ printPage }}" style="display:flex; align-items:center; gap:7px; padding:9px 16px; border-radius:999px; cursor:pointer; background:oklch(0.42 0.08 235); color:#FFFFFF; font-size:13px; font-weight:700; white-space:nowrap; box-shadow:0 2px 8px rgba(18,40,80,0.22);">🖨 Xuất PDF</div>
       </div>
 
-      <!-- Xem theo: Thị trường / Ngành nghề / Giỏ đầu tư -->
-      <div class="no-print" style="display:flex; flex-direction:column; gap:10px;">
-        <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
-          <div style="font-size:10.5px; font-weight:800; color:#9B9A92; text-transform:uppercase; letter-spacing:0.6px; margin-right:2px;">Xem theo</div>
-          <sc-for list="{{ tkViewChips }}" as="vc" hint-placeholder-count="3">
-            <div onClick="{{ vc.onClick }}" class="tk-view-chip" style="padding:8px 15px; border-radius:999px; cursor:pointer; font-size:13px; font-weight:700; border:1.5px solid {{ vc.border }}; background:{{ vc.bg }}; color:{{ vc.color }};">{{ vc.label }}</div>
+      <!-- Khu vực: CK Việt Nam / nước ngoài / Hàn / Nhật / Hàng hóa — chọn trước, mỗi khu vực có ngành nghề riêng -->
+      <div class="no-print" style="display:flex; flex-direction:column; gap:12px;">
+        <div class="nav-scroll tk-segment">
+          <sc-for list="{{ tkRegionChips }}" as="rc" hint-placeholder-count="6">
+            <div onClick="{{ rc.onClick }}" class="tk-seg-btn" style="background:{{ rc.bg }}; color:{{ rc.color }}; box-shadow:{{ rc.shadow }}; font-weight:{{ rc.weight }};">{{ rc.flag }} {{ rc.label }} <span class="tk-seg-count">{{ rc.count }}</span></div>
           </sc-for>
         </div>
-        <div class="nav-scroll" style="gap:8px;">
-          <sc-for list="{{ tkBasketChips }}" as="kc" hint-placeholder-count="4">
-            <div onClick="{{ kc.onClick }}" class="tk-view-chip" style="padding:7px 13px; border-radius:999px; cursor:pointer; font-size:12.5px; font-weight:600; border:1.5px solid {{ kc.border }}; background:{{ kc.bg }}; color:{{ kc.color }}; white-space:nowrap;">{{ kc.label }}</div>
-          </sc-for>
-        </div>
-        <div class="nav-scroll" style="gap:8px;">
-          <sc-for list="{{ tkTradeChips }}" as="tmc" hint-placeholder-count="3">
-            <div onClick="{{ tmc.onClick }}" class="tk-view-chip" style="padding:7px 13px; border-radius:999px; cursor:pointer; font-size:12.5px; font-weight:600; border:1.5px solid {{ tmc.border }}; background:{{ tmc.bg }}; color:{{ tmc.color }}; white-space:nowrap;">{{ tmc.label }}</div>
-          </sc-for>
+
+        <div style="display:flex; flex-direction:column; gap:9px; background:#FFFFFF; border:1px solid #E7E6E1; border-radius:12px; padding:11px 14px;">
+          <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+            <span style="font-size:10.5px; font-weight:800; color:#9B9A92; text-transform:uppercase; letter-spacing:0.6px; width:76px; flex-shrink:0;">Xem theo</span>
+            <div class="tk-segment tk-segment--sm">
+              <sc-for list="{{ tkViewChips }}" as="vc" hint-placeholder-count="2">
+                <div onClick="{{ vc.onClick }}" class="tk-seg-btn tk-seg-btn--sm" style="background:{{ vc.bg }}; color:{{ vc.color }}; box-shadow:{{ vc.shadow }}; font-weight:{{ vc.weight }};">{{ vc.label }}</div>
+              </sc-for>
+            </div>
+          </div>
+          <div style="height:1px; background:#F0EFEA;"></div>
+          <div style="display:flex; align-items:center; gap:10px;">
+            <span style="font-size:10.5px; font-weight:800; color:#9B9A92; text-transform:uppercase; letter-spacing:0.6px; width:76px; flex-shrink:0;">Giỏ</span>
+            <div class="nav-scroll" style="gap:6px;">
+              <sc-for list="{{ tkBasketChips }}" as="kc" hint-placeholder-count="4">
+                <div onClick="{{ kc.onClick }}" class="tk-view-chip" style="padding:6px 12px; border-radius:999px; cursor:pointer; font-size:12px; font-weight:600; border:1.5px solid {{ kc.border }}; background:{{ kc.bg }}; color:{{ kc.color }}; white-space:nowrap;">{{ kc.label }}</div>
+              </sc-for>
+            </div>
+          </div>
+          <div style="height:1px; background:#F0EFEA;"></div>
+          <div style="display:flex; align-items:center; gap:10px;">
+            <span style="font-size:10.5px; font-weight:800; color:#9B9A92; text-transform:uppercase; letter-spacing:0.6px; width:76px; flex-shrink:0;">Loại lệnh</span>
+            <div class="nav-scroll" style="gap:6px;">
+              <sc-for list="{{ tkTradeChips }}" as="tmc" hint-placeholder-count="3">
+                <div onClick="{{ tmc.onClick }}" class="tk-view-chip" style="padding:6px 12px; border-radius:999px; cursor:pointer; font-size:12px; font-weight:600; border:1.5px solid {{ tmc.border }}; background:{{ tmc.bg }}; color:{{ tmc.color }}; white-space:nowrap;">{{ tmc.label }}</div>
+              </sc-for>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -1520,7 +1545,7 @@ class Component extends DCLogic {
     let logged = false;
     try { logged = localStorage.getItem('hdt_auth') === '1'; } catch (e) {}
     const firstTk = (window.HDT_DATA && window.HDT_DATA.tickers && window.HDT_DATA.tickers[0]) || {};
-    this.state = { logged, screen: 'dashboard', pwError: false, srcType: 0, added: [], updIdx: 0, expertId: 'thai-pham', q: '', assetKey: 'vn', callsExpert: 'all', chartSym: '', chartLabel: '', scExpert: 'all', tickerKey: firstTk.key || '', bncOnly: false, bncPrices: {}, tkView: 'market', tkIndustry: 'all', tkBasket: 'all', tkTrade: 'all' };
+    this.state = { logged, screen: 'dashboard', pwError: false, srcType: 0, added: [], updIdx: 0, expertId: 'thai-pham', q: '', assetKey: 'vn', callsExpert: 'all', chartSym: '', chartLabel: '', scExpert: 'all', tickerKey: firstTk.key || '', bncOnly: false, bncPrices: {}, tkView: 'industry', tkRegion: 'all', tkIndustry: 'all', tkBasket: 'all', tkTrade: 'all' };
     this.pwRef = React.createRef();
     this.nameRef = React.createRef();
     this.channelRef = React.createRef();
@@ -1638,6 +1663,15 @@ class Component extends DCLogic {
       spot:   { label: 'Spot',   bg: 'oklch(0.95 0.03 235)', color: 'oklch(0.42 0.08 235)', dot: 'oklch(0.55 0.1 235)' },
       margin: { label: 'Margin', bg: 'oklch(0.95 0.05 25)',  color: 'oklch(0.5 0.16 30)',   dot: 'oklch(0.6 0.18 30)' }
     };
+    // ── Sổ mã: khu vực thị trường (chọn trước, mỗi khu vực có các ngành nghề riêng) ──
+    const REGION_DEF = {
+      vn:        { label: 'CK Việt Nam',      flag: '🇻🇳' },
+      foreign:   { label: 'CK nước ngoài',    flag: '🌍' },
+      kr:        { label: 'CK Hàn',           flag: '🇰🇷' },
+      jp:        { label: 'CK Nhật',          flag: '🇯🇵' },
+      commodity: { label: 'Hàng hóa & Crypto', flag: '🪙' }
+    };
+    const REGION_ORDER = ['vn', 'foreign', 'kr', 'jp', 'commodity'];
     const HDT = window.HDT_DATA;
 
     const PULSE_COLOR = { up: 'oklch(0.83 0.17 150)', down: 'oklch(0.78 0.15 25)', warn: 'oklch(0.87 0.13 85)', wait: 'rgba(255,255,255,0.55)', avoid: 'oklch(0.80 0.10 330)' };
@@ -2599,18 +2633,32 @@ class Component extends DCLogic {
       onClick: () => this.setState({ bncOnly: i === 1 })
     }));
 
-    // ── "Xem theo": Thị trường (mặc định) · Ngành nghề · Giỏ đầu tư (dài/ngắn hạn/tránh) ──
+    // ── Khu vực thị trường: chọn trước (CK VN / nước ngoài / Hàn / Nhật / Hàng hóa) ──
+    const tkRegionChips = [{ key: 'all', label: 'Tất cả', flag: '📋' }, ...REGION_ORDER.map(k => Object.assign({ key: k }, REGION_DEF[k]))]
+      .map(c => {
+        const on = s.tkRegion === c.key;
+        return {
+          label: c.label, flag: c.flag,
+          count: c.key === 'all' ? TICKERS.length : TICKERS.filter(t => t.region === c.key).length,
+          bg: on ? '#FFFFFF' : 'transparent', color: on ? BRAND : '#6E6D66',
+          shadow: on ? '0 1px 5px rgba(23,23,18,0.16)' : 'none', weight: on ? '800' : '600',
+          onClick: () => this.setState({ tkRegion: c.key })
+        };
+      });
+    // ── "Xem theo" trong khu vực đã chọn: Ngành nghề (mặc định) · Giỏ đầu tư (dài/ngắn hạn/tránh) ──
     const TK_VIEW_DEF = [
-      { key: 'market',   label: '🗂 Thị trường' },
-      { key: 'industry', label: '🏭 Ngành nghề' },
-      { key: 'basket',   label: '⏳ Giỏ đầu tư' }
+      { key: 'industry', label: 'Ngành nghề' },
+      { key: 'basket',   label: 'Giỏ đầu tư' }
     ];
-    const tkViewChips = TK_VIEW_DEF.map(v => Object.assign({ label: v.label }, chipActive(s.tkView === v.key), {
-      onClick: () => this.setState({ tkView: v.key })
-    }));
-    const groupKeyOf = t => s.tkView === 'industry' ? (t.industry || t.group)
-      : s.tkView === 'basket' ? (BASKET_DEF[t.basket] || {}).label || 'Khác'
-      : t.group;
+    const tkViewChips = TK_VIEW_DEF.map(v => {
+      const on = s.tkView === v.key;
+      return {
+        label: v.label, bg: on ? '#FFFFFF' : 'transparent', color: on ? BRAND : '#6E6D66',
+        shadow: on ? '0 1px 3px rgba(23,23,18,0.14)' : 'none', weight: on ? '800' : '600',
+        onClick: () => this.setState({ tkView: v.key })
+      };
+    });
+    const groupKeyOf = t => s.tkView === 'basket' ? (BASKET_DEF[t.basket] || {}).label || 'Khác' : (t.industry || t.group);
     const tkBasketChips = [{ key: 'all', label: 'Tất cả giỏ' }, ...BASKET_ORDER.map(k => ({ key: k, label: BASKET_DEF[k].label }))]
       .map(c => Object.assign({ label: c.label + ' (' + (c.key === 'all' ? TICKERS.length : TICKERS.filter(t => t.basket === c.key).length) + ')' },
         chipActive(s.tkBasket === c.key), { onClick: () => this.setState({ tkBasket: c.key }) }));
@@ -2619,7 +2667,7 @@ class Component extends DCLogic {
         chipActive(s.tkTrade === c.key), { onClick: () => this.setState({ tkTrade: c.key }) }));
 
     const selectTicker = (t) => { this.loadBnc(t.key); this.setState({ tickerKey: t.key }); };
-    const tkVisible = TICKERS.filter(t => (!s.bncOnly || BNCMAP[t.key]) && (s.tkBasket === 'all' || t.basket === s.tkBasket) && (s.tkTrade === 'all' || t.tradeMode === s.tkTrade));
+    const tkVisible = TICKERS.filter(t => (!s.bncOnly || BNCMAP[t.key]) && (s.tkBasket === 'all' || t.basket === s.tkBasket) && (s.tkTrade === 'all' || t.tradeMode === s.tkTrade) && (s.tkRegion === 'all' || t.region === s.tkRegion));
     const tickerGroups = [];
     let __tkIdx = 0;
     tkVisible.forEach(t => {
@@ -2775,7 +2823,7 @@ class Component extends DCLogic {
       brSvExperts, brSvAgree: SV.agree || [], brSvDiffer: SV.differ || [],
       isTickers: s.screen === 'tickers',
       tickerGroups, tickerTotal: TICKERS.length,
-      tkViewChips, tkBasketChips, tkTradeChips,
+      tkRegionChips, tkViewChips, tkBasketChips, tkTradeChips,
       bncChips, bncCount, bncUpdated: BNC.updated || '',
       tkHasBnc, tkBncRows, tkBncNote, tkBncProxy,
       tkBncHasNote: !!tkBncNote,

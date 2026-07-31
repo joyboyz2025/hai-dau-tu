@@ -4304,7 +4304,8 @@ window.HDT_DATA = {
       "cautionNote": "Rủi ro chính là thời gian: thị trường \"mùa đông\", có thể đi ngang lâu; không dùng margin thì áp lực thấp.",
       "industry": "Hóa chất & Phân bón",
       "basket": "dai-han",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "vn"
     },
     {
       "key": "dpm",
@@ -4359,7 +4360,8 @@ window.HDT_DATA = {
       "cautionNote": "Thị trường chung yếu, giá có thể lình xình thêm; kỷ luật chia 3–4 lệnh thay cho dừng lỗ.",
       "industry": "Hóa chất & Phân bón",
       "basket": "dai-han",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "vn"
     },
     {
       "key": "bid",
@@ -4422,7 +4424,8 @@ window.HDT_DATA = {
       "cautionNote": "Vẫn chưa giải ngân mạnh vì đợi VN-Index về 1.600; cần kiên nhẫn tính bằng năm.",
       "industry": "Ngân hàng",
       "basket": "dai-han",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "vn"
     },
     {
       "key": "bvb",
@@ -4462,7 +4465,8 @@ window.HDT_DATA = {
       "cautionNote": "Chưa có lịch sử giao dịch trên sàn; cần quan sát các phiên đầu, thanh khoản chưa rõ.",
       "industry": "Ngân hàng",
       "basket": "ngan-han",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "vn"
     },
     {
       "key": "vnm",
@@ -4518,7 +4522,8 @@ window.HDT_DATA = {
       "cautionNote": "Không còn tăng trưởng mạnh; ông cảnh báo mua ở vùng giá cao thì vẫn thua lỗ — chỉ mua ở vùng rẻ này.",
       "industry": "Tiêu dùng & Sữa",
       "basket": "dai-han",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "vn"
     },
     {
       "key": "scs",
@@ -4562,7 +4567,8 @@ window.HDT_DATA = {
       "cautionNote": "Đang lỗ ~7–8%; Trung Đông leo thang bất lợi cho vận tải hàng không; trần 20–25% tài khoản.",
       "industry": "Logistics & Cảng hàng không",
       "basket": "dai-han",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "vn"
     },
     {
       "key": "tcx",
@@ -4602,7 +4608,8 @@ window.HDT_DATA = {
       "cautionNote": "Chính chủ đã chốt bớt; ngắn hạn nhóm CK \"khó đánh\", không lướt thêm.",
       "industry": "Chứng khoán (CTCK)",
       "basket": "ngan-han",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "vn"
     },
     {
       "key": "tcb",
@@ -4658,7 +4665,8 @@ window.HDT_DATA = {
       "cautionNote": "Chưa có tín hiệu nào cho phép kỳ vọng tăng trong tuần; full room ngoại — thiếu lực mua mới.",
       "industry": "Ngân hàng",
       "basket": "ngan-han",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "vn"
     },
     {
       "key": "ssi",
@@ -4712,7 +4720,8 @@ window.HDT_DATA = {
       "cautionNote": "Thái Phạm cảnh báo \"sườn phải đánh vào cứ mua là lỗ\"; có thể về 20 — thấp hơn nhiều mốc 26.",
       "industry": "Chứng khoán (CTCK)",
       "basket": "ngan-han",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "vn"
     },
     {
       "key": "hpg",
@@ -4768,7 +4777,8 @@ window.HDT_DATA = {
       "cautionNote": "Vừa THỦNG ĐÁY phiên 13/07 trong khi mã khác cố tạo đáy — chưa có lý do bắt.",
       "industry": "Thép",
       "basket": "tranh",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "vn"
     },
     {
       "key": "pnj",
@@ -4857,7 +4867,8 @@ window.HDT_DATA = {
       "cautionNote": "Rủi ro pháp lý chưa định lượng: liên đới công ty mẹ, điều tra mở rộng — mua là \"đoán xem nó có sập không\".",
       "industry": "Trang sức & Bán lẻ cao cấp",
       "basket": "tranh",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "vn"
     },
     {
       "key": "fpt",
@@ -4911,7 +4922,8 @@ window.HDT_DATA = {
       "cautionNote": "Hở room, khối ngoại bán mạnh liên tục; thêm rủi ro cạnh tranh AI.",
       "industry": "Công nghệ",
       "basket": "tranh",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "vn"
     },
     {
       "key": "pc1",
@@ -4950,7 +4962,8 @@ window.HDT_DATA = {
       "cautionNote": "Chuyện đổi chủ chưa rõ ràng; nhóm \"lằng nhằng, đừng đụng\".",
       "industry": "Xây lắp điện & EPC",
       "basket": "ngan-han",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "vn"
     },
     {
       "key": "dgc",
@@ -5005,7 +5018,8 @@ window.HDT_DATA = {
       "cautionNote": "Chủ tịch/TGĐ bị khởi tố — tiêu chí loại ngay lập tức của AzFin; chờ vào lại uptrend mới bàn tiếp.",
       "industry": "Hóa chất & Phân bón",
       "basket": "tranh",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "vn"
     },
     {
       "key": "hdb",
@@ -5045,7 +5059,8 @@ window.HDT_DATA = {
       ],
       "industry": "Ngân hàng",
       "basket": "dai-han",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "vn"
     },
     {
       "key": "mwg",
@@ -5101,7 +5116,8 @@ window.HDT_DATA = {
       ],
       "industry": "Bán lẻ",
       "basket": "tranh",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "vn"
     },
     {
       "key": "vcb",
@@ -5156,7 +5172,8 @@ window.HDT_DATA = {
       ],
       "industry": "Ngân hàng",
       "basket": "dai-han",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "vn"
     },
     {
       "key": "ctg",
@@ -5197,7 +5214,8 @@ window.HDT_DATA = {
       ],
       "industry": "Ngân hàng",
       "basket": "dai-han",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "vn"
     },
     {
       "key": "gas",
@@ -5237,7 +5255,8 @@ window.HDT_DATA = {
       ],
       "industry": "Dầu khí",
       "basket": "dai-han",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "vn"
     },
     {
       "key": "msb",
@@ -5276,7 +5295,8 @@ window.HDT_DATA = {
       ],
       "industry": "Ngân hàng",
       "basket": "ngan-han",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "vn"
     },
     {
       "key": "dbc",
@@ -5316,7 +5336,8 @@ window.HDT_DATA = {
       ],
       "industry": "Nông nghiệp & Chăn nuôi",
       "basket": "tranh",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "vn"
     },
     {
       "key": "igc",
@@ -5355,7 +5376,8 @@ window.HDT_DATA = {
       ],
       "industry": "Giáo dục & Đa ngành",
       "basket": "tranh",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "vn"
     },
     {
       "key": "bcm",
@@ -5395,7 +5417,8 @@ window.HDT_DATA = {
       ],
       "industry": "KCN & BĐS công nghiệp",
       "basket": "tranh",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "vn"
     },
     {
       "key": "vin",
@@ -5454,7 +5477,8 @@ window.HDT_DATA = {
       ],
       "industry": "Bất động sản",
       "basket": "tranh",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "vn"
     },
     {
       "key": "aapl",
@@ -5509,7 +5533,8 @@ window.HDT_DATA = {
       "cautionNote": "Đang bị kéo giữ chỉ số kiểu FOMO trap — có thể gap-up dọa trước khi gãy; chỉ đi 1/2 vị thế, không đòn bẩy.",
       "industry": "Công nghệ tiêu dùng",
       "basket": "ngan-han",
-      "tradeMode": "margin"
+      "tradeMode": "margin",
+      "region": "foreign"
     },
     {
       "key": "spacex",
@@ -5569,7 +5594,8 @@ window.HDT_DATA = {
       "cautionNote": "Biến động điên rồ, có thể kéo ngược mạnh — bắt buộc vị thế nhỏ, không bồi, không margin; giữ tới T1/2027.",
       "industry": "Hàng không vũ trụ",
       "basket": "ngan-han",
-      "tradeMode": "margin"
+      "tradeMode": "margin",
+      "region": "foreign"
     },
     {
       "key": "intc",
@@ -5639,7 +5665,8 @@ window.HDT_DATA = {
       "cautionNote": "Phần dễ đã ăn xong; các nhịp hồi \"loáng ngoáng\" có thể dí ngược 10%+ như giai đoạn đầu.",
       "industry": "Bán dẫn",
       "basket": "ngan-han",
-      "tradeMode": "margin"
+      "tradeMode": "margin",
+      "region": "foreign"
     },
     {
       "key": "mu",
@@ -5683,7 +5710,8 @@ window.HDT_DATA = {
       "cautionNote": "Mã \"dã man\" nhất: từng dí ngược 15–16% trước khi có quả ngọt — không margin mới sống sót.",
       "industry": "Bán dẫn",
       "basket": "ngan-han",
-      "tradeMode": "margin"
+      "tradeMode": "margin",
+      "region": "foreign"
     },
     {
       "key": "samsung",
@@ -5739,7 +5767,8 @@ window.HDT_DATA = {
       "cautionNote": "Hàn Quốc \"bạo phát bạo tàn\", giật ±8%/phiên — vị thế phải rất nhỏ, biến động cực lớn.",
       "industry": "Bán dẫn & Điện tử tiêu dùng",
       "basket": "ngan-han",
-      "tradeMode": "margin"
+      "tradeMode": "margin",
+      "region": "kr"
     },
     {
       "key": "spx",
@@ -5796,7 +5825,8 @@ window.HDT_DATA = {
       "cautionNote": "Chỉ số giật hai đầu trong phiên (-0,8% rồi +0,3%) quét vị thế — short cường độ cao kèm margin là chết trước khi đúng.",
       "industry": "Chỉ số",
       "basket": "ngan-han",
-      "tradeMode": "margin"
+      "tradeMode": "margin",
+      "region": "foreign"
     },
     {
       "key": "ndq",
@@ -5835,7 +5865,8 @@ window.HDT_DATA = {
       ],
       "industry": "Chỉ số",
       "basket": "ngan-han",
-      "tradeMode": "margin"
+      "tradeMode": "margin",
+      "region": "foreign"
     },
     {
       "key": "nikkei",
@@ -5876,7 +5907,8 @@ window.HDT_DATA = {
       ],
       "industry": "Chỉ số",
       "basket": "ngan-han",
-      "tradeMode": "margin"
+      "tradeMode": "margin",
+      "region": "jp"
     },
     {
       "key": "mrvl",
@@ -5916,7 +5948,8 @@ window.HDT_DATA = {
       ],
       "industry": "Bán dẫn",
       "basket": "ngan-han",
-      "tradeMode": "margin"
+      "tradeMode": "margin",
+      "region": "foreign"
     },
     {
       "key": "panw",
@@ -5957,7 +5990,8 @@ window.HDT_DATA = {
       ],
       "industry": "An ninh mạng",
       "basket": "ngan-han",
-      "tradeMode": "margin"
+      "tradeMode": "margin",
+      "region": "foreign"
     },
     {
       "key": "ftnt",
@@ -5997,7 +6031,8 @@ window.HDT_DATA = {
       ],
       "industry": "An ninh mạng",
       "basket": "ngan-han",
-      "tradeMode": "margin"
+      "tradeMode": "margin",
+      "region": "foreign"
     },
     {
       "key": "crwd",
@@ -6038,7 +6073,8 @@ window.HDT_DATA = {
       ],
       "industry": "An ninh mạng",
       "basket": "ngan-han",
-      "tradeMode": "margin"
+      "tradeMode": "margin",
+      "region": "foreign"
     },
     {
       "key": "amd",
@@ -6077,7 +6113,8 @@ window.HDT_DATA = {
       ],
       "industry": "Bán dẫn",
       "basket": "ngan-han",
-      "tradeMode": "margin"
+      "tradeMode": "margin",
+      "region": "foreign"
     },
     {
       "key": "nvda",
@@ -6117,7 +6154,8 @@ window.HDT_DATA = {
       ],
       "industry": "Bán dẫn",
       "basket": "tranh",
-      "tradeMode": "margin"
+      "tradeMode": "margin",
+      "region": "foreign"
     },
     {
       "key": "googl",
@@ -6162,7 +6200,8 @@ window.HDT_DATA = {
       ],
       "industry": "Công nghệ & Internet",
       "basket": "ngan-han",
-      "tradeMode": "margin"
+      "tradeMode": "margin",
+      "region": "foreign"
     },
     {
       "key": "nflx",
@@ -6202,7 +6241,8 @@ window.HDT_DATA = {
       ],
       "industry": "Truyền thông & Giải trí",
       "basket": "tranh",
-      "tradeMode": "margin"
+      "tradeMode": "margin",
+      "region": "foreign"
     },
     {
       "key": "dell",
@@ -6241,7 +6281,8 @@ window.HDT_DATA = {
       ],
       "industry": "Phần cứng CNTT",
       "basket": "tranh",
-      "tradeMode": "margin"
+      "tradeMode": "margin",
+      "region": "foreign"
     },
     {
       "key": "rtx",
@@ -6282,7 +6323,8 @@ window.HDT_DATA = {
       ],
       "industry": "Quốc phòng",
       "basket": "ngan-han",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "foreign"
     },
     {
       "key": "ads",
@@ -6322,7 +6364,8 @@ window.HDT_DATA = {
       ],
       "industry": "Tiêu dùng & Thời trang",
       "basket": "ngan-han",
-      "tradeMode": "spot"
+      "tradeMode": "spot",
+      "region": "foreign"
     },
     {
       "key": "gold",
@@ -6412,7 +6455,8 @@ window.HDT_DATA = {
       "cautionNote": "Nếu Fed tăng lãi T9 (82%) thì còn \"chân số 3\" về 3.600–3.700, thậm chí ~3.300; ngắn hạn có thể quét 3.890–3.900.",
       "industry": "Kim loại quý",
       "basket": "ngan-han",
-      "tradeMode": "margin"
+      "tradeMode": "margin",
+      "region": "commodity"
     },
     {
       "key": "oil",
@@ -6484,7 +6528,8 @@ window.HDT_DATA = {
       "cautionNote": "Phần hồi 43% đã đi qua; giá giờ phụ thuộc TIN TỨC nên biến động mạnh hai chiều — ông nghiêng kịch bản tích lũy quanh 92–100.",
       "industry": "Năng lượng",
       "basket": "ngan-han",
-      "tradeMode": "margin"
+      "tradeMode": "margin",
+      "region": "commodity"
     },
     {
       "key": "btc",
@@ -6566,7 +6611,8 @@ window.HDT_DATA = {
       "cautionNote": "Cấu trúc \"banana\" gãy, không còn câu chuyện thay thế tiền pháp định; Fed không hạ lãi — thiếu nhiên liệu tăng.",
       "industry": "Tiền điện tử",
       "basket": "tranh",
-      "tradeMode": "margin"
+      "tradeMode": "margin",
+      "region": "commodity"
     },
     {
       "key": "silver",
@@ -6607,7 +6653,8 @@ window.HDT_DATA = {
       ],
       "industry": "Kim loại quý",
       "basket": "ngan-han",
-      "tradeMode": "margin"
+      "tradeMode": "margin",
+      "region": "commodity"
     }
   ],
   "briefing": {

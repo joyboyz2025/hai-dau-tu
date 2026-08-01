@@ -216,6 +216,10 @@ window.HDT_DATA = {
               "sig": "down"
             },
             {
+              "label": "FTNT/PANW ↓ kèo short mới",
+              "sig": "down"
+            },
+            {
               "label": "VN ◷ hạ vùng chờ về 1.400–1.500",
               "sig": "wait"
             },
@@ -254,6 +258,12 @@ window.HDT_DATA = {
               "note": "\"Apple -10% sau mở cửa. Quả ngọt cuối cùng cũng tới.\" Kèo short Apple mở từ 04/07 (vùng 325–330) và được nhắc lại trong Tập 41 (30/07) đã về đích. Trước đó bài 28/07 đã đặt hạn: \"Có Apple thì chắc nó cũng không cố được lâu nữa. Cùng lắm tới 3/8 là cùng.\""
             },
             {
+              "tag": "Kèo mới mở rộng",
+              "value": "FTNT · PANW \"rồi cũng như Apple\"",
+              "signal": "down",
+              "note": "Bình luận Thái Phạm tự đăng dưới bài 31/07: \"Số phận của FTNt, Panw,... rồi cũng như apple thôi\". Đi kèm chỉ dẫn cho ai đã chốt nhóm cyber: \"mở mới đợi hồi lại rồi đánh tiếp\" — tức chờ nhịp hồi rồi mới vào short, không đuổi."
+            },
+            {
               "tag": "Bước tiếp theo với phần đã chốt",
               "value": "Đợi 2–4 tuần rồi short lại 1/2",
               "signal": "wait",
@@ -288,6 +298,20 @@ window.HDT_DATA = {
                 "Phần còn lại của kèo chips: \"đợi t2-4 tuần sau short lại 1/2 đã chốt\" — kịch bản vẫn là giảm tiếp, chỉ chờ giá short tốt hơn.",
                 "Nhóm Cyber được tách riêng: \"Cyber kiên trì nhé\" — không chốt, giữ nguyên.",
                 "Bài 28/07 đã ra hạn trước cho Apple: \"cùng lắm tới 3/8 là cùng\" — thực tế sập ngày 31/07, sớm hơn hạn."
+              ]
+            },
+            {
+              "title": "Ông trả lời trực tiếp dưới bài đăng — điều KHÔNG có ở comment video",
+              "signal": "down",
+              "sigLabel": "Thái Phạm tự trả lời · 6 lượt",
+              "para": "Khác hẳn phần bình luận video (0/206 comment được trả lời), dưới bài đăng cộng đồng Thái Phạm trả lời trực tiếp và rất ngắn gọn. Đây là nguồn duy nhất có ông xác nhận/bác bỏ từng vị thế cụ thể của hội viên.",
+              "bullets": [
+                "Bình luận ông tự đăng dưới bài 31/07 (5 like): \"Số phận của FTNt, Panw,... rồi cũng như apple thôi\" — mở rộng kèo short sang nhóm cyber security FTNT và PANW.",
+                "Hội viên: \"Cyber security em đã chốt. Có nên mở mới chưa ạ\" → ông đáp: \"mở mới đợi hồi lại rồi đánh tiếp\".",
+                "Hội viên: \"SP500 với US30 hồi khó chịu thế a nhỉ?\" → \"Nó như Intel trước đây trước khi rụng. Amd hay dell cũng vậy\" — tức coi nhịp hồi của chỉ số Mỹ là bẫy trước khi rơi.",
+                "Hội viên: \"Short apple 1/3 vị thế được không a\" → \"Ok\" (trả lời ngày 29/07, hai ngày trước khi Apple -10%).",
+                "Hội viên hỏi có nên dùng margin khi thị trường tạo đáy xong và có dấu hiệu đi lên → \"Ok. Có em nhe\".",
+                "Hội viên hỏi ngày 30/07 khi thị trường xanh hết: \"mình vẫn cần giữ vững tâm lý đúng không ông giáo\" → \"Tôi sẽ chia sẻ trong video tối nay nhé\" (nội dung nằm ở Tập 41)."
               ]
             },
             {
@@ -375,6 +399,24 @@ window.HDT_DATA = {
                   "stop": "—",
                   "sig": "up",
                   "tv": "NASDAQ:CIBR"
+                },
+                {
+                  "asset": "FTNT · PANW",
+                  "dir": "Short (chờ hồi)",
+                  "entry": "Đợi hồi lại rồi đánh tiếp",
+                  "target": "\"Rồi cũng như apple thôi\"",
+                  "stop": "Không đuổi giá",
+                  "sig": "down",
+                  "tv": "NASDAQ:FTNT"
+                },
+                {
+                  "asset": "S&P 500 · US30",
+                  "dir": "Giữ short",
+                  "entry": "Nhịp hồi hiện tại",
+                  "target": "\"Như Intel trước đây trước khi rụng\"",
+                  "stop": "—",
+                  "sig": "down",
+                  "tv": "SP:SPX"
                 }
               ]
             }
@@ -4280,6 +4322,14 @@ window.HDT_DATA = {
       "call": "AI stocks: đợi 2–4 tuần rồi short lại 1/2 đã chốt",
       "result": "pending",
       "note": "Sau khi chốt 1/2 nhóm chips ngày 29/07, ông giữ kịch bản giảm tiếp và chỉ chờ giá short tốt hơn. Riêng nhóm Cyber giữ nguyên: \"Cyber kiên trì nhé\". Hạn kiểm chứng: giữa đến cuối tháng 8/2026."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "31/07",
+      "asset": "CK Mỹ",
+      "call": "FTNT, PANW rồi cũng giảm như Apple — short khi hồi",
+      "result": "pending",
+      "note": "Bình luận ông tự đăng dưới bài đăng 31/07 (5 like). Kèm chỉ dẫn vào lệnh: \"mở mới đợi hồi lại rồi đánh tiếp\". Cùng luận điểm với câu trả lời về chỉ số: \"Nó như Intel trước đây trước khi rụng. Amd hay dell cũng vậy\"."
     }
   ],
   "actions": {
@@ -4423,6 +4473,14 @@ window.HDT_DATA = {
       }
     ],
     "waiting": [
+      {
+        "asset": "FTNT · PANW (cyber security)",
+        "dir": "CHỜ HỒI ĐỂ SHORT",
+        "sig": "down",
+        "expertId": "thai-pham",
+        "detail": "Thái Phạm trả lời dưới bài đăng 31/07: \"Số phận của FTNt, Panw,... rồi cũng như apple thôi\"; ai đã chốt nhóm cyber thì \"mở mới đợi hồi lại rồi đánh tiếp\" — chờ nhịp hồi, không đuổi giá.",
+        "level": "Vào lệnh khi hồi · chưa có mốc giá cụ thể"
+      },
       {
         "asset": "Tiền mặt VN",
         "dir": "CHỜ 1.400–1.500",
@@ -7126,7 +7184,7 @@ window.HDT_DATA = {
     }
   ],
   "briefing": {
-    "updated": "30/07/2026",
+    "updated": "02/08/2026",
     "expertId": "thai-pham",
     "episode": "Tập 40 · Tuần 30",
     "dateLabel": "26/07/2026",
@@ -7389,72 +7447,81 @@ window.HDT_DATA = {
       ]
     },
     "community": {
-      "title": "Hội viên hỏi gì dưới bài Thái Phạm",
-      "source": "65 bình luận hội viên dưới Tập 41 (30/07) + 141 bình luận 2 video công khai",
-      "disclaimer": "Đây là câu hỏi và thông tin của NGƯỜI XEM/HỘI VIÊN — không phải nhận định của chuyên gia. Thái Phạm KHÔNG trả lời trong phần bình luận (0/65 comment), nên phần \"Thái Phạm đã nói\" là quan điểm ông nêu trong chính video, ghép lại để tiện đối chiếu.",
+      "title": "Hỏi – đáp dưới bài đăng hội viên",
+      "source": "Bình luận 3 bài đăng cộng đồng 28–31/07 (131 + 119 + 56 lượt) · đọc trực tiếp bằng tài khoản hội viên",
+      "disclaimer": "Khác với phần bình luận video (ông KHÔNG trả lời — 0/206 comment đã kiểm), dưới BÀI ĐĂNG cộng đồng Thái Phạm có trả lời trực tiếp. Phần \"Thái Phạm đã nói\" dưới đây là câu trả lời nguyên văn của ông, trừ mục nào ghi rõ là đối chiếu từ video. Câu hỏi là của hội viên, không phải nhận định chuyên gia.",
       "items": [
         {
-          "q": "Có quyết định tăng tỷ lệ khấu trừ số dư tiền gửi có kỳ hạn của Kho bạc Nhà nước lên 50%, hiệu lực từ 1/8/2026 — tin vui cho BID, CTG, VCB.",
-          "who": "@nguyenphat1840 (hội viên)",
-          "likes": 0,
-          "status": "data",
-          "statusLabel": "Hội viên bổ sung chi tiết chính sách",
-          "a": "Khớp với tin CK 5 phút nhắc trong tổng kết 31/07 nhưng chưa nêu tên cụ thể: \"quyết định của Ngân hàng Nhà nước… hiểu đơn giản là chúng ta sẽ có thêm tiền\", và ba bank quốc doanh VCB/BID/CTG là nhóm hưởng lợi nhiều nhất — cả ba cùng chạy giá phiên 31/07. Đây là chi tiết hội viên bổ sung, chưa được chuyên gia nào xác nhận số liệu.",
-          "aSrc": "Đối chiếu CK 5 phút · 31/07"
-        },
-        {
-          "q": "Em đang cầm 80% hàng cho 5 mã DPM, DCM, BVB, BID, SCS thì có nên cơ cấu nâng tiền mặt lên không hay hold luôn ạ?",
-          "who": "@hoangviet6023 (hội viên)",
+          "q": "Cyber security em đã chốt. Có nên mở mới chưa ạ?",
+          "who": "@billyboy89mta (hội viên)",
           "likes": 0,
           "status": "answered",
-          "statusLabel": "Đã có quan điểm trong video",
-          "a": "Tập 41 trả lời rất rõ theo tỉ trọng: ai cầm 40–50% cổ phiếu thì KHÔNG phải làm gì, cứ cầm; ai cầm nhiều hơn 50% — nhất là 80–90% — thì khi Index hồi về vùng 1.800 BUỘC phải cơ cấu, bán bớt lấy tiền mặt chờ nhịp sau. Riêng DPM/DCM ông nói vùng này \"cứ mua và nắm giữ\".",
-          "aSrc": "Tập 41 · 30/07"
+          "statusLabel": "Thái Phạm trả lời trực tiếp",
+          "a": "\"mở mới đợi hồi lại rồi đánh tiếp\" — nguyên văn. Ghép với bình luận ông tự đăng hôm 31/07 (\"Số phận của FTNt, Panw,... rồi cũng như apple thôi\") thì chỉ dẫn đầy đủ là: giữ quan điểm giảm với nhóm cyber, nhưng chờ nhịp hồi mới vào lệnh chứ không đuổi giá.",
+          "aSrc": "Trả lời dưới bài đăng · 29/07"
         },
         {
-          "q": "Lãi suất ngân hàng đang cao 9,3%, giờ gửi tiết kiệm chờ thị trường hồi phục rồi vào lại có được không anh?",
-          "who": "@hoanglan9445 (hội viên)",
+          "q": "SP500 với US30 hồi khó chịu thế a nhỉ?",
+          "who": "@elvistran666 (hội viên)",
           "likes": 0,
-          "status": "partial",
-          "statusLabel": "Mới trả lời gián tiếp",
-          "a": "Con số 9,3% khớp với dữ kiện AzFin (#06): gửi tiết kiệm tới 9% ở một số ngân hàng là một trong ba nguyên nhân chính hút tiền khỏi chứng khoán. Thái Phạm chưa bàn trực tiếp chuyện chuyển sang gửi tiết kiệm, nhưng chiến lược của ông tương đương: giữ 60% tiền mặt và chỉ giải ngân khi Index về 1.600.",
-          "aSrc": "AzFin #06 · Tập 41"
+          "status": "answered",
+          "statusLabel": "Thái Phạm trả lời trực tiếp",
+          "a": "\"Nó như Intel trước đây trước khi rụng. Amd hay dell cũng vậy\" — nguyên văn. Tức ông đọc nhịp hồi của chỉ số Mỹ là bẫy trước khi rơi, giống mẫu hình Intel, AMD và Dell đã đi qua.",
+          "aSrc": "Trả lời dưới bài đăng · 29/07"
         },
         {
-          "q": "Vẫn nên tận dụng nhịp này để ra bớt hàng, 80% cash là hợp lý cho nhịp đáy sau.",
-          "who": "@LooAhGah (hội viên)",
+          "q": "Short apple 1/3 vị thế được không a?",
+          "who": "@thangleanh7553 (hội viên)",
+          "likes": 0,
+          "status": "answered",
+          "statusLabel": "Thái Phạm duyệt lệnh — \"Ok\"",
+          "a": "\"Ok\". Trả lời ngày 29/07, hai ngày trước khi Apple rơi 10% phiên 31/07. Cùng bài đăng đó ông cũng công bố tự gia tăng thêm 1/3 vị thế Apple.",
+          "aSrc": "Trả lời dưới bài đăng · 29/07"
+        },
+        {
+          "q": "Lúc thị trường tạo đáy xong và có dấu hiệu đi lên mình có nên dùng margin ko anh? BVB em cầm lâu rồi nhưng quyết định bán hòa vốn, sau đợt giảm này sẽ mua lại giá rẻ hơn.",
+          "who": "@Hung0118 (hội viên)",
+          "likes": 0,
+          "status": "answered",
+          "statusLabel": "Thái Phạm trả lời trực tiếp",
+          "a": "\"Ok. Có em nhe\" — tức chấp thuận dùng margin, nhưng ĐIỀU KIỆN nằm ở chính câu hỏi: chỉ khi thị trường đã tạo đáy xong VÀ có dấu hiệu đi lên. Ở thời điểm trả lời (28/07) ông vẫn đang bảo cả nhà cố thủ tiền mặt chờ 1.400–1.500.",
+          "aSrc": "Trả lời dưới bài đăng · 28/07"
+        },
+        {
+          "q": "Anh cho em hỏi trái phiếu VIC123029 đang có giá chào bán 103,47 và đáo hạn 14/9. Nếu mua lúc này thì lợi suất nhận được sẽ rơi vào tầm 3%/tháng đúng không ạ?",
+          "who": "@ToanNguyen-di4sd (hội viên)",
           "likes": 0,
           "status": "data",
-          "statusLabel": "Quan điểm hội viên — thận trọng hơn",
-          "a": "Thận trọng hơn cả Thái Phạm: ông chỉ yêu cầu cơ cấu về mức 40–50% cổ phiếu (tức 50–60% tiền), và chỉ khi Index hồi lên 1.800 mới cơ cấu, chứ không phải bán ngay ở vùng 1.744.",
+          "statusLabel": "Hội viên bổ sung dữ liệu thị trường",
+          "a": "Chưa được trả lời. Nhưng con số đáng lưu: trái phiếu VIC đáo hạn 14/9 đang chào ở mức hàm ý lợi suất ~3%/tháng — khớp với luận điểm \"VIC, VHM neo cao đáng sợ\" trong bài 28/07 và rủi ro call margin của nhóm doanh chủ.",
+          "aSrc": "Chưa có phản hồi · 31/07"
+        },
+        {
+          "q": "Apple quá kinh khủng, kết quả tốt hơn dự kiến mà vẫn bị bán — quả ngọt tới liền!",
+          "who": "@DinhTruongTR7 (hội viên)",
+          "likes": 3,
+          "status": "data",
+          "statusLabel": "Chi tiết quan trọng về phiên 31/07",
+          "a": "Đây là chi tiết bổ sung cho kèo Apple: cổ phiếu rơi 10% DÙ báo cáo tốt hơn dự kiến — tức thị trường bán vì định giá và dòng tiền chứ không vì kết quả kinh doanh. Cùng luận điểm ông nêu trong điểm tin 24/07 khi Alphabet giảm 7% dù doanh thu vượt kỳ vọng.",
+          "aSrc": "Đối chiếu bài đăng 24/07 + 31/07"
+        },
+        {
+          "q": "Thanks anh, BID rẻ hơn cả so với đáy 2020–2022–2025 luôn anh, thật đáng sợ.",
+          "who": "@Paladin-Real (hội viên)",
+          "likes": 0,
+          "status": "data",
+          "statusLabel": "Hội viên đối chiếu định giá",
+          "a": "Khớp hướng với quan điểm ông nêu trong Tập 41: BID đang ở vùng \"cực kỳ thấp — không bán\". Nhưng cũng minh hoạ đúng cảnh báo của bài 28/07: \"Đáy là một khái niệm khó dò dù nhiều cổ phiếu đã rất rẻ… rẻ có thể rẻ hơn.\"",
           "aSrc": "Đối chiếu Tập 41 · 30/07"
         },
         {
-          "q": "Anh nghĩ sao về vàng lên 6.000 vào cuối năm 2026?",
-          "who": "@flockfiles (video công khai)",
+          "q": "Em đang hold lệnh short CRWD (203) và Dell (437) có lời chút, có nên TP 50% rồi chờ đợi short mới Apple không ạ?",
+          "who": "@VoAnhTu2111 (hội viên)",
           "likes": 0,
-          "status": "answered",
-          "statusLabel": "Ngược quan điểm",
-          "a": "Ngược hẳn: Tập 41 giữ nguyên kịch bản vàng hồi kỹ thuật lên vùng 4.000 rồi tháng 9–10 có cú điều chỉnh sâu; trước đó ông nêu vùng đẹp dài hạn 3.600–3.700.",
-          "aSrc": "Tập 41 · 30/07 + video 24/07"
-        },
-        {
-          "q": "Tình hình vàng đang hoang mang, mọi người có mang vàng tích trữ ra bán không ạ?",
-          "who": "@congtony4438 (video công khai)",
-          "likes": 1,
-          "status": "answered",
-          "statusLabel": "Đã có quan điểm",
-          "a": "Không phải bán. SJC là doanh nghiệp nhà nước nên \"mua đâu bán đấy\", khác PNJ đang dính kim cương/vàng rởm. Chênh trong nước đã thu hẹp còn 8–9 triệu/lượng (từ 19–20 triệu) — chính là điều kiện mua vật chất ông từng đặt ra.",
-          "aSrc": "Tập 40 · 26/07"
-        },
-        {
-          "q": "Sắp tới lock-up lần 1, hơn 100 tỷ đô cổ phiếu chờ mở khoá tạo nguồn cung lớn — đáng ra giá phải giảm dần tới ngày lock-up, sao giá lại tăng?",
-          "who": "@trungnguyen_179 (hội viên)",
-          "likes": 0,
-          "status": "answered",
-          "statusLabel": "Đã có quan điểm",
-          "a": "Tập 41: SpaceX \"khả năng thời gian tới sẽ có những cái hồi phục TRƯỚC đợt giải lock-up lên khoảng 125\" — và đó chính là vùng ông chờ để short tiếp. Tức nhịp tăng trước lock-up là cơ hội bán/short chứ không mâu thuẫn với luận điểm cung tăng.",
-          "aSrc": "Tập 41 · 30/07"
+          "status": "unanswered",
+          "statusLabel": "Chưa trả lời — nhưng có đáp án trong bài",
+          "a": "Không được trả lời riêng, nhưng chính bài đăng 29/07 đã ra lệnh chung: chốt lời 1/2 toàn bộ nhóm AI chips (gồm Dell) và gia tăng Apple thêm 1/3. Tức đúng phương án hội viên này tự đề xuất.",
+          "aSrc": "Đối chiếu bài đăng 29/07"
         }
       ]
     }

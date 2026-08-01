@@ -5,7 +5,7 @@
 //          — giữ bài mới nhất + các bài hội viên gần nhất.
 // ─────────────────────────────────────────────────────────────────────────────
 window.HDT_DATA = {
-  "lastUpdated": "01/08/2026 · Mới nhất",
+  "lastUpdated": "02/08/2026 · Mới nhất",
   "pulse": [
     {
       "name": "CK Việt",
@@ -197,6 +197,189 @@ window.HDT_DATA = {
         "label2": "Cổ phiếu 40%"
       },
       "updates": [
+        {
+          "date": "2026-07-31",
+          "dateShort": "31/07",
+          "timeAgo": "1 ngày trước",
+          "tab": "Bài đăng · 24–31/07",
+          "sourceType": "member-post",
+          "typeLabel": "Bài đăng cộng đồng · 4 tút",
+          "title": "Chuỗi Tút Hội Viên 24–31/07: \"Quả Ngọt Cuối Cùng Cũng Tới\" — Chốt Lời Ai Chips & Apple, VN Cố Thủ Đợi 1.400–1.500",
+          "summary": "Bốn bài đăng liên tiếp trên kênh cộng đồng, viết ngay trong phiên nên cụ thể hơn hẳn video cuối tuần. Ngày 28/07 ông chốt lại chiến thuật VN: \"không thay đổi gì so với video chủ nhật cả, vẫn ngồi như cũ, đừng táy máy\" — và lần đầu hạ vùng chờ giải ngân xuống 1.400–1.500 (trước đó là 1.500–1.600), với bốn lý do khiến \"rẻ có thể rẻ hơn\": doanh chủ có thể bị call margin như DIG/PNJ, tâm lý, quỹ bán, và VIC–VHM neo cao đáng sợ. Cùng bài đó ông tuyên bố thị trường Mỹ–Hàn–Nhật \"anh em đã ăn đủ\" và đặt hạn cho Apple: \"cùng lắm tới 3/8 là cùng\". Đêm 29/07 (10h38 PM) ông ra lệnh chốt lời 1/2 toàn bộ nhóm AI chips — Dell, Marvell, AMD, Micron, SanDisk — sau phiên sáng giảm 8–11%, mô tả là \"vượt mong đợi\", đồng thời gia tăng thêm 1/3 vị thế Apple. Đến 31/07, Apple rơi 10% sau mở cửa: \"Quả ngọt cuối cùng cũng tới.\" Chỉ dẫn tiếp theo cho phần đã chốt: đợi 2–4 tuần rồi short lại 1/2, riêng nhóm Cyber thì \"kiên trì\". Bài 24/07 là bản điểm tin vĩ mô dài, ghi lại phiên Brent lần đầu vượt 100 USD kể từ 26/5 và lợi suất trái phiếu Mỹ 10 năm vọt lên 4,7% — cao nhất từ tháng 1/2025.",
+          "feedChips": [
+            {
+              "label": "Apple ↓ -10% — chốt lời, kèo đúng",
+              "sig": "down"
+            },
+            {
+              "label": "AI chips ↓ chốt 1/2 sau phiên -8..-11%",
+              "sig": "down"
+            },
+            {
+              "label": "VN ◷ hạ vùng chờ về 1.400–1.500",
+              "sig": "wait"
+            },
+            {
+              "label": "VIC/VHM ⚠ neo cao đáng sợ",
+              "sig": "warn"
+            },
+            {
+              "label": "Cyber ↑ kiên trì nắm giữ",
+              "sig": "up"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "Vùng chờ giải ngân VN",
+              "value": "Hạ xuống 1.400–1.500",
+              "signal": "wait",
+              "note": "Bài 28/07: \"Nên rẻ có thể rẻ hơn. Nên ta cố thủ đợi 1,400-1,500. Phải rất kỉ luật với số tiền còn lại để dành.\" Đây là lần đầu ông hạ vùng chờ khỏi mốc 1.500–1.600 nêu trong Tập 39 (23/07) và khác với mốc test 1.600 của Tập 41 — tức kịch bản xấu được nới rộng thêm một bậc."
+            },
+            {
+              "tag": "Bốn lý do \"rẻ có thể rẻ hơn\"",
+              "value": "Call margin · tâm lý · quỹ bán · VIC-VHM",
+              "signal": "warn",
+              "note": "Nguyên văn: (1) \"Nhiều doanh chủ có khả năng bị call margin thời gian tới như trường hợp của DIG hay PNJ\"; (2) tâm lý; (3) quỹ bán; (4) \"VIC, VHM neo cao đáng sợ\". Đáy vẫn là \"một khái niệm khó dò dù nhiều cổ phiếu đã rất rẻ\"."
+            },
+            {
+              "tag": "Lệnh chốt lời AI chips",
+              "value": "Chốt 1/2 Dell · Marvell · AMD · MU · SanDisk",
+              "signal": "down",
+              "note": "Đăng 10h38 PM ngày 29/07, dành cho hội viên nước ngoài: \"đầu phiên chốt lời 1/2 Dell, Marvell, Amd, Mu, sandisk,... Ai chips luôn nhé. Sáng giảm 8-11% thế này vượt mong đợi.\" Cùng lúc \"gia tăng Apple được thêm 1/3\"."
+            },
+            {
+              "tag": "Apple — chốt kèo",
+              "value": "-10% sau mở cửa 31/07",
+              "signal": "down",
+              "note": "\"Apple -10% sau mở cửa. Quả ngọt cuối cùng cũng tới.\" Kèo short Apple mở từ 04/07 (vùng 325–330) và được nhắc lại trong Tập 41 (30/07) đã về đích. Trước đó bài 28/07 đã đặt hạn: \"Có Apple thì chắc nó cũng không cố được lâu nữa. Cùng lắm tới 3/8 là cùng.\""
+            },
+            {
+              "tag": "Bước tiếp theo với phần đã chốt",
+              "value": "Đợi 2–4 tuần rồi short lại 1/2",
+              "signal": "wait",
+              "note": "\"Ai stocks đợi t2-4 tuần sau short lại 1/2 đã chốt\" — tức không đảo chiều sang mua, chỉ tạm hạ tỉ trọng short để lấy giá tốt hơn. Riêng nhóm Cyber: \"Cyber kiên trì nhé\" — giữ nguyên, không chốt."
+            },
+            {
+              "tag": "Vĩ mô 24/07",
+              "value": "Brent >100 USD · UST10Y 4,7%",
+              "signal": "warn",
+              "note": "Brent lần đầu vượt 100 USD kể từ 26/5 (đóng cửa ~100,7; WTI >92) do Houthi bắn tàu Saudi, lưu lượng qua Hormuz giảm 75%. Lợi suất trái phiếu Mỹ 10 năm lên 4,7% — cao nhất từ tháng 1/2025; xác suất Fed TĂNG lãi suất tháng 9 theo CME FedWatch nhảy từ 52% lên hơn 80% trong một tuần. Kết luận của ông: \"Điều này đương nhiên chẳng tốt cho chứng khoán hay vàng và Bitcoin.\""
+            }
+          ],
+          "sections": [
+            {
+              "title": "VN: ngồi yên, đừng táy máy — nhưng hạ vùng chờ",
+              "signal": "wait",
+              "sigLabel": "Bài 28/07 · 111 like · 131 bình luận",
+              "para": "Bài quan trọng nhất trong chuỗi. Ông khẳng định chiến thuật \"không thay đổi gì so với video chủ nhật cả. Vẫn ngồi như cũ, đừng táy máy\" — nhưng con số cụ thể thì đã đổi: vùng chờ giải ngân lùi từ 1.500–1.600 xuống 1.400–1.500, kèm yêu cầu kỷ luật với phần tiền mặt còn lại.",
+              "bullets": [
+                "Bốn lý do khiến \"rẻ có thể rẻ hơn\": call margin của doanh chủ (dẫn chính DIG và PNJ làm ví dụ), tâm lý thị trường, quỹ bán, và VIC–VHM neo cao.",
+                "\"Đáy là một khái niệm khó dò dù nhiều cổ phiếu đã rất rẻ\" — thừa nhận định giá rẻ nhưng từ chối coi đó là tín hiệu mua.",
+                "\"Phải rất kỉ luật với số tiền còn lại để dành\" — thông điệp gửi nhóm đã giải ngân sớm."
+              ]
+            },
+            {
+              "title": "Quốc tế: hái quả — chốt 1/2 chips, gom thêm Apple, rồi Apple sập 10%",
+              "signal": "down",
+              "sigLabel": "Bài 29/07 (10h38 PM) + 31/07",
+              "para": "Hai bài này ghi lại một chu kỳ kèo hoàn chỉnh trong ba ngày. Đêm 29/07 nhóm AI chips giảm 8–11% ngay phiên sáng — \"vượt mong đợi\" — ông ra lệnh chốt lời một nửa toàn bộ Dell, Marvell, AMD, Micron, SanDisk và dùng tiền gia tăng thêm 1/3 vị thế Apple. Hai ngày sau Apple rơi 10% sau mở cửa và ông đóng kèo với một câu: \"Quả ngọt cuối cùng cũng tới.\"",
+              "bullets": [
+                "Trình tự vị thế: short AI chips → chốt 1/2 khi -8..-11% → dồn sang Apple → Apple -10% → chốt.",
+                "Phần còn lại của kèo chips: \"đợi t2-4 tuần sau short lại 1/2 đã chốt\" — kịch bản vẫn là giảm tiếp, chỉ chờ giá short tốt hơn.",
+                "Nhóm Cyber được tách riêng: \"Cyber kiên trì nhé\" — không chốt, giữ nguyên.",
+                "Bài 28/07 đã ra hạn trước cho Apple: \"cùng lắm tới 3/8 là cùng\" — thực tế sập ngày 31/07, sớm hơn hạn."
+              ]
+            },
+            {
+              "title": "Điểm tin 24/07: dầu, lợi suất và cú \"cash burn\" của Alphabet–Tesla",
+              "signal": "warn",
+              "sigLabel": "Bài 24/07 · 86 like · 81 bình luận",
+              "para": "Bản điểm tin dài ông đăng lại trên kênh cộng đồng \"phòng ngừa một số hội viên không đọc được ở nền tảng MXH khác\". Phiên 23/07 là phiên hiếm hoi cả địa chính trị lẫn earnings công nghệ cùng đánh xuống một lúc.",
+              "bullets": [
+                "Địa chính trị: Houthi bắn hai tàu dầu Saudi ở Biển Đỏ, lưu lượng qua Hormuz giảm 75%; CENTCOM oanh tạc Iran đêm thứ 12 liên tiếp. Brent đóng ~100,7 USD, WTI >92, xăng Mỹ 4 USD/gallon.",
+                "Lãi suất: UST10Y 4,7% (cao nhất từ 1/2025); xác suất Fed tăng lãi suất T9 lên hơn 80% (từ 52% một tuần trước); Polymarket đặt 71% cho việc Fed tăng trong 2026. ECB giữ nguyên 2,25/2,40/2,65%, Deutsche Bank dự báo tăng lên 2,50% vào tháng 9. DXY 101,46 — đỉnh 40 năm so với yên.",
+                "Mỹ: Nasdaq -2,15% (25.137), S&P 500 -1,21% (7.408). Alphabet -7% do lần đầu trong lịch sử báo dòng tiền tự do ÂM 5,8 tỷ USD dù doanh thu 119,8 tỷ vượt kỳ vọng, capex AI cả năm nâng lên 195–205 tỷ. Tesla -14,5%, EPS 33 cent so với kỳ vọng 51 cent, biên gộp 16,8%. Intel +4% sau giờ (doanh thu +25%, nhanh nhất từ 2011). Quốc phòng ngược dòng: RTX +7,3%, Lockheed Martin +10,5%.",
+                "VN phiên 23/07: VN-Index +30,85đ (+1,85%) lên 1.699,38; BĐS +4,49% (VIC +5,89%, VHM +4,02%); khối ngoại bán ròng thu hẹp còn 443 tỷ. Tỷ giá trung tâm 25.272, USD tự do vượt 27.400. Liên ngân hàng: ON 4,10% (-1,11đ%), 1 tuần 4,54%, 1 tháng 7,07%. Tiết kiệm kỳ hạn dài tới 7,8%/năm.",
+                "Kết luận của ông về phiên hồi 23/07: \"đơn giản chỉ là một ngày quá bán thì thúc đẩy bắt đáy. Phục hồi kĩ thuật đơn thuần.\" Và câu chốt quen thuộc: \"Mùa đông thì đừng làm việc khó đem mầm hạt đi gieo.\""
+              ]
+            }
+          ],
+          "tradeLevels": [
+            {
+              "group": "Chứng khoán Việt Nam",
+              "items": [
+                {
+                  "asset": "VN-Index",
+                  "dir": "Cố thủ tiền mặt",
+                  "entry": "Chờ 1.400–1.500",
+                  "target": "Giải ngân khi về vùng này",
+                  "stop": "Đừng táy máy — ngồi như cũ",
+                  "sig": "wait",
+                  "tv": "HOSE:VNINDEX"
+                },
+                {
+                  "asset": "VIC · VHM",
+                  "dir": "Tránh",
+                  "entry": "—",
+                  "target": "—",
+                  "stop": "\"Neo cao đáng sợ\" — rủi ro kéo cả thị trường",
+                  "sig": "avoid",
+                  "tv": "HOSE:VIC"
+                },
+                {
+                  "asset": "DIG · PNJ",
+                  "dir": "Tránh",
+                  "entry": "—",
+                  "target": "—",
+                  "stop": "Ví dụ điển hình rủi ro call margin của doanh chủ",
+                  "sig": "avoid",
+                  "tv": "HOSE:DIG"
+                }
+              ]
+            },
+            {
+              "group": "Chứng khoán Mỹ (hội viên nước ngoài)",
+              "items": [
+                {
+                  "asset": "Apple",
+                  "dir": "Chốt lời short",
+                  "entry": "Đã gia tăng 1/3 ngày 29/07",
+                  "target": "ĐẠT: -10% ngày 31/07",
+                  "stop": "Hạn tự đặt: \"cùng lắm tới 3/8\"",
+                  "sig": "down",
+                  "tv": "NASDAQ:AAPL"
+                },
+                {
+                  "asset": "AMD · MU · Marvell",
+                  "dir": "Chốt 1/2",
+                  "entry": "Chốt đầu phiên 29/07",
+                  "target": "Short lại 1/2 sau 2–4 tuần",
+                  "stop": "Phiên sáng -8..-11% \"vượt mong đợi\"",
+                  "sig": "down",
+                  "tv": "NASDAQ:AMD"
+                },
+                {
+                  "asset": "Dell · SanDisk",
+                  "dir": "Chốt 1/2",
+                  "entry": "Chốt đầu phiên 29/07",
+                  "target": "Short lại 1/2 sau 2–4 tuần",
+                  "stop": "—",
+                  "sig": "down",
+                  "tv": "NYSE:DELL"
+                },
+                {
+                  "asset": "Nhóm Cyber",
+                  "dir": "Giữ nguyên",
+                  "entry": "Không chốt",
+                  "target": "\"Cyber kiên trì nhé\"",
+                  "stop": "—",
+                  "sig": "up",
+                  "tv": "NASDAQ:CIBR"
+                }
+              ]
+            }
+          ]
+        },
         {
           "date": "2026-07-30",
           "dateShort": "30/07",
@@ -2030,273 +2213,6 @@ window.HDT_DATA = {
               "para": "Áp lực tỷ giá và nước ngoài bán ròng, kiều hối bù đắp phần nào. Lãi suất VND cao → không có dòng tiền đầu cơ, phải đánh chắc: cơ hội 8–10% ăn nhanh, còn lại nắm dài chờ \"gió đông\" (giữa 2027, dẫn dắt bởi ngân hàng và chứng khoán). Chỉ số tháng 7 có thể bị VIC/VHM đè về 1.750–1.763, thậm chí 1.573 — nhưng đừng để chỉ số ép bán hàng của mình."
             }
           ]
-        },
-        {
-          "date": "2026-06-20",
-          "dateShort": "20/06",
-          "timeAgo": "Tháng trước",
-          "tab": "Tập 33 · Tuần 25",
-          "sourceType": "member-video",
-          "typeLabel": "Video hội viên · Tập 33",
-          "title": "Tập 33 (Hội Viên): Vàng, Bitcoin, Chứng Khoán Tuần 25 — Các Vấn Đề Cần Lưu Ý",
-          "summary": "Danh mục hội viên giữ 70% cổ phiếu / 30% tiền. Dầu neo cao đến hết T10 (thiên long nhẹ, không short). Fed có thể tăng lãi T9 (67%) do lạm phát chip → AI/SpaceX/Intel sẽ chỉnh. Vàng gãy nặng, nếu Fed tăng lãi về ~3.000; Bitcoin chờ short 69–71k, dài hạn về 47–50k. CK Việt: kẹt thanh khoản (LDR 115%) — giữ bank trụ, TCX, phân bón (DCM/DPM), SCS, VNM.",
-          "tradeLevels": [
-            {
-              "group": "Dầu",
-              "items": [
-                {
-                  "asset": "Dầu",
-                  "dir": "Long nhẹ",
-                  "entry": "Vùng này (không short)",
-                  "target": "Có thể test 90",
-                  "stop": "",
-                  "sig": "up",
-                  "tv": "TVC:USOIL"
-                }
-              ]
-            },
-            {
-              "group": "Vàng & Bạc",
-              "items": [
-                {
-                  "asset": "Vàng",
-                  "dir": "Chờ",
-                  "entry": "Tích lũy lại",
-                  "target": "",
-                  "stop": "Nếu Fed tăng lãi về ~3.000",
-                  "sig": "wait",
-                  "tv": "OANDA:XAUUSD"
-                },
-                {
-                  "asset": "Bạc",
-                  "dir": "Chờ",
-                  "entry": "",
-                  "target": "",
-                  "stop": "Nếu tăng lãi về 48–50 (−20%)",
-                  "sig": "wait",
-                  "tv": "OANDA:XAGUSD"
-                }
-              ]
-            },
-            {
-              "group": "Bitcoin & Crypto",
-              "items": [
-                {
-                  "asset": "Bitcoin",
-                  "dir": "Short",
-                  "entry": "69–71k (đỉnh đám mây)",
-                  "target": "Dài hạn 47–50k (cực đoan 30k)",
-                  "stop": "",
-                  "sig": "down",
-                  "tv": "BINANCE:BTCUSDT"
-                }
-              ]
-            },
-            {
-              "group": "Chứng khoán Mỹ",
-              "items": [
-                {
-                  "asset": "SpaceX",
-                  "dir": "Short",
-                  "entry": "Giữ short",
-                  "target": "Về ~100",
-                  "stop": "",
-                  "sig": "down"
-                },
-                {
-                  "asset": "Apple",
-                  "dir": "Tránh",
-                  "entry": "Có thể test 250",
-                  "target": "",
-                  "stop": "",
-                  "sig": "down",
-                  "tv": "NASDAQ:AAPL"
-                },
-                {
-                  "asset": "Google",
-                  "dir": "Mua",
-                  "entry": "Test lại 335–340",
-                  "target": "",
-                  "stop": "",
-                  "sig": "up",
-                  "tv": "NASDAQ:GOOGL"
-                },
-                {
-                  "asset": "Intel",
-                  "dir": "Tránh",
-                  "entry": "Up & ra hàng",
-                  "target": "",
-                  "stop": "",
-                  "sig": "down",
-                  "tv": "NASDAQ:INTC"
-                },
-                {
-                  "asset": "Nvidia",
-                  "dir": "Giữ",
-                  "entry": "Giữ là hay",
-                  "target": "",
-                  "stop": "",
-                  "sig": "wait",
-                  "tv": "NASDAQ:NVDA"
-                }
-              ]
-            },
-            {
-              "group": "Nhật & Hàn",
-              "items": [
-                {
-                  "asset": "Samsung",
-                  "dir": "Tránh",
-                  "entry": "Đừng mua — hận ngàn thu",
-                  "target": "",
-                  "stop": "",
-                  "sig": "down",
-                  "tv": "KRX:005930"
-                }
-              ]
-            },
-            {
-              "group": "Chứng khoán Việt Nam",
-              "items": [
-                {
-                  "asset": "TCX",
-                  "dir": "Mua",
-                  "entry": "40–41",
-                  "target": "VN30 T1/2027",
-                  "stop": "",
-                  "sig": "up",
-                  "tv": "HOSE:TCX"
-                },
-                {
-                  "asset": "DCM",
-                  "dir": "Mua",
-                  "entry": "Giữ 3/4 vị thế, tăng 1/4",
-                  "target": "Cuối năm",
-                  "stop": "",
-                  "sig": "up",
-                  "tv": "HOSE:DCM"
-                },
-                {
-                  "asset": "VNM",
-                  "dir": "Mua",
-                  "entry": "~60",
-                  "target": "",
-                  "stop": "Cắt lỗ nếu về 50",
-                  "sig": "up",
-                  "tv": "HOSE:VNM"
-                },
-                {
-                  "asset": "VCB",
-                  "dir": "Giữ",
-                  "entry": "Nắm 57–61 dài hạn",
-                  "target": "",
-                  "stop": "",
-                  "sig": "wait",
-                  "tv": "HOSE:VCB"
-                },
-                {
-                  "asset": "SCS",
-                  "dir": "Giữ",
-                  "entry": "Cầm 2–3 năm",
-                  "target": "",
-                  "stop": "",
-                  "sig": "wait",
-                  "tv": "HOSE:SCS"
-                },
-                {
-                  "asset": "SSI",
-                  "dir": "Chờ",
-                  "entry": "Vùng 27 vẫn đắt",
-                  "target": "",
-                  "stop": "",
-                  "sig": "wait",
-                  "tv": "HOSE:SSI"
-                }
-              ]
-            }
-          ],
-          "feedChips": [
-            {
-              "label": "Danh mục ↑ 70% cổ phiếu",
-              "sig": "up"
-            },
-            {
-              "label": "Vàng ↓ về ~3.000 nếu tăng lãi",
-              "sig": "down"
-            },
-            {
-              "label": "BTC ↓ short 69–71k",
-              "sig": "down"
-            },
-            {
-              "label": "AI ↓ SpaceX/Intel chỉnh",
-              "sig": "down"
-            }
-          ],
-          "keyCalls": [
-            {
-              "tag": "Danh mục VN",
-              "value": "70% cổ phiếu / 30% tiền",
-              "signal": "up",
-              "note": "Giữ tỷ trọng 70/30. Tuần này tăng thêm 1/4 vị thế phân bón (đang giữ 3/4 DCM/DPM), mua mới VNM."
-            },
-            {
-              "tag": "Vàng",
-              "value": "Về ~3.000 nếu Fed tăng lãi",
-              "signal": "down",
-              "note": "Vàng gãy chen nặng, tích lũy lại. Chênh trong nước cao ~11 triệu/lượng — mua dần hàng uy tín được, vùng 180–190 nên chốt."
-            },
-            {
-              "tag": "Bitcoin",
-              "value": "Short 69–71k · DH về 47–50k",
-              "signal": "down",
-              "note": "Chưa phải năm của BTC. Đặt mốc short 69–71k (đỉnh đám mây), không short lưng chừng. Dài hạn về 50k, kịch bản cực đoan 30k."
-            },
-            {
-              "tag": "CK Mỹ",
-              "value": "AI/SpaceX/Intel chỉnh",
-              "signal": "down",
-              "note": "S&P +20%/Nasdaq +34% từ đáy, margin kỷ lục. SpaceX về ~100, Intel là cú \"mua tay trái bán tay phải\". Apple có thể test 250."
-            }
-          ],
-          "sections": [
-            {
-              "title": "Địa chính trị & Giá dầu",
-              "signal": "wait",
-              "sigLabel": "Neo cao đến hết T10 — long nhẹ, không short",
-              "para": "Trump ký MU đình chiến 60 ngày với Iran tại G7 → dầu điều chỉnh về 76–80. Nhưng 20/6 IRGC lại đóng eo biển Hormuz (Israel tiếp tục tấn công Nam Liban); đàm phán chuyển sang Ai Cập 21/6 (trung gian Pakistan/Saudi/Turkey). Dự trữ chiến lược thiếu → khó để dầu giảm sâu về 65; kịch bản có thể test 90.",
-              "bullets": [
-                "Israel mới là bên chi phối — chính phủ Mỹ nhiệm kỳ này khá yếu thế.",
-                "Thiên về mua/long nhẹ vùng này, short dầu rất nguy hiểm.",
-                "Vùng giá trị neo đến khoảng hết tháng 10."
-              ]
-            },
-            {
-              "title": "Vĩ mô Fed & Chứng khoán Mỹ",
-              "signal": "down",
-              "sigLabel": "Diều hâu — tăng lãi T9 ~67%",
-              "para": "Kevin Warsh nhấn mạnh ổn định giá cả 12 lần, bỏ forward guidance — \"găng tay nhung bọc nắm đấm thép\". Lợi suất TP Mỹ 2 năm tăng vọt, 10 năm 4,45%. Lạm phát chip/bộ nhớ (Apple tăng giá iPhone) giữ PCE cao → xác suất tăng lãi T9 ~67%. Nếu tăng lãi, S&P test lại đỉnh cũ tháng 1, AI phải trả giá.",
-              "bullets": [
-                "SpaceX 218→170, đáng giá <135, nhiều người cược về 100 — hình 3 đỉnh ra hàng.",
-                "Intel: cớ \"cung chip Apple\" là linh tinh (MacBook dùng chip M) — up & ra hàng, tăng 3 lần từ đầu năm.",
-                "Apple có thể test 250 (Tim Cook rời 10/2026); Nvidia giống FPT khó lên, giữ là hay; Google test 335–340 mua được.",
-                "Hàn (Kospi)/Nhật (Nikkei) 2–3 đỉnh sẽ chỉnh mạnh; Samsung đừng mua vùng này."
-              ]
-            },
-            {
-              "title": "Vàng, Bạc & Bitcoin",
-              "signal": "down",
-              "sigLabel": "Chờ — nhạy với quyết định Fed",
-              "para": "Vàng gãy chen nặng, tích lũy lại; nếu Fed tăng lãi hoàn toàn có thể về ~3.000 (Thái Phạm là người dự báo vàng về 3.900–4.000 từ sớm). Bạc tệ hơn, nếu tăng lãi về 48–50 (mất thêm ~20%). Bitcoin chưa phải năm của nó — \"banana\" lần ba chưa hình thành xong.",
-              "levels": "Vàng: tích lũy, rủi ro về ~3.000 nếu tăng lãi · Bạc: 48–50 · BTC short: 69–71k, DH về 47–50k (cực đoan 30k)"
-            },
-            {
-              "title": "Danh mục Chứng khoán Việt Nam",
-              "signal": "up",
-              "sigLabel": "Giữ 70% cổ phiếu — bank trụ + TCX + phân bón",
-              "para": "Vấn đề chính là siết thanh khoản nhà nước (LDR 115%, huy động chậm hơn tín dụng). Chỉ ~28–29% mã uptrend, từ 15/6 một số mã mới nhích lên. Giữ kỷ luật, \"tà tà kiếm cơm\", chờ tín dụng nở lại."
-            }
-          ]
         }
       ],
       "sources": [
@@ -3842,8 +3758,8 @@ window.HDT_DATA = {
       "date": "04/07",
       "asset": "CK Mỹ",
       "call": "Apple điều chỉnh — short 325–330",
-      "result": "pending",
-      "note": "Tập 41: chờ Apple giật lên ~350 sau báo cáo để khớp nốt lệnh short; nếu báo cáo xấu thì \"đục luôn về 310\"."
+      "result": "hit",
+      "note": "Về đích 31/07: Apple -10% sau mở cửa. Ông tự đóng kèo trên bài đăng hội viên — \"Quả ngọt cuối cùng cũng tới.\" Trước đó ngày 29/07 còn gia tăng thêm 1/3 vị thế."
     },
     {
       "expert": "thai-pham",
@@ -4026,8 +3942,8 @@ window.HDT_DATA = {
       "date": "30/07",
       "asset": "CK Mỹ",
       "call": "Nhóm phòng thủ/y tế/Apple đang hút tiền rồi cũng sẽ điều chỉnh — biến động xấu kéo dài tới kỳ họp T9–T10",
-      "result": "pending",
-      "note": "Nasdaq đã về 27.000 từ đỉnh ~30.600; dòng tiền xoay vòng chỉ là \"sự lòng vòng\" trước đợt chỉnh sau."
+      "result": "hit",
+      "note": "Đúng chỉ sau 1 phiên: Apple -10% ngày 31/07. Bài 28/07 ông đã đặt hạn \"cùng lắm tới 3/8 là cùng\" — thực tế đến sớm hơn hạn 3 ngày."
     },
     {
       "expert": "thai-pham",
@@ -4340,11 +4256,51 @@ window.HDT_DATA = {
       "call": "Dabaco sau khởi tố sẽ giảm nhưng KHÔNG sàn như PNJ",
       "result": "pending",
       "note": "Bản chất vụ việc khác (tai nạn lao động vs pháp lý doanh nghiệp); \"khởi tố đúng quy trình\". Kiểm chứng phiên 3/8."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "29/07",
+      "asset": "CK Mỹ",
+      "call": "Short AI chips (Dell, Marvell, AMD, MU, SanDisk) — chốt lời 1/2",
+      "result": "hit",
+      "note": "Bài đăng 10h38 PM 29/07: nhóm này giảm 8–11% ngay phiên sáng, ông mô tả \"vượt mong đợi\" và ra lệnh chốt một nửa. Kèo short bán dẫn/AI mở từ tuần trước."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "28/07",
+      "asset": "CK Việt",
+      "call": "Hạ vùng chờ giải ngân xuống 1.400–1.500 (từ 1.500–1.600)",
+      "result": "pending",
+      "note": "\"Rẻ có thể rẻ hơn. Nên ta cố thủ đợi 1,400-1,500.\" Bốn lý do: call margin doanh chủ (DIG, PNJ), tâm lý, quỹ bán, VIC–VHM neo cao. VN-Index đóng cửa tuần quanh 1.744 — còn cách vùng chờ rất xa."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "31/07",
+      "asset": "CK Mỹ",
+      "call": "AI stocks: đợi 2–4 tuần rồi short lại 1/2 đã chốt",
+      "result": "pending",
+      "note": "Sau khi chốt 1/2 nhóm chips ngày 29/07, ông giữ kịch bản giảm tiếp và chỉ chờ giá short tốt hơn. Riêng nhóm Cyber giữ nguyên: \"Cyber kiên trì nhé\". Hạn kiểm chứng: giữa đến cuối tháng 8/2026."
     }
   ],
   "actions": {
     "updated": "01/08/2026",
     "now": [
+      {
+        "asset": "AI chips (AMD · MU · Marvell · Dell · SanDisk)",
+        "dir": "CHỐT 1/2",
+        "sig": "down",
+        "expertId": "thai-pham",
+        "detail": "Chốt lời một nửa vị thế short đầu phiên 29/07 sau khi nhóm này giảm 8–11% (\"vượt mong đợi\"). Phần còn lại: đợi 2–4 tuần rồi short lại. Nhóm Cyber không chốt — \"kiên trì\".",
+        "level": "Chốt 1/2 · short lại sau 2–4 tuần"
+      },
+      {
+        "asset": "Apple (AAPL)",
+        "dir": "ĐÃ CHỐT LỜI",
+        "sig": "down",
+        "expertId": "thai-pham",
+        "detail": "Kèo short mở từ 04/07 vùng 325–330, gia tăng thêm 1/3 ngày 29/07, đóng ngày 31/07 khi Apple -10% sau mở cửa. Thái Phạm: \"Quả ngọt cuối cùng cũng tới.\"",
+        "level": "Đạt mục tiêu · bài đăng hội viên 31/07"
+      },
       {
         "asset": "Danh mục VN",
         "dir": "CƠ CẤU NẾU >50%",
@@ -4467,6 +4423,14 @@ window.HDT_DATA = {
       }
     ],
     "waiting": [
+      {
+        "asset": "Tiền mặt VN",
+        "dir": "CHỜ 1.400–1.500",
+        "sig": "wait",
+        "expertId": "thai-pham",
+        "detail": "Bài 28/07 hạ vùng chờ giải ngân từ 1.500–1.600 xuống 1.400–1.500. \"Phải rất kỉ luật với số tiền còn lại để dành.\" Lý do rẻ có thể rẻ hơn: call margin doanh chủ (DIG, PNJ), tâm lý, quỹ bán, VIC–VHM neo cao.",
+        "level": "VN-Index 1.744 — còn xa vùng chờ"
+      },
       {
         "asset": "FPT",
         "trigger": "Hồi kỹ thuật 77–78",

@@ -51,7 +51,12 @@ Mỗi lần update: sửa stance/orders theo transcript mới (lệnh khớp m�
 
 ## Gotchas
 - Browser cache data.js: đã fix bằng header no-cache trong vercel.json; local dev vẫn nên cache-bust `?v=`.
-- Video hội viên Platinum: yt-dlp dùng `--cookies-from-browser chrome` — Chrome phải đang login tài khoản có gói hội viên đủ cấp.
+- **Video hội viên Platinum → PHẢI dùng `--cookies-from-browser "chrome:Profile 90"`** (tìm ra 01/08 sau khi dò cả 82 profile Chrome trên máy). Profile `Default` KHÔNG có gói hội viên → yt-dlp báo "available to this channel's members on level: HỘI VIÊN PLATINUM". `get_transcript.py` và `scan_channels.py` hiện hardcode `chrome` (= Default) nên **tự chạy yt-dlp thủ công với Profile 90** cho video hội viên:
+  `yt-dlp --cookies-from-browser "chrome:Profile 90" --write-sub --write-auto-sub --sub-lang vi --sub-format vtt --skip-download -o "/tmp/t/%(id)s" <url>` rồi tự parse VTT → JSON (bỏ dòng timestamp/số/WEBVTT, khử trùng lặp dòng).
+  Comment hội viên cũng lấy được bằng profile này: thêm `--write-comments --write-info-json --extractor-args "youtube:comment_sort=top;max_comments=200,all,200,50"`.
+  Nếu sau này lại lỗi: dò lại profile bằng vòng lặp qua `ls ~/Library/Application\ Support/Google/Chrome/ | grep -E "^(Default|Profile [0-9]+)$"` — profile đúng sẽ in được tiêu đề video thay vì báo members-only.
+- **Thái Phạm KHÔNG trả lời trong phần bình luận** (kiểm chứng 01/08: 0/65 comment Tập 41, 0/141 comment 2 video công khai). Giá trị của comment nằm ở: hội viên bổ sung chi tiết chính sách (vd quyết định tăng tỷ lệ khấu trừ tiền gửi KBNN lên 50% hiệu lực 1/8/2026), số liệu thực tế (lãi suất gửi 9,3%), và lộ ra danh mục + tỉ trọng thật của cộng đồng — dùng cho `briefing.community`, KHÔNG trộn vào `experts[].updates`.
+- Bài đăng cộng đồng (`youtube.com/post/...`): toàn bộ link trong Excel trả 404 (kiểm 28/07 và 01/08, cả có lẫn không cookie) — coi như nguồn không dùng được cho tới khi user gửi link còn sống.
 - Không tải được video stream của video hội viên (403) — chỉ transcript. Đừng thử vẽ/chụp TradingView tự động (đã thử, quá mong manh) — dùng chart embed có sẵn.
 - `scExpert`, `callsExpert`, `assetKey`, `q`, `chartSym`, `tkView`, `tkIndustry`, `tkBasket` là state filter trong renderVals — thêm state mới nhớ khai báo trong constructor.
 - **Mọi biến tính trong renderVals phải được thêm vào `return {...}` cuối hàm mới lộ ra template** — quên bước này thì `{{ }}`/`sc-for` âm thầm render rỗng, KHÔNG báo lỗi console (đã dính bug này khi thêm `tkViewChips`/`tkBasketChips` 30/07 — luôn grep tên biến mới trong khối return để xác nhận trước khi verify browser).

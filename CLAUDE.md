@@ -19,6 +19,17 @@ vercel.json            # rewrites + Cache-Control no-cache cho data.js
 
 `HDT_DATA` gồm: `lastUpdated`, `pulse[]`, `weekly{}`, `assetCards[]`, `experts{id: {…, updates[], sources[]}}`, `scorecard[]`.
 
+**4 kênh đang theo dõi** (`experts` là data-driven, thêm kênh chỉ cần thêm key + sửa chữ "N chuyên gia" ở 2 chỗ trong HTML):
+| id | kênh | nội dung | nhịp |
+|---|---|---|---|
+| `thai-pham` | @ThaiPhamOfficialVN | Vĩ mô – địa chính trị, hành động danh mục, CK Mỹ/Hàn/Nhật | Video hội viên hàng tuần + bài đăng cộng đồng |
+| `azfin` | AzFin Vietnam | Đầu tư giá trị, tư duy và nguyên tắc phân bổ | ~2 bài/tuần |
+| `ck-5-phut` | Chứng khoán 5 phút | Nhận định phiên/tuần, thanh khoản, tín hiệu | gần như hàng ngày |
+| `quang-dung` | @DauTuChungKhoanCungQuangDung (148K sub, thêm 02/08) | **Định giá doanh nghiệp theo ngành + đọc chính sách vĩ mô** — bóc báo cáo tài chính, không dùng đồ thị | 2–4 bài/tháng, mỗi bài 35–55 phút |
+
+- Quang Dũng có phụ đề `vi-orig` đầy đủ; auto-caption sai số lẻ (có đoạn "3.800 → 64.400 tỷ" mâu thuẫn với "3.200 → 4.600 tỷ" cùng một ý) → **chỉ lấy con số xuất hiện nhất quán ít nhất hai lần**.
+- Đã cân nhắc và LOẠI @unicorninvest01 (02/08): không phải vì trùng CK 5 phút (thực tế hai bên bất đồng về margin), mà vì gần như không có kèo chấm được (một video 20 phút chỉ có đúng một mốc số) và transcript nhiễu nặng (Fed→"phé", margin→"côn mơ zin"). Nếu user đổi ý thì thêm ở dạng "góc nhìn đối chiếu", không ép ra kèo.
+
 ## LUẬT BẤT DI BẤT DỊCH
 1. **Chỉ dựng nội dung từ transcript thật** — KHÔNG BAO GIỜ bịa nhận định từ tiêu đề video. Không có transcript → hỏi user hoặc bỏ qua.
 2. **Giữ 7 bài mới nhất/kênh**; riêng Thái Phạm ưu tiên bài HỘI VIÊN (`sourceType` bắt đầu bằng `member`): giữ bài mới nhất + các bài member gần nhất. Sources cũng ~7.

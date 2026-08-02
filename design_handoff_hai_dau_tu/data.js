@@ -3624,6 +3624,755 @@ window.HDT_DATA = {
           "meta": "Video công khai · Chứng khoán 5 phút"
         }
       ]
+    },
+    "quang-dung": {
+      "initials": "QD",
+      "name": "Quang Dũng",
+      "avatarSrc": null,
+      "bio": "Định giá doanh nghiệp theo ngành và đọc chính sách vĩ mô. Xuất phát từ báo cáo tài chính chứ không từ đồ thị — \"sau cổ phiếu là doanh nghiệp\". Có phòng phân tích (CKG) hậu thuẫn. Kênh 148K người đăng ký.",
+      "sourceLabel": "YouTube · Video công khai",
+      "sourceChips": [
+        "▶ Video công khai",
+        "Tần suất: 2–4 bài/tháng",
+        "⌗ Phân tích báo cáo tài chính"
+      ],
+      "gauge": {
+        "title": "Quan điểm thị trường VN",
+        "badge": "Tích sản",
+        "badgeBg": "oklch(0.95 0.04 150)",
+        "badgeColor": "oklch(0.42 0.1 150)",
+        "bar1": 20,
+        "bar2": 80,
+        "label1": "Chờ 20%",
+        "label2": "Giải ngân dần 80%"
+      },
+      "updates": [
+        {
+          "date": "2026-08-01",
+          "dateShort": "01/08",
+          "timeAgo": "1 ngày trước",
+          "tab": "HPG · Quý 2/2026",
+          "sourceType": "public-video",
+          "typeLabel": "Phân tích doanh nghiệp · 43 phút",
+          "title": "Hòa Phát Quý 2/2026: Lợi Nhuận +50,6% Nhờ Dung Quất 2 — \"Giảm Mạnh Là Mua Mạnh\"",
+          "summary": "Bóc báo cáo quý 2/2026 của Hòa Phát để trả lời một câu hỏi: cổ phiếu từ 27.000 về 20.000 thì nên cắt lỗ hay mua thêm? Lợi nhuận sau thuế 6.400 tỷ, cùng kỳ 4.200 tỷ, tăng 50,6%; doanh thu 55.570 tỷ (+55%, cùng kỳ 36.200 tỷ) với hơn 90% đến từ thép. Ông nhấn mạnh quý 2 THUYẾT PHỤC HƠN quý 1 dù quý 1 lãi 9.000 tỷ — vì hơn 50% con số quý 1 đến từ doanh thu tài chính và chuyển nhượng đất (gần 6.000 tỷ), tức lợi nhuận đột biến phải loại ra khi phân tích. Động lực thật nằm ở bảng cân đối: tài sản dở dang tụt từ 72.821 tỷ (quý 2/2025) xuống 14.620 tỷ, trong khi tài sản cố định hữu hình nhảy từ 65.120 tỷ lên 132.000 tỷ — tức trong một năm đưa vào vận hành 70.000 tỷ tài sản cố định, chính là Dung Quất giai đoạn 2. Ông gọi đây là \"điểm chuyển\": công suất từ 8,9 lên đỉnh 14,5 triệu tấn thép/năm. Sản lượng quý 2 đạt 3,65 triệu tấn (+28%), riêng HRC 1,92 triệu tấn (+76%, cùng kỳ 1,09 triệu) — HRC từ 655.000 tấn cuối 2024 lên 1,9 triệu tấn, nhân ba trong một năm rưỡi, cho thấy Dung Quất 2 đã chạy ít nhất 75% công suất. Nhưng ông cũng nói thẳng phần thiếu: chu kỳ này chỉ có \"địa lợi\" (nội lực doanh nghiệp) mà thiếu \"thiên thời\" (giá thép), nên đừng kỳ vọng lặp lại mức tăng 5 lần của 2019–2021.",
+          "feedChips": [
+            {
+              "label": "HPG ↑ LNST +50,6%, Dung Quất 2 chạy 75%",
+              "sig": "up"
+            },
+            {
+              "label": "Biên gộp ⚠ 19% vì giá HRC đi ngang",
+              "sig": "warn"
+            },
+            {
+              "label": "Q3–Q4 ↑ dự báo tăng trưởng 40–60%",
+              "sig": "up"
+            },
+            {
+              "label": "Chiến lược ↑ giảm mạnh mua mạnh, không margin",
+              "sig": "up"
+            },
+            {
+              "label": "NKG/HSG ⚠ tỉ suất 2,5 năm chỉ 7% và 26%",
+              "sig": "warn"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "Kết quả quý 2/2026",
+              "value": "LNST 6.400 tỷ · +50,6%",
+              "signal": "up",
+              "note": "Cùng kỳ 4.200 tỷ. Doanh thu 55.570 tỷ, +55% so với 36.200 tỷ. Lợi nhuận gộp 10.487 tỷ (cùng kỳ 6.589 tỷ), +60% — tăng nhanh hơn doanh thu, tức hiệu quả kinh doanh cải thiện."
+            },
+            {
+              "tag": "Vì sao quý 2 hơn quý 1",
+              "value": "Quý 1 lãi 9.000 tỷ nhưng >50% là đột biến",
+              "signal": "warn",
+              "note": "Gần 6.000 tỷ trong quý 1 đến từ doanh thu hoạt động tài chính và ghi nhận chuyển nhượng đất. \"Khi phân tích hoạt động kinh doanh chính thì phải bỏ ra những báo cáo về lợi nhuận đột biến\" — nên 6.400 tỷ của quý 2 mới là con số thật."
+            },
+            {
+              "tag": "Điểm chuyển",
+              "value": "Đưa vào 70.000 tỷ tài sản cố định trong 1 năm",
+              "signal": "up",
+              "note": "Tài sản dở dang 72.821 → 14.620 tỷ; tài sản cố định hữu hình 65.120 → 132.000 tỷ. Đây là Dung Quất giai đoạn 2. Công suất từ 8,9 lên đỉnh 14,5 triệu tấn/năm — quy mô gần gấp đôi chính nó."
+            },
+            {
+              "tag": "Động lực sản lượng",
+              "value": "HRC +76% — nhân 3 trong 1,5 năm",
+              "signal": "up",
+              "note": "Tổng sản lượng quý 2: 3,65 triệu tấn (+28%, cùng kỳ 2,86). Riêng HRC 1,92 triệu tấn so với 1,09 triệu cùng kỳ. HRC từ 655.000 tấn cuối 2024 lên 1,9 triệu tấn/quý. Nhân 4 quý ≈ 8 triệu tấn/năm trên tổng công suất 8,6 triệu → Dung Quất 2 đã chạy ≥75%. Thép xây dựng thì chỉ tăng lèo tèo 1–18%."
+            },
+            {
+              "tag": "Điểm yếu",
+              "value": "Biên gộp 19% — thiếu \"thiên thời\"",
+              "signal": "warn",
+              "note": "Biên gộp 19%, cải thiện từ 13,9% của quý 4/2025 nhưng còn xa mức 30% thời hoàng kim. Giá bán một tấn thép từ ~12,8 lên gần 16 triệu. Ông nói rõ: nếu giá HRC cũng tăng như thép xây dựng thì biên phải 25–30% và tăng trưởng lợi nhuận sẽ là 100% chứ không phải 50%. Chi phí lãi vay tăng gấp đôi, 900 → 1.900 tỷ, nên lợi nhuận thuần chỉ +44%."
+            },
+            {
+              "tag": "Dự báo",
+              "value": "Q3–Q4 tăng trưởng 40–60%, cả năm giữ 50%",
+              "signal": "up",
+              "note": "\"Chặng đường phía trước ít nhất từ 2 cho đến 4 quý tới thì doanh nghiệp này vẫn hoàn toàn có thể ghi nhận những con số tăng trưởng tốt\", dựa vào sản lượng tăng và nền giá thép thấp. Nếu giá thép đi lên thì con số còn cao hơn."
+            },
+            {
+              "tag": "Chiến lược hành động",
+              "value": "Giảm mạnh mua mạnh · KHÔNG margin",
+              "signal": "up",
+              "note": "Nguyên văn: \"Giảm nhẹ thì tôi mua ít, giảm mạnh thì tôi mua nhiều, giảm càng mạnh thì tôi càng mua. Phân bổ nó ra, không nhìn chart, không đoán đáy, không margin, tích sản cổ phiếu có hoạt động bền vững, có lợi thế cạnh tranh với những mức chiết khấu đủ rẻ.\""
+            }
+          ],
+          "sections": [
+            {
+              "title": "Cách ông đọc một báo cáo: tìm nguyên nhân, không đọc con số",
+              "signal": "up",
+              "sigLabel": "Phương pháp — bắt đầu từ bảng cân đối",
+              "para": "Thay vì dừng ở \"lợi nhuận tăng 50%\", ông truy ngược: doanh thu tăng 55% → do sản lượng hay do giá? → sản lượng tăng do đâu? → do tài sản cố định mới vận hành. Chuỗi này dẫn thẳng tới Dung Quất 2 và cho phép dự phóng 2–4 quý tới.",
+              "bullets": [
+                "Nguyên tắc: \"Khi đi phân tích báo cáo kinh doanh, phải biết động lực tăng trưởng dựa vào đâu — thì mới biết con số đẹp đó có tiếp tục đẹp hay không.\"",
+                "Với doanh nghiệp sản xuất, hai khoản mục quyết định là tài sản cố định và tài sản dở dang: dở dang là tài sản chuẩn bị hình thành, cố định là kết quả của dở dang.",
+                "Chỉ phân tích mảng chính: hơn 90% doanh thu Hòa Phát đến từ thép, nên \"không cần phân tích nông nghiệp, container hay khu công nghiệp Hòa Phát\" trong tầm nhìn 1 năm.",
+                "Ông tự nhắc lại lời hứa cũ: cuối 2025 khi lợi nhuận HPG mới 3.800 tỷ/quý, ông nói trong 2026 sẽ có quý trên 6.000 tỷ — quý 2/2026 đạt 6.400 tỷ."
+              ]
+            },
+            {
+              "title": "Chu kỳ này khác 2019–2021: có địa lợi, thiếu thiên thời",
+              "signal": "warn",
+              "sigLabel": "Cảnh báo kỳ vọng",
+              "para": "Ông chủ động dập kỳ vọng lặp lại quá khứ. Giai đoạn 2019–2021, Dung Quất 1 đẩy công suất từ 2,5 lên 8 triệu tấn (nhân 3,5 lần) VÀ giá thép được ngành hậu thuẫn — cổ phiếu tăng 5 lần trong 2 năm. Chu kỳ 2024–2026 chỉ có nội lực doanh nghiệp, giá thép đi ngang, nên 2,5 năm mới tăng 2 lần.",
+              "bullets": [
+                "\"Siêu cổ phiếu phải đến từ hai yếu tố: chất lượng doanh nghiệp tốt VÀ ngành được hậu thuẫn bởi vĩ mô.\" Hiện Hòa Phát chỉ có yếu tố thứ nhất.",
+                "Không có sóng ngành thì không có \"sóng dòng\" — nên đừng chờ nhịp tăng dựng đứng theo ngành.",
+                "Đối chiếu 2,5 năm qua trong ngành thép: Nam Kim 7%, Hoa Sen 26%, Hòa Phát 92% (tính sau một cú đổ vỡ) — trước đó có thời điểm đạt 120–130%.",
+                "Triết lý chọn cổ phiếu: ưu tiên doanh nghiệp tăng QUY MÔ (nằm trong tầm phân tích được) hơn là doanh nghiệp hưởng lợi từ GIÁ BÁN tăng (phụ thuộc yếu tố không kiểm soát được, như đặt cược giá dầu từ 65 lên 100 đô)."
+              ]
+            },
+            {
+              "title": "Lý lẽ cho việc mua khi giá giảm: giá trị nhân đôi, giá cả giảm 30%",
+              "signal": "up",
+              "sigLabel": "Luận điểm định giá",
+              "para": "Đây là phần trả lời câu hỏi mở đầu. Ông so trực tiếp cùng một mức giá ở hai thời điểm để cho thấy biên kỳ vọng đã nới ra.",
+              "bullets": [
+                "HPG giá 20.000 hiện nay tương ứng lợi nhuận 6.000 tỷ; cũng giá 20.000 năm 2024 chỉ tương ứng 2.800 tỷ.",
+                "Nhà đầu tư vào ở vùng 27, giá về 20 (giảm ~30%) trong khi lợi nhuận đi từ 3.200 lên 4.600 tỷ — \"giá trị nhân đôi, giá cả giảm 30%\" thì biên kỳ vọng tương lai phải cao hơn.",
+                "Ông dẫn thêm VPB làm ví dụ song song: cùng thời điểm lợi nhuận 4.900 tỷ khi giá 38.000; nay lợi nhuận 8.700 tỷ mà giá về 26.",
+                "\"Giá cả có thể không tăng nhưng giá trị vẫn cứ tiếp tục tăng thì đến một thời điểm nào đó trong tương lai giá cả nó phải bắt kịp giá trị.\""
+              ]
+            }
+          ],
+          "tradeLevels": [
+            {
+              "group": "Cổ phiếu thép",
+              "items": [
+                {
+                  "asset": "HPG",
+                  "dir": "Tích sản – mua khi giảm",
+                  "entry": "Vùng 20 hiện tại",
+                  "target": "Q3–Q4 tăng trưởng 40–60%",
+                  "stop": "Không margin, không đoán đáy",
+                  "sig": "up",
+                  "tv": "HOSE:HPG"
+                },
+                {
+                  "asset": "NKG · HSG",
+                  "dir": "Kém hơn HPG",
+                  "entry": "—",
+                  "target": "—",
+                  "stop": "Tỉ suất 2,5 năm chỉ 7% và 26% so với HPG 92%",
+                  "sig": "warn",
+                  "tv": "HOSE:NKG"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "date": "2026-07-18",
+          "dateShort": "18/07",
+          "timeAgo": "2 tuần trước",
+          "tab": "VPB · Quý 2/2026",
+          "sourceType": "public-video",
+          "typeLabel": "Phân tích doanh nghiệp · 54 phút",
+          "title": "VPBank Quý 2/2026: 11.000 Tỷ Lợi Nhuận — Bơm Ra Nền Kinh Tế Bằng Cả 30 Năm Trước Đó",
+          "summary": "Phân tích quý 2/2026 của VPBank: lợi nhuận trước thuế 10.959 tỷ (cùng kỳ 6.214 tỷ), lợi nhuận sau thuế 8.775 tỷ (cùng kỳ 4.937 tỷ) — gần gấp đôi. Ông tách tổng thu nhập hoạt động 23.483 tỷ thành ba chân: thu nhập lãi thuần 17.937 tỷ (76,5%), dịch vụ 3.490 tỷ (14,8%), hoạt động khác 2.231 tỷ (9,5%) — một chân chiếm trên 70% thì đó là mô hình kinh doanh chính, các mảng nhỏ dù tăng gấp đôi cũng không đổi được bức tranh. Con số gây choáng nhất nằm ở quy mô tín dụng: dư nợ 1,14 triệu tỷ so với 811.000 tỷ cùng kỳ và 926.000 tỷ đầu năm — tăng 23% trong nửa đầu năm khi toàn ngành chỉ 7,73%, và khoảng 40% so với cùng kỳ. Ông quy ra: trong một năm ngân hàng này đưa ra nền kinh tế 400.000 tỷ, đúng bằng tổng quy mô cho vay của chính nó tích lũy suốt 30 năm trước đó. Bối cảnh: VPB, MBB, HDBank có kế hoạch tăng trưởng tín dụng 36% năm nay, gấp đôi phần còn lại — gắn với mục tiêu GDP hai con số.",
+          "feedChips": [
+            {
+              "label": "VPB ↑ LNTT 10.959 tỷ, gần gấp đôi",
+              "sig": "up"
+            },
+            {
+              "label": "Tín dụng ↑ +23% nửa đầu năm vs ngành 7,73%",
+              "sig": "up"
+            },
+            {
+              "label": "Nợ xấu ↑ giảm từ 3,6% về 3,17%",
+              "sig": "up"
+            },
+            {
+              "label": "Rủi ro ⚠ nợ xấu gấp 3–4 lần VCB/ACB",
+              "sig": "warn"
+            },
+            {
+              "label": "VPB/MBB/HDB ↑ kế hoạch tín dụng 36%",
+              "sig": "up"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "Kết quả quý 2/2026",
+              "value": "LNTT 10.959 tỷ · LNST 8.775 tỷ",
+              "signal": "up",
+              "note": "Cùng kỳ lần lượt 6.214 tỷ và 4.937 tỷ — gần gấp đôi. Một trong những doanh nghiệp có lợi nhuận một quý lớn nhất thị trường. Riêng khối ngân hàng mẹ ghi nhận tăng trưởng 76% lợi nhuận trước thuế và 72% sau thuế."
+            },
+            {
+              "tag": "Cấu trúc doanh thu",
+              "value": "Thu nhập lãi thuần chiếm 76,5%",
+              "signal": "up",
+              "note": "Tổng thu nhập hoạt động 23.483 tỷ (cùng kỳ 16.336 tỷ): lãi thuần 17.937 tỷ, dịch vụ 3.490 tỷ (14,8%), khác 2.231 tỷ (9,5%). Nguyên tắc ông đưa ra: khi một chân chiếm trên 70% thì đó là mô hình chính — mảng nhỏ dù tăng gấp đôi cũng không đổi bức tranh tổng thể."
+            },
+            {
+              "tag": "Quy mô tín dụng",
+              "value": "1,14 triệu tỷ — bơm 400.000 tỷ trong 1 năm",
+              "signal": "up",
+              "note": "Dư nợ 1,14 triệu tỷ so với 811.000 tỷ cùng kỳ và 926.000 tỷ đầu năm: +23% trong nửa đầu năm trong khi toàn ngành 7,73%. So sánh gây choáng của ông: 400.000 tỷ bơm ra trong một năm đúng bằng tổng dư nợ VPBank tích lũy trong 30 năm trước đó."
+            },
+            {
+              "tag": "Chất lượng tài sản",
+              "value": "Nợ xấu 3,6% → 3,17%",
+              "signal": "warn",
+              "note": "Nợ xấu có cải thiện nhưng vẫn gấp 3–4 lần nhóm VCB, ACB (khoảng 1%). Chi phí dự phòng rủi ro tín dụng 7.900 tỷ, cùng kỳ 5.900 tỷ, tăng 2.000 tỷ (+33%). Huy động tiền gửi có kỳ hạn 639.000 tỷ (+19%), nhưng tiền gửi không kỳ hạn tăng trưởng âm so với đầu năm."
+            },
+            {
+              "tag": "Bối cảnh ngành",
+              "value": "VPB · MBB · HDB đặt kế hoạch tín dụng 36%",
+              "signal": "up",
+              "note": "Gấp đôi các ngân hàng còn lại. Gắn với mục tiêu GDP 10% năm 2026 và trên hai con số cho giai đoạn 2026–2030. Bối cảnh: 2025 là năm tăng trưởng GDP cao nhất từ trước tới nay (8%) và tăng trưởng tín dụng tốt nhất 5 năm (19,1%)."
+            },
+            {
+              "tag": "Định giá",
+              "value": "Lợi nhuận nhân 4 từ 2018, giá về vùng cũ",
+              "signal": "up",
+              "note": "Lợi nhuận một quý 2018 là 2.400 tỷ, nay 8.700 tỷ. Chuỗi giá trị đi lên liên tục: 3.900 → 4.900 → 6.300 → gần 9.000 tỷ. Trong khi giá cổ phiếu từ 38 về 26. Chu kỳ trước cổ phiếu từng đi từ 18 lên 38, tức gần 100%."
+            }
+          ],
+          "sections": [
+            {
+              "title": "Vấn đề ông đặt ra: thị trường đang thiếu niềm tin, không thiếu tiền",
+              "signal": "warn",
+              "sigLabel": "Bối cảnh — 1 năm thị trường không hiệu quả",
+              "para": "Mở đầu không nói về VPBank mà nói về nghịch lý ông quan sát được: doanh nghiệp có báo cáo tốt và cấu trúc tài chính lành mạnh lại không mang hiệu quả cho nhà đầu tư, trong khi doanh nghiệp bị đánh giá rủi ro nhất lại cho hiệu suất tốt nhất.",
+              "bullets": [
+                "\"Giới hạn chịu đựng của một nhà đầu tư có thể chỉ là 3 tháng và 6 tháng\" — mà sự không hiệu quả này đã gần 1 năm.",
+                "Lập trường của ông: \"Niềm tin không được xây dựng bằng cảm xúc mà được xây dựng bằng các con số\" — nên mùa báo cáo kết quả kinh doanh là nơi ông tập trung nhất.",
+                "Ông kỳ vọng điểm đảo chiều của nhiều cổ phiếu sẽ diễn ra trong hoặc sau tháng 7/2026."
+              ]
+            },
+            {
+              "title": "Sức hấp thụ tín dụng đến từ đâu",
+              "signal": "up",
+              "sigLabel": "Bóc tách dòng chảy 400.000 tỷ",
+              "para": "Ông đặt câu hỏi ngược: nền kinh tế phải khỏe cỡ nào mới hấp thụ nổi mức giải ngân 35–40%/năm của riêng một ngân hàng. Câu trả lời ông đưa ra là dòng vốn gắn với định hướng chính phủ.",
+              "bullets": [
+                "Doanh thu từ cho vay tăng 55% nhưng lợi nhuận từ cho vay chỉ tăng 33% — chênh lệch nằm ở chi phí vốn và dự phòng.",
+                "Thu nhập lãi thuần 19.973 tỷ so với 13.451 tỷ cùng kỳ, tăng 33,6%. Hiệu quả kinh doanh trên tài sản đạt 2,62%, cao hơn nhiều so với các thời điểm trước.",
+                "Một số phân khúc bùng nổ: cho vay dịch vụ gia đình quý 2 tăng 108% trong khi cả 6 tháng chỉ 16,5%.",
+                "Tổng tài sản/dư nợ 1,16 triệu tỷ tại 30/6/2026 so với 943.000 tỷ — chạy thêm hơn 200.000 tỷ chỉ trong nửa đầu năm."
+              ]
+            }
+          ],
+          "tradeLevels": [
+            {
+              "group": "Cổ phiếu ngân hàng",
+              "items": [
+                {
+                  "asset": "VPB",
+                  "dir": "Định giá hấp dẫn",
+                  "entry": "Vùng 26",
+                  "target": "Lợi nhuận nhân 4 từ 2018, giá về vùng cũ",
+                  "stop": "Nợ xấu 3,17% — gấp 3–4 lần VCB/ACB",
+                  "sig": "up",
+                  "tv": "HOSE:VPB"
+                },
+                {
+                  "asset": "MBB · HDB",
+                  "dir": "Cùng nhóm tăng tốc",
+                  "entry": "—",
+                  "target": "Kế hoạch tín dụng 36% — gấp đôi phần còn lại",
+                  "stop": "—",
+                  "sig": "up",
+                  "tv": "HOSE:MBB"
+                },
+                {
+                  "asset": "VCB · ACB",
+                  "dir": "An toàn hơn",
+                  "entry": "—",
+                  "target": "—",
+                  "stop": "Nợ xấu chỉ ~1%, dùng làm mốc đối chiếu",
+                  "sig": "wait",
+                  "tv": "HOSE:VCB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "date": "2026-07-04",
+          "dateShort": "04/07",
+          "timeAgo": "4 tuần trước",
+          "tab": "Vĩ mô · Tháng 7",
+          "sourceType": "public-video",
+          "typeLabel": "Phân tích vĩ mô · 45 phút",
+          "title": "Vĩ Mô Tháng 7: Nửa Đầu Năm Là \"Kiểm Soát\", Nửa Cuối Là \"Nới Lỏng\"",
+          "summary": "Bài định khung cho cả nửa cuối năm. Luận điểm trung tâm: ý chí chính phủ nửa đầu 2026 là KIỂM SOÁT (ổn định vĩ mô, ghìm lạm phát), nửa cuối chuyển sang NỚI LỎNG — và tháng 7 chính là điểm chuyển. Bằng chứng ông đưa ra là thống kê: tháng 6/2026 là tháng có nhiều thông tư, văn bản, nghị định nhất nửa đầu năm, mục đích để thực thi ngay từ ngày đầu quý 3. Số liệu hậu thuẫn: lạm phát đã hạ từ đỉnh 5,6% về 4,7% (mục tiêu chính phủ 4,5%); giải ngân đầu tư công chỉ tăng thêm 10% riêng trong tháng 5–6 sau khi 3 tháng đầu năm mới đạt 11,2%; tỷ lệ tiền gửi có kỳ hạn của Kho bạc Nhà nước được tính vào huy động nâng từ 0% lên 20%. Kết luận hành động: không nên bỏ qua nhóm tài chính (ngân hàng, chứng khoán) trong chu kỳ 6 tháng cuối năm, sau đó mới đến nhóm hưởng lợi gián tiếp là đầu tư công, bất động sản, bán lẻ.",
+          "feedChips": [
+            {
+              "label": "Tháng 7 ◷ điểm chuyển kiểm soát → nới lỏng",
+              "sig": "wait"
+            },
+            {
+              "label": "Lạm phát ↑ hạ từ 5,6% về 4,7%",
+              "sig": "up"
+            },
+            {
+              "label": "Ngân hàng/chứng khoán ↑ ưu tiên số 1 nửa cuối năm",
+              "sig": "up"
+            },
+            {
+              "label": "Đầu tư công ↑ hưởng lợi gián tiếp",
+              "sig": "up"
+            },
+            {
+              "label": "KBNN ↑ tỉ lệ tính vào huy động 0% → 20%",
+              "sig": "up"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "Khung phân tích",
+              "value": "Nửa đầu KIỂM SOÁT · nửa cuối NỚI LỎNG",
+              "signal": "wait",
+              "note": "Nguyên tắc ông nêu: chính phủ phải cân giữa tăng trưởng kinh tế và ổn định vĩ mô, hai thứ không thể diễn ra cùng lúc. Nửa đầu 2026 ưu tiên ổn định vì môi trường bất ổn bởi biến số vĩ mô bên ngoài; nửa cuối buộc phải đổi sang nới lỏng để đạt mục tiêu tăng trưởng."
+            },
+            {
+              "tag": "Bằng chứng điểm chuyển",
+              "value": "Tháng 6 nhiều văn bản nhất nửa đầu năm",
+              "signal": "up",
+              "note": "\"Mục đích để ngày mùng 1 tháng 7 là ngày đầu tiên của quý 3 thì thực thi những định hướng và chính sách đó.\" Ông cũng lưu ý tháng 7 trong các chu kỳ trước thường là thời điểm nhạy cảm, nơi điểm đảo chiều từ chu kỳ giảm sang tăng có thể xảy ra."
+            },
+            {
+              "tag": "Lạm phát",
+              "value": "Đỉnh 5,6% → 4,7% (mục tiêu 4,5%)",
+              "signal": "up",
+              "note": "Đỉnh lạm phát rơi vào tháng có cuộc chiến Mỹ–Iran đẩy giá năng lượng; trước đó tháng 2 giá năng lượng còn -3,2%. Nay đã hạ nhiệt, tiệm cận mục tiêu 4,5% của chính phủ."
+            },
+            {
+              "tag": "Đầu tư công",
+              "value": "Tăng thêm 10% chỉ trong tháng 5–6",
+              "signal": "up",
+              "note": "3 tháng đầu năm tiến độ giải ngân chỉ 11,2%; riêng từ tháng 5 sang tháng 6 đã tăng thêm 10%. Mức nền còn thấp nên phải tiếp tục đẩy mạnh trong 6 tháng cuối năm."
+            },
+            {
+              "tag": "Cơ chế bơm vốn",
+              "value": "Tiền gửi KBNN tính vào huy động: 0% → 20%",
+              "signal": "up",
+              "note": "Sửa nghị định/thông tư để ngân hàng được tính 20% tiền gửi có kỳ hạn của Kho bạc Nhà nước vào huy động, giải bài toán vốn. Trước đây tỉ lệ này là 0%."
+            },
+            {
+              "tag": "Thứ tự ưu tiên ngành",
+              "value": "Tài chính trước — rồi mới lan sang phần còn lại",
+              "signal": "up",
+              "note": "\"Gần như các anh chị không nên bỏ qua thị trường tài chính và cổ phiếu tài chính trong chu kỳ của 6 tháng cuối năm.\" Bằng chứng: loạt ngân hàng nhỏ (MSB, OCB, TPBank, ACB, An Bình) tăng vốn mạnh, nhóm chứng khoán có kế hoạch tăng vốn cuối 2026 — dùng thị trường vốn làm đòn bẩy giải bài toán cung tiền. Sau đó mới đến đầu tư công, bất động sản, bán lẻ."
+            }
+          ],
+          "sections": [
+            {
+              "title": "Sức khỏe nền kinh tế qua các con số nửa đầu năm",
+              "signal": "warn",
+              "sigLabel": "Bức tranh còn yếu",
+              "para": "Trước khi kết luận về nới lỏng, ông điểm lại vì sao nửa đầu năm \"đầu không xuôi\".",
+              "bullets": [
+                "Tăng trưởng xuất khẩu có những thời điểm âm tới -20%.",
+                "Tăng trưởng bán lẻ danh nghĩa 13,7% — trừ đi lạm phát thì thực chất chỉ còn khoảng 6–7%, tuy vậy ông đánh giá con số thực 9% sau lạm phát vẫn là mức cao.",
+                "Cung tiền năm 2024 từng âm; giai đoạn hiện tại cung tiền được đẩy ra với lưu lượng lớn hơn hẳn.",
+                "Tỷ giá USD/VND dự báo vẫn nằm trong biên độ cho phép 2–3% cả năm."
+              ]
+            }
+          ],
+          "tradeLevels": [
+            {
+              "group": "Phân bổ ngành nửa cuối 2026",
+              "items": [
+                {
+                  "asset": "Ngân hàng · Chứng khoán",
+                  "dir": "Ưu tiên 1",
+                  "entry": "Chu kỳ 6 tháng cuối năm",
+                  "target": "Thị trường vốn là đòn bẩy giải bài toán cung tiền",
+                  "stop": "—",
+                  "sig": "up",
+                  "tv": "HOSE:SSI"
+                },
+                {
+                  "asset": "Đầu tư công · BĐS · Bán lẻ",
+                  "dir": "Ưu tiên 2",
+                  "entry": "Sau nhóm tài chính",
+                  "target": "Hưởng lợi gián tiếp từ nới lỏng",
+                  "stop": "—",
+                  "sig": "up",
+                  "tv": "HOSE:VHM"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "date": "2026-06-30",
+          "dateShort": "30/06",
+          "timeAgo": "1 tháng trước",
+          "tab": "Nghị quyết 168",
+          "sourceType": "public-video",
+          "typeLabel": "Phân tích chính sách · 47 phút",
+          "title": "Nghị Quyết 168: Đi Tìm Lời Giải Cho GDP 11,9% Nửa Cuối Năm",
+          "summary": "GDP 6 tháng đầu năm chỉ đạt hơn 8,7%, nên để cả năm chạm 10% thì nửa cuối phải tăng 11,9% — ông gọi thẳng đây là \"bài toán quá khó\". Bài này bóc Nghị quyết 168 để xem chính phủ định giải bằng cách nào. Ba nút thắt của nửa đầu năm: giải ngân đầu tư công 5 tháng mới đạt 21,6% trên kế hoạch 50% (tức mới đi 1/4 chặng đường khi năm đã qua một nửa); tăng trưởng tín dụng tháng 4–5 chỉ khoảng 4,1%; mặt bằng lãi suất tăng và phần lớn ngân hàng đã chạm trần tỉ lệ an toàn. Lời giải trong nghị quyết: gắn đầu tư công với mục tiêu tăng trưởng hai con số cả nhiệm kỳ 2026–2030, nâng tỉ trọng thu nội địa từ 86–87% lên 87–88%, chi đầu tư phát triển 40%, và yêu cầu giải ngân đầu tư công đạt 100% kế hoạch được giao. Mấu chốt với thị trường nằm ở kênh ngân hàng: tỉ lệ tiền gửi có kỳ hạn của Kho bạc Nhà nước được tính vào huy động — từng được nâng lên 50% thời khủng hoảng bất động sản, về 0% đầu 2026, nay nới lại 20% kèm dòng \"hoặc tỷ lệ khác do Thống đốc quyết định tùy từng thời kỳ\".",
+          "feedChips": [
+            {
+              "label": "GDP ⚠ nửa cuối phải tăng 11,9% — \"quá khó\"",
+              "sig": "warn"
+            },
+            {
+              "label": "Đầu tư công ⚠ 5 tháng mới 21,6%/50%",
+              "sig": "warn"
+            },
+            {
+              "label": "KBNN ↑ nới lại 20%, có cửa lên tiếp",
+              "sig": "up"
+            },
+            {
+              "label": "Ngân hàng ↑ mấu chốt khơi thông",
+              "sig": "up"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "Bài toán",
+              "value": "Nửa cuối phải tăng 11,9% GDP",
+              "signal": "warn",
+              "note": "6 tháng đầu năm chỉ đạt hơn 8,7% (khoảng 8,5–8,7%). \"Bài toán 10% thì nó đã là khó rồi, thì bài toán gần 12% thì nó lại là một bài toán còn quá khó hơn rất nhiều.\""
+            },
+            {
+              "tag": "Nút thắt 1 — đầu tư công",
+              "value": "5 tháng đạt 21,6% trên kế hoạch 50%",
+              "signal": "warn",
+              "note": "Mới đi được 1/4 chặng đường trong khi năm đã qua một nửa. Nghị quyết 168 đặt yêu cầu giải ngân đạt 100% kế hoạch được giao và chi cho đầu tư phát triển chiếm 40%."
+            },
+            {
+              "tag": "Nút thắt 2 — tín dụng và lãi suất",
+              "value": "Tăng trưởng tín dụng T4–T5 chỉ ~4,1%",
+              "signal": "warn",
+              "note": "Con số này chỉ phù hợp nếu kế hoạch GDP là 7%. Đồng thời mặt bằng lãi suất có xu hướng tăng và đa phần ngân hàng đã chạm trần tỉ lệ an toàn — nên tín dụng không đóng được vai trò bệ đỡ trong nửa đầu năm."
+            },
+            {
+              "tag": "Mấu chốt khơi thông",
+              "value": "Tiền gửi KBNN tính vào huy động: 0% → 20%",
+              "signal": "up",
+              "note": "Tỉ lệ này từng được nâng từ 0% lên 50% khi nền kinh tế chịu áp lực khủng hoảng bất động sản, rồi về 0% ở nửa đầu 2026. Nay nới lại 20% — nhưng văn bản ghi thêm \"hoặc tỷ lệ khác do Thống đốc Ngân hàng Nhà nước quyết định tùy từng thời kỳ\", tức còn dư địa nâng tiếp. Riêng khoản mua bán trái phiếu chính phủ đã chiếm khoảng 650.000 tỷ."
+            },
+            {
+              "tag": "Định hướng ngân sách",
+              "value": "Thu nội địa 86–87% → 87–88%",
+              "signal": "up",
+              "note": "Kèm việc gắn đầu tư công cả nhiệm kỳ 2026–2030 với mục tiêu tăng trưởng hai con số. Ngoài ra giá thép trong kỳ đã suy giảm 3–4 lần với mức giảm khoảng 9–10% từ vùng đỉnh."
+            }
+          ],
+          "sections": [],
+          "tradeLevels": []
+        },
+        {
+          "date": "2026-06-20",
+          "dateShort": "20/06",
+          "timeAgo": "6 tuần trước",
+          "tab": "Thông tư 22",
+          "sourceType": "public-video",
+          "typeLabel": "Phân tích chính sách · 39 phút",
+          "title": "Thông Tư 22: Nâng Trần Vốn Ngắn Hạn Cho Vay Trung–Dài Hạn Từ 30% Lên 40%",
+          "summary": "Bài đặt cược lớn nhất của ông vào luận điểm \"nới lỏng\". Bối cảnh: thị trường đã giảm sang tháng thứ tám, trải qua ba biến cố — lãi suất huy động tăng sau chu kỳ cho vay quá cao năm 2025, biến cố tỷ giá, và chiến tranh Mỹ–Iran đẩy giá dầu từ 60 lên 120 đô. Đến giữa 2026 hai trong ba biến cố đã qua: tỷ giá không còn là nỗi lo dù đồng đô mạnh lên, và giá dầu đã về dưới 80 đô nên áp lực lạm phát hạ nhiệt. Biến cố còn lại — thanh khoản hệ thống ngân hàng — chính là thứ dự thảo Thông tư 22 nhắm tới: nâng tỉ lệ vốn ngắn hạn cho vay trung và dài hạn từ 30% (áp dụng từ tháng 10/2023) lên 40%. Phòng phân tích của ông khảo sát đủ 27 ngân hàng và kết luận nhóm có tỉ lệ trên 25% sẽ hưởng lợi rõ hơn; nhóm chỉ 15% thì vốn không kẹt nên cũng không hưởng lợi. Big 4 (Agribank, Vietcombank, CTG, BIDV) nằm trong nhóm hưởng lợi từ cơ chế tính 20% tiền gửi Kho bạc.",
+          "feedChips": [
+            {
+              "label": "Thông tư 22 ↑ trần 30% → 40%",
+              "sig": "up"
+            },
+            {
+              "label": "Big 4 ↑ VCB/CTG/BID hưởng lợi",
+              "sig": "up"
+            },
+            {
+              "label": "Tỷ giá + dầu ↑ 2/3 biến cố đã qua",
+              "sig": "up"
+            },
+            {
+              "label": "Lãi suất ⚠ kỳ hạn dài còn 7–9%",
+              "sig": "warn"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "Nội dung chính sách",
+              "value": "Trần vốn ngắn hạn cho vay dài hạn: 30% → 40%",
+              "signal": "up",
+              "note": "Tỉ lệ 30% áp dụng từ tháng 10/2023, nằm trong lộ trình siết dần 50 → 40 → 37 → 34 → 30. Nay dự thảo đảo chiều nâng lên 40%. Tiền lệ: năm 2015 từng đẩy từ 30% lên 60% để giải bài toán tăng trưởng tín dụng 18%."
+            },
+            {
+              "tag": "Ai hưởng lợi",
+              "value": "Ngân hàng có tỉ lệ trên 25%",
+              "signal": "up",
+              "note": "Phòng phân tích khảo sát đủ 27 ngân hàng. Nhóm trên 25% hưởng lợi rõ hơn vì đang bị chặn trần; nhóm chỉ khoảng 15% thì \"xưa giờ không kẹt nên không hưởng lợi\". Trong 8 ngân hàng quy mô lớn được nêu thì 5/8 nằm trên 25%. Big 4 — Agribank, Vietcombank, CTG, BIDV — hưởng lợi từ cơ chế tính 20% tiền gửi Kho bạc."
+            },
+            {
+              "tag": "Hai biến cố đã qua",
+              "value": "Tỷ giá ổn · dầu về dưới 80 đô",
+              "signal": "up",
+              "note": "Dầu từng leo từ 60 lên 120 đô vì chiến tranh Mỹ–Iran, nay giao dịch dưới 80. Tỷ giá USD/VND liên tục suy giảm dù đồng đô mạnh lên. \"Áp lực về lạm phát tính từ đây cho đến cuối năm 2026 chưa chắc nó đã là nỗi lo.\""
+            },
+            {
+              "tag": "Vấn đề còn lại",
+              "value": "Lãi suất kỳ hạn dài 7–8%, có nơi 9%",
+              "signal": "warn",
+              "note": "Các kỳ hạn 12, 18, 24 tháng vẫn nằm ở mức cao. Đây là biến cố thứ ba chưa được giải quyết, và là lý do thanh khoản hệ thống ngân hàng trở thành yếu tố quyết định niềm tin thị trường nửa cuối năm."
+            },
+            {
+              "tag": "Trọng số vĩ mô",
+              "value": "\"Vĩ mô quyết định 90% diễn biến giá cổ phiếu\"",
+              "signal": "up",
+              "note": "Lập trường xuyên suốt của ông. Dẫn chứng: chu kỳ giảm gắn với giai đoạn nâng lãi suất từng khiến cổ phiếu sụt 44%. Ông cũng nhắc một biện pháp bơm tiền trực tiếp vào bất động sản là giảm trọng số rủi ro từ 250% xuống 150%."
+            }
+          ],
+          "sections": [],
+          "tradeLevels": [
+            {
+              "group": "Nhóm hưởng lợi Thông tư 22",
+              "items": [
+                {
+                  "asset": "VCB · CTG · BID",
+                  "dir": "Hưởng lợi trực tiếp",
+                  "entry": "—",
+                  "target": "Big 4 hưởng lợi từ cơ chế 20% tiền gửi KBNN",
+                  "stop": "—",
+                  "sig": "up",
+                  "tv": "HOSE:VCB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "date": "2026-06-10",
+          "dateShort": "10/06",
+          "timeAgo": "7 tuần trước",
+          "tab": "Định giá BĐS",
+          "sourceType": "public-video",
+          "typeLabel": "Định giá theo ngành · 35 phút",
+          "title": "Định Giá Cổ Phiếu Bất Động Sản: VHM · DXG · KDH · NLG · CII · CEO · TCH",
+          "summary": "Bài thứ ba trong chuỗi định giá theo ngành (sau ngân hàng và chứng khoán). Luận điểm mở: \"một thị trường định giá rẻ thường nằm ở một thị trường có biến cố\" — và cú sốc chính là bài test để biết tài sản có thật sự hấp dẫn hay chưa. Sau tám tháng đổ vỡ của bộ ba ngân hàng – chứng khoán – bất động sản, đa phần cổ phiếu đã giảm ít nhất 30%, trung bình 40%, nhiều mã tới 50%. Kết quả: định giá ngành bất động sản 2026 đã gần bằng mức của năm 2024, so với trung bình 5 năm khoảng 1,7 lần. Điểm ông nhấn mạnh là chất lượng bảng cân đối đã cải thiện thật chứ không chỉ giá giảm: Nam Long tiền mặt từ 3.800 tỷ lên gần 8.000 tỷ đồng thời tổng nợ giảm từ 7.000 xuống khoảng 5.400 tỷ trên quy mô vốn 15.000 tỷ; Đất Xanh tiền và tương đương tiền từ 1.300 tỷ cuối 2024 lên khoảng 5.600 tỷ tại quý 1/2026; Khang Điền quy mô từ 22.000 lên khoảng 29.000 tỷ trong 2025.",
+          "feedChips": [
+            {
+              "label": "BĐS ↑ định giá về mức 2024",
+              "sig": "up"
+            },
+            {
+              "label": "NLG ↑ tiền mặt 3.800 → gần 8.000 tỷ",
+              "sig": "up"
+            },
+            {
+              "label": "DXG ↑ tiền mặt 1.300 → 5.600 tỷ",
+              "sig": "up"
+            },
+            {
+              "label": "Ngành ⚠ tổng dư nợ BĐS trên 500.000 tỷ",
+              "sig": "warn"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "Mức chiết khấu",
+              "value": "Giảm 30–50% sau 8 tháng đổ vỡ",
+              "signal": "up",
+              "note": "Bộ ba ngân hàng – chứng khoán – bất động sản đã giảm sang tháng thứ tám: ít nhất 30%, trung bình 40%, nhiều mã 50%. Định giá ngành bất động sản 2026 gần bằng mức 2024, so với trung bình 5 năm khoảng 1,7 lần."
+            },
+            {
+              "tag": "Nam Long (NLG)",
+              "value": "Tiền mặt gần gấp đôi, nợ giảm",
+              "signal": "up",
+              "note": "Tiền mặt từ 3.800 tỷ lên gần 8.000 tỷ. Tổng nợ từ 7.000 tỷ xuống khoảng 5.400 tỷ trên tổng quy mô vốn khoảng 15.000 tỷ."
+            },
+            {
+              "tag": "Đất Xanh (DXG)",
+              "value": "Tiền mặt 1.300 → 5.600 tỷ",
+              "signal": "up",
+              "note": "Tiền và tương đương tiền từ 1.300 tỷ cuối 2024 lên khoảng 5.600 tỷ tại quý 1/2026."
+            },
+            {
+              "tag": "Khang Điền (KDH)",
+              "value": "Quy mô 22.000 → 29.000 tỷ",
+              "signal": "up",
+              "note": "Tăng trong năm 2025. Lợi nhuận cũng nhích từ 384 tỷ lên gần 700 tỷ trong báo cáo quý 1/2026."
+            },
+            {
+              "tag": "Rủi ro ngành",
+              "value": "Tổng dư nợ BĐS trên 500.000 tỷ",
+              "signal": "warn",
+              "note": "Riêng lĩnh vực bất động sản đã chiếm 37% trong năm 2025. Ông giải thích chính sự thăng hoa của ngành năm 2025 dẫn tới tình trạng thiếu tiền năm 2026 — và đó là nguồn gốc của mức định giá rẻ hiện nay."
+            }
+          ],
+          "sections": [],
+          "tradeLevels": [
+            {
+              "group": "Cổ phiếu bất động sản",
+              "items": [
+                {
+                  "asset": "NLG",
+                  "dir": "Bảng cân đối khỏe nhất nhóm",
+                  "entry": "—",
+                  "target": "Tiền mặt gần 8.000 tỷ, nợ giảm còn 5.400 tỷ",
+                  "stop": "—",
+                  "sig": "up",
+                  "tv": "HOSE:NLG"
+                },
+                {
+                  "asset": "DXG",
+                  "dir": "Tiền mặt cải thiện mạnh",
+                  "entry": "—",
+                  "target": "1.300 → 5.600 tỷ",
+                  "stop": "—",
+                  "sig": "up",
+                  "tv": "HOSE:DXG"
+                },
+                {
+                  "asset": "KDH",
+                  "dir": "Quy mô và lợi nhuận tăng",
+                  "entry": "—",
+                  "target": "22.000 → 29.000 tỷ; LN 384 → gần 700 tỷ",
+                  "stop": "—",
+                  "sig": "up",
+                  "tv": "HOSE:KDH"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "date": "2026-06-06",
+          "dateShort": "06/06",
+          "timeAgo": "8 tuần trước",
+          "tab": "Lạm phát 5,6%",
+          "sourceType": "public-video",
+          "typeLabel": "Phân tích vĩ mô · 34 phút",
+          "title": "Lạm Phát 5,6% Và Sự Thật: Vì Sao Con Số Này Chưa Phải Điều Đáng Sợ Nhất",
+          "summary": "Bài phản biện lại nỗi sợ đang bao trùm khi CPI Việt Nam vọt lên 5,6% từ mức 2–3% nửa năm trước, trong bối cảnh cổ phiếu công nghệ Mỹ sụt 5% và chứng khoán Nhật giảm gần 6% chỉ trong một đêm. Lập luận của ông: phải bóc rổ CPI thay vì nhìn con số tổng. Năm nhóm chiếm hơn 70% rổ tính lạm phát, và cú nhảy 5,6% chủ yếu do giá năng lượng đảo chiều — đầu 2026 nhóm này còn -3,19% khi không ai ca thán về giá xăng dầu, rồi chiến tranh Mỹ–Iran đẩy ngược lên. Giá nguyên liệu thì đang giảm từ 6% xuống 4%. Ông cũng chỉ ra lạm phát Việt Nam có độ trễ 3–6, thậm chí 9 tháng so với Mỹ. Kết luận: cú giảm của thị trường tài chính toàn cầu không đến từ con số 5,6% của Việt Nam mà từ hành vi thị trường và chính sách tiền tệ của các nền kinh tế lớn.",
+          "feedChips": [
+            {
+              "label": "CPI ⚠ 5,6% nhưng chủ yếu do năng lượng",
+              "sig": "warn"
+            },
+            {
+              "label": "Nguyên liệu ↑ giá giảm từ 6% về 4%",
+              "sig": "up"
+            },
+            {
+              "label": "Tỷ giá ↑ dự báo trong biên độ 2–3%",
+              "sig": "up"
+            },
+            {
+              "label": "Toàn cầu ⚠ tech Mỹ -5%, Nhật -6% một đêm",
+              "sig": "warn"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "Cách đọc con số 5,6%",
+              "value": "Phải bóc rổ, không nhìn số tổng",
+              "signal": "warn",
+              "note": "Năm nhóm chiếm hơn 70% rổ tính CPI Việt Nam. Cú nhảy từ 2–3% lên 5,6% chủ yếu do giá năng lượng đảo chiều: đầu 2026 nhóm này còn -3,19%, sau đó chiến tranh Mỹ–Iran đẩy ngược lên. Giá nguyên liệu ngược lại đang giảm từ 6% xuống 4%; giá thép phục hồi 5–7% nhưng vẫn ở nền thấp."
+            },
+            {
+              "tag": "Độ trễ",
+              "value": "Lạm phát VN trễ Mỹ 3–6, thậm chí 9 tháng",
+              "signal": "warn",
+              "note": "Ông đối chiếu chu kỳ lạm phát Mỹ kéo dài từ cuối 2020, bùng nổ 2021 tới nửa đầu 2022 để suy ra nhịp của Việt Nam."
+            },
+            {
+              "tag": "Nguồn gốc cú giảm",
+              "value": "Không phải CPI Việt Nam",
+              "signal": "warn",
+              "note": "\"Không phải đến từ lạm phát và con số 5,6% của Việt Nam mà nó đến từ hành vi của các thị trường tài chính toàn cầu cũng như chính sách tiền tệ của các quốc gia lớn.\" Đêm đó cổ phiếu công nghệ Mỹ giảm 5%, chứng khoán Nhật giảm gần 6%."
+            },
+            {
+              "tag": "Tỷ giá",
+              "value": "Dự báo cả năm trong biên độ 2–3%",
+              "signal": "up",
+              "note": "Mức nằm trong biên độ cho phép, tức không phải nguồn rủi ro chính cho phần còn lại của năm."
+            }
+          ],
+          "sections": [],
+          "tradeLevels": []
+        }
+      ],
+      "sources": [
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 27)",
+          "iconColor": "oklch(0.46 0.15 27)",
+          "date": "01/08/2026",
+          "title": "PHÂN TÍCH CỔ PHIẾU HPG GIẢM MẠNH MUA MẠNH ??",
+          "meta": "Video công khai · 43:44 · Đầu tư chứng khoán cùng Quang Dũng"
+        },
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 27)",
+          "iconColor": "oklch(0.46 0.15 27)",
+          "date": "18/07/2026",
+          "title": "PHÂN TÍCH CỔ PHIẾU VPB (VPBANK) ĐẰNG SAU KỶ LỤC 11.000 TỶ LỢI NHUẬN",
+          "meta": "Video công khai · 54:07 · Đầu tư chứng khoán cùng Quang Dũng"
+        },
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 27)",
+          "iconColor": "oklch(0.46 0.15 27)",
+          "date": "04/07/2026",
+          "title": "VĨ MÔ THÁNG 7 ĐẦU KHÔNG XUÔI NHƯNG ĐUÔI SẼ LỌT ??",
+          "meta": "Video công khai · 45:10 · Đầu tư chứng khoán cùng Quang Dũng"
+        },
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 27)",
+          "iconColor": "oklch(0.46 0.15 27)",
+          "date": "30/06/2026",
+          "title": "NGHỊ QUYẾT 168, ĐI TÌM LỜI GIẢI GDP 11.9% ??",
+          "meta": "Video công khai · 47:37 · Đầu tư chứng khoán cùng Quang Dũng"
+        },
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 27)",
+          "iconColor": "oklch(0.46 0.15 27)",
+          "date": "20/06/2026",
+          "title": "Thông tư 22, TÍN HIỆU SỚM CHU KỲ NỚI LỎNG TIỀN TỆ ??",
+          "meta": "Video công khai · 38:59 · Đầu tư chứng khoán cùng Quang Dũng"
+        },
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 27)",
+          "iconColor": "oklch(0.46 0.15 27)",
+          "date": "10/06/2026",
+          "title": "ĐỊNH GIÁ CỔ PHIẾU BẤT ĐỘNG SẢN (VHM DXG KDH NLG CII CEO TCH…)",
+          "meta": "Video công khai · 35:08 · Đầu tư chứng khoán cùng Quang Dũng"
+        },
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 27)",
+          "iconColor": "oklch(0.46 0.15 27)",
+          "date": "06/06/2026",
+          "title": "5.6% LẠM PHÁT VÀ SỰ THẬT ??",
+          "meta": "Video công khai · 34:20 · Đầu tư chứng khoán cùng Quang Dũng"
+        }
+      ]
     }
   },
   "weekly": {
@@ -3632,7 +4381,7 @@ window.HDT_DATA = {
     "consensus": [
       {
         "label": "Hồi phục có thật nhưng CHƯA xác nhận đáy — thanh khoản là nút thắt",
-        "detail": "CK 5 phút: Index +49 điểm tuần cuối nhưng thanh khoản 19.000–20.000 tỷ vẫn dưới trung bình, phải giữ TRÊN 20.000 tỷ khoảng 2 tuần mới gọi là thanh khoản tăng trưởng; 3 nến tăng thiếu volume nên không phải tín hiệu đảo chiều. Thái Phạm: đáy dự kiến T8–9, chưa giải ngân trước 1.600."
+        "detail": "CK 5 phút: Index +49 điểm tuần cuối nhưng thanh khoản 19.000–20.000 tỷ vẫn dưới trung bình, phải giữ TRÊN 20.000 tỷ khoảng 2 tuần mới gọi là thanh khoản tăng trưởng; 3 nến tăng thiếu volume nên không phải tín hiệu đảo chiều. Thái Phạm: đáy dự kiến T8–9, và trong bài đăng 28/07 còn hạ vùng chờ xuống 1.400–1.500. Quang Dũng đồng ý định giá đã rẻ nhưng KHÔNG chờ tín hiệu đáy nào cả — \"không nhìn chart, không đoán đáy\"."
       },
       {
         "label": "Không mua trên đà giảm — nguyên tắc giữ sức mua",
@@ -3653,6 +4402,10 @@ window.HDT_DATA = {
     ],
     "divergence": [
       {
+        "label": "Chờ tín hiệu đáy hay cứ mua khi giảm?",
+        "detail": "Đây là bất đồng lớn nhất sau khi có tiếng nói thứ tư. Ba kênh còn lại đều chờ một điều kiện: Thái Phạm chờ Index về 1.400–1.500, CK 5 phút chờ thanh khoản trên 20.000 tỷ hai tuần, AzFin nhặt dần theo định giá. Quang Dũng (01/08) bỏ hẳn khâu chờ: \"Giảm nhẹ thì tôi mua ít, giảm mạnh thì tôi mua nhiều, giảm càng mạnh thì tôi càng mua… không nhìn chart, không đoán đáy, không margin\" — tích sản theo doanh nghiệp chứ không theo chỉ số. Điểm chung duy nhất của cả bốn: tuyệt đối không dùng margin lúc này."
+      },
+      {
         "label": "Bao giờ về bờ — cuối năm hay sang năm?",
         "detail": "Thái Phạm (Tập 40): đáy T8–9 rồi hồi phục khá vào CUỐI NĂM, sóng 10–20%. CK 5 phút (27/07 và 31/07) thận trọng hơn hẳn: cuối năm về bờ \"không tin tưởng lắm\", sang năm mới có cửa; tháng 8 hồi được nhưng \"chắc chắn không phải chữ V\"."
       },
@@ -3663,6 +4416,10 @@ window.HDT_DATA = {
       {
         "label": "Kỳ vọng vĩ mô có dùng để mua cổ phiếu được không?",
         "detail": "AzFin dùng định giá và triển vọng ngành để nhặt dần 6 nhóm. CK 5 phút vừa tự nhận \"tư duy ngược\" theo tin vĩ mô là KHÔNG hiệu quả (nhóm đầu tư công CTD/HHV/LCG/FCN đều giảm trong tháng 7) — vẫn phải có điểm mua, tín hiệu và thanh khoản cụ thể."
+      },
+      {
+        "label": "Đọc vĩ mô để làm gì?",
+        "detail": "Quang Dũng cho rằng \"vĩ mô quyết định 90% diễn biến giá cổ phiếu\" và đặt cược tháng 7 là điểm chuyển từ kiểm soát sang nới lỏng (Thông tư 22 nâng trần 30%→40%, tiền gửi KBNN tính vào huy động 0%→20%), nên ưu tiên ngân hàng–chứng khoán nửa cuối năm. CK 5 phút thì vừa tự chấm là nhóm hưởng lợi chính sách (đầu tư công CTD/HHV/LCG/FCN) đều giảm trong tháng 7 — tức chính sách đúng chưa chắc giá đã lên đúng lúc."
       }
     ]
   },
@@ -4330,6 +5087,54 @@ window.HDT_DATA = {
       "call": "FTNT, PANW rồi cũng giảm như Apple — short khi hồi",
       "result": "pending",
       "note": "Bình luận ông tự đăng dưới bài đăng 31/07 (5 like). Kèm chỉ dẫn vào lệnh: \"mở mới đợi hồi lại rồi đánh tiếp\". Cùng luận điểm với câu trả lời về chỉ số: \"Nó như Intel trước đây trước khi rụng. Amd hay dell cũng vậy\"."
+    },
+    {
+      "expert": "quang-dung",
+      "date": "01/08",
+      "asset": "HPG",
+      "result": "pending",
+      "call": "HPG giữ tăng trưởng 50% cả năm 2026; Q3–Q4 đạt 40–60%",
+      "note": "Dựa vào sản lượng tăng (Dung Quất 2 chạy ≥75% công suất) và nền giá thép thấp. Quý 2/2026 đã đạt LNST 6.400 tỷ, +50,6%. Kiểm chứng khi báo cáo quý 3 công bố (tháng 10/2026)."
+    },
+    {
+      "expert": "quang-dung",
+      "date": "01/08",
+      "asset": "HPG",
+      "result": "hit",
+      "call": "Trong 2026 sẽ có một quý HPG lãi sau thuế trên 6.000 tỷ",
+      "note": "Kèo ông tự nhắc lại: nêu từ cuối 2025 khi lợi nhuận HPG mới 3.800 tỷ/quý. Quý 2/2026 đạt 6.400 tỷ — đúng."
+    },
+    {
+      "expert": "quang-dung",
+      "date": "04/07",
+      "asset": "CK Việt",
+      "result": "pending",
+      "call": "Tháng 7 là điểm chuyển từ \"kiểm soát\" sang \"nới lỏng\"; ngân hàng–chứng khoán dẫn sóng nửa cuối năm",
+      "note": "Căn cứ: tháng 6 là tháng nhiều văn bản chính sách nhất nửa đầu năm, thực thi từ 1/7. Đối chiếu thực tế: VN-Index tháng 7 giảm mạnh (tháng xấu nhất năm theo CK 5 phút) rồi hồi 49 điểm tuần cuối — chưa đủ kết luận."
+    },
+    {
+      "expert": "quang-dung",
+      "date": "20/06",
+      "asset": "Ngân hàng",
+      "result": "pending",
+      "call": "Thông tư 22 nâng trần 30%→40% — nhóm ngân hàng tỉ lệ trên 25% và Big 4 hưởng lợi",
+      "note": "Khảo sát 27 ngân hàng; 5/8 ngân hàng lớn nằm trên 25%. Big 4 (Agribank, VCB, CTG, BID) hưởng lợi thêm từ cơ chế tính 20% tiền gửi KBNN. Kiểm chứng khi thông tư ban hành chính thức và qua kết quả quý 3."
+    },
+    {
+      "expert": "quang-dung",
+      "date": "10/06",
+      "asset": "BĐS",
+      "result": "pending",
+      "call": "Định giá BĐS đã về mức 2024 — NLG, DXG, KDH có bảng cân đối cải thiện thật",
+      "note": "NLG tiền mặt 3.800 → gần 8.000 tỷ, nợ 7.000 → 5.400 tỷ; DXG tiền 1.300 → 5.600 tỷ; KDH quy mô 22.000 → 29.000 tỷ. Đối chiếu: Thái Phạm ngược lại cảnh báo VIC/VHM \"neo cao đáng sợ\" và DIG rủi ro call margin."
+    },
+    {
+      "expert": "quang-dung",
+      "date": "06/06",
+      "asset": "Vĩ mô",
+      "result": "hit",
+      "call": "CPI 5,6% chủ yếu do giá năng lượng — chưa phải rủi ro chính, tỷ giá trong biên 2–3%",
+      "note": "Đúng hướng: lạm phát đã hạ từ đỉnh 5,6% về 4,7% (số công bố đầu tháng 7), tiệm cận mục tiêu 4,5% của chính phủ — như chính ông cập nhật lại trong bài 04/07."
     }
   ],
   "actions": {

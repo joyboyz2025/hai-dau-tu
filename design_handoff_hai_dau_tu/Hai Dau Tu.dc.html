@@ -42,6 +42,7 @@ input::placeholder { color: #A3A29A; }
 .tk-layout { display: flex; gap: 18px; align-items: flex-start; }
 .tk-sidebar { flex: 0 0 300px; max-width: 320px; position: sticky; top: 12px; max-height: calc(100vh - 24px); overflow-y: auto; display: flex; flex-direction: column; gap: 12px; scrollbar-width: thin; }
 .tk-detail { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 16px; }
+.tk-views { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
 .tk-row { transition: background .12s ease, border-color .12s ease; }
 .tk-row:hover { background: #F6F5F0 !important; }
 /* ── Sổ mã: segmented control (khu vực + xem theo) — thay cho hàng pill thô ── */
@@ -1092,6 +1093,37 @@ input::placeholder { color: #A3A29A; }
             </div>
           </sc-for>
 
+          <!-- ĐA QUAN ĐIỂM -->
+          <sc-if value="{{ tkHasViews }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex; align-items:center; gap:10px; margin-top:6px;">
+              <div style="font-size:15px; font-weight:800; letter-spacing:-0.2px;">Đa quan điểm</div>
+              <div style="font-size:11px; color:#9B9A92;">{{ tkViewCount }} chuyên gia cùng nói về mã này</div>
+              <div style="flex:1; height:1px; background:#DDDCD5;"></div>
+            </div>
+            <div class="tk-card tk-views" style="display:grid; gap:12px;">
+              <sc-for list="{{ tkViews }}" as="vw" hint-placeholder-count="2">
+                <div class="print-break-avoid" style="background:#FFFFFF; border:1px solid #E2E1DA; border-left:3px solid {{ vw.accent }}; border-radius:12px; padding:16px 18px; display:flex; flex-direction:column; gap:9px; cursor:pointer;" sc-click="{{ vw.onClick }}">
+                  <div style="display:flex; align-items:center; gap:9px; flex-wrap:wrap;">
+                    <div style="width:26px; height:26px; border-radius:50%; background:{{ vw.bg }}; color:{{ vw.color }}; display:flex; align-items:center; justify-content:center; font-size:10.5px; font-weight:800; flex-shrink:0;">{{ vw.initials }}</div>
+                    <div style="font-size:12.5px; font-weight:800; color:#21211D;">{{ vw.expertName }}</div>
+                    <div style="font-size:11px; color:#9B9A92; font-family:ui-monospace,monospace;">{{ vw.dateLabel }}</div>
+                  </div>
+                  <div style="font-size:10.5px; font-weight:800; text-transform:uppercase; letter-spacing:0.7px; padding:4px 10px; border-radius:999px; background:{{ vw.bg }}; color:{{ vw.color }}; align-self:flex-start;">{{ vw.stance }}</div>
+                  <div style="font-size:13px; color:#3F3E38; line-height:1.65;">{{ vw.line }}</div>
+                </div>
+              </sc-for>
+            </div>
+            <sc-if value="{{ tkHasDebate }}" hint-placeholder-val="{{ false }}">
+              <div class="tk-card print-break-avoid" style="background:oklch(0.97 0.012 235); border:1px solid oklch(0.9 0.03 235); border-radius:12px; padding:15px 18px; display:flex; gap:11px; align-items:flex-start;">
+                <div style="font-size:14px; flex-shrink:0; line-height:1.5;">⚖</div>
+                <div style="display:flex; flex-direction:column; gap:4px;">
+                  <div style="font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:0.7px; color:oklch(0.45 0.09 235);">Khác nhau ở đâu</div>
+                  <div style="font-size:13px; color:#3F3E38; line-height:1.65;">{{ tkDebate }}</div>
+                </div>
+              </div>
+            </sc-if>
+          </sc-if>
+
           <!-- LUẬN ĐIỂM -->
           <div style="display:flex; align-items:center; gap:10px; margin-top:6px;">
             <div style="font-size:15px; font-weight:800; letter-spacing:-0.2px;">Luận điểm chi tiết</div>
@@ -1102,7 +1134,12 @@ input::placeholder { color: #A3A29A; }
               <div style="display:flex; gap:14px;">
                 <div style="width:3px; border-radius:2px; background:{{ tkStanceColor }}; opacity:0.4; flex-shrink:0;"></div>
                 <div style="display:flex; flex-direction:column; gap:5px;">
-                  <div style="font-size:13.5px; font-weight:800; color:#21211D;">{{ tt.title }}</div>
+                  <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                    <div style="font-size:13.5px; font-weight:800; color:#21211D;">{{ tt.title }}</div>
+                    <sc-if value="{{ tt.hasWho }}" hint-placeholder-val="{{ true }}">
+                      <div style="font-size:10px; font-weight:700; color:#6E6D66; background:#F2F1EC; border:1px solid #E2E1DA; border-radius:999px; padding:2px 8px; white-space:nowrap;">{{ tt.whoInitials }} · {{ tt.whoName }}</div>
+                    </sc-if>
+                  </div>
                   <div style="font-size:13.5px; color:#3F3E38; line-height:1.7;">{{ tt.body }}</div>
                 </div>
               </div>
@@ -2716,7 +2753,7 @@ class Component extends DCLogic {
     };
     let tkSymbol = '', tkName = '', tkStance = '', tkStanceBg = '#EFEEE9', tkStanceColor = '#5F5E57',
         tkGroupLabel = '', tkOneLiner = '',
-        tkOrders = [], tkThesis = [], tkHist = [], tkScRows = [], tkScSummary = '',
+        tkOrders = [], tkThesis = [], tkViews = [], tkDebate = '', tkHist = [], tkScRows = [], tkScSummary = '',
         tkScHit = 0, tkScMiss = 0, tkScPend = 0,
         tkPotLabel = '', tkCauLabel = '', tkPotNote = '', tkCauNote = '',
         tkPotFillW = '0%', tkCauFillW = '0%',
@@ -2776,7 +2813,24 @@ class Component extends DCLogic {
           ...(TK_STATUS[o.status] || TK_STATUS.active)
         };
       });
-      tkThesis = (curTicker.thesis || []).map(p => ({ title: p.title, body: p.body }));
+      tkThesis = (curTicker.thesis || []).map(p => {
+        const ex = HDT.experts[p.expertId] || {};
+        return {
+          title: p.title, body: p.body,
+          hasWho: !!p.expertId, whoInitials: ex.initials || '?', whoName: ex.name || p.expertId || ''
+        };
+      });
+      // ── Đa quan điểm: mỗi chuyên gia có ý kiến về mã này ──
+      tkViews = (curTicker.views || []).map(v => {
+        const ex = HDT.experts[v.expertId] || {};
+        return {
+          initials: ex.initials || '?', expertName: ex.name || v.expertId,
+          stance: v.stance, line: v.line, dateLabel: v.date || '',
+          ...CHIP_SIG[v.sig], accent: ACT_ACCENT[v.sig] || '#C9C8C0',
+          onClick: () => this.go('expert', { expertId: v.expertId })
+        };
+      });
+      tkDebate = curTicker.debate || '';
       const tkAliases = (curTicker.aliases || []).map(a => strip(a));
       const tkMatch = (txt) => { const st = ' ' + strip(txt) + ' '; return tkAliases.some(al => st.includes(al)); };
       tkHist = ALL_CALLS.filter(c => tkMatch([c.tag, c.value, c.note].join(' '))).slice(0, 8).map(c => ({
@@ -2833,6 +2887,8 @@ class Component extends DCLogic {
       tkSymbol, tkName, tkStance, tkStanceBg, tkStanceColor, tkGroupLabel, tkOneLiner,
       tkOrders, tkOrderCount: tkOrders.length,
       tkThesis, tkHist, tkHasHist: tkHist.length > 0, tkHistCount: tkHist.length,
+      tkViews, tkHasViews: tkViews.length > 1, tkViewCount: tkViews.length,
+      tkDebate, tkHasDebate: !!tkDebate,
       tkScRows, tkHasSc: tkScRows.length > 0, tkScSummary, tkScHit, tkScMiss, tkScPend,
       tkPotLabel, tkCauLabel, tkPotNote, tkCauNote, tkPotFillW, tkCauFillW,
       tkVerdict, tkVerdictBg, tkVerdictColor,

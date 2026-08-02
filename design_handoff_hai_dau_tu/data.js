@@ -277,7 +277,7 @@ window.HDT_DATA = {
           "sourceType": "member-video",
           "typeLabel": "Video hội viên · Tập 42",
           "title": "Tập 42 (Hội Viên): Lợi Suất 30 Năm Lên 5,267% — Kỷ Lục Từ 2008. VN Chờ 1.400 Mới Giải Ngân",
-          "summary": "Bản nhận định tuần 31, gộp cả phần hội viên nước ngoài. Trục chính là một con số: lợi suất trái phiếu chính phủ Mỹ kỳ hạn 30 năm đóng tháng 7 ở 5,267% — mức cao kỷ lục, ngang với thời điểm trước khủng hoảng 2008; kỳ hạn 10 năm vượt 4,7%. Ông đọc đây là dấu hiệu thị trường KHÔNG tin chủ tịch Fed Kevin Warsh: \"you talk the talk nhưng you don't walk the talk\". Nội bộ Fed rạn nứt chưa từng có — ba thành viên FOMC công khai chống đối, đòi tăng lãi suất ngay trong tháng 7, còn Warsh thì bỏ luôn forward guidance. Kết luận: xác suất 99% Fed KHÔNG hạ lãi suất năm nay, và thị trường đang định giá Fed phải TĂNG 1–2 lần từ giờ đến tháng 1/2027. Nguyên nhân gốc là dầu: tháng 7 giá dầu tăng 24%, và ông dự báo đi ngang vùng cao 85–90 cho đến hết tháng 10 vì Tehran cố tình đẩy lợi suất và lạm phát Mỹ lên để gây bất lợi cho Trump trước bầu cử giữa nhiệm kỳ. Với chứng khoán Việt Nam, ông hạ tiếp mốc: ngưỡng 1.585 sẽ bị phá, và \"phải đợi nó về vùng 1.400 các anh chị hãy giải ngân\" — dù thừa nhận \"các cổ phiếu bây giờ rất là rẻ\".",
+          "summary": "Bản nhận định tuần 31, gộp cả phần hội viên nước ngoài. Trục chính là một con số: lợi suất trái phiếu chính phủ Mỹ kỳ hạn 30 năm đóng tháng 7 ở 5,267% — mức cao kỷ lục, ngang với thời điểm trước khủng hoảng 2008; kỳ hạn 10 năm vượt 4,7%. Ông đọc đây là dấu hiệu thị trường KHÔNG tin chủ tịch Fed Kevin Warsh: \"you talk the talk nhưng you don't walk the talk\". Nội bộ Fed rạn nứt chưa từng có — ba thành viên FOMC công khai chống đối, đòi tăng lãi suất ngay trong tháng 7, còn Warsh thì bỏ luôn forward guidance. Kết luận: xác suất 99% Fed KHÔNG hạ lãi suất năm nay, và thị trường đang định giá Fed phải TĂNG 1–2 lần từ giờ đến tháng 1/2027. Nguyên nhân gốc là dầu: tháng 7 giá dầu tăng 24%, và ông dự báo đi ngang vùng cao 85–90 cho đến hết tháng 10 vì Tehran cố tình đẩy lợi suất và lạm phát Mỹ lên để gây bất lợi cho Trump trước bầu cử giữa nhiệm kỳ. Phần hội viên nước ngoài là sổ lệnh dày nhất từ trước tới nay — 19 mã được gọi tên, chia làm vào ngay (Dell, RTX, Bank of America, Google), chờ mốc (Amazon 285–290, PANW 350, CRWD 200–202, FTNT về 169) và giữ lệnh (Marvell, Micron, Intel, AMD, SpaceX). Với chứng khoán Việt Nam, ông hạ tiếp mốc: ngưỡng 1.585 sẽ bị phá, và \"phải đợi nó về vùng 1.400 các anh chị hãy giải ngân\" — dù thừa nhận \"các cổ phiếu bây giờ rất là rẻ\".",
           "feedChips": [
             {
               "label": "UST30Y ⚠ 5,267% — kỷ lục từ 2008",
@@ -285,6 +285,10 @@ window.HDT_DATA = {
             },
             {
               "label": "Fed ↓ 99% không hạ, thị trường ép TĂNG 1–2 lần",
+              "sig": "down"
+            },
+            {
+              "label": "Mỹ ↓ short ngay Dell · RTX · BAC · Google",
               "sig": "down"
             },
             {
@@ -312,6 +316,12 @@ window.HDT_DATA = {
               "value": "99% không hạ · thị trường ép tăng 1–2 lần",
               "signal": "down",
               "note": "Ba thành viên FOMC công khai chống đối quyết định giữ nguyên và đòi tăng ngay trong tháng 7 — \"chưa bao giờ cuộc cãi vã trong nội bộ Fed lại kinh khủng như vậy\". Kevin Warsh bỏ forward guidance, chỉ nói mồm về mục tiêu lạm phát 2%. Cách đây 8 tháng thị trường còn kỳ vọng cắt 3 lần trong 2026; nay định giá TĂNG 1–2 lần đến tháng 1/2027."
+            },
+            {
+              "tag": "Danh sách lệnh tuần tới",
+              "value": "4 mã short ngay · 5 mã chờ mốc · 5 mã giữ lệnh",
+              "signal": "down",
+              "note": "Short ngay ở vùng hiện tại: Dell, RTX, Bank of America, Google. Chờ mốc rồi vào: Amazon 285–290, Palo Alto Networks ~350, CrowdStrike 200–202, Fortinet đập về 169, và một mã nữa ở vùng 288 (tên bị nhiễu trong phụ đề tự động, chưa xác định được — ông nói \"con này thì các bạn đừng ngại gì\"). Giữ nguyên lệnh đang có: Marvell, Micron, Intel, AMD, SpaceX. Không ưu tiên: NVIDIA (\"vốn hóa cao dùng điều tiết chỉ số, ăn không nhiều\") và Arista (\"rất ảo, hôm nay tăng 8% xong bị đập xuống\")."
             },
             {
               "tag": "Dầu",
@@ -375,6 +385,23 @@ window.HDT_DATA = {
                 "Marvell, Micron, Intel: giữ nguyên lệnh short, còn điều chỉnh tiếp. NVIDIA thì \"vốn hóa cao dùng để điều tiết chỉ số, ăn không nhiều\".",
                 "Google hồi 7% chỉ là kỹ thuật để đỡ Apple giảm 10%: lợi nhuận cao của Alphabet phần lớn là lãi trên giấy từ cổ phần SpaceX và Anthropic hạch toán ở giá ngày 30/6 — nay SpaceX đã giảm 50%. Alphabet cũng âm dòng tiền hoạt động lần đầu kể từ khi lên sàn.",
                 "SpaceX: mới niêm yết 5% cổ phiếu, còn khoảng 85–90% sẽ giải phóng đến hết tháng 5/2027 — ông dự báo giá nằm liệt vùng 70–80 và có thể về 60–70 trong 6 tháng tới. Vẫn giữ vị thế short từ 152."
+              ]
+            },
+            {
+              "title": "Sổ lệnh tuần tới — nguyên văn từng mã",
+              "signal": "down",
+              "sigLabel": "Phần hội viên nước ngoài · 19 mã được gọi tên",
+              "para": "Ông đọc liền một mạch danh sách, chia làm ba nhóm rõ ràng: vào lệnh được ngay, đợi mốc mới vào, và giữ nguyên lệnh đang có. Nguyên tắc chung nhắc lại đầu phần: \"đợi vùng cao đỉnh cũ các bạn short, vùng đáy thì take profit — đừng short ngang chừng rất là mệt\".",
+              "bullets": [
+                "VÀO NGAY: \"Tuần tới các bạn vẫn có thể vào được short được Dell, short được RTX, Bank of America ở cái vùng đó luôn.\" Google cũng short được ở vùng này — cú hồi 7% chỉ là kỹ thuật để đỡ Apple giảm 10%.",
+                "ĐỢI MỐC: Một mã ông nhắc ngay sau Bank of America (tên bị nhiễu trong phụ đề) — \"khó có thể lên ngay được, nếu đợi được thì vùng 288 có thể short, con này thì đừng ngại gì\". Amazon đợi kéo lên 285–290 — \"nó sẽ kéo thêm khoảng 15 giá nữa\".",
+                "NHÓM CYBER: Fortinet ra kết quả kinh doanh tốt \"nhưng cùng lắm kéo lên được đỉnh cũ, rồi lại đập cho nó phát nữa là 169\". Palo Alto Networks vùng khoảng 350. CrowdStrike \"cứ vùng 200–202\".",
+                "GIỮ LỆNH: Marvell \"chắc là điều chỉnh tiếp\", Micron \"giữ lệnh short, điều chỉnh tiếp\", Intel \"giữ lệnh short, điều chỉnh tiếp\", AMD \"giữ được luôn\". SpaceX vẫn cầm short từ vùng 152.",
+                "KHÔNG ƯU TIÊN: NVIDIA — \"vốn hóa cao luôn luôn dùng để điều tiết chỉ số, ăn được không nhiều, không đáng kể\". Arista — \"rất là ảo, có màn hôm nay tăng 8% xong lại bị đập xuống\".",
+                "ĐÃ ĂN XONG: SanDisk là mã lãi đậm nhất đợt vừa rồi — \"có thời điểm ăn được năm mấy phần trăm từ vùng đỉnh luôn\". Apple đã yêu cầu chốt lời 1/2 từ hôm trước.",
+                "CHỈ SỐ: FTSE 100 của Anh — \"đầu tuần thế nào cũng dính, các bạn có thể bán được\". Chứng khoán Nhật \"tiếp tục cầm short được\". Chứng khoán Hàn thì \"chẳng có cổ phiếu nào đụng được đâu\", cùng lắm hồi lên 290.000 rồi gãy.",
+                "ÚC: nguyên tắc là mua vùng đáy, bán vùng cao vì Úc nâng lãi suất sớm nhất nhóm nên không tăng mạnh cũng không giảm mạnh. Cụ thể: BHP \"không mua, nó gãy bất cứ lúc nào\"; CSL \"cứ để đấy\"; WDS, NAB, ANZ \"lời rồi, chốt thôi\"; WTC \"đừng mua\" — hoặc mua một chút rồi chờ hồi lên 50 thì bán.",
+                "MUA: AEON (Nhật) — khi đồng yên được can thiệp thì \"tuần tới AEON nó chạy, nên mua AEON một chút cũng ok\"."
               ]
             },
             {
@@ -463,10 +490,10 @@ window.HDT_DATA = {
               ]
             },
             {
-              "group": "Chứng khoán Mỹ",
+              "group": "Chứng khoán Mỹ — vào lệnh ngay",
               "items": [
                 {
-                  "asset": "Dell · RTX · Bank of America",
+                  "asset": "Dell",
                   "dir": "Short",
                   "entry": "Vùng hiện tại",
                   "target": "Điều chỉnh đến 15/10",
@@ -475,27 +502,68 @@ window.HDT_DATA = {
                   "tv": "NYSE:DELL"
                 },
                 {
+                  "asset": "RTX",
+                  "dir": "Short",
+                  "entry": "Vùng hiện tại",
+                  "target": "—",
+                  "stop": "—",
+                  "sig": "down",
+                  "tv": "NYSE:RTX"
+                },
+                {
+                  "asset": "Bank of America",
+                  "dir": "Short",
+                  "entry": "Vùng hiện tại",
+                  "target": "—",
+                  "stop": "—",
+                  "sig": "down",
+                  "tv": "NYSE:BAC"
+                },
+                {
+                  "asset": "Google (GOOGL)",
+                  "dir": "Short",
+                  "entry": "Vùng hiện tại",
+                  "target": "Hồi 7% chỉ là kỹ thuật để đỡ Apple",
+                  "stop": "Alphabet âm dòng tiền lần đầu từ khi lên sàn",
+                  "sig": "down",
+                  "tv": "NASDAQ:GOOGL"
+                }
+              ]
+            },
+            {
+              "group": "Chứng khoán Mỹ — chờ mốc rồi short",
+              "items": [
+                {
                   "asset": "Amazon",
                   "dir": "Chờ short",
-                  "entry": "Đợi kéo lên 285–290",
-                  "target": "—",
+                  "entry": "285–290",
+                  "target": "\"Kéo thêm khoảng 15 giá nữa\"",
                   "stop": "Phiên tăng 15% là đánh đỡ chỉ số",
                   "sig": "down",
                   "tv": "NASDAQ:AMZN"
                 },
                 {
+                  "asset": "Mã chưa xác định",
+                  "dir": "Chờ short",
+                  "entry": "Vùng 288",
+                  "target": "\"Con này thì đừng ngại gì\"",
+                  "stop": "Tên bị nhiễu trong phụ đề tự động",
+                  "sig": "down",
+                  "tv": ""
+                },
+                {
                   "asset": "FTNT",
-                  "dir": "Short",
+                  "dir": "Chờ short",
                   "entry": "Đỉnh cũ",
-                  "target": "Về 169",
-                  "stop": "—",
+                  "target": "Đập về 169",
+                  "stop": "KQKD tốt nhưng không cứu được giá",
                   "sig": "down",
                   "tv": "NASDAQ:FTNT"
                 },
                 {
                   "asset": "PANW",
-                  "dir": "Short",
-                  "entry": "Vùng 350",
+                  "dir": "Chờ short",
+                  "entry": "Vùng ~350",
                   "target": "—",
                   "stop": "—",
                   "sig": "down",
@@ -503,12 +571,26 @@ window.HDT_DATA = {
                 },
                 {
                   "asset": "CRWD",
-                  "dir": "Short",
+                  "dir": "Chờ short",
                   "entry": "Vùng 200–202",
                   "target": "—",
                   "stop": "—",
                   "sig": "down",
                   "tv": "NASDAQ:CRWD"
+                }
+              ]
+            },
+            {
+              "group": "Chứng khoán Mỹ — giữ lệnh / không ưu tiên",
+              "items": [
+                {
+                  "asset": "MU · Marvell · INTC · AMD",
+                  "dir": "Giữ lệnh short",
+                  "entry": "Đang có vị thế",
+                  "target": "Còn điều chỉnh tiếp",
+                  "stop": "—",
+                  "sig": "down",
+                  "tv": "NASDAQ:MU"
                 },
                 {
                   "asset": "SpaceX",
@@ -520,13 +602,31 @@ window.HDT_DATA = {
                   "tv": ""
                 },
                 {
-                  "asset": "MU · Marvell · INTC",
-                  "dir": "Giữ short",
+                  "asset": "NVIDIA",
+                  "dir": "Không ưu tiên",
                   "entry": "—",
-                  "target": "Còn điều chỉnh tiếp",
-                  "stop": "—",
-                  "sig": "down",
-                  "tv": "NASDAQ:MU"
+                  "target": "—",
+                  "stop": "\"Vốn hóa cao dùng điều tiết chỉ số, ăn không nhiều\"",
+                  "sig": "avoid",
+                  "tv": "NASDAQ:NVDA"
+                },
+                {
+                  "asset": "ANET",
+                  "dir": "Không ưu tiên",
+                  "entry": "—",
+                  "target": "—",
+                  "stop": "\"Rất ảo — tăng 8% xong bị đập xuống\"",
+                  "sig": "avoid",
+                  "tv": "NYSE:ANET"
+                },
+                {
+                  "asset": "SanDisk",
+                  "dir": "Đã chốt",
+                  "entry": "—",
+                  "target": "Ăn 5x% từ vùng đỉnh",
+                  "stop": "Mã lãi đậm nhất đợt vừa rồi",
+                  "sig": "up",
+                  "tv": ""
                 }
               ]
             },
@@ -596,6 +696,65 @@ window.HDT_DATA = {
                   "stop": "Đã chốt vùng 85 — bỏ lỡ sóng lên 101",
                   "sig": "up",
                   "tv": "TVC:USOIL"
+                }
+              ]
+            },
+            {
+              "group": "Chỉ số quốc tế & Úc",
+              "items": [
+                {
+                  "asset": "FTSE 100",
+                  "dir": "Bán / short",
+                  "entry": "Đầu tuần",
+                  "target": "\"Thế nào cũng dính\"",
+                  "stop": "—",
+                  "sig": "down",
+                  "tv": "TVC:UKX"
+                },
+                {
+                  "asset": "Chứng khoán Nhật",
+                  "dir": "Giữ short",
+                  "entry": "—",
+                  "target": "Còn điều chỉnh tiếp",
+                  "stop": "—",
+                  "sig": "down",
+                  "tv": "TVC:NI225"
+                },
+                {
+                  "asset": "BHP",
+                  "dir": "Không mua",
+                  "entry": "—",
+                  "target": "—",
+                  "stop": "\"Gãy bất cứ lúc nào\"",
+                  "sig": "avoid",
+                  "tv": "ASX:BHP"
+                },
+                {
+                  "asset": "WDS · NAB · ANZ",
+                  "dir": "Chốt lời",
+                  "entry": "—",
+                  "target": "\"Lời rồi, chốt thôi\"",
+                  "stop": "—",
+                  "sig": "up",
+                  "tv": "ASX:WDS"
+                },
+                {
+                  "asset": "WTC",
+                  "dir": "Đừng mua",
+                  "entry": "Nếu thích thì mua chút",
+                  "target": "Chờ hồi lên 50 thì bán",
+                  "stop": "Còn có thể giảm tiếp",
+                  "sig": "warn",
+                  "tv": "ASX:WTC"
+                },
+                {
+                  "asset": "CSL",
+                  "dir": "Để đấy",
+                  "entry": "—",
+                  "target": "—",
+                  "stop": "—",
+                  "sig": "wait",
+                  "tv": "ASX:CSL"
                 }
               ]
             }
@@ -4892,12 +5051,20 @@ window.HDT_DATA = {
         "level": "Giải ngân khi Index về 1.400"
       },
       {
-        "asset": "Dell · RTX · Bank of America",
+        "asset": "Dell · RTX · Bank of America · Google",
         "dir": "SHORT ĐƯỢC NGAY",
         "sig": "down",
         "expertId": "thai-pham",
-        "detail": "Tập 42: \"tuần tới các bạn vẫn có thể short được Dell, RTX, Bank of America ở cái vùng đó luôn\". Nguyên tắc: short ở vùng cao đỉnh cũ, chốt ở vùng đáy — đừng short ngang chừng.",
-        "level": "CK Mỹ điều chỉnh đến 15/10"
+        "detail": "Tập 42: \"tuần tới các bạn vẫn có thể vào được short được Dell, short được RTX, Bank of America ở cái vùng đó luôn\". Google cũng short được — cú hồi 7% chỉ là kỹ thuật để đỡ Apple giảm 10%.",
+        "level": "Vào ở vùng cao đỉnh cũ · chốt ở vùng đáy"
+      },
+      {
+        "asset": "MU · Marvell · INTC · AMD · SpaceX",
+        "dir": "GIỮ LỆNH SHORT",
+        "sig": "down",
+        "expertId": "thai-pham",
+        "detail": "Cả nhóm còn điều chỉnh tiếp, không chốt. SpaceX giữ từ vùng 152, mục tiêu 60–70 trong 6 tháng. NVIDIA và Arista thì không ưu tiên — vốn hóa cao dùng điều tiết chỉ số.",
+        "level": "Giữ nguyên vị thế"
       },
       {
         "asset": "AI chips (AMD · MU · Marvell · Dell · SanDisk)",
@@ -5038,6 +5205,30 @@ window.HDT_DATA = {
         "level": "Đang quanh 1.700 — còn xa"
       },
       {
+        "asset": "Amazon",
+        "dir": "CHỜ SHORT 285–290",
+        "sig": "down",
+        "expertId": "thai-pham",
+        "detail": "Đợi kéo lên vượt đỉnh rồi short — \"nó sẽ kéo thêm khoảng 15 giá nữa\".",
+        "level": "Vùng short 285–290"
+      },
+      {
+        "asset": "FTNT · PANW · CRWD",
+        "dir": "CHỜ MỐC SHORT",
+        "sig": "down",
+        "expertId": "thai-pham",
+        "detail": "Fortinet: kết quả kinh doanh tốt nhưng cùng lắm lên đỉnh cũ rồi đập về 169. Palo Alto Networks vùng ~350. CrowdStrike vùng 200–202.",
+        "level": "FTNT →169 · PANW 350 · CRWD 200–202"
+      },
+      {
+        "asset": "FTSE 100",
+        "dir": "BÁN ĐẦU TUẦN",
+        "sig": "down",
+        "expertId": "thai-pham",
+        "detail": "\"Đầu tuần thế nào cũng dính con FTSE 100 index của Anh Quốc — các bạn có thể bán được.\"",
+        "level": "Đầu tuần 03/08"
+      },
+      {
         "asset": "HDB",
         "dir": "CHỜ MUA 21–22",
         "sig": "up",
@@ -5068,14 +5259,6 @@ window.HDT_DATA = {
         "expertId": "thai-pham",
         "detail": "Can thiệp của BOJ và Bộ Tài chính Mỹ là nhân tạo. Ai giữ yên nên đổi về nước ở vùng 150; long lại vùng 147–150 vì chênh lệch lãi suất Nhật 1% với Mỹ 3,75–4% chưa được giải quyết.",
         "level": "Vùng long 147–150"
-      },
-      {
-        "asset": "Amazon",
-        "dir": "CHỜ SHORT 285–290",
-        "sig": "down",
-        "expertId": "thai-pham",
-        "detail": "Đợi kéo lên vượt đỉnh rồi short. Phiên tăng 15% của Amazon/Microsoft là \"đánh mafia\" để đỡ S&P 500 và US30, không phải dòng tiền thật.",
-        "level": "Vùng short 285–290"
       },
       {
         "asset": "PC1",

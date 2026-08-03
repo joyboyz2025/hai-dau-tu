@@ -222,6 +222,62 @@ input::placeholder{color:var(--ink-3);}
   .filt-l{white-space:nowrap;}
 }
 
+/* ══════ SƠ ĐỒ TƯ DUY: nội dung bài theo nhánh ngành ══════ */
+.mm{background:var(--white);border:1px solid var(--hair);border-radius:var(--r-lg);
+  padding:22px 24px;display:flex;flex-direction:column;gap:18px;}
+.mm-head{display:flex;flex-direction:column;gap:3px;}
+.mm-body{display:flex;gap:0;align-items:flex-start;}
+
+.mm-root{flex:0 0 210px;background:var(--ink);color:var(--white);border-radius:var(--r-lg);
+  padding:18px 18px 16px;display:flex;flex-direction:column;gap:7px;position:relative;align-self:center;}
+.mm-root::after{content:'';position:absolute;left:100%;top:50%;width:26px;height:2px;background:var(--border);}
+.mm-root-k{font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;opacity:.6;}
+.mm-root-t{font-size:14.5px;font-weight:600;line-height:1.4;}
+.mm-root-n{font-size:11.5px;opacity:.6;font-variant-numeric:tabular-nums;}
+
+.mm-brs{flex:1;min-width:0;margin-left:26px;position:relative;
+  display:flex;flex-direction:column;gap:8px;padding-left:22px;}
+.mm-brs::before{content:'';position:absolute;left:0;top:22px;bottom:22px;width:2px;background:var(--border);}
+
+.mm-b{position:relative;border:1px solid var(--hair);border-radius:var(--r);background:var(--white);}
+.mm-b::before{content:'';position:absolute;left:-22px;top:22px;width:22px;height:2px;background:var(--border);}
+.mm-b[open]{border-color:var(--border);}
+.mm-s{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;
+  padding:11px 14px;min-height:44px;user-select:none;}
+.mm-s::-webkit-details-marker{display:none;}
+.mm-s::after{content:'';margin-left:auto;width:7px;height:7px;flex-shrink:0;
+  border-right:1.5px solid var(--ink-3);border-bottom:1.5px solid var(--ink-3);
+  transform:rotate(-45deg);transition:transform .18s ease;}
+.mm-b[open] .mm-s::after{transform:rotate(45deg);}
+.mm-dot{width:9px;height:9px;border-radius:50%;background:var(--c);flex-shrink:0;}
+.mm-g{font-size:13.5px;font-weight:600;letter-spacing:-.01em;}
+.mm-n{font-size:11px;font-weight:600;color:var(--ink-2);background:var(--surface);
+  border-radius:999px;padding:1px 8px;font-variant-numeric:tabular-nums;}
+
+.mm-items{padding:2px 14px 14px 33px;display:flex;flex-direction:column;gap:14px;}
+.mm-i{position:relative;}
+.mm-i::before{content:'';position:absolute;left:-15px;top:8px;width:7px;height:7px;
+  border-radius:50%;border:1.5px solid var(--c);background:var(--white);}
+.mm-i-h{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;margin-bottom:4px;}
+.mm-i-l{font-size:13px;font-weight:600;letter-spacing:-.01em;}
+.mm-i-v{font-size:11.5px;font-weight:600;padding:2px 9px;border-radius:999px;line-height:1.5;}
+.mm-i-d{font-size:12.5px;color:var(--ink-2);line-height:1.7;white-space:pre-line;}
+
+@media (max-width:760px){
+  .mm{padding:18px 16px;}
+  .mm-body{flex-direction:column;gap:0;}
+  .mm-root{flex-basis:auto;width:100%;align-self:stretch;}
+  .mm-root::after{left:26px;top:100%;width:2px;height:18px;}
+  .mm-brs{margin-left:0;margin-top:18px;padding-left:20px;width:100%;}
+  .mm-brs::before{left:25px;top:0;}
+  .mm-b::before{left:-20px;width:20px;}
+}
+@media (prefers-reduced-motion:reduce){.mm-s::after{transition:none;}}
+@media print{
+  .mm-b{border:none;} .mm-items{display:flex !important;}
+  .mm-brs::before,.mm-b::before,.mm-root::after{display:none;}
+}
+
 /* ══════ BẢN TIN: bộ thẻ lật toàn màn hình ══════ */
 .deck-wrap{max-width:1180px;margin:0 auto;padding:18px 0 34px;display:flex;flex-direction:column;gap:14px;}
 .deck-top{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:0 20px;}
@@ -1833,53 +1889,46 @@ input::placeholder{color:var(--ink-3);}
         </div>
       </sc-if>
 
-      <!-- Quan điểm chính -->
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:12px;">
-        <sc-for list="{{ keyCalls }}" as="k" hint-placeholder-count="4">
-          <div style="background:var(--white); border:1px solid var(--hair); border-radius:var(--r); padding:16px 18px; display:flex; flex-direction:column; gap:6px; ">
-            <div style="font-size:11px; font-weight:600; color:var(--ink-3); text-transform:uppercase; letter-spacing:0.5px;">{{ k.tag }}</div>
-            <div style="font-size:17px; font-weight:600; letter-spacing:-0.2px; font-variant-numeric:tabular-nums; color:{{ k.accent }};">{{ k.value }}</div>
-            <div style="font-size:12.5px; color:var(--ink-2); line-height:1.5;">{{ k.note }}</div>
+      <!-- ══ SƠ ĐỒ TƯ DUY: nội dung bài xếp theo nhóm ngành, gập mở được ══ -->
+      <sc-if value="{{ updMindHas }}" hint-placeholder-val="{{ true }}">
+        <div class="mm">
+          <div class="mm-head">
+            <div class="t-h2">Nội dung bài</div>
+            <div class="t-cap">{{ updMindCount }} ý, chia theo nhóm — bấm từng nhánh để mở</div>
           </div>
-        </sc-for>
-      </div>
-
-      <!-- Các mục nhận định của bản cập nhật đang chọn -->
-      <sc-for list="{{ updSections }}" as="sec" hint-placeholder-count="4">
-        <div style="background:var(--white); border:1px solid var(--hair); border-radius:var(--r-lg); padding:24px; display:flex; flex-direction:column; gap:14px;">
-          <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap;">
-            <h2 style="margin:0; font-size:16.5px; font-weight:600;">{{ sec.title }}</h2>
-            <div style="font-size:11.5px; font-weight:600; padding:4px 10px; border-radius:999px; background:{{ sec.sigBg }}; color:{{ sec.sigColor }};">{{ sec.sigLabel }}</div>
-          </div>
-          <sc-if value="{{ sec.hasPara }}" hint-placeholder-val="{{ true }}">
-            <div style="font-size:13.5px; color:var(--ink); line-height:1.6;">{{ sec.para }}</div>
-          </sc-if>
-          <sc-for list="{{ sec.bullets }}" as="b" hint-placeholder-count="0">
-            <div style="display:flex; gap:10px; align-items:flex-start;">
-              <div style="width:6px; height:6px; border-radius:50%; background:var(--ink); margin-top:7px; flex-shrink:0;"></div>
-              <div style="font-size:13.5px; color:var(--ink); line-height:1.6;">{{ b.text }}</div>
+          <div class="mm-body">
+            <div class="mm-root">
+              <div class="mm-root-k">{{ updType }}</div>
+              <div class="mm-root-t">{{ updTitle }}</div>
+              <div class="mm-root-n">{{ updMindCount }} ý</div>
             </div>
-          </sc-for>
-          <sc-if value="{{ sec.hasTickers }}" hint-placeholder-val="{{ false }}">
-            <div style="display:flex; flex-direction:column; border:1px solid var(--surface); border-radius:var(--r); overflow-x:auto;">
-              <div style="display:grid; grid-template-columns:110px 105px 150px 1fr; gap:10px; padding:10px 16px; min-width:560px; background:var(--surface); font-size:11px; font-weight:600; color:var(--ink-3); text-transform:uppercase; letter-spacing:0.5px;">
-                <div>Mã</div><div>Hành động</div><div>Vùng giá</div><div>Ghi chú</div>
-              </div>
-              <sc-for list="{{ sec.tickers }}" as="t" hint-placeholder-count="0">
-                <div style="display:grid; grid-template-columns:110px 105px 150px 1fr; gap:10px; padding:12px 16px; min-width:560px; border-top:1px solid var(--surface); align-items:center;">
-                  <div style="font-variant-numeric:tabular-nums; font-size:13px; font-weight:600;">{{ t.ticker }}</div>
-                  <div><span style="font-size:11px; font-weight:600; padding:4px 9px; border-radius:999px; background:{{ t.aBg }}; color:{{ t.aColor }}; white-space:nowrap;">{{ t.action }}</span></div>
-                  <div style="font-variant-numeric:tabular-nums; font-size:12px; color:var(--ink-2);">{{ t.zone }}</div>
-                  <div style="font-size:12.5px; color:var(--ink); line-height:1.5;">{{ t.note }}</div>
-                </div>
+            <div class="mm-brs">
+              <sc-for list="{{ updMind }}" as="mb" hint-placeholder-count="5">
+                <details class="mm-b" style="--c:{{ mb.accent }};">
+                  <summary class="mm-s">
+                    <span class="mm-dot"></span>
+                    <span class="mm-g">{{ mb.group }}</span>
+                    <span class="mm-n">{{ mb.n }}</span>
+                  </summary>
+                  <div class="mm-items">
+                    <sc-for list="{{ mb.items }}" as="mi" hint-placeholder-count="2">
+                      <div class="mm-i">
+                        <div class="mm-i-h">
+                          <span class="mm-i-l">{{ mi.label }}</span>
+                          <span class="mm-i-v" style="background:{{ mi.bg }}; color:{{ mi.color }};">{{ mi.value }}</span>
+                        </div>
+                        <div class="mm-i-d">{{ mi.detail }}</div>
+                      </div>
+                    </sc-for>
+                  </div>
+                </details>
               </sc-for>
             </div>
-          </sc-if>
-          <sc-if value="{{ sec.hasLevels }}" hint-placeholder-val="{{ false }}">
-            <div style="font-size:12px; font-variant-numeric:tabular-nums; color:var(--ink-2); background:var(--surface); border-radius:8px; padding:8px 10px;">{{ sec.levels }}</div>
-          </sc-if>
+          </div>
         </div>
-      </sc-for>
+      </sc-if>
+
+
 
 
 
@@ -2222,7 +2271,8 @@ class Component extends DCLogic {
 
     const assetCards = HDT.assetCards.map(a => {
       const ex = HDT.experts[a.expertId] || {};
-      return {
+
+return {
         name: a.name, sigLabel: a.sigLabel, date: a.date, summary: a.summary, levels: a.levels,
         expertInitials: ex.initials || a.expertId, expertName: ex.name || a.expertId,
         ...SSIG[a.sig],
@@ -3543,6 +3593,53 @@ class Component extends DCLogic {
       });
     }
 
+    // ══ Sơ đồ tư duy: xếp nội dung bài theo nhóm ngành / thị trường ══
+    const _MM = [
+      { g: 'Vàng & Bitcoin', re: /vàng|bitcoin|\bbtc\b|bạc|xau|xag/i,            sig: 'warn'  },
+      { g: 'Dầu',            re: /\bdầu\b|wti|brent|opec|hormuz/i,               sig: 'up'    },
+      { g: 'Nhật & Hàn',     re: /yên|nhật|hàn|samsung|nikkei|kospi|boj|aeon/i,  sig: 'down'  },
+      { g: 'Địa chính trị',  re: /iran|trung đông|nga|ukraine|chiến|houthi|israel/i, sig: 'warn' },
+      { g: 'Chứng khoán Mỹ', re: /\bmỹ\b|apple|aapl|nasdaq|s&p|us30|chips|spacex|nvidia|amd|intel|micron|google|amazon|dell|cyber|ftnt|panw|crwd/i, sig: 'down' },
+      { g: 'Vĩ mô & chính sách', re: /fed|lãi suất|lạm phát|lợi suất|vĩ mô|gdp|chính sách|thông tư|nghị quyết|cung tiền|tín dụng|ecb|cpi/i, sig: 'warn' },
+      { g: 'Chứng khoán Việt Nam', re: /việt nam|vn-?index|khối ngoại|tỉ trọng|tỷ trọng|danh mục|tỷ giá|ngân hàng|bất động sản|hose|cổ phiếu/i, sig: 'wait' }
+    ];
+    // chấm điểm thay vì khớp đầu tiên: nhãn nặng gấp 3 lần thân bài,
+    // nếu không thì một ý về Fed chỉ vì nhắc "đồng yên" sẽ bị xếp nhầm sang Nhật
+    const _score = (label, body) => {
+      let best = { g: 'Điểm khác', sig: 'wait' }, bestN = 0;
+      _MM.forEach(m => {
+        const inL = (String(label).match(new RegExp(m.re.source, 'gi')) || []).length;
+        const inB = (String(body).match(new RegExp(m.re.source, 'gi')) || []).length;
+        const n = inL * 3 + inB;
+        if (n > bestN) { bestN = n; best = m; }
+      });
+      return best;
+    };
+    const _mmMap = {};
+    const _push = (label, body, item) => {
+      const c = _score(label, body);
+      const b = _mmMap[c.g] = _mmMap[c.g] || { group: c.g, sig: c.sig, items: [] };
+      b.items.push(item);
+    };
+    const _cu = curUpdates[s.updIdx] || {};
+    (_cu.keyCalls || []).forEach(k =>
+      _push(k.tag + ' ' + k.value, k.note || '',
+            { label: k.tag, value: k.value, detail: k.note || '', kind: 'call',
+              ...CHIP_SIG[k.signal] }));
+    (_cu.sections || []).forEach(sec => {
+      const body = [sec.para || ''].concat((sec.bullets || []).map(b => '• ' + b)).join('\n');
+      _push(sec.title + ' ' + (sec.sigLabel || ''), body,
+            { label: sec.title, value: sec.sigLabel || '', detail: body, kind: 'sec',
+              ...CHIP_SIG[sec.signal] });
+    });
+    const _mmOrder = _MM.map(m => m.g).concat(['Điểm khác']);
+    const updMind = _mmOrder.filter(g => _mmMap[g]).map(g => {
+      const b = _mmMap[g];
+      return { group: b.group, n: b.items.length, items: b.items,
+               accent: ACT_ACCENT[b.sig] || 'var(--ink-3)', ...CHIP_SIG[b.sig] };
+    });
+    const updMindCount = updMind.reduce((n, b) => n + b.n, 0);
+
     return {
       showLogin: !s.logged, showApp: s.logged,
       isDashboard: s.screen === 'dashboard', isExpertsList: s.screen === 'experts-list',
@@ -3661,6 +3758,7 @@ class Component extends DCLogic {
       chartEmbedUrl: s.chartSym ? ('https://s.tradingview.com/widgetembed/?symbol=' + encodeURIComponent(s.chartSym) + '&interval=D&theme=light&style=1&locale=vi&hide_side_toolbar=1&withdateranges=1&save_image=0&hideideas=1') : '',
       closeChart: () => this.setState({ chartSym: '', chartLabel: '' }),
       updType: curUpdates[s.updIdx].typeLabel,
+      updMind, updMindCount, updMindHas: updMind.length > 0,
       updTypeBg: curUpdates[s.updIdx].typeBg,
       updTypeColor: curUpdates[s.updIdx].typeColor,
       updTitle: curUpdates[s.updIdx].title,

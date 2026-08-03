@@ -9253,5 +9253,394 @@ window.HDT_DATA = {
         "kind": "exact"
       }
     }
+  },
+  "context": {
+    "updated": "03/08/2026",
+    "note": "Bối cảnh được rút từ chính transcript của các chuyên gia đang theo dõi. Đây là NỀN để đọc nhận định, không phải bản tin thời sự — mục nào chưa có chuyên gia nào bàn tới thì để trống thay vì lấp bằng nguồn ngoài.",
+    "topics": [
+      {
+        "key": "the-gioi",
+        "label": "Chính trị thế giới",
+        "flag": "🌐",
+        "headline": "Trung Đông là biến số chi phối mọi thứ còn lại",
+        "sub": "Từ Hormuz đến lợi suất trái phiếu Mỹ, đến lãi suất, đến giá cổ phiếu — chuỗi nhân quả mà Thái Phạm bám suốt 6 tuần qua.",
+        "sig": "warn",
+        "stats": [
+          {
+            "v": "13",
+            "k": "lượt tàu qua Hormuz / ngày",
+            "sub": "thời bình 115–125 · ngừng bắn 45",
+            "sig": "down"
+          },
+          {
+            "v": "12+",
+            "k": "đêm Mỹ oanh tạc Iran liên tiếp",
+            "sub": "từ khi ngừng bắn chấm dứt 08/07",
+            "sig": "down"
+          },
+          {
+            "v": "4,1 triệu",
+            "k": "thùng dầu/ngày UAE bán ra",
+            "sub": "vượt đỉnh 2020",
+            "sig": "up"
+          },
+          {
+            "v": "15–19%",
+            "k": "mức giảm CK Mỹ các kỳ bầu cử giữa nhiệm kỳ",
+            "sub": "theo thống kê lịch sử",
+            "sig": "down"
+          }
+        ],
+        "items": [
+          {
+            "title": "Kịch bản Mỹ tấn công Iran",
+            "expertId": "thai-pham",
+            "date": "01–02/08",
+            "sig": "down",
+            "tag": "Trung Đông",
+            "body": "Theo Wall Street Journal và CNN, Trump có thể ra lệnh cho CENTCOM tấn công hạ tầng quân sự và điện của Iran vào chủ nhật hoặc rạng sáng thứ hai để buộc Tehran đầu hàng. Đại sứ quán Mỹ đã khuyến cáo công dân rời Trung Đông. Iran thề tiếp tục tấn công các căn cứ Mỹ tại vùng Vịnh; ngày 01/08 đã tấn công hai tàu được Mỹ hộ tống. Israel tuyên bố có nhiều kế hoạch nhưng Mỹ chưa duyệt vì sợ khủng hoảng giá dầu. Thái Phạm lưu ý thói quen \"taco\" của Trump — nói mạnh rồi rút lui."
+          },
+          {
+            "title": "Ai được lợi, ai thiệt hại",
+            "expertId": "thai-pham",
+            "date": "01/08",
+            "sig": "warn",
+            "tag": "Petrodollar",
+            "body": "Ông gọi đây là \"cuộc chiến Ngô–Thục–Ngụy 4.0\". Hưởng lợi lớn nhất là UAE (4,1 triệu thùng/ngày, vượt đỉnh 2020) và Ả Rập Xê Út (8 triệu thùng/ngày qua tuyến ống Đông–Tây, bán giá cao). Thiệt hại nặng nhất là Iran và Iraq — Iraq nằm sâu trong vịnh nên phụ thuộc hoàn toàn vào Hormuz. Ông cho rằng khoản 2,5 tỷ đô các quốc gia vùng Vịnh rót vào công ty crypto của gia đình Trump là \"một hình thức hối lộ rất kín đáo\" để đổi lấy hậu thuẫn tấn công Iran."
+          },
+          {
+            "title": "Chiến lược của Tehran: đánh vào lợi suất",
+            "expertId": "thai-pham",
+            "date": "01/08",
+            "sig": "warn",
+            "tag": "Cơ chế",
+            "body": "Đây là mắt xích giải thích vì sao địa chính trị lại quyết định danh mục. Theo ông, Iran cố tình giữ căng thẳng để đẩy giá dầu, qua đó đẩy lạm phát và lợi suất trái phiếu Mỹ lên cao, ép Fed phải tăng lãi suất — gây bất lợi cho Trump và chính quyền thân Ả Rập Xê Út cho đến hết bầu cử giữa nhiệm kỳ. Chỉ sau đó mới có cửa đàm phán."
+          },
+          {
+            "title": "Mặt trận thứ hai: Nga – Ukraine",
+            "expertId": "thai-pham",
+            "date": "24/07",
+            "sig": "down",
+            "tag": "Năng lượng",
+            "body": "Ukraine đẩy mạnh tấn công ngành dầu khí Nga: hơn 150 tàu chở dầu bị tấn công tại Biển Đen và Biển Azov chỉ trong một tháng, buộc đường ống Caspian Pipeline Consortium — nơi vận chuyển khoảng 80% lượng dầu xuất khẩu của Kazakhstan — phải ngừng nạp tại cảng cuối Biển Đen. Cùng thời điểm, Houthi ở Yemen tuyên bố bắn trúng hai tàu chở dầu Saudi trên Biển Đỏ."
+          },
+          {
+            "title": "Chiến tranh tiền tệ Mỹ – Nhật – châu Âu",
+            "expertId": "thai-pham",
+            "date": "01–02/08",
+            "sig": "warn",
+            "tag": "Tiền tệ",
+            "body": "Lần đầu sau 28 năm, Ngân hàng Trung ương Nhật Bản và Bộ Tài chính Mỹ cùng phối hợp can thiệp vào đồng yên trong hai ngày. Mỹ bán euro, BOJ chi khoảng 72 tỷ đô mua yên. Thái Phạm đọc động cơ thật: BOJ đang bán quá nhiều trái phiếu chính phủ Mỹ, Mỹ sợ lợi suất vọt lên làm sập thị trường nên chấp nhận gây căng thẳng tiền tệ với euro để đổi lấy việc Nhật ngừng bán. Ông gọi cách làm này là \"can thiệp nhân tạo\" và \"hơi vô duyên\"."
+          },
+          {
+            "title": "Yếu tố mùa vụ: bầu cử giữa nhiệm kỳ",
+            "expertId": "thai-pham",
+            "date": "02/08",
+            "sig": "down",
+            "tag": "Chu kỳ",
+            "body": "Theo thống kê các kỳ bầu cử giữa nhiệm kỳ trước, chứng khoán Mỹ thường giảm khoảng 15–19%. Cộng với việc Nasdaq vừa có phiên giảm khoảng 3% — lần đầu sau nhiều tháng tăng — ông giữ kịch bản điều chỉnh kéo dài đến khoảng 15/10."
+          }
+        ]
+      },
+      {
+        "key": "vi-mo",
+        "label": "Kinh tế vĩ mô",
+        "flag": "📉",
+        "headline": "Lợi suất Mỹ 30 năm 5,267% — cao nhất kể từ trước khủng hoảng 2008",
+        "sub": "Thị trường không tin Fed. Đây là con số Thái Phạm coi là trục của cả tuần 31, và là thứ kéo theo mọi lớp tài sản khác.",
+        "sig": "down",
+        "stats": [
+          {
+            "v": "5,267%",
+            "k": "lợi suất Mỹ 30 năm",
+            "sub": "kỷ lục · vượt cả tháng 10/2023",
+            "sig": "down"
+          },
+          {
+            "v": "4,718%",
+            "k": "lợi suất Mỹ 10 năm",
+            "sub": "ngang T11/2023 và T5/2007",
+            "sig": "down"
+          },
+          {
+            "v": "39.200 tỷ $",
+            "k": "nợ chính phủ Mỹ",
+            "sub": "tiền lãi = 2/3 thu thuế cả năm",
+            "sig": "down"
+          },
+          {
+            "v": "1%",
+            "k": "xác suất Fed hạ lãi suất 2026",
+            "sub": "thị trường định giá TĂNG 1–2 lần",
+            "sig": "down"
+          },
+          {
+            "v": "4,7%",
+            "k": "lạm phát Việt Nam",
+            "sub": "từ đỉnh 5,6% · mục tiêu 4,5%",
+            "sig": "up"
+          },
+          {
+            "v": "1952",
+            "k": "niềm tin tiêu dùng Mỹ thấp nhất từ năm",
+            "sub": "—",
+            "sig": "down"
+          }
+        ],
+        "items": [
+          {
+            "title": "Fed rạn nứt nội bộ chưa từng thấy",
+            "expertId": "thai-pham",
+            "date": "01/08",
+            "sig": "down",
+            "tag": "Fed",
+            "body": "Ba thành viên FOMC công khai chống đối quyết định giữ nguyên lãi suất và đòi tăng ngay trong tháng 7. Chủ tịch Kevin Warsh — người được Trump bổ nhiệm để cắt lãi suất — bỏ luôn forward guidance, chỉ tuyên bố giữ mục tiêu lạm phát 2% mà không kèm hành động. Nhận xét của Thái Phạm: \"you talk the talk nhưng you don't walk the talk\" — và thị trường phản ứng bằng cách đẩy lợi suất lên. Tám tháng trước thị trường còn kỳ vọng Fed cắt ba lần trong 2026."
+          },
+          {
+            "title": "Phản biện đáng lưu từ người xem",
+            "expertId": "thai-pham",
+            "date": "02/08",
+            "sig": "warn",
+            "tag": "Góc nhìn khác",
+            "body": "Hai bình luận dưới video đưa cách đọc ngược. Thứ nhất (5 like): \"không nghịch lý đâu — chính phủ Mỹ phải vay 2.000 tỷ đô mỗi năm, phải trả lãi cao thì mới có người cho vay đủ\" — tức đơn thuần cung cầu. Thứ hai: \"bond yield tăng mạnh càng thúc giục Fed phải HẠ lãi suất nhanh để bảo vệ túi tiền chính phủ\" — đảo ngược hẳn mũi tên nhân quả của Thái Phạm. Cả hai đều chưa được trả lời."
+          },
+          {
+            "title": "Carry trade Nhật: mắt xích dễ đứt nhất",
+            "expertId": "thai-pham",
+            "date": "02/08",
+            "sig": "warn",
+            "tag": "Nhật Bản",
+            "body": "Lãi suất Nhật 1%, lãi suất Mỹ 3,75–4% và sắp cao hơn. Vay yên rồi đổi sang đô đem gửi hoặc mua trái phiếu Mỹ đã ăn chênh 3%; làm nhà cái cho vay margin trên thị trường chứng khoán Mỹ được ~6%; cho vay bất động sản 30 năm 6,66%/năm. Nếu Nhật buộc phải tăng lãi suất đột ngột để cứu đồng yên, dòng vốn này đảo chiều và gây sập chứng khoán Mỹ — nên Mỹ phải giúp Nhật hạ nhiệt từ từ."
+          },
+          {
+            "title": "Việt Nam: nửa đầu kiểm soát, nửa cuối nới lỏng",
+            "expertId": "quang-dung",
+            "date": "04/07",
+            "sig": "up",
+            "tag": "Chính sách VN",
+            "body": "Khung phân tích trung tâm của Quang Dũng: chính phủ phải chọn giữa tăng trưởng và ổn định vĩ mô, không thể có cả hai cùng lúc. Nửa đầu 2026 ưu tiên KIỂM SOÁT vì môi trường bất ổn; nửa cuối buộc chuyển sang NỚI LỎNG để đạt mục tiêu tăng trưởng. Bằng chứng: tháng 6/2026 là tháng có nhiều thông tư, văn bản, nghị định nhất nửa đầu năm — mục đích để thực thi ngay từ ngày đầu quý 3."
+          },
+          {
+            "title": "Bài toán GDP 11,9% nửa cuối năm",
+            "expertId": "quang-dung",
+            "date": "30/06",
+            "sig": "warn",
+            "tag": "Tăng trưởng VN",
+            "body": "GDP 6 tháng đầu năm chỉ đạt hơn 8,7%, nên để cả năm chạm 10% thì nửa cuối phải tăng 11,9% — ông gọi thẳng là \"bài toán quá khó\". Ba nút thắt: giải ngân đầu tư công 5 tháng mới đạt 21,6% trên kế hoạch 50%; tăng trưởng tín dụng tháng 4–5 chỉ khoảng 4,1%; mặt bằng lãi suất tăng và phần lớn ngân hàng đã chạm trần tỉ lệ an toàn."
+          },
+          {
+            "title": "Lạm phát Việt Nam: bóc rổ thay vì nhìn số tổng",
+            "expertId": "quang-dung",
+            "date": "06/06",
+            "sig": "up",
+            "tag": "Lạm phát",
+            "body": "Khi CPI vọt lên 5,6% từ mức 2–3% nửa năm trước, ông phản biện nỗi sợ chung: năm nhóm chiếm hơn 70% rổ tính CPI, và cú nhảy chủ yếu do giá năng lượng đảo chiều — đầu 2026 nhóm này còn -3,19% trước khi chiến tranh Mỹ–Iran đẩy ngược lên. Giá nguyên liệu ngược lại đang giảm từ 6% xuống 4%. Ông cũng chỉ ra lạm phát Việt Nam trễ Mỹ 3–6, thậm chí 9 tháng. Thực tế sau đó: lạm phát đã hạ về 4,7%, tiệm cận mục tiêu 4,5%."
+          },
+          {
+            "title": "ECB và đồng đô la",
+            "expertId": "thai-pham",
+            "date": "24/07",
+            "sig": "warn",
+            "tag": "Châu Âu",
+            "body": "ECB giữ nguyên ba lãi suất chủ chốt ở 2,25%, 2,40% và 2,65% với đồng thuận tuyệt đối, sau khi đã tăng lần đầu kể từ 2023 vào tháng 6. Lagarde nhấn mạnh \"tác động lạm phát đầy đủ của cú sốc năng lượng vẫn chưa bộc lộ hết\". Deutsche Bank dự báo ECB tăng thêm một lần lên 2,50% vào tháng 9. Chỉ số DXY 101,46 — cao nhất từ 25/6, và đạt đỉnh 40 năm so với đồng yên."
+          }
+        ]
+      },
+      {
+        "key": "viet-nam",
+        "label": "Chính sách & tin Việt Nam",
+        "flag": "🇻🇳",
+        "headline": "Ba văn bản đang định hình dòng tiền nửa cuối năm",
+        "sub": "Nghị quyết 168, dự thảo Thông tư 22 và cơ chế tiền gửi Kho bạc — cả ba đều nhắm vào việc bơm vốn qua hệ thống ngân hàng.",
+        "sig": "up",
+        "stats": [
+          {
+            "v": "30% → 40%",
+            "k": "trần vốn ngắn hạn cho vay trung–dài hạn",
+            "sub": "dự thảo Thông tư 22",
+            "sig": "up"
+          },
+          {
+            "v": "0% → 20%",
+            "k": "tiền gửi KBNN tính vào huy động",
+            "sub": "từng lên 50% thời khủng hoảng BĐS",
+            "sig": "up"
+          },
+          {
+            "v": "92.000 tỷ",
+            "k": "khối ngoại bán ròng từ đầu năm",
+            "sub": "tuần cuối 3.500 tỷ · tháng 14.000 tỷ",
+            "sig": "down"
+          },
+          {
+            "v": "20 tỷ $",
+            "k": "nhập siêu 7 tháng đầu năm",
+            "sub": "máy móc nguyên liệu — áp lực tỉ giá",
+            "sig": "down"
+          },
+          {
+            "v": "26.490",
+            "k": "giá bán USD ngân hàng",
+            "sub": "chênh mua–bán 410 đồng",
+            "sig": "warn"
+          },
+          {
+            "v": "79%",
+            "k": "cổ phiếu ở ngưỡng downtrend",
+            "sub": "đo tại tuần 31",
+            "sig": "down"
+          }
+        ],
+        "items": [
+          {
+            "title": "Nghị quyết 168 — gắn đầu tư công với mục tiêu hai con số",
+            "expertId": "quang-dung",
+            "date": "30/06",
+            "sig": "up",
+            "tag": "Nghị quyết",
+            "body": "Nội dung chính: gắn đầu tư công cả nhiệm kỳ 2026–2030 với mục tiêu tăng trưởng hai con số; nâng tỉ trọng thu nội địa từ 86–87% lên 87–88% tổng thu ngân sách; chi cho đầu tư phát triển chiếm 40%; và yêu cầu giải ngân đầu tư công đạt 100% kế hoạch được giao. Bối cảnh: 5 tháng đầu năm mới giải ngân 21,6% trên kế hoạch 50%, tức mới đi 1/4 chặng đường khi năm đã qua một nửa; riêng từ tháng 5 sang tháng 6 đã bật thêm 10%."
+          },
+          {
+            "title": "Dự thảo Thông tư 22 — đảo chiều lộ trình siết",
+            "expertId": "quang-dung",
+            "date": "20/06",
+            "sig": "up",
+            "tag": "Ngân hàng",
+            "body": "Nâng tỉ lệ vốn ngắn hạn cho vay trung và dài hạn từ 30% lên 40%. Mức 30% áp dụng từ tháng 10/2023, nằm trong lộ trình siết dần nhiều năm 50 → 40 → 37 → 34 → 30 — nay đảo chiều. Tiền lệ: năm 2015 từng đẩy từ 30% lên 60% để giải bài toán tăng trưởng tín dụng 18%. Phòng phân tích của ông khảo sát đủ 27 ngân hàng: nhóm có tỉ lệ trên 25% đang bị chặn trần nên hưởng lợi rõ; nhóm chỉ khoảng 15% thì không kẹt nên cũng không hưởng lợi. Trong 8 ngân hàng lớn được nêu thì 5/8 nằm trên 25%."
+          },
+          {
+            "title": "Cơ chế tiền gửi Kho bạc Nhà nước",
+            "expertId": "quang-dung",
+            "date": "30/06",
+            "sig": "up",
+            "tag": "Cung tiền",
+            "body": "Tỉ lệ tiền gửi có kỳ hạn của Kho bạc Nhà nước được tính vào huy động: từng được nâng từ 0% lên 50% khi nền kinh tế chịu áp lực khủng hoảng bất động sản, rồi về 0% ở nửa đầu 2026, nay nới lại 20%. Điểm đáng chú ý là văn bản ghi thêm \"hoặc tỷ lệ khác do Thống đốc Ngân hàng Nhà nước quyết định tùy từng thời kỳ\" — tức còn dư địa nâng tiếp. Riêng khoản mua bán trái phiếu chính phủ đã chiếm khoảng 650.000 tỷ. Nhóm Big 4 (Agribank, Vietcombank, CTG, BIDV) hưởng lợi trực tiếp.",
+            "extra": "Một hội viên bổ sung dưới bài đăng: có quyết định nâng tỷ lệ khấu trừ số dư tiền gửi có kỳ hạn của KBNN lên 50%, hiệu lực 1/8/2026 — chi tiết này CHƯA được chuyên gia nào xác nhận."
+          },
+          {
+            "title": "Rủi ro tập trung: VIC và VHM",
+            "expertId": "thai-pham",
+            "date": "01/08",
+            "sig": "down",
+            "tag": "Cấu trúc thị trường",
+            "body": "Luận điểm ông nhắc lại nhiều tuần liền: VIC và VHM neo cao \"phi thị trường\", vốn hóa VIC vượt 1 triệu tỷ đồng. Hệ quả là quỹ ngoại mua VN30 tức là đặt cược toàn bộ vào Vin Group — \"chẳng có ai cược vào một nơi mà trọng số chiếm quá lớn\". Ông cho rằng đây là lý do khối ngoại bán ròng 92.000 tỷ từ đầu năm và sẽ không quay lại chừng nào cấu trúc này còn nguyên."
+          },
+          {
+            "title": "Loạt chủ tịch đăng ký mua — đọc thế nào",
+            "expertId": "ck-5-phut",
+            "date": "28/07",
+            "sig": "wait",
+            "tag": "Tin doanh nghiệp",
+            "body": "Ông Tô Hải (VCI) đăng ký mua 31 triệu cổ phiếu, một Phó TGĐ Khang Điền 20 triệu, ông Đạt (PDR) 20 triệu, cùng nhiều lệnh cỡ vài trăm nghìn tới hơn 1 triệu cổ. Cách đọc của CK 5 phút: người trong cuộc hiểu doanh nghiệp mình nhất nên đây là tín hiệu định giá hấp dẫn — NHƯNG không phải tín hiệu đáy, \"đáy thì còn lâu\". Thái Phạm bổ sung: riêng VCI còn bị ảnh hưởng vì danh mục tự doanh đang có PNJ và FPT."
+          },
+          {
+            "title": "Các vụ việc doanh nghiệp trong tháng 7",
+            "expertId": "thai-pham",
+            "date": "24/07–01/08",
+            "sig": "down",
+            "tag": "Rủi ro",
+            "body": "Đức Giang bị Chứng khoán Bản Việt bán giải chấp ngay vùng đáy. Các quỹ Vina Capital và Dragon Capital buộc cắt lỗ PNJ ở giá rất thấp sau vụ lùm xùm kim cương; VCI thông báo bán ra DIG. Dabaco bị khởi tố (CK 5 phút dự báo giảm nhưng không sàn như PNJ). MWG có \"rất nhiều thông tin không bất lợi\" — Thái Phạm nghi có thể cùng nguồn cung với vụ nữ trang của PNJ. Bài học chung ông rút ra: mã dính pháp lý thì mặc định bỏ qua, không ngồi đánh giá cơ bản."
+          },
+          {
+            "title": "Tỉ giá và nhập siêu",
+            "expertId": "thai-pham",
+            "date": "01/08",
+            "sig": "warn",
+            "tag": "Tỉ giá",
+            "body": "Chênh lệch mua–bán tại ngân hàng lên tới 410 đồng: mua 26.080, bán 26.490. Nguyên nhân là dù đồng đô la suy yếu, Việt Nam nhập siêu tới 20 tỷ đô trong 7 tháng đầu năm — chủ yếu máy móc nguyên liệu phục vụ đường sắt cao tốc và các khu đại đô thị. Ông dự báo tỉ giá sẽ còn điều chỉnh. Đối chiếu số liệu 23/07: tỷ giá trung tâm 25.272, USD tự do vượt 27.400."
+          }
+        ]
+      },
+      {
+        "key": "bat-dong-san",
+        "label": "Bất động sản VN",
+        "flag": "🏙",
+        "headline": "Định giá đã về mức 2024 — nhưng thanh khoản thì \"chết hẳn\"",
+        "sub": "Hai chuyên gia nhìn cùng một ngành và ra hai kết luận ngược nhau: Quang Dũng thấy bảng cân đối khỏe lên thật, Thái Phạm thấy rủi ro call margin của doanh chủ.",
+        "sig": "warn",
+        "stats": [
+          {
+            "v": "30–50%",
+            "k": "mức giảm cổ phiếu BĐS sau 8 tháng",
+            "sub": "trung bình 40%",
+            "sig": "down"
+          },
+          {
+            "v": "1,7 lần",
+            "k": "định giá trung bình 5 năm của ngành",
+            "sub": "hiện đã về gần mức 2024",
+            "sig": "up"
+          },
+          {
+            "v": ">500.000 tỷ",
+            "k": "tổng dư nợ bất động sản",
+            "sub": "riêng ngành chiếm 37% năm 2025",
+            "sig": "down"
+          },
+          {
+            "v": "39%",
+            "k": "nợ vay ròng / cấu trúc vốn nhóm",
+            "sub": "tại cuối 2025",
+            "sig": "warn"
+          },
+          {
+            "v": "250% → 150%",
+            "k": "trọng số rủi ro BĐS",
+            "sub": "biện pháp bơm tiền trực tiếp",
+            "sig": "up"
+          }
+        ],
+        "items": [
+          {
+            "title": "Vì sao định giá rẻ — và rẻ tới mức nào",
+            "expertId": "quang-dung",
+            "date": "10/06",
+            "sig": "up",
+            "tag": "Định giá",
+            "body": "Luận điểm mở: \"một thị trường định giá rẻ thường nằm ở một thị trường có biến cố\" — cú sốc chính là bài test để biết tài sản có thật sự hấp dẫn hay chưa. Sau tám tháng đổ vỡ của bộ ba ngân hàng – chứng khoán – bất động sản, đa phần cổ phiếu giảm ít nhất 30%, trung bình 40%, nhiều mã tới 50%. Kết quả: định giá ngành 2026 đã gần bằng mức của năm 2024, so với trung bình 5 năm khoảng 1,7 lần. Nguyên nhân gốc theo ông là chính sự thăng hoa của ngành năm 2025 dẫn tới tình trạng thiếu tiền năm 2026."
+          },
+          {
+            "title": "Bảng cân đối ba doanh nghiệp cải thiện thật",
+            "expertId": "quang-dung",
+            "date": "10/06",
+            "sig": "up",
+            "tag": "Doanh nghiệp",
+            "body": "Điểm ông nhấn mạnh là chất lượng tài sản tốt lên chứ không chỉ giá giảm. Nam Long: tiền mặt từ 3.800 lên gần 8.000 tỷ trong khi tổng nợ giảm từ 7.000 xuống khoảng 5.400 tỷ trên quy mô vốn 15.000 tỷ. Đất Xanh: tiền và tương đương tiền từ 1.300 tỷ cuối 2024 lên khoảng 5.600 tỷ tại quý 1/2026. Khang Điền: quy mô từ 22.000 lên khoảng 29.000 tỷ trong 2025, lợi nhuận từ 384 tỷ lên gần 700 tỷ ở quý 1/2026."
+          },
+          {
+            "title": "Góc ngược: rủi ro call margin của doanh chủ",
+            "expertId": "thai-pham",
+            "date": "28/07",
+            "sig": "down",
+            "tag": "Rủi ro",
+            "body": "Cùng thời điểm, Thái Phạm đưa bốn lý do \"rẻ có thể rẻ hơn\" và hai trong số đó nằm ở bất động sản: nhiều doanh chủ có khả năng bị call margin trong thời gian tới — dẫn chính DIG và PNJ làm ví dụ — và VIC, VHM neo cao đáng sợ. Kết luận của ông: \"Đáy là một khái niệm khó dò dù nhiều cổ phiếu đã rất rẻ… nên ta cố thủ đợi 1.400–1.500.\""
+          },
+          {
+            "title": "Thanh khoản thị trường nhà đất",
+            "expertId": "thai-pham",
+            "date": "24/07",
+            "sig": "down",
+            "tag": "Thị trường thật",
+            "body": "Đánh giá thẳng của ông về bất động sản vật lý (không phải cổ phiếu): \"chết thanh khoản, chết hẳn chứ không phải chết dọa\". Đây là lý do dòng tiền đầu cơ rút khỏi kênh này — mà theo Quang Dũng thì gốc là lãi suất cao làm chi phí vốn đội lên, khiến dòng tiền đầu cơ ở mọi kênh (bất động sản, vàng, crypto) đều thu hẹp."
+          },
+          {
+            "title": "Chính sách hỗ trợ trực tiếp",
+            "expertId": "quang-dung",
+            "date": "20/06",
+            "sig": "up",
+            "tag": "Chính sách",
+            "body": "Trong các biện pháp nới lỏng, ông chỉ ra một cái nhắm thẳng vào bất động sản: giảm trọng số rủi ro của lĩnh vực này từ 250% xuống 150% — tức ngân hàng cho vay bất động sản sẽ tốn ít vốn tự có hơn, mở đường bơm tiền trực tiếp vào ngành. Kèm với Thông tư 22 nâng trần cho vay trung–dài hạn, đây là hai cơ chế có tác động nhanh nhất tới nhóm này."
+          },
+          {
+            "title": "Tín hiệu từ thị trường trái phiếu",
+            "expertId": "thai-pham",
+            "date": "31/07",
+            "sig": "warn",
+            "tag": "Trái phiếu",
+            "body": "Một hội viên đặt câu hỏi dưới bài đăng: trái phiếu VIC123029 đang chào bán ở giá 103,47 và đáo hạn 14/9, hàm ý lợi suất khoảng 3%/tháng. Con số này chưa được Thái Phạm trả lời, nhưng nó khớp với luận điểm \"VIC, VHM neo cao đáng sợ\" và rủi ro call margin của nhóm doanh chủ mà ông cảnh báo cùng tuần."
+          }
+        ]
+      }
+    ]
   }
 };

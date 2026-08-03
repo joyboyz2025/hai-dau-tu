@@ -544,6 +544,73 @@ input::placeholder { color: #A3A29A; }
   </sc-if>
 
   <!-- ===================== HÀNH ĐỘNG GIÁ ===================== -->
+  <sc-if value="{{ isContext }}" hint-placeholder-val="{{ false }}">
+    <div data-screen-label="Bối cảnh" style="max-width:1100px; margin:0 auto; padding:28px 20px 60px; display:flex; flex-direction:column; gap:18px;">
+
+      <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+        <div>
+          <h1 style="margin:0; font-size:24px; font-weight:800; letter-spacing:-0.4px;">Bối cảnh</h1>
+          <div style="margin-top:6px; font-size:13.5px; color:#6E6D66; line-height:1.5; max-width:620px;">Nền để đọc nhận định: chính trị thế giới, kinh tế vĩ mô, chính sách – tin Việt Nam và bất động sản.</div>
+        </div>
+        <div style="font-size:11.5px; font-family:'IBM Plex Mono',monospace; color:#9B9A92;">Cập nhật {{ ctxUpdated }}</div>
+      </div>
+
+      <div class="nav-scroll tk-segment no-print">
+        <sc-for list="{{ ctxTabs }}" as="ct" hint-placeholder-count="4">
+          <div onClick="{{ ct.onClick }}" class="tk-seg-btn" style="background:{{ ct.bg }}; color:{{ ct.color }}; box-shadow:{{ ct.shadow }}; font-weight:{{ ct.weight }};">{{ ct.flag }} {{ ct.label }} <span class="tk-seg-count">{{ ct.count }}</span></div>
+        </sc-for>
+      </div>
+
+      <div style="background:{{ ctxHeadBg }}; border-radius:16px; padding:22px 24px; display:flex; flex-direction:column; gap:8px;">
+        <div style="font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:0.7px; color:{{ ctxHeadColor }}; opacity:0.85;">{{ ctxFlag }} {{ ctxLabel }}</div>
+        <div style="font-size:20px; font-weight:800; letter-spacing:-0.4px; line-height:1.35; color:{{ ctxHeadColor }};">{{ ctxHeadline }}</div>
+        <div style="font-size:13.5px; line-height:1.65; color:#46453F;">{{ ctxSub }}</div>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:12px;">
+        <sc-for list="{{ ctxStats }}" as="cs" hint-placeholder-count="4">
+          <div style="background:#FFFFFF; border:1px solid #E7E6E1; border-left:4px solid {{ cs.accent }}; border-radius:12px; padding:14px 16px; display:flex; flex-direction:column; gap:3px;">
+            <div style="font-size:19px; font-weight:800; letter-spacing:-0.5px; font-family:'IBM Plex Mono',monospace; color:{{ cs.color }};">{{ cs.v }}</div>
+            <div style="font-size:12px; font-weight:700; color:#3F3E38; line-height:1.4;">{{ cs.k }}</div>
+            <sc-if value="{{ cs.hasSub }}" hint-placeholder-val="{{ true }}">
+              <div style="font-size:11px; color:#9B9A92; line-height:1.4;">{{ cs.sub }}</div>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:10px; margin-top:4px;">
+        <div style="font-size:15px; font-weight:800; letter-spacing:-0.2px;">Chuyên gia nói gì</div>
+        <div style="font-size:11px; color:#9B9A92;">{{ ctxItemCount }} mục</div>
+        <div style="flex:1; height:1px; background:#DDDCD5;"></div>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <sc-for list="{{ ctxItems }}" as="ci" hint-placeholder-count="5">
+          <div class="print-break-avoid" style="background:#FFFFFF; border:1px solid #E7E6E1; border-left:4px solid {{ ci.accent }}; border-radius:14px; padding:18px 20px; display:flex; flex-direction:column; gap:9px;">
+            <div style="display:flex; align-items:center; gap:9px; flex-wrap:wrap;">
+              <div style="font-size:14.5px; font-weight:800; color:#21211D; letter-spacing:-0.2px;">{{ ci.title }}</div>
+              <sc-if value="{{ ci.hasTag }}" hint-placeholder-val="{{ true }}">
+                <div style="font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:0.6px; padding:3px 9px; border-radius:999px; background:{{ ci.bg }}; color:{{ ci.color }};">{{ ci.tag }}</div>
+              </sc-if>
+            </div>
+            <div style="font-size:13.5px; color:#3F3E38; line-height:1.75;">{{ ci.body }}</div>
+            <sc-if value="{{ ci.hasExtra }}" hint-placeholder-val="{{ false }}">
+              <div style="font-size:12.5px; color:#6E6D66; line-height:1.6; background:#F4F3EE; border-radius:10px; padding:10px 13px;">⌗ {{ ci.extra }}</div>
+            </sc-if>
+            <div onClick="{{ ci.onClick }}" style="display:flex; align-items:center; gap:8px; cursor:pointer; padding-top:2px;">
+              <div style="width:24px; height:24px; border-radius:50%; background:{{ ci.bg }}; color:{{ ci.color }}; display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:800;">{{ ci.initials }}</div>
+              <div style="font-size:12px; font-weight:700; color:#55544D;">{{ ci.expertName }}</div>
+              <div style="font-size:11px; font-family:'IBM Plex Mono',monospace; color:#9B9A92;">{{ ci.dateLabel }}</div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+
+      <div style="font-size:11.5px; color:#9B9A92; line-height:1.6; text-align:center; padding-top:6px;">{{ ctxNote }}</div>
+    </div>
+  </sc-if>
+
   <sc-if value="{{ isActions }}" hint-placeholder-val="{{ false }}">
     <div data-screen-label="Hành động" style="max-width:1180px; margin:0 auto; padding:28px 20px 60px; display:flex; flex-direction:column; gap:20px;">
       <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:12px; flex-wrap:wrap;">
@@ -1582,7 +1649,7 @@ class Component extends DCLogic {
     let logged = false;
     try { logged = localStorage.getItem('hdt_auth') === '1'; } catch (e) {}
     const firstTk = (window.HDT_DATA && window.HDT_DATA.tickers && window.HDT_DATA.tickers[0]) || {};
-    this.state = { logged, screen: 'dashboard', pwError: false, srcType: 0, added: [], updIdx: 0, expertId: 'thai-pham', q: '', assetKey: 'vn', callsExpert: 'all', chartSym: '', chartLabel: '', scExpert: 'all', tickerKey: firstTk.key || '', bncOnly: false, bncPrices: {}, tkView: 'industry', tkRegion: 'all', tkIndustry: 'all', tkBasket: 'all', tkTrade: 'all' };
+    this.state = { logged, screen: 'dashboard', pwError: false, srcType: 0, added: [], updIdx: 0, expertId: 'thai-pham', q: '', assetKey: 'vn', callsExpert: 'all', chartSym: '', chartLabel: '', scExpert: 'all', tickerKey: firstTk.key || '', bncOnly: false, bncPrices: {}, tkView: 'industry', tkRegion: 'all', tkIndustry: 'all', tkBasket: 'all', tkTrade: 'all', ctxTopic: 0 };
     this.pwRef = React.createRef();
     this.nameRef = React.createRef();
     this.channelRef = React.createRef();
@@ -1645,6 +1712,7 @@ class Component extends DCLogic {
     const navDefs = [
       { key: 'dashboard',     label: 'Tổng quan' },
       { key: 'briefing',      label: 'Bản tin' },
+      { key: 'context',       label: 'Bối cảnh' },
       { key: 'actions',       label: 'Hành động' },
       { key: 'tickers',       label: 'Sổ mã' },
       { key: 'experts-list',  label: 'Chuyên gia' },
@@ -2751,6 +2819,35 @@ class Component extends DCLogic {
       waiting: { sLabel: 'Chờ kích hoạt', sBg: 'oklch(0.96 0.05 85)',  sColor: 'oklch(0.5 0.1 70)' },
       done:    { sLabel: 'Đã đóng',       sBg: '#EFEEE9',              sColor: '#5F5E57' }
     };
+    // ── Bối cảnh: chính trị thế giới / vĩ mô / Việt Nam / bất động sản ──
+    const CTX = HDT.context || { topics: [], updated: '', note: '' };
+    const ctxTopics = CTX.topics || [];
+    const ctxIdx = Math.min(s.ctxTopic || 0, Math.max(0, ctxTopics.length - 1));
+    const ctxCur = ctxTopics[ctxIdx] || { stats: [], items: [] };
+    const ctxTabs = ctxTopics.map((t, i) => ({
+      label: t.label, flag: t.flag || '', count: (t.items || []).length,
+      bg: i === ctxIdx ? '#FFFFFF' : 'transparent',
+      color: i === ctxIdx ? '#21211D' : '#6E6D66',
+      weight: i === ctxIdx ? '700' : '500',
+      shadow: i === ctxIdx ? '0 1px 3px rgba(0,0,0,.09)' : 'none',
+      onClick: () => this.setState({ ctxTopic: i })
+    }));
+    const ctxSig = CHIP_SIG[ctxCur.sig] || CHIP_SIG.wait;
+    const ctxStats = (ctxCur.stats || []).map(st => ({
+      v: st.v, k: st.k, sub: st.sub || '', hasSub: !!st.sub,
+      accent: ACT_ACCENT[st.sig] || '#C9C8C0', ...CHIP_SIG[st.sig]
+    }));
+    const ctxItems = (ctxCur.items || []).map(it => {
+      const ex = HDT.experts[it.expertId] || {};
+      return {
+        title: it.title, body: it.body, tag: it.tag || '', hasTag: !!it.tag,
+        extra: it.extra || '', hasExtra: !!it.extra,
+        dateLabel: it.date || '', initials: ex.initials || '?', expertName: ex.name || it.expertId,
+        accent: ACT_ACCENT[it.sig] || '#C9C8C0', ...CHIP_SIG[it.sig],
+        onClick: () => this.go('expert', { expertId: it.expertId })
+      };
+    });
+
     let tkSymbol = '', tkName = '', tkStance = '', tkStanceBg = '#EFEEE9', tkStanceColor = '#5F5E57',
         tkGroupLabel = '', tkOneLiner = '',
         tkOrders = [], tkThesis = [], tkViews = [], tkDebate = '', tkHist = [], tkScRows = [], tkScSummary = '',
@@ -2866,6 +2963,12 @@ class Component extends DCLogic {
       actNow, actWaiting, actEvents, actUpdated,
       actNowCount: actNow.length, actWaitingCount: actWaiting.length, actEventsCount: actEvents.length,
       isBriefing: s.screen === 'briefing',
+      isContext: s.screen === 'context',
+      ctxTabs, ctxUpdated: CTX.updated || '', ctxNote: CTX.note || '',
+      ctxHeadline: ctxCur.headline || '', ctxSub: ctxCur.sub || '',
+      ctxLabel: ctxCur.label || '', ctxFlag: ctxCur.flag || '',
+      ctxHeadBg: ctxSig.bg, ctxHeadColor: ctxSig.color,
+      ctxStats, ctxItems, ctxItemCount: ctxItems.length,
       brKicker: BR.kicker, brEpisode: BR.episode, brDate: BR.dateLabel,
       brTitle: BR.title, brSubtitle: BR.subtitle, brLead: BR.lead, brUpdated: BR.updated,
       brExpertName: brExpert.name || '', brExpertInitials: brExpert.initials || '',

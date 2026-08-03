@@ -222,6 +222,63 @@ input::placeholder{color:var(--ink-3);}
   .filt-l{white-space:nowrap;}
 }
 
+/* ══ Bản tin: các khối đồ hoạ dựng từ số liệu thật ══ */
+.viz{background:var(--white);border:1px solid var(--hair);border-radius:var(--r-lg);
+  padding:20px 22px;display:flex;flex-direction:column;gap:16px;}
+.viz-h{display:flex;flex-direction:column;gap:3px;}
+.viz-note{font-size:12.5px;color:var(--ink-2);line-height:1.6;}
+.viz-note b{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;}
+.viz-lg{display:flex;gap:16px;flex-wrap:wrap;}
+.viz-lg span{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;color:var(--ink-2);}
+.viz-lg i{width:9px;height:9px;border-radius:2px;display:inline-block;flex-shrink:0;}
+.viz-lg b{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;}
+.viz-lg em{font-style:normal;color:var(--ink-3);font-variant-numeric:tabular-nums;}
+.viz-lg--wrap{gap:10px 16px;}
+
+/* Thước đo chỉ số */
+.gauge{padding:26px 0 44px;position:relative;}
+.gauge-track{position:relative;height:8px;border-radius:4px;background:var(--surface);}
+.gauge-zone{position:absolute;top:0;bottom:0;border-radius:4px 0 0 4px;}
+.gauge-mk{position:absolute;top:-6px;width:2px;height:20px;background:var(--c);border-radius:1px;transform:translateX(-1px);}
+.gauge-mk--now{top:-11px;height:30px;width:3px;}
+.gauge-mk--now::after{content:'';position:absolute;top:-7px;left:50%;transform:translateX(-50%);
+  width:9px;height:9px;border-radius:50%;background:var(--c);}
+.gauge-lbl{position:relative;height:0;}
+.gauge-p{position:absolute;top:12px;transform:translateX(-50%);display:flex;flex-direction:column;
+  align-items:center;gap:1px;white-space:nowrap;}
+.gauge-p--end{transform:none;align-items:flex-end;}
+.gauge-p b{font-size:14px;font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:-.02em;}
+.gauge-p span{font-size:10.5px;color:var(--ink-3);}
+
+/* Thanh ngang so sánh */
+.bars{display:flex;flex-direction:column;gap:10px;}
+.bar-row{display:grid;grid-template-columns:148px 1fr auto;align-items:center;gap:12px;cursor:pointer;}
+.bar-nm{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;min-width:0;}
+.bar-av{width:22px;height:22px;border-radius:6px;background:var(--surface);border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:600;flex-shrink:0;}
+.bar-tr{display:flex;height:26px;border-radius:6px;overflow:hidden;background:var(--surface);}
+.bar-a,.bar-b{display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;
+  transition:width .5s cubic-bezier(.22,.75,.2,1);}
+.bar-a{background:var(--ink);color:var(--white);}
+.bar-b{background:var(--up-wash);color:var(--up);}
+.bar-hit{background:var(--up);} .bar-miss{background:var(--down);} .bar-pend{background:var(--subtle);}
+.bar-hit,.bar-miss,.bar-pend{transition:width .5s cubic-bezier(.22,.75,.2,1);}
+.bar-rate{font-size:14px;font-weight:600;font-variant-numeric:tabular-nums;min-width:44px;text-align:right;letter-spacing:-.02em;}
+
+/* Thanh xếp chồng */
+.stack{display:flex;height:34px;border-radius:8px;overflow:hidden;gap:1px;background:var(--hair);}
+.stack-s{transition:width .5s cubic-bezier(.22,.75,.2,1);}
+
+@media (max-width:640px){
+  .bar-row{grid-template-columns:1fr auto;grid-template-areas:'nm rate' 'tr tr';gap:6px 10px;}
+  .bar-nm{grid-area:nm;} .bar-tr{grid-area:tr;} .bar-rate{grid-area:rate;}
+  .gauge-p span{display:none;}
+  .gauge-p b{font-size:12px;}
+}
+@media (prefers-reduced-motion:reduce){
+  .bar-a,.bar-b,.bar-hit,.bar-miss,.bar-pend,.stack-s{transition:none;}
+}
+
 /* ── Sổ vị thế: điểm nhấn màu của màn hình Hôm nay ── */
 .ledger{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--hair);
   border:1px solid var(--hair);border-radius:var(--r-lg);overflow:hidden;cursor:pointer;}
@@ -981,6 +1038,96 @@ input::placeholder{color:var(--ink-3);}
           </div>
         </sc-for>
       </div>
+
+      <!-- ══════ THƯỚC ĐO: VN-INDEX CÒN CÁCH MỐC BAO XA ══════ -->
+      <div class="viz">
+        <div class="viz-h">
+          <div class="t-h2">VN-Index còn cách mốc giải ngân bao xa</div>
+          <div class="t-cap">{{ brGauge.note }}</div>
+        </div>
+        <div class="gauge">
+          <div class="gauge-track">
+            <div class="gauge-zone" style="left:0; width:{{ brGauge.brkPos }}; background:var(--up-wash);"></div>
+            <div class="gauge-mk" style="left:{{ brGauge.brkPos }}; --c:var(--warn);"></div>
+            <div class="gauge-mk gauge-mk--now" style="left:{{ brGauge.nowPos }}; --c:var(--ink);"></div>
+          </div>
+          <div class="gauge-lbl">
+            <div class="gauge-p" style="left:0;"><b style="color:var(--up);">{{ brGauge.buy }}</b><span>giải ngân</span></div>
+            <div class="gauge-p" style="left:{{ brGauge.brkPos }};"><b style="color:var(--warn);">{{ brGauge.brk }}</b><span>sẽ bị phá</span></div>
+            <div class="gauge-p" style="left:{{ brGauge.nowPos }};"><b>{{ brGauge.now }}</b><span>hôm nay</span></div>
+            <div class="gauge-p gauge-p--end" style="right:0;"><b style="color:var(--ink-3);">{{ brGauge.top }}</b><span>đỉnh cũ</span></div>
+          </div>
+        </div>
+        <div class="viz-note">Còn <b>{{ brGauge.gapBrk }} điểm</b> tới ngưỡng sẽ bị phá · <b>{{ brGauge.gapBuy }} điểm</b> tới vùng giải ngân</div>
+      </div>
+
+      <!-- ══════ TỈ TRỌNG TIỀN / CỔ PHIẾU CỦA TỪNG CHUYÊN GIA ══════ -->
+      <div class="viz">
+        <div class="viz-h">
+          <div class="t-h2">Ai đang cầm bao nhiêu tiền mặt</div>
+          <div class="t-cap">Xếp từ phòng thủ nhất tới tấn công nhất</div>
+        </div>
+        <div class="bars">
+          <sc-for list="{{ brAlloc }}" as="al" hint-placeholder-count="4">
+            <div class="bar-row" onClick="{{ al.onClick }}" role="button" tabindex="0">
+              <div class="bar-nm"><span class="bar-av">{{ al.initials }}</span>{{ al.name }}</div>
+              <div class="bar-tr">
+                <div class="bar-a" style="width:{{ al.cashW }};"><span>{{ al.cash }}</span></div>
+                <div class="bar-b" style="width:{{ al.stockW }};"><span>{{ al.stock }}</span></div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+        <div class="viz-lg">
+          <span><i style="background:var(--ink);"></i>Tiền mặt</span>
+          <span><i style="background:var(--up);"></i>Cổ phiếu</span>
+        </div>
+      </div>
+
+      <!-- ══════ PHÂN BỐ TÍN HIỆU TOÀN BỘ SỔ MÃ ══════ -->
+      <div class="viz">
+        <div class="viz-h">
+          <div class="t-h2">{{ brSigTotal }} mã đang nghiêng về đâu</div>
+          <div class="t-cap">Gộp quan điểm mới nhất của cả bốn chuyên gia</div>
+        </div>
+        <div class="stack">
+          <sc-for list="{{ brSigDist }}" as="sd" hint-placeholder-count="5">
+            <div class="stack-s" style="width:{{ sd.w }}; background:{{ sd.color }};" title="{{ sd.label }}"></div>
+          </sc-for>
+        </div>
+        <div class="viz-lg viz-lg--wrap">
+          <sc-for list="{{ brSigDist }}" as="sl" hint-placeholder-count="5">
+            <span><i style="background:{{ sl.color }};"></i>{{ sl.label }} <b>{{ sl.n }}</b> <em>{{ sl.pct }}</em></span>
+          </sc-for>
+        </div>
+      </div>
+
+      <!-- ══════ ĐỘ CHÍNH XÁC TỪNG CHUYÊN GIA ══════ -->
+      <div class="viz">
+        <div class="viz-h">
+          <div class="t-h2">Ai đang nói đúng</div>
+          <div class="t-cap">Chỉ tính kèo đã kết thúc — kèo đang treo để riêng</div>
+        </div>
+        <div class="bars">
+          <sc-for list="{{ brAcc }}" as="ac" hint-placeholder-count="4">
+            <div class="bar-row" onClick="{{ ac.onClick }}" role="button" tabindex="0">
+              <div class="bar-nm"><span class="bar-av">{{ ac.initials }}</span>{{ ac.name }}</div>
+              <div class="bar-tr">
+                <div class="bar-hit" style="width:{{ ac.hitW }};"></div>
+                <div class="bar-miss" style="width:{{ ac.missW }};"></div>
+                <div class="bar-pend" style="width:{{ ac.pendW }};"></div>
+              </div>
+              <div class="bar-rate">{{ ac.rate }}</div>
+            </div>
+          </sc-for>
+        </div>
+        <div class="viz-lg">
+          <span><i style="background:var(--up);"></i>Đúng</span>
+          <span><i style="background:var(--down);"></i>Sai</span>
+          <span><i style="background:var(--subtle);"></i>Đang treo</span>
+        </div>
+      </div>
+
 
       <!-- ── BỘ BA SIẾT ── -->
       <div style="display:flex; flex-direction:column; gap:12px;">
@@ -2962,6 +3109,56 @@ class Component extends DCLogic {
     const actUpdated = ACTS.updated || '';
 
     // ── Trang Bản tin (HDT.briefing): infographic bài mới nhất + tổng hợp ý kiến ──
+    // ══ Đồ hoạ Bản tin: mọi con số đều rút từ data.js, không bịa ══
+    const _SIGC = { up:'var(--up)', down:'var(--down)', warn:'var(--warn)', wait:'var(--ink-3)', avoid:'var(--avoid)' };
+
+    // 1) Tỉ trọng tiền / cổ phiếu của từng chuyên gia
+    const brAlloc = Object.entries(HDT.experts).map(([id, ex]) => {
+      const g = ex.gauge || {};
+      const cash = Number(g.bar1) || 0, stock = Number(g.bar2) || 0;
+      return { name: ex.name, initials: ex.initials,
+        cash, stock, cashW: cash + '%', stockW: stock + '%',
+        label: (g.badge || ''), onClick: () => this.go('expert', { expertId: id }) };
+    }).sort((a, b) => a.stock - b.stock);
+
+    // 2) Phân bố tín hiệu toàn bộ Sổ mã
+    const _tks = HDT.tickers || [];
+    const _SIG_ORDER = [
+      { k:'up',    l:'Mua / giữ' }, { k:'wait', l:'Chờ / theo dõi' }, { k:'warn', l:'Cảnh giác' },
+      { k:'down',  l:'Short / bán' }, { k:'avoid', l:'Tránh' }
+    ];
+    const brSigTotal = _tks.length || 1;
+    const brSigDist = _SIG_ORDER.map(o => {
+      const n = _tks.filter(t => t.sig === o.k).length;
+      return { label: o.l, n, w: (n / brSigTotal * 100).toFixed(1) + '%',
+        pct: Math.round(n / brSigTotal * 100) + '%', color: _SIGC[o.k] };
+    }).filter(x => x.n > 0);
+
+    // 3) Độ chính xác từng chuyên gia (bảng điểm)
+    const brAcc = Object.entries(HDT.experts).map(([id, ex]) => {
+      const cs = (HDT.scorecard || []).filter(c => c.expert === id);
+      const hit = cs.filter(c => c.result === 'hit').length;
+      const miss = cs.filter(c => c.result === 'miss').length;
+      const pend = cs.filter(c => c.result === 'pending').length;
+      const done = hit + miss;
+      return { name: ex.name, initials: ex.initials, hit, miss, pend, total: cs.length,
+        rate: done ? Math.round(hit / done * 100) + '%' : '—',
+        hitW: (hit / (cs.length || 1) * 100).toFixed(1) + '%',
+        missW: (miss / (cs.length || 1) * 100).toFixed(1) + '%',
+        pendW: (pend / (cs.length || 1) * 100).toFixed(1) + '%',
+        onClick: () => this.go('scorecard') };
+    }).sort((a, b) => b.total - a.total);
+
+    // 4) Thước đo: VN-Index còn cách mốc giải ngân bao xa
+    const _pv = (HDT.pulse || []).find(p => /CK Việt/i.test(p.name));
+    const _now = 1686, _brk = 1585, _buy = 1400, _top = 1868;
+    const _pos = v => ((v - _buy) / (_top - _buy) * 100).toFixed(1) + '%';
+    const brGauge = { now: _now.toLocaleString('vi-VN'), brk: _brk.toLocaleString('vi-VN'),
+      buy: _buy.toLocaleString('vi-VN'), top: _top.toLocaleString('vi-VN'),
+      nowPos: _pos(_now), brkPos: _pos(_brk),
+      gapBrk: (_now - _brk).toLocaleString('vi-VN'), gapBuy: (_now - _buy).toLocaleString('vi-VN'),
+      note: _pv ? _pv.mark : '' };
+
     const BR = HDT.briefing || {};
     const brExpert = HDT.experts[BR.expertId] || {};
     const TL_STATE = {
@@ -3349,6 +3546,7 @@ class Component extends DCLogic {
       brTitle: BR.title, brSubtitle: BR.subtitle, brLead: BR.lead, brUpdated: BR.updated,
       brExpertName: brExpert.name || '', brExpertInitials: brExpert.initials || '',
       brTimeline, brSqueezes, brStats, brTodo,
+      brAlloc, brSigDist, brSigTotal, brAcc, brGauge,
       brQuoteText: (BR.quote || {}).text || '', brQuoteSource: (BR.quote || {}).source || '',
       brCommunity, brCmHas: brCommunity.length > 0,
       brCmTitle: CM.title || '', brCmSource: CM.source || '', brCmDisclaimer: CM.disclaimer || '',

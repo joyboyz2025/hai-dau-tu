@@ -5351,6 +5351,39 @@ window.HDT_DATA = {
       "orders": [
         {
           "expertId": "thai-pham",
+          "dir": "Mua & nắm giữ",
+          "sig": "up",
+          "entry": "Vùng hiện tại",
+          "target": "Sóng lên 30–35% là bình thường",
+          "stop": "—",
+          "status": "active",
+          "date": "30/07",
+          "note": "Từ Tập 41 · Giữa tuần (30/07)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Giữ chặt",
+          "sig": "up",
+          "entry": "Tỉ trọng rất lớn, không bán",
+          "target": "Dài hạn — căn bản nền nông nghiệp",
+          "stop": "—",
+          "status": "active",
+          "date": "26/07",
+          "note": "Từ Tập 40 · Tuần 30 (26/07)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Giữ/tích lũy",
+          "sig": "up",
+          "entry": "Vùng đáy — giá dầu cao lợi biên",
+          "target": "Dài hạn, ăn cổ tức",
+          "stop": "—",
+          "status": "active",
+          "date": "23/07",
+          "note": "Từ Tập 39 · Tuần 29 (23/07)."
+        },
+        {
+          "expertId": "thai-pham",
           "dir": "MUA TÍCH LŨY",
           "sig": "up",
           "entry": "Vùng đáy hiện tại (túc tắc)",
@@ -5414,6 +5447,39 @@ window.HDT_DATA = {
         },
         {
           "expertId": "thai-pham",
+          "dir": "Mua & nắm giữ",
+          "sig": "up",
+          "entry": "Vùng hiện tại",
+          "target": "Sóng lên 30–35% là bình thường",
+          "stop": "—",
+          "status": "active",
+          "date": "30/07",
+          "note": "Từ Tập 41 · Giữa tuần (30/07)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Giữ chặt",
+          "sig": "up",
+          "entry": "Tỉ trọng rất lớn, không bán",
+          "target": "Dài hạn — căn bản nền nông nghiệp",
+          "stop": "—",
+          "status": "active",
+          "date": "26/07",
+          "note": "Từ Tập 40 · Tuần 30 (26/07)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Giữ/tích lũy",
+          "sig": "up",
+          "entry": "Vùng đáy — giá dầu cao lợi biên",
+          "target": "Dài hạn, ăn cổ tức",
+          "stop": "—",
+          "status": "active",
+          "date": "23/07",
+          "note": "Từ Tập 39 · Tuần 29 (23/07)."
+        },
+        {
+          "expertId": "thai-pham",
           "dir": "MUA TÍCH LŨY",
           "sig": "up",
           "entry": "Vùng đáy hiện tại (túc tắc)",
@@ -5453,10 +5519,10 @@ window.HDT_DATA = {
         },
         {
           "expertId": "thai-pham",
-          "stance": "MUA TÍCH LŨY",
+          "stance": "Mua & nắm giữ",
           "sig": "up",
-          "date": "18/07",
-          "line": "Cặp với DCM; đã vào 70% vị thế mục tiêu. Điểm vào: Vùng đáy hiện tại (túc tắc). Mục tiêu: Dài hạn — cầm ăn cổ tức."
+          "date": "30/07",
+          "line": "Từ Tập 41 · Giữa tuần (30/07). Điểm vào: Vùng hiện tại. Mục tiêu: Sóng lên 30–35% là bình thường."
         }
       ]
     },
@@ -5492,6 +5558,17 @@ window.HDT_DATA = {
           "status": "waiting",
           "date": "31/07",
           "note": "Cả 3 bank quốc doanh chạy giá 31/07 theo tin NHNN; nắm giữ dài hạn thì chờ hai đáy hoặc kiểm định lại đáy."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Giữ",
+          "sig": "up",
+          "entry": "Không mua mới",
+          "target": "VCB vùng rất rẻ (mẫu Spring)",
+          "stop": "BID cực kỳ thấp — không bán",
+          "status": "active",
+          "date": "30/07",
+          "note": "Từ Tập 41 · Giữa tuần (30/07)."
         },
         {
           "expertId": "thai-pham",
@@ -5557,10 +5634,10 @@ window.HDT_DATA = {
         },
         {
           "expertId": "thai-pham",
-          "stance": "GIỮ / ƯU TIÊN MUA",
+          "stance": "Giữ",
           "sig": "up",
-          "date": "26/07",
-          "line": "VCB và BID chọn con nào cũng được; đang cầm BID thì cầm luôn. Điểm vào: Đã dưới đáy T4/2025. Mục tiêu: Cầm 5 năm có lời ở vùng thấp."
+          "date": "30/07",
+          "line": "Từ Tập 41 · Giữa tuần (30/07). Điểm vào: Không mua mới. Mục tiêu: VCB vùng rất rẻ (mẫu Spring)."
         },
         {
           "expertId": "quang-dung",
@@ -5592,6 +5669,28 @@ window.HDT_DATA = {
         }
       ],
       "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Giữ",
+          "sig": "wait",
+          "entry": "Không mua thêm",
+          "target": "VNM mã duy nhất có lời; SCS lỗ 12% đã ăn cổ tức",
+          "stop": "—",
+          "status": "active",
+          "date": "26/07",
+          "note": "Từ Tập 40 · Tuần 30 (26/07)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Giữ",
+          "sig": "wait",
+          "entry": "Không mua thêm",
+          "target": "Đợi index 1.500",
+          "stop": "—",
+          "status": "active",
+          "date": "23/07",
+          "note": "Từ Tập 39 · Tuần 29 (23/07)."
+        },
         {
           "expertId": "thai-pham",
           "dir": "GIỮ",
@@ -5732,6 +5831,17 @@ window.HDT_DATA = {
       "orders": [
         {
           "expertId": "thai-pham",
+          "dir": "Giữ",
+          "sig": "wait",
+          "entry": "Không mua thêm",
+          "target": "VNM mã duy nhất có lời; SCS lỗ 12% đã ăn cổ tức",
+          "stop": "—",
+          "status": "active",
+          "date": "26/07",
+          "note": "Từ Tập 40 · Tuần 30 (26/07)."
+        },
+        {
+          "expertId": "thai-pham",
           "dir": "GIỮ",
           "sig": "wait",
           "entry": "Đang lỗ ~7–8%, không margin",
@@ -5772,6 +5882,17 @@ window.HDT_DATA = {
         }
       ],
       "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Giữ",
+          "sig": "wait",
+          "entry": "Không mua thêm",
+          "target": "VNM mã duy nhất có lời; SCS lỗ 12% đã ăn cổ tức",
+          "stop": "—",
+          "status": "active",
+          "date": "26/07",
+          "note": "Từ Tập 40 · Tuần 30 (26/07)."
+        },
         {
           "expertId": "thai-pham",
           "dir": "GIỮ MỘT PHẦN",
@@ -6038,6 +6159,17 @@ window.HDT_DATA = {
           "status": "active",
           "date": "31/07",
           "note": "Tín hiệu người trong cuộc được đánh giá tin cậy."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Cơ cấu khi hồi",
+          "sig": "wait",
+          "entry": "Hồi về 23–24",
+          "target": "Dài hạn phải đi lên từ nội lực",
+          "stop": "Giảm sâu do tự doanh có FPT, PNJ",
+          "status": "active",
+          "date": "30/07",
+          "note": "Từ Tập 41 · Giữa tuần (30/07)."
         }
       ],
       "views": [
@@ -6163,6 +6295,39 @@ window.HDT_DATA = {
       ],
       "orders": [
         {
+          "expertId": "quang-dung",
+          "dir": "TÍCH SẢN — MUA KHI GIẢM",
+          "sig": "up",
+          "entry": "Vùng 20 hiện tại, mua rải",
+          "target": "Q3–Q4 tăng trưởng 40–60%",
+          "stop": "Không margin, không đoán đáy",
+          "status": "active",
+          "date": "01/08",
+          "note": "\"Giảm nhẹ thì tôi mua ít, giảm mạnh thì tôi mua nhiều, giảm càng mạnh thì tôi càng mua.\" Cùng giá 20.000 nhưng lợi nhuận nay 6.000 tỷ so với 2.800 tỷ năm 2024."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Không cầm",
+          "sig": "avoid",
+          "entry": "—",
+          "target": "HPG bị Vin Steel cạnh tranh",
+          "stop": "LPB là \"cổ phiếu joker\"",
+          "status": "active",
+          "date": "30/07",
+          "note": "Từ Tập 41 · Giữa tuần (30/07)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Tránh",
+          "sig": "down",
+          "entry": "Không đụng",
+          "target": "PNJ sẽ sàn thêm như Novaland; SSI có thể về 20",
+          "stop": "MSB: chốt lời",
+          "status": "active",
+          "date": "26/07",
+          "note": "Từ Tập 40 · Tuần 30 (26/07)."
+        },
+        {
           "expertId": "thai-pham",
           "dir": "KHÔNG MUA",
           "sig": "avoid",
@@ -6183,17 +6348,6 @@ window.HDT_DATA = {
           "status": "waiting",
           "date": "13/07",
           "note": "Dẫn chứng cho trạng thái thị trường, chưa phải khuyến nghị."
-        },
-        {
-          "expertId": "quang-dung",
-          "dir": "TÍCH SẢN — MUA KHI GIẢM",
-          "sig": "up",
-          "entry": "Vùng 20 hiện tại, mua rải",
-          "target": "Q3–Q4 tăng trưởng 40–60%",
-          "stop": "Không margin, không đoán đáy",
-          "status": "active",
-          "date": "01/08",
-          "note": "\"Giảm nhẹ thì tôi mua ít, giảm mạnh thì tôi mua nhiều, giảm càng mạnh thì tôi càng mua.\" Cùng giá 20.000 nhưng lợi nhuận nay 6.000 tỷ so với 2.800 tỷ năm 2024."
         }
       ],
       "potential": 3,
@@ -6207,11 +6361,18 @@ window.HDT_DATA = {
       "debate": "Cùng một mã, hai cách nhìn không giao nhau. Thái Phạm và CK 5 phút nhìn GIÁ và CẠNH TRANH: thủng nền 23 về đáy mới 21,85, thép Vin Group sắp cạnh tranh trực tiếp → loại khỏi danh mục. Quang Dũng nhìn BÁO CÁO TÀI CHÍNH: Dung Quất 2 vừa vào vận hành, lợi nhuận đã tăng 50,6% và còn 2–4 quý tăng trưởng phía trước → mua rải khi giảm. Điểm mấu chốt chưa ai kiểm chứng được: thép Vin sẽ ăn vào thị phần HRC của Hòa Phát bao nhiêu và bao giờ. Cả ba đều đồng ý một điều — không dùng margin cho mã này.",
       "views": [
         {
+          "expertId": "quang-dung",
+          "stance": "TÍCH SẢN — MUA KHI GIẢM",
+          "sig": "up",
+          "date": "01/08",
+          "line": "\"Giảm nhẹ thì tôi mua ít, giảm mạnh thì tôi mua nhiều, giảm càng mạnh thì tôi càng mua.\" Cùng giá 20.000 nhưng lợi nhuận nay 6.000 tỷ so với 2.800 tỷ năm 2024. Điểm vào: Vùng 20 hiện tại, mua rải. Mục tiêu: Q3–Q4 tăng trưởng 40–60%."
+        },
+        {
           "expertId": "thai-pham",
-          "stance": "KHÔNG MUA",
+          "stance": "Không cầm",
           "sig": "avoid",
-          "date": "23/07",
-          "line": "Thép Vin Group cạnh tranh; khó thắng thầu. Mục tiêu: Đã thủng 23 → đáy mới 21.85."
+          "date": "30/07",
+          "line": "Từ Tập 41 · Giữa tuần (30/07). Mục tiêu: HPG bị Vin Steel cạnh tranh."
         },
         {
           "expertId": "ck-5-phut",
@@ -6219,13 +6380,6 @@ window.HDT_DATA = {
           "sig": "avoid",
           "date": "13/07",
           "line": "Dẫn chứng cho trạng thái thị trường, chưa phải khuyến nghị. Mục tiêu: Chờ hết thủng đáy."
-        },
-        {
-          "expertId": "quang-dung",
-          "stance": "TÍCH SẢN — MUA KHI GIẢM",
-          "sig": "up",
-          "date": "01/08",
-          "line": "\"Giảm nhẹ thì tôi mua ít, giảm mạnh thì tôi mua nhiều, giảm càng mạnh thì tôi càng mua.\" Cùng giá 20.000 nhưng lợi nhuận nay 6.000 tỷ so với 2.800 tỷ năm 2024. Điểm vào: Vùng 20 hiện tại, mua rải. Mục tiêu: Q3–Q4 tăng trưởng 40–60%."
         }
       ]
     },
@@ -6272,6 +6426,28 @@ window.HDT_DATA = {
       "orders": [
         {
           "expertId": "thai-pham",
+          "dir": "Tránh",
+          "sig": "avoid",
+          "entry": "—",
+          "target": "—",
+          "stop": "Ví dụ điển hình rủi ro call margin của doanh chủ",
+          "status": "active",
+          "date": "31/07",
+          "note": "Từ Bài đăng · 24–31/07 (31/07)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Tránh",
+          "sig": "down",
+          "entry": "Không đụng",
+          "target": "PNJ sẽ sàn thêm như Novaland; SSI có thể về 20",
+          "stop": "MSB: chốt lời",
+          "status": "active",
+          "date": "26/07",
+          "note": "Từ Tập 40 · Tuần 30 (26/07)."
+        },
+        {
+          "expertId": "thai-pham",
           "dir": "TRÁNH",
           "sig": "avoid",
           "entry": "—",
@@ -6280,17 +6456,6 @@ window.HDT_DATA = {
           "status": "active",
           "date": "23/07",
           "note": "Nâng từ mức ~44 trước; thương hiệu mất niềm tin."
-        },
-        {
-          "expertId": "ck-5-phut",
-          "dir": "KHÔNG MUA",
-          "sig": "avoid",
-          "entry": "—",
-          "target": "Chờ kết quả điều tra rõ ràng",
-          "stop": "—",
-          "status": "active",
-          "date": "15/07",
-          "note": "Kể cả phiên trần; rủi ro chưa định lượng được."
         },
         {
           "expertId": "thai-pham",
@@ -6313,6 +6478,17 @@ window.HDT_DATA = {
           "status": "active",
           "date": "16/07",
           "note": "Không mua thêm; bài học đa dạng hóa."
+        },
+        {
+          "expertId": "ck-5-phut",
+          "dir": "KHÔNG MUA",
+          "sig": "avoid",
+          "entry": "—",
+          "target": "Chờ kết quả điều tra rõ ràng",
+          "stop": "—",
+          "status": "active",
+          "date": "15/07",
+          "note": "Kể cả phiên trần; rủi ro chưa định lượng được."
         }
       ],
       "potential": 1,
@@ -6326,17 +6502,10 @@ window.HDT_DATA = {
       "views": [
         {
           "expertId": "thai-pham",
-          "stance": "TRÁNH",
+          "stance": "Tránh",
           "sig": "avoid",
-          "date": "23/07",
-          "line": "Nâng từ mức ~44 trước; thương hiệu mất niềm tin. Mục tiêu: Kịch bản xấu: về dưới 9 (như Novaland)."
-        },
-        {
-          "expertId": "ck-5-phut",
-          "stance": "KHÔNG MUA",
-          "sig": "avoid",
-          "date": "15/07",
-          "line": "Kể cả phiên trần; rủi ro chưa định lượng được. Mục tiêu: Chờ kết quả điều tra rõ ràng."
+          "date": "31/07",
+          "line": "Từ Bài đăng · 24–31/07 (31/07)."
         },
         {
           "expertId": "azfin",
@@ -6344,6 +6513,13 @@ window.HDT_DATA = {
           "sig": "wait",
           "date": "16/07",
           "line": "Không mua thêm; bài học đa dạng hóa. Điểm vào: Chỉ với ai đã có sẵn ≤2% danh mục. Mục tiêu: Theo dõi quản trị công ty."
+        },
+        {
+          "expertId": "ck-5-phut",
+          "stance": "KHÔNG MUA",
+          "sig": "avoid",
+          "date": "15/07",
+          "line": "Kể cả phiên trần; rủi ro chưa định lượng được. Mục tiêu: Chờ kết quả điều tra rõ ràng."
         }
       ]
     },
@@ -6373,6 +6549,17 @@ window.HDT_DATA = {
       ],
       "orders": [
         {
+          "expertId": "thai-pham",
+          "dir": "Tránh",
+          "sig": "avoid",
+          "entry": "—",
+          "target": "—",
+          "stop": "Đừng đụng vào",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        },
+        {
           "expertId": "ck-5-phut",
           "dir": "KHÔNG MUA MỚI",
           "sig": "avoid",
@@ -6382,6 +6569,39 @@ window.HDT_DATA = {
           "status": "active",
           "date": "31/07",
           "note": "Q2 doanh thu giảm/lợi nhuận tăng — \"thiếu sự nhất quán\"; chưa có kỳ vọng mới sau ĐHCĐ tháng 4. Ai có hàng thì giữ, chưa thấy cơ hội đảo hàng đặc biệt."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Bán khi hồi",
+          "sig": "down",
+          "entry": "Hồi kỹ thuật 77–78",
+          "target": "Không tích trữ dài hạn",
+          "stop": "Ngoại còn 26,9% và sẽ bán tiếp",
+          "status": "active",
+          "date": "30/07",
+          "note": "Từ Tập 41 · Giữa tuần (30/07)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Tránh",
+          "sig": "down",
+          "entry": "Không đụng",
+          "target": "PNJ sẽ sàn thêm như Novaland; SSI có thể về 20",
+          "stop": "MSB: chốt lời",
+          "status": "active",
+          "date": "26/07",
+          "note": "Từ Tập 40 · Tuần 30 (26/07)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Tránh",
+          "sig": "down",
+          "entry": "Không đụng",
+          "target": "PNJ về <9; HPG về 21.85",
+          "stop": "—",
+          "status": "active",
+          "date": "23/07",
+          "note": "Từ Tập 39 · Tuần 29 (23/07)."
         },
         {
           "expertId": "thai-pham",
@@ -6416,18 +6636,18 @@ window.HDT_DATA = {
       "region": "vn",
       "views": [
         {
+          "expertId": "thai-pham",
+          "stance": "Tránh",
+          "sig": "avoid",
+          "date": "01/08",
+          "line": "Từ Tập 42 · Tuần 31 (01/08)."
+        },
+        {
           "expertId": "ck-5-phut",
           "stance": "KHÔNG MUA MỚI",
           "sig": "avoid",
           "date": "31/07",
           "line": "Q2 doanh thu giảm/lợi nhuận tăng — \"thiếu sự nhất quán\"; chưa có kỳ vọng mới sau ĐHCĐ tháng 4. Ai có hàng thì giữ, chưa thấy cơ hội đảo hàng đặc biệt. Mục tiêu: Nhiều cổ phiếu cơ bản khác hồi nhanh hơn."
-        },
-        {
-          "expertId": "thai-pham",
-          "stance": "TRÁNH",
-          "sig": "avoid",
-          "date": "18/07",
-          "line": "Hở room; ngoại bán mạnh. Mục tiêu: Chờ khối ngoại ngừng bán."
         },
         {
           "expertId": "azfin",
@@ -6468,6 +6688,28 @@ window.HDT_DATA = {
           "status": "waiting",
           "date": "01/08",
           "note": "Có tín hiệu đổi chủ nhưng chưa rõ chủ mới. Tập 42."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Cơ cấu khi hồi",
+          "sig": "down",
+          "entry": "Hồi về đáy cũ 15",
+          "target": "Đã đổi chủ — vùng này chưa mua",
+          "stop": "—",
+          "status": "active",
+          "date": "30/07",
+          "note": "Từ Tập 41 · Giữa tuần (30/07)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Tránh",
+          "sig": "down",
+          "entry": "Không đụng",
+          "target": "PNJ về <9; HPG về 21.85",
+          "stop": "—",
+          "status": "active",
+          "date": "23/07",
+          "note": "Từ Tập 39 · Tuần 29 (23/07)."
         },
         {
           "expertId": "thai-pham",
@@ -6517,15 +6759,15 @@ window.HDT_DATA = {
       ],
       "orders": [
         {
-          "expertId": "azfin",
-          "dir": "LOẠI NGAY",
-          "sig": "avoid",
-          "entry": "—",
-          "target": "—",
-          "stop": "Bán bất kể giá nếu còn giữ",
+          "expertId": "thai-pham",
+          "dir": "Tránh",
+          "sig": "down",
+          "entry": "Không đụng",
+          "target": "PNJ về <9; HPG về 21.85",
+          "stop": "—",
           "status": "active",
-          "date": "16/07",
-          "note": "Tiêu chí: lãnh đạo cốt lõi bị khởi tố."
+          "date": "23/07",
+          "note": "Từ Tập 39 · Tuần 29 (23/07)."
         },
         {
           "expertId": "thai-pham",
@@ -6537,6 +6779,17 @@ window.HDT_DATA = {
           "status": "active",
           "date": "18/07",
           "note": "\"Lằng nhằng lắm.\""
+        },
+        {
+          "expertId": "azfin",
+          "dir": "LOẠI NGAY",
+          "sig": "avoid",
+          "entry": "—",
+          "target": "—",
+          "stop": "Bán bất kể giá nếu còn giữ",
+          "status": "active",
+          "date": "16/07",
+          "note": "Tiêu chí: lãnh đạo cốt lõi bị khởi tố."
         }
       ],
       "potential": 1,
@@ -6549,18 +6802,18 @@ window.HDT_DATA = {
       "region": "vn",
       "views": [
         {
+          "expertId": "thai-pham",
+          "stance": "Tránh",
+          "sig": "down",
+          "date": "23/07",
+          "line": "Từ Tập 39 · Tuần 29 (23/07). Điểm vào: Không đụng. Mục tiêu: PNJ về <9; HPG về 21.85."
+        },
+        {
           "expertId": "azfin",
           "stance": "LOẠI NGAY",
           "sig": "avoid",
           "date": "16/07",
           "line": "Tiêu chí: lãnh đạo cốt lõi bị khởi tố."
-        },
-        {
-          "expertId": "thai-pham",
-          "stance": "TRÁNH",
-          "sig": "avoid",
-          "date": "18/07",
-          "line": "\"Lằng nhằng lắm.\" Mục tiêu: Chờ vào lại uptrend."
         }
       ]
     },
@@ -6683,6 +6936,17 @@ window.HDT_DATA = {
       "orders": [
         {
           "expertId": "thai-pham",
+          "dir": "Tránh",
+          "sig": "avoid",
+          "entry": "—",
+          "target": "—",
+          "stop": "Đừng đụng vào",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        },
+        {
+          "expertId": "thai-pham",
           "dir": "TRÁNH",
           "sig": "avoid",
           "entry": "—",
@@ -6711,10 +6975,10 @@ window.HDT_DATA = {
       "views": [
         {
           "expertId": "thai-pham",
-          "stance": "TRÁNH",
+          "stance": "Tránh",
           "sig": "avoid",
-          "date": "26/07",
-          "line": "Suy đoán thị trường: có thể cùng nguồn cung với vụ nữ trang/kim cương của PNJ. \"Tôi không bao giờ đụng vào những thứ như thế.\""
+          "date": "01/08",
+          "line": "Từ Tập 42 · Tuần 31 (01/08)."
         },
         {
           "expertId": "ck-5-phut",
@@ -6773,6 +7037,17 @@ window.HDT_DATA = {
         },
         {
           "expertId": "thai-pham",
+          "dir": "Giữ",
+          "sig": "up",
+          "entry": "Không mua mới",
+          "target": "VCB vùng rất rẻ (mẫu Spring)",
+          "stop": "BID cực kỳ thấp — không bán",
+          "status": "active",
+          "date": "30/07",
+          "note": "Từ Tập 41 · Giữa tuần (30/07)."
+        },
+        {
+          "expertId": "thai-pham",
           "dir": "GIỮ / MUA",
           "sig": "up",
           "entry": "Đã dưới vùng đáy T4/2025",
@@ -6792,6 +7067,17 @@ window.HDT_DATA = {
           "status": "active",
           "date": "24/07",
           "note": "1 trong 6 nhóm ngành ưu tiên."
+        },
+        {
+          "expertId": "quang-dung",
+          "dir": "An toàn hơn",
+          "sig": "wait",
+          "entry": "—",
+          "target": "—",
+          "stop": "Nợ xấu chỉ ~1%, dùng làm mốc đối chiếu",
+          "status": "active",
+          "date": "18/07",
+          "note": "Từ VPB · Quý 2/2026 (18/07)."
         },
         {
           "expertId": "quang-dung",
@@ -6820,10 +7106,10 @@ window.HDT_DATA = {
         },
         {
           "expertId": "thai-pham",
-          "stance": "GIỮ / MUA",
+          "stance": "Giữ",
           "sig": "up",
-          "date": "26/07",
-          "line": "Chọn VCB hay BID đều được. Điểm vào: Đã dưới vùng đáy T4/2025. Mục tiêu: Cầm 5 năm có lời ở vùng thấp."
+          "date": "30/07",
+          "line": "Từ Tập 41 · Giữa tuần (30/07). Điểm vào: Không mua mới. Mục tiêu: VCB vùng rất rẻ (mẫu Spring)."
         },
         {
           "expertId": "azfin",
@@ -6834,10 +7120,10 @@ window.HDT_DATA = {
         },
         {
           "expertId": "quang-dung",
-          "stance": "HƯỞNG LỢI THÔNG TƯ 22",
-          "sig": "up",
-          "date": "20/06",
-          "line": "Dự thảo nâng trần vốn ngắn hạn cho vay trung–dài hạn từ 30% lên 40%; khảo sát 27 ngân hàng, nhóm tỉ lệ trên 25% hưởng lợi rõ hơn. Mục tiêu: Nhóm Big 4 hưởng lợi cơ chế 20% tiền gửi KBNN."
+          "stance": "An toàn hơn",
+          "sig": "wait",
+          "date": "18/07",
+          "line": "Từ VPB · Quý 2/2026 (18/07)."
         }
       ]
     },
@@ -6965,6 +7251,17 @@ window.HDT_DATA = {
           "status": "waiting",
           "date": "01/08",
           "note": "Tập 42: trong nhóm cổ phiếu top đầu, GAS về 60–62 thì mua tích lũy."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Cân nhắc mua dài hạn",
+          "sig": "up",
+          "entry": "Vùng ~60",
+          "target": "Đã về vùng khá rẻ",
+          "stop": "Rẻ có thể rẻ hơn",
+          "status": "active",
+          "date": "30/07",
+          "note": "Từ Tập 41 · Giữa tuần (30/07)."
         },
         {
           "expertId": "thai-pham",
@@ -7149,6 +7446,17 @@ window.HDT_DATA = {
       ],
       "orders": [
         {
+          "expertId": "thai-pham",
+          "dir": "Tránh",
+          "sig": "avoid",
+          "entry": "—",
+          "target": "—",
+          "stop": "Đừng đụng vào",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        },
+        {
           "expertId": "ck-5-phut",
           "dir": "ĐỨNG NGOÀI",
           "sig": "avoid",
@@ -7163,7 +7471,23 @@ window.HDT_DATA = {
       "industry": "KCN & BĐS công nghiệp",
       "basket": "tranh",
       "tradeMode": "spot",
-      "region": "vn"
+      "region": "vn",
+      "views": [
+        {
+          "expertId": "thai-pham",
+          "stance": "Tránh",
+          "sig": "avoid",
+          "date": "01/08",
+          "line": "Từ Tập 42 · Tuần 31 (01/08)."
+        },
+        {
+          "expertId": "ck-5-phut",
+          "stance": "ĐỨNG NGOÀI",
+          "sig": "avoid",
+          "date": "27/07",
+          "line": "Đục nhiều đáy, chưa có nền. Mục tiêu: Chờ tín hiệu tạo đáy."
+        }
+      ]
     },
     {
       "key": "vin",
@@ -7179,7 +7503,9 @@ window.HDT_DATA = {
         "vre",
         "nhom vin",
         "vin group",
-        "vinhome"
+        "vinhome",
+        "vinhomes",
+        "vingroup"
       ],
       "potential": 1,
       "caution": 4,
@@ -7199,6 +7525,28 @@ window.HDT_DATA = {
         }
       ],
       "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Tránh",
+          "sig": "avoid",
+          "entry": "—",
+          "target": "—",
+          "stop": "\"Neo cao đáng sợ\" — rủi ro kéo cả thị trường",
+          "status": "active",
+          "date": "31/07",
+          "note": "Từ Bài đăng · 24–31/07 (31/07)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Tránh",
+          "sig": "avoid",
+          "entry": "—",
+          "target": "—",
+          "stop": "\"Neo cao đáng sợ\" — rủi ro kéo cả thị trường",
+          "status": "active",
+          "date": "31/07",
+          "note": "Từ Bài đăng · 24–31/07 (31/07)."
+        },
         {
           "expertId": "ck-5-phut",
           "dir": "KHÔNG MUA",
@@ -7225,7 +7573,23 @@ window.HDT_DATA = {
       "industry": "Bất động sản",
       "basket": "tranh",
       "tradeMode": "spot",
-      "region": "vn"
+      "region": "vn",
+      "views": [
+        {
+          "expertId": "thai-pham",
+          "stance": "Tránh",
+          "sig": "avoid",
+          "date": "31/07",
+          "line": "Từ Bài đăng · 24–31/07 (31/07)."
+        },
+        {
+          "expertId": "ck-5-phut",
+          "stance": "KHÔNG MUA",
+          "sig": "avoid",
+          "date": "22/07",
+          "line": "\"Nhìn index không đánh giá được — điểm số điêu.\" Mục tiêu: Vin giảm → index cân bằng lại."
+        }
+      ]
     },
     {
       "key": "aapl",
@@ -7253,6 +7617,39 @@ window.HDT_DATA = {
         }
       ],
       "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Chốt lời short",
+          "sig": "down",
+          "entry": "Đã gia tăng 1/3 ngày 29/07",
+          "target": "ĐẠT: -10% ngày 31/07",
+          "stop": "Hạn tự đặt: \"cùng lắm tới 3/8\"",
+          "status": "waiting",
+          "date": "31/07",
+          "note": "Từ Bài đăng · 24–31/07 (31/07)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Short",
+          "sig": "down",
+          "entry": "Chờ giật lên ~350",
+          "target": "Báo cáo xấu → đục về 310",
+          "stop": "—",
+          "status": "active",
+          "date": "30/07",
+          "note": "Từ Tập 41 · Giữa tuần (30/07)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Short",
+          "sig": "down",
+          "entry": "Apple hoàn vốn; MU >1.080",
+          "target": "Intel về 70",
+          "stop": "—",
+          "status": "active",
+          "date": "23/07",
+          "note": "Từ Tập 39 · Tuần 29 (23/07)."
+        },
         {
           "expertId": "thai-pham",
           "dir": "SHORT 1/2",
@@ -7319,6 +7716,28 @@ window.HDT_DATA = {
       "orders": [
         {
           "expertId": "thai-pham",
+          "dir": "Giữ short",
+          "sig": "down",
+          "entry": "Đang cầm từ 152",
+          "target": "Về 60–70 trong 6 tháng",
+          "stop": "Còn 85–90% cổ phiếu mở khoá tới T5/2027",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Short thêm",
+          "sig": "down",
+          "entry": "Chờ hồi ~125",
+          "target": "Trước đợt giải lock-up",
+          "stop": "Đang lãi ~30% từ 152",
+          "status": "active",
+          "date": "30/07",
+          "note": "Từ Tập 41 · Giữa tuần (30/07)."
+        },
+        {
+          "expertId": "thai-pham",
           "dir": "SHORT (giữ)",
           "sig": "down",
           "entry": "Giá từng lên 220",
@@ -7338,6 +7757,17 @@ window.HDT_DATA = {
           "status": "active",
           "date": "23/07",
           "note": "Người bán khống lớn nhất là nhân viên nội bộ + quỹ: khi giải lock-up trả bằng hàng giá vốn ~40–60, mượn bán 115 vẫn lời → còn bán tiếp."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Short",
+          "sig": "down",
+          "entry": "Giữ từ ~155",
+          "target": "80–87 (đến T1/2027)",
+          "stop": "—",
+          "status": "active",
+          "date": "18/07",
+          "note": "Từ Tập 38 · Tuần 29 (18/07)."
         }
       ],
       "potential": 5,
@@ -7382,6 +7812,28 @@ window.HDT_DATA = {
       "orders": [
         {
           "expertId": "thai-pham",
+          "dir": "Giữ lệnh short",
+          "sig": "down",
+          "entry": "Đang có vị thế",
+          "target": "Còn điều chỉnh tiếp",
+          "stop": "—",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Short thêm",
+          "sig": "down",
+          "entry": "Chờ hồi ~92",
+          "target": "Lấp gap vùng 70",
+          "stop": "Đã chốt lời 1/2",
+          "status": "active",
+          "date": "30/07",
+          "note": "Từ Tập 41 · Giữa tuần (30/07)."
+        },
+        {
+          "expertId": "thai-pham",
           "dir": "SHORT (giữ)",
           "sig": "down",
           "entry": "Đỉnh 130–141, đã −35–40%",
@@ -7390,6 +7842,17 @@ window.HDT_DATA = {
           "status": "active",
           "date": "26/07",
           "note": "Q2 vượt kỳ vọng vẫn giảm gần 8% — tín hiệu xác nhận."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Short",
+          "sig": "down",
+          "entry": "Apple hoàn vốn; MU >1.080",
+          "target": "Intel về 70",
+          "stop": "—",
+          "status": "active",
+          "date": "23/07",
+          "note": "Từ Tập 39 · Tuần 29 (23/07)."
         },
         {
           "expertId": "thai-pham",
@@ -7451,6 +7914,50 @@ window.HDT_DATA = {
       "orders": [
         {
           "expertId": "thai-pham",
+          "dir": "Giữ lệnh short",
+          "sig": "down",
+          "entry": "Đang có vị thế",
+          "target": "Còn điều chỉnh tiếp",
+          "stop": "—",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Chốt 1/2",
+          "sig": "down",
+          "entry": "Chốt đầu phiên 29/07",
+          "target": "Short lại 1/2 sau 2–4 tuần",
+          "stop": "Phiên sáng -8..-11% \"vượt mong đợi\"",
+          "status": "waiting",
+          "date": "31/07",
+          "note": "Từ Bài đăng · 24–31/07 (31/07)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Short khi giật",
+          "sig": "down",
+          "entry": "PANW 172–178 · CRWD ~190 · MRVL ~192 · MU ~890",
+          "target": "Nhóm chip nhớ & cyber còn giảm",
+          "stop": "—",
+          "status": "active",
+          "date": "30/07",
+          "note": "Từ Tập 41 · Giữa tuần (30/07)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Short",
+          "sig": "down",
+          "entry": "Apple hoàn vốn; MU >1.080",
+          "target": "Intel về 70",
+          "stop": "—",
+          "status": "active",
+          "date": "23/07",
+          "note": "Từ Tập 39 · Tuần 29 (23/07)."
+        },
+        {
+          "expertId": "thai-pham",
           "dir": "SHORT (giữ 1/2)",
           "sig": "down",
           "entry": "1.100–1.120",
@@ -7499,6 +8006,17 @@ window.HDT_DATA = {
       "orders": [
         {
           "expertId": "thai-pham",
+          "dir": "Chờ bắt đáy",
+          "sig": "wait",
+          "entry": "Test lại vùng ~186",
+          "target": "Short đang ăn rất nhiều",
+          "stop": "Giật lên giật xuống, không thẳng",
+          "status": "waiting",
+          "date": "30/07",
+          "note": "Từ Tập 41 · Giữa tuần (30/07)."
+        },
+        {
+          "expertId": "thai-pham",
           "dir": "SHORT (giữ)",
           "sig": "down",
           "entry": "Đã −30–32% từ đỉnh",
@@ -7507,6 +8025,17 @@ window.HDT_DATA = {
           "status": "active",
           "date": "26/07",
           "note": "Phiên 24/07 Samsung −8%, Kospi −5,13%. SK Hynix \"thu hút xong vốn rồi\"."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Short",
+          "sig": "down",
+          "entry": "Đợi Kospi ~7.700",
+          "target": "Theo đà margin call",
+          "stop": "—",
+          "status": "active",
+          "date": "23/07",
+          "note": "Từ Tập 39 · Tuần 29 (23/07)."
         },
         {
           "expertId": "thai-pham",
@@ -7541,7 +8070,8 @@ window.HDT_DATA = {
         "s&p",
         "sp500",
         "us30",
-        "dow"
+        "dow",
+        "s&p 500"
       ],
       "oneLiner": "Sau FOMC 29/07: Dow −1.100 điểm (−2,2%), S&P 500 −1,5% — phiên giảm mạnh nhất từ T4/2025 vì lợi suất 30 năm vọt 5,2%. Năm bầu cử giữa nhiệm kỳ thường điều chỉnh 17–21% sau tháng 7 — chờ về ~7.000 tích lũy.",
       "thesis": [
@@ -7559,6 +8089,28 @@ window.HDT_DATA = {
       "orders": [
         {
           "expertId": "thai-pham",
+          "dir": "Giữ short",
+          "sig": "down",
+          "entry": "Short ở vùng cao đỉnh cũ",
+          "target": "Uptrust ~7.700–7.800 rồi gãy về 7.000",
+          "stop": "Đừng short ngang chừng",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Giữ short",
+          "sig": "down",
+          "entry": "Nhịp hồi hiện tại",
+          "target": "\"Như Intel trước đây trước khi rụng\"",
+          "stop": "—",
+          "status": "active",
+          "date": "31/07",
+          "note": "Từ Bài đăng · 24–31/07 (31/07)."
+        },
+        {
+          "expertId": "thai-pham",
           "dir": "CHỜ",
           "sig": "down",
           "entry": "—",
@@ -7567,6 +8119,17 @@ window.HDT_DATA = {
           "status": "waiting",
           "date": "26/07",
           "note": "Nasdaq đã giảm mạnh đúng dự báo 3–4 tuần trước."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Short",
+          "sig": "down",
+          "entry": "Short tốt",
+          "target": "Chốt vùng thấp",
+          "stop": "—",
+          "status": "active",
+          "date": "23/07",
+          "note": "Từ Tập 39 · Tuần 29 (23/07)."
         },
         {
           "expertId": "thai-pham",
@@ -7658,6 +8221,28 @@ window.HDT_DATA = {
       "orders": [
         {
           "expertId": "thai-pham",
+          "dir": "Short",
+          "sig": "down",
+          "entry": "Giảm 2,8% phiên 24/07",
+          "target": "\"Còn giảm rất mạnh\"",
+          "stop": "—",
+          "status": "active",
+          "date": "26/07",
+          "note": "Từ Tập 40 · Tuần 30 (26/07)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Short",
+          "sig": "down",
+          "entry": "Canh cao đập xuống",
+          "target": "Test 58.700",
+          "stop": "—",
+          "status": "active",
+          "date": "23/07",
+          "note": "Từ Tập 39 · Tuần 29 (23/07)."
+        },
+        {
+          "expertId": "thai-pham",
           "dir": "SHORT",
           "sig": "down",
           "entry": "Canh nhịp hồi 1–2 hôm",
@@ -7698,6 +8283,39 @@ window.HDT_DATA = {
         }
       ],
       "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Giữ lệnh short",
+          "sig": "down",
+          "entry": "Đang có vị thế",
+          "target": "Còn điều chỉnh tiếp",
+          "stop": "—",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Chốt 1/2",
+          "sig": "down",
+          "entry": "Chốt đầu phiên 29/07",
+          "target": "Short lại 1/2 sau 2–4 tuần",
+          "stop": "Phiên sáng -8..-11% \"vượt mong đợi\"",
+          "status": "waiting",
+          "date": "31/07",
+          "note": "Từ Bài đăng · 24–31/07 (31/07)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Short khi giật",
+          "sig": "down",
+          "entry": "PANW 172–178 · CRWD ~190 · MRVL ~192 · MU ~890",
+          "target": "Nhóm chip nhớ & cyber còn giảm",
+          "stop": "—",
+          "status": "active",
+          "date": "30/07",
+          "note": "Từ Tập 41 · Giữa tuần (30/07)."
+        },
         {
           "expertId": "thai-pham",
           "dir": "SHORT (giữ 1/2)",
@@ -7743,6 +8361,50 @@ window.HDT_DATA = {
       "orders": [
         {
           "expertId": "thai-pham",
+          "dir": "Chờ short",
+          "sig": "down",
+          "entry": "Vùng ~350",
+          "target": "—",
+          "stop": "—",
+          "status": "waiting",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Short (chờ hồi)",
+          "sig": "down",
+          "entry": "Đợi hồi lại rồi đánh tiếp",
+          "target": "\"Rồi cũng như apple thôi\"",
+          "stop": "Không đuổi giá",
+          "status": "waiting",
+          "date": "31/07",
+          "note": "Từ Bài đăng · 24–31/07 (31/07)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Short khi giật",
+          "sig": "down",
+          "entry": "PANW 172–178 · CRWD ~190 · MRVL ~192 · MU ~890",
+          "target": "Nhóm chip nhớ & cyber còn giảm",
+          "stop": "—",
+          "status": "active",
+          "date": "30/07",
+          "note": "Từ Tập 41 · Giữa tuần (30/07)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Tăng short",
+          "sig": "down",
+          "entry": "Giữ + tăng lệnh",
+          "target": "Fortinet đã có thành quả",
+          "stop": "Vị thế nhỏ",
+          "status": "active",
+          "date": "23/07",
+          "note": "Từ Tập 39 · Tuần 29 (23/07)."
+        },
+        {
+          "expertId": "thai-pham",
           "dir": "SHORT",
           "sig": "down",
           "entry": "Vào từ từ, vị thế nhỏ",
@@ -7783,6 +8445,28 @@ window.HDT_DATA = {
         }
       ],
       "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Chờ short",
+          "sig": "down",
+          "entry": "Đỉnh cũ",
+          "target": "Đập về 169",
+          "stop": "KQKD tốt nhưng không cứu được giá",
+          "status": "waiting",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Short (chờ hồi)",
+          "sig": "down",
+          "entry": "Đợi hồi lại rồi đánh tiếp",
+          "target": "\"Rồi cũng như apple thôi\"",
+          "stop": "Không đuổi giá",
+          "status": "waiting",
+          "date": "31/07",
+          "note": "Từ Bài đăng · 24–31/07 (31/07)."
+        },
         {
           "expertId": "thai-pham",
           "dir": "SHORT",
@@ -7828,6 +8512,28 @@ window.HDT_DATA = {
       "orders": [
         {
           "expertId": "thai-pham",
+          "dir": "Chờ short",
+          "sig": "down",
+          "entry": "Vùng 200–202",
+          "target": "—",
+          "stop": "—",
+          "status": "waiting",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Short khi giật",
+          "sig": "down",
+          "entry": "PANW 172–178 · CRWD ~190 · MRVL ~192 · MU ~890",
+          "target": "Nhóm chip nhớ & cyber còn giảm",
+          "stop": "—",
+          "status": "active",
+          "date": "30/07",
+          "note": "Từ Tập 41 · Giữa tuần (30/07)."
+        },
+        {
+          "expertId": "thai-pham",
           "dir": "SHORT",
           "sig": "down",
           "entry": "Đang giảm 3–4%/phiên",
@@ -7867,6 +8573,39 @@ window.HDT_DATA = {
         }
       ],
       "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Giữ lệnh short",
+          "sig": "down",
+          "entry": "Đang có vị thế",
+          "target": "Còn điều chỉnh tiếp",
+          "stop": "—",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Chốt 1/2",
+          "sig": "down",
+          "entry": "Chốt đầu phiên 29/07",
+          "target": "Short lại 1/2 sau 2–4 tuần",
+          "stop": "Phiên sáng -8..-11% \"vượt mong đợi\"",
+          "status": "waiting",
+          "date": "31/07",
+          "note": "Từ Bài đăng · 24–31/07 (31/07)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Short",
+          "sig": "down",
+          "entry": "AMD 575; Google thủng hỗ trợ",
+          "target": "Google dòng tiền âm; Tesla -7%",
+          "stop": "—",
+          "status": "active",
+          "date": "23/07",
+          "note": "Từ Tập 39 · Tuần 29 (23/07)."
+        },
         {
           "expertId": "thai-pham",
           "dir": "THEO DÕI / SHORT NHỊP HỒI",
@@ -7909,6 +8648,17 @@ window.HDT_DATA = {
         }
       ],
       "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Không ưu tiên",
+          "sig": "avoid",
+          "entry": "—",
+          "target": "—",
+          "stop": "\"Vốn hóa cao dùng điều tiết chỉ số, ăn không nhiều\"",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        },
         {
           "expertId": "thai-pham",
           "dir": "ĐỨNG NGOÀI",
@@ -7959,6 +8709,17 @@ window.HDT_DATA = {
       "orders": [
         {
           "expertId": "thai-pham",
+          "dir": "Short",
+          "sig": "down",
+          "entry": "Vùng hiện tại",
+          "target": "Hồi 7% chỉ là kỹ thuật để đỡ Apple",
+          "stop": "Alphabet âm dòng tiền lần đầu từ khi lên sàn",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        },
+        {
+          "expertId": "thai-pham",
           "dir": "TRÁNH / SHORT",
           "sig": "avoid",
           "entry": "Đã giảm 20% từ vùng ~400",
@@ -7967,6 +8728,17 @@ window.HDT_DATA = {
           "status": "active",
           "date": "26/07",
           "note": "Đảo chiều so với kèo \"chờ mua ~320\" tuần trước."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Short",
+          "sig": "down",
+          "entry": "AMD 575; Google thủng hỗ trợ",
+          "target": "Google dòng tiền âm; Tesla -7%",
+          "stop": "—",
+          "status": "active",
+          "date": "23/07",
+          "note": "Từ Tập 39 · Tuần 29 (23/07)."
         }
       ],
       "industry": "Công nghệ & Internet",
@@ -8042,6 +8814,39 @@ window.HDT_DATA = {
       "orders": [
         {
           "expertId": "thai-pham",
+          "dir": "Short",
+          "sig": "down",
+          "entry": "Vùng hiện tại",
+          "target": "Điều chỉnh đến 15/10",
+          "stop": "Đừng short ngang chừng",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Chốt 1/2",
+          "sig": "down",
+          "entry": "Chốt đầu phiên 29/07",
+          "target": "Short lại 1/2 sau 2–4 tuần",
+          "stop": "—",
+          "status": "waiting",
+          "date": "31/07",
+          "note": "Từ Bài đăng · 24–31/07 (31/07)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Tránh",
+          "sig": "down",
+          "entry": "Phân phối rõ 467 → 370",
+          "target": "\"Sẽ tương tự Intel\"",
+          "stop": "Từng bị thổi 121 → 460",
+          "status": "active",
+          "date": "26/07",
+          "note": "Từ Tập 40 · Tuần 30 (26/07)."
+        },
+        {
+          "expertId": "thai-pham",
           "dir": "TRÁNH / SHORT",
           "sig": "avoid",
           "entry": "Phân phối khung 467 → 370",
@@ -8083,6 +8888,17 @@ window.HDT_DATA = {
         }
       ],
       "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Short",
+          "sig": "down",
+          "entry": "Vùng hiện tại",
+          "target": "—",
+          "stop": "—",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        },
         {
           "expertId": "thai-pham",
           "dir": "THEO DÕI MUA",
@@ -8186,6 +9002,28 @@ window.HDT_DATA = {
       "orders": [
         {
           "expertId": "thai-pham",
+          "dir": "Chờ mua vùng sâu",
+          "sig": "down",
+          "entry": "Nếu phá 3.880 → về 3.000",
+          "target": "Trong nước về 100–110 triệu/lượng",
+          "stop": "Mốc giữ 3.950",
+          "status": "waiting",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Chờ",
+          "sig": "wait",
+          "entry": "Hồi kỹ thuật lên ~4.000",
+          "target": "T9–10 có cú điều chỉnh sâu",
+          "stop": "—",
+          "status": "waiting",
+          "date": "30/07",
+          "note": "Từ Tập 41 · Giữa tuần (30/07)."
+        },
+        {
+          "expertId": "thai-pham",
           "dir": "LONG",
           "sig": "wait",
           "entry": "4.030",
@@ -8194,6 +9032,17 @@ window.HDT_DATA = {
           "status": "active",
           "date": "26/07",
           "note": "Chỉ short khi hồi về 4.400 kèm tin Fed tăng lãi."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Long nhẹ / chờ đáy",
+          "sig": "wait",
+          "entry": "~4.030 (hồi kỹ thuật)",
+          "target": "Về 4.000; cửa 3.000 \"rất sáng\"",
+          "stop": "~3.930",
+          "status": "active",
+          "date": "23/07",
+          "note": "Từ Tập 39 · Tuần 29 (23/07)."
         },
         {
           "expertId": "thai-pham",
@@ -8273,6 +9122,28 @@ window.HDT_DATA = {
       "orders": [
         {
           "expertId": "thai-pham",
+          "dir": "Giữ vị thế mua",
+          "sig": "up",
+          "entry": "Đã bắt đáy vùng 70",
+          "target": "Đi ngang 85–90 đến hết tháng 10",
+          "stop": "Đã chốt vùng 85 — bỏ lỡ sóng lên 101",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Giữ vị thế mua",
+          "sig": "up",
+          "entry": "Đã bắt đáy vùng 70",
+          "target": "Đi ngang 85–90 đến hết tháng 10",
+          "stop": "Đã chốt vùng 85 — bỏ lỡ sóng lên 101",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        },
+        {
+          "expertId": "thai-pham",
           "dir": "GIỮ LONG",
           "sig": "up",
           "entry": "Đã lên >100 từ đáy 70,87",
@@ -8303,6 +9174,17 @@ window.HDT_DATA = {
           "status": "done",
           "date": "18/07",
           "note": "Scorecard: call dầu 87–90 → ĐÚNG."
+        },
+        {
+          "expertId": "quang-dung",
+          "dir": "Ưu tiên 2",
+          "sig": "up",
+          "entry": "Sau nhóm tài chính",
+          "target": "Hưởng lợi gián tiếp từ nới lỏng",
+          "stop": "—",
+          "status": "active",
+          "date": "04/07",
+          "note": "Từ Vĩ mô · Tháng 7 (04/07)."
         }
       ],
       "potential": 3,
@@ -8312,7 +9194,23 @@ window.HDT_DATA = {
       "industry": "Năng lượng",
       "basket": "ngan-han",
       "tradeMode": "margin",
-      "region": "commodity"
+      "region": "commodity",
+      "views": [
+        {
+          "expertId": "thai-pham",
+          "stance": "Giữ vị thế mua",
+          "sig": "up",
+          "date": "01/08",
+          "line": "Từ Tập 42 · Tuần 31 (01/08). Điểm vào: Đã bắt đáy vùng 70. Mục tiêu: Đi ngang 85–90 đến hết tháng 10."
+        },
+        {
+          "expertId": "quang-dung",
+          "stance": "Ưu tiên 2",
+          "sig": "up",
+          "date": "04/07",
+          "line": "Từ Vĩ mô · Tháng 7 (04/07). Điểm vào: Sau nhóm tài chính. Mục tiêu: Hưởng lợi gián tiếp từ nới lỏng."
+        }
+      ]
     },
     {
       "key": "btc",
@@ -8346,6 +9244,28 @@ window.HDT_DATA = {
         }
       ],
       "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Tránh cả năm",
+          "sig": "avoid",
+          "entry": "—",
+          "target": "Banana lần ba — khả năng chết tiếp",
+          "stop": "Còn cầm ít short, đợi 70–72",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Đứng ngoài",
+          "sig": "down",
+          "entry": "Chỉ short nếu lên lại ~74k",
+          "target": "\"Năm nay không phải năm của Bitcoin\"",
+          "stop": "Hiện không tham gia long/short",
+          "status": "active",
+          "date": "30/07",
+          "note": "Từ Tập 41 · Giữa tuần (30/07)."
+        },
         {
           "expertId": "thai-pham",
           "dir": "ĐỨNG NGOÀI",
@@ -8428,6 +9348,17 @@ window.HDT_DATA = {
       "orders": [
         {
           "expertId": "thai-pham",
+          "dir": "Chờ",
+          "sig": "wait",
+          "entry": "Hồi theo vàng lên ~64",
+          "target": "—",
+          "stop": "—",
+          "status": "waiting",
+          "date": "30/07",
+          "note": "Từ Tập 41 · Giữa tuần (30/07)."
+        },
+        {
+          "expertId": "thai-pham",
           "dir": "CHỜ",
           "sig": "wait",
           "entry": "Đợi vàng tạo đáy 3.600–3.700",
@@ -8483,6 +9414,28 @@ window.HDT_DATA = {
       ],
       "orders": [
         {
+          "expertId": "thai-pham",
+          "dir": "Không cầm",
+          "sig": "avoid",
+          "entry": "—",
+          "target": "HPG bị Vin Steel cạnh tranh",
+          "stop": "LPB là \"cổ phiếu joker\"",
+          "status": "active",
+          "date": "30/07",
+          "note": "Từ Tập 41 · Giữa tuần (30/07)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Không mua",
+          "sig": "down",
+          "entry": "—",
+          "target": "\"Được thì ít mà chết thì lắm\"",
+          "stop": "—",
+          "status": "active",
+          "date": "26/07",
+          "note": "Từ Tập 40 · Tuần 30 (26/07)."
+        },
+        {
           "expertId": "quang-dung",
           "dir": "ĐỊNH GIÁ HẤP DẪN",
           "sig": "up",
@@ -8499,7 +9452,23 @@ window.HDT_DATA = {
       "potentialNote": "Lợi nhuận gần gấp đôi cùng kỳ, tín dụng chạy gấp ba lần tốc độ ngành, nằm trong nhóm ba ngân hàng được giao chỉ tiêu 36%.",
       "cautionNote": "Nợ xấu 3,17% — gấp 3–4 lần VCB/ACB. Dự phòng tăng 33%. CASA yếu: tiền gửi không kỳ hạn tăng trưởng âm. Tăng tín dụng nhanh trong môi trường lãi suất cao là con dao hai lưỡi.",
       "industry": "Ngân hàng",
-      "basket": "dai-han"
+      "basket": "dai-han",
+      "views": [
+        {
+          "expertId": "thai-pham",
+          "stance": "Không cầm",
+          "sig": "avoid",
+          "date": "30/07",
+          "line": "Từ Tập 41 · Giữa tuần (30/07). Mục tiêu: HPG bị Vin Steel cạnh tranh."
+        },
+        {
+          "expertId": "quang-dung",
+          "stance": "ĐỊNH GIÁ HẤP DẪN",
+          "sig": "up",
+          "date": "18/07",
+          "line": "Tăng trưởng tín dụng 23% nửa đầu năm so với toàn ngành 7,73%. Kế hoạch cả năm 36%. Điểm vào: Vùng 26. Mục tiêu: Lợi nhuận nhân 4 từ 2018 trong khi giá về vùng cũ."
+        }
+      ]
     },
     {
       "group": "Chứng khoán Việt Nam",
@@ -8514,7 +9483,8 @@ window.HDT_DATA = {
       "aliases": [
         "mbb",
         "mb bank",
-        "mbbank"
+        "mbbank",
+        "mb"
       ],
       "oneLiner": "Một trong ba ngân hàng có kế hoạch tăng trưởng tín dụng 36% năm 2026 — gấp đôi phần còn lại.",
       "thesis": [
@@ -8530,6 +9500,28 @@ window.HDT_DATA = {
         }
       ],
       "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Không cầm",
+          "sig": "avoid",
+          "entry": "—",
+          "target": "HPG bị Vin Steel cạnh tranh",
+          "stop": "LPB là \"cổ phiếu joker\"",
+          "status": "active",
+          "date": "30/07",
+          "note": "Từ Tập 41 · Giữa tuần (30/07)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Không mua",
+          "sig": "down",
+          "entry": "—",
+          "target": "\"Được thì ít mà chết thì lắm\"",
+          "stop": "—",
+          "status": "active",
+          "date": "26/07",
+          "note": "Từ Tập 40 · Tuần 30 (26/07)."
+        },
         {
           "expertId": "quang-dung",
           "dir": "THEO DÕI — NHÓM TÍN DỤNG CAO",
@@ -8547,7 +9539,23 @@ window.HDT_DATA = {
       "potentialNote": "Nằm trong nhóm ba ngân hàng được giao chỉ tiêu tín dụng cao nhất, gắn với mục tiêu GDP hai con số.",
       "cautionNote": "Luận điểm mỏng — mới là một chi tiết nêu trong bài về VPB, chưa có phân tích báo cáo riêng. Không nên coi là khuyến nghị đầy đủ.",
       "industry": "Ngân hàng",
-      "basket": "dai-han"
+      "basket": "dai-han",
+      "views": [
+        {
+          "expertId": "thai-pham",
+          "stance": "Không cầm",
+          "sig": "avoid",
+          "date": "30/07",
+          "line": "Từ Tập 41 · Giữa tuần (30/07). Mục tiêu: HPG bị Vin Steel cạnh tranh."
+        },
+        {
+          "expertId": "quang-dung",
+          "stance": "THEO DÕI — NHÓM TÍN DỤNG CAO",
+          "sig": "up",
+          "date": "18/07",
+          "line": "Nêu gián tiếp trong bài VPB; chưa có bài phân tích riêng. Mục tiêu: Kế hoạch tín dụng 36%, gấp đôi phần còn lại."
+        }
+      ]
     },
     {
       "group": "Chứng khoán Việt Nam",
@@ -8674,17 +9682,6 @@ window.HDT_DATA = {
       ],
       "orders": [
         {
-          "expertId": "quang-dung",
-          "dir": "ĐỊNH GIÁ VỀ MỨC 2024",
-          "sig": "up",
-          "entry": "—",
-          "target": "Quy mô 22.000 → 29.000 tỷ; LN 384 → gần 700 tỷ",
-          "stop": "Không có mốc giá cụ thể",
-          "status": "active",
-          "date": "10/06",
-          "note": "Mã duy nhất trong ba mã có cả quy mô lẫn lợi nhuận cùng tăng."
-        },
-        {
           "expertId": "ck-5-phut",
           "dir": "KHÔNG PHẢI TÍN HIỆU ĐÁY",
           "sig": "wait",
@@ -8694,6 +9691,17 @@ window.HDT_DATA = {
           "status": "active",
           "date": "28/07",
           "note": "Nằm trong loạt lãnh đạo đăng ký mua (VCI, KDH, PDR) — định giá hấp dẫn nhưng \"đáy thì còn lâu\"."
+        },
+        {
+          "expertId": "quang-dung",
+          "dir": "ĐỊNH GIÁ VỀ MỨC 2024",
+          "sig": "up",
+          "entry": "—",
+          "target": "Quy mô 22.000 → 29.000 tỷ; LN 384 → gần 700 tỷ",
+          "stop": "Không có mốc giá cụ thể",
+          "status": "active",
+          "date": "10/06",
+          "note": "Mã duy nhất trong ba mã có cả quy mô lẫn lợi nhuận cùng tăng."
         }
       ],
       "potential": 3,
@@ -8705,18 +9713,955 @@ window.HDT_DATA = {
       "debate": "Quang Dũng đọc bảng cân đối và thấy doanh nghiệp khỏe lên thật. CK 5 phút đọc cùng tin (phó tổng Khang Điền đăng ký mua 20 triệu cổ phiếu) nhưng cảnh báo đừng nhầm với tín hiệu đáy — người trong cuộc mua vì tin doanh nghiệp, không có nghĩa giá đã hết giảm. Hai bên không mâu thuẫn về chất lượng doanh nghiệp, chỉ khác về thời điểm.",
       "views": [
         {
-          "expertId": "quang-dung",
-          "stance": "ĐỊNH GIÁ VỀ MỨC 2024",
-          "sig": "up",
-          "date": "10/06",
-          "line": "Mã duy nhất trong ba mã có cả quy mô lẫn lợi nhuận cùng tăng. Mục tiêu: Quy mô 22.000 → 29.000 tỷ; LN 384 → gần 700 tỷ."
-        },
-        {
           "expertId": "ck-5-phut",
           "stance": "KHÔNG PHẢI TÍN HIỆU ĐÁY",
           "sig": "wait",
           "date": "28/07",
           "line": "Nằm trong loạt lãnh đạo đăng ký mua (VCI, KDH, PDR) — định giá hấp dẫn nhưng \"đáy thì còn lâu\"."
+        },
+        {
+          "expertId": "quang-dung",
+          "stance": "ĐỊNH GIÁ VỀ MỨC 2024",
+          "sig": "up",
+          "date": "10/06",
+          "line": "Mã duy nhất trong ba mã có cả quy mô lẫn lợi nhuận cùng tăng. Mục tiêu: Quy mô 22.000 → 29.000 tỷ; LN 384 → gần 700 tỷ."
+        }
+      ]
+    },
+    {
+      "tradeMode": "spot",
+      "potential": 3,
+      "caution": 3,
+      "key": "acb",
+      "symbol": "ACB",
+      "name": "Ngân hàng Á Châu",
+      "group": "Chứng khoán Việt Nam",
+      "tv": "HOSE:ACB",
+      "region": "vn",
+      "industry": "Ngân hàng",
+      "basket": "tranh",
+      "sig": "wait",
+      "stance": "KHÔNG MUA — CHƯA TỚI LƯỢT",
+      "aliases": [
+        "acb",
+        "a chau"
+      ],
+      "oneLiner": "Thái Phạm xếp vào nhóm ngân hàng \"chưa tới lượt\" — không mua trong giai đoạn này.",
+      "potentialNote": "Quang Dũng dùng ACB làm mốc đối chiếu nợ xấu ~1% cho nhóm bank khỏe.",
+      "cautionNote": "Thái Phạm (26/07) liệt vào nhóm không mua cùng VPB, MB, LPB.",
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Không mua",
+          "sig": "down",
+          "entry": "—",
+          "target": "\"Được thì ít mà chết thì lắm\"",
+          "stop": "—",
+          "status": "active",
+          "date": "26/07",
+          "note": "Từ Tập 40 · Tuần 30 (26/07)."
+        },
+        {
+          "expertId": "quang-dung",
+          "dir": "An toàn hơn",
+          "sig": "wait",
+          "entry": "—",
+          "target": "—",
+          "stop": "Nợ xấu chỉ ~1%, dùng làm mốc đối chiếu",
+          "status": "active",
+          "date": "18/07",
+          "note": "Từ VPB · Quý 2/2026 (18/07)."
+        }
+      ],
+      "views": [
+        {
+          "expertId": "thai-pham",
+          "stance": "Không mua",
+          "sig": "down",
+          "date": "26/07",
+          "line": "Từ Tập 40 · Tuần 30 (26/07). Mục tiêu: \"Được thì ít mà chết thì lắm\"."
+        },
+        {
+          "expertId": "quang-dung",
+          "stance": "An toàn hơn",
+          "sig": "wait",
+          "date": "18/07",
+          "line": "Từ VPB · Quý 2/2026 (18/07)."
+        }
+      ]
+    },
+    {
+      "tradeMode": "spot",
+      "potential": 3,
+      "caution": 3,
+      "key": "lpb",
+      "symbol": "LPB",
+      "name": "LPBank",
+      "group": "Chứng khoán Việt Nam",
+      "tv": "HOSE:LPB",
+      "region": "vn",
+      "industry": "Ngân hàng",
+      "basket": "tranh",
+      "sig": "avoid",
+      "stance": "KHÔNG CẦM",
+      "aliases": [
+        "lpb",
+        "lpbank"
+      ],
+      "oneLiner": "Nằm trong danh sách ngân hàng Thái Phạm nói không cầm (Tập 41, 30/07).",
+      "potentialNote": "Chưa có luận điểm tích cực nào từ bốn kênh.",
+      "cautionNote": "Bị nêu tên hai lần trong nhóm \"không cầm\" và \"không mua\".",
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Không cầm",
+          "sig": "avoid",
+          "entry": "—",
+          "target": "HPG bị Vin Steel cạnh tranh",
+          "stop": "LPB là \"cổ phiếu joker\"",
+          "status": "active",
+          "date": "30/07",
+          "note": "Từ Tập 41 · Giữa tuần (30/07)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Không mua",
+          "sig": "down",
+          "entry": "—",
+          "target": "\"Được thì ít mà chết thì lắm\"",
+          "stop": "—",
+          "status": "active",
+          "date": "26/07",
+          "note": "Từ Tập 40 · Tuần 30 (26/07)."
+        }
+      ]
+    },
+    {
+      "tradeMode": "spot",
+      "potential": 3,
+      "caution": 3,
+      "key": "stb",
+      "symbol": "STB",
+      "name": "Sacombank",
+      "group": "Chứng khoán Việt Nam",
+      "tv": "HOSE:STB",
+      "region": "vn",
+      "industry": "Ngân hàng",
+      "basket": "tranh",
+      "sig": "avoid",
+      "stance": "KHÔNG CẦM",
+      "aliases": [
+        "stb",
+        "sacombank"
+      ],
+      "oneLiner": "Thái Phạm (Tập 41): nằm trong nhóm ngân hàng không cầm.",
+      "potentialNote": "Chưa có luận điểm tích cực nào từ bốn kênh.",
+      "cautionNote": "Cùng nhóm với HPG, VPB, MBB, LPB trong danh sách không cầm ngày 30/07.",
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Không cầm",
+          "sig": "avoid",
+          "entry": "—",
+          "target": "HPG bị Vin Steel cạnh tranh",
+          "stop": "LPB là \"cổ phiếu joker\"",
+          "status": "active",
+          "date": "30/07",
+          "note": "Từ Tập 41 · Giữa tuần (30/07)."
+        }
+      ]
+    },
+    {
+      "tradeMode": "spot",
+      "potential": 3,
+      "caution": 3,
+      "key": "dig",
+      "symbol": "DIG",
+      "name": "DIC Corp",
+      "group": "Chứng khoán Việt Nam",
+      "tv": "HOSE:DIG",
+      "region": "vn",
+      "industry": "Bất động sản",
+      "basket": "tranh",
+      "sig": "avoid",
+      "stance": "TRÁNH — RỦI RO CALL MARGIN",
+      "aliases": [
+        "dig",
+        "dic corp"
+      ],
+      "oneLiner": "Thái Phạm dẫn DIG làm ví dụ điển hình cho rủi ro call margin của doanh chủ.",
+      "potentialNote": "Không có. Đây là mã cảnh báo, không phải mã theo dõi để mua.",
+      "cautionNote": "Bài đăng 28/07: một trong bốn lý do \"rẻ có thể rẻ hơn\" là doanh chủ bị call margin — dẫn chính DIG và PNJ. VCI cũng đã thông báo bán ra DIG.",
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Tránh",
+          "sig": "avoid",
+          "entry": "—",
+          "target": "—",
+          "stop": "Ví dụ điển hình rủi ro call margin của doanh chủ",
+          "status": "active",
+          "date": "31/07",
+          "note": "Từ Bài đăng · 24–31/07 (31/07)."
+        }
+      ]
+    },
+    {
+      "tradeMode": "spot",
+      "potential": 3,
+      "caution": 3,
+      "key": "bsr",
+      "symbol": "BSR",
+      "name": "Lọc hóa dầu Bình Sơn",
+      "group": "Chứng khoán Việt Nam",
+      "tv": "HOSE:BSR",
+      "region": "vn",
+      "industry": "Dầu khí",
+      "basket": "tranh",
+      "sig": "avoid",
+      "stance": "TRÁNH — ĐỘI TAY TO ĂN XONG",
+      "aliases": [
+        "bsr",
+        "binh son"
+      ],
+      "oneLiner": "Thái Phạm (Tập 42): \"ăn xong rồi, đội tay to nó ăn xong, giờ toàn nhỏ lẻ chơi với nhau\".",
+      "potentialNote": "Không có luận điểm mua từ kênh nào.",
+      "cautionNote": "Thanh khoản còn lại chủ yếu là nhỏ lẻ giao dịch với nhau.",
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Tránh",
+          "sig": "avoid",
+          "entry": "—",
+          "target": "—",
+          "stop": "Đừng đụng vào",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        }
+      ]
+    },
+    {
+      "tradeMode": "spot",
+      "potential": 3,
+      "caution": 3,
+      "key": "msr",
+      "symbol": "MSR",
+      "name": "Masan High-Tech Materials",
+      "group": "Chứng khoán Việt Nam",
+      "tv": "UPCOM:MSR",
+      "region": "vn",
+      "industry": "Khai khoáng",
+      "basket": "ngan-han",
+      "sig": "wait",
+      "stance": "CHỜ VỀ VÙNG 24",
+      "aliases": [
+        "msr",
+        "masan resource",
+        "masan high tech"
+      ],
+      "oneLiner": "Thái Phạm (Tập 42): vùng này không mua được, phải đợi về 24.",
+      "potentialNote": "Có mốc chờ cụ thể — một trong số ít mã ông đưa mốc giá rõ tuần 31.",
+      "cautionNote": "\"Mua vùng này thì nó lại dìu các anh chị\" — mua sớm là bị kẹp.",
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Chờ mua",
+          "sig": "wait",
+          "entry": "Phải về vùng 24",
+          "target": "—",
+          "stop": "Mua vùng này là bị dìu",
+          "status": "waiting",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        }
+      ]
+    },
+    {
+      "tradeMode": "spot",
+      "potential": 3,
+      "caution": 3,
+      "key": "nkg",
+      "symbol": "NKG",
+      "name": "Thép Nam Kim",
+      "group": "Chứng khoán Việt Nam",
+      "tv": "HOSE:NKG",
+      "region": "vn",
+      "industry": "Thép",
+      "basket": "tranh",
+      "sig": "wait",
+      "stance": "KÉM HƠN HPG RÕ RỆT",
+      "aliases": [
+        "nkg",
+        "nam kim"
+      ],
+      "oneLiner": "Quang Dũng: tỉ suất 2,5 năm chỉ 7%, so với HPG 92%.",
+      "potentialNote": "Cùng ngành thép nên hưởng lợi chung nếu giá thép hồi.",
+      "cautionNote": "Quang Dũng (01/08) dùng NKG và HSG để chứng minh nội lực doanh nghiệp mới là thứ quyết định, không phải ngành.",
+      "orders": [
+        {
+          "expertId": "quang-dung",
+          "dir": "Kém hơn HPG",
+          "sig": "warn",
+          "entry": "—",
+          "target": "—",
+          "stop": "Tỉ suất 2,5 năm chỉ 7% và 26% so với HPG 92%",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ HPG · Quý 2/2026 (01/08)."
+        }
+      ]
+    },
+    {
+      "tradeMode": "spot",
+      "potential": 3,
+      "caution": 3,
+      "key": "hsg",
+      "symbol": "HSG",
+      "name": "Hoa Sen Group",
+      "group": "Chứng khoán Việt Nam",
+      "tv": "HOSE:HSG",
+      "region": "vn",
+      "industry": "Thép",
+      "basket": "tranh",
+      "sig": "wait",
+      "stance": "KÉM HƠN HPG",
+      "aliases": [
+        "hsg",
+        "hoa sen"
+      ],
+      "oneLiner": "Quang Dũng: tỉ suất 2,5 năm 26%, so với HPG 92%.",
+      "potentialNote": "Cùng ngành thép nên hưởng lợi chung nếu giá thép hồi.",
+      "cautionNote": "Không có động lực mở rộng công suất như Dung Quất 2 của HPG.",
+      "orders": [
+        {
+          "expertId": "quang-dung",
+          "dir": "Kém hơn HPG",
+          "sig": "warn",
+          "entry": "—",
+          "target": "—",
+          "stop": "Tỉ suất 2,5 năm chỉ 7% và 26% so với HPG 92%",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ HPG · Quý 2/2026 (01/08)."
+        }
+      ]
+    },
+    {
+      "tradeMode": "margin",
+      "potential": 3,
+      "caution": 3,
+      "key": "amzn",
+      "symbol": "AMZN",
+      "name": "Amazon",
+      "group": "Quốc tế",
+      "tv": "NASDAQ:AMZN",
+      "region": "foreign",
+      "industry": "Công nghệ & Internet",
+      "basket": "ngan-han",
+      "sig": "down",
+      "stance": "CHỜ SHORT 285–290",
+      "aliases": [
+        "amzn",
+        "amazon"
+      ],
+      "oneLiner": "Thái Phạm (Tập 42): đợi kéo lên 285–290 rồi short — phiên tăng 15% là đánh đỡ chỉ số.",
+      "potentialNote": "Không có luận điểm mua.",
+      "cautionNote": "\"Một cổ phiếu trụ mà đánh tăng 15% trong một phiên là cách đánh ngáo và láo — để đỡ S&P 500 và US30 thôi.\"",
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Chờ short",
+          "sig": "down",
+          "entry": "285–290",
+          "target": "\"Kéo thêm khoảng 15 giá nữa\"",
+          "stop": "Phiên tăng 15% là đánh đỡ chỉ số",
+          "status": "waiting",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Đứng ngoài",
+          "sig": "down",
+          "entry": "Đang nằm đáy",
+          "target": "Bán lẻ toàn cầu đau khổ",
+          "stop": "—",
+          "status": "active",
+          "date": "26/07",
+          "note": "Từ Tập 40 · Tuần 30 (26/07)."
+        }
+      ]
+    },
+    {
+      "tradeMode": "margin",
+      "potential": 3,
+      "caution": 3,
+      "key": "bac",
+      "symbol": "BAC",
+      "name": "Bank of America",
+      "group": "Quốc tế",
+      "tv": "NYSE:BAC",
+      "region": "foreign",
+      "industry": "Ngân hàng",
+      "basket": "ngan-han",
+      "sig": "down",
+      "stance": "SHORT ĐƯỢC NGAY",
+      "aliases": [
+        "bac",
+        "bank of america"
+      ],
+      "oneLiner": "Thái Phạm (Tập 42): short được ngay vùng hiện tại, cùng Dell và RTX.",
+      "potentialNote": "Không có luận điểm mua.",
+      "cautionNote": "Nguyên tắc chung: short ở vùng cao đỉnh cũ, chốt ở vùng đáy — đừng short ngang chừng.",
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Short",
+          "sig": "down",
+          "entry": "Vùng hiện tại",
+          "target": "—",
+          "stop": "—",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        }
+      ]
+    },
+    {
+      "tradeMode": "margin",
+      "potential": 3,
+      "caution": 3,
+      "key": "anet",
+      "symbol": "ANET",
+      "name": "Arista Networks",
+      "group": "Quốc tế",
+      "tv": "NYSE:ANET",
+      "region": "foreign",
+      "industry": "Phần cứng CNTT",
+      "basket": "tranh",
+      "sig": "wait",
+      "stance": "KHÔNG ƯU TIÊN — \"RẤT ẢO\"",
+      "aliases": [
+        "anet",
+        "arista"
+      ],
+      "oneLiner": "Thái Phạm (Tập 42): \"rất là ảo — có màn hôm nay tăng 8% xong lại bị đập xuống\".",
+      "potentialNote": "Không có.",
+      "cautionNote": "Biến động thất thường, ông xếp ra ngoài danh sách ưu tiên.",
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Không ưu tiên",
+          "sig": "avoid",
+          "entry": "—",
+          "target": "—",
+          "stop": "\"Rất ảo — tăng 8% xong bị đập xuống\"",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        }
+      ]
+    },
+    {
+      "tradeMode": "margin",
+      "potential": 3,
+      "caution": 3,
+      "key": "sndk",
+      "symbol": "SanDisk",
+      "name": "SanDisk",
+      "group": "Quốc tế",
+      "tv": "",
+      "region": "foreign",
+      "industry": "Bán dẫn & Điện tử tiêu dùng",
+      "basket": "ngan-han",
+      "sig": "up",
+      "stance": "ĐÃ CHỐT — LÃI ĐẬM NHẤT ĐỢT",
+      "aliases": [
+        "sandisk",
+        "sndk"
+      ],
+      "oneLiner": "Mã lãi đậm nhất đợt short vừa rồi: có thời điểm ăn hơn 50% từ vùng đỉnh.",
+      "potentialNote": "Đã chốt 1/2 ngày 29/07 cùng nhóm AI chips; phần còn lại đợi 2–4 tuần short lại.",
+      "cautionNote": "Kèo đã đóng phần lớn — không còn là mã hành động ngay.",
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Đã chốt",
+          "sig": "up",
+          "entry": "—",
+          "target": "Ăn 5x% từ vùng đỉnh",
+          "stop": "Mã lãi đậm nhất đợt vừa rồi",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        },
+        {
+          "expertId": "thai-pham",
+          "dir": "Chốt 1/2",
+          "sig": "down",
+          "entry": "Chốt đầu phiên 29/07",
+          "target": "Short lại 1/2 sau 2–4 tuần",
+          "stop": "—",
+          "status": "waiting",
+          "date": "31/07",
+          "note": "Từ Bài đăng · 24–31/07 (31/07)."
+        }
+      ]
+    },
+    {
+      "tradeMode": "margin",
+      "potential": 3,
+      "caution": 3,
+      "key": "tsla",
+      "symbol": "TSLA",
+      "name": "Tesla",
+      "group": "Quốc tế",
+      "tv": "NASDAQ:TSLA",
+      "region": "foreign",
+      "industry": "Công nghệ tiêu dùng",
+      "basket": "ngan-han",
+      "sig": "down",
+      "stance": "SHORT",
+      "aliases": [
+        "tsla",
+        "tesla"
+      ],
+      "oneLiner": "Thái Phạm (Tập 39, 23/07) nêu short. Bản tin 24/07: TSLA -14,5%, EPS 33 cent so với kỳ vọng 51 cent.",
+      "potentialNote": "Không có luận điểm mua.",
+      "cautionNote": "Biên lợi nhuận gộp tụt còn 16,8%, lần đầu âm dòng tiền tự do kể từ 2024.",
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Short",
+          "sig": "down",
+          "entry": "AMD 575; Google thủng hỗ trợ",
+          "target": "Google dòng tiền âm; Tesla -7%",
+          "stop": "—",
+          "status": "active",
+          "date": "23/07",
+          "note": "Từ Tập 39 · Tuần 29 (23/07)."
+        }
+      ]
+    },
+    {
+      "tradeMode": "margin",
+      "potential": 3,
+      "caution": 3,
+      "key": "ko",
+      "symbol": "KO",
+      "name": "Coca-Cola",
+      "group": "Quốc tế",
+      "tv": "NYSE:KO",
+      "region": "foreign",
+      "industry": "Tiêu dùng thiết yếu",
+      "basket": "ngan-han",
+      "sig": "up",
+      "stance": "ĐÃ CHỐT LỜI",
+      "aliases": [
+        "ko",
+        "coca cola",
+        "coca-cola"
+      ],
+      "oneLiner": "Thái Phạm (Tập 40, 26/07): đã chốt lời nhóm phòng thủ.",
+      "potentialNote": "Nhóm phòng thủ hút tiền khi thị trường xấu.",
+      "cautionNote": "Tập 41 cảnh báo chính nhóm phòng thủ này rồi cũng sẽ điều chỉnh.",
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Chốt lời",
+          "sig": "wait",
+          "entry": "Chốt hết",
+          "target": "—",
+          "stop": "—",
+          "status": "waiting",
+          "date": "26/07",
+          "note": "Từ Tập 40 · Tuần 30 (26/07)."
+        }
+      ]
+    },
+    {
+      "tradeMode": "margin",
+      "potential": 3,
+      "caution": 3,
+      "key": "wmt",
+      "symbol": "WMT",
+      "name": "Walmart",
+      "group": "Quốc tế",
+      "tv": "NYSE:WMT",
+      "region": "foreign",
+      "industry": "Bán lẻ",
+      "basket": "tranh",
+      "sig": "wait",
+      "stance": "ĐỨNG NGOÀI",
+      "aliases": [
+        "wmt",
+        "walmart"
+      ],
+      "oneLiner": "Thái Phạm (26/07): đứng ngoài nhóm bán lẻ Mỹ.",
+      "potentialNote": "—",
+      "cautionNote": "Cùng nhóm với Costco và Amazon trong danh sách đứng ngoài.",
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Đứng ngoài",
+          "sig": "down",
+          "entry": "Đang nằm đáy",
+          "target": "Bán lẻ toàn cầu đau khổ",
+          "stop": "—",
+          "status": "active",
+          "date": "26/07",
+          "note": "Từ Tập 40 · Tuần 30 (26/07)."
+        }
+      ]
+    },
+    {
+      "tradeMode": "margin",
+      "potential": 3,
+      "caution": 3,
+      "key": "cost",
+      "symbol": "COST",
+      "name": "Costco",
+      "group": "Quốc tế",
+      "tv": "NASDAQ:COST",
+      "region": "foreign",
+      "industry": "Bán lẻ",
+      "basket": "tranh",
+      "sig": "wait",
+      "stance": "ĐỨNG NGOÀI",
+      "aliases": [
+        "cost",
+        "costco"
+      ],
+      "oneLiner": "Thái Phạm (26/07): đứng ngoài nhóm bán lẻ Mỹ.",
+      "potentialNote": "—",
+      "cautionNote": "Cùng nhóm với Walmart và Amazon trong danh sách đứng ngoài.",
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Đứng ngoài",
+          "sig": "down",
+          "entry": "Đang nằm đáy",
+          "target": "Bán lẻ toàn cầu đau khổ",
+          "stop": "—",
+          "status": "active",
+          "date": "26/07",
+          "note": "Từ Tập 40 · Tuần 30 (26/07)."
+        }
+      ]
+    },
+    {
+      "tradeMode": "margin",
+      "potential": 3,
+      "caution": 3,
+      "key": "ftse",
+      "symbol": "FTSE 100",
+      "name": "Chỉ số FTSE 100 (Anh)",
+      "group": "Quốc tế",
+      "tv": "TVC:UKX",
+      "region": "foreign",
+      "industry": "Chỉ số",
+      "basket": "ngan-han",
+      "sig": "down",
+      "stance": "BÁN / SHORT ĐẦU TUẦN",
+      "aliases": [
+        "ftse",
+        "ftse 100",
+        "ukx"
+      ],
+      "oneLiner": "Thái Phạm (Tập 42): \"đầu tuần thế nào cũng dính con FTSE 100 — các bạn có thể bán được\".",
+      "potentialNote": "Không có luận điểm mua.",
+      "cautionNote": "Kèo ngắn hạn theo nhịp chung của chứng khoán toàn cầu.",
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Bán / short",
+          "sig": "down",
+          "entry": "Đầu tuần",
+          "target": "\"Thế nào cũng dính\"",
+          "stop": "—",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        }
+      ]
+    },
+    {
+      "tradeMode": "margin",
+      "potential": 3,
+      "caution": 3,
+      "key": "usdjpy",
+      "symbol": "USD/JPY",
+      "name": "Đô la Mỹ / Yên Nhật",
+      "group": "Quốc tế",
+      "tv": "FX:USDJPY",
+      "region": "foreign",
+      "industry": "Ngoại hối",
+      "basket": "ngan-han",
+      "sig": "up",
+      "stance": "LONG LẠI VÙNG 147–150",
+      "aliases": [
+        "usdjpy",
+        "usd/jpy",
+        "yen",
+        "đồng yên",
+        "yen nhat"
+      ],
+      "oneLiner": "Can thiệp của BOJ và Bộ Tài chính Mỹ là nhân tạo — long lại khi về 147–150.",
+      "potentialNote": "Chênh lệch lãi suất Nhật 1% với Mỹ 3,75–4% chưa được giải quyết, nên dài hạn trader thắng.",
+      "cautionNote": "Ngắn hạn trader thua các định chế. Lần đầu sau 28 năm hai bên phối hợp can thiệp, BOJ chi ~72 tỷ đô.",
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Long khi về vùng thấp",
+          "sig": "up",
+          "entry": "147–150",
+          "target": "Chênh lệch lãi suất Nhật 1% vs Mỹ 3,75–4%",
+          "stop": "Ngắn hạn trader thua định chế",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        }
+      ]
+    },
+    {
+      "tradeMode": "spot",
+      "potential": 3,
+      "caution": 3,
+      "key": "aeon",
+      "symbol": "AEON",
+      "name": "AEON (Nhật)",
+      "group": "Quốc tế",
+      "tv": "TSE:8267",
+      "region": "jp",
+      "industry": "Bán lẻ",
+      "basket": "ngan-han",
+      "sig": "up",
+      "stance": "MUA NHỎ",
+      "aliases": [
+        "aeon",
+        "8267"
+      ],
+      "oneLiner": "Thái Phạm (Tập 42): khi đồng yên được can thiệp thì tuần tới AEON chạy — mua một chút cũng ok.",
+      "potentialNote": "Hưởng lợi trực tiếp khi yên mạnh lên.",
+      "cautionNote": "Kèo nhỏ, phụ thuộc vào việc can thiệp tỷ giá kéo dài bao lâu.",
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Mua nhỏ",
+          "sig": "up",
+          "entry": "Tuần tới khi yên được can thiệp",
+          "target": "—",
+          "stop": "—",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        }
+      ]
+    },
+    {
+      "tradeMode": "spot",
+      "potential": 3,
+      "caution": 3,
+      "key": "bhp",
+      "symbol": "BHP",
+      "name": "BHP Group (Úc)",
+      "group": "Quốc tế",
+      "tv": "ASX:BHP",
+      "region": "foreign",
+      "industry": "Khai khoáng",
+      "basket": "tranh",
+      "sig": "avoid",
+      "stance": "KHÔNG MUA",
+      "aliases": [
+        "bhp"
+      ],
+      "oneLiner": "Thái Phạm (Tập 42): \"không mua BHP — nó gãy bất cứ lúc nào\".",
+      "potentialNote": "—",
+      "cautionNote": "Nguyên tắc chung với Úc: mua vùng đáy, bán vùng cao. BHP đang không ở vùng đáy.",
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Không mua",
+          "sig": "avoid",
+          "entry": "—",
+          "target": "—",
+          "stop": "\"Gãy bất cứ lúc nào\"",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        }
+      ]
+    },
+    {
+      "tradeMode": "spot",
+      "potential": 3,
+      "caution": 3,
+      "key": "wds",
+      "symbol": "WDS",
+      "name": "Woodside Energy (Úc)",
+      "group": "Quốc tế",
+      "tv": "ASX:WDS",
+      "region": "foreign",
+      "industry": "Dầu khí",
+      "basket": "ngan-han",
+      "sig": "up",
+      "stance": "ĐÃ CÓ LỜI — CHỐT",
+      "aliases": [
+        "wds",
+        "woodside"
+      ],
+      "oneLiner": "Thái Phạm (Tập 42): \"lời rồi, chốt thôi\".",
+      "potentialNote": "Hưởng lợi từ giá dầu cao.",
+      "cautionNote": "Đã đạt mục tiêu — không còn là kèo mở.",
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Chốt lời",
+          "sig": "up",
+          "entry": "—",
+          "target": "\"Lời rồi, chốt thôi\"",
+          "stop": "—",
+          "status": "waiting",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        }
+      ]
+    },
+    {
+      "tradeMode": "spot",
+      "potential": 3,
+      "caution": 3,
+      "key": "nab",
+      "symbol": "NAB",
+      "name": "National Australia Bank",
+      "group": "Quốc tế",
+      "tv": "ASX:NAB",
+      "region": "foreign",
+      "industry": "Ngân hàng",
+      "basket": "ngan-han",
+      "sig": "up",
+      "stance": "ĐÃ CÓ LỜI — CHỐT",
+      "aliases": [
+        "nab"
+      ],
+      "oneLiner": "Thái Phạm (Tập 42): \"lời rồi, chốt thôi\".",
+      "potentialNote": "—",
+      "cautionNote": "Đã đạt mục tiêu — không còn là kèo mở.",
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Chốt lời",
+          "sig": "up",
+          "entry": "—",
+          "target": "\"Lời rồi, chốt thôi\"",
+          "stop": "—",
+          "status": "waiting",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        }
+      ]
+    },
+    {
+      "tradeMode": "spot",
+      "potential": 3,
+      "caution": 3,
+      "key": "anz",
+      "symbol": "ANZ",
+      "name": "ANZ Group (Úc)",
+      "group": "Quốc tế",
+      "tv": "ASX:ANZ",
+      "region": "foreign",
+      "industry": "Ngân hàng",
+      "basket": "ngan-han",
+      "sig": "up",
+      "stance": "ĐÃ CÓ LỜI — CHỐT",
+      "aliases": [
+        "anz"
+      ],
+      "oneLiner": "Thái Phạm (Tập 42): \"lời rồi, lời rồi chốt thôi\".",
+      "potentialNote": "—",
+      "cautionNote": "Đã đạt mục tiêu — không còn là kèo mở.",
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Chốt lời",
+          "sig": "up",
+          "entry": "—",
+          "target": "\"Lời rồi, chốt thôi\"",
+          "stop": "—",
+          "status": "waiting",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        }
+      ]
+    },
+    {
+      "tradeMode": "spot",
+      "potential": 3,
+      "caution": 3,
+      "key": "wtc",
+      "symbol": "WTC",
+      "name": "WiseTech Global (Úc)",
+      "group": "Quốc tế",
+      "tv": "ASX:WTC",
+      "region": "foreign",
+      "industry": "Công nghệ",
+      "basket": "tranh",
+      "sig": "warn",
+      "stance": "ĐỪNG MUA — CÒN CÓ THỂ GIẢM",
+      "aliases": [
+        "wtc",
+        "wisetech"
+      ],
+      "oneLiner": "Thái Phạm (Tập 42): đừng mua; nếu thích thì mua một chút rồi chờ hồi lên 50 mà bán.",
+      "potentialNote": "Có mốc thoát cụ thể: hồi lên 50.",
+      "cautionNote": "\"Đừng mua, đừng mua vì nó có thể còn giảm.\"",
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Đừng mua",
+          "sig": "warn",
+          "entry": "Nếu thích thì mua chút",
+          "target": "Chờ hồi lên 50 thì bán",
+          "stop": "Còn có thể giảm tiếp",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        }
+      ]
+    },
+    {
+      "tradeMode": "spot",
+      "potential": 3,
+      "caution": 3,
+      "key": "csl",
+      "symbol": "CSL",
+      "name": "CSL Limited (Úc)",
+      "group": "Quốc tế",
+      "tv": "ASX:CSL",
+      "region": "foreign",
+      "industry": "Dược phẩm",
+      "basket": "dai-han",
+      "sig": "wait",
+      "stance": "ĐỂ ĐẤY",
+      "aliases": [
+        "csl"
+      ],
+      "oneLiner": "Thái Phạm (Tập 42): \"cứ để đấy thôi\" — không hành động gì.",
+      "potentialNote": "—",
+      "cautionNote": "Không có mốc mua bán nào được đưa ra.",
+      "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "Để đấy",
+          "sig": "wait",
+          "entry": "—",
+          "target": "—",
+          "stop": "—",
+          "status": "active",
+          "date": "01/08",
+          "note": "Từ Tập 42 · Tuần 31 (01/08)."
         }
       ]
     }
@@ -9239,11 +11184,11 @@ window.HDT_DATA = {
       "oil": {
         "spot": [],
         "fut": [
-          "BZUSDT",
-          "CLUSDT"
+          "CLUSDT",
+          "BZUSDT"
         ],
         "kind": "exact",
-        "note": "CL = WTI, BZ = Brent"
+        "note": "CLUSDT = WTI (khớp mã này) · BZUSDT = Brent"
       },
       "btc": {
         "spot": [

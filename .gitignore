@@ -3,3 +3,6 @@
 data/transcripts/
 Theo doi video-post kenh dau tu.xlsx
 data/comments/
+
+# Ảnh tham chiếu thiết kế (tải từ impeccable.style)
+.impeccable/

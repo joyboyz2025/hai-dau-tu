@@ -56,6 +56,13 @@ vercel.json            # rewrites + Cache-Control no-cache cho data.js
 - State: `ctxTopic` (index, khai báo trong constructor). Biến renderVals: `ctxTabs`, `ctxUpdated`, `ctxNote`, `ctxHeadline`, `ctxSub`, `ctxLabel`, `ctxFlag`, `ctxHeadBg`, `ctxHeadColor`, `ctxStats`, `ctxItems`, `ctxItemCount` — đủ 12 biến, nhớ giữ trong khối return.
 - User sẽ bổ sung chuyên gia chuyên mảng này sau; khi đó chỉ cần thêm `items` với `expertId` mới.
 
+7j. **⚠ ĐỒNG BỘ SỔ LỆNH — `node sync_orders.js`** (thêm 03/08 sau khi user phát hiện lỗi lớn):
+`tradeLevels` trong bài và `tickers[].orders` trong Sổ mã là HAI NƠI CHỨA CÙNG MỘT SỰ THẬT. Trước 03/08 chúng không được đồng bộ → **82 mốc lệnh nêu trong bài mà Sổ mã trống trơn** (vd Thái Phạm bảo short Google 01/08, mã GOOGL không có phiếu lệnh nào; FPT thiếu 4, PANW thiếu 4, MU thiếu 4…). Đã sửa hết và thêm 25 mã còn thiếu → **79 mã · 217 phiếu lệnh**.
+- **Sau mỗi lần dựng entry PHẢI chạy** `node sync_orders.js --write`, và trước khi commit chạy `node sync_orders.js` (thoát 0 = sạch).
+- Script khớp mã theo `symbol` + `aliases`, suy `status` từ `dir` (chờ→waiting, đã chốt→done, còn lại→active), sắp lệnh mới nhất lên đầu, **sinh lại `views`** cho khối Đa quan điểm (7h).
+- Báo "chưa có mã" → phải tạo ticker mới đủ trường, trừ nhóm ngành/chỉ số (danh sách `NOT_A_TICKER` trong script).
+- **Bẫy đã dính**: hàm bỏ dấu phải `replace(/đ/g,'d')` TRƯỚC `normalize('NFD')` — chữ `đ` không bị NFD tách ra, nên "Đầu tư công"/"BĐS" lọt qua bộ lọc và bị coi là mã.
+
 7h. **Ghi nguồn + Đa quan điểm** (thêm 02/08 theo yêu cầu user: "kèo của ai nhớ ghi", "chung kèo thì 2 quan điểm khác nhau tôi muốn coi đa quan điểm"):
 - **Mọi `thesis` phải có `expertId`** → UI hiện huy hiệu "TP · Thái Phạm" cạnh tiêu đề. Đoạn nào nhắc nhiều chuyên gia thì lấy người được nhắc SỚM NHẤT làm tác giả, người sau là đối chiếu.
 - **`views[]` sinh TỰ ĐỘNG từ `orders`** trong script cập nhật (mỗi expertId lấy lệnh đầu tiên; `line` = note + entry + target). KHÔNG viết tay `views` — sửa `orders` rồi chạy lại. Khối chỉ hiện khi ≥2 chuyên gia (`tkHasViews`).
@@ -94,6 +101,16 @@ Mỗi lần update: sửa stance/orders theo transcript mới (lệnh khớp m�
   3. Bung phản hồi: click mọi `#more-replies button, ytd-comment-replies-renderer button`, rồi bóc `ytd-comment-thread-renderer` → `#author-text` + `#content-text`.
   Lưu ý `javascript_tool`: viết biểu thức trần (REPL, có top-level await) — bọc `(async()=>{})()` sẽ trả `{}`; chuỗi trả về dài quá bị cắt nên phải `.slice()` từng khúc. Comment VIDEO vẫn lấy bình thường bằng yt-dlp (xem dòng trên).
 - **Bài đăng là nội dung Thái Phạm TỰ VIẾT → được xếp vào `experts['thai-pham'].updates` với `sourceType: 'member-post'`** (badge xanh dương, đã có sẵn trong `SOURCE_TYPE`). Khác hẳn comment hội viên — cái đó chỉ được vào `briefing.community`. Bài đăng viết ngay trong phiên nên thường có lệnh cụ thể hơn video cuối tuần (vd 29/07: "chốt lời 1/2 Dell, Marvell, Amd, Mu, sandisk") → là nguồn tốt nhất để chốt kèo scorecard.
+- **Chart mã QUỐC TẾ: dùng CẶP BINANCE, không dùng sàn gốc** (đổi 03/08 theo yêu cầu user: "kèo short CK Mỹ dùng chart TradingView mà cặp của Binance, không phải cặp chính"). Lý do: đó mới là hợp đồng thật sự dùng để short.
+  Cách chọn symbol trong renderVals: có `HDT.binance.map[ticker.key]` → `BINANCE:<fut>.P` (hợp đồng vĩnh cửu), không có futures thì `BINANCE:<spot>`, không có ánh xạ thì giữ `ticker.tv` gốc. Trong mảng `fut`/`spot` **ưu tiên cặp kết thúc bằng USDT** (SpaceX có cả SPCXUSD1 và SPCXUSDT — phải lấy USDT).
+  Đã kiểm thật trong trình duyệt: AAPL, MU, CRWD, NVDA, SPCX, SAMSUNG đều vẽ được nến trên TradingView. Đầu chart hiện nhãn nguồn ("Binance · hợp đồng AAPLUSDT") và badge "ETF thay thế" nếu `kind==='proxy'` (SPY↔S&P500, QQQ↔Nasdaq, EWJ↔Nikkei).
+  **Bẫy đã dính**: WTI có `fut:["BZUSDT","CLUSDT"]` — BZ là Brent, CL mới là WTI. Đã đổi thứ tự trong data.js thành `["CLUSDT","BZUSDT"]`. Khi thêm ánh xạ mới, đặt cặp ĐÚNG với mã lên đầu mảng.
+- **Chart mã Việt Nam: TỰ VẼ từ VNDirect, KHÔNG dùng TradingView** (đổi 03/08). Widget miễn phí của TradingView không có bản quyền HOSE/UPCOM nên 30/31 mã VN chỉ hiện "This symbol is only available on TradingView". Nguồn thay thế đã kiểm chứng:
+  `https://dchart-api.vndirect.com.vn/dchart/history?symbol=<MÃ>&resolution=D&from=<unix>&to=<unix>` → trả `{t,o,h,l,c,v,s}`, **có `Access-Control-Allow-Origin: *`** nên gọi thẳng từ trình duyệt được. Phủ HOSE, UPCOM, mã nhỏ (BVB) và cả chỉ số (`VNINDEX`, `VN30`).
+  Đã loại: TCBS (Cloudflare chặn), TradingView symbol-search (403).
+  Cách chạy: `loadVn(sym)` lưu vào state `vnBars`, renderVals dựng `tkVnPath`/`tkVnArea`/`tkVnLevels` rồi vẽ SVG trong đúng hệ màu app. `region==='vn'` → tự vẽ; còn lại → giữ iframe TradingView (`tkHasChart` nay đã loại region vn).
+  **Mốc giá chuyên gia vẽ đè lên chart**: rút số từ `orders[].entry/target/stop`, đã lọc bỏ phần trăm, ngày tháng, "tuần/tập/quý/năm/lần/tháng + số", và "số + tỷ/triệu/nghìn" — nếu không lọc thì "kế hoạch tín dụng 36%" của HDB bị vẽ thành mốc giá 36. Chỉ giữ số nằm trong khoảng 0,55–1,8 lần giá hiện tại.
+  **Rủi ro**: API nội bộ của VNDirect, không có cam kết công khai. Hỏng thì im lặng — hiện "Chưa lấy được giá cho mã này", không làm vỡ trang. Nếu sau này hỏng: thử lại URL trên bằng curl, kiểm `Access-Control-Allow-Origin`.
 - Không tải được video stream của video hội viên (403) — chỉ transcript. Đừng thử vẽ/chụp TradingView tự động (đã thử, quá mong manh) — dùng chart embed có sẵn.
 - `scExpert`, `callsExpert`, `assetKey`, `q`, `chartSym`, `tkView`, `tkIndustry`, `tkBasket` là state filter trong renderVals — thêm state mới nhớ khai báo trong constructor.
 - **Mọi biến tính trong renderVals phải được thêm vào `return {...}` cuối hàm mới lộ ra template** — quên bước này thì `{{ }}`/`sc-for` âm thầm render rỗng, KHÔNG báo lỗi console (đã dính bug này khi thêm `tkViewChips`/`tkBasketChips` 30/07 — luôn grep tên biến mới trong khối return để xác nhận trước khi verify browser).

@@ -222,6 +222,18 @@ input::placeholder{color:var(--ink-3);}
   .filt-l{white-space:nowrap;}
 }
 
+/* Sự kiện sắp tới: đếm ngược cỡ lớn bên trái */
+.ev{background:var(--white);border:1px solid var(--hair);border-radius:var(--r);
+  display:grid;grid-template-columns:58px 1fr;gap:0;overflow:hidden;}
+.ev-d{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;padding:10px 4px;}
+.ev-n{font-size:19px;font-weight:600;line-height:1;letter-spacing:-.04em;font-variant-numeric:tabular-nums;}
+.ev-u{font-size:8.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;opacity:.75;text-align:center;line-height:1.2;}
+.ev-b{padding:11px 14px;display:flex;flex-direction:column;gap:5px;min-width:0;}
+.ev-t{font-size:13px;font-weight:600;line-height:1.35;}
+.ev-note{font-size:12px;color:var(--ink-2);line-height:1.55;}
+.ev-src{display:flex;align-items:center;gap:6px;font-size:10.5px;color:var(--ink-3);flex-wrap:wrap;}
+.ev-dt{margin-left:auto;font-variant-numeric:tabular-nums;}
+
 /* ══ Bản tin: các khối đồ hoạ dựng từ số liệu thật ══ */
 .viz{background:var(--white);border:1px solid var(--hair);border-radius:var(--r-lg);
   padding:20px 22px;display:flex;flex-direction:column;gap:16px;}
@@ -441,6 +453,27 @@ input::placeholder{color:var(--ink-3);}
         </div>
       </div>
 
+      <div class="viz" onClick="{{ brGaugeGoTk }}" role="button" tabindex="0" style="cursor:pointer;">
+        <div class="viz-h">
+          <div class="t-h2">Còn cách mốc giải ngân bao xa</div>
+          <div class="t-cap">{{ brGauge.note }}</div>
+        </div>
+        <div class="gauge">
+          <div class="gauge-track">
+            <div class="gauge-zone" style="left:0; width:{{ brGauge.brkPos }}; background:var(--up-wash);"></div>
+            <div class="gauge-mk" style="left:{{ brGauge.brkPos }}; --c:var(--warn);"></div>
+            <div class="gauge-mk gauge-mk--now" style="left:{{ brGauge.nowPos }}; --c:var(--ink);"></div>
+          </div>
+          <div class="gauge-lbl">
+            <div class="gauge-p" style="left:0;"><b style="color:var(--up);">{{ brGauge.buy }}</b><span>giải ngân</span></div>
+            <div class="gauge-p" style="left:{{ brGauge.brkPos }};"><b style="color:var(--warn);">{{ brGauge.brk }}</b><span>sẽ bị phá</span></div>
+            <div class="gauge-p" style="left:{{ brGauge.nowPos }};"><b>{{ brGauge.now }}</b><span>hôm nay</span></div>
+            <div class="gauge-p gauge-p--end" style="right:0;"><b style="color:var(--ink-3);">{{ brGauge.top }}</b><span>đỉnh cũ</span></div>
+          </div>
+        </div>
+        <div class="viz-note">Còn <b>{{ brGauge.gapBrk }} điểm</b> tới ngưỡng sẽ bị phá · <b>{{ brGauge.gapBuy }} điểm</b> tới vùng giải ngân</div>
+      </div>
+
       <div style="display:flex; align-items:center; gap:10px; background:var(--white); border:1px solid var(--border); border-radius:var(--r); padding:2px 6px 2px 15px; max-width:620px;">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" style="flex-shrink:0;"><circle cx="7" cy="7" r="4.6" stroke="var(--ink-3)" stroke-width="1.4"/><path d="M10.6 10.6 14 14" stroke="var(--ink-3)" stroke-width="1.4" stroke-linecap="round"/></svg>
         <input ref="{{ searchRef }}" onInput="{{ onSearch }}" type="text" aria-label="Tìm mã, tài sản, từ khóa" placeholder="Tìm mã, tài sản, từ khóa… (VD: TCX, vàng, Fed)" style="flex:1; border:none; outline:none; font-size:15px; padding:12px 0; font-family:var(--font); color:var(--ink); background:transparent; min-width:0;"></input>
@@ -520,20 +553,19 @@ input::placeholder{color:var(--ink-3);}
             <div style="font-size:11px; font-weight:600; padding:2px 8px; border-radius:999px; background:var(--hair); color:var(--ink-2);">{{ actEventsCount }}</div>
           </div>
           <sc-for list="{{ actEvents }}" as="ae" hint-placeholder-count="5">
-            <div class="card-lift" style="background:var(--white); border:1px solid var(--hair); border-radius:var(--r); padding:12px 14px; display:flex; flex-direction:column; gap:6px; opacity:{{ ae.dim }};">
-              <div style="display:flex; align-items:center; justify-content:space-between; gap:8px; flex-wrap:wrap;">
-                <div style="display:flex; align-items:center; gap:8px;">
-                  <div style="font-size:12px; font-variant-numeric:tabular-nums; font-weight:600; padding:3px 9px; border-radius:8px; background:{{ ae.bg }}; color:{{ ae.color }};">{{ ae.dLabel }}</div>
-                  <div style="font-size:13px; font-weight:600;">{{ ae.label }}</div>
-                </div>
-                <sc-if value="{{ ae.whenBold }}" hint-placeholder-val="{{ false }}">
-                  <div style="font-size:10.5px; font-weight:600; color:var(--ink);">{{ ae.when }}</div>
-                </sc-if>
+            <div class="card-lift ev" style="opacity:{{ ae.dim }};">
+              <div class="ev-d" style="background:{{ ae.bg }}; color:{{ ae.color }};">
+                <b class="ev-n">{{ ae.big }}</b>
+                <span class="ev-u">{{ ae.unit }}</span>
               </div>
-              <div style="font-size:12px; color:var(--ink-2); line-height:1.5;">{{ ae.note }}</div>
-              <div style="display:flex; align-items:center; gap:5px; justify-content:flex-end;">
-                <div style="width:18px; height:18px; border-radius:50%; background:var(--ink); color:var(--white); display:flex; align-items:center; justify-content:center; font-size:7.5px; font-weight:600;">{{ ae.initials }}</div>
-                <div style="font-size:10.5px; color:var(--ink-3);">{{ ae.expertName }}</div>
+              <div class="ev-b">
+                <div class="ev-t">{{ ae.label }}</div>
+                <div class="ev-note">{{ ae.note }}</div>
+                <div class="ev-src">
+                  <span class="proof-i" style="width:18px; height:18px; font-size:8px;">{{ ae.initials }}</span>
+                  <span>{{ ae.expertName }}</span>
+                  <span class="ev-dt">{{ ae.dLabel }}</span>
+                </div>
               </div>
             </div>
           </sc-for>
@@ -3095,8 +3127,16 @@ class Component extends DCLogic {
         past = diff < 0;
         when = diff < 0 ? 'Đã qua' : diff === 0 ? 'HÔM NAY' : diff === 1 ? 'Ngày mai' : 'Còn ' + diff + ' ngày';
       }
+      let big = '', unit = '';
+      if (ev.date) {
+        const diff = Math.round((new Date(ev.date + 'T00:00:00') - _actToday) / 86400000);
+        if (diff < 0) { big = '—'; unit = 'đã qua'; }
+        else if (diff === 0) { big = 'NAY'; unit = 'hôm nay'; }
+        else { big = String(diff); unit = 'ngày nữa'; }
+      } else { big = (ev.dateLabel || '').replace(/^(Tháng|T)\s*/i, 'T'); unit = 'dự kiến'; }
       return {
-        dLabel, when, label: ev.label, note: ev.note,
+        dLabel, when, label: ev.label, note: ev.note, big, unit,
+        bigSmall: big.length > 3,
         whenBold: !past && ev.date, dim: past ? '0.55' : '1',
         accent: ACT_ACCENT[ev.sig] || 'var(--ink-3)', ...CHIP_SIG[ev.sig], ...mkActExpert(ev.expertId)
       };
@@ -3154,6 +3194,7 @@ class Component extends DCLogic {
       gapBrk: (_now - _brk).toLocaleString('vi-VN'), gapBuy: (_now - _buy).toLocaleString('vi-VN'),
       note: _pv ? _pv.mark : '' };
 
+    const brGaugeGoTk = () => this.go('tickers');
     const BR = HDT.briefing || {};
     const brExpert = HDT.experts[BR.expertId] || {};
     const TL_STATE = {
@@ -3541,7 +3582,7 @@ class Component extends DCLogic {
       brTitle: BR.title, brSubtitle: BR.subtitle, brLead: BR.lead, brUpdated: BR.updated,
       brExpertName: brExpert.name || '', brExpertInitials: brExpert.initials || '',
       brTimeline, brSqueezes, brStats, brTodo,
-      brAlloc, brSigDist, brSigTotal, brAcc, brGauge,
+      brAlloc, brSigDist, brSigTotal, brAcc, brGauge, brGaugeGoTk,
       brQuoteText: (BR.quote || {}).text || '', brQuoteSource: (BR.quote || {}).source || '',
       brCommunity, brCmHas: brCommunity.length > 0,
       brCmTitle: CM.title || '', brCmSource: CM.source || '', brCmDisclaimer: CM.disclaimer || '',

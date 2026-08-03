@@ -3626,8 +3626,10 @@ return {
       _push(k.tag + ' ' + k.value, k.note || '',
             { label: k.tag, value: k.value, detail: k.note || '', kind: 'call',
               ...CHIP_SIG[k.signal] }));
+    // bullets đã bị bọc thành {text} ở khối chuẩn hóa updates phía trên — phải mở ra
+    const _btxt = b => typeof b === 'string' ? b : (b && b.text) || '';
     (_cu.sections || []).forEach(sec => {
-      const body = [sec.para || ''].concat((sec.bullets || []).map(b => '• ' + b)).join('\n');
+      const body = [sec.para || ''].concat((sec.bullets || []).map(b => '• ' + _btxt(b))).join('\n');
       _push(sec.title + ' ' + (sec.sigLabel || ''), body,
             { label: sec.title, value: sec.sigLabel || '', detail: body, kind: 'sec',
               ...CHIP_SIG[sec.signal] });

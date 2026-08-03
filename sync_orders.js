@@ -25,8 +25,12 @@ const D = window.HDT_DATA;
 const strip = s => String(s || '').toLowerCase().replace(/đ/g, 'd').normalize('NFD')
   .replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
 
-// ── Những nhãn KHÔNG phải một mã cụ thể: chỉ số, nhóm ngành, mã chưa xác định ──
-const NOT_A_TICKER = /^(vn[- ]?index|nhom |chung khoan (han|nhat)|ngan hang|chung khoan|dau tu cong|bds|ban le|ma chua xac dinh|danh muc)/;
+// ── Những nhãn KHÔNG phải một mã cụ thể: chỉ số, nhóm ngành, lớp tài sản, mã chưa xác định ──
+// LƯU Ý: danh sách này được kiểm TRƯỚC findTk (xem dưới). Lý do: findTk có bước dò
+// theo từng TỪ, nên "ETF công ty khai khoáng vàng" của LCG Huy khớp nhầm vào mã Vàng
+// chỉ vì có chữ "vàng" — trong khi anh ấy nói rõ là KHÔNG mua vàng, chỉ mua cổ phiếu
+// công ty đào vàng. Nhãn lớp tài sản luôn phải thắng phép dò mờ.
+const NOT_A_TICKER = /^(vn[- ]?index|nhom |chung khoan (han|nhat)|ngan hang|chung khoan|dau tu cong|bds|ban le|ma chua xac dinh|danh muc|etf (cong ty|thi truong|khai khoang))/;
 
 const idx = {};
 D.tickers.forEach(t => [t.symbol, ...(t.aliases || [])].forEach(a => {
@@ -55,14 +59,18 @@ Object.entries(D.experts).forEach(([eid, ex]) => {
       (g.items || []).forEach(it => {
         String(it.asset).split(/\s*[·+]\s*/).forEach(part => {
           const nm = part.trim(); if (!nm) return;
+          if (NOT_A_TICKER.test(strip(nm))) return;   // loại trừ thắng phép dò mờ
           const t = findTk(nm);
           if (!t) {
-            if (NOT_A_TICKER.test(strip(nm))) return;
             (orphans[nm] = orphans[nm] || []).push(`${u.dateShort} ${eid} — ${it.dir}`);
             return;
           }
-          const dup = (t.orders || []).some(o => o.expertId === eid && o.date === u.dateShort);
-          if (dup) return;
+          // trùng với lệnh đã có trong sổ…
+          if ((t.orders || []).some(o => o.expertId === eid && o.date === u.dateShort)) return;
+          // …hoặc trùng với lệnh vừa gom trong chính lượt này. Cần cả hai: nhãn kiểu
+          // "WTI · Brent" tách thành hai phần cùng trỏ về một mã, trước đây sinh ra
+          // hai phiếu lệnh y hệt nhau.
+          if (rows.some(r => r.ticker === t && r.expertId === eid && r.date === u.dateShort)) return;
           rows.push({
             ticker: t, expertId: eid, date: u.dateShort, srcTab: u.tab,
             order: {

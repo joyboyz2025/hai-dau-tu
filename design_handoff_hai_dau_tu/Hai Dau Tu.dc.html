@@ -708,7 +708,7 @@ input::placeholder{color:var(--ink-3);}
         </div>
 
       </div>
-      <div style="font-size:12px; color:var(--ink-3); text-align:center; padding-top:4px;">Tổng hợp tự động từ nhận định mới nhất của 4 chuyên gia · chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</div>
+      <div style="font-size:12px; color:var(--ink-3); text-align:center; padding-top:4px;">Tổng hợp tự động từ nhận định mới nhất của 5 chuyên gia · chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</div>
     </div>
   </sc-if>
 
@@ -3594,22 +3594,37 @@ return {
     }
 
     // ══ Sơ đồ tư duy: xếp nội dung bài theo nhóm ngành / thị trường ══
+    // Từ khóa để nguyên dạng chuỗi; ranh giới từ được bọc ở _rx bên dưới.
+    // ĐỪNG thêm từ chung chung ("danh mục", "cổ phiếu", "tỷ trọng") vào một nhóm
+    // vùng miền — chúng xuất hiện ở mọi bài và sẽ kéo nhầm cả loạt ý sang đó.
     const _MM = [
-      { g: 'Vàng & Bitcoin', re: /vàng|bitcoin|\bbtc\b|bạc|xau|xag/i,            sig: 'warn'  },
-      { g: 'Dầu',            re: /\bdầu\b|wti|brent|opec|hormuz/i,               sig: 'up'    },
-      { g: 'Nhật & Hàn',     re: /yên|nhật|hàn|samsung|nikkei|kospi|boj|aeon/i,  sig: 'down'  },
-      { g: 'Địa chính trị',  re: /iran|trung đông|nga|ukraine|chiến|houthi|israel/i, sig: 'warn' },
-      { g: 'Chứng khoán Mỹ', re: /\bmỹ\b|apple|aapl|nasdaq|s&p|us30|chips|spacex|nvidia|amd|intel|micron|google|amazon|dell|cyber|ftnt|panw|crwd/i, sig: 'down' },
-      { g: 'Vĩ mô & chính sách', re: /fed|lãi suất|lạm phát|lợi suất|vĩ mô|gdp|chính sách|thông tư|nghị quyết|cung tiền|tín dụng|ecb|cpi/i, sig: 'warn' },
-      { g: 'Chứng khoán Việt Nam', re: /việt nam|vn-?index|khối ngoại|tỉ trọng|tỷ trọng|danh mục|tỷ giá|ngân hàng|bất động sản|hose|cổ phiếu/i, sig: 'wait' }
+      { g: 'Vàng & Bitcoin', k: 'vàng|bitcoin|btc|bạc|xau|xag',      sig: 'warn' },
+      { g: 'Dầu',            k: 'dầu|wti|brent|opec|hormuz',         sig: 'up'   },
+      { g: 'Nhật & Hàn',     k: 'yên|nhật|hàn quốc|samsung|nikkei|kospi|boj|aeon', sig: 'down' },
+      { g: 'Địa chính trị',  k: 'iran|trung đông|nga|ukraine|chiến tranh|houthi|israel', sig: 'warn' },
+      { g: 'Chứng khoán Mỹ', k: 'mỹ|apple|aapl|nasdaq|s&p|us30|chips|spacex|nvidia|amd|intel|micron|google|amazon|dell|cyber|ftnt|panw|crwd|microsoft', sig: 'down' },
+      { g: 'Vĩ mô & chính sách', k: 'fed|lãi suất|lạm phát|lợi suất|vĩ mô|gdp|chính sách|thông tư|nghị quyết|cung tiền|tín dụng|ecb|cpi|basel', sig: 'warn' },
+      { g: 'Chứng khoán Việt Nam', k: 'việt nam|vn-index|vnindex|vn30|khối ngoại|tỷ giá|bất động sản|hose|upcom', sig: 'wait' },
+      { g: 'ETF & quỹ chỉ số', k: 'etf|quỹ|quỹ chỉ số|quỹ mở|chứng chỉ quỹ|benchmark|thước đo|nav|drawdown|aum|phí quản lý|dcds|vcbf|vesaf', sig: 'up' },
+      { g: 'Danh mục & tỉ trọng', k: 'danh mục|tỉ trọng|tỷ trọng|phân bổ|giải ngân|sức mua|tiền mặt|margin|tích sản|dca|đa dạng hóa|đa dạng hoá', sig: 'up' },
+      { g: 'Định giá & doanh nghiệp', k: 'định giá|p/e|eps|lợi nhuận|doanh thu|kết quả kinh doanh|báo cáo tài chính|biên gộp|roe|cổ tức', sig: 'up' },
+      { g: 'Tâm lý & kỷ luật', k: 'tâm lý|sai lầm|nguyên tắc|kỷ luật|bài học|fomo|thuyết âm mưu|hoảng loạn', sig: 'wait' },
+      { g: 'Rủi ro & lừa đảo', k: 'cảnh báo|lừa đảo|scam|kiện tụng|thao túng|bong bóng|operation ai comply|ponzi', sig: 'avoid' }
     ];
+    // Ranh giới từ có dấu: \b của JS chỉ hiểu [A-Za-z0-9_] nên "hàn" khớp trong
+    // "ngân hàng" và "yên" khớp trong "chuyên gia" — đủ để đẩy 4 ý của một bài về
+    // ETF sang nhánh "Nhật & Hàn". Dùng lookaround theo \p{L} để chặn.
+    const _rx = k => new RegExp('(?<!\\p{L})(?:' + k + ')(?!\\p{L})', 'giu');
+    _MM.forEach(m => { m.re = _rx(m.k); });
     // chấm điểm thay vì khớp đầu tiên: nhãn nặng gấp 3 lần thân bài,
     // nếu không thì một ý về Fed chỉ vì nhắc "đồng yên" sẽ bị xếp nhầm sang Nhật
     const _score = (label, body) => {
       let best = { g: 'Điểm khác', sig: 'wait' }, bestN = 0;
       _MM.forEach(m => {
-        const inL = (String(label).match(new RegExp(m.re.source, 'gi')) || []).length;
-        const inB = (String(body).match(new RegExp(m.re.source, 'gi')) || []).length;
+        m.re.lastIndex = 0;
+        const inL = (String(label).match(m.re) || []).length;
+        m.re.lastIndex = 0;
+        const inB = (String(body).match(m.re) || []).length;
         const n = inL * 3 + inB;
         if (n > bestN) { bestN = n; best = m; }
       });

@@ -4234,6 +4234,362 @@ window.HDT_DATA = {
           "meta": "Video công khai · 34:20 · Đầu tư chứng khoán cùng Quang Dũng"
         }
       ]
+    },
+    "lcg-huy": {
+      "initials": "LH",
+      "name": "LCG Huy",
+      "avatarSrc": null,
+      "bio": "Quỹ chỉ số và ETF. Thạc sĩ MBA Đại học Toronto, làm quản lý rủi ro cho một ngân hàng ở Canada. Nói về TỶ TRỌNG phân bổ danh mục và tiêu chí chọn quỹ — không đưa mã cổ phiếu riêng lẻ, không đọc đồ thị.",
+      "sourceLabel": "YouTube · Video công khai",
+      "sourceChips": [
+        "▶ Video công khai",
+        "Tần suất: thứ Tư & Chủ nhật",
+        "⌗ ETF · quỹ chỉ số · quỹ mở"
+      ],
+      "gauge": {
+        "title": "Danh mục chứng khoán của anh (tự công bố)",
+        "badge": "Đa dạng hóa",
+        "badgeBg": "oklch(0.95 0.04 250)",
+        "badgeColor": "oklch(0.45 0.12 250)",
+        "bar1": 50,
+        "bar2": 50,
+        "label1": "S&P 500 50%",
+        "label2": "Ngoài S&P 500 50%"
+      },
+      "updates": [
+        {
+          "date": "2026-08-02",
+          "dateShort": "02/08",
+          "timeAgo": "1 ngày trước",
+          "tab": "Đổi danh mục · 02/08",
+          "sourceType": "public-video",
+          "typeLabel": "Video công khai · 20 phút",
+          "title": "Tại Sao Mình Thay Đổi Cách Đầu Tư? — Mua S&P 500 Bây Giờ Là Đặt Cược Vào AI",
+          "summary": "Anh tự nhận đã khuyên mua S&P 500 và VN30 suốt thời gian dài, nay nói thẳng là \"không còn tốt trong thời đại AI nữa\" và công bố lại toàn bộ tỷ trọng danh mục chứng khoán. Lý do: 10 công ty đã chiếm 40% chỉ số S&P 500 và 8 trong số đó đặt cược lớn vào AI — mua chỉ số tưởng là đa dạng, thực tế là dồn vào một canh bạc.",
+          "feedChips": [
+            {
+              "label": "S&P 500 ⚠ 10 công ty chiếm 40% chỉ số",
+              "sig": "warn"
+            },
+            {
+              "label": "Danh mục ↑ 50% S&P 500 · 20% vừa & nhỏ · 15% mới nổi",
+              "sig": "up"
+            },
+            {
+              "label": "S&P chia đều ✕ từ chối — \"thưởng phạt ngược\"",
+              "sig": "avoid"
+            },
+            {
+              "label": "Vàng ↑ mua ETF công ty khai khoáng, không mua vàng vật chất",
+              "sig": "up"
+            },
+            {
+              "label": "AI trading ✕ 7 tỷ đô kiện lừa đảo riêng năm 2025 ở Mỹ",
+              "sig": "avoid"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "Bẫy tập trung của S&P 500",
+              "value": "10 công ty = 40% chỉ số",
+              "signal": "warn",
+              "note": "Google, Apple, Microsoft, Nvidia… — 8 trong 10 công ty đầu bảng đang đặt cược cực lớn vào AI. \"Khi bạn đầu tư vào chỉ số S&P 500 thì ở một mức độ rất lớn là bạn đang đặt cược vào AI.\" Nếu kết quả AI không xứng với khoản đầu tư hiện tại thì cả chỉ số rớt theo. Anh dẫn nghiên cứu: nhóm công ty top đầu cần tạo ra khoảng 2.000 tỷ đô doanh thu mới xứng với định giá đang có."
+            },
+            {
+              "tag": "Danh mục mới — chỉ tính phần chứng khoán",
+              "value": "50 / 20 / 15 / 10 / 5",
+              "signal": "up",
+              "note": "50% chỉ số S&P 500 · 20% ETF công ty vừa và nhỏ của Mỹ · 15% ETF thị trường mới nổi (Trung Quốc, Hàn Quốc — và Việt Nam khi FTSE đã xếp vào nhóm này) · 10% ETF thị trường phát triển ngoài Mỹ (Châu Âu, Đức, Pháp, Anh) · 5% ETF công ty khai khoáng vàng. Anh nói rõ đây KHÔNG gồm crypto và bất động sản anh đang có, và KHÔNG nêu mã ETF cụ thể trên YouTube — mã chỉ có trong cộng đồng trả phí của anh."
+            },
+            {
+              "tag": "S&P 500 chia đều tỷ trọng",
+              "value": "Từ chối — vẫn chọn bản thường",
+              "signal": "avoid",
+              "note": "Bảng so sánh anh đưa ra cho thấy bản chia đều có rủi ro thấp hơn và đa dạng hơn. Nhưng anh vẫn chọn bản thường: \"công ty lớn có lý do để nó lớn\", và thời đại AI không giống bong bóng dot-com 2000 vì các ông lớn có doanh thu thật, không chỉ sống bằng AI (Microsoft còn Office, game…). Bản chia đều dính hiệu ứng \"thưởng phạt ngược\" — bán công ty làm tốt để mua công ty làm kém ở đáy chỉ số."
+            },
+            {
+              "tag": "Đa dạng theo địa lý",
+              "value": "Không nước nào mạnh mãi",
+              "signal": "warn",
+              "note": "Năm 1900 nước Anh chiếm 24% tổng giá trị thị trường toàn cầu; thập niên 80–90 là Nhật Bản; nay là Mỹ; Trung Quốc đang trỗi dậy. Mua S&P 500 là phụ thuộc hoàn toàn vào một quốc gia. Đó là lý do anh bắt đầu mua thêm tài sản ngoài nước Mỹ."
+            },
+            {
+              "tag": "Ai hưởng lợi thật từ AI",
+              "value": "Công ty DÙNG AI, không phải công ty TẠO AI",
+              "signal": "up",
+              "note": "Hiệu suất các mô hình (Claude, ChatGPT, Gemini) đang tiệm cận nhau. Bên hưởng lợi nhiều nhất là công ty vừa và nhỏ biết áp dụng AI để tạo sản phẩm đột phá — nhóm này tăng trưởng nhanh hơn công ty quá lớn. Đó là lý do 20% danh mục vào ETF công ty vừa và nhỏ."
+            },
+            {
+              "tag": "Vàng",
+              "value": "Mua ETF công ty đào vàng, 5%",
+              "signal": "up",
+              "note": "Basel 3 xếp vàng vào tài sản tier 1 — ngang tiền mặt và trái phiếu chính phủ Mỹ; ngân hàng trung ương đang mua rất nhiều, Trung Quốc lập \"hành lang vàng\" với nhóm BRICS. Nhưng anh nói thẳng là không thích vàng vật chất: \"nó không tạo ra được dòng tiền\". Anh mua cổ phiếu công ty khai khoáng vì có đòn bẩy — vàng tăng thì cổ phiếu tăng nhanh hơn giá vàng, và ngược lại giảm cũng nhanh hơn. Chấp nhận rủi ro đó vì chỉ chiếm 5%."
+            },
+            {
+              "tag": "Cảnh báo AI trading",
+              "value": "7 tỷ đô kiện lừa đảo AI, riêng 2025 ở Mỹ",
+              "signal": "avoid",
+              "note": "Các hội nhóm quảng cáo \"AI cao cấp\" cho lợi nhuận vài chục phần trăm mỗi tháng: \"đa số những cái thứ đó là lừa đảo\". Cơ quan quản lý thương mại Mỹ đang chạy chiến dịch Operation AI Comply; ủy ban chứng khoán Mỹ điều tra các công ty nói khống là dùng AI. Lập luận của anh: ngân hàng và tổ chức tài chính lớn đã dùng machine learning 30–40 năm nay, mà hơn 90% quỹ đầu tư trên thế giới vẫn không thắng nổi S&P 500. Warren Buffett cũng chỉ đều đặn khoảng 20%/năm."
+            },
+            {
+              "tag": "Người ở Việt Nam làm gì",
+              "value": "ETF VN30 + 1–2 chứng chỉ quỹ mở",
+              "signal": "wait",
+              "note": "Anh không khuyến khích dùng tiền Việt mua tài sản nước ngoài — mua được nhưng không chính thống, không được luật pháp Việt Nam bảo vệ, thuế rắc rối. Thay vào đó: ETF VN30 có mức đa dạng tương đối tốt (dù đúng là nặng bất động sản và ngân hàng — \"điểm chung của cả thị trường Việt Nam rồi, làm gì thì cũng không tránh được\"), rồi mua thêm một hai chứng chỉ quỹ mở phủ các công ty ít nằm trong VN30 để cân bằng lại."
+            }
+          ],
+          "sections": [
+            {
+              "title": "Vì sao chỉ số không còn là chỗ trú an toàn",
+              "signal": "warn",
+              "sigLabel": "Đa dạng trên giấy, tập trung trên thực tế",
+              "para": "Lập luận cũ của anh là quỹ chỉ số trải đều nhiều ngành nên vừa đa dạng vừa an toàn. Anh nói lập luận đó đúng trong quá khứ và không còn đúng bây giờ, vì cơ cấu của chính chỉ số đã đổi: sức nặng dồn về một nhóm rất nhỏ, và nhóm đó lại cùng đặt cược vào một thứ.",
+              "bullets": [
+                "Mười công ty chiếm 40% chỉ số S&P 500; tám trong số đó đang đầu tư rất lớn vào AI.",
+                "Nghiên cứu anh dẫn: nhóm công ty top đầu thế giới cần tạo ra khoảng 2.000 tỷ đô doanh thu mới xứng với định giá hiện tại.",
+                "Rủi ro thứ hai là địa lý: 500 công ty đó đều là công ty Mỹ, nên mua chỉ số là đặt cược vào một quốc gia duy nhất.",
+                "Lịch sử đổi ngôi: Anh (1900, 24% giá trị thị trường toàn cầu) → Nhật (thập niên 80–90) → Mỹ → Trung Quốc đang lên."
+              ]
+            },
+            {
+              "title": "Vì sao anh KHÔNG chọn S&P 500 chia đều tỷ trọng",
+              "signal": "avoid",
+              "sigLabel": "Rủi ro thấp hơn nhưng logic ngược",
+              "para": "Đây là chỗ anh đi ngược lời khuyên phổ biến trong giới đầu tư cá nhân quốc tế. Bản chia đều cho mỗi công ty khoảng 0,2% danh mục, nên Microsoft nặng ngang một công ty nhỏ trong chỉ số. Anh thừa nhận bản này rủi ro thấp hơn và đa dạng hơn, nhưng vẫn từ chối.",
+              "bullets": [
+                "\"Những công ty lớn có lý do để nó lớn\" — doanh thu lớn và định giá lớn đều có căn cứ.",
+                "Thời AI khác bong bóng dot-com 2000: các ông lớn có doanh thu thật và nhiều sản phẩm ngoài AI.",
+                "Hiệu ứng \"thưởng phạt ngược\": chia đều buộc phải bán công ty đang làm tốt để mua công ty làm kém nằm đáy chỉ số.",
+                "Với người không muốn nghĩ nhiều, anh nói mua đúng một ETF phủ toàn cầu (kiểu MSCI World / FTSE World) là đủ — anh tách ra 5 ETF chỉ vì muốn tự chỉnh tỷ trọng theo thời điểm."
+              ]
+            },
+            {
+              "title": "Cảnh báo: các hệ thống \"AI giao dịch\" hứa vài chục phần trăm mỗi tháng",
+              "signal": "avoid",
+              "sigLabel": "Operation AI Comply · 7 tỷ đô kiện tụng 2025",
+              "para": "Anh dành hẳn một đoạn cho thứ đang được quảng cáo nhiều trên mạng xã hội, và nói dựa trên nghề của mình là quản lý rủi ro ngân hàng.",
+              "bullets": [
+                "Cơ quan quản lý thương mại Mỹ có chiến dịch Operation AI Comply; ủy ban chứng khoán Mỹ điều tra các công ty nói khống là dùng AI.",
+                "Riêng năm 2025 các vụ kiện liên quan lừa đảo AI ở Mỹ đã lên khoảng 7 tỷ đô.",
+                "Ngân hàng và tổ chức tài chính lớn đã dùng machine learning từ 30–40 năm trước, hơn 90% quỹ đầu tư vẫn không thắng nổi S&P 500.",
+                "So chiếu: Warren Buffett cũng chỉ đạt khoảng 20% mỗi năm đều đặn qua nhiều năm."
+              ]
+            }
+          ],
+          "tradeLevels": [
+            {
+              "group": "Phân bổ danh mục chứng khoán (tự công bố)",
+              "items": [
+                {
+                  "asset": "S&P 500",
+                  "dir": "Giữ 50% danh mục",
+                  "entry": "Không nêu mốc giá — mua theo tỷ trọng",
+                  "target": "Nắm dài hạn",
+                  "stop": "Không nêu",
+                  "sig": "up",
+                  "tv": "TVC:SPX"
+                },
+                {
+                  "asset": "ETF công ty vừa và nhỏ Mỹ",
+                  "dir": "Giữ 20% danh mục",
+                  "entry": "Không nêu mã ETF trên YouTube",
+                  "target": "Hưởng lợi từ nhóm biết ứng dụng AI",
+                  "stop": "Không nêu",
+                  "sig": "up",
+                  "tv": ""
+                },
+                {
+                  "asset": "ETF thị trường mới nổi",
+                  "dir": "Giữ 15% danh mục",
+                  "entry": "Không nêu mã ETF trên YouTube",
+                  "target": "Trung Quốc, Hàn Quốc — và Việt Nam khi vào nhóm",
+                  "stop": "Không nêu",
+                  "sig": "up",
+                  "tv": ""
+                },
+                {
+                  "asset": "ETF thị trường phát triển ngoài Mỹ",
+                  "dir": "Giữ 10% danh mục",
+                  "entry": "Không nêu mã ETF trên YouTube",
+                  "target": "Châu Âu, Đức, Pháp, Anh",
+                  "stop": "Không nêu",
+                  "sig": "up",
+                  "tv": ""
+                },
+                {
+                  "asset": "ETF công ty khai khoáng vàng",
+                  "dir": "Giữ 5% danh mục",
+                  "entry": "Không mua vàng vật chất",
+                  "target": "Đòn bẩy theo giá vàng",
+                  "stop": "Chấp nhận giảm nhanh hơn giá vàng",
+                  "sig": "up",
+                  "tv": ""
+                },
+                {
+                  "asset": "ETF VN30",
+                  "dir": "Dành cho người ở Việt Nam — nền của danh mục",
+                  "entry": "Không nêu mốc giá",
+                  "target": "Bổ sung 1–2 quỹ mở phủ ngoài VN30",
+                  "stop": "Không nêu",
+                  "sig": "wait",
+                  "tv": "VN30"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "date": "2026-07-12",
+          "dateShort": "12/07",
+          "timeAgo": "3 tuần trước",
+          "tab": "7 tiêu chí quỹ mở · 12/07",
+          "sourceType": "public-video",
+          "typeLabel": "Video công khai · 20 phút",
+          "title": "Nếu Đầu Tư Quỹ Mở Trong 2026, Mình Làm Thế Này — 7 Tiêu Chí Chọn Quỹ",
+          "summary": "Bài giảng về cách đọc một quỹ mở cổ phiếu: bảy tiêu chí, kèm quan điểm gây tranh cãi là ĐỪNG lấy VN-Index làm thước đo mà phải lấy ETF VN30. Anh cũng nêu tên một số quỹ đang làm tốt trên thị trường Việt Nam.",
+          "feedChips": [
+            {
+              "label": "Thước đo ↑ dùng ETF VN30, KHÔNG dùng VN-Index",
+              "sig": "up"
+            },
+            {
+              "label": "Lịch sử quỹ ⚠ dưới 5 năm là chưa đủ tin",
+              "sig": "warn"
+            },
+            {
+              "label": "Lợi nhuận ⚠ nhìn 3–5 năm, đừng nhìn 1 năm",
+              "sig": "warn"
+            },
+            {
+              "label": "Quỹ mở nước ngoài ✕ bỏ qua, mua thẳng S&P 500",
+              "sig": "avoid"
+            },
+            {
+              "label": "Max drawdown ↑ chỉ số ít người xem nhưng rất quan trọng",
+              "sig": "up"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "Tiêu chí 1 — Thước đo",
+              "value": "ETF VN30, không phải VN-Index",
+              "signal": "up",
+              "note": "Nhiều quỹ ghi thẳng VN-Index làm benchmark trong bản cáo bạch. Anh phản đối: \"không có bất cứ tài sản nào theo dõi VN-Index cả, cho nên bạn so với nó cũng không để làm gì hết\" — nếu không mua quỹ mở thì bạn cũng không có cách nào mua VN-Index. Thước đo phải là thứ bạn thật sự mua được, tức ETF VN30. Quỹ phải thắng VN30 trước đã; lỗ thì cũng phải lỗ ít hơn VN30."
+            },
+            {
+              "tag": "Tiêu chí 2 — Lịch sử",
+              "value": "Trên 5 năm mới đáng tin",
+              "signal": "warn",
+              "note": "Dưới 3 năm là quá mới, chưa đi qua giai đoạn thị trường rơi (2022, Covid) nên không thể hiện được năng lực người quản lý quỹ. Anh dẫn: DCDS của Dragon Capital đã hoạt động 22 năm trên thị trường Việt Nam; VCBF, SSI, \"VSAP\" cũng đã khoảng 8 năm."
+            },
+            {
+              "tag": "Tiêu chí 3 — Lợi nhuận",
+              "value": "Xem 3–5 năm, đừng xem 1 năm",
+              "signal": "warn",
+              "note": "Cái bẫy của người mới: thấy quỹ nào 1 năm gần đây tăng cao thì nhảy sang. Ví dụ anh đưa ra: năm 2025 VN30 tăng gần 50% chủ yếu nhờ nhóm cổ phiếu họ Vin; quỹ mở nào cẩn thận loại nhóm Vin ra thì đương nhiên không theo kịp — nhưng điều đó không nói được gì về dài hạn. Theo bảng anh chiếu, nhóm dẫn đầu 5 năm gần nhất vượt ETF VN30 khá nhiều."
+            },
+            {
+              "tag": "Tiêu chí 4 — Phí quản lý",
+              "value": "Lệch 0,4% → 51 triệu sau 20 năm",
+              "signal": "warn",
+              "note": "Ví dụ 1,5% so với 1,9%. Anh thừa nhận 51 triệu sau 20 năm \"cũng không quá nhiều, nhưng đâu có lý do gì để chúng ta mất số tiền đó\". Đây cũng là lý do các nhà đầu tư kỳ cựu nước ngoài khuyên tránh quỹ mở: phí ETF chỉ bằng 1/3–1/4 quỹ mở."
+            },
+            {
+              "tag": "Tiêu chí 5 — Quy mô (AUM)",
+              "value": "Vài chục tỷ thì bỏ qua",
+              "signal": "warn",
+              "note": "Quỹ lớn nghĩa là nhiều người và cả tổ chức tin tưởng, và người quản lý xoay sở dễ hơn — mua được nhiều loại tài sản để đa dạng hóa, có thể phòng hộ. DCDS thuộc nhóm AUM lớn nhất thị trường (khoảng 6.000 tỷ theo bảng anh chiếu); \"VSAP\" và \"VOF\" cũng đã hàng nghìn tỷ, vẫn an toàn."
+            },
+            {
+              "tag": "Tiêu chí 6 — Max drawdown",
+              "value": "VN30 rớt 34% năm 2022",
+              "signal": "up",
+              "note": "Đoạn rớt sâu nhất từ đỉnh xuống đáy trong cả chu kỳ quỹ — cho thấy người quản lý có kiểm soát rủi ro hay chỉ chăm chăm kiếm lời. Quỹ tốt phải có max drawdown thấp hơn benchmark. Năm 2022 VN30 rớt 34%; VCBF và DCDS lỗ ít hơn (DCDS sát nút, 32% so với 34%). Lý do phải quan tâm: rớt từ 100 xuống 50 thì phải tăng 100% mới về lại 100."
+            },
+            {
+              "tag": "Tiêu chí 7 — Triết lý đầu tư",
+              "value": "Tiêu chí ít người để ý nhất",
+              "signal": "up",
+              "note": "Mỗi quỹ có phương châm khác nhau và phải hợp với bạn. DCDS đi kiểu linh hoạt — chuyển qua lại giữa cổ phiếu và tiền mặt tùy tình hình thị trường. \"VSAP\" đi kiểu đãi cát tìm vàng, nghiêng về cổ phiếu tầm trung (mid cap) thay vì blue chip nên tìm lợi nhuận cao hơn nhưng lúc thị trường tốt có thể không theo kịp DCDS. Khi hai quỹ cho lợi nhuận gần bằng nhau, đây là tiêu chí phân định."
+            },
+            {
+              "tag": "Quỹ mở ở thị trường Mỹ",
+              "value": "Đừng quan tâm — mua thẳng S&P 500",
+              "signal": "avoid",
+              "note": "\"Khả năng là 90% những quỹ mở đó nó thua chỉ số S&P 500 cho nên bạn chỉ cần đơn giản là mua S&P 500 mà thôi.\" Quỹ mở chỉ đáng cân nhắc ở thị trường Việt Nam, nơi nhóm dẫn đầu đang thật sự vượt ETF VN30."
+            }
+          ],
+          "sections": [
+            {
+              "title": "Hiểu lầm về NAV — chọn quỹ vì \"giá rẻ hơn\"",
+              "signal": "warn",
+              "sigLabel": "Sai lầm phổ biến",
+              "para": "NAV của một chứng chỉ quỹ = (tổng tài sản − tổng nợ) / tổng chứng chỉ đang lưu hành, do ngân hàng giám sát tính chứ không phải quỹ tự tính, và đã trừ phí quản lý theo từng ngày. Nhiều người thấy NAV quỹ này cao quá nên chọn quỹ có NAV rẻ hơn để \"mua được nhiều hơn\".",
+              "bullets": [
+                "Cái cần nhìn là TỶ LỆ TĂNG TRƯỞNG của NAV so với chính nó trong quá khứ, không phải NAV quỹ này so với NAV quỹ kia.",
+                "Ví dụ anh đưa: quỹ A có NAV cao gấp gần ba lần quỹ B, nhưng cùng bỏ một số tiền và cùng tăng 15% thì lợi nhuận vẫn y hệt nhau — 11,5 triệu.",
+                "NAV đã trừ phí quản lý rồi nên không cần trừ thêm khi so sánh."
+              ]
+            },
+            {
+              "title": "Ba chỉ số nâng cao — biết để hiểu người khác nói, không cần dùng",
+              "signal": "wait",
+              "sigLabel": "Phần thưởng cuối video",
+              "para": "Anh nói thẳng là nhà đầu tư cá nhân ở thị trường Việt Nam có thể bỏ qua cả ba, vì số lượng quỹ mở không đủ nhiều để phải phân tích tới mức đó. Nêu ra chỉ để \"khi bạn nghe ai đó chém gió về mấy cái chỉ số này thì bạn cũng hiểu người ta đang chém về cái gì\".",
+              "bullets": [
+                "Sharpe: khoản lời có tương xứng với rủi ro bỏ ra hay không. Cao = lời tốt mà ít biến động.",
+                "Alpha: so với benchmark. Dương là thắng thước đo, âm là thua thị trường.",
+                "Beta: mức dao động so với thị trường. Bằng 1 là đi y hệt; DCDS khoảng 1,1 nên rung lắc mạnh hơn thị trường một chút cả hai chiều."
+              ]
+            },
+            {
+              "title": "Lưu ý khi đọc các tên quỹ trong bài này",
+              "signal": "warn",
+              "sigLabel": "Phụ đề tự động đọc sai tên viết tắt",
+              "para": "Video không có phụ đề do tác giả tự làm, nên tên viết tắt của quỹ bị đọc sai nhiều chỗ. Những tên xuất hiện nhất quán và đọc được chắc chắn: DCDS (Dragon Capital), VCBF, SSI.",
+              "bullets": [
+                "\"VSAP\" xuất hiện bốn lần — nhiều khả năng là VESAF của VinaCapital, nhưng KHÔNG có gì trong transcript xác nhận, nên để nguyên như phụ đề ghi.",
+                "\"VOF\" / \"VOOF\" xuất hiện hai lần với cách viết khác nhau — cùng lý do, để nguyên.",
+                "Mọi con số trong bài đều lấy từ bảng anh chiếu trên màn hình và đọc thành lời; chỗ nào anh không đọc số thì bài này không ghi số."
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 250)",
+          "iconColor": "oklch(0.45 0.12 250)",
+          "date": "02/08/2026",
+          "title": "Tại Sao Mình Thay Đổi Cách Đầu Tư? (Trước Khi Quá Muộn)",
+          "meta": "Video công khai · 20:03 · LCG Huy"
+        },
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 250)",
+          "iconColor": "oklch(0.45 0.12 250)",
+          "date": "26/07/2026",
+          "title": "Việc Remote Lương Cao: Sự Thật Mà Nhiều Người Chưa Biết",
+          "meta": "Video công khai · 77:32 · không có nội dung đầu tư — đã đọc, bỏ qua"
+        },
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 250)",
+          "iconColor": "oklch(0.45 0.12 250)",
+          "date": "12/07/2026",
+          "title": "Nếu Đầu Tư Quỹ Mở Trong 2026, Mình Làm Thế Này...",
+          "meta": "Video công khai · 20:17 · LCG Huy"
+        },
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 250)",
+          "iconColor": "oklch(0.45 0.12 250)",
+          "date": "05/07/2026",
+          "title": "Tiền Có Mua Được Hạnh Phúc? Và Nhiều Tiền Thì Sao?",
+          "meta": "Video công khai · 33:07 · nội dung tư duy về tiền — đã đọc, bỏ qua"
+        }
+      ]
     }
   },
   "weekly": {
@@ -5052,6 +5408,22 @@ window.HDT_DATA = {
       "result": "hit",
       "call": "Bắt đáy dầu vùng 70 — tự chấm: đúng chiều nhưng chốt quá sớm ở 85",
       "note": "Tự thuật trong Tập 42: khuyên hội viên bắt đáy vùng 70 và chốt ở 85, nhưng dầu chạy tiếp lên hơn 100. Nguyên văn: \"chúng ta chốt ở vùng 85, chúng ta không ăn được cái sóng lên 101 này đâu\". Ghi HIT cho hướng nhưng phải ghi rõ phần bỏ lỡ."
+    },
+    {
+      "expert": "lcg-huy",
+      "date": "02/08",
+      "asset": "S&P 500",
+      "call": "Mua S&P 500 giờ là đặt cược vào AI — phải đa dạng hóa theo địa lý",
+      "result": "pending",
+      "note": "Luận điểm cấu trúc, không có mốc giá và không có hạn chót nên chưa chấm được. Mốc kiểm chứng: tỷ trọng 10 công ty lớn nhất trong S&P 500 (nay 40%) và hiệu suất tương đối của thị trường ngoài Mỹ."
+    },
+    {
+      "expert": "lcg-huy",
+      "date": "12/07",
+      "asset": "Quỹ mở Việt Nam",
+      "call": "Nhóm quỹ mở dẫn đầu (DCDS, SSI, VCBF…) vượt ETF VN30 trên khung 5 năm",
+      "result": "pending",
+      "note": "Anh chiếu bảng so sánh 5 năm nhưng không đọc thành lời từng con số, nên bài này không ghi số. Chấm được khi có bảng hiệu suất 5 năm công bố chính thức."
     }
   ],
   "actions": {
@@ -7537,17 +7909,6 @@ window.HDT_DATA = {
           "note": "Từ Bài đăng · 24–31/07 (31/07)."
         },
         {
-          "expertId": "thai-pham",
-          "dir": "Tránh",
-          "sig": "avoid",
-          "entry": "—",
-          "target": "—",
-          "stop": "\"Neo cao đáng sợ\" — rủi ro kéo cả thị trường",
-          "status": "active",
-          "date": "31/07",
-          "note": "Từ Bài đăng · 24–31/07 (31/07)."
-        },
-        {
           "expertId": "ck-5-phut",
           "dir": "KHÔNG MUA",
           "sig": "avoid",
@@ -8088,6 +8449,17 @@ window.HDT_DATA = {
       ],
       "orders": [
         {
+          "expertId": "lcg-huy",
+          "dir": "Giữ 50% danh mục",
+          "sig": "up",
+          "entry": "Không nêu mốc giá — mua theo tỷ trọng",
+          "target": "Nắm dài hạn",
+          "stop": "Không nêu",
+          "status": "active",
+          "date": "02/08",
+          "note": "Từ Đổi danh mục · 02/08 (02/08)."
+        },
+        {
           "expertId": "thai-pham",
           "dir": "Giữ short",
           "sig": "down",
@@ -8150,7 +8522,24 @@ window.HDT_DATA = {
       "industry": "Chỉ số",
       "basket": "ngan-han",
       "tradeMode": "margin",
-      "region": "foreign"
+      "region": "foreign",
+      "views": [
+        {
+          "expertId": "lcg-huy",
+          "stance": "Giữ 50% danh mục",
+          "sig": "up",
+          "date": "02/08",
+          "line": "Từ Đổi danh mục · 02/08 (02/08). Điểm vào: Không nêu mốc giá — mua theo tỷ trọng. Mục tiêu: Nắm dài hạn."
+        },
+        {
+          "expertId": "thai-pham",
+          "stance": "Giữ short",
+          "sig": "down",
+          "date": "01/08",
+          "line": "Từ Tập 42 · Tuần 31 (01/08). Điểm vào: Short ở vùng cao đỉnh cũ. Mục tiêu: Uptrust ~7.700–7.800 rồi gãy về 7.000."
+        }
+      ],
+      "debate": "Hai người nhìn vào hai thứ khác nhau nên không thật sự mâu thuẫn về sự kiện. Thái Phạm nhìn GIÁ và DÒNG TIỀN trong vài tháng tới: lợi suất 30 năm vọt lên, IPO hút tiền thật ra khỏi thị trường, năm bầu cử giữa nhiệm kỳ thường điều chỉnh 17–21% — nên short và chờ về vùng 7.000. LCG Huy nhìn CƠ CẤU chỉ số trong nhiều năm: 10 công ty chiếm 40% chỉ số và cùng đặt cược vào AI, nên rủi ro không nằm ở nhịp giảm sắp tới mà ở chỗ \"đa dạng\" chỉ còn là danh nghĩa — cách xử lý của anh không phải bán ra mà là hạ tỷ trọng xuống 50% rồi rải phần còn lại sang công ty vừa nhỏ, thị trường mới nổi và ngoài Mỹ. Điểm mấu chốt chưa ai kiểm chứng được: nhóm công ty top đầu có tạo nổi khoảng 2.000 tỷ đô doanh thu để xứng với định giá hiện tại hay không. Lưu ý khi đọc: một bên là lệnh short có mốc giá, một bên là tỷ trọng nắm giữ dài hạn — không đặt chung một thước đo được."
     },
     {
       "key": "ndq",
@@ -9133,17 +9522,6 @@ window.HDT_DATA = {
         },
         {
           "expertId": "thai-pham",
-          "dir": "Giữ vị thế mua",
-          "sig": "up",
-          "entry": "Đã bắt đáy vùng 70",
-          "target": "Đi ngang 85–90 đến hết tháng 10",
-          "stop": "Đã chốt vùng 85 — bỏ lỡ sóng lên 101",
-          "status": "active",
-          "date": "01/08",
-          "note": "Từ Tập 42 · Tuần 31 (01/08)."
-        },
-        {
-          "expertId": "thai-pham",
           "dir": "GIỮ LONG",
           "sig": "up",
           "entry": "Đã lên >100 từ đáy 70,87",
@@ -9174,17 +9552,6 @@ window.HDT_DATA = {
           "status": "done",
           "date": "18/07",
           "note": "Scorecard: call dầu 87–90 → ĐÚNG."
-        },
-        {
-          "expertId": "quang-dung",
-          "dir": "Ưu tiên 2",
-          "sig": "up",
-          "entry": "Sau nhóm tài chính",
-          "target": "Hưởng lợi gián tiếp từ nới lỏng",
-          "stop": "—",
-          "status": "active",
-          "date": "04/07",
-          "note": "Từ Vĩ mô · Tháng 7 (04/07)."
         }
       ],
       "potential": 3,
@@ -9194,23 +9561,7 @@ window.HDT_DATA = {
       "industry": "Năng lượng",
       "basket": "ngan-han",
       "tradeMode": "margin",
-      "region": "commodity",
-      "views": [
-        {
-          "expertId": "thai-pham",
-          "stance": "Giữ vị thế mua",
-          "sig": "up",
-          "date": "01/08",
-          "line": "Từ Tập 42 · Tuần 31 (01/08). Điểm vào: Đã bắt đáy vùng 70. Mục tiêu: Đi ngang 85–90 đến hết tháng 10."
-        },
-        {
-          "expertId": "quang-dung",
-          "stance": "Ưu tiên 2",
-          "sig": "up",
-          "date": "04/07",
-          "line": "Từ Vĩ mô · Tháng 7 (04/07). Điểm vào: Sau nhóm tài chính. Mục tiêu: Hưởng lợi gián tiếp từ nới lỏng."
-        }
-      ]
+      "region": "commodity"
     },
     {
       "key": "btc",
@@ -10664,6 +11015,55 @@ window.HDT_DATA = {
           "note": "Từ Tập 42 · Tuần 31 (01/08)."
         }
       ]
+    },
+    {
+      "key": "vn30",
+      "symbol": "VN30",
+      "name": "Chỉ số VN30 · ETF VN30",
+      "group": "Chứng khoán Việt Nam",
+      "region": "vn",
+      "industry": "Chỉ số & ETF",
+      "basket": "dai-han",
+      "tradeMode": "spot",
+      "tv": "VN30",
+      "sig": "wait",
+      "stance": "NỀN CỦA DANH MỤC VN",
+      "aliases": [
+        "vn 30",
+        "etf vn30",
+        "etf vn 30",
+        "vn30 etf"
+      ],
+      "oneLiner": "LCG Huy coi ETF VN30 là nền của danh mục cho người ở Việt Nam, và là thước đo để chấm mọi quỹ mở — không dùng VN-Index vì không mua được VN-Index.",
+      "thesis": [
+        {
+          "expertId": "lcg-huy",
+          "title": "Thước đo đúng của quỹ mở Việt Nam",
+          "body": "Nhiều quỹ ghi VN-Index làm benchmark trong bản cáo bạch, nhưng \"không có bất cứ tài sản nào theo dõi VN-Index cả, cho nên bạn so với nó cũng không để làm gì hết\". Nếu không mua quỹ mở thì bạn cũng không có cách nào mua VN-Index — nên thước đo phải là thứ thật sự mua được: ETF VN30. Một quỹ mở chỉ đáng đưa vào danh mục khi thắng VN30, hoặc khi lỗ thì lỗ ít hơn VN30."
+        },
+        {
+          "expertId": "lcg-huy",
+          "title": "Đủ đa dạng cho người ở Việt Nam, dù nặng bank và bất động sản",
+          "body": "Anh thừa nhận VN30 tập trung nhiều vào bất động sản và ngân hàng, nhưng \"đó là điểm chung của cả thị trường Việt Nam rồi, làm gì thì bạn cũng không tránh được hai ngành đó đâu\". Cách bù: mua thêm một đến hai chứng chỉ quỹ mở phủ những công ty ít nằm trong VN30. Số liệu anh dẫn: năm 2025 VN30 tăng gần 50% chủ yếu nhờ nhóm cổ phiếu họ Vin; năm 2022 VN30 rớt 34%."
+        }
+      ],
+      "orders": [
+        {
+          "expertId": "lcg-huy",
+          "dir": "Dành cho người ở Việt Nam — nền của danh mục",
+          "sig": "wait",
+          "entry": "Không nêu mốc giá",
+          "target": "Bổ sung 1–2 quỹ mở phủ ngoài VN30",
+          "stop": "Không nêu",
+          "status": "active",
+          "date": "02/08",
+          "note": "Từ Đổi danh mục · 02/08 (02/08)."
+        }
+      ],
+      "potential": 3,
+      "potentialNote": "Là chỉ số nền — kỳ vọng đi cùng thị trường chứ không vượt trội.",
+      "caution": 3,
+      "cautionNote": "Nặng bất động sản và ngân hàng; 2025 tăng gần 50% chủ yếu nhờ nhóm Vin, 2022 rớt 34%."
     }
   ],
   "briefing": {
@@ -11238,6 +11638,14 @@ window.HDT_DATA = {
         ],
         "items": [
           {
+            "title": "Chỉ số Mỹ đã hóa thành một cú đặt cược vào AI",
+            "expertId": "lcg-huy",
+            "date": "02/08",
+            "sig": "warn",
+            "tag": "S&P 500",
+            "body": "Mười công ty chiếm 40% chỉ số S&P 500 và tám trong số đó đang đặt cược rất lớn vào AI — nên mua chỉ số không còn nghĩa là trải rủi ro. Nghiên cứu LCG Huy dẫn: nhóm top đầu cần tạo ra khoảng 2.000 tỷ đô doanh thu mới xứng với định giá hiện tại. Anh cũng nhắc lịch sử đổi ngôi giữa các cường quốc — Anh chiếm 24% giá trị thị trường toàn cầu năm 1900, Nhật thập niên 80–90, nay là Mỹ và Trung Quốc đang lên — nên phụ thuộc hoàn toàn vào 500 công ty Mỹ là một rủi ro riêng."
+          },
+          {
             "title": "Kịch bản Mỹ tấn công Iran",
             "expertId": "thai-pham",
             "date": "01–02/08",
@@ -11333,6 +11741,14 @@ window.HDT_DATA = {
           }
         ],
         "items": [
+          {
+            "title": "Vàng lên hạng tier 1 theo Basel 3",
+            "expertId": "lcg-huy",
+            "date": "02/08",
+            "sig": "up",
+            "tag": "Vàng",
+            "body": "Bộ tiêu chuẩn quốc tế về quản lý rủi ro Basel 3 xếp vàng vào tài sản tier 1 — hạng cao nhất, ngang tiền mặt và trái phiếu chính phủ Mỹ. Các ngân hàng trung ương đang mua vào rất nhiều; Trung Quốc lập \"hành lang vàng\" với nhóm BRICS để có dự trữ an toàn. LCG Huy vẫn nói thẳng là không thích vàng vật chất vì \"nó không tạo ra được dòng tiền\", và chọn cách tiếp cận gián tiếp: mua ETF công ty khai khoáng vàng với tỷ trọng 5%."
+          },
           {
             "title": "Fed rạn nứt nội bộ chưa từng thấy",
             "expertId": "thai-pham",
@@ -11437,6 +11853,14 @@ window.HDT_DATA = {
           }
         ],
         "items": [
+          {
+            "title": "Đừng chấm quỹ mở bằng VN-Index",
+            "expertId": "lcg-huy",
+            "date": "12/07",
+            "sig": "warn",
+            "tag": "Quỹ mở",
+            "body": "Nhiều quỹ mở ghi VN-Index làm thước đo ngay trong bản cáo bạch. LCG Huy phản đối vì không có tài sản nào theo dõi VN-Index — nhà đầu tư cá nhân không mua được nó, nên so với nó là so với thứ không tồn tại trên bàn cân lựa chọn. Thước đo đúng là ETF VN30. Số liệu anh dẫn để cho thấy vì sao một năm không nói lên gì: 2025 VN30 tăng gần 50% chủ yếu nhờ nhóm cổ phiếu họ Vin, còn quỹ nào cẩn thận loại nhóm Vin ra thì đương nhiên không theo kịp."
+          },
           {
             "title": "Nghị quyết 168 — gắn đầu tư công với mục tiêu hai con số",
             "expertId": "quang-dung",

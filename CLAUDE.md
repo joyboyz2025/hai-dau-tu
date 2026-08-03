@@ -19,13 +19,21 @@ vercel.json            # rewrites + Cache-Control no-cache cho data.js
 
 `HDT_DATA` gồm: `lastUpdated`, `pulse[]`, `weekly{}`, `assetCards[]`, `experts{id: {…, updates[], sources[]}}`, `scorecard[]`.
 
-**4 kênh đang theo dõi** (`experts` là data-driven, thêm kênh chỉ cần thêm key + sửa chữ "N chuyên gia" ở 2 chỗ trong HTML):
+**5 kênh đang theo dõi** (`experts` là data-driven, thêm kênh chỉ cần thêm key + sửa chữ "N chuyên gia" trong HTML — hiện chỉ còn ĐÚNG 1 chỗ, dòng disclaimer cuối trang Hôm nay):
 | id | kênh | nội dung | nhịp |
 |---|---|---|---|
 | `thai-pham` | @ThaiPhamOfficialVN | Vĩ mô – địa chính trị, hành động danh mục, CK Mỹ/Hàn/Nhật | Video hội viên hàng tuần + bài đăng cộng đồng |
 | `azfin` | AzFin Vietnam | Đầu tư giá trị, tư duy và nguyên tắc phân bổ | ~2 bài/tuần |
 | `ck-5-phut` | Chứng khoán 5 phút | Nhận định phiên/tuần, thanh khoản, tín hiệu | gần như hàng ngày |
 | `quang-dung` | @DauTuChungKhoanCungQuangDung (148K sub, thêm 02/08) | **Định giá doanh nghiệp theo ngành + đọc chính sách vĩ mô** — bóc báo cáo tài chính, không dùng đồ thị | 2–4 bài/tháng, mỗi bài 35–55 phút |
+| `lcg-huy` | @lcghuy (thêm 03/08) | **ETF, quỹ chỉ số, quỹ mở** — nói về TỶ TRỌNG phân bổ và tiêu chí chọn quỹ; ở Canada, làm quản lý rủi ro ngân hàng | thứ Tư & Chủ nhật, ~20–35 phút |
+
+- **LCG Huy có ba điểm khác hẳn 4 kênh kia, đừng ép vào khuôn cũ**:
+  1. **Không có mốc giá.** Kèo của anh là TỶ TRỌNG ("giữ 50% danh mục"), không entry/target/stop. `tradeLevels` vẫn dựng được nhưng để `entry`/`target`/`stop` là câu chữ mô tả, TUYỆT ĐỐI không bịa số.
+  2. **Cố tình không nêu mã ETF trên YouTube** — mã chỉ có trong cộng đồng trả phí. Ghi đúng như vậy, đừng đoán mã (VOO/IWM/VWO…).
+  3. **Phụ đề tự động đọc sai tên quỹ viết tắt**: "VSAP" (4 lần) nhiều khả năng là VESAF, "VOF"/"VOOF" (2 lần, hai cách viết) nhiều khả năng là VEOF — nhưng transcript KHÔNG xác nhận, nên để nguyên như phụ đề và ghi chú rõ. Tên đọc chắc chắn: DCDS, VCBF, SSI. Tên ngân hàng anh làm cũng bị đọc thành "ngân hàng B mô" → chỉ ghi "một ngân hàng ở Canada".
+- Trong 1 tháng (03/07–03/08/2026) kênh ra 4 video, **chỉ 2 video có nội dung chứng khoán/quỹ chỉ số** (02/08 đổi danh mục, 12/07 bảy tiêu chí quỹ mở). Hai video kia (26/07 việc remote, 05/07 tiền & hạnh phúc) đã đọc transcript và xác nhận không có nội dung đầu tư — vẫn liệt kê trong `sources` kèm ghi chú "đã đọc, bỏ qua" để lần sau không quét lại.
+- Kênh này tạo ra ca **đa quan điểm mẫu ở S&P 500**: LCG Huy giữ 50% dài hạn vs Thái Phạm đang short. Đã viết `debate` cho `spx` — hai bên nhìn hai thứ khác nhau (cơ cấu chỉ số nhiều năm vs giá và dòng tiền vài tháng), không đặt chung một thước đo được.
 
 - Quang Dũng có phụ đề `vi-orig` đầy đủ; auto-caption sai số lẻ (có đoạn "3.800 → 64.400 tỷ" mâu thuẫn với "3.200 → 4.600 tỷ" cùng một ý) → **chỉ lấy con số xuất hiện nhất quán ít nhất hai lần**.
 - Trang **Bối cảnh** (xem 7i) là nơi tổng hợp mảng chính trị/vĩ mô/BĐS — mỗi lần update nhớ rà lại 4 chủ đề theo transcript mới.
@@ -62,6 +70,8 @@ vercel.json            # rewrites + Cache-Control no-cache cho data.js
 - Script khớp mã theo `symbol` + `aliases`, suy `status` từ `dir` (chờ→waiting, đã chốt→done, còn lại→active), sắp lệnh mới nhất lên đầu, **sinh lại `views`** cho khối Đa quan điểm (7h).
 - Báo "chưa có mã" → phải tạo ticker mới đủ trường, trừ nhóm ngành/chỉ số (danh sách `NOT_A_TICKER` trong script).
 - **Bẫy đã dính**: hàm bỏ dấu phải `replace(/đ/g,'d')` TRƯỚC `normalize('NFD')` — chữ `đ` không bị NFD tách ra, nên "Đầu tư công"/"BĐS" lọt qua bộ lọc và bị coi là mã.
+- **Bẫy đã dính (03/08, lần 2)**: `NOT_A_TICKER` phải được kiểm **TRƯỚC** `findTk`, không phải sau. `findTk` có bước dò theo TỪNG TỪ nên nuốt nhầm rất dễ: "Đầu tư công" khớp vào mã Dầu (alias `dau`) và đã tạo ra một phiếu lệnh WTI ma của Quang Dũng ngày 04/07; "ETF công ty khai khoáng vàng" của LCG Huy khớp vào mã Vàng dù anh nói rõ là KHÔNG mua vàng. Nhãn lớp tài sản luôn phải thắng phép dò mờ.
+- **Bẫy đã dính (03/08, lần 3)**: chống trùng phải xét cả **lô đang gom**, không chỉ lệnh đã có trong sổ. Nhãn kiểu `"WTI · Brent"` tách thành hai phần cùng trỏ về một mã → sinh hai phiếu lệnh y hệt nhau. Đã dọn 2 bản trùng + 1 phiếu ma; sổ còn 214 → 216 phiếu lệnh sau khi thêm LCG Huy.
 
 7h. **Ghi nguồn + Đa quan điểm** (thêm 02/08 theo yêu cầu user: "kèo của ai nhớ ghi", "chung kèo thì 2 quan điểm khác nhau tôi muốn coi đa quan điểm"):
 - **Mọi `thesis` phải có `expertId`** → UI hiện huy hiệu "TP · Thái Phạm" cạnh tiêu đề. Đoạn nào nhắc nhiều chuyên gia thì lấy người được nhắc SỚM NHẤT làm tác giả, người sau là đối chiếu.
@@ -115,6 +125,11 @@ Mỗi lần update: sửa stance/orders theo transcript mới (lệnh khớp m�
 - `scExpert`, `callsExpert`, `assetKey`, `q`, `chartSym`, `tkView`, `tkIndustry`, `tkBasket` là state filter trong renderVals — thêm state mới nhớ khai báo trong constructor.
 - **Mọi biến tính trong renderVals phải được thêm vào `return {...}` cuối hàm mới lộ ra template** — quên bước này thì `{{ }}`/`sc-for` âm thầm render rỗng, KHÔNG báo lỗi console (đã dính bug này khi thêm `tkViewChips`/`tkBasketChips` 30/07 — luôn grep tên biến mới trong khối return để xác nhận trước khi verify browser).
 - Smoke test renderVals: extract script bằng regex `<script type="text/x-dc"...>`, `node --check`, rồi eval với DCLogic/React/localStorage giả (xem lịch sử commit để có mẫu).
+- **Sơ đồ tư duy trang bài (`_MM`/`_score`, thêm 03/08)**: nội dung mỗi bài được chia nhánh theo bảng từ khóa `_MM`, chấm điểm nhãn ×3 + thân bài ×1 (KHÔNG khớp-đầu-tiên). Hai bẫy đã dính:
+  1. **`\b` của JS không hiểu chữ có dấu** (`\w` chỉ là `[A-Za-z0-9_]`) → "hàn" khớp trong "ngân hàng", "yên" khớp trong "chuyên gia", đủ để dồn 4 ý của một bài về ETF sang nhánh "Nhật & Hàn". Đã bọc bằng lookaround `(?<!\p{L})(?:…)(?!\p{L})` với cờ `u`. Thêm từ khóa mới thì để chuỗi trần trong `k`, đừng tự viết `\b`.
+  2. **Đừng cho từ chung chung vào nhóm vùng miền.** "danh mục"/"tỷ trọng"/"cổ phiếu" từng nằm trong nhóm Chứng khoán Việt Nam và kéo nhầm cả loạt ý sang đó. Chúng nay thuộc nhóm riêng "Danh mục & tỉ trọng".
+  Bảng hiện có 12 nhóm; tỷ lệ ý rơi vào "Điểm khác" là thước đo chất lượng — đo bằng cách eval khối `_MM…_score` ngoài node rồi chạy qua toàn bộ `experts[].updates` (34,9% → 12,4% sau lần sửa 03/08). Thêm chuyên gia mảng mới thì kiểm lại con số này.
+- **Bullets đã bị bọc thành `{text}`** ở khối chuẩn hóa `updates` (cho markup cũ đọc `{{ b.text }}`). Mọi chỗ đọc `sec.bullets` ở tầng renderVals phải mở ra bằng `typeof b === 'string' ? b : (b && b.text) || ''` — quên là in ra `[object Object]` (đã dính 03/08, 55 mục sections).
 
 ## Tính năng đã có (đừng làm lại)
 Tìm kiếm live không dấu (quét cả tickers/bullets) + lịch sử 5 call của mã; trang Tài sản (timeline theo asset); Khuyến nghị (call tracker + nhãn Cũ); Bảng điểm chuyên gia (tỷ lệ đúng/sai + filter); Điểm mua/bán theo nhóm + chart TradingView nhúng; badge MỚI (localStorage `hdt_seen`); PWA; card "Tuần này" (weekly) — điểm Đồng thuận/Mâu thuẫn đánh số, mục đầu tiên mỗi cột nổi bật nền màu + ★ + chữ đậm hơn (thêm 30/07, xem 7g); Sổ mã — toggle Xem theo Thị trường/Ngành nghề/Giỏ đầu tư + bộ lọc giỏ dài/ngắn hạn/tránh + tag ngành-giỏ trên card + hiệu ứng fade-in so le (thêm 30/07).

@@ -5,7 +5,7 @@
 //          — giữ bài mới nhất + các bài hội viên gần nhất.
 // ─────────────────────────────────────────────────────────────────────────────
 window.HDT_DATA = {
-  "lastUpdated": "02/08/2026 · Tuần 31",
+  "lastUpdated": "03/08/2026 · Tuần 31",
   "pulse": [
     {
       "name": "CK Việt",
@@ -358,6 +358,12 @@ window.HDT_DATA = {
               "value": "Can thiệp nhân tạo — bán ở 150, long lại 147–150",
               "signal": "wait",
               "note": "Bộ Tài chính Mỹ bán Euro và BOJ chi khoảng 72 tỷ đô mua yên — lần đầu phối hợp sau 28 năm, kéo tỷ giá từ 163–164 xuống. Ông gọi là can thiệp nhân tạo: ngắn hạn trader thua các định chế, nhưng dài hạn thắng vì chênh lệch lãi suất Nhật 1% với Mỹ 3,75–4% vẫn còn nguyên. Ai đang giữ yên (đặc biệt người ở Nhật) nên đổi về nước ở vùng 150; long lại vùng 147–150."
+            },
+            {
+              "tag": "S&P 500 — mốc làm rõ",
+              "value": "Uptrust lên ~7.700–7.800 rồi gãy nhanh, về 7.000",
+              "signal": "down",
+              "note": "Phụ đề tự động ghi nhiễu con số này (\"vùng 7007 700\"). Đối chiếu với câu hỏi của hội viên @thuynh9871 ngay dưới video — \"US500 mà lên 7700-7800 thì phải đặt lại SL hay sao anh ơi, em đang short tỉ trọng khá lớn, vẫn giữ short đợi về 7000 phải không ạ\" — thì mốc gần như chắc chắn là 7.700–7.800, mục tiêu về 7.000. Kịch bản ông nêu: S&P đi giống năm ngoái, tạo các đỉnh liên tục để phân phối hàng, có thể uptrust rồi gãy rất nhanh, hoặc chạm ngưỡng rồi giật xuống."
             }
           ],
           "sections": [
@@ -527,6 +533,15 @@ window.HDT_DATA = {
                   "stop": "Alphabet âm dòng tiền lần đầu từ khi lên sàn",
                   "sig": "down",
                   "tv": "NASDAQ:GOOGL"
+                },
+                {
+                  "asset": "S&P 500 · US30",
+                  "dir": "Giữ short",
+                  "entry": "Short ở vùng cao đỉnh cũ",
+                  "target": "Uptrust ~7.700–7.800 rồi gãy về 7.000",
+                  "stop": "Đừng short ngang chừng",
+                  "sig": "down",
+                  "tv": "SP:SPX"
                 }
               ]
             },
@@ -8707,7 +8722,7 @@ window.HDT_DATA = {
     }
   ],
   "briefing": {
-    "updated": "02/08/2026",
+    "updated": "03/08/2026",
     "expertId": "thai-pham",
     "episode": "Tập 42 · Tuần 31",
     "dateLabel": "01/08/2026",
@@ -8950,81 +8965,117 @@ window.HDT_DATA = {
       ]
     },
     "community": {
-      "title": "Hỏi – đáp dưới bài đăng hội viên",
-      "source": "Bình luận 3 bài đăng cộng đồng 28–31/07 (131 + 119 + 56 lượt) · đọc trực tiếp bằng tài khoản hội viên",
-      "disclaimer": "Khác với phần bình luận video (ông KHÔNG trả lời — 0/206 comment đã kiểm), dưới BÀI ĐĂNG cộng đồng Thái Phạm có trả lời trực tiếp. Phần \"Thái Phạm đã nói\" dưới đây là câu trả lời nguyên văn của ông, trừ mục nào ghi rõ là đối chiếu từ video. Câu hỏi là của hội viên, không phải nhận định chuyên gia.",
+      "title": "Hội viên hỏi gì dưới hai video mới",
+      "source": "46 bình luận dưới Tập 42 (01/08) + 66 bình luận dưới video công khai 02/08",
+      "disclaimer": "Đây là câu hỏi và ý kiến của NGƯỜI XEM, không phải nhận định chuyên gia. Thái Phạm KHÔNG trả lời trong phần bình luận VIDEO (khác với bài đăng cộng đồng — ở đó ông có trả lời). Vì vậy mục \"Thái Phạm đã nói\" bên dưới là quan điểm ông nêu trong chính video, ghép lại để tiện đối chiếu — trừ nơi ghi rõ là chưa được trả lời.",
       "items": [
         {
-          "q": "Cyber security em đã chốt. Có nên mở mới chưa ạ?",
-          "who": "@billyboy89mta (hội viên)",
-          "likes": 0,
+          "q": "US500 mà lên 7700–7800 thì phải đặt lại stop loss hay sao anh ơi? Em đang short tỉ trọng khá lớn con này thì vẫn giữ short đợi về 7000 phải không ạ?",
+          "who": "@thuynh9871 (hội viên)",
+          "likes": 2,
           "status": "answered",
-          "statusLabel": "Thái Phạm trả lời trực tiếp",
-          "a": "\"mở mới đợi hồi lại rồi đánh tiếp\" — nguyên văn. Ghép với bình luận ông tự đăng hôm 31/07 (\"Số phận của FTNt, Panw,... rồi cũng như apple thôi\") thì chỉ dẫn đầy đủ là: giữ quan điểm giảm với nhóm cyber, nhưng chờ nhịp hồi mới vào lệnh chứ không đuổi giá.",
-          "aSrc": "Trả lời dưới bài đăng · 29/07"
+          "statusLabel": "Có trong video — và làm rõ được con số",
+          "a": "Câu hỏi này vô tình giải mã một chỗ phụ đề tự động ghi nhiễu. Trong Tập 42 ông nói S&P 500 sẽ đi giống năm ngoái: tạo các đỉnh liên tục để phân phối hàng, \"có thể sẽ có cú uptrust lên vùng [7.700] nhưng mà sau đó sẽ gãy rất nhanh; còn nếu không nó sẽ cứ chạm ngưỡng rồi giật xuống để phân phối\". Nguyên tắc vào lệnh ông nhắc lại: short ở vùng cao đỉnh cũ, take profit ở vùng đáy, đừng short ngang chừng.",
+          "aSrc": "Tập 42 · 01/08"
         },
         {
-          "q": "SP500 với US30 hồi khó chịu thế a nhỉ?",
-          "who": "@elvistran666 (hội viên)",
-          "likes": 0,
-          "status": "answered",
-          "statusLabel": "Thái Phạm trả lời trực tiếp",
-          "a": "\"Nó như Intel trước đây trước khi rụng. Amd hay dell cũng vậy\" — nguyên văn. Tức ông đọc nhịp hồi của chỉ số Mỹ là bẫy trước khi rơi, giống mẫu hình Intel, AMD và Dell đã đi qua.",
-          "aSrc": "Trả lời dưới bài đăng · 29/07"
-        },
-        {
-          "q": "Short apple 1/3 vị thế được không a?",
-          "who": "@thangleanh7553 (hội viên)",
-          "likes": 0,
-          "status": "answered",
-          "statusLabel": "Thái Phạm duyệt lệnh — \"Ok\"",
-          "a": "\"Ok\". Trả lời ngày 29/07, hai ngày trước khi Apple rơi 10% phiên 31/07. Cùng bài đăng đó ông cũng công bố tự gia tăng thêm 1/3 vị thế Apple.",
-          "aSrc": "Trả lời dưới bài đăng · 29/07"
-        },
-        {
-          "q": "Lúc thị trường tạo đáy xong và có dấu hiệu đi lên mình có nên dùng margin ko anh? BVB em cầm lâu rồi nhưng quyết định bán hòa vốn, sau đợt giảm này sẽ mua lại giá rẻ hơn.",
-          "who": "@Hung0118 (hội viên)",
-          "likes": 0,
-          "status": "answered",
-          "statusLabel": "Thái Phạm trả lời trực tiếp",
-          "a": "\"Ok. Có em nhe\" — tức chấp thuận dùng margin, nhưng ĐIỀU KIỆN nằm ở chính câu hỏi: chỉ khi thị trường đã tạo đáy xong VÀ có dấu hiệu đi lên. Ở thời điểm trả lời (28/07) ông vẫn đang bảo cả nhà cố thủ tiền mặt chờ 1.400–1.500.",
-          "aSrc": "Trả lời dưới bài đăng · 28/07"
-        },
-        {
-          "q": "Anh cho em hỏi trái phiếu VIC123029 đang có giá chào bán 103,47 và đáo hạn 14/9. Nếu mua lúc này thì lợi suất nhận được sẽ rơi vào tầm 3%/tháng đúng không ạ?",
-          "who": "@ToanNguyen-di4sd (hội viên)",
-          "likes": 0,
+          "q": "Không nghịch lý đâu — chính phủ Mỹ phải vay mỗi năm 2.000 tỷ đô, nên phải trả lãi suất cao thì nhà đầu tư trong và ngoài nước mới cho vay đủ.",
+          "who": "@toannguyedoan2051 (người xem)",
+          "likes": 5,
           "status": "data",
-          "statusLabel": "Hội viên bổ sung dữ liệu thị trường",
-          "a": "Chưa được trả lời. Nhưng con số đáng lưu: trái phiếu VIC đáo hạn 14/9 đang chào ở mức hàm ý lợi suất ~3%/tháng — khớp với luận điểm \"VIC, VHM neo cao đáng sợ\" trong bài 28/07 và rủi ro call margin của nhóm doanh chủ.",
-          "aSrc": "Chưa có phản hồi · 31/07"
+          "statusLabel": "Phản biện chính tiêu đề video",
+          "a": "Đây là bình luận được thích nhiều nhất và nó bổ sung đúng cơ chế mà ông mô tả theo hướng khác: ông nói lợi suất tăng vì thị trường mất niềm tin vào Kevin Warsh và vào khả năng trả nợ của Mỹ (nợ 39.200 tỷ đô, tiền lãi bằng 2/3 thu thuế cả năm). Người xem này thì cho rằng đơn giản là cung–cầu: muốn vay 2.000 tỷ mỗi năm thì phải trả giá cao. Hai cách đọc dẫn tới cùng một kết luận về mức lợi suất nhưng khác nhau về mức độ nghiêm trọng.",
+          "aSrc": "Chưa được trả lời"
         },
         {
-          "q": "Apple quá kinh khủng, kết quả tốt hơn dự kiến mà vẫn bị bán — quả ngọt tới liền!",
-          "who": "@DinhTruongTR7 (hội viên)",
+          "q": "Bond yield chỉ là 1 trong hơn 20 yếu tố để Fed quyết định tăng hay giảm lãi suất. Thực ra bond yield tăng mạnh càng thúc giục Fed phải hạ lãi suất nhanh để bảo vệ túi tiền của chính phủ.",
+          "who": "@hiennguyenvan50 (người xem)",
+          "likes": 0,
+          "status": "open",
+          "statusLabel": "Phản biện ngược hẳn luận điểm trung tâm",
+          "a": "Đây là phản biện đáng chú ý nhất trong cả hai video vì nó đảo ngược mũi tên nhân quả. Thái Phạm lập luận lợi suất cao ép Fed phải TĂNG lãi suất (xác suất 99% không hạ trong 2026, thị trường định giá tăng 1–2 lần đến tháng 1/2027). Người xem này lập luận ngược: chính vì lợi suất cao làm chi phí trả nợ của chính phủ phình ra nên Fed càng có động cơ HẠ nhanh. Chưa được trả lời — và đây là điểm đáng theo dõi ở các kỳ họp FOMC còn lại.",
+          "aSrc": "Chưa được trả lời"
+        },
+        {
+          "q": "Em cũng phân tích vụ lợi suất này, thấy TLT–LQD vẫn chưa xấu, lợi nhuận doanh nghiệp vẫn ổn để chứng khoán còn kỳ vọng. Sẽ cần theo dõi thêm lợi suất 30Y cao có kéo dài lâu không.",
+          "who": "@phamhungktxclc (người xem)",
+          "likes": 0,
+          "status": "open",
+          "statusLabel": "Đưa thêm chỉ báo để kiểm chứng",
+          "a": "Bổ sung một cách kiểm chứng cụ thể mà video không nhắc: theo dõi hai quỹ trái phiếu TLT (kho bạc dài hạn) và LQD (doanh nghiệp hạng đầu tư). Nếu chênh lệch giữa hai cái này chưa xấu đi thì thị trường tín dụng chưa thật sự căng, dù lợi suất danh nghĩa cao. Đây là góc nhìn kỹ thuật hơn so với lập luận niềm tin của Thái Phạm.",
+          "aSrc": "Chưa được trả lời"
+        },
+        {
+          "q": "Dầu tăng do Trung Đông? Tôi không nghĩ vậy. Do Nga đấy — Nga cho nhập dầu sau nhiều năm, các kho dầu và nhà máy bị Ukraine tấn công rất dữ dội.",
+          "who": "@TrungNguyen-p7z6f (người xem)",
+          "likes": 1,
+          "status": "partial",
+          "statusLabel": "Bổ sung nguyên nhân thứ hai",
+          "a": "Không mâu thuẫn hoàn toàn. Thái Phạm quy nguyên nhân chính cho Hormuz (hiện chỉ 13 lượt tàu/ngày so với 115–125 lượt thời bình) và chiến lược của Tehran. Người xem này bổ sung tuyến Nga–Ukraine mà bản điểm tin 24/07 của chính ông cũng từng nêu: hơn 150 tàu chở dầu bị tấn công ở Biển Đen và Biển Azov trong tháng, đường ống Caspian Pipeline Consortium phải ngừng nạp. Tức cả hai tuyến cùng nghẽn.",
+          "aSrc": "Đối chiếu bài đăng 24/07"
+        },
+        {
+          "q": "Tin nóng nhất: ông Trump hủy kế hoạch tấn công \"lớn chưa từng thấy\" vào Iran. Sang tuần Bitcoin và vàng gap bật tăng mạnh là khá cao.",
+          "who": "@vitrannguyen3126 (người xem)",
+          "likes": 1,
+          "status": "data",
+          "statusLabel": "Tin ra SAU khi video quay — ngược kịch bản",
+          "a": "Nếu tin này đúng thì nó phá kịch bản trung tâm của cả hai video: Thái Phạm dựng luận điểm trên giả định Mỹ sẽ tấn công Iran cuối tuần, dầu giữ vùng cao 85–90 đến hết tháng 10, và vàng phá 3.880 để về 3.000. Căng thẳng hạ nhiệt thì dầu giảm, áp lực lạm phát giảm, và vàng có thể không thủng mốc. Đây là thông tin người xem đưa, CHƯA kiểm chứng — cần theo dõi giá mở cửa đầu tuần.",
+          "aSrc": "Chưa kiểm chứng"
+        },
+        {
+          "q": "Xin thưa là vàng chỉnh theo vĩ mô nhịp này 3.950 là hết vị rồi. Cứ lấy khung tháng và lấy SJC ra mà xem — nó đang ở vùng phân kỳ dương. Mốc 4.000 ngày 11/6 thì SJC mua 131, nay cũng 4.000 mà SJC đã lên 137.",
+          "who": "@hoavo4142 (người xem)",
           "likes": 3,
           "status": "data",
-          "statusLabel": "Chi tiết quan trọng về phiên 31/07",
-          "a": "Đây là chi tiết bổ sung cho kèo Apple: cổ phiếu rơi 10% DÙ báo cáo tốt hơn dự kiến — tức thị trường bán vì định giá và dòng tiền chứ không vì kết quả kinh doanh. Cùng luận điểm ông nêu trong điểm tin 24/07 khi Alphabet giảm 7% dù doanh thu vượt kỳ vọng.",
-          "aSrc": "Đối chiếu bài đăng 24/07 + 31/07"
+          "statusLabel": "Số liệu đối chiếu vàng trong nước",
+          "a": "Ngược hẳn kịch bản của Thái Phạm (phá 3.880 là về 3.000 và trụ ở đó). Chi tiết đáng lưu là số liệu SJC: cùng mức 4.000 USD/oz thế giới nhưng giá trong nước đi từ 131 lên 137 triệu — tức chênh lệch trong nước tiếp tục nới rộng, khớp với cảnh báo của chính ông rằng mua vàng trong nước lúc này là lỗ ngay phần chênh.",
+          "aSrc": "Đối chiếu Tập 42 · 01/08"
         },
         {
-          "q": "Thanks anh, BID rẻ hơn cả so với đáy 2020–2022–2025 luôn anh, thật đáng sợ.",
-          "who": "@Paladin-Real (hội viên)",
+          "q": "Ông Tô Hải em tìm hiểu lịch sử thấy ổng 3 lần mua VCI thì cả 3 lần đều siêu đáy, có lần x7, mấy lần khác cũng hơn x2. Không biết đợt này sao nữa — giờ VCI quay lại thủng xuống 15.000.",
+          "who": "@binh7133 (hội viên)",
           "likes": 0,
-          "status": "data",
-          "statusLabel": "Hội viên đối chiếu định giá",
-          "a": "Khớp hướng với quan điểm ông nêu trong Tập 41: BID đang ở vùng \"cực kỳ thấp — không bán\". Nhưng cũng minh hoạ đúng cảnh báo của bài 28/07: \"Đáy là một khái niệm khó dò dù nhiều cổ phiếu đã rất rẻ… rẻ có thể rẻ hơn.\"",
-          "aSrc": "Đối chiếu Tập 41 · 30/07"
+          "status": "partial",
+          "statusLabel": "Dữ liệu lịch sử hội viên tự tra",
+          "a": "Thái Phạm trong Tập 42 có nhắc chủ tịch Tô Hải đăng ký mua VCI, nhưng cảnh báo mã này còn bị ảnh hưởng vì danh mục tự doanh của VCI đang có PNJ và FPT — hai mã ông xếp vào nhóm tránh. Cùng tuần ông lần đầu gạt TOÀN BỘ nhóm cổ phiếu chứng khoán: \"hồi lên rồi nó sẽ tèo\". CK 5 phút (28/07) cũng đã nói loạt chủ tịch đăng ký mua KHÔNG phải tín hiệu đáy.",
+          "aSrc": "Tập 42 · đối chiếu CK 5 phút 28/07"
         },
         {
-          "q": "Em đang hold lệnh short CRWD (203) và Dell (437) có lời chút, có nên TP 50% rồi chờ đợi short mới Apple không ạ?",
-          "who": "@VoAnhTu2111 (hội viên)",
+          "q": "Em đang full cổ, VCB lời 5%, em cần 40% NAV. Vậy có nên bán 1/2 để chờ VN-Index về 1.500 mua lại không anh Thái?",
+          "who": "@cxthu7888 (hội viên)",
           "likes": 0,
-          "status": "unanswered",
-          "statusLabel": "Chưa trả lời — nhưng có đáp án trong bài",
-          "a": "Không được trả lời riêng, nhưng chính bài đăng 29/07 đã ra lệnh chung: chốt lời 1/2 toàn bộ nhóm AI chips (gồm Dell) và gia tăng Apple thêm 1/3. Tức đúng phương án hội viên này tự đề xuất.",
-          "aSrc": "Đối chiếu bài đăng 29/07"
+          "status": "answered",
+          "statusLabel": "Đã có quan điểm trong video",
+          "a": "Tập 42 trả lời rất rõ tình huống này: ai lỡ cầm 60–80% cổ phiếu HÀNG TỐT thì \"cứ cầm, đừng mua gì hết\" — giữ nguyên phần tiền còn lại. Lý do ông đưa ra: \"rất nhiều nhà đầu tư dở ở chỗ lỗ xong rồi bán, bán ra xong khi nó giảm sâu thì không dám mua lại, cứ canh nó tăng mạnh mới hỏi mua thì lúc đấy cơ hội không còn nhiều\". Riêng VCB ông đánh giá phiên vừa rồi kéo lên lại vùng giá trị cũ là \"một cú spring, cơ hội khá tốt\".",
+          "aSrc": "Tập 42 · 01/08"
+        },
+        {
+          "q": "AMD, Dell, AAPL giá nào mình vào lại 1/2 đã chốt ạ? / INTC sang tuần chờ giá nào vào lại 1/2 đã chốt?",
+          "who": "@HieuHieu7575 và @trungnguyen_179 (hội viên)",
+          "likes": 0,
+          "status": "partial",
+          "statusLabel": "Mới trả lời một phần",
+          "a": "Tập 42 có mốc cho Dell (short được ngay vùng hiện tại) nhưng KHÔNG đưa mốc vào lại cho phần đã chốt của AMD, Apple và Intel — ông chỉ nói \"AMD giữ được luôn\", \"Intel giữ lệnh short, điều chỉnh tiếp\". Nguyên tắc chung ông nêu từ bài đăng 31/07 là \"Ai stocks đợi 2–4 tuần sau short lại 1/2 đã chốt\", tức khoảng giữa đến cuối tháng 8, nhưng không có giá cụ thể.",
+          "aSrc": "Tập 42 + bài đăng 31/07"
+        },
+        {
+          "q": "Chị Ba mấy nay thấy lùm xùm quá anh. BVB có còn ổn để giữ tiếp không anh Thái?",
+          "who": "@bacsytranvmmu6116 (người xem)",
+          "likes": 0,
+          "status": "answered",
+          "statusLabel": "Có trong danh mục giữ",
+          "a": "Trong Tập 42, BVBank vẫn nằm trong danh sách các mã ông đang giữ cùng BID, VCB, TCX, DCM/DPM, VNM và SCS — \"bản Việt Bank thì vẫn cầm thôi\". Ông không đề cập tới tin lùm xùm mà người xem nhắc, nên phần rủi ro đó chưa được đánh giá.",
+          "aSrc": "Tập 42 · 01/08"
+        },
+        {
+          "q": "Em đang 100% tiền mặt thì phiên hôm nay có mua được VCB, BID và mã nào khác không ạ?",
+          "who": "@Thanh-yg9kd (hội viên)",
+          "likes": 0,
+          "status": "answered",
+          "statusLabel": "Đã có quan điểm — chưa phải lúc",
+          "a": "Theo Tập 42 thì chưa. Ông giữ nguyên tỉ trọng khuyến nghị tiền 60 / cổ 40 và đặt mốc giải ngân ở 1.400, với ghi chú ngưỡng 1.585 nhiều khả năng bị phá trước. Ba mốc mua cụ thể duy nhất ông đưa ra tuần này là HDB vùng 21–22, GAS vùng 60–62 và PC1 vùng 17–18 — đều là lệnh CHỜ chứ không phải mua ngay.",
+          "aSrc": "Tập 42 · 01/08"
         }
       ]
     }

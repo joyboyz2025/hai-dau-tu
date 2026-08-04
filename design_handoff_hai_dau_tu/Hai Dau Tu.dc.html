@@ -3605,7 +3605,9 @@ return {
       { g: 'Chứng khoán Mỹ', k: 'mỹ|apple|aapl|nasdaq|s&p|us30|chips|spacex|nvidia|amd|intel|micron|google|amazon|dell|cyber|ftnt|panw|crwd|microsoft', sig: 'down' },
       { g: 'Vĩ mô & chính sách', k: 'fed|lãi suất|lạm phát|lợi suất|vĩ mô|gdp|chính sách|thông tư|nghị quyết|cung tiền|tín dụng|ecb|cpi|basel', sig: 'warn' },
       { g: 'Chứng khoán Việt Nam', k: 'việt nam|vn-index|vnindex|vn30|khối ngoại|tỷ giá|bất động sản|hose|upcom', sig: 'wait' },
-      { g: 'ETF & quỹ chỉ số', k: 'etf|quỹ|quỹ chỉ số|quỹ mở|chứng chỉ quỹ|benchmark|thước đo|nav|drawdown|aum|phí quản lý|dcds|vcbf|vesaf', sig: 'up' },
+      // KHÔNG dùng từ "quỹ" trần: bài của Thái Phạm nhắc "các quỹ ngoại", "quỹ đang
+      // kẹp hàng" liên tục — đó là tổ chức đầu tư, không phải quỹ chỉ số.
+      { g: 'ETF & quỹ chỉ số', k: 'etf|quỹ chỉ số|quỹ mở|chứng chỉ quỹ|quản lý quỹ|benchmark|thước đo|nav|drawdown|aum|phí quản lý|dcds|vcbf|vesaf', sig: 'up' },
       { g: 'Danh mục & tỉ trọng', k: 'danh mục|tỉ trọng|tỷ trọng|phân bổ|giải ngân|sức mua|tiền mặt|margin|tích sản|dca|đa dạng hóa|đa dạng hoá', sig: 'up' },
       { g: 'Định giá & doanh nghiệp', k: 'định giá|p/e|eps|lợi nhuận|doanh thu|kết quả kinh doanh|báo cáo tài chính|biên gộp|roe|cổ tức', sig: 'up' },
       { g: 'Tâm lý & kỷ luật', k: 'tâm lý|sai lầm|nguyên tắc|kỷ luật|bài học|fomo|thuyết âm mưu|hoảng loạn', sig: 'wait' },
@@ -3614,8 +3616,26 @@ return {
     // Ranh giới từ có dấu: \b của JS chỉ hiểu [A-Za-z0-9_] nên "hàn" khớp trong
     // "ngân hàng" và "yên" khớp trong "chuyên gia" — đủ để đẩy 4 ý của một bài về
     // ETF sang nhánh "Nhật & Hàn". Dùng lookaround theo \p{L} để chặn.
+    // Rất nhiều ý có nhãn là TÊN MÃ (TCB, SHS, FRT…) mà không từ khóa nào bắt được,
+    // nên chúng rơi hết vào "Điểm khác". Nạp thẳng danh sách mã trong Sổ mã vào từ
+    // khóa của nhóm tương ứng — Sổ mã lớn dần thì bộ phân nhóm tự khá lên theo.
+    const _MM_REGION = { vn: 'Chứng khoán Việt Nam', foreign: 'Chứng khoán Mỹ',
+                         kr: 'Nhật & Hàn', jp: 'Nhật & Hàn', commodity: 'Vàng & Bitcoin' };
+    const _esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const _extra = {};
+    TICKERS.forEach(t => {
+      const g = _MM_REGION[t.region]; if (!g) return;
+      [t.symbol, ...(t.aliases || [])].forEach(a =>
+        String(a).split(/\s*[·\/&]\s*/).forEach(part => {
+          const k = part.toLowerCase().trim();
+          if (k.length >= 2 && /^[a-z0-9À-ỹ][a-z0-9À-ỹ .-]*$/i.test(k)) (_extra[g] = _extra[g] || new Set()).add(_esc(k));
+        }));
+    });
     const _rx = k => new RegExp('(?<!\\p{L})(?:' + k + ')(?!\\p{L})', 'giu');
-    _MM.forEach(m => { m.re = _rx(m.k); });
+    _MM.forEach(m => {
+      const ex = _extra[m.g];
+      m.re = _rx(ex && ex.size ? m.k + '|' + [...ex].join('|') : m.k);
+    });
     // chấm điểm thay vì khớp đầu tiên: nhãn nặng gấp 3 lần thân bài,
     // nếu không thì một ý về Fed chỉ vì nhắc "đồng yên" sẽ bị xếp nhầm sang Nhật
     const _score = (label, body) => {

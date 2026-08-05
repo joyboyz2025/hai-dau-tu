@@ -10,37 +10,44 @@ window.HDT_DATA = {
     {
       "name": "CK Việt",
       "mark": "↑ ĐẢO CHIỀU — Thái Phạm bảo mua full",
-      "sig": "up"
+      "sig": "up",
+      "mkt": "vn"
     },
     {
       "name": "Nhưng CK 5 phút",
       "mark": "◷ \"Chưa thay đổi chiến lược đâu\"",
-      "sig": "wait"
+      "sig": "wait",
+      "mkt": "vn"
     },
     {
       "name": "Vàng",
       "mark": "↑ Bỏ kịch bản 3.000 — mua, cắt lỗ 3.900",
-      "sig": "up"
+      "sig": "up",
+      "mkt": "us"
     },
     {
       "name": "Phân bón",
       "mark": "↑ DCM/DPM 25% tài khoản, giữ tới T3/2027",
-      "sig": "up"
+      "sig": "up",
+      "mkt": "vn"
     },
     {
       "name": "Bank",
       "mark": "↑ Ưu tiên HDB · BVB — tránh LPB",
-      "sig": "up"
+      "sig": "up",
+      "mkt": "vn"
     },
     {
       "name": "CK Mỹ",
       "mark": "↓ Short 1/2 ở kháng cự, cắt ngay nếu vượt",
-      "sig": "down"
+      "sig": "down",
+      "mkt": "us"
     },
     {
       "name": "Dầu",
       "mark": "⚠ Rớt 5% vì tin Iran — mua lại 72–73",
-      "sig": "warn"
+      "sig": "warn",
+      "mkt": "us"
     }
   ],
   "assetCards": [
@@ -5861,7 +5868,8 @@ window.HDT_DATA = {
         "sig": "up",
         "expertId": "thai-pham",
         "detail": "ĐẢO CHIỀU khỏi mức 40% cổ / 60% tiền giữ từ tuần 28. Ai cầm 80% lên 100%; ai cầm 40% lên 70–100%. Chỉ mua mã ở nền giá rất thấp, KHÔNG phải mua VIC/VHM. Ai đã 90–100% hàng thì cứ cầm, đừng thao tác thêm.",
-        "level": "Không còn mốc chờ — bỏ 1.400/1.500"
+        "level": "Không còn mốc chờ — bỏ 1.400/1.500",
+        "mkt": "vn"
       },
       {
         "asset": "Danh mục VN (góc đối chiếu)",
@@ -5869,7 +5877,8 @@ window.HDT_DATA = {
         "sig": "wait",
         "expertId": "ck-5-phut",
         "detail": "\"Em nghĩ là cũng chưa thay đổi chiến lược này đâu. Giữ sức.\" Vẫn đòi điểm mua đẹp: vượt MA20 quá 3% kèm volume, hoặc tạo hai đáy.",
-        "level": "Không đổi từ giữa tháng 7"
+        "level": "Không đổi từ giữa tháng 7",
+        "mkt": "vn"
       },
       {
         "asset": "Vàng",
@@ -5877,7 +5886,8 @@ window.HDT_DATA = {
         "sig": "up",
         "expertId": "thai-pham",
         "detail": "Bỏ kịch bản chờ về 3.000. Vật chất mua SJC khi chênh 9–10 triệu/lượng. Tài khoản đánh nhỏ 0,03–0,1 lot vì giai đoạn tích lũy hay rung lắc.",
-        "level": "Cắt lỗ 3.900 · kỳ vọng 4.000"
+        "level": "Cắt lỗ 3.900 · kỳ vọng 4.000",
+        "mkt": "us"
       },
       {
         "asset": "DCM · DPM",
@@ -5885,7 +5895,8 @@ window.HDT_DATA = {
         "sig": "up",
         "expertId": "thai-pham",
         "detail": "Đạm Phú Mỹ có KQKD quý 2 rất tốt. Một con 25%, hoặc mỗi con 12–13%. Ông đã tự mua nốt cho đủ vị thế và đăng tút xác nhận.",
-        "level": "Giữ tới tháng 3/2027"
+        "level": "Giữ tới tháng 3/2027",
+        "mkt": "vn"
       },
       {
         "asset": "HDB · BVB",
@@ -5893,7 +5904,8 @@ window.HDT_DATA = {
         "sig": "up",
         "expertId": "thai-pham",
         "detail": "\"Bank có mấy con rất quan trọng, các anh chị nghe đi nghe lại: HDBank là ưu tiên, BVBank là ưu tiên.\" EIB đã giảm sâu, nhóm chủ sẽ kéo.",
-        "level": "Vùng giá hiện tại"
+        "level": "Vùng giá hiện tại",
+        "mkt": "vn"
       },
       {
         "asset": "LPB",
@@ -5901,7 +5913,8 @@ window.HDT_DATA = {
         "sig": "avoid",
         "expertId": "thai-pham",
         "detail": "Nêu đích danh trong danh sách tránh của nhóm ngân hàng.",
-        "level": "—"
+        "level": "—",
+        "mkt": "vn"
       },
       {
         "asset": "SSI",
@@ -5909,7 +5922,8 @@ window.HDT_DATA = {
         "sig": "up",
         "expertId": "thai-pham",
         "detail": "Thái Phạm: mua vùng 23 hoặc ngay 24. CK 5 phút: mua mới vùng này không cao, rẻ hơn TCX xét biên độ an toàn.",
-        "level": "Vùng 23–24"
+        "level": "Vùng 23–24",
+        "mkt": "vn"
       },
       {
         "asset": "GEX · VIX",
@@ -5917,7 +5931,8 @@ window.HDT_DATA = {
         "sig": "up",
         "expertId": "ck-5-phut",
         "detail": "GEX đã +26% từ đáy, VIX +20%. Ai có hàng từ điểm phân kỳ dương tuần trước thì giữ; mua đuổi bây giờ là rủi ro ngắn hạn.",
-        "level": "VIX chốt lãi ở 16"
+        "level": "VIX chốt lãi ở 16",
+        "mkt": "vn"
       },
       {
         "asset": "CK Mỹ",
@@ -5925,7 +5940,8 @@ window.HDT_DATA = {
         "sig": "down",
         "expertId": "thai-pham",
         "detail": "S&P 500 chạm 7.736 — chưa rõ uptrust hay breakout. Chỉ short khi tăng quá đà vào kháng cự, take profit ngay khi về hỗ trợ.",
-        "level": "Vượt kháng cự là dừng lỗ NGAY"
+        "level": "Vượt kháng cự là dừng lỗ NGAY",
+        "mkt": "us"
       },
       {
         "asset": "Bán dẫn & AI",
@@ -5933,7 +5949,8 @@ window.HDT_DATA = {
         "sig": "down",
         "expertId": "thai-pham",
         "detail": "Nhóm này chắc chắn điều chỉnh; hồi lên vùng ~19.000–19.200 rồi rung lắc. Dòng tiền lớn đã rút, nhịp hồi chỉ là để ra hàng.",
-        "level": "AMD, SPCX, AAPL đều đang short"
+        "level": "AMD, SPCX, AAPL đều đang short",
+        "mkt": "us"
       }
     ],
     "waiting": [
@@ -5943,7 +5960,8 @@ window.HDT_DATA = {
         "action": "Mua",
         "sig": "up",
         "expertId": "thai-pham",
-        "note": "Mốc mới cho nhịp rớt ~5% do tin Iran. Quan điểm nền không đổi: khó về dưới 75, vẫn loanh quanh 85–90."
+        "note": "Mốc mới cho nhịp rớt ~5% do tin Iran. Quan điểm nền không đổi: khó về dưới 75, vẫn loanh quanh 85–90.",
+        "mkt": "us"
       },
       {
         "asset": "FPT",
@@ -5951,7 +5969,8 @@ window.HDT_DATA = {
         "action": "Giải ngân, rồi bán ở 85–90",
         "sig": "warn",
         "expertId": "thai-pham",
-        "note": "Lần đầu ông cho mốc VÀO chứ không chỉ mốc thoát."
+        "note": "Lần đầu ông cho mốc VÀO chứ không chỉ mốc thoát.",
+        "mkt": "vn"
       },
       {
         "asset": "VCB · BID · CTG",
@@ -5959,7 +5978,8 @@ window.HDT_DATA = {
         "action": "Mua",
         "sig": "up",
         "expertId": "thai-pham",
-        "note": "Khác nhóm HDB/BVB là được mua ngay."
+        "note": "Khác nhóm HDB/BVB là được mua ngay.",
+        "mkt": "vn"
       },
       {
         "asset": "VIX",
@@ -5967,7 +5987,8 @@ window.HDT_DATA = {
         "action": "Chốt lãi ngắn hạn",
         "sig": "up",
         "expertId": "ck-5-phut",
-        "note": "Từ đáy thấp nhất lên 16 là +37%. Biên trên Bollinger trùng vùng tích lũy cũ."
+        "note": "Từ đáy thấp nhất lên 16 là +37%. Biên trên Bollinger trùng vùng tích lũy cũ.",
+        "mkt": "vn"
       },
       {
         "asset": "VSC",
@@ -5975,7 +5996,8 @@ window.HDT_DATA = {
         "action": "Chốt lãi",
         "sig": "wait",
         "expertId": "ck-5-phut",
-        "note": "Ngon hơn nếu tạo hai đáy quanh 14 thay vì tăng giật."
+        "note": "Ngon hơn nếu tạo hai đáy quanh 14 thay vì tăng giật.",
+        "mkt": "vn"
       },
       {
         "asset": "EIB",
@@ -5983,7 +6005,8 @@ window.HDT_DATA = {
         "action": "Bán",
         "sig": "wait",
         "expertId": "ck-5-phut",
-        "note": "Mua dưới 20 được, nhưng đợi hai đáy thì đẹp hơn. Lưu ý Thái Phạm lại xếp EIB vào nhóm MUA vì \"nhóm chủ sẽ kéo\"."
+        "note": "Mua dưới 20 được, nhưng đợi hai đáy thì đẹp hơn. Lưu ý Thái Phạm lại xếp EIB vào nhóm MUA vì \"nhóm chủ sẽ kéo\".",
+        "mkt": "vn"
       },
       {
         "asset": "Thị trường Úc",
@@ -5991,7 +6014,8 @@ window.HDT_DATA = {
         "action": "Mua",
         "sig": "up",
         "expertId": "thai-pham",
-        "note": "\"Bắt đầu nó ổn ổn lại rồi, có thể mua thị trường Úc được rồi.\""
+        "note": "\"Bắt đầu nó ổn ổn lại rồi, có thể mua thị trường Úc được rồi.\"",
+        "mkt": "us"
       },
       {
         "asset": "Bitcoin",
@@ -5999,7 +6023,8 @@ window.HDT_DATA = {
         "action": "Tính short hay long sau",
         "sig": "wait",
         "expertId": "thai-pham",
-        "note": "\"Mình cược thì mình sẽ cược thích vàng nhiều hơn.\""
+        "note": "\"Mình cược thì mình sẽ cược thích vàng nhiều hơn.\"",
+        "mkt": "us"
       },
       {
         "asset": "Samsung",
@@ -6007,7 +6032,8 @@ window.HDT_DATA = {
         "action": "Ra hàng hồi kỹ thuật",
         "sig": "wait",
         "expertId": "thai-pham",
-        "note": "Hàn \"hết tiền rồi vì SK và Samsung đã hút hết tiền của người dân\"."
+        "note": "Hàn \"hết tiền rồi vì SK và Samsung đã hút hết tiền của người dân\".",
+        "mkt": "us"
       }
     ],
     "events": [
@@ -6016,42 +6042,48 @@ window.HDT_DATA = {
         "label": "SpaceX mở khóa thêm ~15% cổ phiếu",
         "note": "Tối thứ năm giờ Việt Nam. Thái Phạm: khả năng cao SPCX tiếp tục giảm.",
         "sig": "down",
-        "expertId": "thai-pham"
+        "expertId": "thai-pham",
+        "mkt": "us"
       },
       {
         "date": "2026-08-06",
         "label": "VHM giao dịch không hưởng quyền",
         "note": "Chia 1:1 bằng cổ phiếu. CK 5 phút: không cầm nhóm Vin qua ngày chia.",
         "sig": "avoid",
-        "expertId": "ck-5-phut"
+        "expertId": "ck-5-phut",
+        "mkt": "vn"
       },
       {
         "date": "2026-08-12",
         "label": "MBB chia quyền mua",
         "note": "Giữ hàng đợi nhận quyền, không mua thêm trước mốc này.",
         "sig": "warn",
-        "expertId": "ck-5-phut"
+        "expertId": "ck-5-phut",
+        "mkt": "vn"
       },
       {
         "date": "2026-08-17",
         "label": "Hạn thuế đối ứng Mỹ",
         "note": "Việt Nam nằm nhóm chịu mức cao nhất 12,5%.",
         "sig": "warn",
-        "expertId": "ck-5-phut"
+        "expertId": "ck-5-phut",
+        "mkt": "vn"
       },
       {
         "dateLabel": "Tháng 11",
         "label": "Bầu cử giữa nhiệm kỳ Mỹ",
         "note": "Trục của toàn bộ lập luận đảo chiều: Thái Phạm cho rằng từ giờ tới đó Trump giữ chỉ số và Fed không tăng lãi, nên VN hết gió ngược.",
         "sig": "up",
-        "expertId": "thai-pham"
+        "expertId": "thai-pham",
+        "mkt": "us"
       },
       {
         "dateLabel": "Tháng 3/2027",
         "label": "Mốc xem lại vị thế phân bón",
         "note": "\"Mua thêm 1 ít cho đủ vị thế rồi đóng app với DCM, DPM. Tháng 3 năm sau mở lên xem sao.\"",
         "sig": "up",
-        "expertId": "thai-pham"
+        "expertId": "thai-pham",
+        "mkt": "vn"
       }
     ]
   },

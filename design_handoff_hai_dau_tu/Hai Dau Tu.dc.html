@@ -225,6 +225,9 @@ input::placeholder{color:var(--ink-3);}
 /* ══════ SƠ ĐỒ TƯ DUY: nội dung bài theo nhánh ngành ══════ */
 .mm{background:var(--white);border:1px solid var(--hair);border-radius:var(--r-lg);
   padding:22px 24px;display:flex;flex-direction:column;gap:18px;}
+/* thanh chọn thị trường trên trang Hôm nay */
+.mkt-bar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding-top:14px;}
+@media (max-width:560px){ .mkt-bar{gap:6px;} .mkt-bar .t-cap{flex-basis:100%;} }
 .mm-head{display:flex;flex-direction:column;gap:3px;}
 .mm-body{display:flex;gap:0;align-items:flex-start;}
 
@@ -541,7 +544,16 @@ input::placeholder{color:var(--ink-3);}
   <sc-if value="{{ isDashboard }}" hint-placeholder-val="{{ true }}">
     <div data-screen-label="Tổng quan" style="max-width:1180px; margin:0 auto; padding:28px 20px 72px; display:flex; flex-direction:column; gap:28px;">
 
-      <div class="rise" style="display:flex; flex-direction:column; gap:0; padding-top:14px;">
+      <div class="mkt-bar">
+        <div class="nav-scroll tk-segment" style="display:inline-flex;" role="tablist" aria-label="Chọn thị trường">
+          <sc-for list="{{ mktTabs }}" as="mt" hint-placeholder-count="2">
+            <div onClick="{{ mt.onClick }}" class="tk-seg-btn" role="tab" tabindex="0" style="background:{{ mt.bg }}; color:{{ mt.color }}; font-weight:{{ mt.weight }};">{{ mt.label }}</div>
+          </sc-for>
+        </div>
+        <div class="t-cap">Mọi thứ bên dưới chỉ tính {{ mktLabel }}</div>
+      </div>
+
+      <div class="rise" style="display:flex; flex-direction:column; gap:0; padding-top:2px;">
         <h1 class="t-display" style="margin:0; max-width:19ch;">{{ heroDirective }}</h1>
         <div class="t-body" style="margin-top:16px; max-width:66ch; color:var(--ink-2);">{{ heroDetail }}</div>
         <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-top:22px;">
@@ -619,7 +631,7 @@ input::placeholder{color:var(--ink-3);}
       </div>
 
       <sc-if value="{{ isActions }}" hint-placeholder-val="{{ false }}">
-    <div data-screen-label="Hành động" style="max-width:1180px; margin:0 auto; padding:28px 20px 72px; display:flex; flex-direction:column; gap:20px;">
+    <div data-screen-label="Hành động" data-act-anchor="1" style="max-width:1180px; margin:0 auto; padding:28px 20px 72px; display:flex; flex-direction:column; gap:20px;">
       <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:12px; flex-wrap:wrap;">
         <div>
           <h1 style="margin:0; font-size:24px; font-weight:600; letter-spacing:-0.4px;">Hành động giá</h1>
@@ -2090,7 +2102,7 @@ class Component extends DCLogic {
     let logged = false;
     try { logged = localStorage.getItem('hdt_auth') === '1'; } catch (e) {}
     const firstTk = (window.HDT_DATA && window.HDT_DATA.tickers && window.HDT_DATA.tickers[0]) || {};
-    this.state = { logged, screen: 'dashboard', pwError: false, srcType: 0, added: [], updIdx: 0, expertId: 'thai-pham', q: '', assetKey: 'vn', callsExpert: 'all', chartSym: '', chartLabel: '', scExpert: 'all', tickerKey: firstTk.key || '', bncOnly: false, bncPrices: {}, vnBars: {}, tkView: 'industry', tkRegion: 'all', tkIndustry: 'all', tkBasket: 'all', tkTrade: 'all', ctxTopic: 0 };
+    this.state = { logged, screen: 'dashboard', pwError: false, srcType: 0, added: [], updIdx: 0, expertId: 'thai-pham', q: '', assetKey: 'vn', callsExpert: 'all', chartSym: '', chartLabel: '', scExpert: 'all', tickerKey: firstTk.key || '', bncOnly: false, bncPrices: {}, vnBars: {}, tkView: 'industry', tkRegion: 'all', tkIndustry: 'all', tkBasket: 'all', tkTrade: 'all', ctxTopic: 0, mkt: 'vn' };
     this.pwRef = React.createRef();
     this.nameRef = React.createRef();
     this.channelRef = React.createRef();
@@ -2250,24 +2262,71 @@ class Component extends DCLogic {
     const REGION_ORDER = ['vn', 'foreign', 'kr', 'jp', 'commodity'];
     const HDT = window.HDT_DATA;
 
+    // ── Tách thị trường cho trang Hôm nay (thêm 05/08) ────────────────────
+    // Mỗi mục pulse/actions mang trường `mkt` ('vn' = Việt Nam, 'us' = Mỹ & thế
+    // giới, gồm cả vàng, dầu, BTC, Nhật, Hàn, Úc). Mục cũ hoặc mục mới quên gắn
+    // thì suy ngược từ Sổ mã theo `region`, nên không bao giờ biến mất khỏi trang.
+    const _MKT_FALL = {};
+    (HDT.tickers || []).forEach(t => {
+      const m = t.region === 'vn' ? 'vn' : 'us';
+      [t.symbol, ...(t.aliases || [])].forEach(a =>
+        String(a).split(/\s*[·\/&]\s*/).forEach(p => {
+          const k = p.toLowerCase().trim();
+          if (k.length >= 2 && !_MKT_FALL[k]) _MKT_FALL[k] = m;
+        }));
+    });
+    const _mktOf = it => {
+      if (it.mkt === 'vn' || it.mkt === 'us') return it.mkt;
+      const lbl = String(it.asset || it.name || it.label || '').toLowerCase();
+      for (const w of lbl.split(/[^0-9a-zà-ỹ]+/)) if (_MKT_FALL[w]) return _MKT_FALL[w];
+      return 'vn';
+    };
+    const curMkt = s.mkt === 'us' ? 'us' : 'vn';
+    const _keepMkt = arr => (arr || []).filter(it => _mktOf(it) === curMkt);
+    const MKT_LABEL = { vn: 'Việt Nam', us: 'Mỹ & thế giới' };
+    const mktTabs = ['vn', 'us'].map(k => ({
+      label: MKT_LABEL[k],
+      onClick: () => this.setState({ mkt: k }),
+      bg: curMkt === k ? 'var(--white)' : 'transparent',
+      color: curMkt === k ? 'var(--ink)' : 'var(--ink-3)',
+      weight: curMkt === k ? '600' : '400'
+    }));
+    const mktLabel = MKT_LABEL[curMkt];
+
     const PULSE_COLOR = { up: 'var(--up)', down: 'var(--down)', warn: 'var(--warn)', wait: 'var(--ink-2)', avoid: 'var(--avoid)' };
-    const pulse = HDT.pulse.map(p => ({ name: p.name, mark: p.mark, color: PULSE_COLOR[p.sig] || 'var(--ink-2)' }));
-    const _hAct = ((HDT.actions || {}).now || [])[0] || {};
+    const pulse = _keepMkt(HDT.pulse).map(p => ({ name: p.name, mark: p.mark, color: PULSE_COLOR[p.sig] || 'var(--ink-2)' }));
+    const _A = { now: _keepMkt((HDT.actions || {}).now), waiting: _keepMkt((HDT.actions || {}).waiting),
+                 events: _keepMkt((HDT.actions || {}).events) };
+    const _hAct = (_A.now || [])[0] || {};
     const _hEx = HDT.experts[_hAct.expertId] || {};
     const _hUpd = (_hEx.updates || [])[0] || {};
-    const heroDirective = _hAct.dir || '', heroAsset = _hAct.asset || '', heroDetail = _hAct.detail || '';
+    // Gắn tên tài sản vào tiêu đề khi câu lệnh chưa tự nói ra — "MUA — vật chất và
+    // tài khoản" một mình thì không biết đang nói con gì.
+    const _hDir = _hAct.dir || '', _hAs = _hAct.asset || '';
+    const heroDirective = !_hDir ? ('Chưa có vị thế nào đang chạy ở ' + MKT_LABEL[curMkt])
+      : (_hAs && _hDir.toLowerCase().indexOf(_hAs.toLowerCase()) < 0) ? (_hAs + ' · ' + _hDir) : _hDir;
+    const heroAsset = _hAct.asset || '—';
+    const heroDetail = _hAct.detail || 'Không chuyên gia nào trong trang đang có hành động mở cho thị trường này. Bấm sang tab bên cạnh để xem thị trường còn lại.';
     const heroLevel = _hAct.level || '', heroWho = _hEx.name || '', heroInitials = _hEx.initials || '';
     const heroSrc = _hUpd.tab || '', heroDate = _hUpd.dateShort || '';
-    const heroGoAct = () => this.go('actions');
+    // Từ đợt cải tổ 03/08, khối Hành động nằm LỒNG trong màn Hôm nay, nên
+    // this.go('actions') dẫn tới trang trắng — isDashboard false thì không render
+    // gì cả. Nay hai nút này cuộn xuống khối đó thay vì điều hướng.
+    const _goAct = () => {
+      const el = document.querySelector('[data-act-anchor]');
+      if (!el) return;
+      const nhe = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      el.scrollIntoView({ behavior: nhe ? 'auto' : 'smooth', block: 'start' });
+    };
+    const heroGoAct = _goAct;
     const heroGoExpert = () => this.go('expert', { expertId: _hAct.expertId });
     const weekRange = (HDT.weekly || {}).dateRange || '';
-    const _A = HDT.actions || {};
     const _cnt = (arr, sg) => (arr || []).filter(a => a.sig === sg).length;
     const posLong  = _cnt(_A.now, 'up');
     const posShort = _cnt(_A.now, 'down');
     const posWarn  = _cnt(_A.now, 'warn') + _cnt(_A.now, 'avoid');
     const posWait  = (_A.waiting || []).length;
-    const goActions = () => this.go('actions');
+    const goActions = _goAct;
 
     const assetCards = HDT.assetCards.map(a => {
       const ex = HDT.experts[a.expertId] || {};
@@ -3102,7 +3161,8 @@ return {
     }));
 
     // ── Trang Hành động giá (HDT.actions) ─────────────────────────────────
-    const ACTS = HDT.actions || { now: [], waiting: [], events: [] };
+    // dùng lại danh sách ĐÃ LỌC theo thị trường ở trên, giữ nguyên `updated`
+    const ACTS = Object.assign({}, HDT.actions || {}, { now: _A.now, waiting: _A.waiting, events: _A.events });
     const ACT_ACCENT = { up: 'var(--up)', down: 'var(--down)', warn: 'var(--warn)', wait: 'var(--border)', avoid: 'var(--avoid)' };
     // ── Tuần này: điểm nhấn cho đồng thuận/mâu thuẫn (đánh số, mục đầu nổi bật) ──
     const mkWeeklyItems = (arr, sig) => (arr || []).map((x, i) => {
@@ -3742,6 +3802,7 @@ return {
       goAdmin: () => this.go('admin'),
       goHistory: () => this.go('history'),
       goExpertsList: () => this.go('experts-list'),
+      mktTabs, mktLabel, curMkt,
       navItems, subTabs, hasSubs: subTabs.length > 0,
       heroDirective, heroAsset, heroDetail, heroLevel, heroWho, heroInitials,
       heroSrc, heroDate, heroGoAct, heroGoExpert, weekRange, hasHeroLevel: !!heroLevel,

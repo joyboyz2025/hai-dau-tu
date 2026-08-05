@@ -603,7 +603,7 @@ input::placeholder{color:var(--ink-3);}
 
       <div class="viz" onClick="{{ brGaugeGoTk }}" role="button" tabindex="0" style="cursor:pointer;">
         <div class="viz-h">
-          <div class="t-h2">Còn cách mốc giải ngân bao xa</div>
+          <div class="t-h2">{{ brGauge.title }}</div>
           <div class="t-cap">{{ brGauge.note }}</div>
         </div>
         <div class="gauge">
@@ -613,13 +613,13 @@ input::placeholder{color:var(--ink-3);}
             <div class="gauge-mk gauge-mk--now" style="left:{{ brGauge.nowPos }}; --c:var(--ink);"></div>
           </div>
           <div class="gauge-lbl">
-            <div class="gauge-p" style="left:0;"><b style="color:var(--up);">{{ brGauge.buy }}</b><span>giải ngân</span></div>
-            <div class="gauge-p" style="left:{{ brGauge.brkPos }};"><b style="color:var(--warn);">{{ brGauge.brk }}</b><span>sẽ bị phá</span></div>
-            <div class="gauge-p" style="left:{{ brGauge.nowPos }};"><b>{{ brGauge.now }}</b><span>hôm nay</span></div>
-            <div class="gauge-p gauge-p--end" style="right:0;"><b style="color:var(--ink-3);">{{ brGauge.top }}</b><span>đỉnh cũ</span></div>
+            <div class="gauge-p" style="left:0;"><b style="color:var(--up);">{{ brGauge.buy }}</b><span>{{ brGauge.buyLabel }}</span></div>
+            <div class="gauge-p" style="left:{{ brGauge.brkPos }};"><b style="color:var(--warn);">{{ brGauge.brk }}</b><span>{{ brGauge.brkLabel }}</span></div>
+            <div class="gauge-p" style="left:{{ brGauge.nowPos }};"><b>{{ brGauge.now }}</b><span>{{ brGauge.nowLabel }}</span></div>
+            <div class="gauge-p gauge-p--end" style="right:0;"><b style="color:var(--ink-3);">{{ brGauge.top }}</b><span>{{ brGauge.topLabel }}</span></div>
           </div>
         </div>
-        <div class="viz-note">Còn <b>{{ brGauge.gapBrk }} điểm</b> tới ngưỡng sẽ bị phá · <b>{{ brGauge.gapBuy }} điểm</b> tới vùng giải ngân</div>
+        <div class="viz-note">Đã hồi <b>{{ brGauge.gapLo }} điểm</b> từ {{ brGauge.buyLabel }} · còn <b>{{ brGauge.gapMid }} điểm</b> tới {{ brGauge.brkLabel }}</div>
       </div>
 
       <div style="display:flex; align-items:center; gap:10px; background:var(--white); border:1px solid var(--border); border-radius:var(--r); padding:2px 6px 2px 15px; max-width:620px;">
@@ -3258,15 +3258,26 @@ return {
         onClick: () => this.go('scorecard') };
     }).sort((a, b) => b.total - a.total);
 
-    // 4) Thước đo: VN-Index còn cách mốc giải ngân bao xa
-    const _pv = (HDT.pulse || []).find(p => /CK Việt/i.test(p.name));
-    const _now = 1686, _brk = 1585, _buy = 1400, _top = 1868;
-    const _pos = v => ((v - _buy) / (_top - _buy) * 100).toFixed(1) + '%';
-    const brGauge = { now: _now.toLocaleString('vi-VN'), brk: _brk.toLocaleString('vi-VN'),
-      buy: _buy.toLocaleString('vi-VN'), top: _top.toLocaleString('vi-VN'),
-      nowPos: _pos(_now), brkPos: _pos(_brk),
-      gapBrk: (_now - _brk).toLocaleString('vi-VN'), gapBuy: (_now - _buy).toLocaleString('vi-VN'),
-      note: _pv ? _pv.mark : '' };
+    // 4) Thước đo VN-Index — số ĐỌC TỪ DỮ LIỆU (briefing.gauge), không hardcode.
+    // Trước 05/08 bốn mốc 1686/1585/1400/1868 nằm cứng ở đây, nên khi Thái Phạm bỏ
+    // mốc giải ngân 1.400 thì thước đo vẫn đứng đó nói "còn X điểm tới vùng giải
+    // ngân" — trang tự mâu thuẫn với chính nó. Mỗi lần update phải sửa khối này.
+    const _G = (HDT.briefing || {}).gauge || {};
+    const _lo = +_G.lo || 1400, _hi = +_G.hi || 1900;
+    const _gNow = +_G.now || _lo, _gMid = +_G.mid || _lo;
+    const _pos = v => (Math.min(100, Math.max(0, (v - _lo) / ((_hi - _lo) || 1) * 100))).toFixed(1) + '%';
+    const brGauge = {
+      title: _G.title || 'VN-Index đang ở đâu',
+      note: _G.note || '',
+      buy: (_lo).toLocaleString('vi-VN'), buyLabel: _G.loLabel || 'đáy',
+      brk: (_gMid).toLocaleString('vi-VN'), brkLabel: _G.midLabel || 'mốc',
+      now: (_gNow).toLocaleString('vi-VN'), nowLabel: _G.nowLabel || 'hôm nay',
+      top: (_hi).toLocaleString('vi-VN'), topLabel: _G.hiLabel || 'đỉnh cũ',
+      nowPos: _pos(_gNow), brkPos: _pos(_gMid),
+      // số rời chứ không phải chuỗi có thẻ <b> — DCLogic không render HTML thô
+      gapLo: Math.abs(_gNow - _lo).toLocaleString('vi-VN'),
+      gapMid: Math.abs(_gMid - _gNow).toLocaleString('vi-VN')
+    };
 
     const brGaugeGoTk = () => this.go('tickers');
     const BR = HDT.briefing || {};

@@ -249,6 +249,12 @@ window.HDT_DATA = {
               "note": "Nguyên văn tút 19h48 ngày 07/08: \"Quả call ae hội viên mua vàng 4078-4080 khá ổn, 10 điểm nhỉ anh chị em. Vàng vc thì ok rồi. Đợi nó về 4,150 và 4,222 thì khó quá. Nhưng tôi thấy vẫn mua ok.\" Tức ông không còn chờ nhịp chỉnh về 4.150/4.222 nữa mà cho rằng mua ngay vẫn được."
             },
             {
+              "tag": "Mốc mua khi vàng chỉnh",
+              "value": "Test lại 4.120 ±20 là cơ hội tốt",
+              "signal": "up",
+              "note": "Nguyên văn tút 06/08: \"Nếu Vàng có chỉnh kĩ thuật test lại 4,120 +/-20 giá theo tôi đó là cơ hội tốt. Hiện giá trong nước và thế giới cũng chỉ còn vênh 6-7 tr/lượng. Ok.\" Đây là mốc VÀO THÊM nếu có nhịp chỉnh, khác với mốc cắt lỗ 3.900 đặt từ Tập 43. Đến tối 07/08 ông nói đợi về 4.150 và 4.222 \"thì khó quá\" — tức nhịp chỉnh đó đã không xảy ra."
+            },
+            {
               "tag": "Bitcoin — call mới",
               "value": "Mua lướt 65.200 · chốt 70–71 · cắt lỗ 61",
               "signal": "up",
@@ -289,6 +295,15 @@ window.HDT_DATA = {
                   "dir": "ĐANG LÃI — vẫn mua được",
                   "entry": "Đã vào 4.078–4.080",
                   "target": "Không đợi chỉnh về 4.150/4.222 nữa",
+                  "stop": "3.900 (từ Tập 43)",
+                  "sig": "up",
+                  "tv": "OANDA:XAUUSD"
+                },
+                {
+                  "asset": "XAU/USD",
+                  "dir": "MUA THÊM nếu chỉnh",
+                  "entry": "4.120 ±20",
+                  "target": "Mốc vào thêm, không phải mốc cắt",
                   "stop": "3.900 (từ Tập 43)",
                   "sig": "up",
                   "tv": "OANDA:XAUUSD"

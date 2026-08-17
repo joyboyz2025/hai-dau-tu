@@ -1,5 +1,5 @@
 SỔ MÃ HẢI ĐẦU TƯ — 17/08/2026 · Tuần 34
-Xuất lúc 11:00:34 17/8/2026 · 103 mã · 365 phiếu lệnh
+Xuất lúc 11:07:27 17/8/2026 · 103 mã · 365 phiếu lệnh
 
 CẢNH BÁO: đây là tổng hợp nhận định của 5 chuyên gia YouTube, KHÔNG phải khuyến nghị đầu tư.
 Mọi mốc giá đều trích nguyên văn từ transcript. Tự chịu trách nhiệm cho quyết định của mình.
@@ -12,8 +12,8 @@ TradingView: Watchlist → dấu ... → Import list → dán từng khối bên
 ### CHỨNG KHOÁN VIỆT NAM (62 mã)
 HOSE:DCM,HOSE:DPM,HOSE:BID,HOSE:VNM,HOSE:SCS,HOSE:TCX,HOSE:TCB,HOSE:SSI,HOSE:VCI,HOSE:VIX,HOSE:HPG,HOSE:PNJ,HOSE:FPT,HOSE:PC1,HOSE:DGC,HOSE:HDB,HOSE:MWG,HOSE:VCB,HOSE:CTG,HOSE:GAS,HOSE:MSB,HOSE:DBC,HOSE:IGC,HOSE:BCM,HOSE:VIC,HOSE:VPB,HOSE:MBB,HOSE:NLG,HOSE:DXG,HOSE:KDH,HOSE:ACB,HOSE:LPB,HOSE:STB,HOSE:DIG,HOSE:BSR,UPCOM:MSR,HOSE:NKG,HOSE:HSG,HOSE:VN30,HOSE:BVH,HOSE:CII,HOSE:FRT,HOSE:HAG,HOSE:OCB,HOSE:POW,HOSE:SHB,HNX:SHS,HNX:TNG,HOSE:GEX,HOSE:VSC,HOSE:EIB,HOSE:DGW,HOSE:ACV,HOSE:VCG,HOSE:GMD,HOSE:HCM,HOSE:MBS,HOSE:KSB,HOSE:PLC,HOSE:GVR,HOSE:NVL,HOSE:VIB
 
-### QUỐC TẾ (MỸ & CHÂU ÂU) (32 mã)
-BINANCE:AAPLUSDT.P,BINANCE:SPCXUSDT.P,BINANCE:INTCUSDT.P,BINANCE:MUUSDT.P,BINANCE:SPYUSDT.P,BINANCE:QQQUSDT.P,BINANCE:MRVLUSDT.P,BINANCE:PANWUSDT.P,NASDAQ:FTNT,BINANCE:CRWDUSDT.P,BINANCE:AMDUSDT.P,BINANCE:NVDAUSDT.P,BINANCE:GOOGLUSDT.P,BINANCE:NFLXUSDT.P,BINANCE:DELLUSDT.P,NYSE:RTX,XETR:ADS,NASDAQ:AMZN,NYSE:BAC,NYSE:ANET,NASDAQ:TSLA,NYSE:KO,NYSE:WMT,NASDAQ:COST,TVC:UKX,FX:USDJPY,ASX:BHP,ASX:WDS,ASX:NAB,ASX:ANZ,ASX:WTC,ASX:CSL
+### QUỐC TẾ (MỸ & CHÂU ÂU) (33 mã)
+BINANCE:AAPLUSDT.P,BINANCE:SPCXUSDT.P,BINANCE:INTCUSDT.P,BINANCE:MUUSDT.P,BINANCE:SPYUSDT.P,BINANCE:QQQUSDT.P,BINANCE:MRVLUSDT.P,BINANCE:PANWUSDT.P,NASDAQ:FTNT,BINANCE:CRWDUSDT.P,BINANCE:AMDUSDT.P,BINANCE:NVDAUSDT.P,BINANCE:GOOGLUSDT.P,BINANCE:NFLXUSDT.P,BINANCE:DELLUSDT.P,NYSE:RTX,XETR:ADS,BINANCE:AMZNUSDT.P,NYSE:BAC,NYSE:ANET,BINANCE:SNDKUSDT.P,BINANCE:TSLAUSDT.P,BINANCE:KOUSDT.P,BINANCE:WMTUSDT.P,BINANCE:COSTUSDT.P,TVC:UKX,FX:USDJPY,ASX:BHP,ASX:WDS,ASX:NAB,ASX:ANZ,ASX:WTC,ASX:CSL
 
 ### HÀN QUỐC (1 mã)
 BINANCE:SAMSUNGUSDT.P
@@ -22,13 +22,151 @@ BINANCE:SAMSUNGUSDT.P
 BINANCE:EWJUSDT.P,TSE:8267
 
 ### HÀNG HÓA & CRYPTO (4 mã)
-BINANCE:XAUUSDT.P,BINANCE:CLUSDT.P,BINANCE:BTCUSDT,BINANCE:XAGUSDT.P
+BINANCE:XAUUSDT.P,BINANCE:CLUSDT.P,BINANCE:BTCUSDT.P,BINANCE:XAGUSDT.P
 
-### KHÔNG CÓ SYMBOL TRADINGVIEW (2 mã) — theo dõi thủ công
-BVBank · SanDisk
+### KHÔNG CÓ SYMBOL TRADINGVIEW (1 mã) — theo dõi thủ công
+BVBank
 
 ──────────────────────────────────────────────────────────────────────────────
-PHẦN 2 — BẢNG GỌN: MỘT DÒNG MỘT MÃ
+PHẦN 2 — DANH MỤC MARGIN: MÃ GIAO DỊCH ĐƯỢC TRÊN BINANCE
+──────────────────────────────────────────────────────────────────────────────
+Đây là nhóm DUY NHẤT short được và dùng đòn bẩy được. Mã Việt Nam không nằm ở
+đây vì thị trường VN không cho short.
+Xếp hạng theo mức độ sẵn sàng vào lệnh: có lệnh đang chạy > có mốc cắt lỗ cụ
+thể > được nhắc nhiều lần > mới được nhắc gần đây.
+
+  #   BINANCE                  MÃ           TRẠNG THÁI
+  ──────────────────────────────────────────────────────────────────────────
+   1  BINANCE:SPCXUSDT.P       SpaceX       SHORT/BÁN
+            » SHORT 1/3
+            vào Vùng hiện tại; short thêm ở 165 · mục tiêu Về 80–90 từ giờ tới
+            2027 · CẮT 29/6/2027 Elon được bán toàn bộ
+            ↳ Thái Phạm · 15/08
+   2  BINANCE:BTCUSDT.P        BTC          CẢNH GIÁC
+            » GIỮ — đang lỗ 2.000/coin
+            vào Long từ 65.000 · mục tiêu Hồi kỹ thuật quanh đầu tháng 9 · CẮT
+            60.800 — chưa chạm
+            ↳ Thái Phạm · 15/08
+   3  BINANCE:DELLUSDT.P       DELL         SHORT/BÁN
+            » GIỮ SHORT — "hơi bướng và liên tục ngáo ngáo"
+            vào Đang kẹp phần 1/2 còn lại · mục tiêu Cách đánh giống Intel dạo
+            nào · CẮT 538–540
+            ↳ Thái Phạm · 13/08
+   4  BINANCE:XAGUSDT.P        XAG/USD      CHỜ
+            » Hồi theo vàng
+            vào Đã sập 60% từ đỉnh 120 · mục tiêu Vùng 70 · CẮT Beta cao hơn
+            vàng 1,5–2 lần
+            ↳ Thái Phạm · 08/08
+   5  BINANCE:SPYUSDT.P *ETF   S&P 500 · US SHORT/BÁN
+            » SHORT 2/3 vị thế — ưu tiên
+            vào Đỉnh 7.816, tăng không có volume · mục tiêu Điều chỉnh 10–12%
+            là bình thường
+            ↳ Thái Phạm · 15/08
+   6  BINANCE:XAUUSDT.P        XAU/USD      MUA/GIỮ
+            » ĐÃ CHỐT 1/2 — giữ phần còn lại dài hạn
+            vào Long từ 4.080 · mục tiêu Tiến về 4.600, khó tại 4.700–4.800
+            ↳ Thái Phạm · 15/08
+   7  BINANCE:AAPLUSDT.P       AAPL         SHORT/BÁN
+            » HOLD tới 290
+            vào Đã mua 330 · mục tiêu 290
+            ↳ Thái Phạm · 15/08
+   8  BINANCE:SAMSUNGUSDT.P    005930       SHORT/BÁN
+            » Hồi kỹ thuật rồi gãy tiếp
+            mục tiêu Kéo lên ~300.500 KRW
+            ↳ Thái Phạm · 15/08
+   9  BINANCE:EWJUSDT.P *ETF   NI225        SHORT/BÁN
+            » SHORT NHẸ — vào 1/3
+            vào Vùng hiện tại, vùng đỉnh vào thêm 2/3 · mục tiêu Sẽ đi tích
+            lũy đi ngang
+            ↳ Thái Phạm · 15/08
+  10  BINANCE:PANWUSDT.P       PANW         SHORT/BÁN
+            » GIỮ SHORT — vào thêm ít
+            vào Vùng hiện tại · CẮT Phần vào thêm cắt lỗ ở đỉnh cũ
+            ↳ Thái Phạm · 15/08
+  11  BINANCE:CRWDUSDT.P       CRWD         SHORT/BÁN
+            » GIỮ SHORT — vào thêm ít
+            vào Vùng hiện tại · mục tiêu Bảo mật truyền thống thua AI · CẮT
+            Phần vào thêm cắt lỗ ở đỉnh cũ
+            ↳ Thái Phạm · 15/08
+  12  BINANCE:AMDUSDT.P        AMD          SHORT/BÁN
+            » SHORT khi lên
+            vào Quanh 575; có hàng thì mua thêm 585 · mục tiêu Vùng tắc nghẽn,
+            khó long khó short
+            ↳ Thái Phạm · 15/08
+  13  BINANCE:CLUSDT.P         WTI          MUA/GIỮ
+            » Vùng cao lâu — hết sóng
+            mục tiêu Khó về 60–65 đô · CẮT Chỉ hạ khi Dân chủ nắm hai viện
+            ↳ Thái Phạm · 15/08
+  14  BINANCE:INTCUSDT.P       INTC         SHORT/BÁN
+            » Giữ lệnh short
+            vào Đang có vị thế · mục tiêu Còn điều chỉnh tiếp
+            ↳ Thái Phạm · 01/08
+  15  BINANCE:MUUSDT.P         MU           SHORT/BÁN
+            » Giữ lệnh short
+            vào Đang có vị thế · mục tiêu Còn điều chỉnh tiếp
+            ↳ Thái Phạm · 01/08
+  16  BINANCE:MRVLUSDT.P       MRVL         SHORT/BÁN
+            » Giữ lệnh short
+            vào Đang có vị thế · mục tiêu Còn điều chỉnh tiếp
+            ↳ Thái Phạm · 01/08
+  17  BINANCE:NVDAUSDT.P       NVDA         SHORT/BÁN
+            » SHORT — thêm ở 241
+            vào 241 · mục tiêu Khoảng 205
+            ↳ Thái Phạm · 15/08
+  18  BINANCE:WMTUSDT.P        WMT          SHORT/BÁN
+            » Đứng ngoài
+            vào Đang nằm đáy · mục tiêu Bán lẻ toàn cầu đau khổ
+            ↳ Thái Phạm · 26/07
+  19  BINANCE:COSTUSDT.P       COST         SHORT/BÁN
+            » Đứng ngoài
+            vào Đang nằm đáy · mục tiêu Bán lẻ toàn cầu đau khổ
+            ↳ Thái Phạm · 26/07
+  20  BINANCE:TSLAUSDT.P       TSLA         SHORT/BÁN
+            » Short
+            vào AMD 575; Google thủng hỗ trợ · mục tiêu Google dòng tiền âm;
+            Tesla -7%
+            ↳ Thái Phạm · 23/07
+  21  BINANCE:QQQUSDT.P *ETF   NASDAQ       SHORT/BÁN
+            » SHORT
+            vào Sau nhịp hồi kỹ thuật 1–2 phiên · mục tiêu Theo đà gãy chung ·
+            CẮT Vị thế nhỏ, không margin
+            ↳ Thái Phạm · 18/07
+  22  BINANCE:AMZNUSDT.P       AMZN         SHORT/BÁN
+            » Chờ short
+            vào 285–290 · mục tiêu "Kéo thêm khoảng 15 giá nữa" · CẮT Phiên
+            tăng 15% là đánh đỡ chỉ số
+            ↳ Thái Phạm · 01/08
+  23  BINANCE:GOOGLUSDT.P      GOOGL        CHỜ
+            » CHỐT SHORT — ngưng short
+            vào Short từ 377 · mục tiêu Mua lại sau bầu cử nếu Cộng hòa thắng
+            ↳ Thái Phạm · 15/08
+  24  BINANCE:NFLXUSDT.P       NFLX         CHỜ
+            » Đã chốt lời — mua lại nếu về 74
+            vào Kẹp 77 lên 108 đã chốt · mục tiêu Vùng này có thể hai đáy
+            ↳ Thái Phạm · 15/08
+  25  BINANCE:SNDKUSDT.P       SanDisk      MUA/GIỮ
+            » Đã chốt
+            mục tiêu Ăn 5x% từ vùng đỉnh · CẮT Mã lãi đậm nhất đợt vừa rồi
+            ↳ Thái Phạm · 01/08
+  26  BINANCE:KOUSDT.P         KO           CHỜ
+            » Chốt lời
+            vào Chốt hết
+            ↳ Thái Phạm · 26/07
+
+  * = ETF thay thế, không phải mã gốc. Giá sẽ lệch so với chỉ số thật.
+
+  ── Dán vào TradingView làm watchlist margin riêng ──
+  BINANCE:SPCXUSDT.P,BINANCE:BTCUSDT.P,BINANCE:DELLUSDT.P,BINANCE:XAGUSDT.P,BINANCE:SPYUSDT.P,BINANCE:XAUUSDT.P,BINANCE:AAPLUSDT.P,BINANCE:SAMSUNGUSDT.P,BINANCE:EWJUSDT.P,BINANCE:PANWUSDT.P,BINANCE:CRWDUSDT.P,BINANCE:AMDUSDT.P,BINANCE:CLUSDT.P,BINANCE:INTCUSDT.P,BINANCE:MUUSDT.P,BINANCE:MRVLUSDT.P,BINANCE:NVDAUSDT.P,BINANCE:WMTUSDT.P,BINANCE:COSTUSDT.P,BINANCE:TSLAUSDT.P,BINANCE:QQQUSDT.P,BINANCE:AMZNUSDT.P,BINANCE:GOOGLUSDT.P,BINANCE:NFLXUSDT.P,BINANCE:SNDKUSDT.P,BINANCE:KOUSDT.P
+
+  ── Mua được cả SPOT trên Binance (14 mã) ──
+  BINANCE:SPCXBUSDT,BINANCE:INTCBUSDT,BINANCE:MUBUSDT,BINANCE:SPYBUSDT,BINANCE:QQQBUSDT,BINANCE:MRVLBUSDT,BINANCE:AMDBUSDT,BINANCE:NVDABUSDT,BINANCE:GOOGLBUSDT,BINANCE:PAXGUSDT,BINANCE:BTCUSDT,BINANCE:AMZNBUSDT,BINANCE:SNDKBUSDT,BINANCE:TSLABUSDT
+
+  ── Mã quốc tế KHÔNG có trên Binance (14 mã) — phải dùng sàn gốc ──
+  FTNT (NASDAQ:FTNT) · RTX · LMT (NYSE:RTX) · ADS (XETR:ADS) · BAC (NYSE:BAC) · ANET (NYSE:ANET) · FTSE 100 (TVC:UKX) · USD/JPY (FX:USDJPY) · AEON (TSE:8267) · BHP (ASX:BHP) · WDS (ASX:WDS) · NAB (ASX:NAB) · ANZ (ASX:ANZ) · WTC (ASX:WTC) · CSL (ASX:CSL)
+
+
+──────────────────────────────────────────────────────────────────────────────
+PHẦN 3 — BẢNG GỌN: MỘT DÒNG MỘT MÃ
 ──────────────────────────────────────────────────────────────────────────────
 Cột: MÃ | trạng thái | mốc mới nhất | chuyên gia · ngày
 
@@ -250,7 +388,7 @@ Cột: MÃ | trạng thái | mốc mới nhất | chuyên gia · ngày
 
 
 ──────────────────────────────────────────────────────────────────────────────
-PHẦN 3 — CHI TIẾT TỪNG MÃ: MỐC RA / MỐC VÀO
+PHẦN 4 — CHI TIẾT TỪNG MÃ: MỐC RA / MỐC VÀO
 ──────────────────────────────────────────────────────────────────────────────
 
 
@@ -1649,7 +1787,7 @@ PHẦN 3 — CHI TIẾT TỪNG MÃ: MỐC RA / MỐC VÀO
   ├─ SanDisk  —  SanDisk
   │  Trạng thái : MUA/GIỮ · ĐÃ CHỐT — LÃI ĐẬM NHẤT ĐỢT
   │  Giỏ        : ngắn hạn · margin/short
-  │  TradingView: — không có symbol
+  │  TradingView: BINANCE:SNDKUSDT.P   (hợp đồng vĩnh cửu Binance)
   │  Tóm tắt   : Mã lãi đậm nhất đợt short vừa rồi: có thời điểm ăn hơn 50% từ vùng
   │              đỉnh.
   │  ── Phiếu lệnh (mới nhất trước) ──
@@ -1668,7 +1806,7 @@ PHẦN 3 — CHI TIẾT TỪNG MÃ: MỐC RA / MỐC VÀO
   ├─ WMT  —  Walmart
   │  Trạng thái : SHORT/BÁN · ĐỨNG NGOÀI
   │  Giỏ        : tránh · margin/short
-  │  TradingView: NYSE:WMT
+  │  TradingView: BINANCE:WMTUSDT.P   (hợp đồng vĩnh cửu Binance)
   │  Tóm tắt   : Thái Phạm (26/07): đứng ngoài nhóm bán lẻ Mỹ.
   │  ── Phiếu lệnh (mới nhất trước) ──
   │  • 26/07  Thái Phạm  →  Đứng ngoài
@@ -1680,7 +1818,7 @@ PHẦN 3 — CHI TIẾT TỪNG MÃ: MỐC RA / MỐC VÀO
   ├─ COST  —  Costco
   │  Trạng thái : SHORT/BÁN · ĐỨNG NGOÀI
   │  Giỏ        : tránh · margin/short
-  │  TradingView: NASDAQ:COST
+  │  TradingView: BINANCE:COSTUSDT.P   (hợp đồng vĩnh cửu Binance)
   │  Tóm tắt   : Thái Phạm (26/07): đứng ngoài nhóm bán lẻ Mỹ.
   │  ── Phiếu lệnh (mới nhất trước) ──
   │  • 26/07  Thái Phạm  →  Đứng ngoài
@@ -1797,7 +1935,7 @@ PHẦN 3 — CHI TIẾT TỪNG MÃ: MỐC RA / MỐC VÀO
   ├─ AMZN  —  Amazon
   │  Trạng thái : SHORT/BÁN · CHỜ SHORT 285–290
   │  Giỏ        : ngắn hạn · margin/short
-  │  TradingView: NASDAQ:AMZN
+  │  TradingView: BINANCE:AMZNUSDT.P   (hợp đồng vĩnh cửu Binance)
   │  Tóm tắt   : Thái Phạm (Tập 42): đợi kéo lên 285–290 rồi short — phiên tăng 15%
   │              là đánh đỡ chỉ số.
   │  ── Phiếu lệnh (mới nhất trước) ──
@@ -1842,7 +1980,7 @@ PHẦN 3 — CHI TIẾT TỪNG MÃ: MỐC RA / MỐC VÀO
   ├─ TSLA  —  Tesla
   │  Trạng thái : SHORT/BÁN · SHORT
   │  Giỏ        : ngắn hạn · margin/short
-  │  TradingView: NASDAQ:TSLA
+  │  TradingView: BINANCE:TSLAUSDT.P   (hợp đồng vĩnh cửu Binance)
   │  Tóm tắt   : Thái Phạm (Tập 39, 23/07) nêu short. Bản tin 24/07: TSLA -14,5%, EPS
   │              33 cent so với kỳ vọng 51 cent.
   │  ── Phiếu lệnh (mới nhất trước) ──
@@ -2057,7 +2195,7 @@ PHẦN 3 — CHI TIẾT TỪNG MÃ: MỐC RA / MỐC VÀO
   ├─ KO  —  Coca-Cola
   │  Trạng thái : CHỜ · ĐÃ CHỐT LỜI
   │  Giỏ        : ngắn hạn · margin/short
-  │  TradingView: NYSE:KO
+  │  TradingView: BINANCE:KOUSDT.P   (hợp đồng vĩnh cửu Binance)
   │  Tóm tắt   : Thái Phạm (Tập 40, 26/07): đã chốt lời nhóm phòng thủ.
   │  ── Phiếu lệnh (mới nhất trước) ──
   │  • 26/07  Thái Phạm  →  Chốt lời
@@ -2244,7 +2382,7 @@ PHẦN 3 — CHI TIẾT TỪNG MÃ: MỐC RA / MỐC VÀO
   ├─ BTC  —  Bitcoin
   │  Trạng thái : CẢNH GIÁC · ĐỨNG NGOÀI — BANANA 3 ĐÍCH 71–72K
   │  Giỏ        : tránh · margin/short
-  │  TradingView: BINANCE:BTCUSDT   (spot Binance)
+  │  TradingView: BINANCE:BTCUSDT.P   (hợp đồng vĩnh cửu Binance)
   │  Tóm tắt   : BTC 65.000; nhịp tăng chỉ do đóng lệnh short chứ không phải tiền tổ
   │              chức (T6 rút ròng 4,5 tỷ đô) — xác suất về 40–41k rất cao. 30/07:
   │              "2026 không phải là năm của Bitcoin" — banana lần ba đang hình
@@ -2273,7 +2411,7 @@ PHẦN 3 — CHI TIẾT TỪNG MÃ: MỐC RA / MỐC VÀO
 
 
 ──────────────────────────────────────────────────────────────────────────────
-PHẦN 4 — LƯU Ý KỸ THUẬT KHI DÙNG TRADINGVIEW
+PHẦN 5 — LƯU Ý KỸ THUẬT KHI DÙNG TRADINGVIEW
 ──────────────────────────────────────────────────────────────────────────────
 
 1. MÃ VIỆT NAM: bản TradingView miễn phí KHÔNG có bản quyền HOSE/UPCOM, sẽ báo

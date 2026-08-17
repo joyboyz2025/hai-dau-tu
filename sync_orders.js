@@ -46,7 +46,10 @@ const findTk = name => {
 const statusOf = dir => {
   const d = strip(dir);
   if (/^(cho|doi)/.test(d) || /cho (mua|short|kich hoat|hoi|bat day|gia)/.test(d)) return 'waiting';
-  if (/(da chot|chot loi|chot 1|da dong|hoan von)/.test(d)) return 'done';
+  // CHỐT MỘT PHẦN VẪN LÀ LỆNH MỞ. "ĐÃ CHỐT 1/2 — giữ phần còn lại" từng bị suy
+  // thành 'done', khiến vị thế vàng đang mở biến mất khỏi ô đếm "đang chạy".
+  const chotMotPhan = /(1 2|mot nua|con lai|phan con|giu phan|giu lai|1 3|2 3)/.test(d);
+  if (/(da chot|chot loi|chot 1|da dong|hoan von)/.test(d) && !chotMotPhan) return 'done';
   return 'active';
 };
 

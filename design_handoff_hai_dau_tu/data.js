@@ -6682,7 +6682,7 @@ window.HDT_DATA = {
           "entry": "Chưa có điểm vào",
           "target": "Chờ tín hiệu xác nhận đáy",
           "stop": "—",
-          "status": "waiting",
+          "status": "active",
           "date": "13/07",
           "note": "Rút chân ok nhưng chưa đủ tín hiệu tăng trong tuần."
         }
@@ -6822,7 +6822,7 @@ window.HDT_DATA = {
           "entry": "Chỉ khi đóng > 26 (tối thiểu 25.5)",
           "target": "Xác nhận đảo chiều mới vào thêm",
           "stop": "Không đạt → đợi sang tuần",
-          "status": "waiting",
+          "status": "active",
           "date": "16/07",
           "note": "Đang nắm một phần từ trước, kiên nhẫn."
         },
@@ -7152,7 +7152,7 @@ window.HDT_DATA = {
           "entry": "—",
           "target": "Chờ hết thủng đáy",
           "stop": "—",
-          "status": "waiting",
+          "status": "active",
           "date": "13/07",
           "note": "Dẫn chứng cho trạng thái thị trường, chưa phải khuyến nghị."
         }
@@ -8253,7 +8253,7 @@ window.HDT_DATA = {
           "entry": "Vùng 60–62",
           "target": "Tích lũy dài hạn",
           "stop": "—",
-          "status": "waiting",
+          "status": "active",
           "date": "01/08",
           "note": "Tập 42: trong nhóm cổ phiếu top đầu, GAS về 60–62 thì mua tích lũy."
         },
@@ -8316,7 +8316,7 @@ window.HDT_DATA = {
           "entry": "Ai có hàng thì chốt",
           "target": "Thoát trước khi gãy",
           "stop": "Đang sườn trái, chưa phân phối xong",
-          "status": "active",
+          "status": "waiting",
           "date": "26/07",
           "note": "Không mua mới."
         }
@@ -8717,7 +8717,7 @@ window.HDT_DATA = {
           "entry": "Sau BCTC 30/07",
           "target": "Theo phản ứng guidance Q3",
           "stop": "—",
-          "status": "waiting",
+          "status": "active",
           "date": "18/07",
           "note": "Để dành sức mua cho sau tin."
         }
@@ -8954,7 +8954,7 @@ window.HDT_DATA = {
           "entry": "Hồi lên ~115",
           "target": "~77",
           "stop": "—",
-          "status": "waiting",
+          "status": "active",
           "date": "18/07",
           "note": "Đợi nhịp hồi kỹ thuật."
         }
@@ -9392,7 +9392,7 @@ window.HDT_DATA = {
           "entry": "Sau nhịp hồi kỹ thuật 1–2 phiên",
           "target": "Theo đà gãy chung",
           "stop": "Vị thế nhỏ, không margin",
-          "status": "waiting",
+          "status": "active",
           "date": "18/07",
           "note": "Canh sát — nhịp hồi có thể rất ngắn hoặc không đến."
         }
@@ -9512,7 +9512,7 @@ window.HDT_DATA = {
           "entry": "Canh nhịp hồi 1–2 hôm",
           "target": "Test 58.700",
           "stop": "—",
-          "status": "waiting",
+          "status": "active",
           "date": "18/07",
           "note": "Cùng cụm short Đông Á với Samsung/Kospi."
         }
@@ -9976,7 +9976,7 @@ window.HDT_DATA = {
           "entry": "Nhịp hồi kỹ thuật",
           "target": "Gãy tiếp theo nhóm semis",
           "stop": "—",
-          "status": "waiting",
+          "status": "active",
           "date": "18/07",
           "note": "Không phải kèo chính — kèo chính là Intel/MU."
         }
@@ -10346,7 +10346,7 @@ window.HDT_DATA = {
           "entry": "Test lại đầu tuần",
           "target": "Quay về đỉnh cũ",
           "stop": "Phụ thuộc tin chiến sự",
-          "status": "waiting",
+          "status": "active",
           "date": "26/07",
           "note": "Nhóm hưởng lợi nếu Mỹ tấn công lớn."
         }
@@ -10447,7 +10447,7 @@ window.HDT_DATA = {
           "entry": "Long từ 4.080",
           "target": "Tiến về 4.600, khó tại 4.700–4.800",
           "stop": "—",
-          "status": "done",
+          "status": "active",
           "date": "15/08",
           "note": "Từ Tập 45 · Tuần 33 (15/08)."
         },
@@ -10568,7 +10568,7 @@ window.HDT_DATA = {
           "entry": "3.700, cực đoan 3.600",
           "target": "Sóng hồi sau khi tạo đáy",
           "stop": "—",
-          "status": "waiting",
+          "status": "active",
           "date": "18/07",
           "note": "\"Sẽ mua bắt đáy tại vùng đó.\""
         },
@@ -10579,7 +10579,7 @@ window.HDT_DATA = {
           "entry": "Long từ ~4.001 (Tập 37)",
           "target": "Chốt ~4.040",
           "stop": "3.930",
-          "status": "active",
+          "status": "waiting",
           "date": "18/07",
           "note": "Hồi kỹ thuật khó về 4.100."
         },
@@ -10590,7 +10590,7 @@ window.HDT_DATA = {
           "entry": "Khi chênh ≤ 10–12tr/lượng",
           "target": "Tích sản dài hạn (~2% tài sản)",
           "stop": "—",
-          "status": "waiting",
+          "status": "active",
           "date": "18/07",
           "note": "Hiện chênh 19–20tr — đứng ngoài; chỉ thương hiệu 15–20 năm."
         }
@@ -10867,7 +10867,7 @@ window.HDT_DATA = {
           "entry": "Fake pump 69–70k",
           "target": "Theo cấu trúc banana gãy",
           "stop": "—",
-          "status": "waiting",
+          "status": "active",
           "date": "18/07",
           "note": "Chỉ vào nếu có cú bơm ảo theo tin Iran."
         },
@@ -10878,7 +10878,7 @@ window.HDT_DATA = {
           "entry": "~50.000 (test đỉnh 2021)",
           "target": "Chu kỳ mới",
           "stop": "—",
-          "status": "waiting",
+          "status": "active",
           "date": "18/07",
           "note": "Dưới mốc này mới giải ngân thật."
         },
@@ -10889,7 +10889,7 @@ window.HDT_DATA = {
           "entry": "70–71k (Tập 37)",
           "target": "Chốt 62–64k",
           "stop": "—",
-          "status": "done",
+          "status": "active",
           "date": "11/07",
           "note": "Đã diễn ra — BTC sập về ~63k, scorecard: ĐÚNG."
         }
@@ -11930,7 +11930,7 @@ window.HDT_DATA = {
           "entry": "—",
           "target": "Ăn 5x% từ vùng đỉnh",
           "stop": "Mã lãi đậm nhất đợt vừa rồi",
-          "status": "active",
+          "status": "done",
           "date": "01/08",
           "note": "Từ Tập 42 · Tuần 31 (01/08)."
         },
@@ -13732,9 +13732,9 @@ window.HDT_DATA = {
     }
   },
   "binance": {
-    "updated": "27/07/2026",
-    "totalSpot": 46,
-    "totalFut": 144,
+    "updated": "17/08/2026",
+    "totalSpot": 14,
+    "totalFut": 26,
     "map": {
       "aapl": {
         "spot": [],
@@ -13900,7 +13900,59 @@ window.HDT_DATA = {
         "spot": [
           "BTCUSDT"
         ],
-        "fut": [],
+        "fut": [
+          "BTCUSDT"
+        ],
+        "kind": "exact",
+        "note": "Hợp đồng vĩnh cửu gốc của Binance"
+      },
+      "sndk": {
+        "spot": [
+          "SNDKBUSDT"
+        ],
+        "fut": [
+          "SNDKUSDT"
+        ],
+        "kind": "exact",
+        "note": "Binance là nơi DUY NHẤT xem được chart SanDisk trong sổ này"
+      },
+      "amzn": {
+        "spot": [
+          "AMZNBUSDT"
+        ],
+        "fut": [
+          "AMZNUSDT"
+        ],
+        "kind": "exact"
+      },
+      "tsla": {
+        "spot": [
+          "TSLABUSDT"
+        ],
+        "fut": [
+          "TSLAUSDT"
+        ],
+        "kind": "exact"
+      },
+      "ko": {
+        "spot": [],
+        "fut": [
+          "KOUSDT"
+        ],
+        "kind": "exact"
+      },
+      "wmt": {
+        "spot": [],
+        "fut": [
+          "WMTUSDT"
+        ],
+        "kind": "exact"
+      },
+      "cost": {
+        "spot": [],
+        "fut": [
+          "COSTUSDT"
+        ],
         "kind": "exact"
       }
     }

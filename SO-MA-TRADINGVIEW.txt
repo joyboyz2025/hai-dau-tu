@@ -1,0 +1,2291 @@
+SỔ MÃ HẢI ĐẦU TƯ — 17/08/2026 · Tuần 34
+Xuất lúc 11:00:34 17/8/2026 · 103 mã · 365 phiếu lệnh
+
+CẢNH BÁO: đây là tổng hợp nhận định của 5 chuyên gia YouTube, KHÔNG phải khuyến nghị đầu tư.
+Mọi mốc giá đều trích nguyên văn từ transcript. Tự chịu trách nhiệm cho quyết định của mình.
+
+──────────────────────────────────────────────────────────────────────────────
+PHẦN 1 — DANH SÁCH SYMBOL ĐỂ NHẬP VÀO TRADINGVIEW
+──────────────────────────────────────────────────────────────────────────────
+TradingView: Watchlist → dấu ... → Import list → dán từng khối bên dưới.
+
+### CHỨNG KHOÁN VIỆT NAM (62 mã)
+HOSE:DCM,HOSE:DPM,HOSE:BID,HOSE:VNM,HOSE:SCS,HOSE:TCX,HOSE:TCB,HOSE:SSI,HOSE:VCI,HOSE:VIX,HOSE:HPG,HOSE:PNJ,HOSE:FPT,HOSE:PC1,HOSE:DGC,HOSE:HDB,HOSE:MWG,HOSE:VCB,HOSE:CTG,HOSE:GAS,HOSE:MSB,HOSE:DBC,HOSE:IGC,HOSE:BCM,HOSE:VIC,HOSE:VPB,HOSE:MBB,HOSE:NLG,HOSE:DXG,HOSE:KDH,HOSE:ACB,HOSE:LPB,HOSE:STB,HOSE:DIG,HOSE:BSR,UPCOM:MSR,HOSE:NKG,HOSE:HSG,HOSE:VN30,HOSE:BVH,HOSE:CII,HOSE:FRT,HOSE:HAG,HOSE:OCB,HOSE:POW,HOSE:SHB,HNX:SHS,HNX:TNG,HOSE:GEX,HOSE:VSC,HOSE:EIB,HOSE:DGW,HOSE:ACV,HOSE:VCG,HOSE:GMD,HOSE:HCM,HOSE:MBS,HOSE:KSB,HOSE:PLC,HOSE:GVR,HOSE:NVL,HOSE:VIB
+
+### QUỐC TẾ (MỸ & CHÂU ÂU) (32 mã)
+BINANCE:AAPLUSDT.P,BINANCE:SPCXUSDT.P,BINANCE:INTCUSDT.P,BINANCE:MUUSDT.P,BINANCE:SPYUSDT.P,BINANCE:QQQUSDT.P,BINANCE:MRVLUSDT.P,BINANCE:PANWUSDT.P,NASDAQ:FTNT,BINANCE:CRWDUSDT.P,BINANCE:AMDUSDT.P,BINANCE:NVDAUSDT.P,BINANCE:GOOGLUSDT.P,BINANCE:NFLXUSDT.P,BINANCE:DELLUSDT.P,NYSE:RTX,XETR:ADS,NASDAQ:AMZN,NYSE:BAC,NYSE:ANET,NASDAQ:TSLA,NYSE:KO,NYSE:WMT,NASDAQ:COST,TVC:UKX,FX:USDJPY,ASX:BHP,ASX:WDS,ASX:NAB,ASX:ANZ,ASX:WTC,ASX:CSL
+
+### HÀN QUỐC (1 mã)
+BINANCE:SAMSUNGUSDT.P
+
+### NHẬT BẢN (2 mã)
+BINANCE:EWJUSDT.P,TSE:8267
+
+### HÀNG HÓA & CRYPTO (4 mã)
+BINANCE:XAUUSDT.P,BINANCE:CLUSDT.P,BINANCE:BTCUSDT,BINANCE:XAGUSDT.P
+
+### KHÔNG CÓ SYMBOL TRADINGVIEW (2 mã) — theo dõi thủ công
+BVBank · SanDisk
+
+──────────────────────────────────────────────────────────────────────────────
+PHẦN 2 — BẢNG GỌN: MỘT DÒNG MỘT MÃ
+──────────────────────────────────────────────────────────────────────────────
+Cột: MÃ | trạng thái | mốc mới nhất | chuyên gia · ngày
+
+### CHỨNG KHOÁN VIỆT NAM
+  DCM           MUA/GIỮ    Làm ăn tốt hơn DPM
+                           ↳ Thái Phạm 15/08
+  DPM           MUA/GIỮ    
+                           ↳ Thái Phạm 15/08
+  BID           MUA/GIỮ    Từ phiên 07/08
+                           ↳ Chứng khoán 5 phút 10/08
+  BVBank        MUA/GIỮ    Vùng hiện tại  /  Tin đồn LPBank sáp nhập — nếu đúng là tin tốt  /  Mới là tin đồn
+                           ↳ Thái Phạm 05/08
+  VNM           MUA/GIỮ    Đã mua từ vùng thấp, lời ~5%  /  Thời điểm đẹp nhất để nhà nước thoái
+                           ↳ Thái Phạm 08/08
+  SCS           MUA/GIỮ    Trung Đông ổn định trở lại
+                           ↳ Thái Phạm 08/08
+  TCX           MUA/GIỮ    
+                           ↳ Thái Phạm 08/08
+  TCB           MUA/GIỮ    
+                           ↳ Thái Phạm 15/08
+  SSI           MUA/GIỮ    Nhóm chứng khoán chỉ ~15% danh mục
+                           ↳ Thái Phạm 08/08
+  VCI           CẢNH GIÁC  "Hồi lên rồi nó sẽ tèo"
+                           ↳ Thái Phạm 01/08
+  VIX           CHỜ        Lên 15.8 thì bán
+                           ↳ Thái Phạm 05/08
+  HPG           CẢNH GIÁC  Kỳ vọng lợi nhuận 20–30% (hạ từ 50%)  /  Cả ngành thép đang xấu
+                           ↳ Quang Dũng 06/08
+  PNJ           CẢNH GIÁC  Không có cơ sở tăng giá dài hạn
+                           ↳ Thái Phạm 15/08
+  FPT           CẢNH GIÁC  Không có cơ sở tăng giá dài hạn
+                           ↳ Thái Phạm 15/08
+  PC1           CHỜ        Vùng 17–18  /  Thanh khoản cạn kiệt
+                           ↳ Thái Phạm 01/08
+  DGC           SHORT/BÁN  Không đụng  /  PNJ về <9; HPG về 21.85
+                           ↳ Thái Phạm 23/07
+  HDB           MUA/GIỮ    Vùng hiện tại
+                           ↳ Thái Phạm 05/08
+  MWG           TRÁNH      Đang 72–73, kẹp giữa MA20 và cản 75  /  Lên 75 chẳng đáng bao nhiêu
+                           ↳ Chứng khoán 5 phút 03/08
+  VCB           MUA/GIỮ    Định giá thấp hơn nhiều so với chính nó 6 năm
+                           ↳ Quang Dũng 15/08
+  CTG           MUA/GIỮ    
+                           ↳ Thái Phạm 15/08
+  GAS           MUA/GIỮ    Vùng 60–62  /  Tích lũy dài hạn
+                           ↳ Thái Phạm 01/08
+  MSB           SHORT/BÁN  Ai có hàng thì chốt  /  Thoát trước khi gãy  /  Đang sườn trái, chưa phân phối xong
+                           ↳ Thái Phạm 26/07
+  DBC           TRÁNH      Giảm nhưng không sàn như PNJ  /  Không mua trên đà giảm
+                           ↳ Chứng khoán 5 phút 31/07
+  IGC           TRÁNH      Đã vào 1–2 lệnh  /  Chờ nhịp chững để cân nhắc đảo hàng  /  Chưa xử lý gì lúc này
+                           ↳ Chứng khoán 5 phút 27/07
+  BCM           TRÁNH      Đừng đụng vào
+                           ↳ Thái Phạm 01/08
+  VIC · VHM     CHỜ        Chạm 56–57  /  Ngắn hạn có thể chỉnh về 60, thậm chí 56  /  Là hàn thử biểu của cả index
+                           ↳ Thái Phạm 15/08
+  VPB           CẢNH GIÁC  HPG bị Vin Steel cạnh tranh  /  LPB là "cổ phiếu joker"
+                           ↳ Thái Phạm 30/07
+  MBB           MUA/GIỮ    
+                           ↳ Thái Phạm 15/08
+  NLG           MUA/GIỮ    Tiền mặt gần 8.000 tỷ, nợ giảm còn 5.400 tỷ  /  Tổng dư nợ toàn ngành BĐS trên 500.00…
+                           ↳ Quang Dũng 10/06
+  DXG           CẢNH GIÁC  Gần trần nhưng vẫn dưới MA20  /  Thanh khoản không tăng
+                           ↳ Chứng khoán 5 phút 03/08
+  KDH           CHỜ        Chủ tịch đăng ký mua ≠ đáy
+                           ↳ Chứng khoán 5 phút 28/07
+  ACB           CẢNH GIÁC  Trích lập ~11%
+                           ↳ Quang Dũng 15/08
+  LPB           TRÁNH      "Dễ dính chưởng"
+                           ↳ Thái Phạm 15/08
+  STB           TRÁNH      "Dễ dính chưởng"
+                           ↳ Thái Phạm 15/08
+  DIG           TRÁNH      Ví dụ điển hình rủi ro call margin của doanh chủ
+                           ↳ Thái Phạm 31/07
+  BSR           TRÁNH      Đừng đụng vào
+                           ↳ Thái Phạm 01/08
+  MSR           CHỜ        Phải về vùng 24  /  Mua vùng này là bị dìu
+                           ↳ Thái Phạm 01/08
+  NKG           CẢNH GIÁC  Tỉ suất 2,5 năm chỉ 7% và 26% so với HPG 92%
+                           ↳ Quang Dũng 01/08
+  HSG           CẢNH GIÁC  Tỉ suất 2,5 năm chỉ 7% và 26% so với HPG 92%
+                           ↳ Quang Dũng 01/08
+  VN30          CHỜ        Không nêu mốc giá  /  Bổ sung 1–2 quỹ mở phủ ngoài VN30  /  Không nêu
+                           ↳ LCG Huy 02/08
+  BVH           MUA/GIỮ    Từ phiên 07/08
+                           ↳ Chứng khoán 5 phút 10/08
+  CII           CHỜ        Đang cầm ít  /  Ra vùng Index 182x
+                           ↳ Thái Phạm 04/08
+  FRT           TRÁNH      Đã ba cây trần  /  Điểm mua không an toàn là không vào
+                           ↳ Chứng khoán 5 phút 03/08
+  HAG           TRÁNH      Giá 14 không hấp dẫn  /  Thanh khoản không có
+                           ↳ Chứng khoán 5 phút 03/08
+  OCB           CHỜ        Đợi vượt MA20  /  P/B 0,8 nhưng kỳ vọng tăng trưởng khó
+                           ↳ Chứng khoán 5 phút 03/08
+  POW           MUA/GIỮ    Vùng hiện tại
+                           ↳ Thái Phạm 04/08
+  SHB           CHỜ        Chờ tín hiệu  /  Không mua tích lũy để nắm giữ
+                           ↳ Chứng khoán 5 phút 03/08
+  SHS           MUA/GIỮ    Vùng 15–16  /  Tích cực nhất nhóm chứng khoán tự doanh
+                           ↳ Chứng khoán 5 phút 03/08
+  TNG           CHỜ        Vùng 17
+                           ↳ Chứng khoán 5 phút 03/08
+  GEX           MUA/GIỮ    Điểm mua đúng là vùng vượt 22 tuần trước  /  Đang lãi ~12%  /  Đã +26% từ đáy, mua gi…
+                           ↳ Chứng khoán 5 phút 04/08
+  VSC           CHỜ        Vùng 14 là tích lũy lớn nhất 2025  /  17  /  Ngon hơn nếu tạo hai đáy
+                           ↳ Chứng khoán 5 phút 04/08
+  EIB           MUA/GIỮ    Vùng hiện tại  /  Nhóm chủ sẽ kéo
+                           ↳ Thái Phạm 05/08
+  DGW           CẢNH GIÁC  Đã vượt hộp, hơi cao  /  "Kể cả nó có chạy mất thì cứ từ từ"
+                           ↳ Chứng khoán 5 phút 13/08
+  ACV           TRÁNH      Đang bị ốp tiến độ
+                           ↳ Chứng khoán 5 phút 04/08
+  VCG           MUA/GIỮ    Cuối năm đầu tư công thường mạnh
+                           ↳ Quang Dũng 06/08
+  GMD           CẢNH GIÁC  Đã vượt đỉnh rồi bị đẩy ngược  /  Vẫn còn kỳ vọng vượt đỉnh  /  "Cột đầu này đúng là …
+                           ↳ Chứng khoán 5 phút 10/08
+  HCM           TRÁNH      
+                           ↳ Thái Phạm 08/08
+  MBS           MUA/GIỮ    
+                           ↳ Thái Phạm 08/08
+  KSB           CHỜ        Phiên 12/08 có tiền vào  /  "Chả đi xa được với cái đồ thị đâu"  /  Thanh khoản rất b…
+                           ↳ Chứng khoán 5 phút 12/08
+  PLC           CHỜ        
+                           ↳ Chứng khoán 5 phút 12/08
+  GVR           MUA/GIỮ    Lấp gap vùng ~29,65
+                           ↳ Thái Phạm 15/08
+  NVL           CHỜ        Test lại 12,5–12,8  /  Lên cao thì bán  /  Không mua ngang lưng chừng
+                           ↳ Thái Phạm 15/08
+  VIB           MUA/GIỮ    
+                           ↳ Quang Dũng 15/08
+
+### QUỐC TẾ (MỸ & CHÂU ÂU)
+  AAPL          SHORT/BÁN  Đã mua 330  /  290
+                           ↳ Thái Phạm 15/08
+  SpaceX        SHORT/BÁN  Vùng hiện tại; short thêm ở 165  /  Về 80–90 từ giờ tới 2027  /  29/6/2027 Elon được …
+                           ↳ Thái Phạm 15/08
+  INTC          SHORT/BÁN  Đang có vị thế  /  Còn điều chỉnh tiếp
+                           ↳ Thái Phạm 01/08
+  MU            SHORT/BÁN  Đang có vị thế  /  Còn điều chỉnh tiếp
+                           ↳ Thái Phạm 01/08
+  S&P 500 · US30SHORT/BÁN  Đỉnh 7.816, tăng không có volume  /  Điều chỉnh 10–12% là bình thường
+                           ↳ Thái Phạm 15/08
+  NASDAQ        SHORT/BÁN  Sau nhịp hồi kỹ thuật 1–2 phiên  /  Theo đà gãy chung  /  Vị thế nhỏ, không margin
+                           ↳ Thái Phạm 18/07
+  MRVL          SHORT/BÁN  Đang có vị thế  /  Còn điều chỉnh tiếp
+                           ↳ Thái Phạm 01/08
+  PANW          SHORT/BÁN  Vùng hiện tại  /  Phần vào thêm cắt lỗ ở đỉnh cũ
+                           ↳ Thái Phạm 15/08
+  FTNT          SHORT/BÁN  Đỉnh cũ  /  Đập về 169  /  KQKD tốt nhưng không cứu được giá
+                           ↳ Thái Phạm 01/08
+  CRWD          SHORT/BÁN  Vùng hiện tại  /  Bảo mật truyền thống thua AI  /  Phần vào thêm cắt lỗ ở đỉnh cũ
+                           ↳ Thái Phạm 15/08
+  AMD           SHORT/BÁN  Quanh 575; có hàng thì mua thêm 585  /  Vùng tắc nghẽn, khó long khó short
+                           ↳ Thái Phạm 15/08
+  NVDA          SHORT/BÁN  241  /  Khoảng 205
+                           ↳ Thái Phạm 15/08
+  GOOGL         CHỜ        Short từ 377  /  Mua lại sau bầu cử nếu Cộng hòa thắng
+                           ↳ Thái Phạm 15/08
+  NFLX          CHỜ        Kẹp 77 lên 108 đã chốt  /  Vùng này có thể hai đáy
+                           ↳ Thái Phạm 15/08
+  DELL          SHORT/BÁN  Đang kẹp phần 1/2 còn lại  /  Cách đánh giống Intel dạo nào  /  538–540
+                           ↳ Thái Phạm 13/08
+  RTX · LMT     SHORT/BÁN  Vùng hiện tại
+                           ↳ Thái Phạm 01/08
+  ADS           CHỜ        Mua từ mùa World Cup  /  Kỳ vọng cũ ~190 — không đạt, chốt sớm
+                           ↳ Thái Phạm 18/07
+  AMZN          SHORT/BÁN  285–290  /  "Kéo thêm khoảng 15 giá nữa"  /  Phiên tăng 15% là đánh đỡ chỉ số
+                           ↳ Thái Phạm 01/08
+  BAC           SHORT/BÁN  Vùng hiện tại
+                           ↳ Thái Phạm 01/08
+  ANET          TRÁNH      "Rất ảo — tăng 8% xong bị đập xuống"
+                           ↳ Thái Phạm 01/08
+  SanDisk       MUA/GIỮ    Ăn 5x% từ vùng đỉnh  /  Mã lãi đậm nhất đợt vừa rồi
+                           ↳ Thái Phạm 01/08
+  TSLA          SHORT/BÁN  AMD 575; Google thủng hỗ trợ  /  Google dòng tiền âm; Tesla -7%
+                           ↳ Thái Phạm 23/07
+  KO            CHỜ        Chốt hết
+                           ↳ Thái Phạm 26/07
+  WMT           SHORT/BÁN  Đang nằm đáy  /  Bán lẻ toàn cầu đau khổ
+                           ↳ Thái Phạm 26/07
+  COST          SHORT/BÁN  Đang nằm đáy  /  Bán lẻ toàn cầu đau khổ
+                           ↳ Thái Phạm 26/07
+  FTSE 100      SHORT/BÁN  Đầu tuần  /  "Thế nào cũng dính"
+                           ↳ Thái Phạm 01/08
+  USD/JPY       MUA/GIỮ    147–150  /  Chênh lệch lãi suất Nhật 1% vs Mỹ 3,75–4%  /  Ngắn hạn trader thua định chế
+                           ↳ Thái Phạm 01/08
+  BHP           TRÁNH      "Gãy bất cứ lúc nào"
+                           ↳ Thái Phạm 01/08
+  WDS           MUA/GIỮ    "Lời rồi, chốt thôi"
+                           ↳ Thái Phạm 01/08
+  NAB           MUA/GIỮ    "Lời rồi, chốt thôi"
+                           ↳ Thái Phạm 01/08
+  ANZ           MUA/GIỮ    "Lời rồi, chốt thôi"
+                           ↳ Thái Phạm 01/08
+  WTC           CẢNH GIÁC  Nếu thích thì mua chút  /  Chờ hồi lên 50 thì bán  /  Còn có thể giảm tiếp
+                           ↳ Thái Phạm 01/08
+  CSL           CHỜ        
+                           ↳ Thái Phạm 01/08
+
+### HÀN QUỐC
+  005930        SHORT/BÁN  Kéo lên ~300.500 KRW
+                           ↳ Thái Phạm 15/08
+
+### NHẬT BẢN
+  NI225         SHORT/BÁN  Vùng hiện tại, vùng đỉnh vào thêm 2/3  /  Sẽ đi tích lũy đi ngang
+                           ↳ Thái Phạm 15/08
+  AEON          MUA/GIỮ    Tuần tới khi yên được can thiệp
+                           ↳ Thái Phạm 01/08
+
+### HÀNG HÓA & CRYPTO
+  XAU/USD       MUA/GIỮ    Long từ 4.080  /  Tiến về 4.600, khó tại 4.700–4.800
+                           ↳ Thái Phạm 15/08
+  WTI           MUA/GIỮ    Khó về 60–65 đô  /  Chỉ hạ khi Dân chủ nắm hai viện
+                           ↳ Thái Phạm 15/08
+  BTC           CẢNH GIÁC  Long từ 65.000  /  Hồi kỹ thuật quanh đầu tháng 9  /  60.800 — chưa chạm
+                           ↳ Thái Phạm 15/08
+  XAG/USD       CHỜ        Đã sập 60% từ đỉnh 120  /  Vùng 70  /  Beta cao hơn vàng 1,5–2 lần
+                           ↳ Thái Phạm 08/08
+
+
+──────────────────────────────────────────────────────────────────────────────
+PHẦN 3 — CHI TIẾT TỪNG MÃ: MỐC RA / MỐC VÀO
+──────────────────────────────────────────────────────────────────────────────
+
+
+█████ CHỨNG KHOÁN VIỆT NAM — 63 mã
+
+  ┌─ BÁN LẺ
+  │
+  ├─ MWG  —  Thế Giới Di Động
+  │  Trạng thái : TRÁNH · THỦNG ĐÁY 75 — BÁN
+  │  Giỏ        : tránh · spot
+  │  TradingView: HOSE:MWG   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Thủng đáy 75 (CK 5 phút); Thái Phạm thêm nghi vấn: liệu đồng hồ/hàng
+  │              khác có cùng nguồn cung với vụ PNJ — "đừng đụng vào".
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 03/08  Chứng khoán 5 phút  →  Không đẹp
+  │      VÀO: Đang 72–73, kẹp giữa MA20 và cản 75
+  │      MỤC TIÊU: Lên 75 chẳng đáng bao nhiêu
+  │  • 01/08  Thái Phạm  →  Tránh
+  │      CẮT/LƯU Ý: Đừng đụng vào
+  │  • 26/07  Thái Phạm  →  TRÁNH
+  │  • 22/07  Chứng khoán 5 phút  →  BÁN
+  │      VÀO: Giá vốn quanh 75–77
+  │      MỤC TIÊU: Không bắt đáy — mới bắt đầu giảm
+  │      CẮT/LƯU Ý: Thủng 75 = tín hiệu bán
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Chứng khoán 5 phút (03/08): Không đẹp
+  │    · Thái Phạm (01/08): Tránh
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ FRT  —  Bán lẻ Kỹ thuật số FPT
+  │  Trạng thái : TRÁNH · KHÔNG MUA ĐUỔI — BA CÂY TRẦN
+  │  Giỏ        : tránh · spot
+  │  TradingView: HOSE:FRT   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : CK 5 phút: ba cây trần liên tiếp nên không có lý do gì mua đuổi —
+  │              "kể cả nó có kéo dựng ngược lên 10 cây trần này không quan tâm, điểm
+  │              mua không an toàn là không vào". Kỳ vọng IPO Long Châu là có thật
+  │              nhưng còn phụ thuộc định giá và tỉ lệ chào bán.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 03/08  Chứng khoán 5 phút  →  KHÔNG mua đuổi
+  │      VÀO: Đã ba cây trần
+  │      CẮT/LƯU Ý: Điểm mua không an toàn là không vào
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ DGW  —  Digiworld
+  │  Trạng thái : CẢNH GIÁC · ĐÃ THỦNG NỀN — KHÔNG MUA
+  │  Giỏ        : tránh · spot
+  │  TradingView: HOSE:DGW   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : CK 5 phút nhắm mã này từ lâu và từng đợi vùng 37 (đáy nền tích lũy
+  │              vẽ từ giữa 2025), nhưng nó thủng luôn: cây rút chân ở 37 không tạo
+  │              tín hiệu đảo chiều, phiên T+2 sau đó thủng tiếp cùng index. "Chỗ này
+  │              mà ai nhảy vào mua thì đương nhiên là mua bừa."
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 13/08  Chứng khoán 5 phút  →  BỎ QUA — không có điểm vào
+  │      VÀO: Đã vượt hộp, hơi cao
+  │      CẮT/LƯU Ý: "Kể cả nó có chạy mất thì cứ từ từ"
+  │  • 04/08  Chứng khoán 5 phút  →  KHÔNG MUA — đã thủng nền
+  │      CẮT/LƯU Ý: Thủng 37, rút chân không tạo đảo chiều
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ BẢO HIỂM
+  │
+  ├─ BVH  —  Tập đoàn Bảo Việt
+  │  Trạng thái : MUA/GIỮ · MỚI NHÚ — ĐÁNG THEO DÕI
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: HOSE:BVH   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : CK 5 phút nêu BVH là mã cùng dạng đồ thị với FRT nhưng mới nhú: khối
+  │              lượng vào, biến động giá tăng và chưa chạy quá xa — đáng xem thay vì
+  │              mua đuổi FRT đã ba cây trần.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 10/08  Chứng khoán 5 phút  →  Điểm mua vẫn giữ được
+  │      VÀO: Từ phiên 07/08
+  │  • 03/08  Chứng khoán 5 phút  →  Mới nhú, đáng theo dõi
+  │      VÀO: Volume vào, chưa chạy xa
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ BẤT ĐỘNG SẢN
+  │
+  ├─ VIC · VHM  —  Nhóm Vin (VIC/VHM/VRE)
+  │  Trạng thái : CHỜ · CHI PHỐI CHỈ SỐ — GIẢM LÀ ĐÁNG MỪNG
+  │  Giỏ        : tránh · spot
+  │  TradingView: HOSE:VIC   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Không phải khuyến nghị mua — nhóm chi phối index; CK 5 phút (22/07):
+  │              Vin giảm là ĐÁNG MỪNG vì sẽ cân bằng lại điểm số với midcap.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  Mốc để canh lướt
+  │      VÀO: Chạm 56–57
+  │      MỤC TIÊU: Ngắn hạn có thể chỉnh về 60, thậm chí 56
+  │      CẮT/LƯU Ý: Là hàn thử biểu của cả index
+  │  • 03/08  Chứng khoán 5 phút  →  Không cầm qua ngày chia
+  │      VÀO: GDKHQ 06/8, chia 1:1
+  │      CẮT/LƯU Ý: Giá quá cao
+  │  • 31/07  Thái Phạm  →  Tránh
+  │      CẮT/LƯU Ý: "Neo cao đáng sợ" — rủi ro kéo cả thị trường
+  │  • 22/07  Chứng khoán 5 phút  →  KHÔNG MUA
+  │      MỤC TIÊU: Vin giảm → index cân bằng lại
+  │      CẮT/LƯU Ý: Giá vốn 180–200: bán được
+  │    (còn 1 phiếu lệnh cũ hơn)
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Thái Phạm (15/08): Mốc để canh lướt
+  │    · Chứng khoán 5 phút (03/08): Không cầm qua ngày chia
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ NLG  —  Nam Long
+  │  Trạng thái : MUA/GIỮ · BẢNG CÂN ĐỐI KHỎE NHẤT NHÓM BĐS
+  │  Giỏ        : dài hạn · spot
+  │  TradingView: HOSE:NLG   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Tiền mặt từ 3.800 lên gần 8.000 tỷ trong khi tổng nợ giảm từ 7.000
+  │              xuống 5.400 tỷ — hiếm trong nhóm bất động sản.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 10/06  Quang Dũng  →  ĐỊNH GIÁ VỀ MỨC 2024
+  │      MỤC TIÊU: Tiền mặt gần 8.000 tỷ, nợ giảm còn 5.400 tỷ
+  │      CẮT/LƯU Ý: Tổng dư nợ toàn ngành BĐS trên 500.000 tỷ
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ DXG  —  Đất Xanh
+  │  Trạng thái : CẢNH GIÁC · CHIA RẼ — ĐIỂM MUA KHÔNG ĐẸP (5P) vs TIỀN MẶT CẢI THIỆN (QD)
+  │  Giỏ        : dài hạn · spot
+  │  TradingView: HOSE:DXG   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Tiền và tương đương tiền từ 1.300 tỷ cuối 2024 lên khoảng 5.600 tỷ
+  │              tại quý 1/2026.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 03/08  Chứng khoán 5 phút  →  Điểm mua không đẹp
+  │      VÀO: Gần trần nhưng vẫn dưới MA20
+  │      CẮT/LƯU Ý: Thanh khoản không tăng
+  │  • 10/06  Quang Dũng  →  ĐỊNH GIÁ VỀ MỨC 2024
+  │      MỤC TIÊU: Tiền mặt 1.300 → 5.600 tỷ
+  │      CẮT/LƯU Ý: Không có mốc giá cụ thể
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Chứng khoán 5 phút (03/08): Điểm mua không đẹp
+  │    · Quang Dũng (10/06): ĐỊNH GIÁ VỀ MỨC 2024
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ KDH  —  Khang Điền
+  │  Trạng thái : CHỜ · QUY MÔ VÀ LỢI NHUẬN CÙNG TĂNG
+  │  Giỏ        : dài hạn · spot
+  │  TradingView: HOSE:KDH   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Quy mô từ 22.000 lên khoảng 29.000 tỷ trong 2025; lợi nhuận từ 384
+  │              tỷ lên gần 700 tỷ ở quý 1/2026.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 28/07  Chứng khoán 5 phút  →  KHÔNG PHẢI TÍN HIỆU ĐÁY
+  │      CẮT/LƯU Ý: Chủ tịch đăng ký mua ≠ đáy
+  │  • 10/06  Quang Dũng  →  ĐỊNH GIÁ VỀ MỨC 2024
+  │      MỤC TIÊU: Quy mô 22.000 → 29.000 tỷ; LN 384 → gần 700 tỷ
+  │      CẮT/LƯU Ý: Không có mốc giá cụ thể
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Chứng khoán 5 phút (28/07): KHÔNG PHẢI TÍN HIỆU ĐÁY
+  │    · Quang Dũng (10/06): ĐỊNH GIÁ VỀ MỨC 2024
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ DIG  —  DIC Corp
+  │  Trạng thái : TRÁNH · TRÁNH — RỦI RO CALL MARGIN
+  │  Giỏ        : tránh · spot
+  │  TradingView: HOSE:DIG   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Thái Phạm dẫn DIG làm ví dụ điển hình cho rủi ro call margin của
+  │              doanh chủ.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 31/07  Thái Phạm  →  Tránh
+  │      CẮT/LƯU Ý: Ví dụ điển hình rủi ro call margin của doanh chủ
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ NVL  —  Novaland
+  │  Trạng thái : CHỜ · LƯỚT — MUA THẤP BÁN CAO
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: HOSE:NVL   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Thái Phạm: sóng giảm lãi suất của bất động sản chỉ là "sự tưởng
+  │              tượng thôi" vì bản chất chưa hạ được lãi suất, nhưng vẫn có hồi kỹ
+  │              thuật. Ai thích lướt thì đợi test lại vùng 12,5–12,8 rồi mua, lên
+  │              cao thì bán — không mua ngang lưng chừng.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  Lướt — mua thấp bán cao
+  │      VÀO: Test lại 12,5–12,8
+  │      MỤC TIÊU: Lên cao thì bán
+  │      CẮT/LƯU Ý: Không mua ngang lưng chừng
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ CAO SU & KHU CÔNG NGHIỆP
+  │
+  ├─ GVR  —  Tập đoàn Cao su Việt Nam
+  │  Trạng thái : MUA/GIỮ · LƯỚT SÓNG THOÁI VỐN
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: HOSE:GVR   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Thái Phạm xếp GVR vào trường phái thoái vốn nhà nước: "sóng thoái
+  │              vốn thì bao giờ nó cũng có sóng", canh lấp lại gap ở vùng khoảng
+  │              29,65 dành cho ai thích lướt. CK 5 phút cũng ghi nhận GVR tăng khá
+  │              nhiều trong chính phiên giảm 36 điểm ngày 14/08.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  Lướt sóng thoái vốn
+  │      VÀO: Lấp gap vùng ~29,65
+  │  • 14/08  Chứng khoán 5 phút  →  Tăng khá — điều chỉnh bình thường
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Thái Phạm (15/08): Lướt sóng thoái vốn
+  │    · Chứng khoán 5 phút (14/08): Tăng khá — điều chỉnh bình thường
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ CHỈ SỐ & ETF
+  │
+  ├─ VN30  —  Chỉ số VN30 · ETF VN30
+  │  Trạng thái : CHỜ · NỀN CỦA DANH MỤC VN
+  │  Giỏ        : dài hạn · spot
+  │  TradingView: HOSE:VN30   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : LCG Huy coi ETF VN30 là nền của danh mục cho người ở Việt Nam, và là
+  │              thước đo để chấm mọi quỹ mở — không dùng VN-Index vì không mua được
+  │              VN-Index.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 02/08  LCG Huy  →  Dành cho người ở Việt Nam — nền của danh mục
+  │      VÀO: Không nêu mốc giá
+  │      MỤC TIÊU: Bổ sung 1–2 quỹ mở phủ ngoài VN30
+  │      CẮT/LƯU Ý: Không nêu
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ CHỨNG KHOÁN
+  │
+  ├─ VCI  —  Chứng khoán Vietcap
+  │  Trạng thái : CẢNH GIÁC · CHIA RẼ — TRÁNH CẢ NHÓM (TP) vs MUA (5P)
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: HOSE:VCI   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Ông Tô Hải đăng ký mua 31 triệu cổ phiếu — VCI từ mã giảm mạnh nhất
+  │              nhóm chứng khoán thành mã hồi nhanh nhất.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Thái Phạm  →  TRÁNH CẢ NHÓM
+  │      CẮT/LƯU Ý: "Hồi lên rồi nó sẽ tèo"
+  │  • 31/07  Chứng khoán 5 phút  →  THEO DÕI TÍCH CỰC
+  │      VÀO: Sau tin chủ tịch mua 31 triệu cp
+  │      MỤC TIÊU: Hồi nhanh nhất nhóm chứng khoán
+  │      CẮT/LƯU Ý: Phụ thuộc thanh khoản chung
+  │  • 30/07  Thái Phạm  →  Cơ cấu khi hồi
+  │      VÀO: Hồi về 23–24
+  │      MỤC TIÊU: Dài hạn phải đi lên từ nội lực
+  │      CẮT/LƯU Ý: Giảm sâu do tự doanh có FPT, PNJ
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Thái Phạm (01/08): TRÁNH CẢ NHÓM
+  │    · Chứng khoán 5 phút (31/07): THEO DÕI TÍCH CỰC
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ VIX  —  Chứng khoán VIX
+  │  Trạng thái : CHỜ · RƠI 18–19 → 12–13, CHƯA CÓ TÍN HIỆU ĐÁY
+  │  Giỏ        : tránh · spot
+  │  TradingView: HOSE:VIX   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Nửa sau tháng 7 rơi từ 18–19 về 12–13; đến 31/07 vẫn chưa có tín
+  │              hiệu đáy — cảnh báo đừng gồng margin.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 05/08  Thái Phạm  →  Đánh hồi phục
+  │      MỤC TIÊU: Lên 15.8 thì bán
+  │  • 04/08  Chứng khoán 5 phút  →  GIỮ — chốt lãi ở mục tiêu
+  │      VÀO: Giá vốn đúng quanh 13–13,2
+  │      MỤC TIÊU: 16 (biên trên BB + vùng tích lũy cũ)
+  │      CẮT/LƯU Ý: Điểm mua hôm nay không đẹp
+  │  • 01/08  Thái Phạm  →  TRÁNH CẢ NHÓM
+  │      CẮT/LƯU Ý: "Hồi lên rồi nó sẽ tèo"
+  │  • 31/07  Chứng khoán 5 phút  →  KHÔNG BẮT ĐÁY
+  │      MỤC TIÊU: Chờ tín hiệu đáy thật
+  │      CẮT/LƯU Ý: TUYỆT ĐỐI không gồng margin
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Thái Phạm (05/08): Đánh hồi phục
+  │    · Chứng khoán 5 phút (04/08): GIỮ — chốt lãi ở mục tiêu
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ SHS  —  Chứng khoán Sài Gòn – Hà Nội
+  │  Trạng thái : MUA/GIỮ · MUA 30% NẮM GIỮ ĐƯỢC
+  │  Giỏ        : dài hạn · spot
+  │  TradingView: HNX:SHS   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : CK 5 phút đánh giá SHS tích cực nhất trong nhóm chứng khoán tự
+  │              doanh: "ở mức giá 15 16 này thì nó không hề cao một chút nào cả, mua
+  │              nắm giữ thì cũng ổn thôi" — ai nhiều sức mua thì vào 30%.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 03/08  Chứng khoán 5 phút  →  Mua 30% nắm giữ được
+  │      VÀO: Vùng 15–16
+  │      MỤC TIÊU: Tích cực nhất nhóm chứng khoán tự doanh
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ HCM  —  Chứng khoán TP.HCM (HSC)
+  │  Trạng thái : TRÁNH · CAO GIÁ QUÁ — ĐỪNG MUA
+  │  Giỏ        : tránh · spot
+  │  TradingView: HOSE:HCM   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Thái Phạm khi điểm qua nhóm chứng khoán trong Tập 44: "HCM cao giá
+  │              quá đừng có mua nữa". Nhóm chứng khoán chỉ chiếm khoảng 15% danh mục
+  │              của ông và ông ưu tiên bổ sung SSI.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 08/08  Thái Phạm  →  ĐỪNG MUA — cao giá quá
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ MBS  —  Chứng khoán MB
+  │  Trạng thái : MUA/GIỮ · CẦM — ĐANG Ở VÙNG GIÁ RẤT RẺ
+  │  Giỏ        : dài hạn · spot
+  │  TradingView: HOSE:MBS   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Thái Phạm trong Tập 44: "MBS đang cầm vùng giá rất rẻ là cứ cầm
+  │              thôi." Nằm trong nhóm chứng khoán mà ông giữ khoảng 15% danh mục.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 08/08  Thái Phạm  →  Cầm — đang ở vùng giá rất rẻ
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ CHỨNG KHOÁN (CTCK)
+  │
+  ├─ TCX  —  TCBS (Chứng khoán Kỹ Thương)
+  │  Trạng thái : MUA/GIỮ · GIỮ MỘT PHẦN — ĐÃ CHỐT BỚT
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: HOSE:TCX   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Đã chốt bớt tuần 28; phần còn lại nằm trong danh mục 40% phòng thủ.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 08/08  Thái Phạm  →  GIỮ và bổ sung thêm
+  │  • 05/08  Thái Phạm  →  Cầm nguyên
+  │  • 26/07  Thái Phạm  →  Giữ
+  │      VÀO: Không mua thêm
+  │      MỤC TIÊU: VNM mã duy nhất có lời; SCS lỗ 12% đã ăn cổ tức
+  │  • 18/07  Thái Phạm  →  GIỮ MỘT PHẦN
+  │      VÀO: Đã chốt bớt tuần 28
+  │      MỤC TIÊU: Chờ thị trường tạo đáy
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ SSI  —  Chứng khoán SSI
+  │  Trạng thái : MUA/GIỮ · SƯỜN PHẢI — CÓ THỂ VỀ 20
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: HOSE:SSI   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Thái Phạm: SSI đang ở "sườn phải" của mẫu hình, gom lại hàng — có
+  │              thể về 20; CK 5 phút vẫn chờ đóng trên 26.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 08/08  Thái Phạm  →  Bổ sung
+  │      MỤC TIÊU: Nhóm chứng khoán chỉ ~15% danh mục
+  │  • 05/08  Thái Phạm  →  MUA nếu đánh theo thị trường
+  │      VÀO: Vùng 23, hoặc ngay 24
+  │  • 04/08  Chứng khoán 5 phút  →  MUA MỚI ĐƯỢC
+  │      VÀO: Vùng giá hiện tại — "không cao"
+  │      MỤC TIÊU: Nắm giữ; rẻ hơn TCX
+  │  • 03/08  Chứng khoán 5 phút  →  Đang cầm nhiều, chưa mua thêm
+  │      VÀO: Chờ đáy đẹp / nền đẹp / volume tăng
+  │      MỤC TIÊU: Giữ dài hạn
+  │    (còn 4 phiếu lệnh cũ hơn)
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Thái Phạm (08/08): Bổ sung
+  │    · Chứng khoán 5 phút (04/08): MUA MỚI ĐƯỢC
+  │    · Quang Dũng (04/07): NHÓM ƯU TIÊN NỬA CUỐI NĂM
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ CÔNG NGHỆ
+  │
+  ├─ FPT  —  FPT Corp
+  │  Trạng thái : CẢNH GIÁC · TRÁNH — HỞ ROOM, NGOẠI BÁN
+  │  Giỏ        : tránh · spot
+  │  TradingView: HOSE:FPT   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Thái Phạm: hở room ngoại, "Mỹ bán quá trời — đừng đụng"; AzFin đã
+  │              chốt lời từ giá cao.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  Chỉ hồi kỹ thuật
+  │      CẮT/LƯU Ý: Không có cơ sở tăng giá dài hạn
+  │  • 05/08  Thái Phạm  →  Giải ngân rồi bán khi được kéo
+  │      VÀO: Quanh 69–70
+  │      MỤC TIÊU: Bán vùng 85–90
+  │      CẮT/LƯU Ý: PR "AI không ảnh hưởng" là không đúng
+  │  • 04/08  Thái Phạm  →  THOÁT TOÀN BỘ khi kéo lên
+  │      VÀO: Đợi 1–2 phiên điều chỉnh mua thêm 1/2 vị thế hàng
+  │      MỤC TIÊU: Bán sạch vùng 85–90
+  │      CẮT/LƯU Ý: Cú hồi là dàn dựng, không phải triển vọng
+  │  • 03/08  Chứng khoán 5 phút  →  Không đủ điểm mua
+  │      VÀO: Đà tăng do khối ngoại mua 500 tỷ
+  │      CẮT/LƯU Ý: Chạm chen line bên trên
+  │    (còn 7 phiếu lệnh cũ hơn)
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Thái Phạm (15/08): Chỉ hồi kỹ thuật
+  │    · Chứng khoán 5 phút (03/08): Không đủ điểm mua
+  │    · AzFin (16/07): ĐÃ CHỐT LỜI
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ DẦU KHÍ
+  │
+  ├─ GAS  —  PV GAS
+  │  Trạng thái : MUA/GIỮ · GIỮ — "KHÔNG THỂ PHÁ SẢN"
+  │  Giỏ        : dài hạn · spot
+  │  TradingView: HOSE:GAS   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Nằm trong nhóm Thái Phạm nói "không thể phá sản được" — nền giá bị
+  │              phá vỡ cũng không phải lý do bán.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Thái Phạm  →  MUA TÍCH LŨY
+  │      VÀO: Vùng 60–62
+  │      MỤC TIÊU: Tích lũy dài hạn
+  │  • 30/07  Thái Phạm  →  Cân nhắc mua dài hạn
+  │      VÀO: Vùng ~60
+  │      MỤC TIÊU: Đã về vùng khá rẻ
+  │      CẮT/LƯU Ý: Rẻ có thể rẻ hơn
+  │  • 26/07  Thái Phạm  →  GIỮ
+  │      VÀO: Không bán hoảng loạn
+  │      MỤC TIÊU: Cầm 5 năm
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ BSR  —  Lọc hóa dầu Bình Sơn
+  │  Trạng thái : TRÁNH · TRÁNH — ĐỘI TAY TO ĂN XONG
+  │  Giỏ        : tránh · spot
+  │  TradingView: HOSE:BSR   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Thái Phạm (Tập 42): "ăn xong rồi, đội tay to nó ăn xong, giờ toàn
+  │              nhỏ lẻ chơi với nhau".
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Thái Phạm  →  Tránh
+  │      CẮT/LƯU Ý: Đừng đụng vào
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ PLC  —  Hóa dầu Petrolimex
+  │  Trạng thái : CHỜ · CÙNG DẠNG VỚI KSB
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: HOSE:PLC   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : CK 5 phút: "Ngày xưa hai con này suốt ngày chạy cùng với nhau nhưng
+  │              mà giai đoạn gần đây KSB hơi yếu." Nếu có mua thì hôm 12/08 là mua
+  │              được, nhưng cùng cảnh báo về thanh khoản như KSB.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 12/08  Chứng khoán 5 phút  →  Cùng dạng với KSB
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ DỆT MAY
+  │
+  ├─ TNG  —  Đầu tư và Thương mại TNG
+  │  Trạng thái : CHỜ · CHỜ VỀ ~17 TẠO HAI ĐÁY
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: HNX:TNG   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : CK 5 phút: rủi ro về mặt doanh nghiệp không nhiều, còn tin tức thế
+  │              giới thì luôn biến động và biến động tạo ra cơ hội chứ không phải
+  │              rủi ro. Nếu nhúng xuống tạo hai đáy quanh vùng 17 thì cân nhắc được.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 03/08  Chứng khoán 5 phút  →  Cân nhắc nếu tạo hai đáy
+  │      VÀO: Vùng 17
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ GIÁO DỤC & ĐA NGÀNH
+  │
+  ├─ IGC  —  Apax Holdings / IGC Group
+  │  Trạng thái : TRÁNH · THỦNG ĐÁY 27/07 — ĐỪNG MUA THÊM
+  │  Giỏ        : tránh · spot
+  │  TradingView: HOSE:IGC   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : CK 5 phút (27/07): IGC thủng đáy ngay phiên hôm nay — nằm trong nhóm
+  │              yếu hơn hẳn thị trường.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 27/07  Chứng khoán 5 phút  →  GIỮ — KHÔNG MUA THÊM
+  │      VÀO: Đã vào 1–2 lệnh
+  │      MỤC TIÊU: Chờ nhịp chững để cân nhắc đảo hàng
+  │      CẮT/LƯU Ý: Chưa xử lý gì lúc này
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ HÓA CHẤT & PHÂN BÓN
+  │
+  ├─ DCM  —  Đạm Cà Mau
+  │  Trạng thái : MUA/GIỮ · TÍCH LŨY DÀI HẠN
+  │  Giỏ        : dài hạn · spot
+  │  TradingView: HOSE:DCM   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Một trong hai mã duy nhất Thái Phạm mua dài hạn lúc này — đã vào 70%
+  │              vị thế.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  CẦM DÀI HẠN — ưu tiên hơn
+  │      MỤC TIÊU: Làm ăn tốt hơn DPM
+  │  • 08/08  Thái Phạm  →  MUA — đánh spring
+  │      VÀO: Vùng hiện tại
+  │      MỤC TIÊU: Cầm dài hạn
+  │  • 07/08  Thái Phạm  →  MUA VÀ HOLD
+  │      VÀO: "Giá siêu hạt dẻ" — không cần căn ke
+  │      MỤC TIÊU: Nắm dài hạn
+  │  • 07/08  Chứng khoán 5 phút  →  MUA — mẫu hình cờ tăng giá
+  │      VÀO: Điểm break hôm nay
+  │    (còn 5 phiếu lệnh cũ hơn)
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Thái Phạm (15/08): CẦM DÀI HẠN — ưu tiên hơn
+  │    · Chứng khoán 5 phút (07/08): MUA — mẫu hình cờ tăng giá
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ DPM  —  Đạm Phú Mỹ
+  │  Trạng thái : MUA/GIỮ · TÍCH LŨY DÀI HẠN
+  │  Giỏ        : dài hạn · spot
+  │  TradingView: HOSE:DPM   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Cặp đôi với DCM trong danh mục dài hạn của Thái Phạm; CK 5 phút lấy
+  │              làm ví dụ mẫu về mua từng phần.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  CẦM DÀI HẠN — mẫu hình đẹp hơn
+  │  • 08/08  Thái Phạm  →  MUA — mô hình hai đáy
+  │      VÀO: Vùng hiện tại
+  │      MỤC TIÊU: "Có khi sau tuần nó trần"
+  │  • 07/08  Thái Phạm  →  MUA VÀ HOLD
+  │      VÀO: "Giá siêu hạt dẻ" — không cần căn ke
+  │      MỤC TIÊU: Nắm dài hạn
+  │  • 05/08  Thái Phạm  →  MUA MẠNH
+  │      VÀO: Vùng hiện tại — KQKD quý 2 rất tốt
+  │      MỤC TIÊU: Hai con phân bón chiếm 25% tài khoản
+  │    (còn 6 phiếu lệnh cũ hơn)
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Thái Phạm (15/08): CẦM DÀI HẠN — mẫu hình đẹp hơn
+  │    · Chứng khoán 5 phút (31/07): GIỮ / CÂN NHẮC MUA
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ DGC  —  Hóa chất Đức Giang
+  │  Trạng thái : SHORT/BÁN · LOẠI KHỎI DANH MỤC
+  │  Giỏ        : tránh · spot
+  │  TradingView: HOSE:DGC   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : AzFin dùng làm ví dụ chuẩn: lãnh đạo bị khởi tố = "linh hồn doanh
+  │              nghiệp" dính pháp lý → loại ngay lập tức.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 23/07  Thái Phạm  →  Tránh
+  │      VÀO: Không đụng
+  │      MỤC TIÊU: PNJ về <9; HPG về 21.85
+  │  • 18/07  Thái Phạm  →  TRÁNH
+  │      MỤC TIÊU: Chờ vào lại uptrend
+  │  • 16/07  AzFin  →  LOẠI NGAY
+  │      CẮT/LƯU Ý: Bán bất kể giá nếu còn giữ
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Thái Phạm (23/07): Tránh
+  │    · AzFin (16/07): LOẠI NGAY
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ KCN & BĐS CÔNG NGHIỆP
+  │
+  ├─ BCM  —  Becamex IDC
+  │  Trạng thái : TRÁNH · ĐỤC NHIỀU ĐÁY — CHƯA CÓ TÍN HIỆU
+  │  Giỏ        : tránh · spot
+  │  TradingView: HOSE:BCM   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : CK 5 phút nhắc hai lần trong tuần: BCM đã đục nhiều đáy, phiên 27/07
+  │              "trông cũng chán".
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Thái Phạm  →  Tránh
+  │      CẮT/LƯU Ý: Đừng đụng vào
+  │  • 27/07  Chứng khoán 5 phút  →  ĐỨNG NGOÀI
+  │      MỤC TIÊU: Chờ tín hiệu tạo đáy
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Thái Phạm (01/08): Tránh
+  │    · Chứng khoán 5 phút (27/07): ĐỨNG NGOÀI
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ KHAI KHOÁNG
+  │
+  ├─ MSR  —  Masan High-Tech Materials
+  │  Trạng thái : CHỜ · CHỜ VỀ VÙNG 24
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: UPCOM:MSR   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Thái Phạm (Tập 42): vùng này không mua được, phải đợi về 24.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Thái Phạm  →  Chờ mua
+  │      VÀO: Phải về vùng 24
+  │      CẮT/LƯU Ý: Mua vùng này là bị dìu
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ KSB  —  Khoáng sản và Xây dựng Bình Dương
+  │  Trạng thái : CHỜ · CÓ ĐIỂM MUA — NHƯNG MUA ÍT
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: HOSE:KSB   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : CK 5 phút phiên 12/08: KSB có điểm mua và có tiền vào, cùng dạng với
+  │              PLC. Nhưng anh nói ngay "trông em nghĩ chắc chả đi xa được với cái
+  │              đồ thị đâu" — nhóm cổ phiếu đá Việt Nam thanh khoản rất bé, đánh
+  │              hàng cô đặc.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 12/08  Chứng khoán 5 phút  →  Có điểm mua — mua ít thôi
+  │      VÀO: Phiên 12/08 có tiền vào
+  │      MỤC TIÊU: "Chả đi xa được với cái đồ thị đâu"
+  │      CẮT/LƯU Ý: Thanh khoản rất bé, hàng cô đặc
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ LOGISTICS & CẢNG HÀNG KHÔNG
+  │
+  ├─ SCS  —  Saigon Cargo Service
+  │  Trạng thái : MUA/GIỮ · GIỮ — ĂN CỔ TỨC
+  │  Giỏ        : dài hạn · spot
+  │  TradingView: HOSE:SCS   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Đang lỗ ~7–8% nhưng không margin nên "thoải mái" — giữ vì lợi thế
+  │              cạnh tranh và cổ tức.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 08/08  Thái Phạm  →  CẦM — đánh spring
+  │      MỤC TIÊU: Trung Đông ổn định trở lại
+  │  • 07/08  Thái Phạm  →  GIỮ — "cực phẩm rồi"
+  │  • 26/07  Thái Phạm  →  Giữ
+  │      VÀO: Không mua thêm
+  │      MỤC TIÊU: VNM mã duy nhất có lời; SCS lỗ 12% đã ăn cổ tức
+  │  • 18/07  Thái Phạm  →  GIỮ
+  │      VÀO: Đang lỗ ~7–8%, không margin
+  │      MỤC TIÊU: Ăn cổ tức, chờ hồi
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ VSC  —  Container Việt Nam
+  │  Trạng thái : CHỜ · GIỮ — CHỐT LÃI VÙNG 17
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: HOSE:VSC   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : CK 5 phút: vùng 14 là vùng tích lũy lớn nhất của năm 2025. Nếu tạo
+  │              hai đáy hoặc tích lũy đi ngang thì ngon hơn; nếu tăng giật ngược lên
+  │              thì ngắn hạn chỉ kích hoạt giá bán chốt lãi quanh 17. "Tính chất VSC
+  │              là tăng rất nhanh và giảm cũng nhiều."
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 04/08  Chứng khoán 5 phút  →  Giữ, chốt lãi nếu giật lên
+  │      VÀO: Vùng 14 là tích lũy lớn nhất 2025
+  │      MỤC TIÊU: 17
+  │      CẮT/LƯU Ý: Ngon hơn nếu tạo hai đáy
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ ACV  —  Tổng công ty Cảng hàng không Việt Nam
+  │  Trạng thái : TRÁNH · HẾT NĂM NAY ĐỪNG MUA
+  │  Giỏ        : tránh · spot
+  │  TradingView: HOSE:ACV   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : CK 5 phút: "ACV là con mà em đánh giá hết năm nay đừng mua. Nó đang
+  │              bị ốp tiến độ."
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 04/08  Chứng khoán 5 phút  →  HẾT NĂM NAY ĐỪNG MUA
+  │      CẮT/LƯU Ý: Đang bị ốp tiến độ
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ GMD  —  Gemadept
+  │  Trạng thái : CẢNH GIÁC · CỘT ĐẦU SAU KHI VƯỢT ĐỈNH
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: HOSE:GMD   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : CK 5 phút phiên 10/08: "Em cứ tưởng nó ngon rồi, vượt đỉnh ngon, ai
+  │              ngờ nó lại cột đầu. Cột đầu này đúng là xấu." Ai đã mua thì đợi hàng
+  │              về T+ xem sao; anh vẫn để ngỏ kỳ vọng vượt đỉnh trong giai đoạn hiện
+  │              tại.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 10/08  Chứng khoán 5 phút  →  Cột đầu — đợi hàng về
+  │      VÀO: Đã vượt đỉnh rồi bị đẩy ngược
+  │      MỤC TIÊU: Vẫn còn kỳ vọng vượt đỉnh
+  │      CẮT/LƯU Ý: "Cột đầu này đúng là xấu"
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ NGÂN HÀNG
+  │
+  ├─ BID  —  BIDV
+  │  Trạng thái : MUA/GIỮ · RẺ HƠN CẢ ĐÁY T4/2025 — GIỮ/MUA
+  │  Giỏ        : dài hạn · spot
+  │  TradingView: HOSE:BID   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : BID (và VCB) đã về vùng thấp hơn cả đáy tháng 4/2025 — "bank rẻ
+  │              quá", cầm 5 năm sẽ có lời ở vùng thấp.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 10/08  Chứng khoán 5 phút  →  Điểm mua vẫn giữ được
+  │      VÀO: Từ phiên 07/08
+  │  • 08/08  Thái Phạm  →  MUA — "giá này đẹp quá"
+  │      VÀO: Vốn hóa nhỏ hơn nửa VCB nên dễ chạy
+  │      MỤC TIÊU: Hưởng lợi chỉ thị sắp xếp vốn nhà nước
+  │  • 07/08  Thái Phạm  →  Khá lên nhờ thoái vốn nhà nước
+  │  • 07/08  Chứng khoán 5 phút  →  MUA — mẫu hình cờ tăng giá
+  │      VÀO: Điểm break hôm nay
+  │      CẮT/LƯU Ý: Game thoái vốn có thể ngắn
+  │    (còn 9 phiếu lệnh cũ hơn)
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Chứng khoán 5 phút (10/08): Điểm mua vẫn giữ được
+  │    · Thái Phạm (08/08): MUA — "giá này đẹp quá"
+  │    · Quang Dũng (20/06): HƯỞNG LỢI THÔNG TƯ 22
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ BVBank  —  BVBank (chào sàn 21/07)
+  │  Trạng thái : MUA/GIỮ · GIỮ — THEO DÕI CHÀO SÀN
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: — không có symbol
+  │  Tóm tắt   : Chào sàn 21/07 giá tham chiếu 13.1 — Thái Phạm giữ trong danh mục
+  │              40%.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 05/08  Thái Phạm  →  ƯU TIÊN nhóm bank
+  │      VÀO: Vùng hiện tại
+  │      MỤC TIÊU: Tin đồn LPBank sáp nhập — nếu đúng là tin tốt
+  │      CẮT/LƯU Ý: Mới là tin đồn
+  │  • 04/08  Thái Phạm  →  Cầm luôn
+  │      VÀO: Đã về hòa vốn
+  │      MỤC TIÊU: Nhóm mua thêm nhẹ nếu cầm trên 60% tiền
+  │  • 26/07  Thái Phạm  →  Giữ
+  │      VÀO: Không mua thêm
+  │      MỤC TIÊU: VNM mã duy nhất có lời; SCS lỗ 12% đã ăn cổ tức
+  │  • 23/07  Thái Phạm  →  Giữ
+  │      VÀO: Không mua thêm
+  │      MỤC TIÊU: Đợi index 1.500
+  │    (còn 1 phiếu lệnh cũ hơn)
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ TCB  —  Techcombank
+  │  Trạng thái : MUA/GIỮ · CHỜ VỀ 22
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: HOSE:TCB   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Thái Phạm: đợi TCB về vùng 22 (mức tháng 4/2025) mới mua — ngân hàng
+  │              cấp vốn cho Vin Group và Masan.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  CẦM bình thường
+  │  • 15/08  Quang Dũng  →  Quản trị rủi ro tốt — trích lập 4,4%
+  │  • 13/08  Chứng khoán 5 phút  →  MUA — vùng an toàn dài hạn
+  │      VÀO: Quanh 34 trở xuống
+  │      MỤC TIÊU: Rủi ro dài hạn thấp
+  │      CẮT/LƯU Ý: Ngắn hạn không đoán được
+  │  • 10/08  Chứng khoán 5 phút  →  Tăng lại theo BCM
+  │    (còn 5 phiếu lệnh cũ hơn)
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Thái Phạm (15/08): CẦM bình thường
+  │    · Quang Dũng (15/08): Quản trị rủi ro tốt — trích lập 4,4%
+  │    · Chứng khoán 5 phút (13/08): MUA — vùng an toàn dài hạn
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ HDB  —  HDBank
+  │  Trạng thái : MUA/GIỮ · CHỜ MUA VÙNG 21–22
+  │  Giỏ        : dài hạn · spot
+  │  TradingView: HOSE:HDB   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Thái Phạm (Tập 42) lần đầu đưa mốc: về 21–22 là "vùng mua rất là
+  │              đẹp". Quang Dũng: nằm trong nhóm ba ngân hàng chỉ tiêu tín dụng 36%.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 05/08  Thái Phạm  →  ƯU TIÊN SỐ 1 nhóm bank
+  │      VÀO: Vùng hiện tại
+  │  • 01/08  Thái Phạm  →  CHỜ MUA 21–22
+  │      VÀO: Vùng 21–22
+  │      MỤC TIÊU: "Vùng mua rất là đẹp"
+  │  • 23/07  Thái Phạm  →  GIỮ
+  │      VÀO: Không mua thêm
+  │      MỤC TIÊU: Đợi index 1.500 + niêm yết HDBS
+  │  • 18/07  Quang Dũng  →  NHÓM TĂNG TÍN DỤNG MẠNH
+  │      MỤC TIÊU: Kế hoạch tăng trưởng tín dụng 36% — gấp đôi phần còn lại
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Thái Phạm (05/08): ƯU TIÊN SỐ 1 nhóm bank
+  │    · Quang Dũng (18/07): NHÓM TĂNG TÍN DỤNG MẠNH
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ VCB  —  Vietcombank
+  │  Trạng thái : MUA/GIỮ · RẺ NHẤT NHÓM BANK — DƯỚI ĐÁY T4/2025
+  │  Giỏ        : dài hạn · spot
+  │  TradingView: HOSE:VCB   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Cùng BID là hai mã bank rẻ hiếm có — đã về vùng thấp hơn cả đáy
+  │              tháng 4/2025.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Quang Dũng  →  Quản trị rủi ro tốt — trích lập chỉ 1,9%
+  │      VÀO: Định giá thấp hơn nhiều so với chính nó 6 năm
+  │  • 08/08  Thái Phạm  →  GIỮ
+  │      CẮT/LƯU Ý: Vốn hóa 400–500 nghìn tỷ nên chạy chậm như Apple
+  │  • 07/08  Thái Phạm  →  Khá lên nhờ thoái vốn nhà nước
+  │  • 05/08  Thái Phạm  →  Đợi điều chỉnh thì mua
+  │      VÀO: Chờ nhịp chỉnh
+  │    (còn 6 phiếu lệnh cũ hơn)
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Quang Dũng (15/08): Quản trị rủi ro tốt — trích lập chỉ 1,9%
+  │    · Thái Phạm (08/08): GIỮ
+  │    · Chứng khoán 5 phút (31/07): CHỜ ĐÁY 2
+  │    · AzFin (24/07): NHẶT DẦN
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ CTG  —  VietinBank
+  │  Trạng thái : MUA/GIỮ · RẺ — NHƯNG CHƯA BẰNG VCB/BID
+  │  Giỏ        : dài hạn · spot
+  │  TradingView: HOSE:CTG   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Rẻ nhưng chưa bằng VCB/BID: "CTG nó chưa về" mức tháng 4/2025.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  CẦM — không hấp dẫn bằng vùng 28
+  │  • 08/08  Thái Phạm  →  MUA
+  │      VÀO: Vốn hóa ngang ngửa, thấp hơn BID một chút
+  │      MỤC TIÊU: Hưởng lợi chỉ thị sắp xếp vốn nhà nước
+  │  • 07/08  Chứng khoán 5 phút  →  MUA MỚI được
+  │      VÀO: Điểm break nền-trên-nền hôm nay
+  │      MỤC TIÊU: Đã +9–10% từ vùng 29,5
+  │      CẮT/LƯU Ý: Đánh T+, hàng về có thể oẳng
+  │  • 05/08  Thái Phạm  →  Đợi điều chỉnh thì mua
+  │      VÀO: Chờ nhịp chỉnh
+  │    (còn 3 phiếu lệnh cũ hơn)
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Thái Phạm (15/08): CẦM — không hấp dẫn bằng vùng 28
+  │    · Chứng khoán 5 phút (07/08): MUA MỚI được
+  │    · Quang Dũng (20/06): HƯỞNG LỢI THÔNG TƯ 22
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ MSB  —  Ngân hàng Hàng Hải
+  │  Trạng thái : SHORT/BÁN · CHỐT LỜI — CHƯA PHÂN PHỐI XONG
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: HOSE:MSB   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Thái Phạm: "MSB chốt lời đi, đừng để lúc nó gãy — nó đang ở sườn
+  │              trái, chưa phân phối xong thôi."
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 26/07  Thái Phạm  →  CHỐT LỜI
+  │      VÀO: Ai có hàng thì chốt
+  │      MỤC TIÊU: Thoát trước khi gãy
+  │      CẮT/LƯU Ý: Đang sườn trái, chưa phân phối xong
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ VPB  —  VPBank
+  │  Trạng thái : CẢNH GIÁC · CHIA RẼ — KHÔNG CẦM (TP) vs ĐỊNH GIÁ HẤP DẪN (QD)
+  │  Giỏ        : dài hạn · spot
+  │  TradingView: HOSE:VPB   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Lợi nhuận trước thuế quý 2 đạt 10.959 tỷ, gần gấp đôi cùng kỳ —
+  │              nhưng giá cổ phiếu từ 38 về 26.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 30/07  Thái Phạm  →  Không cầm
+  │      MỤC TIÊU: HPG bị Vin Steel cạnh tranh
+  │      CẮT/LƯU Ý: LPB là "cổ phiếu joker"
+  │  • 26/07  Thái Phạm  →  Không mua
+  │      MỤC TIÊU: "Được thì ít mà chết thì lắm"
+  │  • 18/07  Quang Dũng  →  ĐỊNH GIÁ HẤP DẪN
+  │      VÀO: Vùng 26
+  │      MỤC TIÊU: Lợi nhuận nhân 4 từ 2018 trong khi giá về vùng cũ
+  │      CẮT/LƯU Ý: Nợ xấu 3,17% — theo dõi từng quý
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Thái Phạm (30/07): Không cầm
+  │    · Quang Dũng (18/07): ĐỊNH GIÁ HẤP DẪN
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ MBB  —  MB Bank
+  │  Trạng thái : MUA/GIỮ · NHÓM CHỈ TIÊU TÍN DỤNG 36%
+  │  Giỏ        : dài hạn · spot
+  │  TradingView: HOSE:MBB   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Một trong ba ngân hàng có kế hoạch tăng trưởng tín dụng 36% năm 2026
+  │              — gấp đôi phần còn lại.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  CẦM — P/B ~1,1 lần cũng hấp dẫn
+  │  • 10/08  Quang Dũng  →  TÍCH SẢN — định giá thấp nhất ba năm
+  │      VÀO: P/B 1,2 lần
+  │      MỤC TIÊU: LNST +40%, NIM hơn 4%, nợ xấu 1,5%
+  │      CẮT/LƯU Ý: Áp lực tăng trưởng tín dụng nửa cuối năm
+  │  • 08/08  Thái Phạm  →  KHÔNG nằm trong diện thoái vốn
+  │  • 05/08  Thái Phạm  →  Không còn đẹp
+  │      VÀO: Đã quay lại vùng giá cũ
+  │    (còn 4 phiếu lệnh cũ hơn)
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Thái Phạm (15/08): CẦM — P/B ~1,1 lần cũng hấp dẫn
+  │    · Quang Dũng (10/08): TÍCH SẢN — định giá thấp nhất ba năm
+  │    · Chứng khoán 5 phút (03/08): Giữ đợi nhận quyền, KHÔNG mua thêm
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ ACB  —  Ngân hàng Á Châu
+  │  Trạng thái : CẢNH GIÁC · CHIA RẼ — CHƯA TỚI LƯỢT (TP) vs ĐỊNH GIÁ HỢP LÝ (QD)
+  │  Giỏ        : tránh · spot
+  │  TradingView: HOSE:ACB   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Thái Phạm xếp vào nhóm ngân hàng "chưa tới lượt" — không mua trong
+  │              giai đoạn này.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Quang Dũng  →  Định giá hợp lý, giải được bài toán tăng trưởng
+  │      VÀO: Trích lập ~11%
+  │  • 26/07  Thái Phạm  →  Không mua
+  │      MỤC TIÊU: "Được thì ít mà chết thì lắm"
+  │  • 18/07  Quang Dũng  →  An toàn hơn
+  │      CẮT/LƯU Ý: Nợ xấu chỉ ~1%, dùng làm mốc đối chiếu
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Quang Dũng (15/08): Định giá hợp lý, giải được bài toán tăng trưởng
+  │    · Thái Phạm (26/07): Không mua
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ LPB  —  LPBank
+  │  Trạng thái : TRÁNH · KHÔNG CẦM
+  │  Giỏ        : tránh · spot
+  │  TradingView: HOSE:LPB   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Nằm trong danh sách ngân hàng Thái Phạm nói không cầm (Tập 41,
+  │              30/07).
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  ĐỪNG MUA — cao giá
+  │      CẮT/LƯU Ý: "Dễ dính chưởng"
+  │  • 05/08  Thái Phạm  →  KHÔNG ĐỤNG VÀO
+  │      CẮT/LƯU Ý: Nêu đích danh trong danh sách tránh
+  │  • 30/07  Thái Phạm  →  Không cầm
+  │      MỤC TIÊU: HPG bị Vin Steel cạnh tranh
+  │      CẮT/LƯU Ý: LPB là "cổ phiếu joker"
+  │  • 26/07  Thái Phạm  →  Không mua
+  │      MỤC TIÊU: "Được thì ít mà chết thì lắm"
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ STB  —  Sacombank
+  │  Trạng thái : TRÁNH · KHÔNG CẦM
+  │  Giỏ        : tránh · spot
+  │  TradingView: HOSE:STB   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Thái Phạm (Tập 41): nằm trong nhóm ngân hàng không cầm.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  ĐỪNG MUA — cao giá
+  │      CẮT/LƯU Ý: "Dễ dính chưởng"
+  │  • 30/07  Thái Phạm  →  Không cầm
+  │      MỤC TIÊU: HPG bị Vin Steel cạnh tranh
+  │      CẮT/LƯU Ý: LPB là "cổ phiếu joker"
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ OCB  —  Ngân hàng Phương Đông
+  │  Trạng thái : CHỜ · CHỈ HỢP ĐÁNH GAME
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: HOSE:OCB   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : CK 5 phút: P/B khoảng 0,8 và nhịp điều chỉnh mất tầm 1/2 sóng trông
+  │              lành mạnh, nhưng chưa có điểm mua — cần vượt MA20. "OCB mà kỳ vọng
+  │              tăng trưởng gì thì khó"; so với Techcombank P/B 1,1 thì không hấp
+  │              dẫn bằng.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 03/08  Chứng khoán 5 phút  →  Chỉ hợp đánh game
+  │      VÀO: Đợi vượt MA20
+  │      CẮT/LƯU Ý: P/B 0,8 nhưng kỳ vọng tăng trưởng khó
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ SHB  —  Ngân hàng Sài Gòn – Hà Nội
+  │  Trạng thái : CHỜ · CHỜ CÂY TRẦN + VOLUME GẤP 3–4 LẦN
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: HOSE:SHB   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : CK 5 phút: từ đỉnh tháng 8–9 năm ngoái đến nay chưa có nhịp đảo
+  │              chiều nào, thanh khoản không vào. Cách đánh đúng là đợi một cây tăng
+  │              trần kèm thanh khoản gấp 3–4 lần trung bình rồi mua gia tăng trên đà
+  │              tăng — KHÔNG mua tích lũy để nắm giữ.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 03/08  Chứng khoán 5 phút  →  Chỉ vào khi có cây trần + volume gấp 3–4 lần
+  │      VÀO: Chờ tín hiệu
+  │      CẮT/LƯU Ý: Không mua tích lũy để nắm giữ
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ EIB  —  Ngân hàng Eximbank
+  │  Trạng thái : MUA/GIỮ · CHIA RẼ — mua hay đợi hai đáy
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: HOSE:EIB   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Thái Phạm xếp EIB vào nhóm MUA vì đã giảm sâu và nhóm chủ sẽ kéo. CK
+  │              5 phút thận trọng hơn: vùng dưới 20 không xấu và nhắm vượt 20 thì
+  │              bán, nhưng chưa vượt MA20 nên "nếu là em thì em sẽ đợi hai đáy".
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 05/08  Thái Phạm  →  MUA — đã giảm sâu
+  │      VÀO: Vùng hiện tại
+  │      MỤC TIÊU: Nhóm chủ sẽ kéo
+  │  • 04/08  Chứng khoán 5 phút  →  Mua được nhưng đợi hai đáy thì hơn
+  │      VÀO: Dưới 20
+  │      MỤC TIÊU: Vượt 20 thì bán
+  │      CẮT/LƯU Ý: Chưa vượt MA20
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Thái Phạm (05/08): MUA — đã giảm sâu
+  │    · Chứng khoán 5 phút (04/08): Mua được nhưng đợi hai đáy thì hơn
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ VIB  —  Ngân hàng Quốc tế Việt Nam
+  │  Trạng thái : MUA/GIỮ · ĐỊNH GIÁ HỢP LÝ
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: HOSE:VIB   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Quang Dũng nêu VIB trong nhóm ngân hàng có mức định giá hợp lý mà
+  │              vẫn giải được bài toán tốc độ tăng trưởng, cùng với ACB và BVB. Bối
+  │              cảnh: gần như cả ngành đang rẻ hơn nhiều so với chính nó trong 6 năm
+  │              qua.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Quang Dũng  →  Định giá hợp lý, giải được bài toán tăng trưởng
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ NÔNG NGHIỆP & CHĂN NUÔI
+  │
+  ├─ DBC  —  Dabaco
+  │  Trạng thái : TRÁNH · ĐÃ KHỞI TỐ — GIỮ, KHÔNG MUA THÊM
+  │  Giỏ        : tránh · spot
+  │  TradingView: HOSE:DBC   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Khởi tố tối 31/07 vụ tai nạn lao động (5 người chết, 8 bị thương);
+  │              CK 5 phút: giảm nhưng sẽ không sàn như PNJ.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 31/07  Chứng khoán 5 phút  →  GIỮ — KHÔNG MUA THÊM
+  │      MỤC TIÊU: Giảm nhưng không sàn như PNJ
+  │      CẮT/LƯU Ý: Không mua trên đà giảm
+  │  • 27/07  Chứng khoán 5 phút  →  GIỮ — KHÔNG MUA THÊM
+  │      VÀO: Đã vào 1–2 lệnh
+  │      MỤC TIÊU: Đợi nền giá mới
+  │      CẮT/LƯU Ý: Không đảo hàng lúc này
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ HAG  —  Hoàng Anh Gia Lai
+  │  Trạng thái : TRÁNH · KHÔNG QUAN TÂM — GIÁ 14 KHÔNG HẤP DẪN
+  │  Giỏ        : tránh · spot
+  │  TradingView: HOSE:HAG   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : CK 5 phút: giảm nhiều từ đỉnh nhưng chất lượng doanh nghiệp không
+  │              đổi nhiều. Tích cực duy nhất là xử lý được khá khá nợ, nhưng không
+  │              đi kèm tích cực về giá; thanh khoản không có và tích lũy chưa đủ.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 03/08  Chứng khoán 5 phút  →  Không quan tâm
+  │      VÀO: Giá 14 không hấp dẫn
+  │      CẮT/LƯU Ý: Thanh khoản không có
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ THÉP
+  │
+  ├─ HPG  —  Hòa Phát
+  │  Trạng thái : CẢNH GIÁC · CHIA RẼ — TRÁNH (TP · 5P) vs TÍCH SẢN (QD)
+  │  Giỏ        : tránh · spot
+  │  TradingView: HOSE:HPG   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Mã gây tranh cãi nhất: Thái Phạm và CK 5 phút bảo tránh vì thép Vin
+  │              cạnh tranh, Quang Dũng bảo mua mạnh vì lợi nhuận quý 2 tăng 50,6%
+  │              nhờ Dung Quất 2.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 06/08  Quang Dũng  →  GIỮ — điểm sáng duy nhất ngành thép
+  │      MỤC TIÊU: Kỳ vọng lợi nhuận 20–30% (hạ từ 50%)
+  │      CẮT/LƯU Ý: Cả ngành thép đang xấu
+  │  • 04/08  Thái Phạm  →  Đợi kéo lại 182x thì ra
+  │      VÀO: Đang hòa vốn
+  │      MỤC TIÊU: Ra khi Index về 182x
+  │  • 01/08  Quang Dũng  →  TÍCH SẢN — MUA KHI GIẢM
+  │      VÀO: Vùng 20 hiện tại, mua rải
+  │      MỤC TIÊU: Q3–Q4 tăng trưởng 40–60%
+  │      CẮT/LƯU Ý: Không margin, không đoán đáy
+  │  • 30/07  Thái Phạm  →  Không cầm
+  │      MỤC TIÊU: HPG bị Vin Steel cạnh tranh
+  │      CẮT/LƯU Ý: LPB là "cổ phiếu joker"
+  │    (còn 3 phiếu lệnh cũ hơn)
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Quang Dũng (06/08): GIỮ — điểm sáng duy nhất ngành thép
+  │    · Thái Phạm (04/08): Đợi kéo lại 182x thì ra
+  │    · Chứng khoán 5 phút (13/07): ĐỨNG NGOÀI
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ NKG  —  Thép Nam Kim
+  │  Trạng thái : CẢNH GIÁC · KÉM HƠN HPG RÕ RỆT
+  │  Giỏ        : tránh · spot
+  │  TradingView: HOSE:NKG   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Quang Dũng: tỉ suất 2,5 năm chỉ 7%, so với HPG 92%.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Quang Dũng  →  Kém hơn HPG
+  │      CẮT/LƯU Ý: Tỉ suất 2,5 năm chỉ 7% và 26% so với HPG 92%
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ HSG  —  Hoa Sen Group
+  │  Trạng thái : CẢNH GIÁC · KÉM HƠN HPG
+  │  Giỏ        : tránh · spot
+  │  TradingView: HOSE:HSG   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Quang Dũng: tỉ suất 2,5 năm 26%, so với HPG 92%.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Quang Dũng  →  Kém hơn HPG
+  │      CẮT/LƯU Ý: Tỉ suất 2,5 năm chỉ 7% và 26% so với HPG 92%
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ TIÊU DÙNG & SỮA
+  │
+  ├─ VNM  —  Vinamilk
+  │  Trạng thái : MUA/GIỮ · MUA — VÙNG GIÁ RẤT RẺ
+  │  Giỏ        : dài hạn · spot
+  │  TradingView: HOSE:VNM   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Nâng hạng: Thái Phạm nói thẳng "vùng giá rất rẻ, mua vào sẽ mang lại
+  │              lợi nhuận dài hạn" — mã duy nhất trong danh mục có lời tuần qua.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 08/08  Thái Phạm  →  CẦM — nhà nước còn 36%
+  │      VÀO: Đã mua từ vùng thấp, lời ~5%
+  │      MỤC TIÊU: Thời điểm đẹp nhất để nhà nước thoái
+  │  • 07/08  Thái Phạm  →  Khá lên nhờ thoái vốn nhà nước
+  │  • 07/08  Chứng khoán 5 phút  →  KHÔNG khuyến nghị
+  │      VÀO: Ichimoku đẹp nhưng đánh theo tin cổ tức
+  │      CẮT/LƯU Ý: "Cũng không bền"
+  │  • 31/07  Chứng khoán 5 phút  →  KHÔNG KỲ VỌNG DÀI HẠN
+  │      VÀO: Có điểm mua 17/7 vùng 56–57
+  │      MỤC TIÊU: Đã tăng ~11% từ đáy đầu tháng
+  │      CẮT/LƯU Ý: Tăng trưởng chỉ 3–4%/năm
+  │    (còn 2 phiếu lệnh cũ hơn)
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Thái Phạm (08/08): CẦM — nhà nước còn 36%
+  │    · Chứng khoán 5 phút (07/08): KHÔNG khuyến nghị
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ TRANG SỨC & BÁN LẺ CAO CẤP
+  │
+  ├─ PNJ  —  Vàng bạc Đá quý Phú Nhuận
+  │  Trạng thái : CẢNH GIÁC · PHÁ ĐÁY 6 NĂM — TRÁNH TUYỆT ĐỐI
+  │  Giỏ        : tránh · spot
+  │  TradingView: HOSE:PNJ   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Phá đáy 6 năm, giám đốc bị truy tố buôn lậu kim cương; cú "giải cứu"
+  │              tóm sàn cuối tuần không đổi được luận điểm — Thái Phạm dự báo còn
+  │              sàn thêm như Novaland.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  Chỉ hồi kỹ thuật
+  │      CẮT/LƯU Ý: Không có cơ sở tăng giá dài hạn
+  │  • 05/08  Thái Phạm  →  Có thể bị đánh ngược lên
+  │      MỤC TIÊU: Vùng 43 theo hình chữ V
+  │      CẮT/LƯU Ý: Quỹ kéo để bán nốt hàng
+  │  • 04/08  Thái Phạm  →  Lướt 1/2 vị thế
+  │      VÀO: Vùng hiện tại, chỉ cho ai thích cảm giác mạnh
+  │      MỤC TIÊU: Lời 10–15% thì ra hàng
+  │      CẮT/LƯU Ý: Dính 2 cây sàn thì đi ra
+  │  • 04/08  Chứng khoán 5 phút  →  KHÔNG MUA
+  │      CẮT/LƯU Ý: Rủi ro điều tra mở rộng
+  │    (còn 6 phiếu lệnh cũ hơn)
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Thái Phạm (15/08): Chỉ hồi kỹ thuật
+  │    · Chứng khoán 5 phút (04/08): KHÔNG MUA
+  │    · AzFin (16/07): GIỮ NHỎ / QUAN SÁT
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ XÂY DỰNG & HẠ TẦNG
+  │
+  ├─ CII  —  Hạ tầng Kỹ thuật TP.HCM
+  │  Trạng thái : CHỜ · CẦM, ĐỢI INDEX 182x RA
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: HOSE:CII   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Thái Phạm trả lời hội viên còn ít CII và đang có 60% danh mục là DPM
+  │              với BVB: cầm cho nó hồi lên rồi vùng Index 182x ra luôn, nếu được —
+  │              thay vì bán ngay để mua POW.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 04/08  Thái Phạm  →  Cầm, đợi 182x ra
+  │      VÀO: Đang cầm ít
+  │      MỤC TIÊU: Ra vùng Index 182x
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ VCG  —  Tổng công ty Vinaconex
+  │  Trạng thái : MUA/GIỮ · THEO DÕI SÓNG ĐẦU TƯ CÔNG
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: HOSE:VCG   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Quang Dũng nêu VCG là mã đầu tư công có thể đi giống FPT về mặt đồ
+  │              thị. Lý do: cuối năm đầu tư công thường mạnh, và cơ chế chính sách
+  │              đang hậu thuẫn dòng vốn ưu tiên cho các dự án trọng điểm của chính
+  │              phủ.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 06/08  Quang Dũng  →  Đầu tư công — theo dõi
+  │      MỤC TIÊU: Cuối năm đầu tư công thường mạnh
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ XÂY LẮP ĐIỆN & EPC
+  │
+  ├─ PC1  —  PC1 Group
+  │  Trạng thái : CHỜ · KẸT THÌ THOÁT KHI CÓ TIN KÉO
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: HOSE:PC1   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Thái Phạm: ai đang kẹt PC1 — có tin kéo lên thì "tranh thủ ra", chưa
+  │              rõ chuyện đổi chủ.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Thái Phạm  →  CHỜ MUA 17–18
+  │      VÀO: Vùng 17–18
+  │      CẮT/LƯU Ý: Thanh khoản cạn kiệt
+  │  • 30/07  Thái Phạm  →  Cơ cấu khi hồi
+  │      VÀO: Hồi về đáy cũ 15
+  │      MỤC TIÊU: Đã đổi chủ — vùng này chưa mua
+  │  • 23/07  Thái Phạm  →  Tránh
+  │      VÀO: Không đụng
+  │      MỤC TIÊU: PNJ về <9; HPG về 21.85
+  │  • 18/07  Thái Phạm  →  THOÁT KHI CÓ TIN
+  │      VÀO: Đang kẹt từ trước
+  │      MỤC TIÊU: Nhịp kéo theo tin → giảm tỷ trọng
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ ĐA NGÀNH & THIẾT BỊ ĐIỆN
+  │
+  ├─ GEX  —  Tập đoàn GELEX
+  │  Trạng thái : MUA/GIỮ · GIỮ — KHÔNG MUA ĐUỔI
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: HOSE:GEX   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : CK 5 phút: mã đáng chú ý nhất phiên 04/08, kéo trần trong khoảng 10
+  │              phút cuối vì thanh khoản bé. Ai bắt được điểm phân kỳ dương đồ thị
+  │              giờ tuần trước (vùng vượt 22) đang lãi ~12% — giữ tiếp, nhưng đã
+  │              +26% từ đáy nên mua đuổi bây giờ là rủi ro ngắn hạn.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 04/08  Chứng khoán 5 phút  →  GIỮ — không mua đuổi
+  │      VÀO: Điểm mua đúng là vùng vượt 22 tuần trước
+  │      MỤC TIÊU: Đang lãi ~12%
+  │      CẮT/LƯU Ý: Đã +26% từ đáy, mua giờ là rủi ro ngắn hạn
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ ĐIỆN & NĂNG LƯỢNG
+  │
+  ├─ POW  —  Điện lực Dầu khí Việt Nam
+  │  Trạng thái : MUA/GIỮ · MUA NHẸ NẾU NHIỀU TIỀN
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: HOSE:POW   (HOSE/HNX — TradingView bản free KHÔNG vẽ được mã VN)
+  │  Tóm tắt   : Thái Phạm xếp POW vào danh sách mua thêm nhẹ nhàng dành cho nhóm
+  │              đang cầm hơn 60% tiền mặt, cùng với phân bón và nhóm ngân hàng
+  │              (BID/EIB, BVB, TPB, VCB hoặc HDB).
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 04/08  Thái Phạm  →  Mua nhẹ nếu cầm trên 60% tiền
+  │      VÀO: Vùng hiện tại
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+
+█████ QUỐC TẾ (MỸ & CHÂU ÂU) — 33 mã
+
+  ┌─ AN NINH MẠNG
+  │
+  ├─ PANW  —  Palo Alto Networks
+  │  Trạng thái : SHORT/BÁN · SHORT — VỊ THẾ NHỎ
+  │  Giỏ        : ngắn hạn · margin/short
+  │  TradingView: BINANCE:PANWUSDT.P   (hợp đồng vĩnh cửu Binance)
+  │  Tóm tắt   : Đại diện nhóm cyber security — nhóm được gọi tên sẽ gãy sau AI chip.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  GIỮ SHORT — vào thêm ít
+  │      VÀO: Vùng hiện tại
+  │      CẮT/LƯU Ý: Phần vào thêm cắt lỗ ở đỉnh cũ
+  │  • 13/08  Thái Phạm  →  GIỮ SHORT — đang kẹp 1/2
+  │      CẮT/LƯU Ý: 412
+  │  • 01/08  Thái Phạm  →  Chờ short
+  │      VÀO: Vùng ~350
+  │  • 31/07  Thái Phạm  →  Short (chờ hồi)
+  │      VÀO: Đợi hồi lại rồi đánh tiếp
+  │      MỤC TIÊU: "Rồi cũng như apple thôi"
+  │      CẮT/LƯU Ý: Không đuổi giá
+  │    (còn 3 phiếu lệnh cũ hơn)
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ FTNT  —  Fortinet
+  │  Trạng thái : SHORT/BÁN · SHORT — VỊ THẾ NHỎ
+  │  Giỏ        : ngắn hạn · margin/short
+  │  TradingView: NASDAQ:FTNT
+  │  Tóm tắt   : Mã thứ hai trong rổ short cyber security của Thái Phạm.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Thái Phạm  →  Chờ short
+  │      VÀO: Đỉnh cũ
+  │      MỤC TIÊU: Đập về 169
+  │      CẮT/LƯU Ý: KQKD tốt nhưng không cứu được giá
+  │  • 31/07  Thái Phạm  →  Short (chờ hồi)
+  │      VÀO: Đợi hồi lại rồi đánh tiếp
+  │      MỤC TIÊU: "Rồi cũng như apple thôi"
+  │      CẮT/LƯU Ý: Không đuổi giá
+  │  • 18/07  Thái Phạm  →  SHORT
+  │      VÀO: Vào từ từ, vị thế nhỏ
+  │      MỤC TIÊU: Theo nhịp gãy nhóm cyber
+  │      CẮT/LƯU Ý: Không đòn bẩy
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ CRWD  —  CrowdStrike
+  │  Trạng thái : SHORT/BÁN · SHORT — ĐANG BẮT ĐẦU GÃY
+  │  Giỏ        : ngắn hạn · margin/short
+  │  TradingView: BINANCE:CRWDUSDT.P   (hợp đồng vĩnh cửu Binance)
+  │  Tóm tắt   : Mã cyber đầu tiên "bắt đầu cho giảm 3–4%" — xác nhận sớm cho cả rổ
+  │              short.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  GIỮ SHORT — vào thêm ít
+  │      VÀO: Vùng hiện tại
+  │      MỤC TIÊU: Bảo mật truyền thống thua AI
+  │      CẮT/LƯU Ý: Phần vào thêm cắt lỗ ở đỉnh cũ
+  │  • 13/08  Thái Phạm  →  GIỮ SHORT — đang kẹp 1/2
+  │      CẮT/LƯU Ý: 238
+  │  • 08/08  Thái Phạm  →  BỔ SUNG phần đã chốt
+  │      VÀO: Vùng 220
+  │  • 04/08  Thái Phạm  →  SHORT khi kéo lên
+  │      VÀO: Đợi kéo 1 turn lên 210
+  │      MỤC TIÊU: "Lại tẩn xuống — đang phân phối"
+  │    (còn 3 phiếu lệnh cũ hơn)
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ BÁN DẪN
+  │
+  ├─ INTC  —  Intel
+  │  Trạng thái : SHORT/BÁN · SHORT — ĐÍCH LẤP GAP 70
+  │  Giỏ        : ngắn hạn · margin/short
+  │  TradingView: BINANCE:INTCUSDT.P   (hợp đồng vĩnh cửu Binance)
+  │  Tóm tắt   : Đã giảm 35–40% từ đỉnh 130–141; KQKD Q2 vượt kỳ vọng nhưng vẫn rơi
+  │              gần 8% — đích tiếp theo lấp gap vùng 70.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Thái Phạm  →  Giữ lệnh short
+  │      VÀO: Đang có vị thế
+  │      MỤC TIÊU: Còn điều chỉnh tiếp
+  │  • 30/07  Thái Phạm  →  Short thêm
+  │      VÀO: Chờ hồi ~92
+  │      MỤC TIÊU: Lấp gap vùng 70
+  │      CẮT/LƯU Ý: Đã chốt lời 1/2
+  │  • 26/07  Thái Phạm  →  SHORT (giữ)
+  │      VÀO: Đỉnh 130–141, đã −35–40%
+  │      MỤC TIÊU: Lấp gap vùng 70 (−50% từ đỉnh)
+  │  • 23/07  Thái Phạm  →  Short
+  │      VÀO: Apple hoàn vốn; MU >1.080
+  │      MỤC TIÊU: Intel về 70
+  │    (còn 2 phiếu lệnh cũ hơn)
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ MU  —  Micron Technology
+  │  Trạng thái : SHORT/BÁN · SHORT — ĐÃ CHỐT 1/2
+  │  Giỏ        : ngắn hạn · margin/short
+  │  TradingView: BINANCE:MUUSDT.P   (hợp đồng vĩnh cửu Binance)
+  │  Tóm tắt   : Short từ 1.100–1.120, từng bị dí -15–16% — giờ lãi hơn 20%, đã chốt
+  │              một nửa.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Thái Phạm  →  Giữ lệnh short
+  │      VÀO: Đang có vị thế
+  │      MỤC TIÊU: Còn điều chỉnh tiếp
+  │  • 31/07  Thái Phạm  →  Chốt 1/2
+  │      VÀO: Chốt đầu phiên 29/07
+  │      MỤC TIÊU: Short lại 1/2 sau 2–4 tuần
+  │      CẮT/LƯU Ý: Phiên sáng -8..-11% "vượt mong đợi"
+  │  • 30/07  Thái Phạm  →  Short khi giật
+  │      VÀO: PANW 172–178 · CRWD ~190 · MRVL ~192 · MU ~890
+  │      MỤC TIÊU: Nhóm chip nhớ & cyber còn giảm
+  │  • 23/07  Thái Phạm  →  Short
+  │      VÀO: Apple hoàn vốn; MU >1.080
+  │      MỤC TIÊU: Intel về 70
+  │    (còn 1 phiếu lệnh cũ hơn)
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ MRVL  —  Marvell Technology
+  │  Trạng thái : SHORT/BÁN · SHORT — ĐÃ CHỐT 1/2
+  │  Giỏ        : ngắn hạn · margin/short
+  │  TradingView: BINANCE:MRVLUSDT.P   (hợp đồng vĩnh cửu Binance)
+  │  Tóm tắt   : Vào 299–300 bị kéo lên gần 10% trước khi có quả ngọt — thứ Sáu đã
+  │              chốt 1/2.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Thái Phạm  →  Giữ lệnh short
+  │      VÀO: Đang có vị thế
+  │      MỤC TIÊU: Còn điều chỉnh tiếp
+  │  • 31/07  Thái Phạm  →  Chốt 1/2
+  │      VÀO: Chốt đầu phiên 29/07
+  │      MỤC TIÊU: Short lại 1/2 sau 2–4 tuần
+  │      CẮT/LƯU Ý: Phiên sáng -8..-11% "vượt mong đợi"
+  │  • 30/07  Thái Phạm  →  Short khi giật
+  │      VÀO: PANW 172–178 · CRWD ~190 · MRVL ~192 · MU ~890
+  │      MỤC TIÊU: Nhóm chip nhớ & cyber còn giảm
+  │  • 18/07  Thái Phạm  →  SHORT (giữ 1/2)
+  │      VÀO: 299–300
+  │      MỤC TIÊU: Giảm tiếp sau nhịp hồi 1–2 ngày
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ AMD  —  AMD
+  │  Trạng thái : SHORT/BÁN · HỒI LÀ GÃY TIẾP
+  │  Giỏ        : ngắn hạn · margin/short
+  │  TradingView: BINANCE:AMDUSDT.P   (hợp đồng vĩnh cửu Binance)
+  │  Tóm tắt   : "AMD cũng vậy thôi — có thể hồi phục chút xíu rồi lại gãy."
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  SHORT khi lên
+  │      VÀO: Quanh 575; có hàng thì mua thêm 585
+  │      MỤC TIÊU: Vùng tắc nghẽn, khó long khó short
+  │  • 08/08  Thái Phạm  →  Tiếp tục giữ short
+  │  • 05/08  Thái Phạm  →  SHORT sau tin
+  │      VÀO: Đã nhốt một ít hàng sau KQKD
+  │      MỤC TIÊU: Sell the news — giảm 9,21% sau giờ
+  │  • 01/08  Thái Phạm  →  Giữ lệnh short
+  │      VÀO: Đang có vị thế
+  │      MỤC TIÊU: Còn điều chỉnh tiếp
+  │    (còn 3 phiếu lệnh cũ hơn)
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ NVDA  —  Nvidia
+  │  Trạng thái : SHORT/BÁN · TRÁNH — KHÔNG MUA KHÔNG SHORT
+  │  Giỏ        : tránh · margin/short
+  │  TradingView: BINANCE:NVDAUSDT.P   (hợp đồng vĩnh cửu Binance)
+  │  Tóm tắt   : "Ngày kéo ngày giảm" — đứng ngoài; là tâm điểm của thesis dư cung
+  │              AI.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  SHORT — thêm ở 241
+  │      VÀO: 241
+  │      MỤC TIÊU: Khoảng 205
+  │  • 01/08  Thái Phạm  →  Không ưu tiên
+  │      CẮT/LƯU Ý: "Vốn hóa cao dùng điều tiết chỉ số, ăn không nhiều"
+  │  • 18/07  Thái Phạm  →  ĐỨNG NGOÀI
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ BÁN DẪN & ĐIỆN TỬ TIÊU DÙNG
+  │
+  ├─ SanDisk  —  SanDisk
+  │  Trạng thái : MUA/GIỮ · ĐÃ CHỐT — LÃI ĐẬM NHẤT ĐỢT
+  │  Giỏ        : ngắn hạn · margin/short
+  │  TradingView: — không có symbol
+  │  Tóm tắt   : Mã lãi đậm nhất đợt short vừa rồi: có thời điểm ăn hơn 50% từ vùng
+  │              đỉnh.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Thái Phạm  →  Đã chốt
+  │      MỤC TIÊU: Ăn 5x% từ vùng đỉnh
+  │      CẮT/LƯU Ý: Mã lãi đậm nhất đợt vừa rồi
+  │  • 31/07  Thái Phạm  →  Chốt 1/2
+  │      VÀO: Chốt đầu phiên 29/07
+  │      MỤC TIÊU: Short lại 1/2 sau 2–4 tuần
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ BÁN LẺ
+  │
+  ├─ WMT  —  Walmart
+  │  Trạng thái : SHORT/BÁN · ĐỨNG NGOÀI
+  │  Giỏ        : tránh · margin/short
+  │  TradingView: NYSE:WMT
+  │  Tóm tắt   : Thái Phạm (26/07): đứng ngoài nhóm bán lẻ Mỹ.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 26/07  Thái Phạm  →  Đứng ngoài
+  │      VÀO: Đang nằm đáy
+  │      MỤC TIÊU: Bán lẻ toàn cầu đau khổ
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ COST  —  Costco
+  │  Trạng thái : SHORT/BÁN · ĐỨNG NGOÀI
+  │  Giỏ        : tránh · margin/short
+  │  TradingView: NASDAQ:COST
+  │  Tóm tắt   : Thái Phạm (26/07): đứng ngoài nhóm bán lẻ Mỹ.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 26/07  Thái Phạm  →  Đứng ngoài
+  │      VÀO: Đang nằm đáy
+  │      MỤC TIÊU: Bán lẻ toàn cầu đau khổ
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ CHỈ SỐ
+  │
+  ├─ S&P 500 · US30  —  Chỉ số Mỹ — S&P 500 & Dow Jones
+  │  Trạng thái : SHORT/BÁN · CHỜ VỀ ~7.000 TÍCH LŨY
+  │  Giỏ        : ngắn hạn · margin/short
+  │  TradingView: BINANCE:SPYUSDT.P   (hợp đồng vĩnh cửu Binance · ETF THAY THẾ)
+  │  Tóm tắt   : Sau FOMC 29/07: Dow −1.100 điểm (−2,2%), S&P 500 −1,5% — phiên giảm
+  │              mạnh nhất từ T4/2025 vì lợi suất 30 năm vọt 5,2%. Năm bầu cử giữa
+  │              nhiệm kỳ thường điều chỉnh 17–21% sau tháng 7 — chờ về ~7.000 tích
+  │              lũy.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  SHORT 2/3 vị thế — ưu tiên
+  │      VÀO: Đỉnh 7.816, tăng không có volume
+  │      MỤC TIÊU: Điều chỉnh 10–12% là bình thường
+  │  • 13/08  Thái Phạm  →  GIỮ SHORT
+  │      VÀO: Vẫn hold được
+  │  • 08/08  Thái Phạm  →  SHORT
+  │      VÀO: Nếu kéo upthrust thì short 3.160
+  │      MỤC TIÊU: Đợt tăng là để ra hàng
+  │      CẮT/LƯU Ý: 3.250, hoặc đỉnh + 200 giá
+  │  • 05/08  Thái Phạm  →  SHORT 1/2 ở kháng cự
+  │      VÀO: Chỉ short khi tăng quá đà vào kháng cự
+  │      MỤC TIÊU: Take profit ngay khi về hỗ trợ
+  │      CẮT/LƯU Ý: Vượt là dừng lỗ NGAY
+  │    (còn 7 phiếu lệnh cũ hơn)
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Thái Phạm (15/08): SHORT 2/3 vị thế — ưu tiên
+  │    · LCG Huy (02/08): Giữ 50% danh mục
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ NASDAQ  —  Nasdaq Composite
+  │  Trạng thái : SHORT/BÁN · SHORT SAU HỒI 1–2 PHIÊN
+  │  Giỏ        : ngắn hạn · margin/short
+  │  TradingView: BINANCE:QQQUSDT.P   (hợp đồng vĩnh cửu Binance · ETF THAY THẾ)
+  │  Tóm tắt   : Từ đỉnh ~30.600 (đầu T6) đã về 27.000 — phiên sau FOMC giảm ~2%. Cơn
+  │              sốt AI điều chỉnh "đúng như đã chia sẻ"; dòng tiền trú phòng thủ/y
+  │              tế/Apple nhưng các nhóm đó rồi cũng sẽ chỉnh.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 18/07  Thái Phạm  →  SHORT
+  │      VÀO: Sau nhịp hồi kỹ thuật 1–2 phiên
+  │      MỤC TIÊU: Theo đà gãy chung
+  │      CẮT/LƯU Ý: Vị thế nhỏ, không margin
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ FTSE 100  —  Chỉ số FTSE 100 (Anh)
+  │  Trạng thái : SHORT/BÁN · BÁN / SHORT ĐẦU TUẦN
+  │  Giỏ        : ngắn hạn · margin/short
+  │  TradingView: TVC:UKX
+  │  Tóm tắt   : Thái Phạm (Tập 42): "đầu tuần thế nào cũng dính con FTSE 100 — các
+  │              bạn có thể bán được".
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Thái Phạm  →  Bán / short
+  │      VÀO: Đầu tuần
+  │      MỤC TIÊU: "Thế nào cũng dính"
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ CÔNG NGHỆ
+  │
+  ├─ WTC  —  WiseTech Global (Úc)
+  │  Trạng thái : CẢNH GIÁC · ĐỪNG MUA — CÒN CÓ THỂ GIẢM
+  │  Giỏ        : tránh · spot
+  │  TradingView: ASX:WTC
+  │  Tóm tắt   : Thái Phạm (Tập 42): đừng mua; nếu thích thì mua một chút rồi chờ hồi
+  │              lên 50 mà bán.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Thái Phạm  →  Đừng mua
+  │      VÀO: Nếu thích thì mua chút
+  │      MỤC TIÊU: Chờ hồi lên 50 thì bán
+  │      CẮT/LƯU Ý: Còn có thể giảm tiếp
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ CÔNG NGHỆ & INTERNET
+  │
+  ├─ GOOGL  —  Alphabet (Google)
+  │  Trạng thái : CHỜ · ĐẢO CHIỀU — ĐÍCH 270 THÁNG 9
+  │  Giỏ        : ngắn hạn · margin/short
+  │  TradingView: BINANCE:GOOGLUSDT.P   (hợp đồng vĩnh cửu Binance)
+  │  Tóm tắt   : Từ "chờ mua ~320" nay chuyển hẳn sang tiêu cực: dòng tiền tự do ÂM
+  │              5,9 tỷ đô lần đầu lịch sử, đích 270 trong tháng 9.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  CHỐT SHORT — ngưng short
+  │      VÀO: Short từ 377
+  │      MỤC TIÊU: Mua lại sau bầu cử nếu Cộng hòa thắng
+  │  • 04/08  Thái Phạm  →  SHORT
+  │      VÀO: Giữ vị thế
+  │      CẮT/LƯU Ý: 410
+  │  • 01/08  Thái Phạm  →  Short
+  │      VÀO: Vùng hiện tại
+  │      MỤC TIÊU: Hồi 7% chỉ là kỹ thuật để đỡ Apple
+  │      CẮT/LƯU Ý: Alphabet âm dòng tiền lần đầu từ khi lên sàn
+  │  • 26/07  Thái Phạm  →  TRÁNH / SHORT
+  │      VÀO: Đã giảm 20% từ vùng ~400
+  │      MỤC TIÊU: Về 270 trong tháng 9
+  │      CẮT/LƯU Ý: FCF âm 5,9 tỷ đô — lần đầu lịch sử
+  │    (còn 1 phiếu lệnh cũ hơn)
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ AMZN  —  Amazon
+  │  Trạng thái : SHORT/BÁN · CHỜ SHORT 285–290
+  │  Giỏ        : ngắn hạn · margin/short
+  │  TradingView: NASDAQ:AMZN
+  │  Tóm tắt   : Thái Phạm (Tập 42): đợi kéo lên 285–290 rồi short — phiên tăng 15%
+  │              là đánh đỡ chỉ số.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Thái Phạm  →  Chờ short
+  │      VÀO: 285–290
+  │      MỤC TIÊU: "Kéo thêm khoảng 15 giá nữa"
+  │      CẮT/LƯU Ý: Phiên tăng 15% là đánh đỡ chỉ số
+  │  • 26/07  Thái Phạm  →  Đứng ngoài
+  │      VÀO: Đang nằm đáy
+  │      MỤC TIÊU: Bán lẻ toàn cầu đau khổ
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ CÔNG NGHỆ TIÊU DÙNG
+  │
+  ├─ AAPL  —  Apple
+  │  Trạng thái : SHORT/BÁN · SHORT 320–330
+  │  Giỏ        : ngắn hạn · margin/short
+  │  TradingView: BINANCE:AAPLUSDT.P   (hợp đồng vĩnh cửu Binance)
+  │  Tóm tắt   : Short nửa vị thế 320–330; nửa còn lại để dành cho BCTC 30/07 — kỳ
+  │              vọng guidance Q3 xấu. 30/07: dòng tiền trú ẩn đang xoay vào
+  │              Apple/phòng thủ — nhưng "sự lòng vòng này cuối cùng sẽ kết thúc bằng
+  │              một đợt điều chỉnh".
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  HOLD tới 290
+  │      VÀO: Đã mua 330
+  │      MỤC TIÊU: 290
+  │  • 05/08  Thái Phạm  →  SHORT — còn rớt tiếp
+  │      VÀO: Đã chốt 1/2 ở phiên gap giảm 10%
+  │      MỤC TIÊU: Về vùng 29x
+  │  • 04/08  Thái Phạm  →  Đứng ngoài phần short
+  │      VÀO: Đã chốt 1/2, chưa mua lại
+  │  • 31/07  Thái Phạm  →  Chốt lời short
+  │      VÀO: Đã gia tăng 1/3 ngày 29/07
+  │      MỤC TIÊU: ĐẠT: -10% ngày 31/07
+  │      CẮT/LƯU Ý: Hạn tự đặt: "cùng lắm tới 3/8"
+  │    (còn 4 phiếu lệnh cũ hơn)
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ TSLA  —  Tesla
+  │  Trạng thái : SHORT/BÁN · SHORT
+  │  Giỏ        : ngắn hạn · margin/short
+  │  TradingView: NASDAQ:TSLA
+  │  Tóm tắt   : Thái Phạm (Tập 39, 23/07) nêu short. Bản tin 24/07: TSLA -14,5%, EPS
+  │              33 cent so với kỳ vọng 51 cent.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 23/07  Thái Phạm  →  Short
+  │      VÀO: AMD 575; Google thủng hỗ trợ
+  │      MỤC TIÊU: Google dòng tiền âm; Tesla -7%
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ DƯỢC PHẨM
+  │
+  ├─ CSL  —  CSL Limited (Úc)
+  │  Trạng thái : CHỜ · ĐỂ ĐẤY
+  │  Giỏ        : dài hạn · spot
+  │  TradingView: ASX:CSL
+  │  Tóm tắt   : Thái Phạm (Tập 42): "cứ để đấy thôi" — không hành động gì.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Thái Phạm  →  Để đấy
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ DẦU KHÍ
+  │
+  ├─ WDS  —  Woodside Energy (Úc)
+  │  Trạng thái : MUA/GIỮ · ĐÃ CÓ LỜI — CHỐT
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: ASX:WDS
+  │  Tóm tắt   : Thái Phạm (Tập 42): "lời rồi, chốt thôi".
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Thái Phạm  →  Chốt lời
+  │      MỤC TIÊU: "Lời rồi, chốt thôi"
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ HÀNG KHÔNG VŨ TRỤ
+  │
+  ├─ SpaceX  —  SpaceX (CBX)
+  │  Trạng thái : SHORT/BÁN · SHORT — ĐÍCH 60–70
+  │  Giỏ        : ngắn hạn · margin/short
+  │  TradingView: BINANCE:SPCXUSDT.P   (hợp đồng vĩnh cửu Binance)
+  │  Tóm tắt   : Insider đã rút ~110 tỷ đô tiền thật khỏi thương vụ; lock-up cuối năm
+  │              tung cung gấp 8 lần — đích 60–70 đến đầu năm sau.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  SHORT 1/3
+  │      VÀO: Vùng hiện tại; short thêm ở 165
+  │      MỤC TIÊU: Về 80–90 từ giờ tới 2027
+  │      CẮT/LƯU Ý: 29/6/2027 Elon được bán toàn bộ
+  │  • 08/08  Thái Phạm  →  SHORT LẠI
+  │      VÀO: Vùng 150 trở lại
+  │      MỤC TIÊU: Về 60–70 "nằm trong tầm tay"
+  │      CẮT/LƯU Ý: Sẽ có cây kéo để cover vị thế short
+  │  • 05/08  Thái Phạm  →  SHORT — mở khóa thêm 15% thứ năm
+  │      VÀO: Đã thả một ít ở vùng 125
+  │      MỤC TIÊU: Tiếp tục giảm
+  │  • 01/08  Thái Phạm  →  Giữ short
+  │      VÀO: Đang cầm từ 152
+  │      MỤC TIÊU: Về 60–70 trong 6 tháng
+  │      CẮT/LƯU Ý: Còn 85–90% cổ phiếu mở khoá tới T5/2027
+  │    (còn 4 phiếu lệnh cũ hơn)
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ KHAI KHOÁNG
+  │
+  ├─ BHP  —  BHP Group (Úc)
+  │  Trạng thái : TRÁNH · KHÔNG MUA
+  │  Giỏ        : tránh · spot
+  │  TradingView: ASX:BHP
+  │  Tóm tắt   : Thái Phạm (Tập 42): "không mua BHP — nó gãy bất cứ lúc nào".
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Thái Phạm  →  Không mua
+  │      CẮT/LƯU Ý: "Gãy bất cứ lúc nào"
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ NGOẠI HỐI
+  │
+  ├─ USD/JPY  —  Đô la Mỹ / Yên Nhật
+  │  Trạng thái : MUA/GIỮ · LONG LẠI VÙNG 147–150
+  │  Giỏ        : ngắn hạn · margin/short
+  │  TradingView: FX:USDJPY
+  │  Tóm tắt   : Can thiệp của BOJ và Bộ Tài chính Mỹ là nhân tạo — long lại khi về
+  │              147–150.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Thái Phạm  →  Long khi về vùng thấp
+  │      VÀO: 147–150
+  │      MỤC TIÊU: Chênh lệch lãi suất Nhật 1% vs Mỹ 3,75–4%
+  │      CẮT/LƯU Ý: Ngắn hạn trader thua định chế
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ NGÂN HÀNG
+  │
+  ├─ BAC  —  Bank of America
+  │  Trạng thái : SHORT/BÁN · SHORT ĐƯỢC NGAY
+  │  Giỏ        : ngắn hạn · margin/short
+  │  TradingView: NYSE:BAC
+  │  Tóm tắt   : Thái Phạm (Tập 42): short được ngay vùng hiện tại, cùng Dell và RTX.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Thái Phạm  →  Short
+  │      VÀO: Vùng hiện tại
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ NAB  —  National Australia Bank
+  │  Trạng thái : MUA/GIỮ · ĐÃ CÓ LỜI — CHỐT
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: ASX:NAB
+  │  Tóm tắt   : Thái Phạm (Tập 42): "lời rồi, chốt thôi".
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Thái Phạm  →  Chốt lời
+  │      MỤC TIÊU: "Lời rồi, chốt thôi"
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ ANZ  —  ANZ Group (Úc)
+  │  Trạng thái : MUA/GIỮ · ĐÃ CÓ LỜI — CHỐT
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: ASX:ANZ
+  │  Tóm tắt   : Thái Phạm (Tập 42): "lời rồi, lời rồi chốt thôi".
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Thái Phạm  →  Chốt lời
+  │      MỤC TIÊU: "Lời rồi, chốt thôi"
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ PHẦN CỨNG CNTT
+  │
+  ├─ DELL  —  Dell Technologies
+  │  Trạng thái : SHORT/BÁN · PHÂN PHỐI 467 → 370 — TRÁNH
+  │  Giỏ        : tránh · margin/short
+  │  TradingView: BINANCE:DELLUSDT.P   (hợp đồng vĩnh cửu Binance)
+  │  Tóm tắt   : Mẫu hình phân phối rõ ràng khung 467 → 370 sau khi bị thổi từ 121
+  │              lên ~460 — "thời gian tới sẽ đến Dell, tương tự Intel".
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 13/08  Thái Phạm  →  GIỮ SHORT — "hơi bướng và liên tục ngáo ngáo"
+  │      VÀO: Đang kẹp phần 1/2 còn lại
+  │      MỤC TIÊU: Cách đánh giống Intel dạo nào
+  │      CẮT/LƯU Ý: 538–540
+  │  • 08/08  Thái Phạm  →  GIỮ SHORT 1/2 · short thêm
+  │      VÀO: Short thêm vùng 490–493
+  │      MỤC TIÊU: Rung lắc vùng cao để ra hàng
+  │      CẮT/LƯU Ý: 550
+  │  • 04/08  Thái Phạm  →  SHORT — "giá này thơm rồi"
+  │      VÀO: Vùng hiện tại
+  │      CẮT/LƯU Ý: 500
+  │  • 01/08  Thái Phạm  →  Short
+  │      VÀO: Vùng hiện tại
+  │      MỤC TIÊU: Điều chỉnh đến 15/10
+  │      CẮT/LƯU Ý: Đừng short ngang chừng
+  │    (còn 3 phiếu lệnh cũ hơn)
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ ANET  —  Arista Networks
+  │  Trạng thái : TRÁNH · KHÔNG ƯU TIÊN — "RẤT ẢO"
+  │  Giỏ        : tránh · margin/short
+  │  TradingView: NYSE:ANET
+  │  Tóm tắt   : Thái Phạm (Tập 42): "rất là ảo — có màn hôm nay tăng 8% xong lại bị
+  │              đập xuống".
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Thái Phạm  →  Không ưu tiên
+  │      CẮT/LƯU Ý: "Rất ảo — tăng 8% xong bị đập xuống"
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ QUỐC PHÒNG
+  │
+  ├─ RTX · LMT  —  Quốc phòng Mỹ (RTX, Lockheed)
+  │  Trạng thái : SHORT/BÁN · THEO DÕI MUA — VỀ ĐỈNH CŨ
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: NYSE:RTX
+  │  Tóm tắt   : Nhóm duy nhất được nhắc theo hướng MUA tuần này: "khả năng cao cái
+  │              gì xảy ra với RTX sẽ xảy ra với Lockheed — quay về đỉnh cũ".
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Thái Phạm  →  Short
+  │      VÀO: Vùng hiện tại
+  │  • 26/07  Thái Phạm  →  THEO DÕI MUA
+  │      VÀO: Test lại đầu tuần
+  │      MỤC TIÊU: Quay về đỉnh cũ
+  │      CẮT/LƯU Ý: Phụ thuộc tin chiến sự
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ TIÊU DÙNG & THỜI TRANG
+  │
+  ├─ ADS  —  Adidas
+  │  Trạng thái : CHỜ · ĐÃ CHỐT LỜI — ĐÓNG KÈO
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: XETR:ADS
+  │  Tóm tắt   : Kèo mua từ trước đã chốt lời: "đợi mãi không lên 190 thì thôi,
+  │              chốt".
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 18/07  Thái Phạm  →  ĐÃ CHỐT LỜI
+  │      VÀO: Mua từ mùa World Cup
+  │      MỤC TIÊU: Kỳ vọng cũ ~190 — không đạt, chốt sớm
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ TIÊU DÙNG THIẾT YẾU
+  │
+  ├─ KO  —  Coca-Cola
+  │  Trạng thái : CHỜ · ĐÃ CHỐT LỜI
+  │  Giỏ        : ngắn hạn · margin/short
+  │  TradingView: NYSE:KO
+  │  Tóm tắt   : Thái Phạm (Tập 40, 26/07): đã chốt lời nhóm phòng thủ.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 26/07  Thái Phạm  →  Chốt lời
+  │      VÀO: Chốt hết
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ TRUYỀN THÔNG & GIẢI TRÍ
+  │
+  ├─ NFLX  —  Netflix
+  │  Trạng thái : CHỜ · TRÁNH — YẾU TỐ CHÍNH TRỊ
+  │  Giỏ        : tránh · margin/short
+  │  TradingView: BINANCE:NFLXUSDT.P   (hợp đồng vĩnh cửu Binance)
+  │  Tóm tắt   : "Thời của Trump — đừng đầu tư vào Netflix": rủi ro chính trị phi tài
+  │              chính.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  Đã chốt lời — mua lại nếu về 74
+  │      VÀO: Kẹp 77 lên 108 đã chốt
+  │      MỤC TIÊU: Vùng này có thể hai đáy
+  │  • 18/07  Thái Phạm  →  TRÁNH
+  │      MỤC TIÊU: Hết nhiệm kỳ rủi ro chính trị
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+
+█████ HÀN QUỐC — 1 mã
+
+  ┌─ BÁN DẪN & ĐIỆN TỬ TIÊU DÙNG
+  │
+  ├─ 005930  —  Samsung Electronics
+  │  Trạng thái : SHORT/BÁN · SHORT — VỀ 200.000 → 170.000 KRW
+  │  Giỏ        : ngắn hạn · margin/short
+  │  TradingView: BINANCE:SAMSUNGUSDT.P   (hợp đồng vĩnh cửu Binance)
+  │  Tóm tắt   : Đã giảm 30–32% từ đỉnh, Kospi −31% (từng +85% từ tháng 3) — "đòn bẩy
+  │              quá lớn thì sẽ đến lúc sập".
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  Hồi kỹ thuật rồi gãy tiếp
+  │      MỤC TIÊU: Kéo lên ~300.500 KRW
+  │  • 08/08  Thái Phạm  →  Còn điều chỉnh
+  │      MỤC TIÊU: Về vùng 200.000 KRW
+  │      CẮT/LƯU Ý: Dân bắt đầu thua lỗ nặng
+  │  • 05/08  Thái Phạm  →  Hồi kỹ thuật
+  │      MỤC TIÊU: ~281.500 KRW
+  │      CẮT/LƯU Ý: Hàn đã hết tiền
+  │  • 04/08  Thái Phạm  →  Đợi vùng 220.000 KRW
+  │      VÀO: 220k
+  │      MỤC TIÊU: Lướt lại cùng nhóm bán dẫn
+  │    (còn 4 phiếu lệnh cũ hơn)
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+
+█████ NHẬT BẢN — 2 mã
+
+  ┌─ BÁN LẺ
+  │
+  ├─ AEON  —  AEON (Nhật)
+  │  Trạng thái : MUA/GIỮ · MUA NHỎ
+  │  Giỏ        : ngắn hạn · spot
+  │  TradingView: TSE:8267
+  │  Tóm tắt   : Thái Phạm (Tập 42): khi đồng yên được can thiệp thì tuần tới AEON
+  │              chạy — mua một chút cũng ok.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 01/08  Thái Phạm  →  Mua nhỏ
+  │      VÀO: Tuần tới khi yên được can thiệp
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ CHỈ SỐ
+  │
+  ├─ NI225  —  Nikkei 225 (Nhật)
+  │  Trạng thái : SHORT/BÁN · CANH CAO ĐẬP XUỐNG
+  │  Giỏ        : ngắn hạn · margin/short
+  │  TradingView: BINANCE:EWJUSDT.P   (hợp đồng vĩnh cửu Binance · ETF THAY THẾ)
+  │  Tóm tắt   : Hồi kỹ thuật giống Mỹ 1–2 hôm rồi phải về test lại vùng 58.700.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  SHORT NHẸ — vào 1/3
+  │      VÀO: Vùng hiện tại, vùng đỉnh vào thêm 2/3
+  │      MỤC TIÊU: Sẽ đi tích lũy đi ngang
+  │  • 13/08  Thái Phạm  →  Đà hồi phục đã xong
+  │  • 08/08  Thái Phạm  →  SHORT khi hồi
+  │      VÀO: 68.600
+  │      MỤC TIÊU: Mirror với chỉ số công nghệ Mỹ
+  │  • 05/08  Thái Phạm  →  Hồi kỹ thuật rồi chỉnh tiếp
+  │      MỤC TIÊU: Cùng lắm ~68.000 (vai đầu vai)
+  │    (còn 4 phiếu lệnh cũ hơn)
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+
+█████ HÀNG HÓA & CRYPTO — 4 mã
+
+  ┌─ KIM LOẠI QUÝ
+  │
+  ├─ XAU/USD  —  Vàng
+  │  Trạng thái : MUA/GIỮ · LONG 4.030 · CHÊNH TRONG NƯỚC ĐÃ VỀ 8–9TR
+  │  Giỏ        : ngắn hạn · margin/short
+  │  TradingView: BINANCE:XAUUSDT.P   (hợp đồng vĩnh cửu Binance)
+  │  Tóm tắt   : Long 4.030 cắt lỗ 3.930; chênh trong nước đã về 8–9tr — điều kiện
+  │              mua vật chất đạt. 30/07 sau FOMC: hồi kỹ thuật từ 3.980–4.000 có thể
+  │              lên ~4.300, nhưng "vẫn còn nguyên cửa" rơi về 3.000.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  ĐÃ CHỐT 1/2 — giữ phần còn lại dài hạn
+  │      VÀO: Long từ 4.080
+  │      MỤC TIÊU: Tiến về 4.600, khó tại 4.700–4.800
+  │  • 13/08  Thái Phạm  →  HOLD — chấp nhận rung lắc
+  │      VÀO: Đã vào 4.078–4.080
+  │      MỤC TIÊU: 4.600–4.700 rồi tích lũy, vượt đỉnh trong 8–12 tháng
+  │  • 08/08  Thái Phạm  →  GIỮ — mục tiêu gần
+  │      VÀO: Đã vào 4.070–4.080
+  │      MỤC TIÊU: 4.600–4.700 rồi tích lũy, vượt đỉnh trong 8–12 tháng
+  │  • 07/08  Thái Phạm  →  ĐANG LÃI — vẫn mua được
+  │      VÀO: Đã vào 4.078–4.080
+  │      MỤC TIÊU: Không đợi chỉnh về 4.150/4.222 nữa
+  │      CẮT/LƯU Ý: 3.900 (từ Tập 43)
+  │    (còn 10 phiếu lệnh cũ hơn)
+  │  ⚠ ĐA QUAN ĐIỂM:
+  │    · Thái Phạm (15/08): ĐÃ CHỐT 1/2 — giữ phần còn lại dài hạn
+  │    · Chứng khoán 5 phút (07/08): MUA được rồi
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  │
+  ├─ XAG/USD  —  Bạc
+  │  Trạng thái : CHỜ · ĂN THEO VÀNG
+  │  Giỏ        : ngắn hạn · margin/short
+  │  TradingView: BINANCE:XAGUSDT.P   (hợp đồng vĩnh cửu Binance)
+  │  Tóm tắt   : Không có kèo độc lập — đi theo vàng; vàng chưa tạo đáy thì bạc đứng
+  │              ngoài.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 08/08  Thái Phạm  →  Hồi theo vàng
+  │      VÀO: Đã sập 60% từ đỉnh 120
+  │      MỤC TIÊU: Vùng 70
+  │      CẮT/LƯU Ý: Beta cao hơn vàng 1,5–2 lần
+  │  • 06/08  Thái Phạm  →  Được, nhưng không ưu tiên
+  │      MỤC TIÊU: Beta cao hơn vàng
+  │      CẮT/LƯU Ý: Không mạnh bằng vàng
+  │  • 30/07  Thái Phạm  →  Chờ
+  │      VÀO: Hồi theo vàng lên ~64
+  │  • 18/07  Thái Phạm  →  CHỜ
+  │      VÀO: Đợi vàng tạo đáy 3.600–3.700
+  │      MỤC TIÊU: Vàng hồi 4.300 → bạc ~68
+  │      CẮT/LƯU Ý: Fair value ~50 làm mốc định giá
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ NĂNG LƯỢNG
+  │
+  ├─ WTI  —  Dầu WTI / Brent
+  │  Trạng thái : MUA/GIỮ · TÍCH LŨY — ĐÃ CHỈNH VỀ 84–88
+  │  Giỏ        : ngắn hạn · margin/short
+  │  TradingView: BINANCE:CLUSDT.P   (hợp đồng vĩnh cửu Binance)
+  │  Tóm tắt   : Điều chỉnh sau tin ngưng bắn rồi bật +6,1% phiên 29/07: Brent 88,
+  │              WTI 84,5 (từng chạm ~100). Giữ kịch bản tích lũy vùng cao; đánh lớn
+  │              Iran → 120–130, hòa bình → 85–90.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  Vùng cao lâu — hết sóng
+  │      MỤC TIÊU: Khó về 60–65 đô
+  │      CẮT/LƯU Ý: Chỉ hạ khi Dân chủ nắm hai viện
+  │  • 05/08  Thái Phạm  →  MUA nếu về vùng thấp
+  │      VÀO: 72–73
+  │      MỤC TIÊU: Vẫn loanh quanh 85–90
+  │      CẮT/LƯU Ý: 69
+  │  • 04/08  Thái Phạm  →  Giữ vùng cao
+  │      VÀO: Đang vùng cao
+  │      MỤC TIÊU: Quanh vùng cao tới tháng 10
+  │      CẮT/LƯU Ý: Lên 100 thì không ai muốn
+  │  • 01/08  Thái Phạm  →  Giữ vị thế mua
+  │      VÀO: Đã bắt đáy vùng 70
+  │      MỤC TIÊU: Đi ngang 85–90 đến hết tháng 10
+  │      CẮT/LƯU Ý: Đã chốt vùng 85 — bỏ lỡ sóng lên 101
+  │    (còn 3 phiếu lệnh cũ hơn)
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+  ┌─ TIỀN ĐIỆN TỬ
+  │
+  ├─ BTC  —  Bitcoin
+  │  Trạng thái : CẢNH GIÁC · ĐỨNG NGOÀI — BANANA 3 ĐÍCH 71–72K
+  │  Giỏ        : tránh · margin/short
+  │  TradingView: BINANCE:BTCUSDT   (spot Binance)
+  │  Tóm tắt   : BTC 65.000; nhịp tăng chỉ do đóng lệnh short chứ không phải tiền tổ
+  │              chức (T6 rút ròng 4,5 tỷ đô) — xác suất về 40–41k rất cao. 30/07:
+  │              "2026 không phải là năm của Bitcoin" — banana lần ba đang hình
+  │              thành.
+  │  ── Phiếu lệnh (mới nhất trước) ──
+  │  • 15/08  Thái Phạm  →  GIỮ — đang lỗ 2.000/coin
+  │      VÀO: Long từ 65.000
+  │      MỤC TIÊU: Hồi kỹ thuật quanh đầu tháng 9
+  │      CẮT/LƯU Ý: 60.800 — chưa chạm
+  │  • 13/08  Thái Phạm  →  GIỮ LỆNH LƯỚT — siết cắt lỗ
+  │      VÀO: Đã vào 65.200
+  │      MỤC TIÊU: Hồi lên 69.000–71.000
+  │      CẮT/LƯU Ý: 60.700 (dời từ 61.000), "không nhân nhượng"
+  │  • 08/08  Thái Phạm  →  GIỮ lệnh lướt
+  │      VÀO: Đã vào 65.000
+  │      MỤC TIÊU: Kéo lên vùng 72.000
+  │      CẮT/LƯU Ý: 61.000
+  │  • 07/08  Thái Phạm  →  MUA LƯỚT
+  │      VÀO: 65.200
+  │      MỤC TIÊU: Chốt lời 70.000–71.000
+  │      CẮT/LƯU Ý: 61.000
+  │    (còn 7 phiếu lệnh cũ hơn)
+  │  ✎ Ghi chú của tôi: ________________________________________
+  │
+  └────────────────────────────────────────────────────────────
+
+
+──────────────────────────────────────────────────────────────────────────────
+PHẦN 4 — LƯU Ý KỸ THUẬT KHI DÙNG TRADINGVIEW
+──────────────────────────────────────────────────────────────────────────────
+
+1. MÃ VIỆT NAM: bản TradingView miễn phí KHÔNG có bản quyền HOSE/UPCOM, sẽ báo
+   "This symbol is only available on TradingView". Web Hải Đầu Tư tự vẽ chart VN
+   từ dữ liệu VNDirect nên vẫn xem được — vào trang Sổ mã trên web.
+
+2. MÃ QUỐC TẾ: danh sách trên dùng CẶP BINANCE (đuôi .P là hợp đồng vĩnh cửu)
+   thay vì sàn gốc, vì đó mới là hợp đồng thật sự dùng để short. Nếu muốn xem
+   sàn gốc thì đổi thủ công, ví dụ NASDAQ:AAPL thay cho BINANCE:AAPLUSDT.P
+
+3. "ETF THAY THẾ" nghĩa là Binance không có mã gốc nên dùng ETF gần nhất
+   (SPY↔S&P500, QQQ↔Nasdaq, EWJ↔Nikkei). Giá sẽ lệch so với chỉ số gốc.
+
+4. Mốc giá trong file này là NGUYÊN VĂN lời chuyên gia, không quy đổi đơn vị.
+   Mã VN thường tính bằng nghìn đồng (VD "vùng 34" = 34.000đ), mã Mỹ bằng USD.

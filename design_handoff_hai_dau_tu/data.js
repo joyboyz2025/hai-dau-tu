@@ -6201,7 +6201,7 @@ window.HDT_DATA = {
       "name": "BVBank (chào sàn 21/07)",
       "group": "Chứng khoán Việt Nam",
       "tv": "",
-      "sig": "wait",
+      "sig": "up",
       "stance": "GIỮ — THEO DÕI CHÀO SÀN",
       "aliases": [
         "bvbank",
@@ -6411,7 +6411,7 @@ window.HDT_DATA = {
       "name": "Saigon Cargo Service",
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:SCS",
-      "sig": "wait",
+      "sig": "up",
       "stance": "GIỮ — ĂN CỔ TỨC",
       "aliases": [
         "scs",
@@ -6491,7 +6491,7 @@ window.HDT_DATA = {
       "name": "TCBS (Chứng khoán Kỹ Thương)",
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:TCX",
-      "sig": "wait",
+      "sig": "up",
       "stance": "GIỮ MỘT PHẦN — ĐÃ CHỐT BỚT",
       "aliases": [
         "tcx",
@@ -6566,7 +6566,7 @@ window.HDT_DATA = {
       "name": "Techcombank",
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:TCB",
-      "sig": "wait",
+      "sig": "up",
       "stance": "CHỜ VỀ 22",
       "aliases": [
         "tcb",
@@ -6725,7 +6725,7 @@ window.HDT_DATA = {
       "name": "Chứng khoán SSI",
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:SSI",
-      "sig": "avoid",
+      "sig": "up",
       "stance": "SƯỜN PHẢI — CÓ THỂ VỀ 20",
       "aliases": [
         "ssi"
@@ -6881,8 +6881,8 @@ window.HDT_DATA = {
       "basket": "ngan-han",
       "tradeMode": "spot",
       "tv": "HOSE:VCI",
-      "sig": "up",
-      "stance": "CHỦ TỊCH MUA 31 TRIỆU CP — HỒI NHANH NHẤT",
+      "sig": "warn",
+      "stance": "CHIA RẼ — TRÁNH CẢ NHÓM (TP) vs MUA (5P)",
       "aliases": [
         "vci",
         "vietcap",
@@ -6962,7 +6962,7 @@ window.HDT_DATA = {
       "basket": "tranh",
       "tradeMode": "spot",
       "tv": "HOSE:VIX",
-      "sig": "avoid",
+      "sig": "wait",
       "stance": "RƠI 18–19 → 12–13, CHƯA CÓ TÍN HIỆU ĐÁY",
       "aliases": [
         "vix"
@@ -7196,7 +7196,7 @@ window.HDT_DATA = {
       "name": "Vàng bạc Đá quý Phú Nhuận",
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:PNJ",
-      "sig": "avoid",
+      "sig": "warn",
       "stance": "PHÁ ĐÁY 6 NĂM — TRÁNH TUYỆT ĐỐI",
       "aliases": [
         "pnj",
@@ -7380,7 +7380,7 @@ window.HDT_DATA = {
       "name": "FPT Corp",
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:FPT",
-      "sig": "avoid",
+      "sig": "warn",
       "stance": "TRÁNH — HỞ ROOM, NGOẠI BÁN",
       "aliases": [
         "fpt"
@@ -7559,7 +7559,7 @@ window.HDT_DATA = {
       "name": "PC1 Group",
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:PC1",
-      "sig": "down",
+      "sig": "wait",
       "stance": "KẸT THÌ THOÁT KHI CÓ TIN KÉO",
       "aliases": [
         "pc1"
@@ -7633,7 +7633,7 @@ window.HDT_DATA = {
       "name": "Hóa chất Đức Giang",
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:DGC",
-      "sig": "avoid",
+      "sig": "down",
       "stance": "LOẠI KHỎI DANH MỤC",
       "aliases": [
         "dgc",
@@ -7718,7 +7718,7 @@ window.HDT_DATA = {
       "name": "HDBank",
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:HDB",
-      "sig": "wait",
+      "sig": "up",
       "stance": "CHỜ MUA VÙNG 21–22",
       "aliases": [
         "hdbank",
@@ -7815,7 +7815,7 @@ window.HDT_DATA = {
       "name": "Thế Giới Di Động",
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:MWG",
-      "sig": "down",
+      "sig": "avoid",
       "stance": "THỦNG ĐÁY 75 — BÁN",
       "aliases": [
         "mwg",
@@ -8094,7 +8094,7 @@ window.HDT_DATA = {
       "name": "VietinBank",
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:CTG",
-      "sig": "wait",
+      "sig": "up",
       "stance": "RẺ — NHƯNG CHƯA BẰNG VCB/BID",
       "aliases": [
         "ctg",
@@ -8227,7 +8227,7 @@ window.HDT_DATA = {
       "name": "PV GAS",
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:GAS",
-      "sig": "wait",
+      "sig": "up",
       "stance": "GIỮ — \"KHÔNG THỂ PHÁ SẢN\"",
       "aliases": [
         "gas",
@@ -8500,7 +8500,7 @@ window.HDT_DATA = {
       "name": "Nhóm Vin (VIC/VHM/VRE)",
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:VIC",
-      "sig": "avoid",
+      "sig": "wait",
       "stance": "CHI PHỐI CHỈ SỐ — GIẢM LÀ ĐÁNG MỪNG",
       "aliases": [
         "vic",
@@ -9992,7 +9992,7 @@ window.HDT_DATA = {
       "name": "Nvidia",
       "group": "Quốc tế",
       "tv": "NASDAQ:NVDA",
-      "sig": "avoid",
+      "sig": "down",
       "stance": "TRÁNH — KHÔNG MUA KHÔNG SHORT",
       "aliases": [
         "nvidia",
@@ -10056,7 +10056,7 @@ window.HDT_DATA = {
       "name": "Alphabet (Google)",
       "group": "Quốc tế",
       "tv": "NASDAQ:GOOGL",
-      "sig": "down",
+      "sig": "wait",
       "stance": "ĐẢO CHIỀU — ĐÍCH 270 THÁNG 9",
       "aliases": [
         "google",
@@ -10148,7 +10148,7 @@ window.HDT_DATA = {
       "name": "Netflix",
       "group": "Quốc tế",
       "tv": "NASDAQ:NFLX",
-      "sig": "avoid",
+      "sig": "wait",
       "stance": "TRÁNH — YẾU TỐ CHÍNH TRỊ",
       "aliases": [
         "netflix",
@@ -10201,7 +10201,7 @@ window.HDT_DATA = {
       "name": "Dell Technologies",
       "group": "Quốc tế",
       "tv": "NYSE:DELL",
-      "sig": "avoid",
+      "sig": "down",
       "stance": "PHÂN PHỐI 467 → 370 — TRÁNH",
       "aliases": [
         "dell"
@@ -10308,7 +10308,7 @@ window.HDT_DATA = {
       "name": "Quốc phòng Mỹ (RTX, Lockheed)",
       "group": "Quốc tế",
       "tv": "NYSE:RTX",
-      "sig": "up",
+      "sig": "down",
       "stance": "THEO DÕI MUA — VỀ ĐỈNH CŨ",
       "aliases": [
         "rtx",
@@ -10404,7 +10404,7 @@ window.HDT_DATA = {
       "name": "Vàng",
       "group": "Hàng hóa & Crypto",
       "tv": "OANDA:XAUUSD",
-      "sig": "wait",
+      "sig": "up",
       "stance": "LONG 4.030 · CHÊNH TRONG NƯỚC ĐÃ VỀ 8–9TR",
       "aliases": [
         "vang",
@@ -10746,7 +10746,7 @@ window.HDT_DATA = {
       "name": "Bitcoin",
       "group": "Hàng hóa & Crypto",
       "tv": "BINANCE:BTCUSDT",
-      "sig": "avoid",
+      "sig": "warn",
       "stance": "ĐỨNG NGOÀI — BANANA 3 ĐÍCH 71–72K",
       "aliases": [
         "bitcoin",
@@ -10987,8 +10987,8 @@ window.HDT_DATA = {
       "symbol": "VPB",
       "name": "VPBank",
       "tv": "HOSE:VPB",
-      "sig": "up",
-      "stance": "ĐỊNH GIÁ HẤP DẪN — LỢI NHUẬN NHÂN 4, GIÁ VỀ VÙNG CŨ",
+      "sig": "warn",
+      "stance": "CHIA RẼ — KHÔNG CẦM (TP) vs ĐỊNH GIÁ HẤP DẪN (QD)",
       "aliases": [
         "vpb",
         "vpbank",
@@ -11279,8 +11279,8 @@ window.HDT_DATA = {
       "symbol": "DXG",
       "name": "Đất Xanh",
       "tv": "HOSE:DXG",
-      "sig": "up",
-      "stance": "TIỀN MẶT CẢI THIỆN MẠNH",
+      "sig": "warn",
+      "stance": "CHIA RẼ — ĐIỂM MUA KHÔNG ĐẸP (5P) vs TIỀN MẶT CẢI THIỆN (QD)",
       "aliases": [
         "dxg",
         "dat xanh",
@@ -11354,7 +11354,7 @@ window.HDT_DATA = {
       "symbol": "KDH",
       "name": "Khang Điền",
       "tv": "HOSE:KDH",
-      "sig": "up",
+      "sig": "wait",
       "stance": "QUY MÔ VÀ LỢI NHUẬN CÙNG TĂNG",
       "aliases": [
         "kdh",
@@ -11434,8 +11434,8 @@ window.HDT_DATA = {
       "region": "vn",
       "industry": "Ngân hàng",
       "basket": "tranh",
-      "sig": "wait",
-      "stance": "KHÔNG MUA — CHƯA TỚI LƯỢT",
+      "sig": "warn",
+      "stance": "CHIA RẼ — CHƯA TỚI LƯỢT (TP) vs ĐỊNH GIÁ HỢP LÝ (QD)",
       "aliases": [
         "acb",
         "a chau"
@@ -11727,7 +11727,7 @@ window.HDT_DATA = {
       "region": "vn",
       "industry": "Thép",
       "basket": "tranh",
-      "sig": "wait",
+      "sig": "warn",
       "stance": "KÉM HƠN HPG RÕ RỆT",
       "aliases": [
         "nkg",
@@ -11762,7 +11762,7 @@ window.HDT_DATA = {
       "region": "vn",
       "industry": "Thép",
       "basket": "tranh",
-      "sig": "wait",
+      "sig": "warn",
       "stance": "KÉM HƠN HPG",
       "aliases": [
         "hsg",
@@ -11878,7 +11878,7 @@ window.HDT_DATA = {
       "region": "foreign",
       "industry": "Phần cứng CNTT",
       "basket": "tranh",
-      "sig": "wait",
+      "sig": "avoid",
       "stance": "KHÔNG ƯU TIÊN — \"RẤT ẢO\"",
       "aliases": [
         "anet",
@@ -11994,7 +11994,7 @@ window.HDT_DATA = {
       "region": "foreign",
       "industry": "Tiêu dùng thiết yếu",
       "basket": "ngan-han",
-      "sig": "up",
+      "sig": "wait",
       "stance": "ĐÃ CHỐT LỜI",
       "aliases": [
         "ko",
@@ -12030,7 +12030,7 @@ window.HDT_DATA = {
       "region": "foreign",
       "industry": "Bán lẻ",
       "basket": "tranh",
-      "sig": "wait",
+      "sig": "down",
       "stance": "ĐỨNG NGOÀI",
       "aliases": [
         "wmt",
@@ -12065,7 +12065,7 @@ window.HDT_DATA = {
       "region": "foreign",
       "industry": "Bán lẻ",
       "basket": "tranh",
-      "sig": "wait",
+      "sig": "down",
       "stance": "ĐỨNG NGOÀI",
       "aliases": [
         "cost",
@@ -12412,7 +12412,7 @@ window.HDT_DATA = {
       "industry": "Chỉ số & ETF",
       "basket": "dai-han",
       "tradeMode": "spot",
-      "tv": "VN30",
+      "tv": "HOSE:VN30",
       "sig": "wait",
       "stance": "NỀN CỦA DANH MỤC VN",
       "aliases": [
@@ -12914,7 +12914,7 @@ window.HDT_DATA = {
       "basket": "tranh",
       "tradeMode": "spot",
       "tv": "HOSE:DGW",
-      "sig": "avoid",
+      "sig": "warn",
       "stance": "ĐÃ THỦNG NỀN — KHÔNG MUA",
       "aliases": [
         "digiworld"

@@ -5,17 +5,47 @@
 //          — giữ bài mới nhất + các bài hội viên gần nhất.
 // ─────────────────────────────────────────────────────────────────────────────
 window.HDT_DATA = {
-  "lastUpdated": "17/08/2026 · Tuần 34",
+  "lastUpdated": "18/08/2026 · Tuần 34",
   "pulse": [
+    {
+      "name": "Thanh khoản VN",
+      "mark": "⚠ Thấp nhất kể từ đầu 2026",
+      "sig": "warn",
+      "mkt": "vn"
+    },
+    {
+      "name": "Cách đọc",
+      "mark": "↑ Không có người BÁN, chứ không phải hết người mua",
+      "sig": "up",
+      "mkt": "vn"
+    },
+    {
+      "name": "Tỉ giá",
+      "mark": "↑ Đang ổn trở lại — có lẽ do chính sách crypto 1/9",
+      "sig": "up",
+      "mkt": "vn"
+    },
+    {
+      "name": "Phân bón",
+      "mark": "↑ Bắt đầu chạy, điểm mua kỹ thuật vẫn đẹp",
+      "sig": "up",
+      "mkt": "vn"
+    },
+    {
+      "name": "CK Việt",
+      "mark": "⚠ Điểm số up-trend, 73% cổ phiếu downtrend",
+      "sig": "warn",
+      "mkt": "vn"
+    },
+    {
+      "name": "Ngân hàng VN",
+      "mark": "↑ LNST 89.296 tỷ · +25,4%",
+      "sig": "up",
+      "mkt": "vn"
+    },
     {
       "name": "CK Mỹ",
       "mark": "⚠ S&P đỉnh 7.816 nhưng không có volume",
-      "sig": "warn",
-      "mkt": "us"
-    },
-    {
-      "name": "Nvidia – OpenAI",
-      "mark": "⚠ Cắt cam kết 250 tỷ → hơn 100 tỷ",
       "sig": "warn",
       "mkt": "us"
     },
@@ -26,32 +56,20 @@ window.HDT_DATA = {
       "mkt": "us"
     },
     {
-      "name": "CK Việt",
-      "mark": "⚠ Điểm số up-trend, 73% cổ phiếu downtrend",
+      "name": "Nvidia – OpenAI",
+      "mark": "⚠ Cắt cam kết 250 tỷ → hơn 100 tỷ",
       "sig": "warn",
-      "mkt": "vn"
-    },
-    {
-      "name": "VHM",
-      "mark": "◷ Là hàn thử biểu — chỉ số đi theo mã này",
-      "sig": "wait",
-      "mkt": "vn"
-    },
-    {
-      "name": "Ngân hàng VN",
-      "mark": "↑ LNST 89.296 tỷ · +25,4%",
-      "sig": "up",
-      "mkt": "vn"
+      "mkt": "us"
     },
     {
       "name": "Bitcoin",
-      "mark": "⚠ Đang lỗ 2.000/coin, SL 60.800 chưa chạm",
+      "mark": "⚠ Đang lỗ 2.000/coin, SL 60.700 chưa chạm",
       "sig": "warn",
       "mkt": "us"
     },
     {
       "name": "Dầu",
-      "mark": "⚠ Gói cô lập Iran 17/8 — vùng cao lâu",
+      "mark": "⚠ Gói cô lập Iran — vùng cao lâu",
       "sig": "warn",
       "mkt": "us"
     }
@@ -211,9 +229,105 @@ window.HDT_DATA = {
       },
       "updates": [
         {
+          "date": "2026-08-18",
+          "dateShort": "18/08",
+          "timeAgo": "hôm nay",
+          "tab": "Tút hội viên · 18/08",
+          "sourceType": "member-post",
+          "typeLabel": "Bài đăng hội viên",
+          "title": "Tỉ Giá Ổn Trở Lại, Phân Bón \"Bốc Mùi Nhẹ\" — Kế Hoạch Vẫn Vậy",
+          "summary": "Tút ngắn nhất từ đầu tháng, và chính sự ngắn gọn là thông điệp: không có gì để đổi. Ba ý — tỉ giá đã hạ nhiệt (ông đoán do chính sách crypto 1/9), nhóm phân bón bắt đầu chạy và điểm mua kỹ thuật vẫn còn đẹp, còn kế hoạch danh mục thì giữ nguyên như tuần trước.",
+          "feedChips": [
+            {
+              "label": "Tỉ giá ▲ đang ổn trở lại",
+              "sig": "up"
+            },
+            {
+              "label": "Phân bón ▲ \"bốc mùi nhẹ nhẹ\", điểm mua kỹ thuật vẫn đẹp",
+              "sig": "up"
+            },
+            {
+              "label": "Danh mục ▲ kế hoạch vẫn vậy — không đổi",
+              "sig": "up"
+            },
+            {
+              "label": "Crypto ◷ chính sách 1/9 của Việt Nam",
+              "sig": "wait"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "Tỉ giá",
+              "value": "Đang ổn trở lại",
+              "signal": "up",
+              "note": "\"Tỉ giá đang ổn trở lại. Có lẽ do chính sách 1/9 của Crypto. Tỉ giá ổn, mọi thứ hi vọng tốt hơn.\" Đây là lần thứ ba liên tiếp ông nêu tỉ giá hạ nhiệt như một điểm cộng vĩ mô — tút 11/08 và 13/08 cũng nói vậy."
+            },
+            {
+              "tag": "Nhóm phân bón",
+              "value": "Bắt đầu chạy — điểm mua kỹ thuật vẫn đẹp",
+              "signal": "up",
+              "note": "\"Hôm nay Phân bốc mùi nhẹ nhẹ. Điểm mua kĩ thuật vẫn đẹp.\" Ông không nêu mã cụ thể trong tút này; phân bón trong danh mục cộng đồng từ trước là DPM, DCM."
+            },
+            {
+              "tag": "Danh mục",
+              "value": "Kế hoạch vẫn vậy",
+              "signal": "up",
+              "note": "\"Kế hoạch vẫn vậy. Chỉ là gởi tin nhắn chào mọi người thôi :)\" — nối tiếp đúng mạch tút 14/08 (\"Câu trả lời của tôi là Không\") và 13/08 (\"Full hàng rồi thì ngồi im\")."
+            }
+          ],
+          "sections": [
+            {
+              "title": "Vì sao tút này đáng đọc dù chỉ có 232 chữ",
+              "signal": "up",
+              "sigLabel": "GIỮ NGUYÊN",
+              "para": "Ông đăng tút giữa phiên gần như mỗi khi có gì phải sửa. Một tút chỉ để \"chào mọi người\" đúng vào lúc thanh khoản chạm đáy 2026 là tín hiệu ngược: không có gì phải sửa.",
+              "bullets": [
+                "Không có mốc giá mới, không có lệnh cắt mới, không có mã nào bị gỡ khỏi danh mục.",
+                "Mốc cắt lỗ Bitcoin 60.700 đặt hôm 11/08 vẫn còn nguyên hiệu lực — tút này không nhắc lại, tức là chưa chạm.",
+                "Vàng vẫn theo kịch bản chốt 1/2 ở Tập 45, giữ phần còn lại dài hạn."
+              ]
+            },
+            {
+              "title": "Tỉ giá và chính sách crypto 1/9 — mối liên hệ ông đặt ra",
+              "signal": "wait",
+              "sigLabel": "CHỜ",
+              "para": "Ông gắn việc tỉ giá hạ nhiệt với mốc 1/9 — thời điểm khung pháp lý crypto Việt Nam có hiệu lực. Lập luận này ông đã nêu ở tút 11/08: dòng đô chảy ra ngoài qua sàn ngoại sẽ bị chặn lại, và sau 1/9 sẽ có sàn Việt được cấp phép cùng 6 tháng chuyển đổi.",
+              "bullets": [
+                "Đây là suy đoán của ông, không phải số liệu — ông viết \"có lẽ do\".",
+                "Hội viên dưới tút hỏi thẳng về sàn ngoại (MEXC) sau 1/9; tới lúc chốt bản tin ông chưa trả lời."
+              ]
+            }
+          ],
+          "tradeLevels": [
+            {
+              "group": "Chứng khoán Việt Nam",
+              "items": [
+                {
+                  "asset": "DPM",
+                  "dir": "ĐIỂM MUA KỸ THUẬT VẪN ĐẸP",
+                  "entry": "Vùng hiện tại",
+                  "target": "—",
+                  "stop": "—",
+                  "sig": "up",
+                  "tv": "HOSE:DPM"
+                },
+                {
+                  "asset": "DCM",
+                  "dir": "ĐIỂM MUA KỸ THUẬT VẪN ĐẸP",
+                  "entry": "Vùng hiện tại",
+                  "target": "—",
+                  "stop": "—",
+                  "sig": "up",
+                  "tv": "HOSE:DCM"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "date": "2026-08-16",
           "dateShort": "16/08",
-          "timeAgo": "Hôm qua",
+          "timeAgo": "2 ngày trước",
           "tab": "Nhịp đập · Tuần 33",
           "sourceType": "public-video",
           "typeLabel": "Video công khai · 39 phút",
@@ -263,7 +377,7 @@ window.HDT_DATA = {
         {
           "date": "2026-08-15",
           "dateShort": "15/08",
-          "timeAgo": "2 ngày trước",
+          "timeAgo": "3 ngày trước",
           "tab": "Tập 45 · Tuần 33",
           "sourceType": "member-video",
           "typeLabel": "Video hội viên · 43 phút",
@@ -749,7 +863,7 @@ window.HDT_DATA = {
         {
           "date": "2026-08-14",
           "dateShort": "14/08",
-          "timeAgo": "3 ngày trước",
+          "timeAgo": "4 ngày trước",
           "tab": "Bài đăng · 14/08",
           "sourceType": "member-post",
           "typeLabel": "Bài đăng hội viên · trả lời phiên giảm 36 điểm",
@@ -783,7 +897,7 @@ window.HDT_DATA = {
         {
           "date": "2026-08-13",
           "dateShort": "13/08",
-          "timeAgo": "Hôm nay",
+          "timeAgo": "5 ngày trước",
           "tab": "Bài đăng · 11–13/08",
           "sourceType": "member-post",
           "typeLabel": "Hai bài đăng hội viên · điểm tin trước giờ mở cửa",
@@ -971,7 +1085,7 @@ window.HDT_DATA = {
         {
           "date": "2026-08-08",
           "dateShort": "08/08",
-          "timeAgo": "5 ngày trước",
+          "timeAgo": "1 tuần trước",
           "tab": "Tập 44 · Tuần 32",
           "sourceType": "member-video",
           "typeLabel": "Video hội viên · 40 phút",
@@ -1365,7 +1479,7 @@ window.HDT_DATA = {
         {
           "date": "2026-08-07",
           "dateShort": "07/08",
-          "timeAgo": "Hôm nay",
+          "timeAgo": "1 tuần trước",
           "tab": "Bài đăng · 06–07/08",
           "sourceType": "member-post",
           "typeLabel": "Sáu bài đăng hội viên · call vàng đã chạy",
@@ -1545,144 +1659,17 @@ window.HDT_DATA = {
               ]
             }
           ]
-        },
-        {
-          "date": "2026-08-06",
-          "dateShort": "06/08",
-          "timeAgo": "1 ngày trước",
-          "tab": "Vàng cuối 2026 · 06/08",
-          "sourceType": "public-video",
-          "typeLabel": "Video công khai · 37 phút",
-          "title": "Nhận Định Giá Vàng Cuối 2026: Đảo Ngược Chính Mình, Đặt Mục Tiêu 6.000 Đô",
-          "summary": "Video công khai dài nhất về vàng từ trước tới nay, và là chỗ ông trình bày đầy đủ vì sao đảo chiều. Mùng 3 Tết ông khuyên bán ít nhất 1/3 khi vàng 180–190 triệu/lượng để chuyển sang gửi tiết kiệm 8,4% — call đó đúng, vàng sau đó rớt hơn 25% từ đỉnh 5.589 đô về vùng 4.000. Nay ông bỏ kịch bản về 3.000 và đặt mục tiêu vượt đỉnh cũ.",
-          "feedChips": [
-            {
-              "label": "Mục tiêu ↑ 6.000 đô trong 6–12 tháng",
-              "sig": "up"
-            },
-            {
-              "label": "Fed ⚠ \"nói cứng, hành động mềm\" — không tăng lãi 2026",
-              "sig": "warn"
-            },
-            {
-              "label": "Nợ công Mỹ ⚠ 39.500 tỷ đô · trả lãi 1.000 tỷ/năm",
-              "sig": "warn"
-            },
-            {
-              "label": "PBOC ↑ mua ròng 20 tháng liên tiếp",
-              "sig": "up"
-            },
-            {
-              "label": "Đô la ↓ còn dưới 57% dự trữ toàn cầu (từ 72% năm 2001)",
-              "sig": "down"
-            }
-          ],
-          "keyCalls": [
-            {
-              "tag": "Dự báo mới",
-              "value": "~6.000 đô trong 6–12 tháng",
-              "signal": "up",
-              "note": "Vượt đỉnh cũ 5.589 đô lập ngày 28/xx/2026. Ông nói rõ không biết mốc đó rơi vào cuối 2026 hay 2027. Đối chiếu: nhiều tổ chức lớn vừa HẠ dự báo cuối năm từ 5.400 xuống còn khoảng 4.500 đô — ông đi ngược số đông."
-            },
-            {
-              "tag": "Ông từng khuyên bán — và đúng",
-              "value": "Mùng 3 Tết: bán ít nhất 1/3",
-              "signal": "up",
-              "note": "Lúc đó vàng 180–190 triệu/lượng, có lúc gần 195–200. Ông khuyên bán 1/3 (có người 1/2) để chuyển sang tiết kiệm lãi 8,4% — nay không cần thương thảo cũng được 8,8–9%. Sau đó vàng rớt hơn 25% từ đỉnh 5.589 về vùng 4.000. Ông nhắc lại chuyện này để nói rõ mình đang đảo chiều khỏi chính khuyến nghị của mình."
-            },
-            {
-              "tag": "Luận điểm 1 — Fed",
-              "value": "NATO: no action, talk only",
-              "signal": "warn",
-              "note": "Kevin Warsh nhậm chức 22/05/2026 thay Powell, do đích thân Trump chọn sau tuyển chọn kéo dài từ giữa 2025 với hơn 10 ứng viên. Lời cứng (\"không bao giờ châm chước với lạm phát\") nhưng hành động mềm: lãi suất giữ 3,5–3,75%, lạm phát PCE 3,6% và lõi 3,2–3,3% so với mục tiêu 2%, ba thành viên FOMC phản đối đòi tăng ngay mà vẫn đứng yên. Warsh còn giảm họp từ 8 xuống 4 lần/năm, bỏ forward guidance và dot plot. Ông dự: tháng 9 và tháng 12 đều không tăng, cả năm 2026 không tăng, và sẽ nới lỏng năm 2027."
-            },
-            {
-              "tag": "Luận điểm 2 — Petrodollar xói mòn",
-              "value": "~20% giao dịch dầu đã sang tiền phi đô",
-              "signal": "down",
-              "note": "Cơ chế từ 1974 giữa Mỹ và Ả Rập Saudi. Năm 2026: giao dịch dầu Ả Rập Saudi – Trung Quốc thanh toán bằng nhân dân tệ LẦN ĐẦU vượt đô la trong song phương; Ấn Độ chuyển lượng lớn dầu Nga sang nhân dân tệ và dirham UAE. Đô la vẫn chiếm ~80% tổng giao dịch dầu toàn cầu. Gốc rễ từ 2022 khi Mỹ đóng băng khoảng 300 tỷ đô dự trữ của ngân hàng trung ương Nga — tín hiệu gửi tới mọi nước rằng tài sản có thể bị đóng băng bất cứ lúc nào. Trung Quốc xây hạ tầng thay thế: CIPS, mBridge, hợp đồng tương lai dầu Thượng Hải."
-            },
-            {
-              "tag": "Luận điểm 3 — Ngân hàng trung ương gom vàng",
-              "value": "PBOC mua ròng 20 tháng liên tiếp",
-              "signal": "up",
-              "note": "Chuỗi dài nhất kể từ khi công bố dữ liệu hàng tháng từ 2015. Riêng tháng 6/2026 mua 14,93 tấn — tháng lớn nhất từ 2023. Đáng chú ý: họ mua mạnh nhất đúng lúc vàng xuống đáy và giới đầu cơ bán ra. Vàng nay chiếm ~9% dự trữ ngoại hối Trung Quốc, vẫn thấp hơn nhiều so với phương Tây nên dư địa còn lớn. Khảo sát Hội đồng Vàng Thế giới: 89% nhà quản lý dự trữ toàn cầu tin dự trữ vàng sẽ tiếp tục tăng trong 12 tháng tới. Tỷ trọng đô la trong dự trữ ngoại hối toàn cầu (IMF) đã xuống dưới 57%, chạm 56,9% quý 3/2025 — từ đỉnh khoảng 72% năm 2001."
-            },
-            {
-              "tag": "Luận điểm 4 — Nợ công Mỹ",
-              "value": "39.500 tỷ đô · trả lãi 1.000 tỷ/năm",
-              "signal": "warn",
-              "note": "Tính đến tháng 6/2026, sẽ chạm 40.000 tỷ cuối năm. Từ 34.500 tỷ tháng 5/2024 lên 40.000 tỷ chỉ trong 2 năm mà không hề có suy thoái. Thâm hụt ngân sách liên bang dự kiến 1.900–2.000 tỷ, tương đương 5,8% GDP so với mức trung bình 3,8% suốt 50 năm. Điểm nặng nhất: chi phí trả lãi năm tài khóa 2026 đạt 1.000 tỷ đô — bằng 1/5 tổng thu thuế (~5.000 tỷ), VƯỢT chi tiêu quốc phòng (970 tỷ) và vượt Medicare, chỉ đứng sau an sinh xã hội. Đây chính là lý do cấu trúc khiến Fed không thể tăng lãi suất."
-            },
-            {
-              "tag": "Luận điểm 5 — Trật tự đa cực",
-              "value": "Tuyên bố chung Nga–Trung ~50 trang",
-              "signal": "warn",
-              "note": "Ký tại Bắc Kinh nhân chuyến thăm cấp nhà nước lần thứ 25 của Putin, đúng dịp 30 năm quan hệ đối tác chiến lược Nga–Trung: \"Tuyên bố chung về sự hình thành thế giới đa cực và một kiểu quan hệ quốc tế mới\". Nga nhập hơn 90% công nghệ nằm trong danh sách trừng phạt qua trung gian Trung Quốc; đổi lại Trung Quốc tiếp cận công nghệ tên lửa phòng không và tác chiến điện tử. Kim ngạch song phương gần 240 tỷ đô năm 2025, dự kiến tăng khoảng 40% năm nay."
-            },
-            {
-              "tag": "Vàng vật chất — chọn thương hiệu",
-              "value": "SJC, DOJI, Bảo Tín Minh Châu",
-              "signal": "wait",
-              "note": "Nguyên tắc ông đưa: mua thương hiệu của công ty không thể phá sản và cam kết mua lại — mua ở đâu bán ở đó. Ông có nhắc Bảo Tín Minh Châu \"mới vừa rồi có những chuyện này chuyện kia\" nhưng vẫn xếp vào nhóm doanh nghiệp thương hiệu vài chục năm. Mức chênh trong nước 9–10 triệu/lượng tại thời điểm quay video, ông đánh giá là hợp lý."
-            },
-            {
-              "tag": "Bạc",
-              "value": "Có thể, nhưng không mạnh bằng vàng",
-              "signal": "wait",
-              "note": "\"Bạc cũng có thể nhưng mà bạc sẽ không mạnh bằng vàng. Bạc có thể beta rất là cao hơn.\" Tức biến động lớn hơn cả hai chiều."
-            }
-          ],
-          "sections": [
-            {
-              "title": "Ông tự nêu phản biện cho chính mình",
-              "signal": "wait",
-              "sigLabel": "Phần hiếm gặp trong video kèo",
-              "para": "Hai trong năm luận điểm được ông kèm luôn phần bác lại, thay vì chỉ trình bày một chiều. Đây là chỗ đáng ghi nhất của video vì nó cho biết ông cũng thấy điểm yếu ở đâu.",
-              "bullets": [
-                "Về petrodollar: \"không phải ai cũng đồng ý là petrodollar đang sụp đổ\" — nhiều chuyên gia uy tín cho rằng chưa có bằng chứng rõ ràng, đồng petrodollar chỉ mất vị thế độc quyền chứ chưa sụp; đồng euro gần như không dịch chuyển thêm. Ông kết: đây là quá trình chuyển đổi chậm rãi, và chính vì chậm nên nó đáng tin cho luận điểm dài hạn hơn là một cú sốc.",
-                "Về trục Nga–Trung: dẫn phân tích quốc phòng phương Tây cho rằng đây \"không phải là liên minh quân sự chính thức mà là một quan hệ đối tác thực dụng có giới hạn về niềm tin\", còn bất đồng chưa xong như đường ống khí Sức mạnh Siberia 2.",
-                "Về chính dự báo của mình: \"giữ báo thì có thể sai\" — và ông nhắc lại đây không phải lời khuyên đầu tư, \"các bạn hãy tự chịu trách nhiệm cho hành vi mua bán của bạn\"."
-              ]
-            }
-          ],
-          "tradeLevels": [
-            {
-              "group": "Vàng & Bạc",
-              "items": [
-                {
-                  "asset": "XAU/USD",
-                  "dir": "MUA — mục tiêu dài hạn",
-                  "entry": "Vùng 4.070–4.080 (call cho hội viên sáng 06/08)",
-                  "target": "~6.000 đô trong 6–12 tháng, vượt đỉnh cũ 5.589",
-                  "stop": "3.900",
-                  "sig": "up",
-                  "tv": "OANDA:XAUUSD"
-                },
-                {
-                  "asset": "Vàng SJC",
-                  "dir": "MUA vật chất",
-                  "entry": "Chênh 9–10 triệu/lượng là hợp lý",
-                  "target": "Nắm dài hạn",
-                  "stop": "Chọn SJC / DOJI / thương hiệu cam kết mua lại",
-                  "sig": "up",
-                  "tv": ""
-                },
-                {
-                  "asset": "Bạc",
-                  "dir": "Được, nhưng không ưu tiên",
-                  "entry": "—",
-                  "target": "Beta cao hơn vàng",
-                  "stop": "Không mạnh bằng vàng",
-                  "sig": "wait",
-                  "tv": ""
-                }
-              ]
-            }
-          ]
         }
       ],
       "sources": [
+        {
+          "icon": "✎",
+          "iconBg": "oklch(0.95 0.04 250)",
+          "iconColor": "oklch(0.46 0.15 250)",
+          "date": "18/08/2026",
+          "title": "Tút hội viên: Tỉ giá ổn trở lại, phân bón bốc mùi nhẹ",
+          "meta": "Bài đăng cộng đồng · 86 lượt thích · 36 bình luận"
+        },
         {
           "icon": "▶",
           "iconBg": "oklch(0.95 0.04 300)",
@@ -1730,14 +1717,6 @@ window.HDT_DATA = {
           "date": "07/08/2026",
           "title": "Sáu tút 06–07/08: call vàng đã ăn, call BTC mới, chấm lại cổ phiếu VN",
           "meta": "Bài đăng cộng đồng · 43–85 thích"
-        },
-        {
-          "icon": "▶",
-          "iconBg": "oklch(0.95 0.04 300)",
-          "iconColor": "oklch(0.45 0.15 300)",
-          "date": "05/08/2026",
-          "title": "TẬP 43 (ĐỘC QUYỀN HỘI VIÊN 2026): THAY ĐỔI CHIẾN LƯỢC QUAN TRỌNG",
-          "meta": "Video hội viên · 29:38 · Thái Phạm"
         }
       ]
     },
@@ -1763,9 +1742,115 @@ window.HDT_DATA = {
       },
       "updates": [
         {
+          "date": "2026-08-17",
+          "dateShort": "17/08",
+          "timeAgo": "hôm qua",
+          "tab": "Lăng kính · 17/08",
+          "sourceType": "public-video",
+          "typeLabel": "Phân tích · 18 phút",
+          "title": "Thị Trường Giảm Là Cơ Hội Tích Lũy Giá Trị (Phần 1) — Bài Toán NT2: Giá Về 15.000 Thì Tỉ Suất Cổ Tức Lên 16,5%",
+          "summary": "AzFin làm một bài toán số cụ thể thay vì nói lý thuyết: lấy NT2 giá 21.000 làm ví dụ, tính cả kịch bản tốt lẫn kịch bản giá sập về 15.000 — và chỉ ra vì sao với nhà đầu tư tích sản thì kịch bản thứ hai lại cho tỉ suất cổ tức cao hơn hẳn. Đây là phần 1.",
+          "feedChips": [
+            {
+              "label": "Luận điểm ▲ giá càng giảm, cơ bản giữ nguyên → giá trị nhận được càng nhiều",
+              "sig": "up"
+            },
+            {
+              "label": "NT2 ▲ EPS bình quân dài hạn ~2.600đ, cổ tức ~2.500đ",
+              "sig": "up"
+            },
+            {
+              "label": "Kịch bản xấu ⚠ giá về 15.000 → lỗ thị giá ~17%",
+              "sig": "warn"
+            },
+            {
+              "label": "Điều kiện ◷ phải đủ 3: cổ phiếu tốt · định giá hấp dẫn · danh mục đa dạng",
+              "sig": "wait"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "Ba điều kiện bắt buộc",
+              "value": "Cổ phiếu tốt · định giá hấp dẫn · danh mục đủ đa dạng",
+              "signal": "wait",
+              "note": "Anh nhấn mạnh điều kiện thứ ba vì nó xử lý rủi ro khách quan: \"Chúng ta làm 10 cổ, nếu một cổ có bị làm sao thì vẫn có chín cổ khác mang lại cái giá trị rất lớn, bù lại những cái cổ bị hỏng kia.\" Thiếu một trong ba thì cả lập luận sụp."
+            },
+            {
+              "tag": "NT2 — vì sao anh xếp là cổ phiếu tốt",
+              "value": "Tài chính mạnh, hết khấu hao, máy Đức đốt khí",
+              "signal": "up",
+              "note": "Lượng tiền dư rất lớn nếu trừ đi nợ. Không tăng trưởng nhưng hiệu quả cao. Máy Siemens của Đức, đốt khí, chạy 15 năm hiệu suất vẫn tốt, về cơ bản đã hết khấu hao nhưng vẫn hoạt động rất tốt. Năm bảo trì lớn EPS có thể chỉ nghìn mấy; năm chạy công suất cao EPS có thể 4.000 hoặc hơn."
+            },
+            {
+              "tag": "Con số nền của bài toán",
+              "value": "EPS 2026 ~3.800đ · EPS bình quân dài hạn ~2.600đ · cổ tức ~2.500đ",
+              "signal": "up",
+              "note": "Sáu tháng đầu năm EPS đã gần 2.000đ. Cổ tức năm nay có thể 2.000–3.700đ, nhưng anh lấy 2.500đ làm mức bình quân dài hạn để tính. Cơ sở: nhu cầu điện Việt Nam rất cao phục vụ mục tiêu tăng trưởng trên 10% trong khi nguồn cung chưa đáp ứng được."
+            },
+            {
+              "tag": "Kịch bản thuận lợi",
+              "value": "Giá lên 30.000 trong 1 năm → tổng lợi nhuận ~55%",
+              "signal": "up",
+              "note": "Lãi thị giá 9.000đ cộng cổ tức 2.500đ = 11.500đ trên vốn 21.000đ. Anh nói thẳng đây là kịch bản ai cũng vui, không có gì đáng bàn."
+            },
+            {
+              "tag": "Kịch bản xấu — chỗ đáng bàn",
+              "value": "Giá về 15.000 → lỗ thị giá ~17%, nhưng tỉ suất cổ tức tái đầu tư lên 16,5%",
+              "signal": "warn",
+              "note": "Mất 6.000đ thị giá, bù lại 2.500đ cổ tức → lỗ ~3.500đ trên 21.000đ, tức ~17%. Nhưng 2,5 triệu cổ tức mua lại được 167 cổ ở giá 15.000 → tổng 1.167 cổ; năm sau cổ tức 2,9 triệu, so với vốn gốc 21 triệu là 13,5%. Tỉ suất cổ tức của riêng phần tái đầu tư là 2.500/15.000 = 16,5% — so với 11,5% khi mua ở giá 21.000."
+            },
+            {
+              "tag": "Đẩy tới cùng",
+              "value": "Về 10.000 → tỉ suất 25%; về 5.000 → 50%",
+              "signal": "up",
+              "note": "\"Càng giảm mạnh thì càng là cơ hội tích lũy của giá trị rất lớn ở đây.\" Và với người bơm thêm tiền: 21 triệu trước đây mua được 1.000 cổ, ở giá 15.000 mua được 1.400 cổ."
+            }
+          ],
+          "sections": [
+            {
+              "title": "Điểm phải nói rõ: đây là bài toán có điều kiện",
+              "signal": "warn",
+              "sigLabel": "LƯU Ý",
+              "para": "Toàn bộ lập luận đứng trên một giả định duy nhất — doanh nghiệp vẫn tốt và vẫn trả cổ tức đều khi giá giảm. Chính anh cũng nêu ranh giới này.",
+              "bullets": [
+                "\"Trừ cái trường hợp mà chúng ta chọn không chuẩn cổ phiếu thì chúng ta mới lo sợ thôi\" — anh cho rằng khả năng chọn đúng kiểm soát được ở mức 70–90%.",
+                "Với NT2, rủi ro thật nằm ở chỗ chính anh thừa nhận: kết quả kinh doanh nhóm điện \"cực kỳ biến động, phập phù\" — năm bảo trì lớn EPS có thể tụt về nghìn mấy, và khi đó cổ tức 2.500đ không còn là mặc định.",
+                "Bài toán này KHÔNG áp dụng cho người đánh ngắn hạn: nếu buộc phải bán trong lúc giá 15.000 thì phần lỗ 17% là thật."
+              ]
+            },
+            {
+              "title": "Cách nhà đầu tư giá trị dùng cả hai chiều thị trường",
+              "signal": "up",
+              "sigLabel": "KHUNG TƯ DUY",
+              "para": "Anh chốt bằng một khung đối xứng: lên thì chốt lời bảo vệ thành quả rồi chuyển sang mã định giá rẻ hơn hoặc gửi ngân hàng chờ; xuống thì tái đầu tư cổ tức và bơm thêm tiền để mua được nhiều giá trị hơn.",
+              "bullets": [
+                "Ví dụ song song anh hay dùng: căn nhà 10 tỷ cho thuê 1 tỷ/năm. Giá lên 15 tỷ thì bán lãi 5 tỷ; giá xuống 5 tỷ thì mua thêm, vì tiền thuê vẫn 1 tỷ.",
+                "\"Ai là người tồn tại cuối cùng ở trên thị trường chứng khoán là những người chiến thắng.\"",
+                "Đây là phần 1 — anh báo sẽ có phần tiếp theo."
+              ]
+            }
+          ],
+          "tradeLevels": [
+            {
+              "group": "Chứng khoán Việt Nam",
+              "items": [
+                {
+                  "asset": "NT2",
+                  "dir": "TÍCH SẢN — càng giảm càng gom",
+                  "entry": "21.000 (giá tại 14/08)",
+                  "target": "30.000 nếu thuận lợi — tổng lợi nhuận ~55%",
+                  "stop": "Không có cắt lỗ: về 15.000 thì tái đầu tư cổ tức ở tỉ suất 16,5%",
+                  "sig": "up",
+                  "tv": "HOSE:NT2"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "date": "2026-08-16",
           "dateShort": "16/08",
-          "timeAgo": "Hôm qua",
+          "timeAgo": "2 ngày trước",
           "tab": "Lăng kính · 16/08",
           "sourceType": "public-video",
           "typeLabel": "Livestream · 68 phút",
@@ -1823,7 +1908,7 @@ window.HDT_DATA = {
         {
           "date": "2026-08-11",
           "dateShort": "11/08",
-          "timeAgo": "2 ngày trước",
+          "timeAgo": "1 tuần trước",
           "tab": "Ngon – Bổ – Rẻ",
           "sourceType": "public-video",
           "typeLabel": "Video công khai · 14 phút",
@@ -1863,7 +1948,7 @@ window.HDT_DATA = {
         {
           "date": "2026-08-09",
           "dateShort": "09/08",
-          "timeAgo": "4 ngày trước",
+          "timeAgo": "1 tuần trước",
           "tab": "Lăng kính · 09/08",
           "sourceType": "public-video",
           "typeLabel": "Livestream · 85 phút",
@@ -1909,7 +1994,7 @@ window.HDT_DATA = {
         {
           "date": "2026-08-07",
           "dateShort": "07/08",
-          "timeAgo": "Hôm nay",
+          "timeAgo": "1 tuần trước",
           "tab": "Tích sản tháng 44",
           "sourceType": "public-video",
           "typeLabel": "Video công khai · 8 phút",
@@ -1977,7 +2062,7 @@ window.HDT_DATA = {
         {
           "date": "2026-07-30",
           "dateShort": "30/07",
-          "timeAgo": "2 ngày trước",
+          "timeAgo": "2 tuần trước",
           "tab": "Podcast · 30/07",
           "sourceType": "public-video",
           "typeLabel": "Video công khai",
@@ -2045,7 +2130,7 @@ window.HDT_DATA = {
         {
           "date": "2026-07-26",
           "dateShort": "26/07",
-          "timeAgo": "6 ngày trước",
+          "timeAgo": "3 tuần trước",
           "tab": "Lăng kính · 26/07",
           "sourceType": "public-video",
           "typeLabel": "Livestream công khai",
@@ -2137,95 +2222,17 @@ window.HDT_DATA = {
               ]
             }
           ]
-        },
-        {
-          "date": "2026-07-24",
-          "dateShort": "24/07",
-          "timeAgo": "Tuần trước",
-          "tab": "Podcast · 24/07",
-          "sourceType": "public-video",
-          "typeLabel": "Video công khai",
-          "title": "#06: Vì Sao Cổ Phiếu Tốt Cũng Giảm — P/E Về 10x, Sáu Nhóm Ngành Nhặt Dần",
-          "summary": "Giải phẫu nguyên nhân thị trường giảm bằng SỐ LIỆU: (1) Cung cổ phiếu dồi dào — khối ngoại bán ròng >80.000 tỷ từ đầu năm đến tháng 7, cộng IPO và phát hành thêm, tổng cung ra thị trường có thể tới 200.000 tỷ chỉ trong 7 tháng, trong khi cầu không đủ đáp ứng. (2) Lãi suất cao — gửi tiết kiệm tới 9% ở một số ngân hàng, an toàn hơn nên tiền chảy vào tiết kiệm; lãi margin cũng cao. (3) Margin kỷ lục 435.000 tỷ cuối Q2/2026 nhưng thanh khoản chỉ ~500 triệu đô/phiên (Q1 gần 1 tỷ) — chứng tỏ margin phần lớn là CHỦ DOANH NGHIỆP/cổ đông lớn cầm cố cổ phiếu để lấy vốn kinh doanh (khó phát hành trái phiếu, khó vay bank), minh chứng: có CTCK thị phần môi giới 2–3% mà cho vay margin bằng công ty thị phần 10%; khi các chủ tịch bị call margin thì lại bán tháo tiếp. Định giá sau khi có KQKD toàn bộ: P/E thị trường ~12x, loại nhóm VIC còn ~10x — mức mà chỉ 6% thời gian giao dịch trong lịch sử đạt được hoặc thấp hơn. Khối ngoại sở hữu chỉ còn 12,6% (đáy 10 năm, đỉnh từng 30%): thị trường phát triển hấp dẫn hơn, tỷ giá, và quỹ CẬN BIÊN thanh lý VN trước khi nâng hạng lên mới nổi tháng 9 — quỹ rổ mới nổi chỉ giải ngân từ tháng 9. Hành động: tỉ trọng cổ phiếu ~90% danh mục tài chính (danh mục tài chính chỉ nên 20–30% tổng tài sản với nhà đầu tư thường), nhặt dần 6 nhóm: vật liệu xây dựng, chứng khoán (P/B ~1, P/E <10, top 10–20), ngân hàng (có mã P/E <6x), bán lẻ (tăng trưởng mạnh nhưng bị bán quá sâu), điện (nhiệt điện + tái tạo, tránh thủy điện vì El Niño), BĐS khu công nghiệp (FDI mạnh, giá thuê tăng, có mã dưới nửa giá trị dòng tiền chiết khấu).",
-          "feedChips": [
-            {
-              "label": "P/E ↑ 12x, loại Vin ~10x = percentile 6%",
-              "sig": "up"
-            },
-            {
-              "label": "Cung ⚠ 200.000 tỷ trong 7 tháng",
-              "sig": "warn"
-            },
-            {
-              "label": "Margin ⚠ 435.000 tỷ — chủ DN cầm cố",
-              "sig": "warn"
-            },
-            {
-              "label": "6 nhóm ngành ↑ nhặt dần",
-              "sig": "up"
-            }
-          ],
-          "keyCalls": [
-            {
-              "tag": "Định giá",
-              "value": "P/E ~12x, loại Vin ~10x — percentile 6%",
-              "signal": "up",
-              "note": "Sau khi có KQKD toàn bộ doanh nghiệp hết tháng 7. Mức P/E dưới 10 chỉ xuất hiện ở ~6% thời gian giao dịch trong lịch sử (\"100 phiên thì chỉ 6 phiên\"); P/B cũng rất thấp. Rẻ hơn cả mức percentile 10–15% AzFin nêu hồi 14/06."
-            },
-            {
-              "tag": "Nguyên nhân giảm",
-              "value": "Cung 200.000 tỷ vs cầu yếu + lãi 9%",
-              "signal": "warn",
-              "note": "Khối ngoại bán ròng >80.000 tỷ 7 tháng + IPO + phát hành thêm = tổng cung tới 200.000 tỷ. Gửi tiết kiệm tới 9% hút tiền khỏi chứng khoán; lãi margin cao nên nhà đầu cơ hạn chế dùng — minh chứng: lãi từ margin của CTCK tăng cao hơn mức tăng số lượng cho vay."
-            },
-            {
-              "tag": "Margin",
-              "value": "435.000 tỷ — nhưng là chủ DN cầm cố",
-              "signal": "warn",
-              "note": "Kỷ lục cuối Q2/2026 trong khi thanh khoản chỉ ~500 triệu đô/phiên (Q1 gần 1 tỷ) → nhỏ lẻ không hoạt động mấy. Margin chủ yếu do chủ doanh nghiệp/cổ đông lớn vay mua cổ phiếu phát hành thêm hoặc cầm cố lấy vốn kinh doanh. Có CTCK thị phần 2–3% mà cho vay bằng công ty thị phần 10%."
-            },
-            {
-              "tag": "Khối ngoại",
-              "value": "Sở hữu 12,6% — đáy 10 năm; quỹ mới nổi vào từ T9",
-              "signal": "wait",
-              "note": "Từng đỉnh 30%. Ba nguyên nhân bán: thị trường phát triển hấp dẫn hơn (lợi suất TPCP Mỹ 4,5–5%), rủi ro tỷ giá, và quỹ rổ CẬN BIÊN phải thanh lý cổ phiếu VN trước khi VN được nâng hạng lên mới nổi tháng 9 — quỹ rổ mới nổi chỉ giải ngân từ tháng 9."
-            },
-            {
-              "tag": "Sáu nhóm ngành",
-              "value": "VLXD · chứng khoán · bank · bán lẻ · điện · BĐS KCN",
-              "signal": "up",
-              "note": "Chứng khoán: P/B ~1, P/E <10, top 10–20 thị phần. Bank: có mã P/E chưa đến 6x, ngân hàng quốc doanh nay cũng hấp dẫn. Bán lẻ: tăng trưởng 6–7 tháng rất mạnh (hồi phục hình chữ K) nhưng bị bán quá sâu. Điện: nhiệt điện + năng lượng tái tạo (tránh thủy điện vì El Niño) — định giá rẻ, cổ tức cao, vừa phòng thủ vừa tấn công. BĐS KCN: FDI mạnh, giá thuê tăng, dòng tiền rõ ràng hơn BĐS nhà ở, có mã dưới nửa giá trị DCF."
-            }
-          ],
-          "sections": [
-            {
-              "title": "Ba nguyên nhân bằng số liệu",
-              "signal": "warn",
-              "sigLabel": "Giải phẫu — cung áp đảo cầu",
-              "para": "Trong dài hạn giá cổ phiếu do giá trị quyết định, nhưng giai đoạn thị trường xấu giá có thể chiết khấu tới 50% so với giá trị thực. Hiện nay tốt xấu đều giảm vì ba nguyên nhân chính.",
-              "bullets": [
-                "Cung: khối ngoại bán ròng >80.000 tỷ (đầu năm→T7) + IPO + phát hành thêm → tổng cung có thể 200.000 tỷ trong 7 tháng; cầu mới không đủ vì thị trường không sôi động, không hút được nhà đầu tư mới.",
-                "Lãi suất: gửi tiết kiệm tới 9% ở một số ngân hàng — cao và an toàn nên tiền đổ vào tiết kiệm; đồng thời lo ngại doanh nghiệp vay nợ cao có KQKD kém.",
-                "Margin 435.000 tỷ kỷ lục nhưng thanh khoản chỉ ~500 triệu đô/phiên: dòng margin thực chất chảy vào tay chủ doanh nghiệp cầm cố cổ phiếu; khi họ bị call margin (đã có trường hợp chủ tịch bị bán giải chấp công bố đích danh) thì cung lại tăng thêm.",
-                "Nguyên nhân cung tiền khó: 2025 đã tăng trưởng tín dụng và cung tiền quá lớn nên phần nào đã \"tiêu trước\" dư địa."
-              ]
-            },
-            {
-              "title": "Phân bổ theo định giá — và vì sao đa dạng hóa",
-              "signal": "up",
-              "sigLabel": "Hành động — nhặt dần, đủ đa dạng",
-              "para": "Nguyên tắc gốc là quản lý gia sản: kênh đầu tư tài chính chỉ nên chiếm 20–30% tổng tài sản với nhà đầu tư thường (không quá 50% với nhà đầu tư chuyên nghiệp). Trong danh mục tài chính, phân bổ theo ĐỊNH GIÁ thị trường: định giá trung vị → ~60% cổ phiếu / 40% trái phiếu và công cụ lãi cố định; thị trường sập sâu → chuyển tiền từ lãi cố định sang mua cổ phiếu rẻ; cổ phiếu tăng cao → bán bớt chuyển về lãi cố định. Hiện tại (T7/2026) là lúc dùng tiền nhặt dần; tỉ trọng cổ phiếu của AzFin ~90% danh mục tài chính.",
-              "bullets": [
-                "Đa dạng hóa vì \"thiên nga đen\" bất ngờ như PNJ, PC1 — phân bổ đủ nhiều ngành thì biến cố không ảnh hưởng nhiều tổng danh mục; khi thị trường lên thì dòng tiền cũng xoay vòng hết ngành này sang ngành khác.",
-                "Cần 2–3 nguồn thu nhập (tính cả lao động), trong đó ít nhất 2 nguồn từ tài sản — để khi cơ hội lớn xuất hiện vẫn có dòng tiền bổ sung.",
-                "Kênh thanh khoản thấp chỉ nên phân bổ tỉ trọng vừa phải; nếu đã phân bổ nhiều thì đợi thời điểm thích hợp mới hạ.",
-                "Kỳ vọng: nhặt cổ phiếu định giá rẻ + triển vọng tốt + cổ tức cao lúc này thì 6 tháng–2 năm sau mới có hiệu quả vượt trội so với thị trường và các kênh khác."
-              ]
-            }
-          ]
         }
       ],
       "sources": [
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 27)",
+          "iconColor": "oklch(0.46 0.15 27)",
+          "date": "17/08/2026",
+          "title": "THỊ TRƯỜNG GIẢM LÀ CƠ HỘI ĐỂ \"TÍCH LŨY GIÁ TRỊ\"? | PHẦN 1",
+          "meta": "Phân tích · 18:22 · AzFin Việt Nam"
+        },
         {
           "icon": "▶",
           "iconBg": "oklch(0.95 0.04 150)",
@@ -2273,14 +2280,6 @@ window.HDT_DATA = {
           "date": "12/08/2026",
           "title": "SỐ 146: Cập nhật KQKD và định giá VCB · SỐ 145: MWG",
           "meta": "Hai video hội viên AzFin — BỊ CHẶN, cần gói hội viên riêng"
-        },
-        {
-          "icon": "▶",
-          "iconBg": "oklch(0.95 0.04 150)",
-          "iconColor": "oklch(0.42 0.1 150)",
-          "date": "07/08/2026",
-          "title": "Hành trình triệu đô 15 — tích sản tháng 44",
-          "meta": "Video công khai · 8:14 · AzFin"
         }
       ]
     },
@@ -2306,9 +2305,341 @@ window.HDT_DATA = {
       },
       "updates": [
         {
+          "date": "2026-08-17",
+          "dateShort": "17/08",
+          "timeAgo": "hôm qua",
+          "tab": "Phân tích · 17/08",
+          "sourceType": "public-video",
+          "typeLabel": "Phân tích · 8 phút",
+          "title": "Ba Lý Do Thanh Khoản Không Thể Tăng Lại Trong Ngắn Hạn — \"Xì Hơi Chứ Không Vỡ\"",
+          "summary": "Video ngắn nhưng là bài quan trọng nhất tuần của kênh: anh bỏ hẳn kỳ vọng thanh khoản hồi phục và chỉ ra ba nguồn hút tiền đều mang tính cấu trúc, không đảo ngược được trong ngắn hạn. Kết luận: làm quen với nền thanh khoản này, và dùng nó để tích lũy cổ phiếu cơ bản.",
+          "feedChips": [
+            {
+              "label": "Kết luận ⚠ thanh khoản KHÔNG thể tăng lại trong ngắn hạn",
+              "sig": "warn"
+            },
+            {
+              "label": "Thời gian ◷ có thể hết quý 3, sang quý 4, hoặc lâu hơn",
+              "sig": "wait"
+            },
+            {
+              "label": "Tín dụng ⚠ tiền vay bị rút — \"xì hơi chứ không vỡ\"",
+              "sig": "warn"
+            },
+            {
+              "label": "Hành động ▲ thời điểm tốt để tích lũy hàng cơ bản dài hạn",
+              "sig": "up"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "Lý do 1 — luật thuế và hóa đơn",
+              "value": "Hộ kinh doanh phải giữ tiền mặt",
+              "signal": "warn",
+              "note": "Quy định rõ ràng hơn và thực thi triệt để hơn buộc các hộ kinh doanh, cửa hàng phải giữ tiền mặt để hợp thức hóa dòng tiền hóa đơn xuất nhập hàng. \"Cái này chắc chắn sẽ không cải thiện được trong ngắn hạn, chỉ càng ngày càng siết chặt hơn thôi.\""
+            },
+            {
+              "tag": "Lý do 2 — siết tín dụng",
+              "value": "Nguồn rút ra khỏi thị trường nhiều nhất",
+              "signal": "warn",
+              "note": "\"Bây giờ những cái khoản vay cũ mà đáo hạn thì sẽ không thể nào tái vay lại được.\" Anh gọi đây là cú sốc dòng tiền hơi bị xì — \"xì hơi chứ không vỡ mọi người nhá… xì từ từ theo đúng sự cho phép của các cơ quan quản lý và đương nhiên là xì từ từ thì tốt hơn đã vỡ rồi\"."
+            },
+            {
+              "tag": "Lý do 3 — đại dự án hạ tầng",
+              "value": "Ngân hàng điều tiết vốn ra khỏi thị trường tài chính",
+              "signal": "warn",
+              "note": "Năm dự án Metro khởi công cùng lúc cộng hàng loạt đại dự án trọng điểm khác. \"Cái lượng vốn này sẽ được ngân hàng điều tiết và hút ra khỏi thị trường tài chính để đưa vào phục vụ cho việc thi công dự án đúng tiến độ.\" Dài hạn được bù lại, ngắn hạn thì không."
+            },
+            {
+              "tag": "Hành động",
+              "value": "Tích lũy cổ phiếu cơ bản nắm giữ dài hạn",
+              "signal": "up",
+              "note": "\"Kẻ mạnh thì không đổ tại cho hoàn cảnh. Đây là thời điểm rất tốt để tích lũy các cổ phiếu cơ bản nắm giữ tốt trong dài hạn để khi mà cái thanh khoản nó được khơi thông trở lại thì chúng ta sẽ có một cái nền tảng rất tốt.\" Trùng đúng kết luận AzFin ra cùng ngày."
+            }
+          ],
+          "sections": [
+            {
+              "title": "Vì sao lần này anh bỏ hẳn kỳ vọng hồi phục",
+              "signal": "warn",
+              "sigLabel": "ĐỔI QUAN ĐIỂM",
+              "para": "Đây là chỗ khác với chính anh vài tháng trước. \"Nếu mà cách đây vài tháng thì có thể là mình sẽ còn khuyến nghị mọi người là thôi cứ cố gắng để đợi thanh khoản nó tăng trở lại. Nhưng cho đến thời điểm hiện tại thì có vẻ là tất cả chúng ta đều đồng thuận là thanh khoản nó sẽ không thể nào tăng trở lại trong ngắn hạn được.\"",
+              "bullets": [
+                "Cả ba lý do đều là chính sách, không phải tâm lý — nên không thể đảo chiều bằng một phiên tăng.",
+                "Kể cả thị trường hồi và người đứng ngoài nhảy vào dùng margin, lượng đó \"cũng không đáng kể so với cái lượng tiền đang được rút ra\".",
+                "Ví von: \"Xì hơi một quả bóng thì dễ nhưng mà bơm nó trở lại thì khó lắm. Thằng Trung Quốc nó cố gắng bơm trở lại mấy năm nay rồi có bơm được đâu.\"",
+                "Anh nhắc lại mốc so sánh: ngày xưa thanh khoản 5.000–10.000 tỷ vẫn đánh được; nay dưới 20.000 tỷ vẫn vượt 10.000 tỷ dễ dàng."
+              ]
+            }
+          ]
+        },
+        {
+          "date": "2026-08-17",
+          "dateShort": "17/08",
+          "timeAgo": "hôm qua",
+          "tab": "Livestream · 17/08",
+          "sourceType": "public-video",
+          "typeLabel": "Livestream · 68 phút",
+          "title": "VN-Index 17/08: Thanh Khoản Thấp Nhất Từ Đầu 2026 — \"Không Phải Không Có Người Mua, Mà Là Không Có Người Bán\"",
+          "summary": "Phiên chán nhất từ đầu năm: thanh khoản thấp nhất kể từ đầu 2026, cộng đồng gần như không ai hỏi mã nào. Nhưng anh đọc con số đó theo hướng ngược đám đông — thanh khoản cạn không phải vì hết người mua mà vì hết người bán. Vẫn có 5 mã có điểm mua cụ thể.",
+          "feedChips": [
+            {
+              "label": "Thanh khoản ⚠ thấp nhất kể từ đầu 2026",
+              "sig": "warn"
+            },
+            {
+              "label": "Cách đọc ▲ không có người BÁN, chứ không phải hết người mua",
+              "sig": "up"
+            },
+            {
+              "label": "Điểm mua ▲ MSR · PHR · NLG · GAS · BVH",
+              "sig": "up"
+            },
+            {
+              "label": "Nhóm chứng khoán ◷ không có view — nâng hạng mới chỉ là kỳ vọng",
+              "sig": "wait"
+            }
+          ],
+          "keyCalls": [
+            {
+              "tag": "Cách đọc thanh khoản cạn",
+              "value": "Không có người bán, chứ không phải hết người mua",
+              "signal": "up",
+              "note": "\"Sẽ có nhiều người bảo là thanh khoản này là yếu lắm, sắp sập đến nơi rồi… nhưng mà em thì lại nhìn thanh khoản này theo hướng là không có người bán. Ở thời điểm hiện tại giảm thế chứ giảm nữa cũng chả có ai bán.\" Ngược hẳn với cách hiểu phổ biến."
+            },
+            {
+              "tag": "MSR",
+              "value": "Mua được quanh 40,5–41",
+              "signal": "up",
+              "note": "Có cây break khỏi mẫu hình tích lũy tam giác. Hàng chưa về thì để cắt lỗ 7%; hàng về rồi thì để cắt ở vùng break 40 — thủng 40 là cắt. Anh nói thẳng đây là \"một lệnh chết cũng ok\", tức lệnh nhỏ đánh theo tín hiệu chứ không ham."
+            },
+            {
+              "tag": "NLG",
+              "value": "Đẹp nhất nhóm bất động sản — mua 23,5, target 26,5",
+              "signal": "up",
+              "note": "Thứ sáu có cây cụt đầu, hôm nay tăng tiếp và vượt qua cây thứ sáu. Cắt lỗ ở đáy thứ sáu 22,5. Target 26,5 vì trên đó có cản mạnh. Anh thừa nhận không giải thích được bằng cơ bản: NLG giảm 47% từ đỉnh 2025, DIG giảm 56% — \"không phải nó giảm ít hơn mà là gần đây nó hồi tốt hơn\"."
+            },
+            {
+              "tag": "GAS",
+              "value": "Phải đóng trên 80 với thanh khoản lớn mới tính tiếp",
+              "signal": "wait",
+              "note": "Ai có hàng thì giữ. Mua gia tăng chỉ khi vượt 80 và giá vốn không lệch nhiều (vd quanh 72) — vì tính từ cây break tuần trước tới vượt 80 mới lãi 13%, trong khi nguyên tắc của anh là lãi trên 15% mới gia tăng."
+            },
+            {
+              "tag": "BVH",
+              "value": "Giữ tiếp, nhắm vượt 72",
+              "signal": "up",
+              "note": "Điểm vào 63–65 hôm 07/08, nay lên 68. Mẫu hình ba bước tăng giá mở rộng nhưng thiếu thanh khoản do tăng cuối phiên — thường sẽ nhồi thêm một cây nữa. Cả nhóm bảo hiểm chỉ mình con này chạy: BMI, MIG đứng im."
+            },
+            {
+              "tag": "HPG",
+              "value": "Mục tiêu +20% từ giờ tới cuối năm là khó",
+              "signal": "warn",
+              "note": "Trả lời trực tiếp một câu hỏi: \"20% trong 2 năm thì em nghĩ thoải mái. Nhưng 20% từ giờ đến cuối năm thì chưa chắc, khả năng khó.\" +20% nghĩa là phải lên 25–25,5. Nối dài quan điểm TRÁNH của anh với HPG."
+            },
+            {
+              "tag": "Nhóm chứng khoán",
+              "value": "Không có view — nâng hạng chỉ là kỳ vọng",
+              "signal": "wait",
+              "note": "Tháng 9 nâng hạng lên thị trường mới nổi, tiền có thể vào 1–5 tỷ đô nhưng \"thời điểm hiện tại nó chỉ dừng lại ở cái mức kỳ vọng thôi\". Lý do sâu hơn: thị trường VN thiếu sản phẩm, và khối ngoại không sang một nền kinh tế chưa phát triển chỉ để mua cổ phiếu tài chính."
+            },
+            {
+              "tag": "SSI · MBS · BID",
+              "value": "Vừa chia — không mua không bán",
+              "signal": "wait",
+              "note": "SSI chia 10% tiền + 20% cổ phiếu tỉ lệ 5:1. Nguyên tắc của anh: mã vừa chia thì không mua mới, không mua thêm, ai có thì giữ nguyên. BID chia xong về 35–36, để ý vùng 38 trước chia xem có tạo đáy hai. MBS vùng này không quá rủi ro nhưng mua mới thì không nên."
+            }
+          ],
+          "sections": [
+            {
+              "title": "Vì sao anh khuyên mua SAU ngày chia cổ tức",
+              "signal": "wait",
+              "sigLabel": "NGUYÊN TẮC",
+              "para": "Phiên hôm nay có tới ba mã chia (SSI, MBS, BID) nên anh dành gần một phần ba buổi để giải thích. Ba lý do, đều là lý do kỹ thuật chứ không phải quan điểm.",
+              "bullets": [
+                "Né thuế thu nhập cá nhân 5%: bán trước ngày chia thì phần bị cắt không phải chịu thuế.",
+                "Né kẹt tiền: cổ tức tiền mất 1 tháng mới về, cổ tức cổ phiếu 3–4 tháng, quyền mua 5–6 tháng.",
+                "Được chọn điểm vào: sau chia thường có nền giá tích lũy mới, mua khi nền hình thành thì chủ động hơn.",
+                "Ngoại lệ đã xảy ra: GEX và CTS đều tăng mạnh ngay sau chia — mua sau chia trong hai ca đó là lỗ cơ hội."
+              ]
+            },
+            {
+              "title": "Danh sách mã có view trong phiên",
+              "signal": "up",
+              "sigLabel": "CÓ ĐIỂM MUA",
+              "para": "Rất ít mã được hỏi trong phiên vì cộng đồng im ắng. Anh chốt danh sách gọn.",
+              "bullets": [
+                "MUA ĐƯỢC: MSR (40,5–41), PHR (60,5–61), NLG (23,5 → 26,5).",
+                "GIỮ: GAS (chờ vượt 80), BVH (nhắm 72), STB (chỉ đợi vượt 76 nhưng vượt cũng chưa chắc chạy), DBC (xấu nhưng chưa cắt — bán rồi cũng không biết mua gì cơ bản hơn).",
+                "KHÔNG MUA: VIC/VHM (điểm mua xấu, \"quá chông chênh\"), VNM (cụt đầu 6 phiên liên tiếp), SAB (không ăn được), FRT (đợi vượt đỉnh sẽ ngon hơn).",
+                "GEX: chưa thủng 24 thì còn giữ, thủng 24 thì bán. VIX: ai mua cây vượt 14 hôm thứ sáu thì bán được rồi."
+              ]
+            }
+          ],
+          "tradeLevels": [
+            {
+              "group": "Chứng khoán Việt Nam",
+              "items": [
+                {
+                  "asset": "MSR",
+                  "dir": "MUA THEO CÂY BREAK",
+                  "entry": "40,5–41",
+                  "target": "—",
+                  "stop": "Thủng 40 thì cắt (hàng chưa về: 7%)",
+                  "sig": "up",
+                  "tv": "HOSE:MSR"
+                },
+                {
+                  "asset": "PHR",
+                  "dir": "MUA ĐƯỢC",
+                  "entry": "60,5–61",
+                  "target": "—",
+                  "stop": "MA20 (mất ~4%) hoặc 7% nếu hàng chưa về",
+                  "sig": "up",
+                  "tv": "HOSE:PHR"
+                },
+                {
+                  "asset": "NLG",
+                  "dir": "MUA — đẹp nhất nhóm bất động sản",
+                  "entry": "23,5",
+                  "target": "26,5",
+                  "stop": "22,5 (đáy thứ sáu)",
+                  "sig": "up",
+                  "tv": "HOSE:NLG"
+                },
+                {
+                  "asset": "GAS",
+                  "dir": "GIỮ — chờ vượt 80 mới gia tăng",
+                  "entry": "Giá vốn quanh 72",
+                  "target": "Vượt 80 với thanh khoản lớn",
+                  "stop": "—",
+                  "sig": "wait",
+                  "tv": "HOSE:GAS"
+                },
+                {
+                  "asset": "BVH",
+                  "dir": "GIỮ TIẾP",
+                  "entry": "63–65 (vào 07/08)",
+                  "target": "Vượt 72",
+                  "stop": "—",
+                  "sig": "up",
+                  "tv": "HOSE:BVH"
+                },
+                {
+                  "asset": "BSR",
+                  "dir": "CHỜ VƯỢT ĐỈNH NGẮN HẠN",
+                  "entry": "—",
+                  "target": "Vượt 27,5–28",
+                  "stop": "—",
+                  "sig": "wait",
+                  "tv": "HOSE:BSR"
+                },
+                {
+                  "asset": "STB",
+                  "dir": "CHỜ VƯỢT 76",
+                  "entry": "—",
+                  "target": "76",
+                  "stop": "—",
+                  "sig": "wait",
+                  "tv": "HOSE:STB"
+                },
+                {
+                  "asset": "GEX",
+                  "dir": "GIỮ — thủng 24 thì bán",
+                  "entry": "—",
+                  "target": "—",
+                  "stop": "24",
+                  "sig": "wait",
+                  "tv": "HOSE:GEX"
+                },
+                {
+                  "asset": "VIX",
+                  "dir": "BÁN — cây vượt 14 hôm thứ sáu đã hết đà",
+                  "entry": "—",
+                  "target": "—",
+                  "stop": "—",
+                  "sig": "down",
+                  "tv": "HOSE:VIX"
+                },
+                {
+                  "asset": "HPG",
+                  "dir": "KHÔNG KỲ VỌNG +20% TỚI CUỐI NĂM",
+                  "entry": "—",
+                  "target": "25–25,5 (khó)",
+                  "stop": "—",
+                  "sig": "warn",
+                  "tv": "HOSE:HPG"
+                },
+                {
+                  "asset": "VNM",
+                  "dir": "CÓ HÀNG THÌ GIỮ — không phải điểm mua",
+                  "entry": "—",
+                  "target": "—",
+                  "stop": "Cụt đầu 6 phiên liên tiếp",
+                  "sig": "wait",
+                  "tv": "HOSE:VNM"
+                },
+                {
+                  "asset": "SAB",
+                  "dir": "KHÔNG ĂN ĐƯỢC",
+                  "entry": "—",
+                  "target": "—",
+                  "stop": "—",
+                  "sig": "avoid",
+                  "tv": "HOSE:SAB"
+                },
+                {
+                  "asset": "FRT",
+                  "dir": "ĐỢI VƯỢT ĐỈNH RỒI MUA",
+                  "entry": "Vượt đỉnh",
+                  "target": "—",
+                  "stop": "Vùng 140 có nhiều lệnh chốt",
+                  "sig": "wait",
+                  "tv": "HOSE:FRT"
+                },
+                {
+                  "asset": "DBC",
+                  "dir": "GIỮ — chưa cắt",
+                  "entry": "—",
+                  "target": "—",
+                  "stop": "—",
+                  "sig": "wait",
+                  "tv": "HOSE:DBC"
+                },
+                {
+                  "asset": "SSI",
+                  "dir": "VỪA CHIA — không mua không bán",
+                  "entry": "—",
+                  "target": "—",
+                  "stop": "—",
+                  "sig": "wait",
+                  "tv": "HOSE:SSI"
+                },
+                {
+                  "asset": "MBS",
+                  "dir": "KHÔNG MUA MỚI",
+                  "entry": "—",
+                  "target": "—",
+                  "stop": "—",
+                  "sig": "wait",
+                  "tv": "HNX:MBS"
+                },
+                {
+                  "asset": "BID",
+                  "dir": "CHỜ XEM CÓ ĐÁY HAI",
+                  "entry": "35–36 sau chia",
+                  "target": "—",
+                  "stop": "Vùng 38 trước chia",
+                  "sig": "wait",
+                  "tv": "HOSE:BID"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "date": "2026-08-14",
           "dateShort": "14/08",
-          "timeAgo": "3 ngày trước",
+          "timeAgo": "4 ngày trước",
           "tab": "Livestream · 14/08",
           "sourceType": "public-video",
           "typeLabel": "Livestream · 63 phút",
@@ -2382,7 +2713,7 @@ window.HDT_DATA = {
         {
           "date": "2026-08-13",
           "dateShort": "13/08",
-          "timeAgo": "4 ngày trước",
+          "timeAgo": "5 ngày trước",
           "tab": "Livestream · 13/08",
           "sourceType": "public-video",
           "typeLabel": "Livestream · 72 phút",
@@ -2452,7 +2783,7 @@ window.HDT_DATA = {
         {
           "date": "2026-08-12",
           "dateShort": "12/08",
-          "timeAgo": "1 ngày trước",
+          "timeAgo": "6 ngày trước",
           "tab": "Livestream · 12/08",
           "sourceType": "public-video",
           "typeLabel": "Livestream · 61 phút",
@@ -2548,7 +2879,7 @@ window.HDT_DATA = {
         {
           "date": "2026-08-10",
           "dateShort": "10/08",
-          "timeAgo": "3 ngày trước",
+          "timeAgo": "1 tuần trước",
           "tab": "Livestream · 10/08",
           "sourceType": "public-video",
           "typeLabel": "Livestream · 63 phút",
@@ -2667,7 +2998,7 @@ window.HDT_DATA = {
         {
           "date": "2026-08-07",
           "dateShort": "07/08",
-          "timeAgo": "Hôm nay",
+          "timeAgo": "1 tuần trước",
           "tab": "Livestream · 07/08",
           "sourceType": "public-video",
           "typeLabel": "Livestream · 50 phút",
@@ -2824,236 +3155,25 @@ window.HDT_DATA = {
               ]
             }
           ]
-        },
-        {
-          "date": "2026-08-06",
-          "dateShort": "06/08",
-          "timeAgo": "1 ngày trước",
-          "tab": "Livestream · 06/08",
-          "sourceType": "public-video",
-          "typeLabel": "Livestream · 55 phút",
-          "title": "VN-Index 06/08: \"Chỉnh Chưa Chắc Đã Xấu, Xấu Chưa Chắc Đã Chết\"",
-          "summary": "Phiên thị trường quốc tế tăng mạnh và giá dầu giảm sâu, nhưng chứng khoán Việt Nam vẫn giảm nhẹ. Buổi này anh tập trung vào việc đọc nhịp chỉnh và vì sao một nhịp chỉnh trong giai đoạn hồi không đồng nghĩa với việc đảo chiều.",
-          "feedChips": [
-            {
-              "label": "Nhịp chỉnh ◷ chưa chắc đã xấu",
-              "sig": "wait"
-            },
-            {
-              "label": "Chiến lược ◷ vẫn giữ sức mua",
-              "sig": "wait"
-            },
-            {
-              "label": "Quốc tế tăng mạnh nhưng VN vẫn giảm",
-              "sig": "warn"
-            }
-          ],
-          "keyCalls": [
-            {
-              "tag": "Nghịch lý phiên 06/08",
-              "value": "Thế giới tăng 2–4%, dầu giảm 6%, VN vẫn giảm",
-              "signal": "warn",
-              "note": "Bối cảnh trong mơ mà thị trường Việt Nam không tăng theo. Đây cũng chính là hiện tượng Quang Dũng dành hẳn một phần trong buổi vĩ mô cùng ngày để giải thích."
-            },
-            {
-              "tag": "Thông điệp chính",
-              "value": "Chỉnh chưa chắc đã xấu, xấu chưa chắc đã chết",
-              "signal": "wait",
-              "note": "Giữ nguyên khung của mình: không hoảng khi chỉnh, không hưng phấn khi tăng, chỉ đợi điểm mua đủ điều kiện. Đến hôm sau (07/08) thì anh xác nhận điểm mua đã mở rộng."
-            }
-          ],
-          "sections": [],
-          "tradeLevels": []
-        },
-        {
-          "date": "2026-08-04",
-          "dateShort": "04/08",
-          "timeAgo": "1 ngày trước",
-          "tab": "Livestream · 04/08",
-          "sourceType": "public-video",
-          "typeLabel": "Livestream · 64 phút",
-          "title": "VN-Index 04/08: \"Chưa Thay Đổi Chiến Lược Đâu, Giữ Sức\"",
-          "summary": "Ngược hẳn với Thái Phạm cùng ngày: khi thị trường hồi tiếp, anh vẫn giữ nguyên 20–30% sức mua và không đổi chiến lược. Buổi này gần như chỉ đi qua từng mã theo yêu cầu, cộng một đoạn dài về gói vay ưu đãi 200–220 nghìn tỷ và vì sao đừng kỳ vọng tin tốt kéo giá ngay.",
-          "feedChips": [
-            {
-              "label": "Chiến lược ◷ \"chưa thay đổi đâu, giữ sức\"",
-              "sig": "wait"
-            },
-            {
-              "label": "GEX ↑ +26% từ đáy — giữ, không mua đuổi",
-              "sig": "up"
-            },
-            {
-              "label": "VIX ↑ mục tiêu 16 rồi chốt lãi ngắn hạn",
-              "sig": "up"
-            },
-            {
-              "label": "SSI ↑ mua mới vùng này không cao — rẻ hơn TCX",
-              "sig": "up"
-            },
-            {
-              "label": "Gói vay ưu đãi ⚠ tin tốt nhưng tác động dài hạn",
-              "sig": "warn"
-            }
-          ],
-          "keyCalls": [
-            {
-              "tag": "Chiến lược",
-              "value": "Không đổi — vẫn giữ 20–30% sức mua",
-              "signal": "wait",
-              "note": "\"Em nghĩ là cũng chưa thay đổi chiến lược này đâu. Giữ sức.\" Mức sức mua giữ nguyên như giai đoạn giảm mạnh giữa tháng 7. Đây là điểm khác biệt lớn nhất với Thái Phạm — cùng nhìn một thị trường, cùng ngày, một người đảo chiều sang mua full, một người không đổi gì."
-            },
-            {
-              "tag": "GEX",
-              "value": "+26% từ đáy — giữ tiếp, không mua đuổi",
-              "signal": "up",
-              "note": "Phiên 04/08 kéo trần trong khoảng 10 phút cuối vì thanh khoản bé nên \"làm mấy cái trò này dễ\". Ai bắt được điểm phân kỳ dương đồ thị giờ tuần trước (vùng vượt 22) đang lãi khoảng 12% — giữ tiếp. Ai đang lỗ cũng giữ luôn. Nhưng mua đuổi bây giờ là rủi ro vì đã tăng 26% từ đáy."
-            },
-            {
-              "tag": "VIX",
-              "value": "Mục tiêu ngắn hạn 16 rồi chốt lãi",
-              "signal": "up",
-              "note": "Đã tăng khoảng 20% từ đáy. Điểm mua đúng là cây vượt đỉnh trung tâm của phân kỳ dương, giá vốn quanh 13–13,2 (nay lãi ~6%). Nếu vượt MA20 thì nhắm 16 — vừa là biên trên Bollinger vừa là vùng tích lũy cũ. Từ đáy thấp nhất lên 16 là +37%, \"cầm cổ phiếu mid cap nắm giữ dài hạn nhắm 37% mất cả năm, bọn này nhoằng cái có 1–2 tuần\"."
-            },
-            {
-              "tag": "SSI",
-              "value": "Mua mới vùng này không cao — rẻ hơn TCX",
-              "signal": "up",
-              "note": "\"SSI mua mới ở vùng giá này em khẳng định là không cao. Mọi người mua nắm giữ SSI ở vùng giá này nó đang là một cổ phiếu mà em đánh giá là rẻ.\" So sánh cụ thể với TCX (vốn hóa 112.000 tỷ, thị phần top 3): SSI là anh cả ngành, bộ máy tối ưu qua nhiều sóng; TCX thì thời gian dài không làm mảng nhà đầu tư nhỏ lẻ. Hai con đánh giá tương đương nhưng ông chọn con giảm giá nhiều hơn vì biên độ an toàn lớn hơn."
-            },
-            {
-              "tag": "VSC",
-              "value": "Chốt lãi vùng 17 nếu tăng giật",
-              "signal": "wait",
-              "note": "Quanh vùng 14 là vùng tích lũy lớn nhất của năm 2025. Nếu tạo hai đáy hoặc tích lũy đi ngang thì ngon hơn; nếu tăng giật ngược lên thì ngắn hạn chỉ kích hoạt giá bán chốt lãi quanh 17. Ai có hàng thì giữ tiếp."
-            },
-            {
-              "tag": "EIB",
-              "value": "Dưới 20 mua được, nhắm vượt 20 bán",
-              "signal": "wait",
-              "note": "Chưa đẹp bằng GEX và VIX vì chưa vượt MA20 và thanh khoản chưa mạnh bằng. Vùng giá dưới 20 \"không phải là vùng quá xấu\". Câu chuyện vẫn là thay đổi ban lãnh đạo, chủ sở hữu, game gom kéo lên. \"Nếu mà là em thì em sẽ đợi hai đáy.\""
-            },
-            {
-              "tag": "DGW",
-              "value": "Đã thủng 37 — không mua được",
-              "signal": "avoid",
-              "note": "Mã anh nhắm từ lâu và từng đợi vùng 37 (đáy nền tích lũy vẽ từ giữa 2025). Nhưng nó thủng luôn: cây rút chân ở 37 không tạo tín hiệu đảo chiều, phiên T+2 sau đó thủng tiếp cùng index. \"Chỗ này mà ai nhảy vào mua thì đương nhiên là mua bừa — chả ai người ta mua trên đà giảm.\""
-            },
-            {
-              "tag": "Gói vay ưu đãi 200–220 nghìn tỷ",
-              "value": "Tin tốt nhưng đừng kỳ vọng kéo ngay",
-              "signal": "warn",
-              "note": "\"Đấy chắc chắn là tin tốt rồi. Thế nhưng mọi người đừng hiểu tin tốt theo kiểu là tin tốt xong nó phải kéo.\" Lý do: chính sách tác động trong trung–dài hạn, và loại tin này luôn có người biết trước — thông tư nghị định qua nhiều cấp trước khi công bố. \"Nhà đầu tư nhỏ lẻ phải đánh cho ra dáng nhà đầu tư nhỏ lẻ chứ.\""
-            },
-            {
-              "tag": "PNJ",
-              "value": "Không mua — rủi ro doanh nghiệp",
-              "signal": "avoid",
-              "note": "Anh trả lời từ góc người tiêu dùng lẫn nhà đầu tư: \"không có lý do gì bây giờ em phải ra đấy mua cả… nhỡ mua xong 3–4 tháng sau nó bắt bớ mở rộng điều tra ra doanh nghiệp nó oẳng thì sao. Tại sao mình lại phải rủi ro như vậy? View doanh nghiệp như vậy thì cũng không có lý do gì để mua cổ phiếu cả.\""
-            },
-            {
-              "tag": "ACV",
-              "value": "Hết năm nay đừng mua",
-              "signal": "avoid",
-              "note": "\"ACV là con mà em đánh giá hết năm nay đừng mua. Nó đang bị ốp tiến độ.\""
-            }
-          ],
-          "sections": [
-            {
-              "title": "\"Tôi muốn giá vốn thấp hơn\" — cái bẫy tâm lý phổ biến nhất lúc này",
-              "signal": "warn",
-              "sigLabel": "Anh viết hẳn một bài riêng về nó",
-              "para": "Câu hỏi anh nhận nhiều nhất: đang kẹp hàng, có nên bán ra lấy sức mua rồi đợi nó giảm mua lại rẻ hơn không? Hoặc: tiếc vì nhịp vừa rồi không mua được giá thấp, giờ có nên bán để chờ cơ hội tốt hơn?",
-              "bullets": [
-                "Kết luận của anh: \"cái chiến lược đấy mang tính chất là giải quyết vấn đề tâm lý thôi chứ nó không phải là một chiến lược gì cụ thể mà có thể áp dụng hiệu quả được. Không ai làm được ấy.\"",
-                "Thay vào đó vẫn quyết định theo tín hiệu đồ thị: đang lãi thì giữ lãi, đang lỗ mà đã gồng được thì gồng tiếp khi nó đang hồi.",
-                "Anh cũng nói thẳng về việc hô đáy: nhiều người hô ở vùng thấp rồi khi thị trường tăng thì nhận công, \"nhưng thực tế nó không phải như vậy — đa phần những người mua bừa mua ẩu vẫn còn đang kẹp hàng\".",
-                "Bài học về nhóm cổ phiếu dòng tiền (GEX, VIX): đừng phân tích doanh thu lợi nhuận với nhóm này. \"VIX toàn tự nó vẽ ra, nó cầm cổ phiếu của doanh nghiệp trong hệ sinh thái của nó thì cũng có ý nghĩa gì đâu, nó có bán đâu.\" Áp sát hành động giá thì hiệu quả hơn."
-              ]
-            }
-          ],
-          "tradeLevels": [
-            {
-              "group": "Chứng khoán Việt Nam",
-              "items": [
-                {
-                  "asset": "GEX",
-                  "dir": "GIỮ — không mua đuổi",
-                  "entry": "Điểm mua đúng là vùng vượt 22 tuần trước",
-                  "target": "Đang lãi ~12%",
-                  "stop": "Đã +26% từ đáy, mua giờ là rủi ro ngắn hạn",
-                  "sig": "up",
-                  "tv": "HOSE:GEX"
-                },
-                {
-                  "asset": "VIX",
-                  "dir": "GIỮ — chốt lãi ở mục tiêu",
-                  "entry": "Giá vốn đúng quanh 13–13,2",
-                  "target": "16 (biên trên BB + vùng tích lũy cũ)",
-                  "stop": "Điểm mua hôm nay không đẹp",
-                  "sig": "up",
-                  "tv": "HOSE:VIX"
-                },
-                {
-                  "asset": "SSI",
-                  "dir": "MUA MỚI ĐƯỢC",
-                  "entry": "Vùng giá hiện tại — \"không cao\"",
-                  "target": "Nắm giữ; rẻ hơn TCX",
-                  "stop": "—",
-                  "sig": "up",
-                  "tv": "HOSE:SSI"
-                },
-                {
-                  "asset": "VSC",
-                  "dir": "Giữ, chốt lãi nếu giật lên",
-                  "entry": "Vùng 14 là tích lũy lớn nhất 2025",
-                  "target": "17",
-                  "stop": "Ngon hơn nếu tạo hai đáy",
-                  "sig": "wait",
-                  "tv": "HOSE:VSC"
-                },
-                {
-                  "asset": "EIB",
-                  "dir": "Mua được nhưng đợi hai đáy thì hơn",
-                  "entry": "Dưới 20",
-                  "target": "Vượt 20 thì bán",
-                  "stop": "Chưa vượt MA20",
-                  "sig": "wait",
-                  "tv": "HOSE:EIB"
-                },
-                {
-                  "asset": "DGW",
-                  "dir": "KHÔNG MUA — đã thủng nền",
-                  "entry": "—",
-                  "target": "—",
-                  "stop": "Thủng 37, rút chân không tạo đảo chiều",
-                  "sig": "avoid",
-                  "tv": "HOSE:DGW"
-                },
-                {
-                  "asset": "PNJ",
-                  "dir": "KHÔNG MUA",
-                  "entry": "—",
-                  "target": "—",
-                  "stop": "Rủi ro điều tra mở rộng",
-                  "sig": "avoid",
-                  "tv": "HOSE:PNJ"
-                },
-                {
-                  "asset": "ACV",
-                  "dir": "HẾT NĂM NAY ĐỪNG MUA",
-                  "entry": "—",
-                  "target": "—",
-                  "stop": "Đang bị ốp tiến độ",
-                  "sig": "avoid",
-                  "tv": "HOSE:ACV"
-                }
-              ]
-            }
-          ]
         }
       ],
       "sources": [
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 27)",
+          "iconColor": "oklch(0.46 0.15 27)",
+          "date": "17/08/2026",
+          "title": "Tại sao thanh khoản toàn thị trường không thể tăng lại trong ngắn hạn?",
+          "meta": "Phân tích · 8:14 · Chứng khoán 5 phút"
+        },
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 27)",
+          "iconColor": "oklch(0.46 0.15 27)",
+          "date": "17/08/2026",
+          "title": "Vnindex 17/08: Thanh khoản thấp nhất kể từ...",
+          "meta": "Livestream · 68:03 · Chứng khoán 5 phút"
+        },
         {
           "icon": "▶",
           "iconBg": "oklch(0.95 0.04 27)",
@@ -3093,22 +3213,6 @@ window.HDT_DATA = {
           "date": "07/08/2026",
           "title": "Vnindex 07/08: Bắt đầu có điểm mua?",
           "meta": "Livestream · 49:53 · Chứng khoán 5 phút"
-        },
-        {
-          "icon": "▶",
-          "iconBg": "oklch(0.95 0.04 27)",
-          "iconColor": "oklch(0.46 0.15 27)",
-          "date": "06/08/2026",
-          "title": "Vnindex 06/08: Chỉnh chưa chắc đã xấu, xấu chưa chắc đã chết",
-          "meta": "Livestream · 54:36 · Chứng khoán 5 phút"
-        },
-        {
-          "icon": "▶",
-          "iconBg": "oklch(0.95 0.04 27)",
-          "iconColor": "oklch(0.46 0.15 27)",
-          "date": "04/08/2026",
-          "title": "Vnindex 04/08: Mr. Sunsilk",
-          "meta": "Livestream · 63:47 · Chứng khoán 5 phút"
         }
       ]
     },
@@ -3137,7 +3241,7 @@ window.HDT_DATA = {
         {
           "date": "2026-08-15",
           "dateShort": "15/08",
-          "timeAgo": "2 ngày trước",
+          "timeAgo": "3 ngày trước",
           "tab": "Toàn ngành ngân hàng",
           "sourceType": "public-video",
           "typeLabel": "Phân tích ngành · 34 phút",
@@ -3251,7 +3355,7 @@ window.HDT_DATA = {
         {
           "date": "2026-08-10",
           "dateShort": "10/08",
-          "timeAgo": "3 ngày trước",
+          "timeAgo": "1 tuần trước",
           "tab": "MBB · Quý 2/2026",
           "sourceType": "public-video",
           "typeLabel": "Phân tích doanh nghiệp · 45 phút",
@@ -3338,7 +3442,7 @@ window.HDT_DATA = {
         {
           "date": "2026-08-08",
           "dateShort": "08/08",
-          "timeAgo": "5 ngày trước",
+          "timeAgo": "1 tuần trước",
           "tab": "TCB · Quý 2/2026",
           "sourceType": "public-video",
           "typeLabel": "Phân tích doanh nghiệp · 46 phút",
@@ -3415,7 +3519,7 @@ window.HDT_DATA = {
         {
           "date": "2026-08-06",
           "dateShort": "06/08",
-          "timeAgo": "1 ngày trước",
+          "timeAgo": "1 tuần trước",
           "tab": "Vĩ mô · Tháng 8",
           "sourceType": "public-video",
           "typeLabel": "Livestream · 106 phút · ~70 slide",
@@ -3551,7 +3655,7 @@ window.HDT_DATA = {
         {
           "date": "2026-08-01",
           "dateShort": "01/08",
-          "timeAgo": "1 ngày trước",
+          "timeAgo": "2 tuần trước",
           "tab": "HPG · Quý 2/2026",
           "sourceType": "public-video",
           "typeLabel": "Phân tích doanh nghiệp · 43 phút",
@@ -3690,7 +3794,7 @@ window.HDT_DATA = {
         {
           "date": "2026-07-18",
           "dateShort": "18/07",
-          "timeAgo": "2 tuần trước",
+          "timeAgo": "4 tuần trước",
           "tab": "VPB · Quý 2/2026",
           "sourceType": "public-video",
           "typeLabel": "Phân tích doanh nghiệp · 54 phút",
@@ -3819,7 +3923,7 @@ window.HDT_DATA = {
         {
           "date": "2026-07-04",
           "dateShort": "04/07",
-          "timeAgo": "4 tuần trước",
+          "timeAgo": "6 tuần trước",
           "tab": "Vĩ mô · Tháng 7",
           "sourceType": "public-video",
           "typeLabel": "Phân tích vĩ mô · 45 phút",
@@ -4010,7 +4114,7 @@ window.HDT_DATA = {
         {
           "date": "2026-08-02",
           "dateShort": "02/08",
-          "timeAgo": "1 ngày trước",
+          "timeAgo": "2 tuần trước",
           "tab": "Đổi danh mục · 02/08",
           "sourceType": "public-video",
           "typeLabel": "Video công khai · 20 phút",
@@ -4191,7 +4295,7 @@ window.HDT_DATA = {
         {
           "date": "2026-07-12",
           "dateShort": "12/07",
-          "timeAgo": "3 tuần trước",
+          "timeAgo": "5 tuần trước",
           "tab": "7 tiêu chí quỹ mở · 12/07",
           "sourceType": "public-video",
           "typeLabel": "Video công khai · 20 phút",
@@ -4360,45 +4464,105 @@ window.HDT_DATA = {
   },
   "weekly": {
     "dateRange": "17–21/08/2026",
-    "action": "Tuần 33 khép lại bằng một nghịch lý mà cả hai kênh theo dõi thị trường Việt Nam đều chỉ ra, từ hai hướng khác nhau. Thái Phạm chồng đồ thị VN-Index lên VHM và thấy chúng gần như trùng khớp: phiên giảm 36,55 điểm thì riêng VIC góp 12,4 điểm và VHM 3,17 — hai mã chiếm khoảng một nửa. Bỏ chúng ra thì P/E thị trường ở biên dưới 11,86, tức định giá rất thấp, nhưng 73% mã vẫn downtrend. Ông tóm gọn: \"nhìn điểm số thì là up-trend nhưng cổ phiếu thì down-trend\", và thừa nhận thẳng đây là bài toán đau đầu cho chính mình. Chứng khoán 5 phút đi tới cùng kết luận từ phiên giao dịch: phiên 14/08 có lúc giảm 50 điểm đúng lúc nhóm Vin suýt sàn, nhưng \"một số cổ phiếu khác cũng bị bán mạnh mà với thanh khoản này thì không ảnh hưởng đến điểm số lắm\". Cả hai đều không đổi chiến lược — Thái Phạm trả lời hội viên bằng đúng một chữ \"Không\", còn CK 5 phút nói chưa thấy lý do gì phải bán tống bán tháo. Về chứng khoán Mỹ, Thái Phạm giữ short dù S&P lập đỉnh mọi thời đại 7.816, và đưa ra dữ kiện mới đáng chú ý: Nvidia đã thu hẹp cam kết tài trợ trung tâm dữ liệu OpenAI từ 250 tỷ xuống còn hơn 100 tỷ. Vàng thì ông đã chốt 1/2 lệnh long từ 4.080. Quang Dũng chuyển từ mổ từng mã sang mổ cả ngành ngân hàng và tìm ra chỗ đáng ngờ: tín dụng ngành tăng 18% nhưng trích lập chỉ tăng 13,7%. Còn AzFin mở đầu buổi chủ nhật bằng một câu hiếm gặp — \"giai đoạn này không có nhiều câu chuyện gì để trao đổi\".",
+    "action": "Tuần 34 mở màn bằng phiên chán nhất năm — thanh khoản thấp nhất kể từ đầu 2026, cộng đồng CK 5 phút gần như không ai hỏi mã nào. Nhưng chính từ phiên đó ra được bài đáng giá nhất tuần: anh bỏ hẳn kỳ vọng thanh khoản hồi phục và chỉ ra ba nguồn hút tiền đều mang tính chính sách chứ không phải tâm lý — luật thuế buộc hộ kinh doanh giữ tiền mặt, siết tín dụng khiến khoản vay đáo hạn không tái vay được, và loạt đại dự án hạ tầng hút vốn ngân hàng. Ông gọi đó là \"xì hơi chứ không vỡ\", và cảnh báo có thể kéo hết quý 3 sang quý 4 hoặc lâu hơn. Điều thú vị là ông đọc con số thanh khoản cạn theo hướng ngược đám đông: \"không phải không có người mua, mà là không có người bán\". Kết luận hành động thì trùng khít với AzFin ra cùng ngày — dùng giai đoạn này để tích lũy hàng cơ bản. AzFin bỏ hẳn lý thuyết, làm một bài toán số trên NT2 giá 21.000: kịch bản giá sập về 15.000 làm lỗ thị giá 17%, nhưng tiền cổ tức tái đầu tư ở giá đó cho tỉ suất 16,5% thay vì 11,5%. Thái Phạm thì giữ im lặng có chủ ý — tút 18/08 chỉ 232 chữ, ba ý: tỉ giá ổn trở lại (ông đoán do chính sách crypto 1/9), phân bón bắt đầu chạy và điểm mua kỹ thuật vẫn đẹp, còn kế hoạch danh mục thì không đổi.",
     "consensus": [
       {
-        "label": "Chỉ số Việt Nam đã tách khỏi cổ phiếu — cả hai kênh cùng chỉ ra",
-        "detail": "Thái Phạm: VN-Index chính là đồ thị VHM, \"khi nào Vinhomes ngừng chỉnh thì index ngừng chỉnh\". CK 5 phút: áp lực bán phiên 14/08 chủ yếu từ nhóm Vin, phần còn lại thanh khoản thấp nên không ảnh hưởng điểm số. Hai người, hai phương pháp, cùng một kết luận về cách đọc chỉ số."
+        "label": "Thanh khoản thấp là nền mới — và cả hai kênh đều nói dùng nó để tích lũy",
+        "detail": "CK 5 phút: \"Kẻ mạnh thì không đổ tại cho hoàn cảnh. Đây là thời điểm rất tốt để tích lũy các cổ phiếu cơ bản nắm giữ tốt trong dài hạn.\" AzFin cùng ngày: \"thị trường chứng khoán giảm mạnh là cơ hội cực kỳ lớn đối với nhà đầu tư giá trị\". Hai kênh, hai phương pháp hoàn toàn khác nhau — một bên đọc đồ thị, một bên tính dòng cổ tức — cùng ra một hành động."
       },
       {
-        "label": "Không ai đổi chiến lược sau phiên giảm 36 điểm",
-        "detail": "Thái Phạm trả lời hội viên bằng đúng một chữ: \"Câu trả lời của tôi là Không\". CK 5 phút: \"chưa thấy có lý do gì để phải bán tống bán tháo trong phiên sáng thứ hai\". Đây là tuần thứ hai liên tiếp không ai thay đổi hướng."
+        "label": "Không ai đổi chiến lược, sang tuần thứ ba liên tiếp",
+        "detail": "Thái Phạm 18/08: \"Kế hoạch vẫn vậy.\" CK 5 phút vẫn giữ DBC, STB, SSI đã cầm từ trước và chỉ mở lệnh nhỏ theo tín hiệu. Không có mã nào bị gỡ khỏi danh mục ở cả hai bên."
+      },
+      {
+        "label": "Tỉ giá hạ nhiệt được ghi nhận là điểm cộng vĩ mô rõ nhất",
+        "detail": "Thái Phạm nêu tỉ giá ổn trở lại ba tút liên tiếp (11/08, 13/08, 18/08) và lần này gắn với mốc chính sách crypto 1/9. Đây là một trong số ít yếu tố vĩ mô đang chuyển biến tích cực trong khi lãi suất và thanh khoản đều bế tắc."
       },
       {
         "label": "Ngân hàng vẫn là nhóm được ưu tiên",
-        "detail": "Quang Dũng: \"mỗi khi bất định và trầm lắng thì ngân hàng là ngành ưu tiên\", và định giá cả ngành đang rẻ hơn nhiều so với chính nó trong 6 năm. Thái Phạm giữ nguyên BID, CTG, VCB, TCB, MBB, BVB. AzFin nhắc điều kiện đi kèm: ngân hàng không tăng trưởng thì định giá rất khó đứng vững."
-      },
-      {
-        "label": "Định giá rẻ nhưng chưa ai coi đó là tín hiệu mua thêm",
-        "detail": "Thái Phạm giữ 100% hàng chứ không mua thêm. Quang Dũng nói lựa chọn không thiếu, \"chỉ là thiếu sự quyết đoán\". CK 5 phút bỏ qua cả mã mạnh nhất phiên vì không có điểm vào. AzFin giữ nguyên chiến lược."
+        "detail": "Quang Dũng: \"mỗi khi bất định và trầm lắng thì ngân hàng là ngành ưu tiên\", định giá cả ngành rẻ hơn nhiều so với chính nó trong 6 năm. Thái Phạm giữ nguyên BID, CTG, VCB, TCB, MBB, BVB. AzFin nhắc điều kiện đi kèm: ngân hàng không tăng trưởng thì định giá rất khó đứng vững."
       }
     ],
     "divergence": [
       {
+        "label": "Thanh khoản cạn: sắp sập, hay hết người bán?",
+        "detail": "CK 5 phút tách hẳn khỏi cách đọc phổ biến: \"Sẽ có nhiều người bảo là thanh khoản này là yếu lắm, sắp sập đến nơi rồi… nhưng mà em thì lại nhìn thanh khoản này theo hướng là không có người bán. Ở thời điểm hiện tại giảm thế chứ giảm nữa cũng chả có ai bán.\" Cùng một con số, hai kết luận đối nghịch về rủi ro — và chưa có gì kiểm chứng được bên nào đúng cho tới khi có một phiên bán tháo thật."
+      },
+      {
+        "label": "HPG: +20% tới cuối năm — Quang Dũng và CK 5 phút lệch hẳn",
+        "detail": "CK 5 phút trả lời thẳng một câu hỏi về mục tiêu nắm giữ HPG trung hạn: \"20% trong 2 năm thì em nghĩ thoải mái. Nhưng 20% từ giờ đến cuối năm thì chưa chắc, khả năng khó\" — tức phải lên 25–25,5. Quang Dũng thì đang giữ kỳ vọng HPG tăng trưởng lợi nhuận 50% cả năm 2026. Một bên nhìn giá, một bên nhìn báo cáo; điểm chưa kiểm chứng là liệu lợi nhuận có chuyển thành giá trong 4 tháng còn lại hay không."
+      },
+      {
         "label": "Chất lượng lợi nhuận ngân hàng: con số đẹp hay chưa trích đủ",
-        "detail": "Quang Dũng đưa ra chỗ đáng ngờ nhất tuần: tín dụng ngành tăng 18%, có ngân hàng đẩy tới 37%, mà tốc độ tăng trích lập dự phòng chỉ 13,7% — chính chênh lệch đó tạo ra lợi nhuận 89.296 tỷ (+25,4%). Anh chiếu tỷ lệ trích lập trên tổng thu: có nơi 27–28,2%, còn TCB chỉ 4,4%, VCB 1,9%. Chưa kênh nào khác đặt câu hỏi này, trong khi cả ba đang cầm nhóm bank."
+        "detail": "Quang Dũng: tín dụng ngành tăng 18%, có ngân hàng đẩy tới 37%, mà tốc độ tăng trích lập dự phòng chỉ 13,7% — chính chênh lệch đó tạo ra lợi nhuận 89.296 tỷ (+25,4%). Tỷ lệ trích lập trên tổng thu: có nơi 27–28,2%, còn TCB chỉ 4,4%, VCB 1,9%. Chưa kênh nào khác đặt câu hỏi này, trong khi cả ba đang cầm nhóm bank."
+      },
+      {
+        "label": "Nâng hạng tháng 9: kỳ vọng hay chất xúc tác",
+        "detail": "CK 5 phút gạt đi: tiền có thể vào 1–5 tỷ đô nhưng \"thời điểm hiện tại nó chỉ dừng lại ở cái mức kỳ vọng thôi\", và lý do sâu hơn là thị trường VN thiếu sản phẩm — khối ngoại không sang một nền kinh tế bị đánh giá chưa phát triển chỉ để mua cổ phiếu tài chính. Chưa kênh nào phản biện lại điểm này, dù nhóm chứng khoán vẫn nằm trong danh mục của cả Thái Phạm lẫn CK 5 phút."
       },
       {
         "label": "Mỹ ở đỉnh: giữ short hay đứng ngoài",
-        "detail": "Thái Phạm giữ short 2/3 vị thế US500 dù S&P lập đỉnh mọi thời đại, dựa trên volume thiếu và dữ kiện Nvidia cắt cam kết OpenAI. AzFin thì không bàn tới chứng khoán Mỹ và giữ lập trường không dự báo Fed. Đây vẫn là khoảng cách phương pháp lớn nhất giữa hai kênh."
-      },
-      {
-        "label": "TCB: mốc mua khác nhau khá xa",
-        "detail": "CK 5 phút: mua quanh 34 trở xuống là rủi ro dài hạn không cao. Quang Dũng tuần trước: đang chờ giảm thêm khoảng 7% từ vùng 28. Thái Phạm: cầm bình thường, không nêu mốc. Ba mốc, ba khung thời gian khác nhau cho cùng một mã."
-      },
-      {
-        "label": "Có nên đuổi theo mã đang mạnh",
-        "detail": "CK 5 phút bỏ hẳn DGW dù là mã mạnh nhất phiên 13/08 — \"không có điểm vào em không cố, kể cả nó có chạy mất thì cứ từ từ\". Thái Phạm thì ngược lại, dùng chính vùng giá thấp làm lý do để cầm và không bán ra bất kể điểm số."
+        "detail": "Thái Phạm giữ short 2/3 vị thế US500 dù S&P lập đỉnh mọi thời đại, dựa trên volume thiếu và dữ kiện Nvidia cắt cam kết OpenAI. AzFin không bàn tới chứng khoán Mỹ và giữ lập trường không dự báo Fed. Đây vẫn là khoảng cách phương pháp lớn nhất giữa hai kênh."
       }
     ]
   },
   "scorecard": [
+    {
+      "expert": "ck-5-phut",
+      "date": "17/08",
+      "asset": "CK Việt",
+      "call": "Thanh khoản KHÔNG thể tăng lại trong ngắn hạn — ba nguyên nhân chính sách, có thể kéo hết quý 3 sang quý 4",
+      "result": "pending",
+      "note": "Kiểm chứng được: nếu thanh khoản trung bình quý 4/2026 vượt hẳn nền hiện tại thì call sai."
+    },
+    {
+      "expert": "ck-5-phut",
+      "date": "17/08",
+      "asset": "NLG",
+      "call": "Mua 23,5 — target 26,5, cắt lỗ 22,5 (đáy thứ sáu)",
+      "result": "pending",
+      "note": "Mã anh đánh giá đẹp nhất nhóm bất động sản, dù thừa nhận không giải thích được bằng cơ bản."
+    },
+    {
+      "expert": "ck-5-phut",
+      "date": "17/08",
+      "asset": "MSR",
+      "call": "Mua 40,5–41 theo cây break — thủng 40 thì cắt",
+      "result": "pending",
+      "note": "Anh nói rõ là lệnh nhỏ theo tín hiệu, nền giá yếu, nhóm Masan (MCH, MSN) không chạy theo."
+    },
+    {
+      "expert": "ck-5-phut",
+      "date": "17/08",
+      "asset": "HPG",
+      "call": "HPG +20% từ giờ tới cuối năm là khó — phải lên 25–25,5",
+      "result": "pending",
+      "note": "Đối lập trực tiếp với Quang Dũng (01/08) đang giữ kỳ vọng lợi nhuận HPG tăng 50% cả năm 2026."
+    },
+    {
+      "expert": "azfin",
+      "date": "17/08",
+      "asset": "NT2",
+      "call": "EPS bình quân dài hạn ~2.600đ, cổ tức ~2.500đ/cp — giá về 15.000 thì tỉ suất cổ tức tái đầu tư lên 16,5%",
+      "result": "pending",
+      "note": "Kiểm chứng được bằng mức cổ tức NT2 công bố các năm tới. Rủi ro chính anh tự nêu: nhóm điện có EPS \"phập phù\", năm bảo trì lớn có thể tụt về nghìn mấy."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "18/08",
+      "asset": "Vĩ mô VN",
+      "call": "Tỉ giá ổn trở lại — có lẽ do chính sách crypto 1/9",
+      "result": "pending",
+      "note": "Ông viết \"có lẽ do\", tức là suy đoán chứ không phải số liệu. Kiểm chứng bằng diễn biến tỉ giá quanh mốc 1/9."
+    },
+    {
+      "expert": "thai-pham",
+      "date": "18/08",
+      "asset": "Phân bón",
+      "call": "Phân bón bắt đầu chạy — điểm mua kỹ thuật vẫn còn đẹp",
+      "result": "pending",
+      "note": "Nối tiếp call 05/08 (DCM/DPM chiếm ~25% tài khoản, giữ tới tháng 3/2027)."
+    },
     {
       "expert": "thai-pham",
       "date": "01/06",
@@ -5364,8 +5528,8 @@ window.HDT_DATA = {
       "date": "12/08",
       "asset": "CK Việt",
       "call": "Thanh khoản thấp là NỀN MỚI, không phải dấu hiệu xấu — đừng đợi 20.000 tỷ quay lại",
-      "result": "pending",
-      "note": "Đây là đảo ngược chính mối lo anh nêu suốt hai tuần. Lập luận: kinh tế thiếu tín dụng nên ngắn hạn không đào đâu ra thanh khoản. Chấm được nếu thị trường tiếp tục tăng với thanh khoản dưới 20.000 tỷ, hoặc quay đầu vì thiếu tiền. CẬP NHẬT 14/08: phiên giảm 36 điểm (trong phiên có lúc −50) nhưng anh bóc rõ nguồn gốc là nhóm Vin — VHM, VIC, VRE, VPL — chứ không phải thanh khoản cạn kéo cả thị trường xuống. \"Một số cổ phiếu khác cũng bị bán mạnh nhưng với thanh khoản này thì không ảnh hưởng đến điểm số lắm.\" Luận điểm nền thanh khoản mới vẫn đứng, giữ pending."
+      "result": "hit",
+      "note": "Phiên 17/08 thanh khoản thấp nhất kể từ đầu 2026 — đúng như \"nền mới\" chứ không phải nhịp trũng tạm thời. Anh dành hẳn một video 17/08 để chỉ ra ba nguyên nhân cấu trúc (luật thuế hộ kinh doanh, siết tín dụng, đại dự án hút vốn) và bỏ luôn kỳ vọng hồi phục ngắn hạn."
     },
     {
       "expert": "quang-dung",
@@ -5441,70 +5605,52 @@ window.HDT_DATA = {
     }
   ],
   "actions": {
-    "updated": "17/08/2026",
+    "updated": "18/08/2026",
     "now": [
       {
         "asset": "Danh mục VN",
-        "dir": "GIỮ 100% HÀNG — không đổi gì",
+        "dir": "GIỮ 100% HÀNG — kế hoạch vẫn vậy",
         "sig": "up",
         "expertId": "thai-pham",
         "mkt": "vn",
-        "detail": "Trả lời phiên giảm 36 điểm bằng đúng một chữ \"Không\". Vùng này là vùng trung tính, đã tóm cổ phiếu tốt thì cứ cầm. VNM, SCS, bank, phân bón, chứng khoán đều giữ nguyên.",
-        "level": "Muốn lướt thì đợi VHM chạm 56–57"
+        "detail": "Tút 18/08 chỉ 232 chữ và không có mốc giá mới nào. Ông đăng tút giữa phiên gần như mỗi khi có gì phải sửa — một tút chỉ để \"chào mọi người\" đúng lúc thanh khoản chạm đáy 2026 là tín hiệu ngược: không có gì phải sửa.",
+        "level": "Không mã nào bị gỡ, không lệnh cắt nào mới"
       },
       {
-        "asset": "Danh mục VN (góc đối chiếu)",
-        "dir": "CHƯA CÓ LÝ DO BÁN THÁO",
-        "sig": "wait",
+        "asset": "DCM · DPM",
+        "dir": "GIỮ — điểm mua kỹ thuật vẫn đẹp",
+        "sig": "up",
+        "expertId": "thai-pham",
+        "mkt": "vn",
+        "detail": "\"Hôm nay Phân bốc mùi nhẹ nhẹ. Điểm mua kĩ thuật vẫn đẹp.\" Hai mã này chiếm khoảng 25% tài khoản của ông theo tút 05/08, kế hoạch giữ tới tháng 3/2027.",
+        "level": "Vùng hiện tại vẫn vào được"
+      },
+      {
+        "asset": "MSR · PHR · NLG",
+        "dir": "MUA THEO TÍN HIỆU — lệnh nhỏ",
+        "sig": "up",
         "expertId": "ck-5-phut",
         "mkt": "vn",
-        "detail": "Phiên 14/08 có lúc giảm 50 điểm khi nhóm Vin suýt sàn, đóng cửa −36. Nhưng áp lực bán chủ yếu từ nhóm Vin; phần còn lại thanh khoản thấp nên không kéo được điểm số.",
-        "level": "Chờ xem phiên đầu tuần"
+        "detail": "Ba mã duy nhất có điểm mua trong phiên 17/08. Anh nói thẳng đây là \"một lệnh chết cũng ok\" — vào theo tín hiệu chứ không ham hố, vì ngành của MSR và PHR đều không chạy theo.",
+        "level": "MSR 40,5–41 · PHR 60,5–61 · NLG 23,5 (target 26,5)"
       },
       {
-        "asset": "Vàng",
-        "dir": "ĐÃ CHỐT 1/2 — giữ phần còn lại",
+        "asset": "Hàng cơ bản dài hạn",
+        "dir": "TÍCH LŨY — đây là lúc",
         "sig": "up",
-        "expertId": "thai-pham",
-        "mkt": "us",
-        "detail": "Lệnh long từ 4.080 đã chốt một nửa trong Tập 45, phần còn lại để dài hạn. Vàng trong nước chênh chỉ còn 5 triệu/lượng — mua được ở bất kỳ thương hiệu SJC, DOJI, Bảo Tín Minh Châu.",
-        "level": "Tiến về 4.600 · khó tại 4.700–4.800"
+        "expertId": "ck-5-phut",
+        "mkt": "vn",
+        "detail": "\"Kẻ mạnh thì không đổ tại cho hoàn cảnh. Đây là thời điểm rất tốt để tích lũy các cổ phiếu cơ bản nắm giữ tốt trong dài hạn để khi mà cái thanh khoản nó được khơi thông trở lại thì chúng ta sẽ có một cái nền tảng rất tốt.\"",
+        "level": "Thanh khoản có thể thấp hết quý 3, sang quý 4"
       },
       {
-        "asset": "S&P 500",
-        "dir": "SHORT 2/3 VỊ THẾ",
-        "sig": "down",
-        "expertId": "thai-pham",
-        "mkt": "us",
-        "detail": "Đỉnh mọi thời đại 7.816 nhưng tăng không có khối lượng. Thị trường đã hồi 23% từ cuối tháng 7 nên khó lên tiếp tới 8.000 ngay. Ưu tiên US500 hơn US30.",
-        "level": "Điều chỉnh 10–12% là bình thường"
-      },
-      {
-        "asset": "Nhóm bán dẫn & cyber",
-        "dir": "GIỮ SHORT — vào thêm ít",
-        "sig": "down",
-        "expertId": "thai-pham",
-        "mkt": "us",
-        "detail": "Báo cáo Broadcom cho thấy bảo mật kiểu VMware cũng thua AI. CRWD, PANW, Fortinet giữ short và vào thêm một ít, nhưng phần vào thêm phải đặt cắt lỗ ở đỉnh cũ.",
-        "level": "AMD 575 · NVDA thêm 241 · Apple hold tới 290"
-      },
-      {
-        "asset": "GOOGL",
-        "dir": "ĐÃ CHỐT SHORT — đứng ngoài",
-        "sig": "wait",
-        "expertId": "thai-pham",
-        "mkt": "us",
-        "detail": "Vị thế short từ 377 đã chốt lời. Muốn mua lại thì đợi sau bầu cử giữa nhiệm kỳ — nếu Cộng hòa thắng thì mua, thua thì đợi mục tiêu khác.",
-        "level": "Sau tháng 11"
-      },
-      {
-        "asset": "BTC",
-        "dir": "GIỮ — đang lỗ 2.000/coin",
-        "sig": "warn",
-        "expertId": "thai-pham",
-        "mkt": "us",
-        "detail": "Chưa chạm cắt lỗ. Lý do Bitcoin yếu: dòng tiền nhỏ lẻ bị kiểm soát qua truy vết P2P nên \"không có cá để thịt\". Kỳ vọng hồi kỹ thuật quanh đầu tháng 9.",
-        "level": "Cắt lỗ 60.800"
+        "asset": "NT2 (góc đối chiếu)",
+        "dir": "TÍCH SẢN — càng giảm càng gom",
+        "sig": "up",
+        "expertId": "azfin",
+        "mkt": "vn",
+        "detail": "Bài toán mẫu của AzFin: giá 21.000, cổ tức bình quân 2.500đ/cp. Giá về 15.000 thì lỗ thị giá 17% nhưng tỉ suất cổ tức của tiền tái đầu tư lên 16,5% thay vì 11,5%; về 10.000 thì 25%.",
+        "level": "Điều kiện: cổ phiếu tốt + định giá hấp dẫn + danh mục đủ đa dạng"
       },
       {
         "asset": "Nhóm ngân hàng VN",
@@ -5512,38 +5658,110 @@ window.HDT_DATA = {
         "sig": "up",
         "expertId": "quang-dung",
         "mkt": "vn",
-        "detail": "LNST ngành 89.296 tỷ, tăng 25,4%, tín dụng +18%. Nhưng phải soi chất lượng trích lập: TCB 4,4%, VCB 1,9%, ACB ~11% là nhóm quản trị rủi ro tốt; có nơi lên 27–28,2%.",
-        "level": "Chọn ngân hàng chủ động được vốn giá rẻ"
+        "detail": "LNST toàn ngành 89.296 tỷ, +25,4%. Nhưng chỗ đáng ngờ: tín dụng +18% mà trích lập chỉ +13,7% — chênh lệch đó chính là phần tạo ra lợi nhuận.",
+        "level": "BID, CTG, VCB, TCB, MBB, BVB"
       },
       {
-        "asset": "TCB",
-        "dir": "MUA — vùng an toàn dài hạn",
-        "sig": "up",
-        "expertId": "ck-5-phut",
-        "mkt": "vn",
-        "detail": "Mua quanh 34 trở xuống thì rủi ro dài hạn không cao, không cần cố mua đúng đáy. \"Ngắn hạn thì em không biết, ngắn hạn đoán thế quái được.\"",
-        "level": "≤34"
-      },
-      {
-        "asset": "DCM · DPM",
-        "dir": "CẦM DÀI HẠN",
+        "asset": "Vàng",
+        "dir": "ĐÃ CHỐT 1/2 — giữ phần còn lại",
         "sig": "up",
         "expertId": "thai-pham",
-        "mkt": "vn",
-        "detail": "Ưu tiên DCM vì làm ăn tốt hơn, nhưng DPM có mẫu hình đẹp hơn. \"Chẳng có lý do gì phải bán ra cả.\"",
-        "level": "Giữ tới tháng 3/2027"
+        "mkt": "us",
+        "detail": "Long từ 4.080, đã chốt một nửa. Phần còn lại giữ dài hạn, tiến về 4.600 và khó tại 4.700–4.800.",
+        "level": "Vùng tích lũy 4.600–4.700"
       },
       {
-        "asset": "LPB · STB",
-        "dir": "ĐỪNG MUA — cao giá",
-        "sig": "avoid",
+        "asset": "S&P 500",
+        "dir": "SHORT 2/3 VỊ THẾ",
+        "sig": "down",
         "expertId": "thai-pham",
-        "mkt": "vn",
-        "detail": "\"Vùng Liên Việt Bank và STB thì đừng có mua vào thời điểm này, nó rất là cao giá dễ dính chưởng lắm nhá.\"",
+        "mkt": "us",
+        "detail": "Đỉnh 7.816 nhưng tăng không có volume. Điều chỉnh 10–12% là bình thường.",
+        "level": "Ưu tiên cao nhất trong danh mục quốc tế"
+      },
+      {
+        "asset": "Nhóm bán dẫn & cyber",
+        "dir": "GIỮ SHORT — vào thêm ít",
+        "sig": "down",
+        "expertId": "thai-pham",
+        "mkt": "us",
+        "detail": "PANW, CRWD, AMD, MU, Marvell, Dell. Phần vào thêm cắt lỗ ở đỉnh cũ.",
+        "level": "Vùng hiện tại"
+      },
+      {
+        "asset": "BTC",
+        "dir": "GIỮ — đang lỗ 2.000/coin",
+        "sig": "warn",
+        "expertId": "thai-pham",
+        "mkt": "us",
+        "detail": "Lệnh lướt vào 65.200, cắt lỗ đã dời xuống 60.700 từ tút 11/08 và \"không có nhân nhượng\". Tới 18/08 chưa chạm.",
+        "level": "SL 60.700"
+      },
+      {
+        "asset": "GOOGL",
+        "dir": "ĐÃ CHỐT SHORT — đứng ngoài",
+        "sig": "wait",
+        "expertId": "thai-pham",
+        "mkt": "us",
+        "detail": "Vị thế short đã đóng, chưa mở lại.",
         "level": "—"
       }
     ],
     "waiting": [
+      {
+        "asset": "GAS",
+        "trigger": "Đóng trên 80 với thanh khoản lớn",
+        "action": "Mua gia tăng",
+        "sig": "wait",
+        "expertId": "ck-5-phut",
+        "mkt": "vn",
+        "note": "Chỉ gia tăng nếu giá vốn không lệch nhiều (vd quanh 72) — vì tính từ cây break tuần trước tới vượt 80 mới lãi 13%, trong khi nguyên tắc của anh là lãi trên 15% mới mua thêm. Ai có hàng thì giữ, chưa đủ độ bật."
+      },
+      {
+        "asset": "BVH",
+        "trigger": "Vượt 72",
+        "action": "Xác nhận mẫu hình ba bước tăng giá",
+        "sig": "wait",
+        "expertId": "ck-5-phut",
+        "mkt": "vn",
+        "note": "Vào 63–65 hôm 07/08, nay 68. Mẫu hình thiếu thanh khoản do tăng cuối phiên — thường sẽ nhồi thêm một cây nữa. Cả nhóm bảo hiểm chỉ mình con này chạy: BMI, MIG đứng im."
+      },
+      {
+        "asset": "STB",
+        "trigger": "Vượt 76",
+        "action": "Mới có view",
+        "sig": "wait",
+        "expertId": "ck-5-phut",
+        "mkt": "vn",
+        "note": "Anh cầm từ vùng dưới và đang có lãi, nhưng cảnh báo thẳng: \"với thị trường hiện tại vượt 76 chưa chắc đã chạy được\" vì thanh khoản là yếu tố đầu tiên."
+      },
+      {
+        "asset": "BSR",
+        "trigger": "Vượt 27,5 — hoặc hẳn 28 cho thoải mái",
+        "action": "Mới tính là khỏe",
+        "sig": "wait",
+        "expertId": "ck-5-phut",
+        "mkt": "vn",
+        "note": "Đồ thị ngày rất bình thường, không tính là khỏe. Trong nhóm dầu phiên 17/08 chỉ mình GAS đáng chú ý."
+      },
+      {
+        "asset": "BID",
+        "trigger": "Về lại vùng 38 trước chia",
+        "action": "Xem có tạo đáy hai không",
+        "sig": "wait",
+        "expertId": "ck-5-phut",
+        "mkt": "vn",
+        "note": "Chia xong về 35–36. Nguyên tắc chung của anh với mã vừa chia: không mua mới, không mua thêm, ai có thì giữ nguyên."
+      },
+      {
+        "asset": "FRT",
+        "trigger": "Vượt đỉnh",
+        "action": "Mua sẽ ngon hơn",
+        "sig": "wait",
+        "expertId": "ck-5-phut",
+        "mkt": "vn",
+        "note": "Hoàn thành vùng tích lũy, cuối phiên 17/08 kéo ngược lên. Vùng 140 là nơi có khá nhiều lệnh chốt lãi."
+      },
       {
         "asset": "VHM",
         "trigger": "Chạm 56–57",
@@ -5551,52 +5769,43 @@ window.HDT_DATA = {
         "sig": "wait",
         "expertId": "thai-pham",
         "mkt": "vn",
-        "note": "Cách duy nhất để lướt trong thị trường này, vì chỉ số đi theo đúng mã này. Ngắn hạn VHM có thể chỉnh về 60, thậm chí 56 rồi mới kéo lên."
+        "note": "Cách duy nhất để lướt trong thị trường này, vì chỉ số đi theo đúng mã này. CK 5 phút thì gạt hẳn: điểm mua nhóm Vin vùng này là xấu, \"quá chông chênh\"."
       },
       {
         "asset": "GVR",
         "trigger": "Lấp gap vùng ~29,65",
         "action": "Mua lướt sóng thoái vốn",
-        "sig": "up",
-        "expertId": "thai-pham",
-        "mkt": "vn",
-        "note": "\"Sóng thoái vốn thì bao giờ nó cũng có sóng.\" CK 5 phút cũng ghi nhận GVR tăng khá trong phiên giảm 14/08."
-      },
-      {
-        "asset": "NVL",
-        "trigger": "Test lại 12,5–12,8",
-        "action": "Mua lướt, lên cao thì bán",
         "sig": "wait",
         "expertId": "thai-pham",
         "mkt": "vn",
-        "note": "Sóng giảm lãi suất của bất động sản là \"sự tưởng tượng thôi\" — chỉ có hồi kỹ thuật. Không mua ngang lưng chừng."
+        "note": "Lưu ý đối chiếu: CK 5 phút quan sát PHR tăng mà GVR không kéo theo, nên quy nguyên nhân PHR về đền bù đất chứ không phải chu kỳ ngành."
       },
       {
         "asset": "USTech",
         "trigger": "Vùng 30.620 · đỉnh cũ ~30.800",
         "action": "Short, bồi thêm lần hai",
-        "sig": "down",
+        "sig": "wait",
         "expertId": "thai-pham",
         "mkt": "us",
-        "note": "Nhưng ông nói rõ \"tôi không tin thằng nào nó vọt lên lại đỉnh cũ\" — nên ưu tiên vẫn là US500."
+        "note": "Phần vào thêm cắt lỗ ở đỉnh cũ."
       },
       {
         "asset": "SPCX",
         "trigger": "Vùng 165",
         "action": "Short thêm",
-        "sig": "down",
+        "sig": "wait",
         "expertId": "thai-pham",
         "mkt": "us",
-        "note": "Hiện short 1/3. Mục tiêu về 80–90 từ giờ tới 2027; mốc 29/6/2027 Elon Musk được bán toàn bộ."
+        "note": "Đã short 1/3 ở vùng hiện tại. Mục tiêu về 80–90 từ giờ tới 2027, cắt lỗ theo mốc 29/6/2027 khi Elon được bán toàn bộ."
       },
       {
         "asset": "SanDisk · MU · Marvell",
         "trigger": "SanDisk 1.800 · MU 1.100 · Marvell 260",
         "action": "Bán lại",
-        "sig": "down",
+        "sig": "wait",
         "expertId": "thai-pham",
         "mkt": "us",
-        "note": "SanDisk đã chạm hỗ trợ 200 ngày rồi hồi lên 1.600 — \"tầm này thì đừng có bán\"."
+        "note": "Ba mốc bán lại sau khi đã chốt lời 1/2 hồi cuối tháng 7."
       },
       {
         "asset": "NFLX",
@@ -5605,25 +5814,25 @@ window.HDT_DATA = {
         "sig": "wait",
         "expertId": "thai-pham",
         "mkt": "us",
-        "note": "Đã chốt lời đợt kẹp 77 lên 108. Vùng hiện tại có thể là hai đáy."
+        "note": "—"
       },
       {
         "asset": "Đồng",
         "trigger": "Về vùng ~6,3",
         "action": "Mua",
-        "sig": "up",
+        "sig": "wait",
         "expertId": "thai-pham",
         "mkt": "us",
-        "note": "Thiếu hụt nguồn cung rất mạnh, có thể kéo tới hết năm 2027."
+        "note": "—"
       },
       {
         "asset": "Nikkei",
         "trigger": "Vùng đỉnh",
         "action": "Short thêm 2/3",
-        "sig": "down",
+        "sig": "wait",
         "expertId": "thai-pham",
         "mkt": "us",
-        "note": "Hiện vào 1/3. Nhật sẽ đi tích lũy đi ngang; Samsung có thể kéo lên ~300.500 KRW rồi gãy tiếp."
+        "note": "Đã short nhẹ 1/3. Kỳ vọng kéo lên rồi đi tích lũy đi ngang."
       }
     ],
     "events": [
@@ -5638,40 +5847,48 @@ window.HDT_DATA = {
       {
         "date": "2026-09-01",
         "label": "Sàn crypto nhà nước Việt Nam",
-        "note": "Thái Phạm kỳ vọng Bitcoin hồi kỹ thuật quanh mốc này. Hiện dòng tiền nhỏ lẻ bị kiểm soát qua truy vết P2P.",
-        "sig": "warn",
+        "note": "Thái Phạm gắn mốc này với việc tỉ giá hạ nhiệt: \"Tỉ giá đang ổn trở lại. Có lẽ do chính sách 1/9 của Crypto.\" Sau 1/9 sẽ có sàn Việt được cấp phép và 6 tháng chuyển đổi. Hội viên đang hỏi dồn về sàn ngoại — chưa được trả lời.",
+        "sig": "wait",
         "expertId": "thai-pham",
         "mkt": "vn"
       },
       {
         "date": "2026-09-15",
         "label": "Cuộc họp Fed 15–16/9",
-        "note": "Ông đang đặt cược trên Polymarket rằng Fed giữ nguyên lãi suất, hiện đang lời và chưa chốt.",
-        "sig": "up",
-        "expertId": "thai-pham",
+        "note": "CK 5 phút: \"nó cũng chỉ có đúng một lần để nó tăng thôi… và nó tăng như thế nào chăng nữa thì chúng ta cũng sẽ không phản ứng\" — lãi suất Việt Nam không được phép tăng nữa, còn giảm thì khó.",
+        "sig": "wait",
+        "expertId": "ck-5-phut",
         "mkt": "us"
       },
       {
-        "dateLabel": "Quý 4",
-        "label": "Vùng dễ có biến cố nhất",
-        "note": "Quang Dũng: trong một chu kỳ tăng, quý 4 thường là chỗ xuất hiện biến cố đầu tiên.",
+        "dateLabel": "Tháng 9",
+        "label": "Nâng hạng thị trường mới nổi",
+        "note": "CK 5 phút gạt đi: tiền có thể vào 1–5 tỷ đô nhưng \"thời điểm hiện tại nó chỉ dừng lại ở cái mức kỳ vọng thôi\". Lý do sâu hơn: thị trường VN thiếu sản phẩm nên khối ngoại khó giải ngân.",
+        "sig": "wait",
+        "expertId": "ck-5-phut",
+        "mkt": "vn"
+      },
+      {
+        "dateLabel": "Hết quý 3 → quý 4",
+        "label": "Thanh khoản có thể vẫn ở nền thấp",
+        "note": "CK 5 phút: \"Có thể là đến tận hết quý ba, có thể sang tận quý bốn, có thể còn lâu hơn cơ.\" Ba nguồn hút tiền đều là chính sách nên không đảo chiều bằng tâm lý.",
         "sig": "warn",
-        "expertId": "quang-dung",
+        "expertId": "ck-5-phut",
         "mkt": "vn"
       },
       {
         "dateLabel": "Tháng 11",
         "label": "Bầu cử giữa nhiệm kỳ Mỹ",
-        "note": "Polymarket và Kalshi: hạ viện 85% về tay Dân chủ, khả năng cao mất cả thượng viện. Nếu mất cả hai thì cơn sốt AI hạ nhiệt đáng kể, và giá dầu mới có cửa hạ.",
-        "sig": "warn",
+        "note": "Thái Phạm: giá dầu chỉ hạ nhiệt nếu Dân chủ nắm cả hai viện.",
+        "sig": "wait",
         "expertId": "thai-pham",
         "mkt": "us"
       },
       {
         "dateLabel": "29/6/2027",
         "label": "Elon Musk được bán toàn bộ cổ phiếu SpaceX",
-        "note": "Mốc cuối của chuỗi giải lock-up mà Thái Phạm dùng để giữ vị thế short SPCX.",
-        "sig": "down",
+        "note": "Mốc cắt lỗ của lệnh short SPCX.",
+        "sig": "wait",
         "expertId": "thai-pham",
         "mkt": "us"
       }
@@ -5685,7 +5902,7 @@ window.HDT_DATA = {
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:DCM",
       "sig": "up",
-      "stance": "TÍCH LŨY DÀI HẠN",
+      "stance": "GIỮ — điểm mua kỹ thuật vẫn đẹp",
       "aliases": [
         "dcm",
         "dam ca mau"
@@ -5704,6 +5921,17 @@ window.HDT_DATA = {
         }
       ],
       "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "ĐIỂM MUA KỸ THUẬT VẪN ĐẸP",
+          "sig": "up",
+          "entry": "Vùng hiện tại",
+          "target": "—",
+          "stop": "—",
+          "status": "active",
+          "date": "18/08",
+          "note": "Từ Tút hội viên · 18/08 (18/08)."
+        },
         {
           "expertId": "thai-pham",
           "dir": "CẦM DÀI HẠN — ưu tiên hơn",
@@ -5815,10 +6043,10 @@ window.HDT_DATA = {
       "views": [
         {
           "expertId": "thai-pham",
-          "stance": "CẦM DÀI HẠN — ưu tiên hơn",
+          "stance": "ĐIỂM MUA KỸ THUẬT VẪN ĐẸP",
           "sig": "up",
-          "date": "15/08",
-          "line": "Từ Tập 45 · Tuần 33 (15/08). Mục tiêu: Làm ăn tốt hơn DPM."
+          "date": "18/08",
+          "line": "Từ Tút hội viên · 18/08 (18/08). Điểm vào: Vùng hiện tại."
         },
         {
           "expertId": "ck-5-phut",
@@ -5836,7 +6064,7 @@ window.HDT_DATA = {
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:DPM",
       "sig": "up",
-      "stance": "TÍCH LŨY DÀI HẠN",
+      "stance": "GIỮ — điểm mua kỹ thuật vẫn đẹp",
       "aliases": [
         "dpm",
         "dam phu my"
@@ -5860,6 +6088,17 @@ window.HDT_DATA = {
         }
       ],
       "orders": [
+        {
+          "expertId": "thai-pham",
+          "dir": "ĐIỂM MUA KỸ THUẬT VẪN ĐẸP",
+          "sig": "up",
+          "entry": "Vùng hiện tại",
+          "target": "—",
+          "stop": "—",
+          "status": "active",
+          "date": "18/08",
+          "note": "Từ Tút hội viên · 18/08 (18/08)."
+        },
         {
           "expertId": "thai-pham",
           "dir": "CẦM DÀI HẠN — mẫu hình đẹp hơn",
@@ -5982,10 +6221,10 @@ window.HDT_DATA = {
       "views": [
         {
           "expertId": "thai-pham",
-          "stance": "CẦM DÀI HẠN — mẫu hình đẹp hơn",
+          "stance": "ĐIỂM MUA KỸ THUẬT VẪN ĐẸP",
           "sig": "up",
-          "date": "15/08",
-          "line": "Từ Tập 45 · Tuần 33 (15/08)."
+          "date": "18/08",
+          "line": "Từ Tút hội viên · 18/08 (18/08). Điểm vào: Vùng hiện tại."
         },
         {
           "expertId": "ck-5-phut",
@@ -6002,8 +6241,8 @@ window.HDT_DATA = {
       "name": "BIDV",
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:BID",
-      "sig": "up",
-      "stance": "RẺ HƠN CẢ ĐÁY T4/2025 — GIỮ/MUA",
+      "sig": "wait",
+      "stance": "CHỜ XEM CÓ ĐÁY HAI Ở 38",
       "aliases": [
         "bid",
         "bidv",
@@ -6018,6 +6257,17 @@ window.HDT_DATA = {
         }
       ],
       "orders": [
+        {
+          "expertId": "ck-5-phut",
+          "dir": "CHỜ XEM CÓ ĐÁY HAI",
+          "sig": "wait",
+          "entry": "35–36 sau chia",
+          "target": "—",
+          "stop": "Vùng 38 trước chia",
+          "status": "waiting",
+          "date": "17/08",
+          "note": "Từ Livestream · 17/08 (17/08)."
+        },
         {
           "expertId": "ck-5-phut",
           "dir": "Điểm mua vẫn giữ được",
@@ -6174,10 +6424,10 @@ window.HDT_DATA = {
       "views": [
         {
           "expertId": "ck-5-phut",
-          "stance": "Điểm mua vẫn giữ được",
-          "sig": "up",
-          "date": "10/08",
-          "line": "Từ Livestream · 10/08 (10/08). Điểm vào: Từ phiên 07/08."
+          "stance": "CHỜ XEM CÓ ĐÁY HAI",
+          "sig": "wait",
+          "date": "17/08",
+          "line": "Từ Livestream · 17/08 (17/08). Điểm vào: 35–36 sau chia."
         },
         {
           "expertId": "thai-pham",
@@ -6287,8 +6537,8 @@ window.HDT_DATA = {
       "name": "Vinamilk",
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:VNM",
-      "sig": "up",
-      "stance": "MUA — VÙNG GIÁ RẤT RẺ",
+      "sig": "wait",
+      "stance": "CÓ HÀNG THÌ GIỮ — cụt đầu 6 phiên",
       "aliases": [
         "vnm",
         "vinamilk",
@@ -6313,6 +6563,17 @@ window.HDT_DATA = {
         }
       ],
       "orders": [
+        {
+          "expertId": "ck-5-phut",
+          "dir": "CÓ HÀNG THÌ GIỮ — không phải điểm mua",
+          "sig": "wait",
+          "entry": "—",
+          "target": "—",
+          "stop": "Cụt đầu 6 phiên liên tiếp",
+          "status": "active",
+          "date": "17/08",
+          "note": "Từ Livestream · 17/08 (17/08)."
+        },
         {
           "expertId": "thai-pham",
           "dir": "CẦM — nhà nước còn 36%",
@@ -6390,18 +6651,18 @@ window.HDT_DATA = {
       "region": "vn",
       "views": [
         {
+          "expertId": "ck-5-phut",
+          "stance": "CÓ HÀNG THÌ GIỮ — không phải điểm mua",
+          "sig": "wait",
+          "date": "17/08",
+          "line": "Từ Livestream · 17/08 (17/08)."
+        },
+        {
           "expertId": "thai-pham",
           "stance": "CẦM — nhà nước còn 36%",
           "sig": "up",
           "date": "08/08",
           "line": "Từ Tập 44 · Tuần 32 (08/08). Điểm vào: Đã mua từ vùng thấp, lời ~5%. Mục tiêu: Thời điểm đẹp nhất để nhà nước thoái."
-        },
-        {
-          "expertId": "ck-5-phut",
-          "stance": "KHÔNG khuyến nghị",
-          "sig": "warn",
-          "date": "07/08",
-          "line": "Từ Livestream · 07/08 (07/08). Điểm vào: Ichimoku đẹp nhưng đánh theo tin cổ tức."
         }
       ]
     },
@@ -6725,8 +6986,8 @@ window.HDT_DATA = {
       "name": "Chứng khoán SSI",
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:SSI",
-      "sig": "up",
-      "stance": "SƯỜN PHẢI — CÓ THỂ VỀ 20",
+      "sig": "wait",
+      "stance": "VỪA CHIA — không mua không bán",
       "aliases": [
         "ssi"
       ],
@@ -6749,6 +7010,17 @@ window.HDT_DATA = {
         }
       ],
       "orders": [
+        {
+          "expertId": "ck-5-phut",
+          "dir": "VỪA CHIA — không mua không bán",
+          "sig": "wait",
+          "entry": "—",
+          "target": "—",
+          "stop": "—",
+          "status": "active",
+          "date": "17/08",
+          "note": "Từ Livestream · 17/08 (17/08)."
+        },
         {
           "expertId": "thai-pham",
           "dir": "Bổ sung",
@@ -6849,18 +7121,18 @@ window.HDT_DATA = {
       "debate": "Ba quan điểm lệch nhau rõ. Thái Phạm TRÁNH vì lý do sóng: \"sườn trái ăn ngon gấp đôi, đến sườn phải là cứ mua là lỗ\". CK 5 phút mua theo tín hiệu, đang nắm một phần và kiên nhẫn chờ. Quang Dũng thì nhìn ở tầng ngành và bảo đây là nhóm ưu tiên số một nửa cuối năm vì chính sách. Lưu ý: quan điểm của Quang Dũng là cho cả nhóm CTCK, ông không nêu riêng SSI hay mốc giá nào.",
       "views": [
         {
+          "expertId": "ck-5-phut",
+          "stance": "VỪA CHIA — không mua không bán",
+          "sig": "wait",
+          "date": "17/08",
+          "line": "Từ Livestream · 17/08 (17/08)."
+        },
+        {
           "expertId": "thai-pham",
           "stance": "Bổ sung",
           "sig": "up",
           "date": "08/08",
           "line": "Từ Tập 44 · Tuần 32 (08/08). Mục tiêu: Nhóm chứng khoán chỉ ~15% danh mục."
-        },
-        {
-          "expertId": "ck-5-phut",
-          "stance": "MUA MỚI ĐƯỢC",
-          "sig": "up",
-          "date": "04/08",
-          "line": "Từ Livestream · 04/08 (04/08). Điểm vào: Vùng giá hiện tại — \"không cao\". Mục tiêu: Nắm giữ; rẻ hơn TCX."
         },
         {
           "expertId": "quang-dung",
@@ -6962,8 +7234,8 @@ window.HDT_DATA = {
       "basket": "tranh",
       "tradeMode": "spot",
       "tv": "HOSE:VIX",
-      "sig": "wait",
-      "stance": "RƠI 18–19 → 12–13, CHƯA CÓ TÍN HIỆU ĐÁY",
+      "sig": "down",
+      "stance": "BÁN — cây vượt 14 đã hết đà",
       "aliases": [
         "vix"
       ],
@@ -6980,6 +7252,17 @@ window.HDT_DATA = {
         }
       ],
       "orders": [
+        {
+          "expertId": "ck-5-phut",
+          "dir": "BÁN — cây vượt 14 hôm thứ sáu đã hết đà",
+          "sig": "down",
+          "entry": "—",
+          "target": "—",
+          "stop": "—",
+          "status": "active",
+          "date": "17/08",
+          "note": "Từ Livestream · 17/08 (17/08)."
+        },
         {
           "expertId": "thai-pham",
           "dir": "Đánh hồi phục",
@@ -7027,18 +7310,18 @@ window.HDT_DATA = {
       ],
       "views": [
         {
+          "expertId": "ck-5-phut",
+          "stance": "BÁN — cây vượt 14 hôm thứ sáu đã hết đà",
+          "sig": "down",
+          "date": "17/08",
+          "line": "Từ Livestream · 17/08 (17/08)."
+        },
+        {
           "expertId": "thai-pham",
           "stance": "Đánh hồi phục",
           "sig": "wait",
           "date": "05/08",
           "line": "Từ Tập 43 · ĐẢO CHIỀU (05/08). Mục tiêu: Lên 15.8 thì bán."
-        },
-        {
-          "expertId": "ck-5-phut",
-          "stance": "GIỮ — chốt lãi ở mục tiêu",
-          "sig": "up",
-          "date": "04/08",
-          "line": "Từ Livestream · 04/08 (04/08). Điểm vào: Giá vốn đúng quanh 13–13,2. Mục tiêu: 16 (biên trên BB + vùng tích lũy cũ)."
         }
       ]
     },
@@ -7079,6 +7362,17 @@ window.HDT_DATA = {
         }
       ],
       "orders": [
+        {
+          "expertId": "ck-5-phut",
+          "dir": "KHÔNG KỲ VỌNG +20% TỚI CUỐI NĂM",
+          "sig": "warn",
+          "entry": "—",
+          "target": "25–25,5 (khó)",
+          "stop": "—",
+          "status": "active",
+          "date": "17/08",
+          "note": "Từ Livestream · 17/08 (17/08)."
+        },
         {
           "expertId": "quang-dung",
           "dir": "GIỮ — điểm sáng duy nhất ngành thép",
@@ -7168,6 +7462,13 @@ window.HDT_DATA = {
       "debate": "Cùng một mã, hai cách nhìn không giao nhau. Thái Phạm và CK 5 phút nhìn GIÁ và CẠNH TRANH: thủng nền 23 về đáy mới 21,85, thép Vin Group sắp cạnh tranh trực tiếp → loại khỏi danh mục. Quang Dũng nhìn BÁO CÁO TÀI CHÍNH: Dung Quất 2 vừa vào vận hành, lợi nhuận đã tăng 50,6% và còn 2–4 quý tăng trưởng phía trước → mua rải khi giảm. Điểm mấu chốt chưa ai kiểm chứng được: thép Vin sẽ ăn vào thị phần HRC của Hòa Phát bao nhiêu và bao giờ. Cả ba đều đồng ý một điều — không dùng margin cho mã này.",
       "views": [
         {
+          "expertId": "ck-5-phut",
+          "stance": "KHÔNG KỲ VỌNG +20% TỚI CUỐI NĂM",
+          "sig": "warn",
+          "date": "17/08",
+          "line": "Từ Livestream · 17/08 (17/08). Mục tiêu: 25–25,5 (khó)."
+        },
+        {
           "expertId": "quang-dung",
           "stance": "GIỮ — điểm sáng duy nhất ngành thép",
           "sig": "up",
@@ -7180,13 +7481,6 @@ window.HDT_DATA = {
           "sig": "wait",
           "date": "04/08",
           "line": "Từ Bài đăng · 04/08 (04/08). Điểm vào: Đang hòa vốn. Mục tiêu: Ra khi Index về 182x."
-        },
-        {
-          "expertId": "ck-5-phut",
-          "stance": "ĐỨNG NGOÀI",
-          "sig": "avoid",
-          "date": "13/07",
-          "line": "Dẫn chứng cho trạng thái thị trường, chưa phải khuyến nghị. Mục tiêu: Chờ hết thủng đáy."
         }
       ]
     },
@@ -8227,8 +8521,8 @@ window.HDT_DATA = {
       "name": "PV GAS",
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:GAS",
-      "sig": "up",
-      "stance": "GIỮ — \"KHÔNG THỂ PHÁ SẢN\"",
+      "sig": "wait",
+      "stance": "GIỮ — chờ đóng trên 80 mới gia tăng",
       "aliases": [
         "gas",
         "pv gas"
@@ -8246,6 +8540,17 @@ window.HDT_DATA = {
         }
       ],
       "orders": [
+        {
+          "expertId": "ck-5-phut",
+          "dir": "GIỮ — chờ vượt 80 mới gia tăng",
+          "sig": "wait",
+          "entry": "Giá vốn quanh 72",
+          "target": "Vượt 80 với thanh khoản lớn",
+          "stop": "—",
+          "status": "active",
+          "date": "17/08",
+          "note": "Từ Livestream · 17/08 (17/08)."
+        },
         {
           "expertId": "thai-pham",
           "dir": "MUA TÍCH LŨY",
@@ -8283,7 +8588,23 @@ window.HDT_DATA = {
       "industry": "Dầu khí",
       "basket": "dai-han",
       "tradeMode": "spot",
-      "region": "vn"
+      "region": "vn",
+      "views": [
+        {
+          "expertId": "ck-5-phut",
+          "stance": "GIỮ — chờ vượt 80 mới gia tăng",
+          "sig": "wait",
+          "date": "17/08",
+          "line": "Từ Livestream · 17/08 (17/08). Điểm vào: Giá vốn quanh 72. Mục tiêu: Vượt 80 với thanh khoản lớn."
+        },
+        {
+          "expertId": "thai-pham",
+          "stance": "MUA TÍCH LŨY",
+          "sig": "up",
+          "date": "01/08",
+          "line": "Tập 42: trong nhóm cổ phiếu top đầu, GAS về 60–62 thì mua tích lũy. Điểm vào: Vùng 60–62. Mục tiêu: Tích lũy dài hạn."
+        }
+      ]
     },
     {
       "key": "msb",
@@ -8332,8 +8653,8 @@ window.HDT_DATA = {
       "name": "Dabaco",
       "group": "Chứng khoán Việt Nam",
       "tv": "HOSE:DBC",
-      "sig": "avoid",
-      "stance": "ĐÃ KHỞI TỐ — GIỮ, KHÔNG MUA THÊM",
+      "sig": "wait",
+      "stance": "GIỮ — xấu nhưng chưa cắt",
       "aliases": [
         "dbc",
         "dabaco"
@@ -8356,6 +8677,17 @@ window.HDT_DATA = {
         }
       ],
       "orders": [
+        {
+          "expertId": "ck-5-phut",
+          "dir": "GIỮ — chưa cắt",
+          "sig": "wait",
+          "entry": "—",
+          "target": "—",
+          "stop": "—",
+          "status": "active",
+          "date": "17/08",
+          "note": "Từ Livestream · 17/08 (17/08)."
+        },
         {
           "expertId": "ck-5-phut",
           "dir": "GIỮ — KHÔNG MUA THÊM",
@@ -11233,7 +11565,7 @@ window.HDT_DATA = {
       "name": "Nam Long",
       "tv": "HOSE:NLG",
       "sig": "up",
-      "stance": "BẢNG CÂN ĐỐI KHỎE NHẤT NHÓM BĐS",
+      "stance": "MUA 23,5 → 26,5 · cắt 22,5",
       "aliases": [
         "nlg",
         "nam long"
@@ -11253,6 +11585,17 @@ window.HDT_DATA = {
       ],
       "orders": [
         {
+          "expertId": "ck-5-phut",
+          "dir": "MUA — đẹp nhất nhóm bất động sản",
+          "sig": "up",
+          "entry": "23,5",
+          "target": "26,5",
+          "stop": "22,5 (đáy thứ sáu)",
+          "status": "active",
+          "date": "17/08",
+          "note": "Từ Livestream · 17/08 (17/08)."
+        },
+        {
           "expertId": "quang-dung",
           "dir": "ĐỊNH GIÁ VỀ MỨC 2024",
           "sig": "up",
@@ -11269,7 +11612,23 @@ window.HDT_DATA = {
       "potentialNote": "Bảng cân đối cải thiện hai chiều cùng lúc: tiền mặt gần gấp đôi, tổng nợ giảm. Định giá ngành đã về mức 2024.",
       "cautionNote": "Rủi ro ngành còn nguyên: tổng dư nợ bất động sản trên 500.000 tỷ, riêng ngành chiếm 37% trong 2025. Thái Phạm ngược lại cảnh báo cả nhóm bất động sản, dẫn DIG và PNJ làm ví dụ rủi ro call margin của doanh chủ.",
       "industry": "Bất động sản",
-      "basket": "dai-han"
+      "basket": "ngan-han",
+      "views": [
+        {
+          "expertId": "ck-5-phut",
+          "stance": "MUA — đẹp nhất nhóm bất động sản",
+          "sig": "up",
+          "date": "17/08",
+          "line": "Từ Livestream · 17/08 (17/08). Điểm vào: 23,5. Mục tiêu: 26,5."
+        },
+        {
+          "expertId": "quang-dung",
+          "stance": "ĐỊNH GIÁ VỀ MỨC 2024",
+          "sig": "up",
+          "date": "10/06",
+          "line": "Bảng cân đối cải thiện thật chứ không chỉ giá giảm. Mục tiêu: Tiền mặt gần 8.000 tỷ, nợ giảm còn 5.400 tỷ."
+        }
+      ]
     },
     {
       "group": "Chứng khoán Việt Nam",
@@ -11575,8 +11934,8 @@ window.HDT_DATA = {
       "region": "vn",
       "industry": "Ngân hàng",
       "basket": "tranh",
-      "sig": "avoid",
-      "stance": "KHÔNG CẦM",
+      "sig": "wait",
+      "stance": "CHỜ VƯỢT 76 — vượt cũng chưa chắc chạy",
       "aliases": [
         "stb",
         "sacombank"
@@ -11585,6 +11944,17 @@ window.HDT_DATA = {
       "potentialNote": "Chưa có luận điểm tích cực nào từ bốn kênh.",
       "cautionNote": "Cùng nhóm với HPG, VPB, MBB, LPB trong danh sách không cầm ngày 30/07.",
       "orders": [
+        {
+          "expertId": "ck-5-phut",
+          "dir": "CHỜ VƯỢT 76",
+          "sig": "wait",
+          "entry": "—",
+          "target": "76",
+          "stop": "—",
+          "status": "waiting",
+          "date": "17/08",
+          "note": "Từ Livestream · 17/08 (17/08)."
+        },
         {
           "expertId": "thai-pham",
           "dir": "ĐỪNG MUA — cao giá",
@@ -11606,6 +11976,22 @@ window.HDT_DATA = {
           "status": "active",
           "date": "30/07",
           "note": "Từ Tập 41 · Giữa tuần (30/07)."
+        }
+      ],
+      "views": [
+        {
+          "expertId": "ck-5-phut",
+          "stance": "CHỜ VƯỢT 76",
+          "sig": "wait",
+          "date": "17/08",
+          "line": "Từ Livestream · 17/08 (17/08). Mục tiêu: 76."
+        },
+        {
+          "expertId": "thai-pham",
+          "stance": "ĐỪNG MUA — cao giá",
+          "sig": "avoid",
+          "date": "15/08",
+          "line": "Từ Tập 45 · Tuần 33 (15/08)."
         }
       ]
     },
@@ -11656,8 +12042,8 @@ window.HDT_DATA = {
       "region": "vn",
       "industry": "Dầu khí",
       "basket": "tranh",
-      "sig": "avoid",
-      "stance": "TRÁNH — ĐỘI TAY TO ĂN XONG",
+      "sig": "wait",
+      "stance": "CHỜ VƯỢT 27,5–28",
       "aliases": [
         "bsr",
         "binh son"
@@ -11666,6 +12052,17 @@ window.HDT_DATA = {
       "potentialNote": "Không có luận điểm mua từ kênh nào.",
       "cautionNote": "Thanh khoản còn lại chủ yếu là nhỏ lẻ giao dịch với nhau.",
       "orders": [
+        {
+          "expertId": "ck-5-phut",
+          "dir": "CHỜ VƯỢT ĐỈNH NGẮN HẠN",
+          "sig": "wait",
+          "entry": "—",
+          "target": "Vượt 27,5–28",
+          "stop": "—",
+          "status": "waiting",
+          "date": "17/08",
+          "note": "Từ Livestream · 17/08 (17/08)."
+        },
         {
           "expertId": "thai-pham",
           "dir": "Tránh",
@@ -11676,6 +12073,22 @@ window.HDT_DATA = {
           "status": "active",
           "date": "01/08",
           "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        }
+      ],
+      "views": [
+        {
+          "expertId": "ck-5-phut",
+          "stance": "CHỜ VƯỢT ĐỈNH NGẮN HẠN",
+          "sig": "wait",
+          "date": "17/08",
+          "line": "Từ Livestream · 17/08 (17/08). Mục tiêu: Vượt 27,5–28."
+        },
+        {
+          "expertId": "thai-pham",
+          "stance": "Tránh",
+          "sig": "avoid",
+          "date": "01/08",
+          "line": "Từ Tập 42 · Tuần 31 (01/08)."
         }
       ]
     },
@@ -11691,8 +12104,8 @@ window.HDT_DATA = {
       "region": "vn",
       "industry": "Khai khoáng",
       "basket": "ngan-han",
-      "sig": "wait",
-      "stance": "CHỜ VỀ VÙNG 24",
+      "sig": "up",
+      "stance": "MUA 40,5–41 · thủng 40 thì cắt",
       "aliases": [
         "msr",
         "masan resource",
@@ -11703,6 +12116,17 @@ window.HDT_DATA = {
       "cautionNote": "\"Mua vùng này thì nó lại dìu các anh chị\" — mua sớm là bị kẹp.",
       "orders": [
         {
+          "expertId": "ck-5-phut",
+          "dir": "MUA THEO CÂY BREAK",
+          "sig": "up",
+          "entry": "40,5–41",
+          "target": "—",
+          "stop": "Thủng 40 thì cắt (hàng chưa về: 7%)",
+          "status": "active",
+          "date": "17/08",
+          "note": "Từ Livestream · 17/08 (17/08)."
+        },
+        {
           "expertId": "thai-pham",
           "dir": "Chờ mua",
           "sig": "wait",
@@ -11712,6 +12136,22 @@ window.HDT_DATA = {
           "status": "waiting",
           "date": "01/08",
           "note": "Từ Tập 42 · Tuần 31 (01/08)."
+        }
+      ],
+      "views": [
+        {
+          "expertId": "ck-5-phut",
+          "stance": "MUA THEO CÂY BREAK",
+          "sig": "up",
+          "date": "17/08",
+          "line": "Từ Livestream · 17/08 (17/08). Điểm vào: 40,5–41."
+        },
+        {
+          "expertId": "thai-pham",
+          "stance": "Chờ mua",
+          "sig": "wait",
+          "date": "01/08",
+          "line": "Từ Tập 42 · Tuần 31 (01/08). Điểm vào: Phải về vùng 24."
         }
       ]
     },
@@ -12030,7 +12470,7 @@ window.HDT_DATA = {
       "region": "foreign",
       "industry": "Bán lẻ",
       "basket": "tranh",
-      "sig": "down",
+      "sig": "wait",
       "stance": "ĐỨNG NGOÀI",
       "aliases": [
         "wmt",
@@ -12065,7 +12505,7 @@ window.HDT_DATA = {
       "region": "foreign",
       "industry": "Bán lẻ",
       "basket": "tranh",
-      "sig": "down",
+      "sig": "wait",
       "stance": "ĐỨNG NGOÀI",
       "aliases": [
         "cost",
@@ -12463,13 +12903,24 @@ window.HDT_DATA = {
       "tradeMode": "spot",
       "tv": "HOSE:BVH",
       "sig": "up",
-      "stance": "MỚI NHÚ — ĐÁNG THEO DÕI",
+      "stance": "GIỮ TIẾP — nhắm vượt 72",
       "aliases": [
         "bao viet"
       ],
       "oneLiner": "CK 5 phút nêu BVH là mã cùng dạng đồ thị với FRT nhưng mới nhú: khối lượng vào, biến động giá tăng và chưa chạy quá xa — đáng xem thay vì mua đuổi FRT đã ba cây trần.",
       "thesis": [],
       "orders": [
+        {
+          "expertId": "ck-5-phut",
+          "dir": "GIỮ TIẾP",
+          "sig": "up",
+          "entry": "63–65 (vào 07/08)",
+          "target": "Vượt 72",
+          "stop": "—",
+          "status": "active",
+          "date": "17/08",
+          "note": "Từ Livestream · 17/08 (17/08)."
+        },
         {
           "expertId": "ck-5-phut",
           "dir": "Điểm mua vẫn giữ được",
@@ -12538,17 +12989,28 @@ window.HDT_DATA = {
       "group": "Chứng khoán Việt Nam",
       "region": "vn",
       "industry": "Bán lẻ",
-      "basket": "tranh",
+      "basket": "ngan-han",
       "tradeMode": "spot",
       "tv": "HOSE:FRT",
-      "sig": "avoid",
-      "stance": "KHÔNG MUA ĐUỔI — BA CÂY TRẦN",
+      "sig": "wait",
+      "stance": "ĐỢI VƯỢT ĐỈNH RỒI MUA",
       "aliases": [
         "long chau"
       ],
       "oneLiner": "CK 5 phút: ba cây trần liên tiếp nên không có lý do gì mua đuổi — \"kể cả nó có kéo dựng ngược lên 10 cây trần này không quan tâm, điểm mua không an toàn là không vào\". Kỳ vọng IPO Long Châu là có thật nhưng còn phụ thuộc định giá và tỉ lệ chào bán.",
       "thesis": [],
       "orders": [
+        {
+          "expertId": "ck-5-phut",
+          "dir": "ĐỢI VƯỢT ĐỈNH RỒI MUA",
+          "sig": "wait",
+          "entry": "Vượt đỉnh",
+          "target": "—",
+          "stop": "Vùng 140 có nhiều lệnh chốt",
+          "status": "waiting",
+          "date": "17/08",
+          "note": "Từ Livestream · 17/08 (17/08)."
+        },
         {
           "expertId": "ck-5-phut",
           "dir": "KHÔNG mua đuổi",
@@ -12782,14 +13244,25 @@ window.HDT_DATA = {
       "basket": "ngan-han",
       "tradeMode": "spot",
       "tv": "HOSE:GEX",
-      "sig": "up",
-      "stance": "GIỮ — KHÔNG MUA ĐUỔI",
+      "sig": "wait",
+      "stance": "GIỮ — thủng 24 thì bán",
       "aliases": [
         "gelex"
       ],
       "oneLiner": "CK 5 phút: mã đáng chú ý nhất phiên 04/08, kéo trần trong khoảng 10 phút cuối vì thanh khoản bé. Ai bắt được điểm phân kỳ dương đồ thị giờ tuần trước (vùng vượt 22) đang lãi ~12% — giữ tiếp, nhưng đã +26% từ đáy nên mua đuổi bây giờ là rủi ro ngắn hạn.",
       "thesis": [],
       "orders": [
+        {
+          "expertId": "ck-5-phut",
+          "dir": "GIỮ — thủng 24 thì bán",
+          "sig": "wait",
+          "entry": "—",
+          "target": "—",
+          "stop": "24",
+          "status": "active",
+          "date": "17/08",
+          "note": "Từ Livestream · 17/08 (17/08)."
+        },
         {
           "expertId": "ck-5-phut",
           "dir": "GIỮ — không mua đuổi",
@@ -13106,12 +13579,23 @@ window.HDT_DATA = {
       "basket": "dai-han",
       "tradeMode": "spot",
       "tv": "HOSE:MBS",
-      "sig": "up",
-      "stance": "CẦM — ĐANG Ở VÙNG GIÁ RẤT RẺ",
+      "sig": "wait",
+      "stance": "KHÔNG MUA MỚI — vừa chia",
       "aliases": [],
       "oneLiner": "Thái Phạm trong Tập 44: \"MBS đang cầm vùng giá rất rẻ là cứ cầm thôi.\" Nằm trong nhóm chứng khoán mà ông giữ khoảng 15% danh mục.",
       "thesis": [],
       "orders": [
+        {
+          "expertId": "ck-5-phut",
+          "dir": "KHÔNG MUA MỚI",
+          "sig": "wait",
+          "entry": "—",
+          "target": "—",
+          "stop": "—",
+          "status": "active",
+          "date": "17/08",
+          "note": "Từ Livestream · 17/08 (17/08)."
+        },
         {
           "expertId": "thai-pham",
           "dir": "Cầm — đang ở vùng giá rất rẻ",
@@ -13127,7 +13611,23 @@ window.HDT_DATA = {
       "potential": 3,
       "potentialNote": "Vùng giá được đánh giá là rất rẻ so với nền cũ.",
       "caution": 3,
-      "cautionNote": "Nhóm chứng khoán phụ thuộc lãi suất; ông vẫn đợi sóng."
+      "cautionNote": "Nhóm chứng khoán phụ thuộc lãi suất; ông vẫn đợi sóng.",
+      "views": [
+        {
+          "expertId": "ck-5-phut",
+          "stance": "KHÔNG MUA MỚI",
+          "sig": "wait",
+          "date": "17/08",
+          "line": "Từ Livestream · 17/08 (17/08)."
+        },
+        {
+          "expertId": "thai-pham",
+          "stance": "Cầm — đang ở vùng giá rất rẻ",
+          "sig": "up",
+          "date": "08/08",
+          "line": "Từ Tập 44 · Tuần 32 (08/08)."
+        }
+      ]
     },
     {
       "key": "ksb",
@@ -13324,10 +13824,136 @@ window.HDT_DATA = {
       "potentialNote": "Định giá thấp hơn trung bình 6 năm của chính nó.",
       "caution": 3,
       "cautionNote": "Lãi suất huy động cao đang bóp biên lợi nhuận toàn ngành."
+    },
+    {
+      "key": "phr",
+      "symbol": "PHR",
+      "name": "Cao su Phước Hòa",
+      "group": "Chứng khoán Việt Nam",
+      "region": "vn",
+      "industry": "Cao su & Khu công nghiệp",
+      "basket": "ngan-han",
+      "tradeMode": "spot",
+      "tv": "HOSE:PHR",
+      "sig": "up",
+      "stance": "MUA ĐƯỢC 60,5–61",
+      "oneLiner": "Đồ thị giống MSR — có tín hiệu thì vào, không ham.",
+      "aliases": [
+        "Phước Hòa",
+        "Cao su Phước Hòa"
+      ],
+      "thesis": [
+        {
+          "expertId": "ck-5-phut",
+          "title": "Tăng nhờ đền bù đất, không phải nhờ ngành",
+          "body": "Anh nói rõ cơ chế: \"PHR mà tầm này tăng mà nó không kéo theo con GVR quá mạnh thì khả năng là do mấy cái đền bù đất thôi.\" Đồ thị tương tự MSR, thanh khoản được, đóng cửa hơi cụt đầu nhưng vẫn mua được. Đây là lệnh nhỏ đánh theo tín hiệu — ngành không chạy nên không kỳ vọng sóng lớn."
+        }
+      ],
+      "potential": 3,
+      "potentialNote": "Có điểm mua kỹ thuật rõ, nhưng động lực đến từ đền bù đất chứ không phải chu kỳ ngành.",
+      "caution": 3,
+      "cautionNote": "GVR — mã cùng ngành, cùng câu chuyện — không chạy theo. Một mình một đường thì dễ hụt.",
+      "orders": [
+        {
+          "expertId": "ck-5-phut",
+          "dir": "MUA ĐƯỢC",
+          "sig": "up",
+          "entry": "60,5–61",
+          "target": "—",
+          "stop": "MA20 (mất ~4%) hoặc 7% nếu hàng chưa về",
+          "status": "active",
+          "date": "17/08",
+          "note": "Từ Livestream · 17/08 (17/08)."
+        }
+      ]
+    },
+    {
+      "key": "nt2",
+      "symbol": "NT2",
+      "name": "Nhiệt điện Nhơn Trạch 2",
+      "group": "Chứng khoán Việt Nam",
+      "region": "vn",
+      "industry": "Điện",
+      "basket": "dai-han",
+      "tradeMode": "spot",
+      "tv": "HOSE:NT2",
+      "sig": "up",
+      "stance": "TÍCH SẢN — càng giảm càng gom",
+      "oneLiner": "Cổ phiếu cổ tức: hết khấu hao, máy Đức đốt khí, EPS phập phù nhưng tiền mặt dày.",
+      "aliases": [
+        "Nhơn Trạch 2",
+        "Nhiệt điện Nhơn Trạch"
+      ],
+      "thesis": [
+        {
+          "expertId": "azfin",
+          "title": "Bài toán tích sản: giá càng giảm, tỉ suất cổ tức càng cao",
+          "body": "AzFin lấy NT2 giá 21.000 làm ví dụ mẫu cho luận điểm \"thị trường giảm là cơ hội tích lũy giá trị\". EPS 2026 khoảng 3.800đ (6 tháng đầu năm đã gần 2.000đ), EPS bình quân dài hạn ước 2.600đ, cổ tức bình quân 2.500đ/cp. Nếu giá về 15.000, lỗ thị giá ~17% nhưng tiền cổ tức tái đầu tư cho tỉ suất 16,5% thay vì 11,5%; về 10.000 thì 25%. Cơ sở cơ bản: tài chính mạnh (tiền dư lớn sau khi trừ nợ), máy Siemens của Đức đốt khí chạy 15 năm hiệu suất vẫn tốt và đã cơ bản hết khấu hao, trong khi nhu cầu điện phục vụ mục tiêu tăng trưởng trên 10% vượt nguồn cung."
+        }
+      ],
+      "potential": 4,
+      "potentialNote": "Tỉ suất cổ tức 11,5% ở giá 21.000 đã cao gấp đôi lãi ngân hàng; càng giảm càng tăng.",
+      "caution": 3,
+      "cautionNote": "Chính AzFin thừa nhận nhóm điện có kết quả kinh doanh \"cực kỳ biến động, phập phù\" — năm bảo trì lớn EPS có thể tụt về nghìn mấy, và khi đó mức cổ tức 2.500đ không còn là mặc định.",
+      "orders": [
+        {
+          "expertId": "azfin",
+          "dir": "TÍCH SẢN — càng giảm càng gom",
+          "sig": "up",
+          "entry": "21.000 (giá tại 14/08)",
+          "target": "30.000 nếu thuận lợi — tổng lợi nhuận ~55%",
+          "stop": "Không có cắt lỗ: về 15.000 thì tái đầu tư cổ tức ở tỉ suất 16,5%",
+          "status": "active",
+          "date": "17/08",
+          "note": "Từ Lăng kính · 17/08 (17/08)."
+        }
+      ]
+    },
+    {
+      "key": "sab",
+      "symbol": "SAB",
+      "name": "Sabeco",
+      "group": "Chứng khoán Việt Nam",
+      "region": "vn",
+      "industry": "Tiêu dùng & Bia",
+      "basket": "tranh",
+      "tradeMode": "spot",
+      "tv": "HOSE:SAB",
+      "sig": "avoid",
+      "stance": "KHÔNG ĂN ĐƯỢC",
+      "oneLiner": "Được xếp vào nhóm phòng thủ nhưng đồ thị không cho điểm mua.",
+      "aliases": [
+        "Sabeco",
+        "Bia Sài Gòn"
+      ],
+      "thesis": [
+        {
+          "expertId": "ck-5-phut",
+          "title": "Nằm trong dòng tiền phòng thủ nhưng không có điểm mua",
+          "body": "Hai tuần gần đây có luồng tiền rút khỏi nhóm tài chính chuyển sang nhóm doanh thu ổn định, ít vay nợ, ít chịu ảnh hưởng chính sách tiền tệ — VNM, SAB nằm trong nhóm đó. Nhưng anh gạt đi bằng chính lý lẽ của nhóm: \"sữa thì chắc là không cắt giảm được nhưng mà bia thì làm gì mà không cắt giảm được đâu\". Kết luận đồ thị: \"Vinamilk cũng không ăn được mà Sabeco cũng không ăn được.\""
+        }
+      ],
+      "potential": 2,
+      "potentialNote": "Câu chuyện phòng thủ đúng với sữa hơn là với bia — nhu cầu bia cắt giảm được.",
+      "caution": 4,
+      "cautionNote": "Không có điểm mua trên đồ thị. Mua vì \"không biết mua gì\" là lý do tệ nhất.",
+      "orders": [
+        {
+          "expertId": "ck-5-phut",
+          "dir": "KHÔNG ĂN ĐƯỢC",
+          "sig": "avoid",
+          "entry": "—",
+          "target": "—",
+          "stop": "—",
+          "status": "active",
+          "date": "17/08",
+          "note": "Từ Livestream · 17/08 (17/08)."
+        }
+      ]
     }
   ],
   "briefing": {
-    "updated": "17/08/2026",
+    "updated": "18/08/2026",
     "expertId": "thai-pham",
     "episode": "Tập 45 · Tuần 33",
     "dateLabel": "15/08/2026",
@@ -13337,46 +13963,58 @@ window.HDT_DATA = {
     "lead": "Tập 45 không đưa ra quyết định mới, nó đặt tên cho một nghịch lý. Thái Phạm chồng đồ thị VN-Index lên VHM và thấy chúng gần như là một — phiên giảm 36,55 điểm thì riêng VIC góp 12,4 điểm và VHM 3,17. Bỏ hai mã đó ra, P/E thị trường nằm ở biên dưới 11,86, tức định giá rất thấp. Nhưng 73% mã vẫn downtrend. Ông tóm gọn: nhìn điểm số thì là up-trend, nhìn cổ phiếu thì down-trend. Và ông không giấu chuyện mình đang phân vân — nên hướng tới đầu tư giá trị hay phải cân nhắc rủi ro kỹ thuật của thị trường. Kết luận thực tế: không đổi gì, vẫn giữ 100% hàng.",
     "gauge": {
       "title": "VN-Index đang ở đâu",
-      "note": "Chỉ số đi theo VHM — bỏ VIC và VHM ra thì P/E ở biên dưới 11,86",
+      "note": "Chỉ số đi theo VHM — bỏ VIC và VHM ra thì P/E ở biên dưới 11,86. Thanh khoản phiên 17/08 thấp nhất kể từ đầu 2026.",
       "lo": 1651,
       "loLabel": "đáy 28/07",
       "mid": 1820,
       "midLabel": "vùng 182x",
-      "now": 1729,
-      "nowLabel": "đóng 14/08",
-      "hi": 1895,
-      "hiLabel": "đỉnh cũ"
+      "now": 1727,
+      "nowLabel": "đóng 18/08",
+      "hi": 1933,
+      "hiLabel": "đỉnh 90 phiên"
     },
     "timeline": [
       {
         "phase": "Đã qua",
         "label": "Full hàng từ Tập 43",
+        "note": "Mua hết cổ phiếu từ 05/08, không đổi gì kể từ đó.",
         "state": "past",
-        "note": "Ngày 05/08 ông bỏ mốc chờ và chuyển sang mua full cổ phiếu, loại hẳn VIC/VHM khỏi danh mục."
+        "sig": "up"
       },
       {
         "phase": "Đã qua",
         "label": "Vàng chạy đúng kịch bản",
+        "note": "Long từ 4.080, đã chốt 1/2 ở Tập 45, giữ phần còn lại dài hạn.",
         "state": "past",
-        "note": "Mua 4.078–4.080 ngày 06/08, tới Tập 45 đã chốt 1/2 lệnh long và giữ phần còn lại dài hạn."
+        "sig": "up"
       },
       {
         "phase": "Hôm nay",
-        "label": "Nghịch lý 73%",
+        "label": "Nghịch lý 73% gặp thanh khoản đáy năm",
+        "note": "Chỉ số nhìn như up-trend nhưng 73% mã downtrend — và phiên 17/08 thanh khoản thấp nhất kể từ đầu 2026. CK 5 phút đọc con số đó theo hướng \"không có người bán\".",
         "state": "now",
-        "note": "Định giá ở biên dưới nhưng 73% mã downtrend, còn chỉ số thì đi theo đúng hai mã họ Vin. Hành động: không đổi gì."
+        "sig": "warn"
       },
       {
         "phase": "Sắp tới",
         "label": "Biên bản FOMC 19/08",
+        "note": "Thái Phạm: biến động chút nhưng không tăng lãi suất.",
         "state": "next",
-        "note": "Ông dự sẽ có tranh cãi trong biên bản nhưng không có hành động — \"NATO, no action talk only\"."
+        "sig": "wait"
+      },
+      {
+        "phase": "Sắp tới",
+        "label": "Mốc crypto 1/9 và nâng hạng tháng 9",
+        "note": "Thái Phạm gắn tỉ giá hạ nhiệt với chính sách crypto 1/9. CK 5 phút gạt kỳ vọng nâng hạng: \"chỉ dừng lại ở mức kỳ vọng thôi\".",
+        "state": "next",
+        "sig": "wait"
       },
       {
         "phase": "Xa hơn",
         "label": "Bầu cử giữa nhiệm kỳ, tháng 11",
+        "note": "Giá dầu chỉ hạ nhiệt nếu Dân chủ nắm cả hai viện.",
         "state": "later",
-        "note": "Hạ viện 85% khả năng về tay Dân chủ. Nếu mất cả hai viện thì cơn sốt AI hạ nhiệt và giá dầu mới có cửa hạ."
+        "sig": "wait"
       }
     ],
     "squeezes": [
@@ -13598,135 +14236,54 @@ window.HDT_DATA = {
       ]
     },
     "community": {
-      "title": "Hội viên hỏi gì dưới bài đăng 4.8",
-      "source": "106 bình luận dưới bài đăng hội viên 04/08 — đọc trực tiếp bằng Chrome vì innertube không lấy được comment bài đăng",
-      "disclaimer": "Câu hỏi là của NGƯỜI XEM, không phải nhận định chuyên gia. Phần trả lời bên dưới là lời Thái Phạm viết trực tiếp dưới bài — đó mới là nội dung chuyên gia và đã được đưa vào sổ lệnh.",
+      "title": "Hội viên hỏi gì dưới tút 18/08",
+      "source": "36 bình luận dưới tút hội viên 18/08 — đọc trực tiếp bằng Chrome vì innertube không lấy được comment bài đăng. Tới lúc chốt bản tin (3 giờ sau khi đăng) Thái Phạm chưa trả lời bình luận nào.",
+      "disclaimer": "Câu hỏi là của NGƯỜI XEM, không phải nhận định chuyên gia. Ông chưa trả lời tút này, nên phần dưới mỗi câu là quan điểm ông ĐÃ nêu ở nơi khác, có ghi rõ nguồn — không phải câu trả lời trực tiếp.",
       "items": [
         {
-          "q": "Dell với Google SL bao nhiêu a Thái nhỉ?",
-          "who": "@haihoang5965 (hội viên)",
-          "likes": 1,
-          "status": "answered",
-          "statusLabel": "Trả lời thẳng bằng con số",
-          "a": "\"500, 410\" — cắt lỗ Dell 500, Google 410. Đây là hai mốc cụ thể nhất ông đưa ra trong cả bài đăng lẫn phần bình luận, và cả hai đều đã vào Sổ mã.",
-          "aSrc": "Trả lời dưới bài đăng · 04/08"
-        },
-        {
-          "q": "US30 nay short lại được không anh? SL tầm bao nhiêu?",
-          "who": "@cuongle4974 (hội viên)",
-          "likes": 1,
-          "status": "answered",
-          "statusLabel": "Trả lời — nhưng có hai con số lệch nhau",
-          "a": "\"được chứ, vẫn đang hold :), đùa thôi. SL 54,005 đi em\". Một hội viên khác (@thanhphamngoc2179) hỏi đặt cắt lỗ quanh 54k có ổn không thì ông trả lời \"54055\". Hai con số lệch 50 điểm; trang này ghi cả hai và không chọn hộ.",
-          "aSrc": "Trả lời dưới bài đăng · 04/08"
-        },
-        {
-          "q": "US500 và US30 vào short giá này được chưa anh, hay đợi lên thêm 7.700 và 54.000?",
-          "who": "@thuynh9871 (hội viên)",
-          "likes": 0,
-          "status": "answered",
-          "statusLabel": "Trả lời gọn — không cần đợi",
-          "a": "\"S dần đc\" — short dần được ngay vùng hiện tại. Khớp với việc chính ông viết trong bài là đã mua lại 1/2 vị thế short đã chốt lời trước đó.",
-          "aSrc": "Trả lời dưới bài đăng · 04/08"
-        },
-        {
-          "q": "Con AAPL mua lại 1/2 vị thế được chưa anh?",
-          "who": "@minhbuile2105 (hội viên)",
-          "likes": 0,
-          "status": "answered",
-          "statusLabel": "Trả lời — Apple thì chưa",
-          "a": "\"chốt 1/2 rồi chưa mua lại phần S đâu\". Đáng chú ý vì nó tách Apple ra khỏi phần còn lại: US30 và US500 thì ông đã vào lại, riêng Apple vẫn đứng ngoài.",
-          "aSrc": "Trả lời dưới bài đăng · 04/08"
-        },
-        {
-          "q": "Đoạn này anh Thái có tham gia không ạ?",
-          "who": "@anhquoc1019 (hội viên)",
-          "likes": 0,
-          "status": "answered",
-          "statusLabel": "Trả lời — tự công bố tỉ trọng",
-          "a": "\"Anh 40%\". Đúng bằng mức ông khuyến nghị cho nhóm đang cầm 40% cổ / 60% tiền, và không đổi từ tuần 28.",
-          "aSrc": "Trả lời dưới bài đăng · 04/08"
-        },
-        {
-          "q": "Con CRWD với DELL có thể vào short giá nào vậy anh?",
-          "who": "@VoAnhTu2111 (hội viên)",
-          "likes": 0,
-          "status": "answered",
-          "statusLabel": "Trả lời — hai mã hai cách vào",
-          "a": "\"DEll giá này thơm rồi. CRWD cho nó kéo 1 turn lên 210 lại tẩn xuống. Đang phân phối mà.\" Tức Dell vào ngay, CRWD thì đợi kéo lên 210.",
-          "aSrc": "Trả lời dưới bài đăng · 04/08"
-        },
-        {
-          "q": "Em chưa có PNJ và FPT, nay vô lướt được không anh? Có thể mua với giá mắc hơn hiện tại không?",
-          "who": "@huongmai3634 (hội viên)",
-          "likes": 0,
-          "status": "answered",
-          "statusLabel": "Trả lời — kèm cảnh báo",
-          "a": "\"anh nói rõ đấy, em có thể vào 1 ít giá này (1/2 vị thế muốn lướt thôi). Lướt là một công việc khó, phải sẵn sàng cắt lỗ nếu sai đấy nhé.\"",
-          "aSrc": "Trả lời dưới bài đăng · 04/08"
-        },
-        {
-          "q": "HPG em đang hòa vốn có nên thoát ra không thầy, hay đợi thêm ạ?",
-          "who": "@KHANGVY134 (hội viên)",
-          "likes": 0,
-          "status": "answered",
-          "statusLabel": "Trả lời — gắn vào mốc Index",
-          "a": "\"đợi kéo lại 182x thì ra luôn\". Cùng logic với câu trả lời cho CII: mọi hàng VN đều quy về mốc Index 182x chứ không quy về giá riêng của mã.",
-          "aSrc": "Trả lời dưới bài đăng · 04/08"
-        },
-        {
-          "q": "BID, BVB đã về hòa vốn có nên bán ra sau đó chờ mua lại giá rẻ hơn không anh? Em đang cầm tỷ trọng tiền và cổ phiếu là 50/50.",
-          "who": "@Hung0118 (hội viên)",
-          "likes": 0,
-          "status": "answered",
-          "statusLabel": "Trả lời — hai chữ",
-          "a": "\"cầm luôn đi e.\"",
-          "aSrc": "Trả lời dưới bài đăng · 04/08"
-        },
-        {
-          "q": "Đà phục hồi của Kospi liệu có kéo dài hết tuần này không? Em tính mua lướt lại Samsung với mấy mã bán dẫn.",
-          "who": "@dogiathanh96vn (hội viên)",
-          "likes": 0,
-          "status": "answered",
-          "statusLabel": "Trả lời — có mốc",
-          "a": "\"SS thì vùng 220k đi em\" — đợi Samsung về vùng 220.000 KRW. Với chứng Nhật, trả lời một hội viên khác: \"anh nhìn thì thấy nó hồi rồi lại chỉnh thôi, chưa có đà lên đâu\".",
-          "aSrc": "Trả lời dưới bài đăng · 04/08"
-        },
-        {
-          "q": "Có thông tin track dữ liệu vệ tinh thấy lượng dầu ra khỏi Hormuz vẫn ổn định 2–4 triệu thùng/ngày, tương đối bù đắp được thiếu hụt. Anh đánh giá việc này thế nào?",
-          "who": "@lehoainam5173 (hội viên)",
-          "likes": 0,
-          "status": "data",
-          "statusLabel": "Số liệu người xem đưa — chưa kiểm chứng",
-          "a": "Ông không xác nhận con số mà trả lời về hướng giá: \"Thông tin thì khá lộn xộn. Giá dầu thì khó mà hạ nhiệt nhanh được, kiểu gì cũng quanh vùng cao này tới tháng 10. Tất nhiên cao lên 100 thì không có ai muốn.\"",
-          "aSrc": "Trả lời dưới bài đăng · 04/08"
-        },
-        {
-          "q": "Em nghe thông tin BVB với LPB (Lộc Phát Bank) sáp nhập, không biết đúng không ạ? Có ảnh hưởng gì không thầy?",
-          "who": "@ucthuannguyen6973 (hội viên)",
-          "likes": 0,
-          "status": "open",
-          "statusLabel": "Chưa được trả lời",
-          "a": "Chưa có câu trả lời của Thái Phạm tính đến lúc đọc bài. Tin đồn sáp nhập này CHƯA được kiểm chứng ở bất kỳ nguồn nào trong trang — chỉ ghi lại vì BVB đang nằm trong danh mục ông khuyến nghị cầm.",
-          "aSrc": "—"
-        },
-        {
-          "q": "TCX mua được chưa hay đợi về 1.500 mua luôn vậy anh?",
-          "who": "@MrLinhrom (hội viên)",
-          "likes": 0,
-          "status": "open",
-          "statusLabel": "Chưa được trả lời",
-          "a": "Chưa có câu trả lời tính đến lúc đọc bài.",
-          "aSrc": "—"
-        },
-        {
-          "q": "Em đang bổ sung dần vị thế SPCX đến 05/8 full vị thế chờ lock-up ngày 06/8. Hy vọng ER và guidance 3h sáng mai không đủ tốt do CAPEX AI nhiều và ARPU Starlink giảm.",
-          "who": "@trungnguyen_179 (hội viên)",
+          "q": "Thầy làm 1 clip nói về quy định crypto Việt Nam. Như em dùng MEXC thì qua 1/9 có ảnh hưởng gì không ạ? Theo thông tin em tìm hiểu thì buộc phải chuyển về sàn VN.",
+          "who": "@LongGem (hội viên)",
           "likes": 0,
           "status": "partial",
-          "statusLabel": "Có phản hồi nhưng không xác nhận luận điểm",
-          "a": "Đây là luận điểm riêng của hội viên, không phải của Thái Phạm. Quan điểm SpaceX của ông vẫn là bản nêu ở Tập 42: mới niêm yết 5%, còn 85–90% giải phóng tới hết 5/2027, giữ short từ 152.",
-          "aSrc": "Tập 42 · 01/08"
+          "statusLabel": "Đã nói về chính sách, chưa nói về sàn ngoại",
+          "a": "Ông đã nêu khung chung ở tút 11/08: \"sau 1/9 phải có sàn Việt được cấp phép và có 6 tháng chuyển đổi và cũng sẽ có chính sách hút khách về để mang đô cho nước nhà\". Tút 18/08 nói thêm ông nghĩ chính sách này là lý do tỉ giá hạ nhiệt. Riêng câu hỏi sàn ngoại có bị chặn hay không thì chưa có câu trả lời nào từ ông.",
+          "aSrc": "Tút hội viên 11/08 và 18/08"
+        },
+        {
+          "q": "Thầy ơi short vàng dầu chứng khoán Mỹ được chưa thầy?",
+          "who": "@nguyentom9455 (hội viên)",
+          "likes": 0,
+          "status": "answered",
+          "statusLabel": "Ba tài sản, ba câu trả lời khác nhau",
+          "a": "Vàng thì ngược lại — ông đang LONG, đã chốt 1/2 từ 4.080 và giữ phần còn lại dài hạn, tiến về 4.600. Chứng khoán Mỹ thì đúng là đang short: 2/3 vị thế US500, ưu tiên cao nhất trong danh mục quốc tế. Dầu thì ông không short, đánh giá \"ở vùng cao lâu, khó về 60–65\" vì gói cô lập Iran.",
+          "aSrc": "Tập 45 (15/08) và tút 15/08"
+        },
+        {
+          "q": "Em cảm ơn thầy, VCI xuống 20 không thầy ơi?",
+          "who": "@dungdang9568 (hội viên)",
+          "likes": 0,
+          "status": "open",
+          "statusLabel": "Chưa ai trong 5 kênh đưa mốc này",
+          "a": "Không có chuyên gia nào trong số 5 kênh đang theo dõi đưa ra mốc 20 cho VCI. Điều gần nhất là quan điểm chung của CK 5 phút về nhóm chứng khoán phiên 17/08: \"thời điểm hiện tại không có view gì\", và nâng hạng tháng 9 mới chỉ là kỳ vọng chứ chưa phải chất xúc tác.",
+          "aSrc": "Livestream CK 5 phút 17/08"
+        },
+        {
+          "q": "Có thông tin Long Thành chuẩn bị vận hành, SCS liệu có ổn không anh Thái?",
+          "who": "@anhquoc1019 (hội viên)",
+          "likes": 0,
+          "status": "open",
+          "statusLabel": "Chưa được trả lời",
+          "a": "SCS đang nằm trong danh mục ông giữ (nêu ở tút 14/08 cùng VNM, bank, phân bón, chứng khoán) nhưng ông chưa bàn tới tác động của Long Thành vận hành. Đây là câu hỏi đáng theo dõi ở tập hội viên tới.",
+          "aSrc": "Tút hội viên 14/08"
+        },
+        {
+          "q": "Thanh khoản VNI vẫn thấp quá anh ạ.",
+          "who": "@PhamTienDung510 · @pad-Khoa (hội viên)",
+          "likes": 0,
+          "status": "answered",
+          "statusLabel": "Kênh khác trả lời đúng câu này cùng ngày",
+          "a": "Thái Phạm chưa bình luận, nhưng CK 5 phút ra hẳn một video 17/08 cho đúng câu hỏi này: thanh khoản không thể tăng lại trong ngắn hạn vì ba nguyên nhân chính sách (luật thuế buộc hộ kinh doanh giữ tiền mặt, siết tín dụng khiến khoản vay đáo hạn không tái vay được, đại dự án hạ tầng hút vốn ngân hàng). Có thể kéo hết quý 3 sang quý 4.",
+          "aSrc": "Phân tích CK 5 phút 17/08"
         }
       ]
     }
@@ -13958,7 +14515,7 @@ window.HDT_DATA = {
     }
   },
   "context": {
-    "updated": "17/08/2026",
+    "updated": "18/08/2026",
     "note": "Bối cảnh được rút từ chính transcript của các chuyên gia đang theo dõi. Đây là NỀN để đọc nhận định, không phải bản tin thời sự — mục nào chưa có chuyên gia nào bàn tới thì để trống thay vì lấp bằng nguồn ngoài.",
     "topics": [
       {
@@ -14145,6 +14702,14 @@ window.HDT_DATA = {
         ],
         "items": [
           {
+            "title": "Lãi suất Việt Nam: không được tăng, mà giảm cũng khó",
+            "expertId": "ck-5-phut",
+            "date": "17/08",
+            "sig": "wait",
+            "tag": "Lãi suất",
+            "body": "Về cuộc họp Fed tháng 9, anh tách hai chuyện. Một, kể cả Fed tăng thì \"nó cũng chỉ có đúng một lần để nó tăng thôi — trong năm nay liệu mà sử dụng, nếu mà tăng luôn thì cuối năm nó cũng chả tăng nữa\". Hai, dù Fed làm gì thì Việt Nam cũng không phản ứng: \"chắc chắn là mức lãi suất của chúng ta ở thời điểm hiện tại không được phép tăng nữa. Còn có giảm được hay không thì còn tùy thuộc nhưng mà em nghĩ khả năng cũng khó.\" Đây là lý do anh xếp lãi suất vào nhóm yếu tố không đổi trong ngắn hạn — và vì thế thanh khoản cũng không đổi."
+          },
+          {
             "title": "Lệnh hạ lãi suất và phản ứng thật của ngân hàng",
             "expertId": "thai-pham",
             "date": "15/08",
@@ -14235,14 +14800,6 @@ window.HDT_DATA = {
             "sig": "up",
             "tag": "Lạm phát",
             "body": "Khi CPI vọt lên 5,6% từ mức 2–3% nửa năm trước, ông phản biện nỗi sợ chung: năm nhóm chiếm hơn 70% rổ tính CPI, và cú nhảy chủ yếu do giá năng lượng đảo chiều — đầu 2026 nhóm này còn -3,19% trước khi chiến tranh Mỹ–Iran đẩy ngược lên. Giá nguyên liệu ngược lại đang giảm từ 6% xuống 4%. Ông cũng chỉ ra lạm phát Việt Nam trễ Mỹ 3–6, thậm chí 9 tháng. Thực tế sau đó: lạm phát đã hạ về 4,7%, tiệm cận mục tiêu 4,5%."
-          },
-          {
-            "title": "ECB và đồng đô la",
-            "expertId": "thai-pham",
-            "date": "24/07",
-            "sig": "warn",
-            "tag": "Châu Âu",
-            "body": "ECB giữ nguyên ba lãi suất chủ chốt ở 2,25%, 2,40% và 2,65% với đồng thuận tuyệt đối, sau khi đã tăng lần đầu kể từ 2023 vào tháng 6. Lagarde nhấn mạnh \"tác động lạm phát đầy đủ của cú sốc năng lượng vẫn chưa bộc lộ hết\". Deutsche Bank dự báo ECB tăng thêm một lần lên 2,50% vào tháng 9. Chỉ số DXY 101,46 — cao nhất từ 25/6, và đạt đỉnh 40 năm so với đồng yên."
           }
         ]
       },
@@ -14250,48 +14807,82 @@ window.HDT_DATA = {
         "key": "viet-nam",
         "label": "Chính sách & tin Việt Nam",
         "flag": "🇻🇳",
-        "headline": "Ba văn bản đang định hình dòng tiền nửa cuối năm",
-        "sub": "Nghị quyết 168, dự thảo Thông tư 22 và cơ chế tiền gửi Kho bạc — cả ba đều nhắm vào việc bơm vốn qua hệ thống ngân hàng.",
+        "headline": "Ba nguồn hút tiền cùng lúc — và không cái nào đảo ngược được bằng tâm lý",
+        "sub": "Thanh khoản phiên 17/08 thấp nhất kể từ đầu 2026. CK 5 phút bỏ hẳn kỳ vọng hồi phục ngắn hạn và chỉ ra nguyên nhân đều nằm ở chính sách.",
         "sig": "up",
         "stats": [
           {
-            "v": "30% → 40%",
-            "k": "trần vốn ngắn hạn cho vay trung–dài hạn",
-            "sub": "dự thảo Thông tư 22",
-            "sig": "up"
-          },
-          {
-            "v": "0% → 20%",
-            "k": "tiền gửi KBNN tính vào huy động",
-            "sub": "từng lên 50% thời khủng hoảng BĐS",
-            "sig": "up"
-          },
-          {
-            "v": "92.000 tỷ",
-            "k": "khối ngoại bán ròng từ đầu năm",
-            "sub": "tuần cuối 3.500 tỷ · tháng 14.000 tỷ",
+            "v": "Thấp nhất",
+            "k": "thanh khoản kể từ đầu 2026",
+            "sub": "phiên 17/08",
             "sig": "down"
           },
           {
-            "v": "20 tỷ $",
-            "k": "nhập siêu 7 tháng đầu năm",
-            "sub": "máy móc nguyên liệu — áp lực tỉ giá",
-            "sig": "down"
-          },
-          {
-            "v": "26.490",
-            "k": "giá bán USD ngân hàng",
-            "sub": "chênh mua–bán 410 đồng",
+            "v": "1.727",
+            "k": "VN-Index đóng 18/08",
+            "sub": "đáy 28/07 là 1.651 · đỉnh 90 phiên 1.933",
             "sig": "warn"
           },
           {
-            "v": "79%",
-            "k": "cổ phiếu ở ngưỡng downtrend",
-            "sub": "đo tại tuần 31",
+            "v": "73%",
+            "k": "cổ phiếu vẫn downtrend",
+            "sub": "trong khi chỉ số nhìn như up-trend",
+            "sig": "down"
+          },
+          {
+            "v": "11,86",
+            "k": "P/E thị trường ở biên dưới",
+            "sub": "sau khi bỏ VIC và VHM ra",
+            "sig": "up"
+          },
+          {
+            "v": "89.296 tỷ",
+            "k": "LNST ngành ngân hàng",
+            "sub": "+25,4% — nhưng trích lập chỉ +13,7%",
+            "sig": "warn"
+          },
+          {
+            "v": "Q3 → Q4",
+            "k": "thanh khoản có thể vẫn ở nền thấp",
+            "sub": "\"có thể còn lâu hơn cơ\"",
             "sig": "down"
           }
         ],
         "items": [
+          {
+            "title": "Ba nguồn hút tiền khỏi thị trường — đều là chính sách",
+            "expertId": "ck-5-phut",
+            "date": "17/08",
+            "sig": "warn",
+            "tag": "Thanh khoản",
+            "body": "Thứ nhất, quy định thuế và hóa đơn được thực thi triệt để hơn buộc hộ kinh doanh và cửa hàng giữ tiền mặt để hợp thức hóa dòng tiền xuất nhập hàng — \"chỉ càng ngày càng siết chặt hơn thôi\". Thứ hai, siết tín dụng: khoản vay cũ đáo hạn không tái vay lại được, và anh đánh giá đây là nguồn rút ra khỏi thị trường nhiều nhất. Thứ ba, loạt đại dự án hạ tầng khởi công cùng lúc — riêng năm dự án Metro — khiến ngân hàng điều tiết vốn ra khỏi thị trường tài chính để phục vụ thi công đúng tiến độ. Anh gọi tổng thể là \"xì hơi chứ không vỡ… xì từ từ theo đúng sự cho phép của các cơ quan quản lý, và xì từ từ thì tốt hơn đã vỡ rồi\".",
+            "extra": "Anh nói thẳng rằng đây là chỗ ông đổi quan điểm: \"Nếu mà cách đây vài tháng thì có thể là mình sẽ còn khuyến nghị mọi người là thôi cứ cố gắng để đợi thanh khoản nó tăng trở lại. Nhưng cho đến thời điểm hiện tại thì có vẻ là tất cả chúng ta đều đồng thuận là thanh khoản nó sẽ không thể nào tăng trở lại trong ngắn hạn được.\""
+          },
+          {
+            "title": "Cách đọc ngược: không có người bán, chứ không phải hết người mua",
+            "expertId": "ck-5-phut",
+            "date": "17/08",
+            "sig": "up",
+            "tag": "Cách đọc",
+            "body": "Đây là điểm tách hẳn khỏi cách hiểu phổ biến. \"Sẽ có nhiều người bảo là thanh khoản này là yếu lắm, sắp sập đến nơi rồi thì có thể anh em nhìn theo hướng là không có người mua, nhưng mà em thì lại nhìn thanh khoản này theo hướng là không có người bán. Ở thời điểm hiện tại giảm thế chứ giảm nữa cũng chả có ai bán.\" Bằng chứng anh dựa vào là chính cộng đồng của mình — \"thị trường như thế nào thì cộng đồng của em như vậy\" — và phiên 17/08 gần như không ai hỏi mã nào, kể cả những mã trước đó ngày nào cũng có người hỏi."
+          },
+          {
+            "title": "Nâng hạng tháng 9: vì sao chưa phải chất xúc tác",
+            "expertId": "ck-5-phut",
+            "date": "17/08",
+            "sig": "wait",
+            "tag": "Nâng hạng",
+            "body": "Tiền ngoại vào có thể 1–5 tỷ đô nhưng \"thời điểm hiện tại nó chỉ dừng lại ở cái mức kỳ vọng thôi\". Lý do sâu hơn không nằm ở chất lượng doanh nghiệp mà ở cơ cấu thị trường: Việt Nam thiếu sản phẩm, và khối ngoại không sang một nền kinh tế bị xếp là chưa phát triển chỉ để mua cổ phiếu tài chính — \"nó đầu tư vào nước nó còn hơn\". Kỳ vọng thật của anh đặt vào chỗ khác: sửa đổi luật chứng khoán."
+          },
+          {
+            "title": "Tỉ giá hạ nhiệt — điểm cộng vĩ mô rõ nhất lúc này",
+            "expertId": "thai-pham",
+            "date": "18/08",
+            "sig": "up",
+            "tag": "Tỉ giá",
+            "body": "\"Tỉ giá đang ổn trở lại. Có lẽ do chính sách 1/9 của Crypto. Tỉ giá ổn, mọi thứ hi vọng tốt hơn.\" Đây là lần thứ ba liên tiếp ông nêu tỉ giá hạ nhiệt như một điểm cộng (tút 11/08, 13/08, 18/08), và lần này ông gắn nó với mốc khung pháp lý crypto có hiệu lực. Lập luận đã nêu ở tút 11/08: dòng đô chảy ra ngoài qua sàn ngoại sẽ bị chặn lại, sau 1/9 sẽ có sàn Việt được cấp phép cùng 6 tháng chuyển đổi và \"chính sách hút khách về để mang đô cho nước nhà\".",
+            "extra": "Ông viết \"có lẽ do\" — đây là suy đoán của ông, không phải số liệu. Hội viên dưới tút hỏi thẳng sàn ngoại (MEXC) sau 1/9 ra sao; tới lúc chốt bản tin ông chưa trả lời."
+          },
           {
             "title": "VN-Index đã tách khỏi cổ phiếu",
             "expertId": "thai-pham",
@@ -14378,38 +14969,6 @@ window.HDT_DATA = {
             "tag": "Cung tiền",
             "body": "Tỉ lệ tiền gửi có kỳ hạn của Kho bạc Nhà nước được tính vào huy động: từng được nâng từ 0% lên 50% khi nền kinh tế chịu áp lực khủng hoảng bất động sản, rồi về 0% ở nửa đầu 2026, nay nới lại 20%. Điểm đáng chú ý là văn bản ghi thêm \"hoặc tỷ lệ khác do Thống đốc Ngân hàng Nhà nước quyết định tùy từng thời kỳ\" — tức còn dư địa nâng tiếp. Riêng khoản mua bán trái phiếu chính phủ đã chiếm khoảng 650.000 tỷ. Nhóm Big 4 (Agribank, Vietcombank, CTG, BIDV) hưởng lợi trực tiếp.",
             "extra": "Một hội viên bổ sung dưới bài đăng: có quyết định nâng tỷ lệ khấu trừ số dư tiền gửi có kỳ hạn của KBNN lên 50%, hiệu lực 1/8/2026 — chi tiết này CHƯA được chuyên gia nào xác nhận."
-          },
-          {
-            "title": "Rủi ro tập trung: VIC và VHM",
-            "expertId": "thai-pham",
-            "date": "01/08",
-            "sig": "down",
-            "tag": "Cấu trúc thị trường",
-            "body": "Luận điểm ông nhắc lại nhiều tuần liền: VIC và VHM neo cao \"phi thị trường\", vốn hóa VIC vượt 1 triệu tỷ đồng. Hệ quả là quỹ ngoại mua VN30 tức là đặt cược toàn bộ vào Vin Group — \"chẳng có ai cược vào một nơi mà trọng số chiếm quá lớn\". Ông cho rằng đây là lý do khối ngoại bán ròng 92.000 tỷ từ đầu năm và sẽ không quay lại chừng nào cấu trúc này còn nguyên."
-          },
-          {
-            "title": "Loạt chủ tịch đăng ký mua — đọc thế nào",
-            "expertId": "ck-5-phut",
-            "date": "28/07",
-            "sig": "wait",
-            "tag": "Tin doanh nghiệp",
-            "body": "Ông Tô Hải (VCI) đăng ký mua 31 triệu cổ phiếu, một Phó TGĐ Khang Điền 20 triệu, ông Đạt (PDR) 20 triệu, cùng nhiều lệnh cỡ vài trăm nghìn tới hơn 1 triệu cổ. Cách đọc của CK 5 phút: người trong cuộc hiểu doanh nghiệp mình nhất nên đây là tín hiệu định giá hấp dẫn — NHƯNG không phải tín hiệu đáy, \"đáy thì còn lâu\". Thái Phạm bổ sung: riêng VCI còn bị ảnh hưởng vì danh mục tự doanh đang có PNJ và FPT."
-          },
-          {
-            "title": "Các vụ việc doanh nghiệp trong tháng 7",
-            "expertId": "thai-pham",
-            "date": "24/07–01/08",
-            "sig": "down",
-            "tag": "Rủi ro",
-            "body": "Đức Giang bị Chứng khoán Bản Việt bán giải chấp ngay vùng đáy. Các quỹ Vina Capital và Dragon Capital buộc cắt lỗ PNJ ở giá rất thấp sau vụ lùm xùm kim cương; VCI thông báo bán ra DIG. Dabaco bị khởi tố (CK 5 phút dự báo giảm nhưng không sàn như PNJ). MWG có \"rất nhiều thông tin không bất lợi\" — Thái Phạm nghi có thể cùng nguồn cung với vụ nữ trang của PNJ. Bài học chung ông rút ra: mã dính pháp lý thì mặc định bỏ qua, không ngồi đánh giá cơ bản."
-          },
-          {
-            "title": "Tỉ giá và nhập siêu",
-            "expertId": "thai-pham",
-            "date": "01/08",
-            "sig": "warn",
-            "tag": "Tỉ giá",
-            "body": "Chênh lệch mua–bán tại ngân hàng lên tới 410 đồng: mua 26.080, bán 26.490. Nguyên nhân là dù đồng đô la suy yếu, Việt Nam nhập siêu tới 20 tỷ đô trong 7 tháng đầu năm — chủ yếu máy móc nguyên liệu phục vụ đường sắt cao tốc và các khu đại đô thị. Ông dự báo tỉ giá sẽ còn điều chỉnh. Đối chiếu số liệu 23/07: tỷ giá trung tâm 25.272, USD tự do vượt 27.400."
           }
         ]
       },

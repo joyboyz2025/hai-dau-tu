@@ -333,6 +333,14 @@ input::placeholder{color:var(--ink-3);}
 .dc-quad span{font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-2);}
 
 .dc-todo{display:flex;flex-direction:column;gap:12px;}
+.dc-cm{display:flex;flex-direction:column;gap:14px;overflow-y:auto;max-height:52vh;padding-right:4px;}
+.dc-cmi{border-left:2px solid var(--hair);padding-left:13px;max-width:68ch;}
+.dc-cmq{font-size:13.5px;font-weight:600;line-height:1.45;}
+.dc-cmw{font-size:11px;color:var(--ink-3);margin-top:3px;}
+.dc-cma{font-size:12.5px;color:var(--ink-2);line-height:1.6;margin-top:6px;}
+.dc-cms{font-size:10.5px;color:var(--ink-3);margin-top:4px;font-style:italic;}
+.dc-cmd{font-size:11px;color:var(--ink-3);line-height:1.55;margin-top:14px;
+  border-top:1px solid var(--hair);padding-top:10px;max-width:68ch;}
 .dc-td{display:grid;grid-template-columns:auto 1fr;gap:4px 11px;align-items:start;}
 .dc-act{grid-row:span 2;padding:5px 11px;border-radius:999px;font-size:10.5px;font-weight:600;
   letter-spacing:.05em;white-space:nowrap;align-self:start;}
@@ -601,6 +609,7 @@ input::placeholder{color:var(--ink-3);}
         </div>
       </div>
 
+      <sc-if value="{{ isMktVn }}">
       <div class="viz" onClick="{{ brGaugeGoTk }}" role="button" tabindex="0" style="cursor:pointer;">
         <div class="viz-h">
           <div class="t-h2">{{ brGauge.title }}</div>
@@ -621,6 +630,7 @@ input::placeholder{color:var(--ink-3);}
         </div>
         <div class="viz-note">Đã hồi <b>{{ brGauge.gapLo }} điểm</b> từ {{ brGauge.buyLabel }} · còn <b>{{ brGauge.gapMid }} điểm</b> tới {{ brGauge.brkLabel }}</div>
       </div>
+      </sc-if>
 
       <div style="display:flex; align-items:center; gap:10px; background:var(--white); border:1px solid var(--border); border-radius:var(--r); padding:2px 6px 2px 15px; max-width:620px;">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" style="flex-shrink:0;"><circle cx="7" cy="7" r="4.6" stroke="var(--ink-3)" stroke-width="1.4"/><path d="M10.6 10.6 14 14" stroke="var(--ink-3)" stroke-width="1.4" stroke-linecap="round"/></svg>
@@ -1324,9 +1334,31 @@ input::placeholder{color:var(--ink-3);}
           </div>
         </section>
 
-        <!-- 12 · CÂU CỦA TUẦN -->
-        <section class="dc dc--dark">
+        <!-- 12 · HỘI VIÊN HỎI -->
+        <sc-if value="{{ brCmHas }}">
+        <section class="dc">
           <div class="dc-no">{{ brNo.c12 }}</div>
+          <div class="dc-in">
+            <div class="dc-h">{{ brCmTitle }}</div>
+            <div class="dc-note">{{ brCmSource }}</div>
+            <div class="dc-cm">
+              <sc-for list="{{ brCommunity }}" as="cm" hint-placeholder-count="4">
+                <div class="dc-cmi">
+                  <div class="dc-cmq">{{ cm.q }}</div>
+                  <div class="dc-cmw">{{ cm.who }} · <span style="color:{{ cm.cColor }}; font-weight:600;">{{ cm.statusLabel }}</span></div>
+                  <div class="dc-cma">{{ cm.a }}</div>
+                  <div class="dc-cms">{{ cm.aSrc }}</div>
+                </div>
+              </sc-for>
+            </div>
+            <div class="dc-cmd">{{ brCmDisclaimer }}</div>
+          </div>
+        </section>
+        </sc-if>
+
+        <!-- 13 · CÂU CỦA TUẦN -->
+        <section class="dc dc--dark">
+          <div class="dc-no">{{ brNo.c13 }}</div>
           <div class="dc-in dc-in--mid">
             <div class="dc-quote">{{ brQuoteText }}</div>
             <div class="dc-qsrc">— {{ brQuoteSource }}</div>
@@ -2282,6 +2314,8 @@ class Component extends DCLogic {
       return 'vn';
     };
     const curMkt = s.mkt === 'us' ? 'us' : 'vn';
+    // thước đo VN-Index không được hiện khi đang lọc thị trường Mỹ — nó nói ngược lại tấm bia phía trên
+    const isMktVn = curMkt === 'vn';
     const _keepMkt = arr => (arr || []).filter(it => _mktOf(it) === curMkt);
     const MKT_LABEL = { vn: 'Việt Nam', us: 'Mỹ & thế giới' };
     const mktTabs = ['vn', 'us'].map(k => ({
@@ -3290,7 +3324,7 @@ return {
     };
     // ══ Bộ thẻ lật: mỗi thẻ tự mang số thứ tự nên không cần state ══
     const _DECK = ['Tiêu đề','Lịch trình','Mốc mua','Vị thế','Sổ mã','Tiền mặt','Độ chính xác',
-                   'Lực siết 1','Lực siết 2','Lực siết 3','Việc cần làm','Câu của tuần'];
+                   'Lực siết 1','Lực siết 2','Lực siết 3','Việc cần làm','Hội viên hỏi','Câu của tuần'];
     const brDeckTotal = _DECK.length;
     const _n = i => (i + 1) + ' / ' + brDeckTotal;
     const brNo = {};
@@ -3335,6 +3369,9 @@ return {
     const brCommunity = (CM.items || []).map(it => Object.assign({
       q: it.q, who: it.who, a: it.a, aSrc: it.aSrc, statusLabel: it.statusLabel
     }, CM_STATUS[it.status] || CM_STATUS.open));
+    const brCmTitle = CM.title || 'Hội viên hỏi gì';
+    const brCmSource = CM.source || '';
+    const brCmDisclaimer = CM.disclaimer || '';
 
     const SV = BR.stockView || {};
     const brSvExperts = (SV.experts || []).map(e => {
@@ -3772,7 +3809,7 @@ return {
       brAlloc, brSigDist, brSigTotal, brAcc, brGauge, brGaugeGoTk,
       brDeckTotal, brNo, brNext, brPrev, brSqDeck,
       brQuoteText: (BR.quote || {}).text || '', brQuoteSource: (BR.quote || {}).source || '',
-      brCommunity, brCmHas: brCommunity.length > 0,
+      brCommunity, brCmHas: brCommunity.length > 0, brCmTitle, brCmSource, brCmDisclaimer,
       brCmTitle: CM.title || '', brCmSource: CM.source || '', brCmDisclaimer: CM.disclaimer || '',
       brSvTitle: SV.title || '', brSvRange: SV.dateRange || '', brSvVerdict: SV.verdict || '',
       brSvExperts, brSvAgree: SV.agree || [], brSvDiffer: SV.differ || [],
@@ -3813,7 +3850,7 @@ return {
       goAdmin: () => this.go('admin'),
       goHistory: () => this.go('history'),
       goExpertsList: () => this.go('experts-list'),
-      mktTabs, mktLabel, curMkt,
+      mktTabs, mktLabel, curMkt, isMktVn,
       navItems, subTabs, hasSubs: subTabs.length > 0,
       heroDirective, heroAsset, heroDetail, heroLevel, heroWho, heroInitials,
       heroSrc, heroDate, heroGoAct, heroGoExpert, weekRange, hasHeroLevel: !!heroLevel,

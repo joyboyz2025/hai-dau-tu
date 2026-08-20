@@ -14758,23 +14758,43 @@ window.HDT_DATA = {
         "reasoning": [
           {
             "k": "data",
-            "text": "Vàng 4.551, +11,8%/tháng — đang đứng NGAY cụm kháng cự 4.556–4.592 (máy vùng giá); DXY −2,4%/tháng; lợi suất 30Y 5,28%"
+            "text": "Tape chéo 19/08 — tin debt buyback ra, 5 tài sản phản ứng ĐỒNG BỘ: vàng +4% (4.513), BTC +6%, DXY −0,84%, lợi suất 30Y phá 5,2%, cổ công nghệ bán tháo. Thị trường thật đã bỏ phiếu: tiền đang rời giấy nợ Mỹ"
+          },
+          {
+            "k": "data",
+            "text": "Bức tranh nợ: nợ công ~40.000 tỷ (+600 tỷ chỉ trong 2 tháng); tiền lãi sắp vượt cả ngân sách quốc phòng; cầu trái phiếu cạn — Trung Quốc/Nhật ngừng mua, TQ còn BÁN trái phiếu để mua vàng"
           },
           {
             "k": "model",
-            "text": "A3 — Fed mất uy tín: tiền rời đô sang vàng → xu hướng trung hạn LÊN còn nguyên"
+            "text": "A2 — \"buyback\" không phải trả nợ: là ĐẢO NỢ (tín phiếu ngắn nuôi trái phiếu dài) = lời thú nhận thị trường trái phiếu mất thanh khoản → đồng đô tiếp tục bị pha loãng"
           },
           {
             "k": "model",
-            "text": "#18 \"giá phản ánh hết kỳ vọng\": tin debt buyback ĐÃ RA và giá đã chạy 12% — phần dễ đã qua"
+            "text": "A3 + toán định giá — mọi tài sản neo vào lợi suất phi rủi ro: 30Y 5,28% trong khi cổ phiếu PE 25–30 chỉ cho E/P 3–4% → tiền lớn buộc tái phân bổ, và vàng là đích vì KHÔNG IN THÊM ĐƯỢC"
+          },
+          {
+            "k": "data",
+            "text": "Kịch bản đuôi có tiền lệ: FDIC Q1 — bank Mỹ lỗ trạng thái >300 tỷ vì trái phiếu giảm 36 tháng liên tiếp; nếu lặp lại LDI Anh 2022 (bán tháo cả tài sản tốt để nộp ký quỹ) thì tiền càng dồn về vàng"
           },
           {
             "k": "model",
-            "text": "G1 \"chỉ đánh tại mốc đặt sẵn\": mua đuổi ngay kháng cự sau cú chạy dài là vi phạm kỷ luật"
+            "text": "Loại trừ đối thủ trú ẩn: BTC = hồi thiếu tiền tổ chức + bị chính phủ siết; trái phiếu = chính là nguồn cơn; đô = đang pha loãng → vàng thắng bằng loại trừ, không phải bằng niềm tin"
+          },
+          {
+            "k": "data",
+            "text": "NHƯNG vị trí giá: vàng 4.551 đang đứng NGAY cụm kháng cự 4.556–4.592 (máy vùng giá) sau khi đã +11,8%/tháng — tin buyback ĐÃ RA và đã được trả giá 4% ngay trong phiên"
+          },
+          {
+            "k": "model",
+            "text": "#18 \"giá phản ánh hết kỳ vọng\" + G1 \"không đuổi tại kháng cự\": phần THẲNG của sóng đã qua — chính TP cũng nói \"có thể chỉnh một chút, lấy đà ở 4.500–4.600 rồi mới đi tiếp\""
           },
           {
             "k": "concl",
-            "text": "Hướng LÊN nhưng chờ nhịp nghỉ 4.43–4.46; xác suất chạm 4.765 trước khi thủng 4.340: 55%"
+            "text": "HƯỚNG LÊN gần chắc chắn về cấu trúc (mọi tầng bằng chứng độc lập cùng chiều) — tranh luận duy nhất là NHỊP. Kèo: chờ 4.430–4.460, stop 4.340 (thủng = hỏng cấu trúc mua), target 4.765 (mép cụm cản lớn 4.765–4.880); chạm 4.765 trước 4.340: 55%"
+          },
+          {
+            "k": "concl",
+            "text": "Điều kiện tự sửa (ghi trước): vàng đóng TUẦN vượt 4.600 mà không hề nghỉ → mô hình \"chờ nhịp\" SAI, chuyển sang mua theo đà một phần và tự chấm điểm trừ"
           }
         ],
         "experts": [

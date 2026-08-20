@@ -222,6 +222,20 @@ Kinh doanh sữa 13 năm → đọc sale-in/sale-out của Apple; sống ở M�
 **I7. Tự tham chiếu track record có địa chỉ**
 "Xem lại Tập 36, 37 — tôi là người đầu tiên nói dầu hồi phục" (133 lần/19 video) — mỗi call mới đều neo vào call cũ CÓ SỐ TẬP để kiểm chứng; công khai số tiền thật (76.000 đô short SpaceX trong Telegram); công khai cả lệnh đang lỗ (SCS −12-20%, Lockheed bị thịt 680).
 
+**I8. Consilience — chuẩn "chặt chẽ" của một kèo chính (giải phẫu từ bài vàng 19/08, thêm 20/08 theo phản hồi user)**
+Một kèo chính KHÔNG chặt vì một bước sâu — chặt vì NHIỀU LOẠI bằng chứng ĐỘC LẬP cùng chỉ một hướng, và mọi phản biện dễ thấy bị chặn trước. Checklist 10 tầng của bài vàng 19/08:
+(1) TAPE CHÉO tức thì — phản ứng đồng bộ ≥4 tài sản quanh sự kiện là "phiếu bầu" của thị trường thật;
+(2) CON SỐ ĐƯỢC NEO SO SÁNH — mỗi số đứng cạnh một mốc quen (lãi nợ vs ngân sách quốc phòng; Trump = 30% tổng nợ 50 đời tổng thống);
+(3) CƠ CHẾ cung–cầu + chặn trước cách hiểu sai ("lợi suất tăng KHÔNG phải vì kinh tế tốt");
+(4) BÓC BẢN CHẤT TIN bằng chuỗi: định nghĩa lại → ẩn dụ đời thường → tên học thuật (buyback → tráo bài/lấy ngắn cắn dài → financial repression);
+(5) NHÂN CHỨNG QUYỀN UY kèm thái độ riêng — trích Dimon nhưng phản biện một phần;
+(6) CẦU NỐI ĐỊNH GIÁ nối hai vế luận điểm thành một chuỗi (E/P 3-4% < 5,2% → chứng sập VÀ vàng lên là một câu chuyện);
+(7) KỊCH BẢN ĐUÔI CÓ TIỀN LỆ (FDIC 300 tỷ + LDI Anh 2022);
+(8) HÀNH VI SMART MONEY ("thị trường rất thông minh — giới siêu giàu hiểu đô bị pha loãng");
+(9) LOẠI TRỪ ĐỐI THỦ — tài sản thắng vì mọi lựa chọn thay thế bị loại từng cái;
+(10) CHỐT BẰNG HÀNH ĐỘNG + track record hai đầu (mua từ đâu, bán tới đâu) + nhịp ngắn hạn.
+ÁP DỤNG CHO CLAUDE: kèo CHÍNH (vàng, CK Mỹ, VN-Index...) phải đủ ≥7/10 tầng; kèo phụ được phép 4-5 bước. Đã nâng thẻ Vàng trên trang AI làm mẫu (10 tầng).
+
 ---
 
 ## PHẦN B — ĐỐI CHIẾU SCORECARD: MÔ HÌNH NÀO ĂN TIỀN, MÔ HÌNH NÀO HAY SAI

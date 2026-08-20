@@ -73,3 +73,6 @@ số 2) → dòng 8 đổi thành ↑, chấm SAI dòng cũ theo quy ước 4.
 | C1-08 | FTSE rổ | Đóng cửa 26/08 thấp hơn đỉnh cụm phiên 21–25/08 ≥1% | 26/08 | ĐANG MỞ |
 
 *Chấm bài: khi có video tuần mới của TP (22–24/08) đối chiếu phần dự đoán; toàn bảng hướng chấm 19/09.*
+
+---
+**Ghi chú 20/08 (tối) — nâng chuẩn suy luận theo phản hồi user:** so với bài vàng 19/08 của TP, suy luận của Claude bị mỏng (5 bước vs 10 tầng bằng chứng độc lập). Đã giải phẫu chuẩn "chặt chẽ" thành mô hình **I8 Consilience** trong thư viện (10 tầng: tape chéo, số neo so sánh, cơ chế, bóc bản chất tin, nhân chứng + thái độ, cầu nối định giá, tiền lệ, smart money, loại trừ đối thủ, hành động hai đầu). Quy ước mới: kèo CHÍNH phải đủ ≥7/10 tầng; đã nâng thẻ Vàng trên trang AI làm mẫu. Các thẻ chính còn lại (CK Mỹ, VN-Index) nâng ở kỳ cập nhật tới.

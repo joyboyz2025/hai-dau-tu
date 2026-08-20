@@ -28,6 +28,8 @@ const SERIES = [
   { id: 'wti',    name: 'Dầu WTI',          unit: 'USD',    src: 'yahoo', code: 'CL=F' },
   { id: 'brent',  name: 'Dầu Brent',        unit: 'USD',    src: 'yahoo', code: 'BZ=F' },
   { id: 'usdvnd', name: 'USD/VND',          unit: 'VND',    src: 'yahoo', code: 'VND=X' },
+  { id: 'btc',    name: 'Bitcoin',          unit: 'USD',    src: 'yahoo', code: 'BTC-USD' },
+  { id: 'spx',    name: 'S&P 500',          unit: '',       src: 'yahoo', code: '^GSPC' },
 ];
 
 // Ngưỡng bám mô hình trong brain/thai-pham-mental-models.md — cập nhật khi kèo đổi.

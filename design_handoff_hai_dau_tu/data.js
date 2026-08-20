@@ -14740,5 +14740,536 @@ window.HDT_DATA = {
         ]
       }
     ]
+  },
+  "ai": {
+    "updated": "20/08/2026",
+    "entryRef": "Nhận định mù #1 · brain/claude-calls.md · hạn chấm 19/09",
+    "note": "Claude tự dựng từ dữ liệu thô (lợi suất, khối ngoại, độ rộng thị trường, vùng giá, Polymarket) qua thư viện 55 mô hình tư duy học từ Thái Phạm — viết TRƯỚC khi xem nội dung mới của các chuyên gia, sau đó đối chiếu để học. Chưa tính vào bảng điểm chung.",
+    "board": [
+      {
+        "id": "vang",
+        "group": "Thế giới",
+        "asset": "Vàng",
+        "arrow": "up",
+        "arrowLabel": "TĂNG — có nhịp nghỉ",
+        "confidence": "vừa",
+        "horizon": "4 tuần",
+        "headline": "Trung hạn còn lên, nhưng đừng đuổi giá ở 4.55x — dễ có nhịp rung về 4.43–4.46 trước",
+        "reasoning": [
+          {
+            "k": "data",
+            "text": "Vàng 4.551, +11,8%/tháng — đang đứng NGAY cụm kháng cự 4.556–4.592 (máy vùng giá); DXY −2,4%/tháng; lợi suất 30Y 5,28%"
+          },
+          {
+            "k": "model",
+            "text": "A3 — Fed mất uy tín: tiền rời đô sang vàng → xu hướng trung hạn LÊN còn nguyên"
+          },
+          {
+            "k": "model",
+            "text": "#18 \"giá phản ánh hết kỳ vọng\": tin debt buyback ĐÃ RA và giá đã chạy 12% — phần dễ đã qua"
+          },
+          {
+            "k": "model",
+            "text": "G1 \"chỉ đánh tại mốc đặt sẵn\": mua đuổi ngay kháng cự sau cú chạy dài là vi phạm kỷ luật"
+          },
+          {
+            "k": "concl",
+            "text": "Hướng LÊN nhưng chờ nhịp nghỉ 4.43–4.46; xác suất chạm 4.765 trước khi thủng 4.340: 55%"
+          }
+        ],
+        "experts": [
+          {
+            "eid": "thai-pham",
+            "rel": "part",
+            "relLabel": "ĐỒNG HƯỚNG — ông mạnh tay hơn",
+            "note": "Ông mua từ 4.078, nhắm 5.300–5.600, vàng tối thiểu 30% danh mục; Claude cùng hướng nhưng đòi nhịp nghỉ trước. Nếu vàng xuyên thẳng không nghỉ → Claude sai khoản \"tôn trọng đà\"."
+          }
+        ]
+      },
+      {
+        "id": "ck-my",
+        "group": "Thế giới",
+        "asset": "Chứng khoán Mỹ",
+        "arrow": "down",
+        "arrowLabel": "NGHIÊNG ĐIỀU CHỈNH",
+        "confidence": "vừa (60%)",
+        "horizon": "đến 15/10",
+        "headline": "Lình xình phân phối rồi gãy một nhịp ≥8% — nhưng không sập thẳng vì có bàn tay giữ trụ",
+        "reasoning": [
+          {
+            "k": "data",
+            "text": "S&P 7.708 — cách đỉnh 52 tuần (7.817) đúng 1,4%, cụm kháng cự kép 7.794–7.817; margin/vốn hóa 1,4% ngang đỉnh 2018"
+          },
+          {
+            "k": "data",
+            "text": "Lợi suất 30Y 5,28% (trên mốc 5,2 \"định giá lại\"); IPO đã hút ~250 tỷ đô tiền thật khỏi thị trường"
+          },
+          {
+            "k": "model",
+            "text": "D4 margin-đỉnh + D1 IPO cascade + C4 seasonality bầu cử giữa kỳ (giảm 17–21% sau tháng 7)"
+          },
+          {
+            "k": "model",
+            "text": "C2 ngược chiều: Trump cần chỉ số đẹp tới T11 → kéo trụ thay phiên → không sập thẳng"
+          },
+          {
+            "k": "concl",
+            "text": "Chỉnh ≥8% từ đỉnh trước 15/10: 60% · đi ngang 7.400–7.800: 30% · vượt 8.000: 10%"
+          }
+        ],
+        "experts": [
+          {
+            "eid": "thai-pham",
+            "rel": "agree",
+            "relLabel": "ĐỒNG THUẬN",
+            "note": "Ông giữ short 2/3 vị thế US500, cảnh báo \"định giá lại mạnh\" khi 30Y phá 5,2%."
+          },
+          {
+            "eid": "lcg-huy",
+            "rel": "diff",
+            "relLabel": "NGƯỢC (khung thời gian khác)",
+            "note": "DCA đều vào quỹ chỉ số bất kể đỉnh/đáy — anh nhìn 20 năm, Claude nhìn 8 tuần: hai câu hỏi khác nhau."
+          }
+        ]
+      },
+      {
+        "id": "cong-nghe-my",
+        "group": "Thế giới",
+        "asset": "Công nghệ / AI Mỹ",
+        "arrow": "down",
+        "arrowLabel": "YẾU NHẤT THỊ TRƯỜNG",
+        "confidence": "cao",
+        "horizon": "4–8 tuần",
+        "headline": "Nhóm gãy trước và hồi yếu nhất — dư cung capex, AI Trung Quốc giá rẻ, lock-up xả dần",
+        "reasoning": [
+          {
+            "k": "data",
+            "text": "Meta/XAI phải cho thuê lại công suất tính toán; Kimi K3 ngang model Mỹ với giá 60%; SpaceX còn ~85% cổ phiếu chờ mở khóa đến T5/2027"
+          },
+          {
+            "k": "model",
+            "text": "D7 \"người XÂY bắt đầu BÁN\" = tín hiệu dư cung capex → đỉnh chu kỳ bán dẫn"
+          },
+          {
+            "k": "model",
+            "text": "D3 lock-up cascade: nguồn cung cổ phiếu tăng dần đè giá suốt nhiều tháng"
+          },
+          {
+            "k": "concl",
+            "text": "Tránh bắt đáy nhóm AI/chip; nhịp hồi là để thoát, không phải để vào"
+          }
+        ],
+        "experts": [
+          {
+            "eid": "thai-pham",
+            "rel": "agree",
+            "relLabel": "ĐỒNG THUẬN",
+            "note": "Ông đang short chuỗi chips + cyber security, đã chốt lời nhiều lần từ tháng 7."
+          }
+        ]
+      },
+      {
+        "id": "loi-suat",
+        "group": "Thế giới",
+        "asset": "Lợi suất Mỹ dài hạn",
+        "arrow": "warn",
+        "arrowLabel": "NEO CAO — DỐC THÊM",
+        "confidence": "cao",
+        "horizon": "đến FOMC 16/09",
+        "headline": "Đảo nợ = phát hành ngắn mua dài → đường cong dốc thêm; 30Y vượt 5,4% là chứng Mỹ gãy mạnh",
+        "reasoning": [
+          {
+            "k": "data",
+            "text": "30Y 5,28% (cao nhất từ 2007) · 10Y 4,71% · chênh 30−10 = 0,57đ và đang dốc lên"
+          },
+          {
+            "k": "model",
+            "text": "A2 — Fed kẹt 2 chiều + chủ nợ 40k tỷ đòi premium → lối thoát duy nhất là đảo nợ (đã xảy ra 19/08)"
+          },
+          {
+            "k": "model",
+            "text": "A3 — khi Fed mất uy tín, lợi suất dài là sự thật duy nhất, đừng nhìn quyết định lãi suất"
+          },
+          {
+            "k": "concl",
+            "text": "Cờ hiệu quan trọng nhất bảng: 30Y vượt 5,40% → nâng xác suất CK Mỹ gãy lên 75%"
+          }
+        ],
+        "experts": [
+          {
+            "eid": "thai-pham",
+            "rel": "agree",
+            "relLabel": "ĐỒNG THUẬN",
+            "note": "Đây chính là luận điểm trục video 19/08 của ông — Claude học mô hình này từ ông và dữ liệu xác nhận."
+          }
+        ]
+      },
+      {
+        "id": "dau",
+        "group": "Thế giới",
+        "asset": "Dầu",
+        "arrow": "side",
+        "arrowLabel": "ĐI NGANG VÙNG CAO",
+        "confidence": "cao (70%)",
+        "horizon": "đến 31/10",
+        "headline": "WTI kẹt trong 80–92: sàn cứng vì kho dự trữ cạn, trần vì Trump cần dầu hạ trước bầu cử",
+        "reasoning": [
+          {
+            "k": "data",
+            "text": "WTI 84,8 · Brent 92,2 · SPR Mỹ thấp nhất từ 1983 (60 triệu thùng) · tàu qua Hormuz còn 13/ngày (bình thường ~130)"
+          },
+          {
+            "k": "model",
+            "text": "B2 \"sàn cứng\": G7 buộc phải mua lại kho — người bán không dại bán rẻ → khó thủng 78"
+          },
+          {
+            "k": "model",
+            "text": "C2 \"trần bầu cử\": lạm phát cao làm mất Thượng viện → Trump ép giá xuống trước T11"
+          },
+          {
+            "k": "concl",
+            "text": "Đóng tuần trong 80–92: 70% · vọt >100 nếu leo thang lớn: 20% · thủng 78: 10%"
+          }
+        ],
+        "experts": [
+          {
+            "eid": "thai-pham",
+            "rel": "agree",
+            "relLabel": "ĐỒNG THUẬN",
+            "note": "Ông: \"dầu neo cao đến hết tháng 10, khó về 60–65, chỉ hạ khi Dân chủ nắm cả hai viện.\""
+          }
+        ]
+      },
+      {
+        "id": "btc",
+        "group": "Thế giới",
+        "asset": "Bitcoin",
+        "arrow": "side",
+        "arrowLabel": "CHẠM TRẦN RỒI QUAY ĐẦU",
+        "confidence": "vừa",
+        "horizon": "4 tuần",
+        "headline": "Đang 69,5k — đúng mép trần \"banana lần 3\" (71–72k); nhịp hồi thiếu tiền tổ chức, khó vượt bền",
+        "reasoning": [
+          {
+            "k": "data",
+            "text": "BTC 69.529, +9,7%/tuần trong khi thanh khoản mỏng; tổ chức rút ròng từ tháng 6"
+          },
+          {
+            "k": "model",
+            "text": "G3 \"phân rã nhịp tăng\": hồi do đóng lệnh short + thanh khoản mỏng ≠ dòng tiền mới → sẽ trả lại"
+          },
+          {
+            "k": "model",
+            "text": "Mẫu banana/parabol: chuối lần 3 từ 57,8k dự kiến cụt ở 71–72k"
+          },
+          {
+            "k": "concl",
+            "text": "Không phải năm của BTC — chạm 71–72k mà không có volume tổ chức thì quay xuống"
+          }
+        ],
+        "experts": [
+          {
+            "eid": "thai-pham",
+            "rel": "agree",
+            "relLabel": "ĐỒNG THUẬN",
+            "note": "Ông: \"chỉ là hồi ngắn hạn — banana lần 3, BTC không thay được vàng.\""
+          }
+        ]
+      },
+      {
+        "id": "dxy",
+        "group": "Thế giới",
+        "asset": "Đô Mỹ (DXY)",
+        "arrow": "down",
+        "arrowLabel": "YẾU TIẾP",
+        "confidence": "vừa",
+        "horizon": "4 tuần",
+        "headline": "Tiền đang rời đô sang vàng — đảo nợ và nghi ngờ uy tín Fed bào mòn đồng bạc xanh",
+        "reasoning": [
+          {
+            "k": "data",
+            "text": "DXY 98,76 · −2,4%/tháng · diễn ra SONG SONG với vàng +11,8% — cùng một dòng chảy"
+          },
+          {
+            "k": "model",
+            "text": "A2/A3 — đảo nợ + Fed nói không làm → trái chủ và thị trường bớt tin đồng đô"
+          },
+          {
+            "k": "concl",
+            "text": "DXY yếu tiếp trừ khi Fed bất ngờ diều hâu thật (tăng lãi T9 — xác suất chỉ 26,5%)"
+          }
+        ],
+        "experts": [
+          {
+            "eid": "thai-pham",
+            "rel": "agree",
+            "relLabel": "ĐỒNG THUẬN",
+            "note": "Ông dẫn Jamie Dimon: đô sẽ mất vị thế dự trữ số 1 — đã mất ngôi vào tay vàng."
+          }
+        ]
+      },
+      {
+        "id": "vn-index",
+        "group": "Việt Nam",
+        "asset": "VN-Index",
+        "arrow": "side",
+        "arrowLabel": "DẬP DÌNH 1.700–1.780",
+        "confidence": "thấp-vừa (45%)",
+        "horizon": "đến 30/09",
+        "headline": "Chưa có nền cho sóng thật: độ rộng xấu, ngoại bán 15 phiên, index bị VIC/VHM chi phối — thận trọng hơn Thái Phạm",
+        "reasoning": [
+          {
+            "k": "data",
+            "text": "VN-Index 1.736; độ rộng: 60,7% mã downtrend, chỉ 25,7% trên MA200 (máy đo 382 mã HOSE)"
+          },
+          {
+            "k": "data",
+            "text": "Khối ngoại bán ròng 9/10 phiên, lũy kế −2.878 tỷ/15 phiên; thanh khoản vẫn đáy năm"
+          },
+          {
+            "k": "model",
+            "text": "F2 \"điểm số là mặt nạ, độ rộng là sự thật\" + F3 VIC/VHM neo cao phi thị trường"
+          },
+          {
+            "k": "concl",
+            "text": "Dập dình 1.700–1.780: 45% · thủng 1.700 test 1.635–1.687: 30% · vượt 1.800 bền: 25%. Điều kiện tự đảo: ngoại MUA ròng 5 phiên liên tiếp → nghiêng vượt 1.800"
+          }
+        ],
+        "experts": [
+          {
+            "eid": "thai-pham",
+            "rel": "diff",
+            "relLabel": "NGƯỢC MỘT PHẦN",
+            "note": "Ông full cổ phiếu từ 05/08 với thesis \"không gió ngược đến T11\"; Claude cho rằng độ rộng và dòng ngoại CHƯA xác nhận thesis đó. Đây là kèo đối chiếu chính của tháng."
+          },
+          {
+            "eid": "ck-5-phut",
+            "rel": "part",
+            "relLabel": "GẦN CLAUDE",
+            "note": "Anh: thanh khoản thấp có thể hết quý 3 sang quý 4 — tích lũy cho dài hạn chứ không kỳ vọng sóng ngay."
+          },
+          {
+            "eid": "azfin",
+            "rel": "part",
+            "relLabel": "LẠC QUAN DÀI HẠN",
+            "note": "Giảm sâu là cơ hội tích sản giá trị — khung nhiều năm, không mâu thuẫn trực tiếp với hướng 6 tuần."
+          }
+        ]
+      },
+      {
+        "id": "ngan-hang",
+        "group": "Việt Nam",
+        "asset": "Ngân hàng",
+        "arrow": "side",
+        "arrowLabel": "PHÂN HÓA",
+        "confidence": "vừa",
+        "horizon": "4 tuần",
+        "headline": "Không phải sóng ngành — HDB/OCB/STB đi lên trong khi VCB/BID/CTG/TCB còn downtrend",
+        "reasoning": [
+          {
+            "k": "data",
+            "text": "Máy quét 19 mã bank: uptrend HDB/OCB/STB; downtrend VCB/BID/CTG/TCB/VPB; STB sát kháng cự 76,1 kèm cờ CỤM ĐỈNH"
+          },
+          {
+            "k": "model",
+            "text": "Khi trend ngành chia đôi → chọn từng mã theo vùng giá, không đặt cược cả rổ"
+          },
+          {
+            "k": "concl",
+            "text": "Trung tính có chọn lọc; chờ nhóm quốc doanh (VCB/BID) xác nhận đáy mới nói chuyện sóng ngành"
+          }
+        ],
+        "experts": [
+          {
+            "eid": "quang-dung",
+            "rel": "part",
+            "relLabel": "KHÁC KHUNG",
+            "note": "Anh: định giá cả ngành rẻ hơn chính nó 6 năm (LNST +25,4%) — nhìn giá trị; Claude nhìn trend. Cả hai có thể cùng đúng ở hai khung thời gian."
+          },
+          {
+            "eid": "thai-pham",
+            "rel": "part",
+            "relLabel": "LẠC QUAN HƠN",
+            "note": "Ông giữ BID/CTG/VCB/TCB/MBB — \"vùng giá trị, cứ cầm\"."
+          }
+        ]
+      },
+      {
+        "id": "thep",
+        "group": "Việt Nam",
+        "asset": "Thép",
+        "arrow": "down",
+        "arrowLabel": "GIẢM",
+        "confidence": "cao",
+        "horizon": "4 tuần",
+        "headline": "Cả nhóm downtrend, HPG thủng nền 23 về 21,3 — thêm rủi ro cạnh tranh Vin Steel phía trước",
+        "reasoning": [
+          {
+            "k": "data",
+            "text": "HPG 21,3 (downtrend, MA50 22,4 < MA200 23,7) · NKG/HSG cùng downtrend · hỗ trợ kế 20,1"
+          },
+          {
+            "k": "model",
+            "text": "F5 \"cạnh tranh với Vin thì khó\" — thép Vin Steel sẽ giành thầu các đại dự án"
+          },
+          {
+            "k": "concl",
+            "text": "Chưa bắt đáy nhóm thép; HPG cần giữ 20,1 và xây lại nền nhiều tuần mới đáng nhìn"
+          }
+        ],
+        "experts": [
+          {
+            "eid": "thai-pham",
+            "rel": "agree",
+            "relLabel": "ĐỒNG THUẬN",
+            "note": "Ông tránh HPG từ tháng 7 vì nguồn tin Vin Steel."
+          },
+          {
+            "eid": "quang-dung",
+            "rel": "diff",
+            "relLabel": "NGƯỢC",
+            "note": "Anh kỳ vọng HPG lợi nhuận +50% năm 2026 và khuyên tích sản — ca chia rẽ HPG vẫn mở."
+          }
+        ]
+      },
+      {
+        "id": "ck-nganh",
+        "group": "Việt Nam",
+        "asset": "CP chứng khoán",
+        "arrow": "down",
+        "arrowLabel": "GIẢM",
+        "confidence": "vừa",
+        "horizon": "4 tuần",
+        "headline": "Thanh khoản đáy năm thì ngành môi giới không có cửa — SSI/VCI/VIX/MBS/SHS đồng loạt downtrend",
+        "reasoning": [
+          {
+            "k": "data",
+            "text": "Máy quét: cả 6 mã nhóm chứng khoán trong Sổ mã đều downtrend; VIX bán ròng ngoại mạnh nhất phiên 20/08 (−58 tỷ)"
+          },
+          {
+            "k": "model",
+            "text": "Doanh thu ngành = f(thanh khoản) — thanh khoản 18–19k tỷ/phiên so với bình thường 30k"
+          },
+          {
+            "k": "concl",
+            "text": "Tránh; chỉ xem lại khi thanh khoản HOSE vượt 25–30k tỷ vài phiên liên tiếp"
+          }
+        ],
+        "experts": [
+          {
+            "eid": "thai-pham",
+            "rel": "agree",
+            "relLabel": "ĐỒNG THUẬN",
+            "note": "Ông đã cắt toàn bộ vị thế lướt sóng nhóm này từ tháng 7 (\"lướt sóng bị phèo\")."
+          }
+        ]
+      },
+      {
+        "id": "bds",
+        "group": "Việt Nam",
+        "asset": "Bất động sản",
+        "arrow": "down",
+        "arrowLabel": "GIẢM (trừ nhóm Vin neo)",
+        "confidence": "vừa",
+        "horizon": "4 tuần",
+        "headline": "NVL/DIG/DXG/KDH downtrend; VIC/VHM neo cao \"phi thị trường\" — rủi ro rơi nhanh nếu buông trụ",
+        "reasoning": [
+          {
+            "k": "data",
+            "text": "Máy quét: nhóm BĐS ngoài Vin đều downtrend; VIC 203 — hỗ trợ gần nhất cách tận −30,6% (không có nền đỡ)"
+          },
+          {
+            "k": "model",
+            "text": "F3 \"phi thị trường = rủi ro hệ thống\": mã neo cao không nền là mã rơi nhanh nhất khi đổi gió"
+          },
+          {
+            "k": "concl",
+            "text": "Đứng ngoài BĐS niêm yết; riêng BĐS thật thì theo dõi mốc \"cuối 2026 – T3/2027 hết ân hạn lãi suất\" (TP)"
+          }
+        ],
+        "experts": [
+          {
+            "eid": "azfin",
+            "rel": "diff",
+            "relLabel": "NGƯỢC (khung giá trị)",
+            "note": "AzFin: cổ BĐS đang rất rẻ, cơ hội lớn hơn rủi ro với người kiên nhẫn — khung nhiều năm."
+          },
+          {
+            "eid": "thai-pham",
+            "rel": "agree",
+            "relLabel": "ĐỒNG THUẬN",
+            "note": "Ông đã thoát toàn bộ cổ BĐS; khuyên đợi cuối năm và T3/2027 cho BĐS thật."
+          }
+        ]
+      },
+      {
+        "id": "dau-khi-vn",
+        "group": "Việt Nam",
+        "asset": "Dầu khí VN",
+        "arrow": "up",
+        "arrowLabel": "TĂNG NHẸ",
+        "confidence": "vừa",
+        "horizon": "4 tuần",
+        "headline": "Nhóm hiếm hoi có gió xuôi: GAS đứng trên 80 với \"vùng chân không\" ít cản phía trên, BSR uptrend",
+        "reasoning": [
+          {
+            "k": "data",
+            "text": "GAS 82,9 — trên mốc 80; máy vùng giá: 83→110 gần như không có cụm kháng cự (vùng rơi nhanh đầu năm không tạo nền)"
+          },
+          {
+            "k": "data",
+            "text": "Dầu thế giới neo cao 80–92 (xem thẻ Dầu) → đầu ra thuận"
+          },
+          {
+            "k": "model",
+            "text": "Vùng chân không = ít cản → nếu giữ được 80, giá chạy nhanh hơn bình thường"
+          },
+          {
+            "k": "concl",
+            "text": "GAS chạm 90 trước khi thủng 78: 55%; BSR giữ uptrend theo dầu"
+          }
+        ],
+        "experts": [
+          {
+            "eid": "ck-5-phut",
+            "rel": "agree",
+            "relLabel": "ĐỒNG THUẬN",
+            "note": "Anh: GAS breakout lần 2 trong 2 tuần, mua được cả ngày — chờ đóng nến trên 80 để gia tăng."
+          }
+        ]
+      },
+      {
+        "id": "phan-bon",
+        "group": "Việt Nam",
+        "asset": "Phân bón",
+        "arrow": "side",
+        "arrowLabel": "TÍCH LŨY VÙNG ĐÁY",
+        "confidence": "vừa",
+        "horizon": "4 tuần",
+        "headline": "Chưa chạy, chưa gãy — DCM/DPM còn downtrend ngắn hạn nhưng có spring và gap đỡ bên dưới",
+        "reasoning": [
+          {
+            "k": "data",
+            "text": "DCM 30,45 / DPM 21,6 — cả hai còn dưới MA50 nhưng máy phát hiện spring cuối tháng 7 + gap đỡ bên dưới"
+          },
+          {
+            "k": "model",
+            "text": "E3 spring = tạo lập đã thử cung và giữ được nền → tích lũy lành mạnh, không phải phân phối"
+          },
+          {
+            "k": "concl",
+            "text": "Đi ngang tích lũy; kèo lớn của nhóm này là khung THÁNG (mốc T3/2027), không phải khung tuần"
+          }
+        ],
+        "experts": [
+          {
+            "eid": "thai-pham",
+            "rel": "part",
+            "relLabel": "ĐỒNG HƯỚNG DÀI HẠN",
+            "note": "Ông mua mạnh — DCM/DPM chiếm ~25% tài khoản, giữ tới T3/2027, \"điểm mua kỹ thuật vẫn đẹp\". Claude đồng ý về đích, trung tính về nhịp 4 tuần."
+          }
+        ]
+      }
+    ]
   }
 };

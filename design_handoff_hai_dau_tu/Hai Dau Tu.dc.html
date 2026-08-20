@@ -449,7 +449,7 @@ input::placeholder{color:var(--ink-3);}
 /* ── Tab dưới đáy: điều hướng chính trên điện thoại ── */
 .tabbar{display:none;}
 @media (max-width:820px){
-  .tabbar{display:grid;grid-template-columns:repeat(4,1fr);position:fixed;left:0;right:0;bottom:0;z-index:70;
+  .tabbar{display:grid;grid-template-columns:repeat(5,1fr);position:fixed;left:0;right:0;bottom:0;z-index:70;
     background:rgba(250,250,250,.94);backdrop-filter:blur(12px);border-top:1px solid var(--hair);
     padding:6px 4px calc(6px + env(safe-area-inset-bottom));}
   .tabb{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;
@@ -470,6 +470,9 @@ input::placeholder{color:var(--ink-3);}
 .disc>summary:hover{color:var(--ink);}
 .disc-body{padding-top:6px;}
 @media (prefers-reduced-motion:reduce){.disc>summary::after{transition:none;}}
+/* Trang AI — nhận định độc lập của Claude */
+.ai-card{transition:border-color .15s ease, transform .15s ease, box-shadow .15s ease;}
+.ai-card:hover{border-color:var(--ink); transform:translateY(-1px); box-shadow:0 8px 24px rgba(0,0,0,0.07);}
 </style>
 </helmet>
 
@@ -478,6 +481,7 @@ input::placeholder{color:var(--ink-3);}
   <symbol id="i-read" viewBox="0 0 18 18" fill="none"><path d="M3 4.2h4.6a2.4 2.4 0 0 1 2.4 2.4V14a2 2 0 0 0-1.6-1.4H3z"/><path d="M15 4.2h-4.6A2.4 2.4 0 0 0 8 6.6V14a2 2 0 0 1 1.6-1.4H15z"/></symbol>
   <symbol id="i-tickers" viewBox="0 0 18 18" fill="none"><path d="M2.6 12.6 6.6 8.2l2.8 2.4 5.4-6"/><path d="M11.4 4.6h3.6v3.6"/></symbol>
   <symbol id="i-record" viewBox="0 0 18 18" fill="none"><path d="M4.4 2.9h9.2v12.2H4.4z"/><path d="M6.9 6.4h4.2M6.9 9h4.2M6.9 11.6h2.4"/></symbol>
+  <symbol id="i-ai" viewBox="0 0 18 18" fill="none"><path d="M9 2.4v3.2M9 12.4v3.2M2.4 9h3.2M12.4 9h3.2M4.6 4.6l2.1 2.1M11.3 11.3l2.1 2.1M13.4 4.6l-2.1 2.1M6.7 11.3l-2.1 2.1"/></symbol>
 </defs></svg>
 <div style="font-family:var(--font); color:var(--ink); min-height:100vh; background:var(--base);">
 
@@ -547,6 +551,98 @@ input::placeholder{color:var(--ink-3);}
       </div>
     </sc-for>
   </div>
+
+  <!-- ===================== AI — NHẬN ĐỊNH ĐỘC LẬP CỦA CLAUDE ===================== -->
+  <sc-if value="{{ isAi }}" hint-placeholder-val="{{ false }}">
+    <div data-screen-label="AI" style="max-width:1180px; margin:0 auto; padding:28px 20px 72px; display:flex; flex-direction:column; gap:26px;">
+      <div>
+        <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+          <h1 style="font-size:26px; font-weight:650; letter-spacing:-0.4px; margin:0;">Claude — nhận định độc lập</h1>
+          <span style="font-size:10px; font-weight:700; letter-spacing:1px; padding:4px 9px; border-radius:999px; background:var(--warn-wash); color:var(--warn);">THỬ NGHIỆM</span>
+        </div>
+        <div style="font-size:13.5px; color:var(--ink-2); margin-top:8px; max-width:820px; line-height:1.6;">{{ aiNote }}</div>
+        <div style="font-size:12px; color:var(--ink-3); margin-top:6px;">Cập nhật {{ aiUpdated }} · {{ aiEntryRef }} · bấm vào một thẻ để xem sơ đồ suy luận</div>
+      </div>
+      <sc-for list="{{ aiGroups }}" as="ag" hint-placeholder-count="2">
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <span style="font-size:12px; font-weight:650; letter-spacing:1.4px; text-transform:uppercase; color:var(--ink-3);">{{ ag.label }}</span>
+            <span style="font-size:11px; color:var(--ink-3); background:var(--hair); border-radius:999px; padding:1px 8px;">{{ ag.count }}</span>
+          </div>
+          <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(252px, 1fr)); gap:12px;">
+            <sc-for list="{{ ag.cards }}" as="c" hint-placeholder-count="7">
+              <div onClick="{{ c.open }}" role="button" tabindex="0" class="ai-card tk-pop" style="animation-delay:{{ c.delay }}; background:var(--white); border:1px solid var(--line); border-radius:14px; padding:16px; cursor:pointer; display:flex; flex-direction:column; gap:9px;">
+                <div style="display:flex; align-items:center; gap:11px;">
+                  <div style="width:40px; height:40px; flex-shrink:0; border-radius:12px; background:{{ c.aBg }}; color:{{ c.aColor }}; display:flex; align-items:center; justify-content:center; font-size:21px; font-weight:700;">{{ c.arrow }}</div>
+                  <div style="flex:1; min-width:0;">
+                    <div style="font-size:16.5px; font-weight:650; letter-spacing:-0.2px; line-height:1.2;">{{ c.asset }}</div>
+                    <div style="font-size:10.5px; color:{{ c.aColor }}; font-weight:700; letter-spacing:0.5px; margin-top:2px;">{{ c.arrowLabel }}</div>
+                  </div>
+                </div>
+                <div style="font-size:12.5px; color:var(--ink-2); line-height:1.55;">{{ c.headline }}</div>
+                <div style="display:flex; align-items:center; gap:7px; font-size:11px; color:var(--ink-3); margin-top:auto; padding-top:2px;">
+                  <span>Tin cậy: {{ c.confidence }}</span><span>·</span><span>{{ c.horizon }}</span>
+                  <span style="margin-left:auto; color:var(--ink); font-weight:600;">Suy luận →</span>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+      <div style="font-size:11.5px; color:var(--ink-3); line-height:1.6; border-top:1px solid var(--line); padding-top:14px;">Trang thử nghiệm — nhận định do AI tự dựng và CHƯA tính vào bảng điểm chuyên gia. Mỗi kỳ sẽ được chấm ĐÚNG/SAI công khai và đối chiếu với video chuyên gia ra sau. Chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</div>
+    </div>
+    <sc-if value="{{ hasAiPop }}" hint-placeholder-val="{{ false }}">
+      <div onClick="{{ closeAi }}" class="no-print" style="position:fixed; inset:0; background:rgba(20,20,20,0.5); z-index:120; display:flex; align-items:flex-start; justify-content:center; padding:26px 16px; overflow-y:auto;">
+        <div onClick="{{ aiStop }}" style="background:var(--white); border-radius:18px; max-width:680px; width:100%; padding:24px; box-shadow:0 24px 70px rgba(0,0,0,0.28); margin:auto 0;">
+          <div style="display:flex; align-items:flex-start; gap:13px;">
+            <div style="width:46px; height:46px; flex-shrink:0; border-radius:13px; background:{{ aiPop.aBg }}; color:{{ aiPop.aColor }}; display:flex; align-items:center; justify-content:center; font-size:24px; font-weight:700;">{{ aiPop.arrow }}</div>
+            <div style="flex:1; min-width:0;">
+              <div style="display:flex; align-items:baseline; gap:9px; flex-wrap:wrap;">
+                <div style="font-size:20px; font-weight:650; letter-spacing:-0.3px;">{{ aiPop.asset }}</div>
+                <div style="font-size:11px; color:{{ aiPop.aColor }}; font-weight:700; letter-spacing:0.5px;">{{ aiPop.arrowLabel }}</div>
+              </div>
+              <div style="font-size:13px; color:var(--ink-2); line-height:1.55; margin-top:4px;">{{ aiPop.headline }}</div>
+              <div style="font-size:11px; color:var(--ink-3); margin-top:5px;">Tin cậy: {{ aiPop.confidence }} · Khung: {{ aiPop.horizon }}</div>
+            </div>
+            <div onClick="{{ closeAi }}" role="button" tabindex="0" style="flex-shrink:0; width:30px; height:30px; border-radius:9px; background:var(--hair); color:var(--ink-2); display:flex; align-items:center; justify-content:center; font-size:15px; cursor:pointer;">✕</div>
+          </div>
+          <div style="margin-top:20px;">
+            <div style="font-size:11px; font-weight:650; letter-spacing:1.3px; text-transform:uppercase; color:var(--ink-3); margin-bottom:10px;">Sơ đồ suy luận</div>
+            <sc-for list="{{ aiPop.steps }}" as="stp" hint-placeholder-count="4">
+              <div>
+                <div style="display:flex; gap:10px; align-items:flex-start; background:var(--surface); border:1px solid var(--line); border-radius:11px; padding:10px 12px;">
+                  <span style="flex-shrink:0; font-size:9.5px; font-weight:700; letter-spacing:0.8px; padding:3px 8px; border-radius:6px; background:{{ stp.kindBg }}; color:{{ stp.kindColor }}; margin-top:1px;">{{ stp.kindLabel }}</span>
+                  <span style="font-size:12.5px; line-height:1.55; color:var(--ink);">{{ stp.text }}</span>
+                </div>
+                <sc-if value="{{ stp.notLast }}" hint-placeholder-val="{{ false }}">
+                  <div style="text-align:center; color:var(--ink-3); font-size:13px; line-height:1; padding:3px 0;">↓</div>
+                </sc-if>
+              </div>
+            </sc-for>
+          </div>
+          <sc-if value="{{ aiPop.hasExperts }}" hint-placeholder-val="{{ false }}">
+            <div style="margin-top:20px;">
+              <div style="font-size:11px; font-weight:650; letter-spacing:1.3px; text-transform:uppercase; color:var(--ink-3); margin-bottom:10px;">So với chuyên gia</div>
+              <div style="display:flex; flex-direction:column; gap:8px;">
+                <sc-for list="{{ aiPop.experts }}" as="ex" hint-placeholder-count="2">
+                  <div style="display:flex; gap:10px; align-items:flex-start; border:1px solid var(--line); border-radius:11px; padding:10px 12px;">
+                    <div style="width:30px; height:30px; flex-shrink:0; border-radius:999px; background:var(--ink); color:var(--white); display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:600;">{{ ex.initials }}</div>
+                    <div style="flex:1; min-width:0;">
+                      <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                        <span style="font-size:12.5px; font-weight:650;">{{ ex.name }}</span>
+                        <span style="font-size:9.5px; font-weight:700; letter-spacing:0.6px; padding:2px 8px; border-radius:999px; background:{{ ex.relBg }}; color:{{ ex.relColor }};">{{ ex.relLabel }}</span>
+                      </div>
+                      <div style="font-size:12px; color:var(--ink-2); line-height:1.5; margin-top:3px;">{{ ex.note }}</div>
+                    </div>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+      </div>
+    </sc-if>
+  </sc-if>
 
   <!-- ===================== TỔNG QUAN ===================== -->
   <sc-if value="{{ isDashboard }}" hint-placeholder-val="{{ true }}">
@@ -2134,7 +2230,7 @@ class Component extends DCLogic {
     let logged = false;
     try { logged = localStorage.getItem('hdt_auth') === '1'; } catch (e) {}
     const firstTk = (window.HDT_DATA && window.HDT_DATA.tickers && window.HDT_DATA.tickers[0]) || {};
-    this.state = { logged, screen: 'dashboard', pwError: false, srcType: 0, added: [], updIdx: 0, expertId: 'thai-pham', q: '', assetKey: 'vn', callsExpert: 'all', chartSym: '', chartLabel: '', scExpert: 'all', tickerKey: firstTk.key || '', bncOnly: false, bncPrices: {}, vnBars: {}, tkView: 'industry', tkRegion: 'all', tkIndustry: 'all', tkBasket: 'all', tkTrade: 'all', ctxTopic: 0, mkt: 'vn' };
+    this.state = { logged, screen: 'dashboard', pwError: false, srcType: 0, added: [], updIdx: 0, expertId: 'thai-pham', q: '', assetKey: 'vn', callsExpert: 'all', chartSym: '', chartLabel: '', scExpert: 'all', tickerKey: firstTk.key || '', bncOnly: false, bncPrices: {}, vnBars: {}, tkView: 'industry', tkRegion: 'all', tkIndustry: 'all', tkBasket: 'all', tkTrade: 'all', ctxTopic: 0, mkt: 'vn', aiOpen: '' };
     this.pwRef = React.createRef();
     this.nameRef = React.createRef();
     this.channelRef = React.createRef();
@@ -2217,15 +2313,16 @@ class Component extends DCLogic {
       { key: 'read',    label: 'Đọc',     home: 'briefing',  subs: [
           { k: 'briefing', l: 'Bản tin' }, { k: 'experts-list', l: 'Chuyên gia' }, { k: 'context', l: 'Bối cảnh' } ] },
       { key: 'tickers', label: 'Mã',      home: 'tickers',   subs: [] },
+      { key: 'ai',      label: 'AI',      home: 'ai',        subs: [] },
       { key: 'record',  label: 'Hồ sơ',   home: 'scorecard', subs: [
           { k: 'scorecard', l: 'Bảng điểm' }, { k: 'calls', l: 'Khuyến nghị' },
           { k: 'assets', l: 'Tài sản' }, { k: 'history', l: 'Lịch sử' }, { k: 'admin', l: 'Quản lý' } ] }
     ];
     const SCREEN_GROUP = { dashboard:'today', actions:'today',
-      briefing:'read', 'experts-list':'read', expert:'read', context:'read', tickers:'tickers',
+      briefing:'read', 'experts-list':'read', expert:'read', context:'read', tickers:'tickers', ai:'ai',
       scorecard:'record', calls:'record', assets:'record', history:'record', admin:'record' };
     const curGroup = SCREEN_GROUP[s.screen] || 'today';
-    const ICON = { today:'#i-today', read:'#i-read', tickers:'#i-tickers', record:'#i-record' };
+    const ICON = { today:'#i-today', read:'#i-read', tickers:'#i-tickers', ai:'#i-ai', record:'#i-record' };
     const navItems = GROUPS.map(g => ({
       label: g.label,
       cls: curGroup === g.key ? 'navb navb--on' : 'navb',
@@ -3785,7 +3882,58 @@ return {
     });
     const updMindCount = updMind.reduce((n, b) => n + b.n, 0);
 
+    // ══ Trang AI — nhận định độc lập của Claude (HDT.ai, đồng bộ từ brain/claude-calls.md) ══
+    const AI = HDT.ai || { updated: '', note: '', entryRef: '', board: [] };
+    const AI_ARROW = {
+      up:   { ch: '↑', color: 'var(--up)',    bg: 'var(--up-wash)' },
+      down: { ch: '↓', color: 'var(--down)',  bg: 'var(--down-wash)' },
+      side: { ch: '→', color: 'var(--ink-2)', bg: 'var(--wait-wash)' },
+      warn: { ch: '⚠', color: 'var(--warn)',  bg: 'var(--warn-wash)' }
+    };
+    const AI_STEP = {
+      data:  { kindLabel: 'DỮ LIỆU',  kindBg: 'var(--hair)',      kindColor: 'var(--ink-2)' },
+      model: { kindLabel: 'MÔ HÌNH',  kindBg: 'var(--warn-wash)', kindColor: 'var(--warn)' },
+      concl: { kindLabel: 'KẾT LUẬN', kindBg: 'var(--ink)',       kindColor: 'var(--white)' }
+    };
+    const AI_REL = {
+      agree: { relBg: 'var(--up-wash)',   relColor: 'var(--up)' },
+      diff:  { relBg: 'var(--down-wash)', relColor: 'var(--down)' },
+      part:  { relBg: 'var(--warn-wash)', relColor: 'var(--warn)' }
+    };
+    const aiCard = (b, i) => ({
+      asset: b.asset, headline: b.headline, arrowLabel: b.arrowLabel,
+      confidence: b.confidence, horizon: b.horizon, delay: (i * 45) + 'ms',
+      arrow: (AI_ARROW[b.arrow] || AI_ARROW.side).ch,
+      aColor: (AI_ARROW[b.arrow] || AI_ARROW.side).color,
+      aBg: (AI_ARROW[b.arrow] || AI_ARROW.side).bg,
+      open: () => this.setState({ aiOpen: b.id })
+    });
+    const aiGroups = ['Thế giới', 'Việt Nam'].map(gl => {
+      const cards = AI.board.filter(b => b.group === gl).map(aiCard);
+      return { label: gl, count: cards.length, cards };
+    }).filter(g => g.count > 0);
+    const aiCurB = AI.board.find(b => b.id === s.aiOpen);
+    const aiPop = aiCurB ? {
+      asset: aiCurB.asset, headline: aiCurB.headline, arrowLabel: aiCurB.arrowLabel,
+      confidence: aiCurB.confidence, horizon: aiCurB.horizon,
+      arrow: (AI_ARROW[aiCurB.arrow] || AI_ARROW.side).ch,
+      aColor: (AI_ARROW[aiCurB.arrow] || AI_ARROW.side).color,
+      aBg: (AI_ARROW[aiCurB.arrow] || AI_ARROW.side).bg,
+      steps: (aiCurB.reasoning || []).map((r, i, arr) => ({
+        text: r.text, notLast: i < arr.length - 1, ...(AI_STEP[r.k] || AI_STEP.data)
+      })),
+      experts: (aiCurB.experts || []).map(e => {
+        const ex = HDT.experts[e.eid] || {};
+        return { initials: ex.initials || '?', name: ex.name || e.eid, relLabel: e.relLabel, note: e.note, ...(AI_REL[e.rel] || AI_REL.part) };
+      }),
+      hasExperts: !!(aiCurB.experts && aiCurB.experts.length)
+    } : null;
+
     return {
+      isAi: s.screen === 'ai', aiUpdated: AI.updated, aiNote: AI.note, aiEntryRef: AI.entryRef || '',
+      aiGroups, hasAiPop: !!aiPop, aiPop: aiPop || {},
+      closeAi: () => this.setState({ aiOpen: '' }),
+      aiStop: (e) => { e.stopPropagation(); },
       showLogin: !s.logged, showApp: s.logged,
       isDashboard: s.screen === 'dashboard', isExpertsList: s.screen === 'experts-list',
       isExpert: s.screen === 'expert',

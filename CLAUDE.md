@@ -165,3 +165,10 @@ Ngày 17/08 có 163 hợp đồng TradFi, đối chiếu ra **6 mã mới**: San
 
 ## Tính năng đã có (đừng làm lại)
 Tìm kiếm live không dấu (quét cả tickers/bullets) + lịch sử 5 call của mã; trang Tài sản (timeline theo asset); Khuyến nghị (call tracker + nhãn Cũ); Bảng điểm chuyên gia (tỷ lệ đúng/sai + filter); Điểm mua/bán theo nhóm + chart TradingView nhúng; badge MỚI (localStorage `hdt_seen`); PWA; card "Tuần này" (weekly) — điểm Đồng thuận/Mâu thuẫn đánh số, mục đầu tiên mỗi cột nổi bật nền màu + ★ + chữ đậm hơn (thêm 30/07, xem 7g); Sổ mã — toggle Xem theo Thị trường/Ngành nghề/Giỏ đầu tư + bộ lọc giỏ dài/ngắn hạn/tránh + tag ngành-giỏ trên card + hiệu ứng fade-in so le (thêm 30/07).
+
+## Bộ não / brain (thêm 20/08 — dự án dài hạn "train Claude phân tích", TÁCH RIÊNG khỏi pipeline update)
+Hướng đi: Claude tự ra nhận định trước → đối chiếu video Thái Phạm sau → học từ độ lệch. CHƯA gắn vào quy trình "chạy update" — đang giai đoạn hoàn thiện công cụ, chạy tay từng cái.
+- `brain/phuong-phap-thai-pham.md` — bản đồ giải phẫu phương pháp (8 trụ cột, 10 skill, kiến trúc 3 tầng).
+- `brain/thai-pham-mental-models.md` — **thư viện 55 mô hình nhân quả** khảo cổ từ 22 transcript, đối chiếu scorecard (mô hình nào hay đúng/hay sai), từ điển ẩn dụ, checklist "nhận định mù". Đây là tầng 2 của bộ não; file notes thô kèm bên cạnh.
+- `fetch_macro.js` — công cụ dữ liệu số 1: kéo lợi suất Mỹ 10Y/30Y (FRED), DXY/vàng/WTI/Brent/USDVND (Yahoo) → `data/macro/<series>.json` (merge theo ngày, idempotent). Chạy `node fetch_macro.js` (cần network, ngoài sandbox; `--offline` để chỉ xem dashboard). Dashboard tự flag theo ngưỡng của thư viện mô hình (30Y vs 5,2%, band dầu 78–90, các mốc mua vàng…) — ngưỡng nằm trong CONFIG đầu file, cập nhật khi kèo đổi. Stooq bị chặn bot, đừng thử lại; Yahoo cần User-Agent giả trình duyệt.
+- Công cụ tiếp theo (chưa làm): độ rộng thị trường VN + khối ngoại ròng (VNDirect), máy nhận diện vùng giá trên OHLC, xác suất Polymarket.

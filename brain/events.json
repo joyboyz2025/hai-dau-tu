@@ -1,0 +1,21 @@
+{
+  "_huong_dan": "Lịch sự kiện quan trọng — cập nhật TAY mỗi lần hd update khi transcript nhắc mốc mới. date=YYYY-MM-DD (ngày cuối nếu họp nhiều ngày). approx=true nếu ngày chưa chốt. keo = kèo/mô hình liên quan trong sổ nhận định hoặc thư viện.",
+  "events": [
+    { "date": "2026-08-21", "title": "FTSE Russell công bố rổ chỉ số đại diện VN (~27 mã)", "mkt": "vn", "note": "CK 5 phút: KHÔNG mua theo rổ — quỹ đã gom trước. Mô hình 'mua trước kéo xả'", "keo": "C1-08" },
+    { "date": "2026-09-01", "title": "Chính sách crypto VN hiệu lực — lộ trình sàn được cấp phép", "mkt": "vn", "note": "Thái Phạm gắn mốc này với tỉ giá hạ nhiệt; 6 tháng chuyển đổi" },
+    { "date": "2026-09-04", "title": "Việc làm Mỹ (nonfarm) tháng 8", "mkt": "us", "approx": true, "note": "Tháng 7 âm 23k — số xấu tiếp là Fed hết cửa tăng lãi" },
+    { "date": "2026-09-10", "title": "ECB họp lãi suất", "mkt": "us", "note": "Polymarket 91% tăng 25bps — EU diều hâu hơn Fed" },
+    { "date": "2026-09-11", "title": "CPI Mỹ tháng 8", "mkt": "us", "approx": true, "note": "Dầu +24% tháng 7 bắt đầu ngấm vào số — mô hình A5 lạm phát forward" },
+    { "date": "2026-09-16", "title": "FOMC họp (15–16/9)", "mkt": "us", "note": "Kèo C1-07: giữ nguyên 70% (Polymarket 72,5%). TP: Fed đứng im cả 2026", "keo": "C1-07" },
+    { "date": "2026-09-19", "title": "HẠN CHẤM bảng hướng entry #1 của sổ nhận định", "mkt": "vn", "keo": "entry #1" },
+    { "date": "2026-09-30", "title": "PCE Mỹ tháng 8", "mkt": "us", "approx": true, "note": "Thước đo Fed ưa thích — PCE lõi đang 3,2-3,3%" },
+    { "date": "2026-10-15", "title": "Hạn kèo C1-01 (vàng) + C1-02 (S&P chỉnh ≥8%)", "mkt": "us", "keo": "C1-01, C1-02" },
+    { "date": "2026-10-20", "title": "Mùa BCTC quý 3 VN cao điểm", "mkt": "vn", "approx": true, "note": "Mô hình 'mùa BCTC = mùa short/kiểm chứng' — soi bank trích lập (câu hỏi Quang Dũng)" },
+    { "date": "2026-10-28", "title": "FOMC họp (27–28/10)", "mkt": "us", "note": "Polymarket: giữ nguyên 71,5% / tăng 23,5%" },
+    { "date": "2026-10-31", "title": "TP hẹn: giá dầu neo cao 'đến hết tháng 10'", "mkt": "us", "note": "Mốc kiểm chứng band 85-90 của ông + kèo C1-03", "keo": "C1-03" },
+    { "date": "2026-11-03", "title": "BẦU CỬ GIỮA NHIỆM KỲ MỸ", "mkt": "us", "note": "Mốc trục của mô hình C2/C4: Trump giữ chỉ số + đạp dầu trước mốc này; Iran cược vào kết quả; TP: 'không gió ngược đến T11'" },
+    { "date": "2026-12-09", "title": "FOMC họp cuối năm (8–9/12)", "mkt": "us", "approx": true, "note": "Mốc chấm kèo lớn 'Fed không đổi lãi suất cả 2026' của TP" },
+    { "date": "2027-01-27", "title": "FOMC tháng 1/2027", "mkt": "us", "note": "Polymarket bắt đầu chia phe: 60,5% giữ / 20% tăng / 19% cắt" },
+    { "date": "2027-03-01", "title": "Mốc danh mục phân bón của TP (giữ DCM/DPM tới tháng 3/2027)", "mkt": "vn", "approx": true, "note": "Kèo tỉ trọng + thời hạn rõ nhất của ông — scorecard chấm ở đây" }
+  ]
+}

@@ -15164,67 +15164,57 @@ window.HDT_DATA = {
     ]
   },
   "ai": {
-    "updated": "20/08/2026",
-    "entryRef": "Nhận định mù #1 · brain/claude-calls.md · hạn chấm 19/09",
-    "note": "Claude tự dựng từ dữ liệu thô (lợi suất, khối ngoại, độ rộng thị trường, vùng giá, Polymarket) qua thư viện 55 mô hình tư duy học từ Thái Phạm — viết TRƯỚC khi xem nội dung mới của các chuyên gia, sau đó đối chiếu để học. Chưa tính vào bảng điểm chung.",
+    "updated": "21/08/2026",
+    "entryRef": "Chấm giữa kỳ #1a · brain/claude-calls.md · 2 dòng tự chấm SAI",
+    "note": "Claude tự dựng từ dữ liệu thô (lợi suất, khối ngoại, độ rộng thị trường, vùng giá, Polymarket) qua thư viện mô hình tư duy học từ Thái Phạm. Bản 20/08 là nhận định MÙ — viết trước khi xem nội dung chuyên gia. Bản 21/08 này là bản CHẤM ĐIỂM, viết sau khi đã đọc transcript nên không tính là dự báo mới: hai thẻ Vàng và Bitcoin tự chấm SAI và ghi rõ sai ở đâu. Chưa tính vào bảng điểm chung.",
     "board": [
       {
         "id": "vang",
         "group": "Thế giới",
         "asset": "Vàng",
         "arrow": "up",
-        "arrowLabel": "TĂNG — có nhịp nghỉ",
+        "arrowLabel": "TĂNG — TỰ CHẤM SAI PHẦN NHỊP",
         "confidence": "vừa",
         "horizon": "4 tuần",
-        "headline": "Trung hạn còn lên, nhưng đừng đuổi giá ở 4.55x — dễ có nhịp rung về 4.43–4.46 trước",
+        "headline": "Đóng tuần 4.670 mà không hề có nhịp nghỉ — vùng mua 4.43–4.46 tôi chờ đã không bao giờ đến",
         "reasoning": [
           {
-            "k": "data",
-            "text": "Tape chéo 19/08 — tin debt buyback ra, 5 tài sản phản ứng ĐỒNG BỘ: vàng +4% (4.513), BTC +6%, DXY −0,84%, lợi suất 30Y phá 5,2%, cổ công nghệ bán tháo. Thị trường thật đã bỏ phiếu: tiền đang rời giấy nợ Mỹ"
+            "k": "concl",
+            "text": "TỰ CHẤM SAI (phần nhịp). Nhận định 20/08 ghi sẵn điều kiện tự sửa: \"vàng đóng TUẦN vượt 4.600 mà không hề nghỉ thì mô hình chờ nhịp SAI\". Đóng tuần 21/08 là 4.670,7 — điều kiện đã kích hoạt. Kèo chờ mua 4.430–4.460 đóng ở trạng thái KHÔNG KHỚP LỆNH."
           },
           {
             "k": "data",
-            "text": "Bức tranh nợ: nợ công ~40.000 tỷ (+600 tỷ chỉ trong 2 tháng); tiền lãi sắp vượt cả ngân sách quốc phòng; cầu trái phiếu cạn — Trung Quốc/Nhật ngừng mua, TQ còn BÁN trái phiếu để mua vàng"
-          },
-          {
-            "k": "model",
-            "text": "A2 — \"buyback\" không phải trả nợ: là ĐẢO NỢ (tín phiếu ngắn nuôi trái phiếu dài) = lời thú nhận thị trường trái phiếu mất thanh khoản → đồng đô tiếp tục bị pha loãng"
-          },
-          {
-            "k": "model",
-            "text": "A3 + toán định giá — mọi tài sản neo vào lợi suất phi rủi ro: 30Y 5,28% trong khi cổ phiếu PE 25–30 chỉ cho E/P 3–4% → tiền lớn buộc tái phân bổ, và vàng là đích vì KHÔNG IN THÊM ĐƯỢC"
+            "text": "Vàng 4.670,7 · +6,6% tuần · +12,6% tháng. Nay đứng trên cả MA200 (4.499) lẫn MA40 tuần (4.522) — cấu trúc tăng đã xác nhận ở khung tuần."
           },
           {
             "k": "data",
-            "text": "Kịch bản đuôi có tiền lệ: FDIC Q1 — bank Mỹ lỗ trạng thái >300 tỷ vì trái phiếu giảm 36 tháng liên tiếp; nếu lặp lại LDI Anh 2022 (bán tháo cả tài sản tốt để nộp ký quỹ) thì tiền càng dồn về vàng"
+            "text": "Nền vĩ mô không đổi và vẫn cùng chiều: DXY 98,8 (−2,3%/tháng), chênh 30Y−10Y 0,54đ, nợ công Mỹ ~40.000 tỷ, Trung Quốc bán trái phiếu mua vàng."
           },
           {
             "k": "model",
-            "text": "Loại trừ đối thủ trú ẩn: BTC = hồi thiếu tiền tổ chức + bị chính phủ siết; trái phiếu = chính là nguồn cơn; đô = đang pha loãng → vàng thắng bằng loại trừ, không phải bằng niềm tin"
+            "text": "CHỖ SAI CỦA MÔ HÌNH: tôi áp G1 \"không đuổi tại kháng cự\" + #18 \"giá phản ánh hết kỳ vọng\" — cả hai đều là mô hình MEAN-REVERSION — lên một tài sản đang trend mạnh có nền cấu trúc dày. Thiếu hẳn mô hình đối trọng: khi bằng chứng cấu trúc đủ dày thì rủi ro lớn nhất là ĐỨNG NGOÀI, không phải mua đắt."
           },
           {
             "k": "data",
-            "text": "NHƯNG vị trí giá: vàng 4.551 đang đứng NGAY cụm kháng cự 4.556–4.592 (máy vùng giá) sau khi đã +11,8%/tháng — tin buyback ĐÃ RA và đã được trả giá 4% ngay trong phiên"
-          },
-          {
-            "k": "model",
-            "text": "#18 \"giá phản ánh hết kỳ vọng\" + G1 \"không đuổi tại kháng cự\": phần THẲNG của sóng đã qua — chính TP cũng nói \"có thể chỉnh một chút, lấy đà ở 4.500–4.600 rồi mới đi tiếp\""
+            "text": "Vị trí mới (máy vùng giá 21/08): kháng cự 4.765–4.880 chạm 4 lần, cách 2%. Hỗ trợ gần nhất 4.465–4.513, dưới nữa là 4.285–4.400 chạm 4 lần."
           },
           {
             "k": "concl",
-            "text": "HƯỚNG LÊN gần chắc chắn về cấu trúc (mọi tầng bằng chứng độc lập cùng chiều) — tranh luận duy nhất là NHỊP. Kèo: chờ 4.430–4.460, stop 4.340 (thủng = hỏng cấu trúc mua), target 4.765 (mép cụm cản lớn 4.765–4.880); chạm 4.765 trước 4.340: 55%"
-          },
-          {
-            "k": "concl",
-            "text": "Điều kiện tự sửa (ghi trước): vàng đóng TUẦN vượt 4.600 mà không hề nghỉ → mô hình \"chờ nhịp\" SAI, chuyển sang mua theo đà một phần và tự chấm điểm trừ"
+            "text": "Hướng giữ nguyên TĂNG, target 4.765 vẫn còn nguyên giá trị. Nhưng cách vào thì đã sửa theo đúng điều kiện đã ghi trước: mua theo đà một phần thay vì chờ chiết khấu sâu. Mốc hỏng cấu trúc: thủng 4.465."
           }
         ],
         "experts": [
           {
             "eid": "thai-pham",
             "rel": "part",
-            "relLabel": "ĐỒNG HƯỚNG — ông mạnh tay hơn",
-            "note": "Ông mua từ 4.078, nhắm 5.300–5.600, vàng tối thiểu 30% danh mục; Claude cùng hướng nhưng đòi nhịp nghỉ trước. Nếu vàng xuyên thẳng không nghỉ → Claude sai khoản \"tôn trọng đà\"."
+            "relLabel": "ĐÚNG HƠN CLAUDE",
+            "note": "Ông không chờ chiết khấu — giữ nguyên lệnh long từ 4.080, chốt 1/2 và cầm phần còn lại. Tuần này ông còn nhắc mua vàng vật chất khi chênh trong nước chỉ còn 2–4tr/lượng."
+          },
+          {
+            "eid": "ck-5-phut",
+            "rel": "agree",
+            "relLabel": "ĐỒNG THUẬN",
+            "note": "Anh chỉ ra mẫu hình \"nêm ở đáy\" break từ 10/08 và xác nhận vàng vượt 4.500: \"hôm trước đánh giá hợp lý đúng không mọi người\"."
           }
         ]
       },
@@ -15236,7 +15226,7 @@ window.HDT_DATA = {
         "arrowLabel": "NGHIÊNG ĐIỀU CHỈNH",
         "confidence": "vừa (60%)",
         "horizon": "đến 15/10",
-        "headline": "Lình xình phân phối rồi gãy một nhịp ≥8% — nhưng không sập thẳng vì có bàn tay giữ trụ",
+        "headline": "S&P 7.684, giảm 1,3% trong tuần — đúng hướng nghiêng điều chỉnh, chưa tới ngưỡng gãy ≥8%",
         "reasoning": [
           {
             "k": "data",
@@ -15315,26 +15305,26 @@ window.HDT_DATA = {
         "group": "Thế giới",
         "asset": "Lợi suất Mỹ dài hạn",
         "arrow": "warn",
-        "arrowLabel": "NEO CAO — DỐC THÊM",
+        "arrowLabel": "NEO CAO — nhưng đường cong PHẲNG bớt",
         "confidence": "cao",
         "horizon": "đến FOMC 16/09",
-        "headline": "Đảo nợ = phát hành ngắn mua dài → đường cong dốc thêm; 30Y vượt 5,4% là chứng Mỹ gãy mạnh",
+        "headline": "30Y 5,19% lùi xuống dưới mốc 5,2%, chênh 30Y−10Y co từ 0,57 về 0,54 — ngược nhẹ với \"dốc thêm\" tôi đã gọi",
         "reasoning": [
           {
             "k": "data",
-            "text": "30Y 5,28% (cao nhất từ 2007) · 10Y 4,71% · chênh 30−10 = 0,57đ và đang dốc lên"
+            "text": "Lợi suất 30Y 5,19% (19/08), giảm 0,06đ trong tuần nhưng vẫn +0,04đ so với một tháng trước. 10Y 4,65%, giảm 0,03đ tuần."
+          },
+          {
+            "k": "data",
+            "text": "Chênh 30Y−10Y nay 0,54đ, co lại từ 0,57đ ngày 20/08 — tức đường cong PHẲNG bớt chứ không dốc thêm như tôi đã gọi."
           },
           {
             "k": "model",
-            "text": "A2 — Fed kẹt 2 chiều + chủ nợ 40k tỷ đòi premium → lối thoát duy nhất là đảo nợ (đã xảy ra 19/08)"
-          },
-          {
-            "k": "model",
-            "text": "A3 — khi Fed mất uy tín, lợi suất dài là sự thật duy nhất, đừng nhìn quyết định lãi suất"
+            "text": "A3 vẫn đứng: neo cao là đúng, và mốc cờ hiệu 30Y vượt 5,4% vẫn là ngưỡng để CK Mỹ gãy mạnh. Nhưng hướng của độ dốc thì tôi gọi lệch trong tuần này."
           },
           {
             "k": "concl",
-            "text": "Cờ hiệu quan trọng nhất bảng: 30Y vượt 5,40% → nâng xác suất CK Mỹ gãy lên 75%"
+            "text": "Giữ \"neo cao\", hạ phần \"dốc thêm\" xuống mức chưa xác nhận. Chấm chính thức 19/09."
           }
         ],
         "experts": [
@@ -15354,7 +15344,7 @@ window.HDT_DATA = {
         "arrowLabel": "ĐI NGANG VÙNG CAO",
         "confidence": "cao (70%)",
         "horizon": "đến 31/10",
-        "headline": "WTI kẹt trong 80–92: sàn cứng vì kho dự trữ cạn, trần vì Trump cần dầu hạ trước bầu cử",
+        "headline": "WTI 86,85 · Brent 94,32 — vẫn trong band 78–92 đã gọi, tuần này bật 5,4%",
         "reasoning": [
           {
             "k": "data",
@@ -15387,34 +15377,48 @@ window.HDT_DATA = {
         "group": "Thế giới",
         "asset": "Bitcoin",
         "arrow": "side",
-        "arrowLabel": "CHẠM TRẦN RỒI QUAY ĐẦU",
-        "confidence": "vừa",
+        "arrowLabel": "TỰ CHẤM SAI — trần thật cao hơn 8%",
+        "confidence": "thấp",
         "horizon": "4 tuần",
-        "headline": "Đang 69,5k — đúng mép trần \"banana lần 3\" (71–72k); nhịp hồi thiếu tiền tổ chức, khó vượt bền",
+        "headline": "Tôi đoán trần ở 71–72k vì mượn số của chuyên gia; máy vùng giá của chính tôi chỉ ra cụm cản thật là 78–79,5k",
         "reasoning": [
           {
+            "k": "concl",
+            "text": "TỰ CHẤM SAI. Nhận định 20/08: \"chạm trần rồi quay đầu, mép trần 71–72k\". Thực tế 21/08: 76.916, tăng 22,1% chỉ trong một tuần. Không quay đầu ở 71–72k."
+          },
+          {
+            "k": "model",
+            "text": "LỖI GỐC KHÔNG PHẢI THIẾU DỮ LIỆU MÀ LÀ LỖI QUY TRÌNH: mốc 71–72k đến từ ẩn dụ \"banana lần 3\" của Thái Phạm, không phải từ công cụ của tôi. Chạy detect_zones thì cụm kháng cự thật là 77.991–79.488, chạm 5 lần, gần nhất 26/05 — cụm đó đã tồn tại từ trước ngày tôi ra nhận định. Công cụ có sẵn câu trả lời đúng mà tôi không hỏi nó."
+          },
+          {
             "k": "data",
-            "text": "BTC 69.529, +9,7%/tuần trong khi thanh khoản mỏng; tổ chức rút ròng từ tháng 6"
+            "text": "BTC 77.014 đang đứng NGAY dưới cụm 77.991–79.488. Đã vượt MA40 tuần (74.370) và MA200 (68.967). Hỗ trợ gần nhất 73.776–76.029."
           },
           {
-            "k": "model",
-            "text": "G3 \"phân rã nhịp tăng\": hồi do đóng lệnh short + thanh khoản mỏng ≠ dòng tiền mới → sẽ trả lại"
-          },
-          {
-            "k": "model",
-            "text": "Mẫu banana/parabol: chuối lần 3 từ 57,8k dự kiến cụt ở 71–72k"
+            "k": "data",
+            "text": "Nhịp bật kèm khoảng một tỷ đô vị thế short bị thanh lý — tức lực đẩy có phần đến từ đóng lệnh, đúng như mô hình G3 đã nêu. Nhưng biên độ vượt xa mức mà G3 giải thích được."
           },
           {
             "k": "concl",
-            "text": "Không phải năm của BTC — chạm 71–72k mà không có volume tổ chức thì quay xuống"
+            "text": "Trần CÓ THẬT, chỉ là cao hơn chỗ tôi đoán 8%. Hướng sửa: trung tính, và mốc quyết định giờ là cụm 78–79,5k — đóng tuần trên đó thì luận điểm \"hồi rồi trả lại\" hỏng hẳn."
+          },
+          {
+            "k": "concl",
+            "text": "QUY ƯỚC MỚI cho các kỳ sau: mọi mốc giá trong bảng hướng phải truy được về detect_zones hoặc số liệu thô. Số lấy từ lời chuyên gia chỉ được ghi ở cột đối chiếu, không được thành mốc của Claude."
           }
         ],
         "experts": [
           {
             "eid": "thai-pham",
             "rel": "agree",
-            "relLabel": "ĐỒNG THUẬN",
-            "note": "Ông: \"chỉ là hồi ngắn hạn — banana lần 3, BTC không thay được vàng.\""
+            "relLabel": "CÙNG SAI VỚI CLAUDE",
+            "note": "Ông short 1/2 ở 71,9–72 ngày 20/08 và tới 21/08 đang âm 1.700/coin. Cùng một mốc trần, cùng một kết quả. Mốc vào tiếp của ông là 74,1 và 77 — giá nay đã ở đó."
+          },
+          {
+            "eid": "ck-5-phut",
+            "rel": "diff",
+            "relLabel": "ĐÚNG — VÀ CLAUDE ĐÃ COI NHẸ",
+            "note": "Anh gọi đúng: BTC lặp mẫu hình \"nêm ở đáy\" của vàng, mẫu hình anh nói có tỷ lệ thành công cao nhất. Đây là kênh phân tích kỹ thuật mà bộ não này đang cho trọng số thấp nhất — bài học là phải tăng trọng số cho tín hiệu mẫu hình giá khi nó mâu thuẫn với luận điểm dòng tiền vĩ mô."
           }
         ]
       },
@@ -15426,7 +15430,7 @@ window.HDT_DATA = {
         "arrowLabel": "YẾU TIẾP",
         "confidence": "vừa",
         "horizon": "4 tuần",
-        "headline": "Tiền đang rời đô sang vàng — đảo nợ và nghi ngờ uy tín Fed bào mòn đồng bạc xanh",
+        "headline": "DXY 98,8 — giảm tiếp 0,9% tuần và 2,3% tháng, đúng hướng đã gọi",
         "reasoning": [
           {
             "k": "data",
@@ -15455,46 +15459,44 @@ window.HDT_DATA = {
         "group": "Việt Nam",
         "asset": "VN-Index",
         "arrow": "side",
-        "arrowLabel": "DẬP DÌNH 1.700–1.780",
+        "arrowLabel": "DẬP DÌNH 1.700–1.780 — một trụ lý do đang mục",
         "confidence": "thấp-vừa (45%)",
         "horizon": "đến 30/09",
-        "headline": "Chưa có nền cho sóng thật: độ rộng xấu, ngoại bán 15 phiên, index bị VIC/VHM chi phối — thận trọng hơn Thái Phạm",
+        "headline": "Đóng 1.768 sau phiên +34 điểm, vẫn trong biên đã gọi; nhưng khối ngoại vừa mua ròng phiên đầu tiên sau 8 phiên bán",
         "reasoning": [
           {
             "k": "data",
-            "text": "VN-Index 1.736; độ rộng: 60,7% mã downtrend, chỉ 25,7% trên MA200 (máy đo 382 mã HOSE)"
+            "text": "VN-Index đóng 21/08 tại 1.768,12, tăng 33,88 điểm (+1,95%) — vẫn nằm trong biên 1.700–1.780 đã gọi ngày 20/08."
           },
           {
             "k": "data",
-            "text": "Khối ngoại bán ròng 9/10 phiên, lũy kế −2.878 tỷ/15 phiên; thanh khoản vẫn đáy năm"
+            "text": "ĐIỂM PHẢI THEO DÕI: khối ngoại phiên 21/08 MUA RÒNG +48 tỷ — phiên mua ròng đầu tiên sau 8 phiên bán liên tiếp, và đúng vào phiên index bật mạnh. Lũy kế 16 phiên vẫn âm 3.029 tỷ."
+          },
+          {
+            "k": "data",
+            "text": "Độ rộng chưa xác nhận gì: 25,7% trên MA200, 60,7% downtrend, chỉ 13,9% uptrend (đo 20/08). Con số này khớp độc lập với câu \"73% cổ phiếu downtrend\" của Thái Phạm."
           },
           {
             "k": "model",
-            "text": "F2 \"điểm số là mặt nạ, độ rộng là sự thật\" + F3 VIC/VHM neo cao phi thị trường"
+            "text": "F2 \"điểm số là mặt nạ\": index bật 34 điểm trong khi 6/10 mã vẫn downtrend thì đó là chuyện của vài trụ, chưa phải sóng thật."
           },
           {
             "k": "concl",
-            "text": "Dập dình 1.700–1.780: 45% · thủng 1.700 test 1.635–1.687: 30% · vượt 1.800 bền: 25%. Điều kiện tự đảo: ngoại MUA ròng 5 phiên liên tiếp → nghiêng vượt 1.800"
+            "text": "Giữ nguyên hướng dập dình. Nhưng tôi viết trụ lý do \"ngoại bán 15 phiên\" ngày 20/08 — trụ đó đang mục. Điều kiện tự sửa ghi trước: ngoại mua ròng ≥3/5 phiên tuần 24–28/08 thì phải viết lại dòng này và tự chấm NỬA."
           }
         ],
         "experts": [
           {
             "eid": "thai-pham",
-            "rel": "diff",
-            "relLabel": "NGƯỢC MỘT PHẦN",
-            "note": "Ông full cổ phiếu từ 05/08 với thesis \"không gió ngược đến T11\"; Claude cho rằng độ rộng và dòng ngoại CHƯA xác nhận thesis đó. Đây là kèo đối chiếu chính của tháng."
+            "rel": "part",
+            "relLabel": "MỘT PHẦN",
+            "note": "Ông không đoán biên mà đứng ở phía kiên định: \"không cần làm gì cả\", và sau phiên 21/08 thì \"tạm thời thấy ổn hơn rất nhiều trong danh mục rồi\"."
           },
           {
             "eid": "ck-5-phut",
-            "rel": "part",
-            "relLabel": "GẦN CLAUDE",
-            "note": "Anh: thanh khoản thấp có thể hết quý 3 sang quý 4 — tích lũy cho dài hạn chứ không kỳ vọng sóng ngay."
-          },
-          {
-            "eid": "azfin",
-            "rel": "part",
-            "relLabel": "LẠC QUAN DÀI HẠN",
-            "note": "Giảm sâu là cơ hội tích sản giá trị — khung nhiều năm, không mâu thuẫn trực tiếp với hướng 6 tuần."
+            "rel": "diff",
+            "relLabel": "ANH DỰ PHÓNG SAI PHIÊN NÀY",
+            "note": "Tối 20/08 anh nói phiên 21/08 \"khả năng cao là một cây pin 3 nữa\" — thực tế +1,95%. Bảng điểm chuyên gia đã ghi là call SAI."
           }
         ]
       },
@@ -15688,7 +15690,7 @@ window.HDT_DATA = {
         "arrowLabel": "TÍCH LŨY VÙNG ĐÁY",
         "confidence": "vừa",
         "horizon": "4 tuần",
-        "headline": "Chưa chạy, chưa gãy — DCM/DPM còn downtrend ngắn hạn nhưng có spring và gap đỡ bên dưới",
+        "headline": "Giá URE thế giới về ~400 đô từ vùng 800–900 — CK 5 phút xác nhận đây là vùng mua chu kỳ thấp",
         "reasoning": [
           {
             "k": "data",

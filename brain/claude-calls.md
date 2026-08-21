@@ -76,3 +76,76 @@ số 2) → dòng 8 đổi thành ↑, chấm SAI dòng cũ theo quy ước 4.
 
 ---
 **Ghi chú 20/08 (tối) — nâng chuẩn suy luận theo phản hồi user:** so với bài vàng 19/08 của TP, suy luận của Claude bị mỏng (5 bước vs 10 tầng bằng chứng độc lập). Đã giải phẫu chuẩn "chặt chẽ" thành mô hình **I8 Consilience** trong thư viện (10 tầng: tape chéo, số neo so sánh, cơ chế, bóc bản chất tin, nhân chứng + thái độ, cầu nối định giá, tiền lệ, smart money, loại trừ đối thủ, hành động hai đầu). Quy ước mới: kèo CHÍNH phải đủ ≥7/10 tầng; đã nâng thẻ Vàng trên trang AI làm mẫu. Các thẻ chính còn lại (CK Mỹ, VN-Index) nâng ở kỳ cập nhật tới.
+
+---
+
+# Chấm giữa kỳ #1a — 2026-08-21 (thứ Sáu, đóng tuần)
+
+**Không phải nhận định mù.** Bản này viết SAU khi đã đọc transcript 20–21/08 của 5 kênh trong lượt
+`hd update`. Vì vậy nó chỉ được dùng để CHẤM ĐIỂM và SỬA MÔ HÌNH, không được tính là dự báo mới.
+Nhận định mù #2 phải viết TRƯỚC khi đọc nội dung của kỳ sau.
+
+## Hai dòng phải tự chấm SAI ngay, không đợi 19/09
+
+### Dòng 1 — Vàng: đúng hướng, SAI NHỊP (tự kích hoạt điều kiện đã ghi trước)
+
+Nhận định #1 ghi nguyên văn điều kiện tự sửa: *"vàng đóng TUẦN vượt 4.600 mà không hề nghỉ → mô hình
+'chờ nhịp' SAI, chuyển sang mua theo đà một phần và tự chấm điểm trừ."*
+
+Đóng tuần 21/08: **4.670,7** (+6,6% tuần, +12,6% tháng). Không hề có nhịp về 4.43–4.46. Điều kiện đã
+kích hoạt → **chấm SAI cho phần nhịp**, kèo C1-01 đóng ở trạng thái KHÔNG KHỚP LỆNH (giá chưa bao giờ
+chạm vùng mua 4.430–4.460).
+
+- Hướng thì đúng và đúng mạnh: vàng nay đứng trên cả MA200 (4.499) lẫn MA40 tuần (4.522).
+- Target 4.765 vẫn còn nguyên giá trị — cụm kháng cự 4.765–4.880 chạm 4 lần vẫn ở đó, cách 2%.
+- **Lệch thuộc loại (b) thiếu mô hình.** Mô hình đã dùng là G1 "không đuổi tại kháng cự" + #18 "giá
+  phản ánh hết kỳ vọng". Cả hai đều là mô hình MEAN-REVERSION, áp vào một tài sản đang trong pha
+  TREND mạnh có dòng tiền cấu trúc phía sau. Thiếu hẳn một mô hình cân đối: *khi bằng chứng cấu trúc
+  đủ dày (I8 ≥7/10 tầng) thì rủi ro lớn nhất là ĐỨNG NGOÀI, không phải mua đắt.* → bổ sung thư viện.
+
+### Dòng 6 — Bitcoin: SAI HẲN, và lỗi gốc là lỗi quy trình
+
+Nhận định #1: *"CHẠM TRẦN RỒI QUAY ĐẦU — đang 69,5k, đúng mép trần 'banana lần 3' (71–72k)."*
+
+Thực tế 21/08: **76.916** (+22,1% chỉ trong một tuần). Không quay đầu ở 71–72k. **Chấm SAI.**
+
+**Lỗi gốc không phải thiếu dữ liệu — mà là tôi đã MƯỢN SỐ CỦA CHUYÊN GIA thay vì dùng công cụ của
+mình.** Mốc trần 71–72k đến từ ẩn dụ "banana lần 3" của Thái Phạm. Chạy `detect_zones.js --yahoo
+BTC-USD` thì máy chỉ ra cụm kháng cự thật là **77.991–79.488 (chạm 5 lần, gần nhất 26/05)** — cụm đó
+đã tồn tại từ trước ngày 20/08, tức là công cụ đã có sẵn câu trả lời đúng mà tôi không hỏi nó.
+
+- Giá hiện tại 77.014 đang đứng NGAY dưới cụm đó. Ceiling có thật — chỉ là cao hơn 8% so với chỗ tôi đoán.
+- **Quy ước mới (bắt buộc từ #2):** mọi mốc giá trong bảng hướng phải truy được về `detect_zones.js`
+  hoặc số liệu thô. Số lấy từ lời chuyên gia chỉ được ghi ở cột đối chiếu, KHÔNG được thành mốc của Claude.
+  Đây là biến thể của quy ước 3, nay siết chặt hơn.
+- Ghi nhận đau nhất: Thái Phạm cũng short BTC ở 71,9–72 và cũng đang âm. Bên đúng là **Chứng khoán 5
+  phút** — kênh phân tích kỹ thuật mà bộ não này đang cho trọng số thấp nhất — với mẫu hình "nêm ở
+  đáy". Phân loại (c) nhưng ngược: **chuyên gia khác đúng, cả Claude lẫn hình mẫu đều sai.**
+
+## Các dòng còn lại — trạng thái tới 21/08 (chưa tới hạn 19/09)
+
+| # | Dòng | Số 21/08 | Trạng thái |
+|---|---|---|---|
+| 2 | CK Mỹ nghiêng điều chỉnh | S&P 7.684, −1,3% tuần | ĐÚNG HƯỚNG, đang chạy |
+| 3 | Công nghệ/AI yếu nhất | (chờ số nhóm) | đang chạy |
+| 4 | Lợi suất dài neo cao, dốc thêm | 30Y 5,19% (dưới mốc 5,2%), chênh 30Y−10Y 0,54đ từ 0,57đ | ĐANG LỆCH NHẸ — đường cong PHẲNG bớt chứ không dốc thêm |
+| 5 | DXY yếu tiếp | 98,8 · −2,3% tháng | ĐÚNG |
+| 7 | Dầu đi ngang vùng cao | WTI 86,85 trong band 78–90 | ĐÚNG |
+| 8 | VN-Index dập dình 1.700–1.780 | đóng 1.768,12 (+33,88 phiên 21/08) | còn trong biên, nhưng lý do đang mục — xem dưới |
+| 14 | Phân bón tích lũy vùng đáy | DCM bị ngoại bán ròng 43,2 tỷ phiên 21/08 | đang chạy |
+
+**Lý do của dòng 8 đang mục:** tôi viết "ngoại bán 15 phiên" làm một trong ba trụ. Phiên 21/08 khối
+ngoại **MUA RÒNG +48 tỷ** — phiên mua ròng đầu tiên sau 8 phiên bán liên tiếp, đúng phiên index bật
+34 điểm. Chưa đủ để đảo dòng nhận định (một phiên không thành xu hướng, và độ rộng vẫn 60,7%
+downtrend / 25,7% trên MA200), nhưng đây là điều kiện cần theo dõi: **ngoại mua ròng ≥3/5 phiên tuần
+26–28/08 thì trụ thứ hai của dòng 8 sập, phải viết lại dòng đó và tự chấm NỬA.**
+
+## Bài học gộp lại
+
+1. Mô hình mean-reversion (G1, #18) không được áp một mình lên tài sản đang trend mạnh có nền cấu
+   trúc dày. Cần mô hình đối trọng — đã ghi vào thư viện.
+2. **Không mượn mốc giá của chuyên gia.** Có công cụ thì phải hỏi công cụ trước; lời chuyên gia chỉ
+   dùng để đối chiếu.
+3. Kênh phân tích kỹ thuật đang bị bộ não này định giá thấp một cách có hệ thống. Lần này 5 phút
+   đúng, cả Claude lẫn Thái Phạm sai — nên tăng trọng số cho tín hiệu mẫu hình giá khi nó mâu thuẫn
+   với luận điểm dòng tiền vĩ mô, ít nhất là ở khung 4 tuần.

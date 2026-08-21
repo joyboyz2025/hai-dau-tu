@@ -3379,6 +3379,14 @@ window.HDT_DATA = {
           "icon": "▶",
           "iconBg": "oklch(0.95 0.04 27)",
           "iconColor": "oklch(0.46 0.15 27)",
+          "date": "21/08/2026",
+          "title": "HÃY TÍCH SẢN CỔ PHIẾU ĐÚNG CÁCH?? — livestream 113 phút",
+          "meta": "CHƯA DỰNG — YouTube chưa sinh phụ đề tự động cho livestream vừa kết thúc. Sẽ dựng ở lần chạy sau."
+        },
+        {
+          "icon": "▶",
+          "iconBg": "oklch(0.95 0.04 27)",
+          "iconColor": "oklch(0.46 0.15 27)",
           "date": "19/08/2026",
           "title": "Định Giá Cổ Phiếu FPT: Báo Cáo \"Nhiễu\" Do Thoái FPT Telecom, Thực Chất Tăng Trưởng 18%",
           "meta": "Video công khai · Quang Dũng"
@@ -3422,14 +3430,6 @@ window.HDT_DATA = {
           "date": "01/08/2026",
           "title": "Hòa Phát Quý 2/2026: Lợi Nhuận +50,6% Nhờ Dung Quất 2 — \"Giảm Mạnh Là Mua Mạnh\"",
           "meta": "Phân tích doanh nghiệp · 43 phút · Quang Dũng"
-        },
-        {
-          "icon": "▶",
-          "iconBg": "oklch(0.95 0.04 27)",
-          "iconColor": "oklch(0.46 0.15 27)",
-          "date": "18/07/2026",
-          "title": "VPBank Quý 2/2026: 11.000 Tỷ Lợi Nhuận — Bơm Ra Nền Kinh Tế Bằng Cả 30 Năm Trước Đó",
-          "meta": "Phân tích doanh nghiệp · 54 phút · Quang Dũng"
         }
       ]
     },

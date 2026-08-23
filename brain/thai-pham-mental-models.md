@@ -238,6 +238,69 @@ Một kèo chính KHÔNG chặt vì một bước sâu — chặt vì NHIỀU LO
 
 ---
 
+## J. ĐIỀU KIỆN BIÊN CỦA TIN KINH TẾ (nguồn: slide giáo trình VWA, user đưa 21/08/2026)
+
+Đây là mô hình **CỔNG CHẶN**, không phải mô hình dự báo. Nó đứng TRƯỚC nhóm A/B: trả lời câu hỏi
+"tin kinh tế này có được phép lái tài sản này không" trước khi dùng bất kỳ mô hình vĩ mô nào.
+
+### J1 — Ceteris paribus: tin kinh tế chỉ lái thị trường trong thế giới hoàn hảo
+
+Slide ghi rõ bốn điều kiện phải cùng đúng thì "các sự kiện kinh tế sẽ thúc đẩy thị trường":
+
+1. Không có tin tức mới nào khác
+2. Không có xung đột giữa thông tin và số liệu
+3. Không có tin mới về ngành
+4. Không có thông tin cụ thể nào về chứng khoán (mã)
+
+Thực tế gần như không bao giờ đủ bốn. Nên **giá trị dùng được của J1 là ngược lại**: mỗi lần định
+dùng một chuỗi nhân quả vĩ mô, phải đi soát xem điều kiện nào đang bị vi phạm — điều kiện bị vi phạm
+chính là biến nhiễu sẽ đánh bại chuỗi nhân quả đó.
+
+### J2 — Thang phản ứng: không phải tài sản nào cũng nghe tin kinh tế như nhau
+
+Slide: *"Thị trường ngoại hối (FX) và thị trường trái phiếu có xu hướng phản ứng TRỰC TIẾP HƠN với
+tin tức kinh tế so với thị trường chứng khoán và hàng hóa."*
+
+Xếp thành thang dùng được:
+
+| Nhóm | Độ nghe tin kinh tế | Ghi chú vận dụng |
+|---|---|---|
+| FX, trái phiếu | trực tiếp nhất | mô hình A1–A5 dùng thẳng được |
+| Vàng | gần đầu FX (bán-tiền tệ) | nghe lãi suất thực + đô, nhưng có thêm cầu vật chất/ngân hàng TW |
+| Cổ phiếu chỉ số | trung gian | qua cầu định giá (A3), nhưng bị trọng số trụ bóp méo — xem F2 |
+| Cổ phiếu đơn lẻ | xa | tin ngành + tin mã át tin vĩ mô |
+| Hàng hóa | xa | cung–cầu vật chất và địa chính trị át (B1–B3) |
+| Crypto | KHÔNG nằm trên thang này | không phải FX, không phải trái phiếu, không có dòng tiền nội tại |
+
+### J3 — Hệ quả trực tiếp: lỗi BTC ngày 20/08 là lỗi ÁP SAI NHÓM
+
+Chuỗi tôi đã dùng: đảo nợ Mỹ → đô pha loãng → tiền rời giấy nợ → tài sản trú ẩn tăng. Chuỗi đó là
+chuỗi FX/trái phiếu, **hợp lệ cho vàng** (và vàng đã lên đúng). Tôi bê nguyên nó sang BTC rồi lại
+suy ra chiều NGƯỢC ("BTC không thay được vàng nên hồi rồi đứt") — tức vừa áp sai nhóm, vừa tự mâu
+thuẫn về chiều.
+
+Soát lại bằng J1 thì thấy cả bốn điều kiện đều vỡ ngay hôm đó:
+- điều kiện 1 vỡ: có tin riêng của crypto (Clarity Act, chính sách sàn VN 1/9);
+- điều kiện 2 vỡ: khoảng một tỷ đô vị thế short bị thanh lý — dòng lệnh át hẳn dòng tin;
+- điều kiện 4 vỡ: cụm kháng cự 77.991–79.488 là "thông tin cụ thể" của chính tài sản đó.
+
+→ Trong tình huống bốn điều kiện đều vỡ, **tín hiệu cấu trúc giá phải được ưu tiên hơn chuỗi nhân
+quả vĩ mô**. Đó đúng là điều Chứng khoán 5 phút đã làm (mẫu hình nêm đáy) và đã thắng cả tôi lẫn
+Thái Phạm.
+
+### J4 — Cùng lỗi, phiên bản Việt Nam
+
+Phiên 21/08 VN-Index +1,95%. Tôi giải thích thị trường VN bằng khối ngoại và độ rộng — lại là chuỗi
+dòng vốn kiểu vĩ mô. Nhưng hôm đó điều kiện 3 và 4 đều vỡ: **ngày công bố rổ FTSE** và **phiên cơ cấu
+quỹ tháng 8**. Đó là biến cơ học của chỉ số, không phải biến vĩ mô. Cùng một lỗi cổng chặn.
+
+### Cách gắn vào quy trình
+
+Thêm **bước 0** vào checklist nhận định mù (Phần E): trước khi chạm bất kỳ mô hình A/B nào, chạy J1
++ J2 và ghi ra giấy — tài sản này nằm ở đâu trên thang J2, và điều kiện nào của J1 đang bị vi phạm
+hôm nay. Nếu ≥2 điều kiện vỡ thì hạ độ tin cậy của kèo vĩ mô xuống một bậc và nêu rõ biến nhiễu
+trong phần suy luận.
+
 ## PHẦN B — ĐỐI CHIẾU SCORECARD: MÔ HÌNH NÀO ĂN TIỀN, MÔ HÌNH NÀO HAY SAI
 
 **Cụm mạnh nhất (HIT dày đặc):**
@@ -291,6 +354,10 @@ giữ hàng lỗ có chủ đích · kill hai đầu = margin mùa đông · xó
 ## PHẦN E — CÁCH CLAUDE DÙNG THƯ VIỆN (checklist "nhận định mù")
 
 Khi có tin/dữ liệu mới:
+0. **CỔNG CHẶN (J1+J2, thêm 21/08):** tài sản này nằm ở đâu trên thang nghe-tin-kinh-tế? Bốn điều
+   kiện ceteris paribus, hôm nay điều kiện nào đang vỡ? ≥2 điều kiện vỡ → hạ một bậc tin cậy cho mọi
+   kèo dựa trên chuỗi vĩ mô, và ưu tiên tín hiệu cấu trúc giá. Bỏ qua bước này là đã dính hai lần:
+   BTC 20/08 và VN-Index 21/08.
 1. Tin này là TIN hay BẢN CHẤT? → chạy qua D5/D6 (tin tốt để ra hàng? kế toán ảo? tin cũ dựng lại?).
 2. Ai là kẻ thủ lợi? (C1) — gắn nhãn giả thuyết.
 3. Tiền THẬT chảy đi đâu? (D1) — IPO/phát hành/buyback nào đang hút?

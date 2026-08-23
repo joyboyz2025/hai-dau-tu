@@ -149,3 +149,30 @@ downtrend / 25,7% trên MA200), nhưng đây là điều kiện cần theo dõi:
 3. Kênh phân tích kỹ thuật đang bị bộ não này định giá thấp một cách có hệ thống. Lần này 5 phút
    đúng, cả Claude lẫn Thái Phạm sai — nên tăng trọng số cho tín hiệu mẫu hình giá khi nó mâu thuẫn
    với luận điểm dòng tiền vĩ mô, ít nhất là ở khung 4 tuần.
+
+## Bổ sung 21/08 (tối) — user đưa slide giáo trình VWA về "sự kiện kinh tế"
+
+Slide nêu hai điều, cả hai đều đánh trúng lỗi vừa mắc:
+
+1. **Ceteris paribus.** Sự kiện kinh tế chỉ thúc đẩy thị trường khi: không có tin nào khác · không có
+   xung đột giữa thông tin và số liệu · không có tin ngành · không có tin cụ thể về mã.
+2. **Thang phản ứng.** FX và trái phiếu phản ứng TRỰC TIẾP HƠN với tin kinh tế so với cổ phiếu và
+   hàng hóa.
+
+Đã dựng thành **nhóm J** trong thư viện mô hình (J1 cổng chặn ceteris paribus, J2 thang phản ứng,
+J3 mổ lỗi BTC, J4 mổ lỗi VN-Index), và thêm **bước 0** vào checklist nhận định mù.
+
+**Chẩn lại hai lỗi hôm nay bằng khung này:**
+
+- **BTC** — lỗi ÁP SAI NHÓM. Chuỗi "đảo nợ → đô pha loãng → tiền rời giấy nợ" là chuỗi FX/trái phiếu.
+  Hợp lệ cho vàng (và vàng đã lên đúng). Bê sang crypto là sai nhóm — crypto không nằm trên thang J2.
+  Soát J1 thì cả bốn điều kiện đều vỡ hôm đó: có tin riêng crypto (Clarity Act, sàn VN 1/9), có ~1 tỷ
+  đô short bị thanh lý (dòng lệnh át dòng tin), và có cụm kháng cự 78–79,5k là tin của chính tài sản.
+- **VN-Index** — cùng lỗi cổng chặn. Tôi giải thích phiên +1,95% bằng khối ngoại và độ rộng, trong khi
+  hôm đó là **ngày công bố rổ FTSE + phiên cơ cấu quỹ tháng 8** — biến CƠ HỌC của chỉ số, không phải
+  biến vĩ mô.
+
+**Quy tắc rút ra, dùng từ nhận định mù #2:** khi ≥2 điều kiện J1 vỡ, hạ một bậc tin cậy cho mọi kèo
+dựa trên chuỗi vĩ mô và **ưu tiên tín hiệu cấu trúc giá**. Đây chính là điều Chứng khoán 5 phút làm
+và thắng — nó khớp với bài học số 3 đã ghi ở phần trên, nay có cơ sở lý thuyết chứ không còn là ghi
+nhận kinh nghiệm rời.

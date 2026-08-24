@@ -176,3 +176,102 @@ J3 mổ lỗi BTC, J4 mổ lỗi VN-Index), và thêm **bước 0** vào checkli
 dựa trên chuỗi vĩ mô và **ưu tiên tín hiệu cấu trúc giá**. Đây chính là điều Chứng khoán 5 phút làm
 và thắng — nó khớp với bài học số 3 đã ghi ở phần trên, nay có cơ sở lý thuyết chứ không còn là ghi
 nhận kinh nghiệm rời.
+
+---
+
+# Nhận định mù #2 — 2026-08-24 (thứ Hai, sau phiên) · hạn chấm 21/09
+
+**Mù từ:** chưa quét kênh, chưa đọc bất kỳ transcript nào sau ngày 21/08. Tập hội viên Thái Phạm dự
+kiến ra sáng CN 23/08 — chưa xem. Viết xong bảng này rồi mới chạy `scan_channels`.
+
+## TRƯỚC HẾT: tự chấm SAI ba dòng của #1, và chúng có CHUNG một gốc
+
+| Dòng #1 | Gọi ngày 20/08 | Thực tế 24/08 | Chấm |
+|---|---|---|---|
+| 1 · Vàng | chờ nhịp về 4.43–4.46 rồi mới mua | 4.728 (+16,2%/tháng), không hề nghỉ | **SAI nhịp** (đã chấm 21/08) |
+| 6 · BTC | trần 71–72k rồi quay đầu | 79.585 (+23,3%/tuần) | **SAI** (đã chấm 21/08) |
+| 6b · BTC bản sửa 21/08 | trần thật là cụm 78–79,5k | đã vượt lên trên cụm đó | **SAI LẦN HAI** |
+| 8 · VN-Index | dập dình 1.700–1.780 | đóng 1.788,78, thủng biên TRÊN | **SAI biên** |
+
+**Gốc chung — đây mới là bài học, không phải bốn lỗi rời:** cả bảng #1 dựng trên hai họ mô hình cùng
+chiều gấu — nhóm A (nợ/lợi suất/đô) và G1 (không đuổi tại kháng cự). Tôi gọi ĐÚNG biến gốc là **đô
+yếu** (DXY −2,4%/tháng, gọi từ 20/08 và đã đúng), nhưng **suy ra sai hệ quả**: đọc "đô yếu" thành
+"tiền chạy về trú ẩn, tài sản rủi ro giảm", trong khi nghĩa thật của nó là **mọi tài sản định giá
+bằng đô đều được nâng lên cùng lúc** — vàng, BTC, và cả cổ phiếu.
+
+→ Mô hình mới cần bổ sung vào thư viện (nhóm A):
+
+> **A9 — Đô yếu nâng TẤT CẢ, không phải chỉ nâng vàng.** Khi đồng tiền định giá mất giá có hệ thống
+> (không phải do hoảng loạn rủi ro), vàng–crypto–cổ phiếu tăng ĐỒNG THỜI vì cùng được định giá lại,
+> chứ không luân chuyển từ nhóm này sang nhóm kia. Dấu hiệu phân biệt với "chạy về trú ẩn": trú ẩn
+> thì cổ phiếu GIẢM khi vàng tăng; định giá lại thì cả hai cùng tăng và DXY giảm đều. Ngày 20–24/08
+> là ca mẫu: DXY −2,4%, vàng +16,2%, BTC +23,7%, VN-Index +3,6% — không có tài sản nào bị bán để mua
+> tài sản kia.
+
+Ghép với **J2** (crypto không nằm trên thang nghe-tin-kinh-tế): tôi đã dùng chuỗi vĩ mô để kết luận
+NGƯỢC chiều cho BTC. Vừa sai nhóm, vừa sai chiều của chính chuỗi đó.
+
+## BẢNG HƯỚNG #2 (4 tuần tới, tới 21/09)
+
+Chạy bước 0 (cổng J1/J2) trước mỗi dòng. Mốc giá đều từ `detect_zones.js`, không mượn số của ai.
+
+| # | Tài sản | Hướng | Tin cậy | Lý do một câu + mốc kiểm chứng |
+|---|---|---|---|---|
+| 1 | **Vàng** | ↑ tiếp | vừa | 4.728, đang test cụm cản 4.765–4.880 (chạm 4 lần) lần đầu; trên cả MA200 4.503 và MA40 tuần 4.537. Đóng TUẦN trên 4.880 → mở đường 5.212. Bị đẩy về dưới 4.655 → mới là nhịp nghỉ thật. **Không lặp lỗi #1: không đứng ngoài chờ chiết khấu.** |
+| 2 | **Bitcoin** | ↑ nhưng TIN CẬY THẤP | thấp | 79.585 đã vượt cụm 78–79,5k. Cản tiếp 82.430–82.792 nhưng chỉ chạm 2 lần (yếu hơn cụm vừa vỡ, chạm 5 lần). Trên MA200 69.089 và MA40 tuần 74.208, đáy sau cao hơn. **Tự hạ trọng số: tôi đã sai 2 lần liên tiếp về đúng tài sản này.** Mốc hỏng: thủng lại 76.029. |
+| 3 | **VN-Index** | ↑ đã đổi hướng | vừa | 1.788,78, vượt biên trên 1.780. Hai phiên KL 668–669tr, gấp đôi nền 340tr. Độ rộng cải thiện thật: trên MA50 28,8%→38,7%, downtrend 60,7%→52,9%. Ngoại mua ròng 2 phiên (+48, +177). Mốc hỏng: đóng lại dưới 1.768. |
+| 4 | **Lợi suất Mỹ dài hạn** | ⚠ neo cao | cao | 30Y 5,23% — quay lại TRÊN mốc 5,2%. Chênh 30Y−10Y 0,54đ. Giữ nguyên dòng #1; phần "dốc thêm" vẫn chưa xác nhận. |
+| 5 | **DXY** | ↓ yếu tiếp | cao | 98,99 · −2,4%/tháng. Đây là biến GỐC của A9 — nếu DXY đảo lên thì cả dòng 1, 2, 3 phải xem lại cùng lúc. |
+| 6 | **CK Mỹ** | → đi ngang, nghiêng nhẹ xuống | thấp-vừa | S&P 7.648, −1,3% tuần. Hạ tin cậy từ "vừa (60%)" xuống: A9 nói đô yếu nâng cả cổ phiếu, ngược với luận điểm gãy ≥8%. Hai lực đối nhau — không nên gọi mạnh. |
+| 7 | **Dầu** | → đi ngang vùng cao | cao | WTI 84,96 · Brent 92,51, vẫn trong band. Tháng này −4,9%, mép dưới của band đáng theo. |
+| 8 | **Phân bón VN** | ↑ | vừa | Giá URE ~400 đô, vùng đáy chu kỳ. **Nhưng cờ đỏ: DCM bị ngoại bán ròng 2 phiên liên tiếp (−43,2 rồi −41,4)** ngay lúc index bật — mâu thuẫn cần theo dõi. |
+| 9 | **Thép VN** | → phải xem lại | thấp | Dòng #1 gọi GIẢM. Phiên 24/08 **HPG là mã ngoại mua ròng mạnh nhất sàn (+106,4 tỷ)**. Chưa đủ đảo dòng nhưng đã là dữ kiện ngược — hạ tin cậy, chờ thêm. |
+
+**Điều kiện tự sửa ghi trước (bắt buộc theo I2):**
+- DXY đóng tuần trên 101 → A9 tắt, phải viết lại dòng 1–3 và tự chấm lại.
+- VN-Index đóng dưới 1.768 → dòng 3 chấm SAI ngay, không đợi 21/09.
+- BTC thủng 76.029 → dòng 2 chấm SAI, và tôi tự cấm mình gọi hướng BTC trong 4 tuần tiếp theo.
+
+## Dự đoán nội dung Tập 46 của Thái Phạm (chưa xem — để đối chiếu sau)
+
+1. Chốt lời một phần vàng khi chạm vùng 4.7xx — nhiều khả năng, vì ông đã hẹn "4.600–4.700 rồi mới lắc".
+2. Vị thế short BTC ở 71,9–72 đang lỗ nặng: hoặc cắt, hoặc bồi tiếp ở 77 như đã hẹn. Cách ông xử lý
+   chỗ này là dữ kiện quý về mô hình I2 (ông có tự chấm sai không).
+3. Chứng Việt: chuyển từ "không cần làm gì" sang giọng tích cực hơn — nhiều khả năng.
+4. Short CK Mỹ: vẫn giữ, viện dẫn 30Y trên 5,2% — nhiều khả năng.
+5. Rủi ro cho tôi: nếu ông vẫn gọi BTC đứt và lần này ông đúng thì dòng 2 của tôi sai lần ba.
+
+## Đối chiếu #2 với Tập 46 (đọc sau khi đã viết bảng mù) — 24/08
+
+### Phần dự đoán nội dung: 3 đúng / 1 sai / 1 chưa ngã ngũ
+
+| # | Tôi đoán | Thực tế Tập 46 | Chấm |
+|---|---|---|---|
+| 1 | Chốt lời một phần vàng khi chạm 4.7xx | **"Mọi người hỏi tôi là anh đã bán chưa? Tôi vẫn cầm."** Ông còn bullish hơn: 4.760 → tích lũy 2 tháng → 6.000 | **SAI** |
+| 2 | BTC: hoặc cắt, hoặc bồi tiếp ở 77 | Bồi tiếp, nay 2/3 vị thế, lỗ ~2.000/coin, sẽ short thêm ở 82.000. **Không tự chấm sai lần nào** | **ĐÚNG** |
+| 3 | Chứng Việt chuyển sang giọng tích cực hơn | "Lần đầu tiên tôi thấy màu bảng điện nó đẹp thế này" | **ĐÚNG** |
+| 4 | Short CK Mỹ vẫn giữ, viện dẫn 30Y trên 5,2% | Giữ toàn bộ; viện dẫn nợ công 40.000 tỷ + lợi suất vượt đỉnh T7/2007 | **ĐÚNG** |
+| 5 | Nếu ông vẫn gọi BTC đứt và ông đúng thì dòng 2 của tôi sai lần ba | Ông vẫn gọi đứt. Giá thì vẫn lên | chưa ngã ngũ |
+
+**Lỗi số 1 đáng học hơn nó tưởng.** Tôi đoán ông chốt lời vì tôi vẫn đang mang khung mean-reversion — đúng cái khung đã làm tôi sai về vàng ở #1. Tôi sửa được bảng hướng của mình (dòng 1 nay là "↑ tiếp, không đứng ngoài chờ chiết khấu") nhưng khi mô phỏng người khác thì lại rơi về khung cũ. **Sửa mô hình ở một chỗ không tự động sửa nó ở mọi chỗ.**
+
+### Phần bảng hướng: chỗ tôi và ông đối lập nhau
+
+| Dòng | Claude #2 | Thái Phạm Tập 46 | Ghi chú |
+|---|---|---|---|
+| Vàng | ↑ tiếp, tin cậy vừa | ↑ mạnh, đích 6.000 | đồng thuận — ông mạnh hơn |
+| **BTC** | **↑ tin cậy thấp** | **↓ short 2/3, "không có cửa đi tiếp"** | **đối lập thẳng, cả hai đều có tiền trong đó** |
+| VN-Index | ↑ đã đổi hướng | ↑ ăn mừng | đồng thuận |
+| CK Mỹ | → nghiêng nhẹ xuống, tin cậy thấp | ↓ "sẽ sập thôi" | tôi nhát hơn hẳn |
+| Thép/HPG | → hạ tin cậy vì ngoại mua ròng +106 tỷ | ↓ không tham gia, Vin làm thép | ông có lý do cơ bản, tôi chỉ có dòng tiền một phiên |
+
+**Ca BTC là ca kiểm chứng sạch nhất từ đầu dự án.** Ba bên, ba vị thế, đều công khai và đều có mốc:
+- Claude: ↑ (sau khi đã sai hai lần theo hướng ngược, tin cậy thấp)
+- Thái Phạm: ↓ short 2/3 từ 70–72k, đang lỗ, sẽ bồi ở 82k
+- Chứng khoán 5 phút: ↑ về mặt đồ thị, nhưng KHÔNG mua thêm vì lý do phi kỹ thuật (siết P2P, đã ngừng nạp tiền từ cuối 2025)
+
+Mốc phân định trong 4 tuần: **82.000** (ông bồi short) và **76.029** (tôi tự chấm sai nếu thủng).
+
+### Một điều ông làm mà tôi đã ghi trước là sẽ xảy ra
+
+Ông giữ short BTC qua ba tuần giá đi ngược mà **không tự chấm sai dòng cũ lần nào** — đúng điểm yếu I2 đã ghi trong thư viện. Tôi thì đã tự chấm sai bốn dòng trong bốn ngày. Chưa biết ai kiếm được tiền hơn, nhưng về mặt phương pháp thì đây là chỗ tôi cố tình làm khác hình mẫu, và cần giữ.

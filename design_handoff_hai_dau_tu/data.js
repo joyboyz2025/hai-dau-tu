@@ -16297,5 +16297,256 @@ window.HDT_DATA = {
         ]
       }
     ]
+  },
+  "weekBook": {
+    "updated": "24/08/2026",
+    "expertId": "thai-pham",
+    "note": "Danh mục Thái Phạm theo từng tuần — dựng từ các phiếu lệnh trong Sổ mã, gom lại thành bảng để theo dõi nhanh thay vì đọc từng kèo. Ô trống = tuần đó không có lệnh mới (giữ nguyên tuần trước).",
+    "weeks": [
+      {
+        "key": "w31",
+        "label": "Tuần 31",
+        "range": "30/07–02/08",
+        "ep": "Tập 42"
+      },
+      {
+        "key": "w32",
+        "label": "Tuần 32",
+        "range": "04–09/08",
+        "ep": "Tập 43 · 44"
+      },
+      {
+        "key": "w33",
+        "label": "Tuần 33",
+        "range": "13–16/08",
+        "ep": "Tập 45"
+      },
+      {
+        "key": "w34",
+        "label": "Tuần 34",
+        "range": "18–23/08",
+        "ep": "Tập 46",
+        "now": true
+      }
+    ],
+    "groups": [
+      {
+        "key": "bank",
+        "num": "I",
+        "label": "Ngân hàng",
+        "tickers": "BID, VCB, CTG, HDB, TCB, BVB, EIB",
+        "cells": {
+          "w31": {
+            "t": "Chỉ giữ BID, VCB — TCB cẩn trọng. Bỏ hẳn VPB, MBB, LPB, STB",
+            "s": "wait"
+          },
+          "w32": {
+            "t": "MUA MẠNH: BID \"giá này đẹp quá\", CTG, VCB. HDB ưu tiên số 1, thêm BVB, EIB",
+            "s": "up"
+          },
+          "w33": {
+            "t": "Cầm — TCB bình thường, CTG chưa hấp dẫn bằng vùng 28, MBB P/B 1,1 vẫn ổn",
+            "s": "hold"
+          },
+          "w34": {
+            "t": "CẦM CHẶT BID · VCB · CTG · HDB (VCB, HDB trong rổ FTSE). TCB cân nhắc cơ cấu 1/3 sang HDB",
+            "s": "hold"
+          }
+        }
+      },
+      {
+        "key": "phanbon",
+        "num": "II",
+        "label": "Phân bón",
+        "tickers": "DCM, DPM",
+        "cells": {
+          "w31": {
+            "t": "Mua & nắm giữ — đã vào 70% vị thế",
+            "s": "up"
+          },
+          "w32": {
+            "t": "MUA MẠNH (05/08) → MUA VÀ HOLD (07/08) → mua thêm đánh spring (08/08)",
+            "s": "up"
+          },
+          "w33": {
+            "t": "CẦM DÀI HẠN — ưu tiên DCM (làm ăn tốt hơn), DPM mẫu hình đẹp hơn",
+            "s": "hold"
+          },
+          "w34": {
+            "t": "Điểm mua kỹ thuật vẫn đẹp → MUA NẰM IM, \"tiền bắt đầu vào\"",
+            "s": "up"
+          }
+        }
+      },
+      {
+        "key": "ctck",
+        "num": "III",
+        "label": "Chứng khoán (CTCK)",
+        "tickers": "TCX, SSI, VCI, VIX, MBS, HCM",
+        "cells": {
+          "w31": {
+            "t": "TRÁNH CẢ NHÓM — cắt sạch lệnh lướt sóng SSI, VCI, VIX",
+            "s": "avoid"
+          },
+          "w32": {
+            "t": "TCX giữ + bổ sung · SSI bổ sung · VIX đánh hồi phục · MBS cầm (vùng rẻ) · HCM đừng mua",
+            "s": "up"
+          },
+          "w33": {
+            "t": "",
+            "s": "hold"
+          },
+          "w34": {
+            "t": "SSI CẦM CHẶT (trong rổ FTSE) · VCI cứ cầm · HCM đừng đụng, vùng rất cao",
+            "s": "hold"
+          }
+        }
+      },
+      {
+        "key": "sxkd",
+        "num": "IV",
+        "label": "Sản xuất & kinh doanh",
+        "tickers": "VNM, SCS",
+        "cells": {
+          "w31": {
+            "t": "",
+            "s": "hold"
+          },
+          "w32": {
+            "t": "VNM CẦM (nhà nước còn 36%) · SCS CẦM, vừa đánh spring — \"cực phẩm rồi\"",
+            "s": "hold"
+          },
+          "w33": {
+            "t": "",
+            "s": "hold"
+          },
+          "w34": {
+            "t": "CHỐT LỜI 1/2 VNM (lãi ~13%) · SCS nằm im",
+            "s": "down"
+          }
+        }
+      },
+      {
+        "key": "luot",
+        "num": "V",
+        "label": "Lướt sóng VN",
+        "tickers": "FPT, PNJ, GVR, NVL, VIC/VHM",
+        "cells": {
+          "w31": {
+            "t": "FPT bán khi hồi · PNJ tránh · VIC/VHM tránh",
+            "s": "avoid"
+          },
+          "w32": {
+            "t": "FPT giải ngân rồi bán khi được kéo (85–90) · PNJ lướt 1/2 vị thế",
+            "s": "warn"
+          },
+          "w33": {
+            "t": "FPT, PNJ chỉ hồi kỹ thuật — không tích trữ · GVR lướt sóng thoái vốn · NVL lướt",
+            "s": "warn"
+          },
+          "w34": {
+            "t": "FPT + PNJ LƯỚT SÓNG (PNJ đã ăn cây trần) · VIC/VHM không khoái ở vùng cao",
+            "s": "up"
+          }
+        }
+      },
+      {
+        "key": "kimloai",
+        "num": "VI",
+        "label": "Kim loại quý",
+        "tickers": "Vàng (XAU), Bạc (XAG)",
+        "cells": {
+          "w31": {
+            "t": "Chờ mua vùng sâu — kịch bản quét 3.600–3.700",
+            "s": "wait"
+          },
+          "w32": {
+            "t": "ĐẢO CHIỀU 05/08: bỏ kịch bản chờ 3.000, MUA ngay — hội viên vào 4.078–4.080",
+            "s": "up"
+          },
+          "w33": {
+            "t": "ĐÃ CHỐT 1/2 — giữ phần còn lại dài hạn, chấp nhận rung lắc",
+            "s": "hold"
+          },
+          "w34": {
+            "t": "PHÒNG THỦ BẮT BUỘC ≥30% danh mục · mua thêm khi chênh trong nước còn 2–4tr · đích xa 5.300–5.600",
+            "s": "up"
+          }
+        }
+      },
+      {
+        "key": "nangluong",
+        "num": "VII",
+        "label": "Năng lượng & Crypto",
+        "tickers": "Dầu WTI, Bitcoin",
+        "cells": {
+          "w31": {
+            "t": "Dầu giữ vị thế mua · BTC tránh cả năm — \"không phải năm của Bitcoin\"",
+            "s": "hold"
+          },
+          "w32": {
+            "t": "Dầu mua nếu về vùng thấp · BTC MUA LƯỚT 65.200 (07/08)",
+            "s": "up"
+          },
+          "w33": {
+            "t": "Dầu vùng cao lâu, hết sóng · BTC giữ lệnh lướt, đang lỗ 2.000/coin",
+            "s": "warn"
+          },
+          "w34": {
+            "t": "BTC ĐẢO SANG SHORT: 1/2 (20/08) → 2/3 (23/08) — \"banana lần 3, hồi quang phản chiếu\"",
+            "s": "down"
+          }
+        }
+      },
+      {
+        "key": "quocte",
+        "num": "VIII",
+        "label": "Chỉ số & cổ phiếu Mỹ",
+        "tickers": "S&P 500/US30, NI225, AAPL, SpaceX, chip, cyber",
+        "cells": {
+          "w31": {
+            "t": "Giữ short S&P/US30 · short Apple, Intel, MU, Marvell, nhóm cyber",
+            "s": "down"
+          },
+          "w32": {
+            "t": "SHORT S&P 1/2 tại kháng cự · SpaceX short lại · thêm AMD, DELL, CRWD, GOOGL",
+            "s": "down"
+          },
+          "w33": {
+            "t": "SHORT 2/3 S&P — ưu tiên US500 hơn US30 · NI225 short 1/3 · chốt short GOOGL",
+            "s": "down"
+          },
+          "w34": {
+            "t": "GIỮ SHORT S&P — \"dư địa còn giảm\" · SpaceX short 2/3 · NVDA, CRWD, FTNT giữ short",
+            "s": "down"
+          }
+        }
+      },
+      {
+        "key": "tien",
+        "num": "",
+        "label": "Tỉ trọng tiền / cổ phiếu",
+        "isRatio": true,
+        "tickers": "Toàn danh mục VN",
+        "cells": {
+          "w31": {
+            "t": "60% tiền — 40% cổ phiếu (phòng thủ)",
+            "s": "wait"
+          },
+          "w32": {
+            "t": "ĐẢO CHIỀU 05/08 → mua full cổ phiếu",
+            "s": "up"
+          },
+          "w33": {
+            "t": "Full cổ phiếu — \"kế hoạch vẫn vậy\"",
+            "s": "hold"
+          },
+          "w34": {
+            "t": "Full cổ phiếu, chốt lời 1/2 VNM — \"không cần làm gì cả\"",
+            "s": "hold"
+          }
+        }
+      }
+    ]
   }
 };

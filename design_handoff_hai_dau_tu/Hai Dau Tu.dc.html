@@ -470,6 +470,23 @@ input::placeholder{color:var(--ink-3);}
 .disc>summary:hover{color:var(--ink);}
 .disc-body{padding-top:6px;}
 @media (prefers-reduced-motion:reduce){.disc>summary::after{transition:none;}}
+/* Sổ mã · tab "Theo tuần" — ma trận danh mục */
+.wb-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--white);}
+.wb{border-collapse:separate;border-spacing:0;width:100%;min-width:880px;}
+.wb th,.wb td{vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--hair);text-align:left;}
+.wb thead th{font-size:12px;font-weight:600;white-space:nowrap;border-bottom:1px solid var(--line);}
+.wb tbody tr:last-child th,.wb tbody tr:last-child td{border-bottom:none;}
+.wb-g{width:190px;min-width:190px;position:sticky;left:0;z-index:1;background:var(--white);border-right:1px solid var(--hair);}
+.wb thead .wb-g{background:var(--hair);}
+.wb tbody tr:hover td{background:var(--surface);}
+.wb-gl{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;letter-spacing:-.15px;}
+.wb-num{font-size:9.5px;font-weight:700;color:var(--ink-3);background:var(--hair);border-radius:4px;padding:1px 5px;letter-spacing:.4px;}
+.wb-gt{font-size:10.5px;color:var(--ink-3);margin-top:3px;line-height:1.45;}
+.wb-wk{font-size:12.5px;font-weight:650;}
+.wb-wr{font-size:10px;opacity:.75;font-weight:400;margin-top:1px;}
+.wb-c{font-size:11.5px;line-height:1.5;padding:7px 9px;border-radius:8px;min-width:150px;}
+.wb-e{font-size:10.5px;color:var(--ink-3);font-style:italic;padding:7px 2px;}
+@media (max-width:820px){.wb-g{width:150px;min-width:150px;}.wb{min-width:760px;}}
 /* Trang AI — nhận định độc lập của Claude */
 .ai-card{transition:border-color .15s ease, transform .15s ease, box-shadow .15s ease;}
 .ai-card:hover{border-color:var(--ink); transform:translateY(-1px); box-shadow:0 8px 24px rgba(0,0,0,0.07);}
@@ -1486,6 +1503,59 @@ input::placeholder{color:var(--ink-3);}
         <div style="display:flex; align-items:baseline; gap:7px;"><span style="font-size:20px; font-weight:600; font-variant-numeric:tabular-nums; letter-spacing:-.03em; color:var(--avoid);">{{ tkStatSkip }}</span><span class="t-label">tránh / đứng ngoài</span></div>
       </div>
 
+      <!-- Tab: Danh sách mã | Theo tuần -->
+      <div class="no-print" style="margin-top:-6px;">
+        <div class="nav-scroll tk-segment" style="display:inline-flex;" role="tablist" aria-label="Kiểu xem sổ mã">
+          <sc-for list="{{ tkTabs }}" as="tt" hint-placeholder-count="2">
+            <div onClick="{{ tt.onClick }}" role="tab" tabindex="0" class="tk-seg-btn" style="background:{{ tt.bg }}; color:{{ tt.color }}; font-weight:{{ tt.weight }};">{{ tt.label }}</div>
+          </sc-for>
+        </div>
+      </div>
+
+      <!-- ===== TAB: THEO TUẦN — ma trận danh mục ===== -->
+      <sc-if value="{{ tkIsWeek }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div style="font-size:12.5px; color:var(--ink-2); line-height:1.6; max-width:900px;">{{ wbNote }}</div>
+          <div class="wb-wrap">
+            <table class="wb">
+              <thead>
+                <tr>
+                  <th class="wb-g">Nhóm</th>
+                  <sc-for list="{{ wbWeeks }}" as="wh" hint-placeholder-count="4">
+                    <th style="background:{{ wh.thBg }}; color:{{ wh.thColor }};">
+                      <div class="wb-wk">{{ wh.label }}</div>
+                      <div class="wb-wr">{{ wh.range }} · {{ wh.ep }}</div>
+                    </th>
+                  </sc-for>
+                </tr>
+              </thead>
+              <tbody>
+                <sc-for list="{{ wbRows }}" as="wr" hint-placeholder-count="9">
+                  <tr style="background:{{ wr.rowBg }};">
+                    <th class="wb-g">
+                      <div class="wb-gl"><sc-if value="{{ wr.hasNum }}" hint-placeholder-val="{{ true }}"><span class="wb-num">{{ wr.num }}</span></sc-if><span>{{ wr.label }}</span></div>
+                      <div class="wb-gt">{{ wr.tickers }}</div>
+                    </th>
+                    <sc-for list="{{ wr.cells }}" as="wc" hint-placeholder-count="4">
+                      <td>
+                        <sc-if value="{{ wc.hasText }}" hint-placeholder-val="{{ true }}">
+                          <div class="wb-c" style="background:{{ wc.cBg }}; color:{{ wc.cColor }}; border-left:2.5px solid {{ wc.cBorder }};">{{ wc.text }}</div>
+                        </sc-if>
+                        <sc-if value="{{ wc.empty }}" hint-placeholder-val="{{ false }}">
+                          <div class="wb-e">giữ nguyên tuần trước</div>
+                        </sc-if>
+                      </td>
+                    </sc-for>
+                  </tr>
+                </sc-for>
+              </tbody>
+            </table>
+          </div>
+          <div style="font-size:11.5px; color:var(--ink-3); line-height:1.6;">Cập nhật {{ wbUpdated }} · mỗi tuần thêm một cột · màu ô: xanh = mua/tăng tỉ trọng, xám = giữ, đỏ = bán/chốt/short, vàng = lướt–thận trọng, nhạt = chờ/tránh. Chi tiết từng mã xem tab "Danh sách mã".</div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ tkIsList }}" hint-placeholder-val="{{ true }}">
       <div class="tk-layout">
         <!-- ===== CỘT TRÁI: bộ lọc dọc ===== -->
         <div class="tk-filters no-print">
@@ -1872,6 +1942,7 @@ input::placeholder{color:var(--ink-3);}
           <div class="no-print" style="font-size:12px; color:var(--ink-3); text-align:center; padding-top:4px;">Bấm một mã bên hông để xem chi tiết · bấm "Xuất PDF" để lưu hồ sơ mã này thành một trang in · chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</div>
         </div>
       </div>
+      </sc-if>
     </div>
   </sc-if>
 
@@ -2230,7 +2301,7 @@ class Component extends DCLogic {
     let logged = false;
     try { logged = localStorage.getItem('hdt_auth') === '1'; } catch (e) {}
     const firstTk = (window.HDT_DATA && window.HDT_DATA.tickers && window.HDT_DATA.tickers[0]) || {};
-    this.state = { logged, screen: 'dashboard', pwError: false, srcType: 0, added: [], updIdx: 0, expertId: 'thai-pham', q: '', assetKey: 'vn', callsExpert: 'all', chartSym: '', chartLabel: '', scExpert: 'all', tickerKey: firstTk.key || '', bncOnly: false, bncPrices: {}, vnBars: {}, tkView: 'industry', tkRegion: 'all', tkIndustry: 'all', tkBasket: 'all', tkTrade: 'all', ctxTopic: 0, mkt: 'vn', aiOpen: '' };
+    this.state = { logged, screen: 'dashboard', pwError: false, srcType: 0, added: [], updIdx: 0, expertId: 'thai-pham', q: '', assetKey: 'vn', callsExpert: 'all', chartSym: '', chartLabel: '', scExpert: 'all', tickerKey: firstTk.key || '', bncOnly: false, bncPrices: {}, vnBars: {}, tkView: 'industry', tkRegion: 'all', tkIndustry: 'all', tkBasket: 'all', tkTrade: 'all', ctxTopic: 0, mkt: 'vn', aiOpen: '', tkTab: 'list' };
     this.pwRef = React.createRef();
     this.nameRef = React.createRef();
     this.channelRef = React.createRef();
@@ -3929,7 +4000,44 @@ return {
       hasExperts: !!(aiCurB.experts && aiCurB.experts.length)
     } : null;
 
+    // ══ Sổ mã · tab "Theo tuần" — ma trận danh mục theo tuần (HDT.weekBook) ══
+    const WB = HDT.weekBook || { weeks: [], groups: [], updated: '', note: '' };
+    const WB_SIG = {
+      up:    { cBg: 'var(--up-wash)',    cColor: 'var(--up)',    cBorder: 'var(--up)' },
+      hold:  { cBg: 'var(--surface)',    cColor: 'var(--ink)',   cBorder: 'var(--line)' },
+      down:  { cBg: 'var(--down-wash)',  cColor: 'var(--down)',  cBorder: 'var(--down)' },
+      warn:  { cBg: 'var(--warn-wash)',  cColor: 'var(--warn)',  cBorder: 'var(--warn)' },
+      wait:  { cBg: 'var(--wait-wash)',  cColor: 'var(--ink-2)', cBorder: 'var(--line)' },
+      avoid: { cBg: 'var(--avoid-wash)', cColor: 'var(--avoid)', cBorder: 'var(--avoid)' }
+    };
+    const wbWeeks = (WB.weeks || []).map(w => ({
+      label: w.label, range: w.range, ep: w.ep || '',
+      thBg: w.now ? 'var(--ink)' : 'var(--hair)',
+      thColor: w.now ? 'var(--white)' : 'var(--ink-2)'
+    }));
+    const wbRows = (WB.groups || []).map(g => ({
+      label: g.label, num: g.num || '', hasNum: !!g.num, tickers: g.tickers || '',
+      rowBg: g.isRatio ? 'var(--hair)' : 'transparent',
+      cells: (WB.weeks || []).map(w => {
+        const c = g.cells[w.key] || {};
+        const sig = WB_SIG[c.s] || WB_SIG.hold;
+        return { text: c.t || '', hasText: !!c.t, empty: !c.t, ...sig };
+      })
+    }));
+    const tkTabs = [
+      { k: 'list', l: 'Danh sách mã' },
+      { k: 'week', l: 'Theo tuần' }
+    ].map(t => ({
+      label: t.l,
+      bg: s.tkTab === t.k ? 'var(--white)' : 'transparent',
+      color: s.tkTab === t.k ? 'var(--ink)' : 'var(--ink-2)',
+      weight: s.tkTab === t.k ? '600' : '400',
+      onClick: () => this.setState({ tkTab: t.k })
+    }));
+
     return {
+      tkTabs, tkIsList: s.tkTab === 'list', tkIsWeek: s.tkTab === 'week',
+      wbWeeks, wbRows, wbUpdated: WB.updated || '', wbNote: WB.note || '',
       isAi: s.screen === 'ai', aiUpdated: AI.updated, aiNote: AI.note, aiEntryRef: AI.entryRef || '',
       aiGroups, hasAiPop: !!aiPop, aiPop: aiPop || {},
       closeAi: () => this.setState({ aiOpen: '' }),

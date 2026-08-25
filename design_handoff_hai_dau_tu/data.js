@@ -16299,253 +16299,932 @@ window.HDT_DATA = {
     ]
   },
   "weekBook": {
-    "updated": "24/08/2026",
+    "updated": "24/08/2026 · Tuần 35",
     "expertId": "thai-pham",
-    "note": "Danh mục Thái Phạm theo từng tuần — dựng từ các phiếu lệnh trong Sổ mã, gom lại thành bảng để theo dõi nhanh thay vì đọc từng kèo. Ô trống = tuần đó không có lệnh mới (giữ nguyên tuần trước).",
+    "note": "Danh mục Thái Phạm theo tuần, chia theo ngành — TỰ SINH từ các phiếu lệnh trong Sổ mã nên luôn khớp với tab \"Danh sách mã\". Ô trống = tuần đó nhóm này không có lệnh mới (giữ nguyên tuần trước). Mỗi ô hiện lệnh MỚI NHẤT của từng mã trong tuần.",
     "weeks": [
       {
         "key": "w31",
         "label": "Tuần 31",
-        "range": "30/07–02/08",
-        "ep": "Tập 42"
+        "range": "27/07–02/08",
+        "ep": "Tập 42",
+        "now": false
       },
       {
         "key": "w32",
         "label": "Tuần 32",
-        "range": "04–09/08",
-        "ep": "Tập 43 · 44"
+        "range": "03/08–09/08",
+        "ep": "Tập 43 · 44",
+        "now": false
       },
       {
         "key": "w33",
         "label": "Tuần 33",
-        "range": "13–16/08",
-        "ep": "Tập 45"
+        "range": "10/08–16/08",
+        "ep": "Tập 45",
+        "now": false
       },
       {
         "key": "w34",
         "label": "Tuần 34",
-        "range": "18–23/08",
+        "range": "17/08–23/08",
         "ep": "Tập 46",
         "now": true
       }
     ],
-    "groups": [
+    "markets": [
       {
-        "key": "bank",
-        "num": "I",
-        "label": "Ngân hàng",
-        "tickers": "BID, VCB, CTG, HDB, TCB, BVB, EIB",
-        "cells": {
-          "w31": {
-            "t": "Chỉ giữ BID, VCB — TCB cẩn trọng. Bỏ hẳn VPB, MBB, LPB, STB",
-            "s": "wait"
+        "key": "vn",
+        "label": "Việt Nam",
+        "groups": [
+          {
+            "key": "ng-n-h-ng",
+            "label": "Ngân hàng",
+            "tickers": "BID, BVBank, TCB, HDB, VCB, CTG, VPB +4",
+            "cells": {
+              "w31": {
+                "t": "TCB: CẨN TRỌNG · HDB: CHỜ MUA 21–22 · BID: Giữ · VCB: Giữ · +4 mã",
+                "s": "avoid",
+                "n": 8
+              },
+              "w32": {
+                "t": "BID: MUA — \"giá này đẹp quá\" · VCB: GIỮ · CTG: MUA · MBB: KHÔNG nằm trong diện thoái vốn · +4 mã",
+                "s": "hold",
+                "n": 8
+              },
+              "w33": {
+                "t": "TCB: CẦM bình thường · CTG: CẦM — không hấp dẫn bằng vùng 28 · MBB: CẦM — P/B ~1,1 lần cũng hấp dẫn · LPB: ĐỪNG MUA — cao giá · +1 mã",
+                "s": "hold",
+                "n": 5
+              },
+              "w34": {
+                "t": "BID: CẦM CHẶT · TCB: CẦM — nhưng có thể cơ cấu 1/3 sang HDB · HDB: CẦM CHẶT — đánh giá cao hơn TCB · VCB: CẦM CHẶT — trong rổ FTSE · +1 mã",
+                "s": "hold",
+                "n": 5
+              }
+            },
+            "num": "I"
           },
-          "w32": {
-            "t": "MUA MẠNH: BID \"giá này đẹp quá\", CTG, VCB. HDB ưu tiên số 1, thêm BVB, EIB",
-            "s": "up"
+          {
+            "key": "ch-ng-kho-n-ctck-",
+            "label": "Chứng khoán (CTCK)",
+            "tickers": "TCX, SSI, VCI, VIX, HCM, MBS",
+            "cells": {
+              "w31": {
+                "t": "SSI: TRÁNH CẢ NHÓM · VCI: TRÁNH CẢ NHÓM · VIX: TRÁNH CẢ NHÓM",
+                "s": "avoid",
+                "n": 3
+              },
+              "w32": {
+                "t": "TCX: GIỮ và bổ sung thêm · SSI: Bổ sung · HCM: ĐỪNG MUA — cao giá quá · MBS: Cầm — đang ở vùng giá rất rẻ · +1 mã",
+                "s": "up",
+                "n": 5
+              },
+              "w33": {
+                "t": "",
+                "s": "hold"
+              },
+              "w34": {
+                "t": "SSI: CẦM CHẶT — trong rổ FTSE · VCI: CỨ CẦM · HCM: ĐỪNG ĐỤNG — vùng rất cao",
+                "s": "hold",
+                "n": 3
+              }
+            },
+            "num": "II"
           },
-          "w33": {
-            "t": "Cầm — TCB bình thường, CTG chưa hấp dẫn bằng vùng 28, MBB P/B 1,1 vẫn ổn",
-            "s": "hold"
+          {
+            "key": "ph-n-b-n-h-a-ch-t",
+            "label": "Phân bón & Hóa chất",
+            "tickers": "DCM, DPM",
+            "cells": {
+              "w31": {
+                "t": "DCM: Mua & nắm giữ · DPM: Mua & nắm giữ",
+                "s": "up",
+                "n": 2
+              },
+              "w32": {
+                "t": "DCM: MUA — đánh spring · DPM: MUA — mô hình hai đáy",
+                "s": "up",
+                "n": 2
+              },
+              "w33": {
+                "t": "DCM: CẦM DÀI HẠN — ưu tiên hơn · DPM: CẦM DÀI HẠN — mẫu hình đẹp hơn",
+                "s": "hold",
+                "n": 2
+              },
+              "w34": {
+                "t": "DCM: MUA NẰM IM — tiền bắt đầu vào · DPM: MUA NẰM IM — tiền bắt đầu vào",
+                "s": "up",
+                "n": 2
+              }
+            },
+            "num": "III"
           },
-          "w34": {
-            "t": "CẦM CHẶT BID · VCB · CTG · HDB (VCB, HDB trong rổ FTSE). TCB cân nhắc cơ cấu 1/3 sang HDB",
-            "s": "hold"
+          {
+            "key": "th-p",
+            "label": "Thép",
+            "tickers": "HPG",
+            "cells": {
+              "w31": {
+                "t": "HPG: Không cầm",
+                "s": "avoid",
+                "n": 1
+              },
+              "w32": {
+                "t": "HPG: Đợi kéo lại 182x thì ra",
+                "s": "wait",
+                "n": 1
+              },
+              "w33": {
+                "t": "",
+                "s": "hold"
+              },
+              "w34": {
+                "t": "HPG: KHÔNG THAM GIA",
+                "s": "avoid",
+                "n": 1
+              }
+            },
+            "num": "IV"
+          },
+          {
+            "key": "b-t-ng-s-n",
+            "label": "Bất động sản",
+            "tickers": "BCM, VIC · VHM, DIG, NVL",
+            "cells": {
+              "w31": {
+                "t": "BCM: Tránh · VIC · VHM: Tránh · DIG: Tránh",
+                "s": "avoid",
+                "n": 3
+              },
+              "w32": {
+                "t": "",
+                "s": "hold"
+              },
+              "w33": {
+                "t": "VIC · VHM: Mốc để canh lướt · NVL: Lướt — mua thấp bán cao",
+                "s": "down",
+                "n": 2
+              },
+              "w34": {
+                "t": "VIC · VHM: KHÔNG KHOÁI Ở VÙNG CAO",
+                "s": "hold",
+                "n": 1
+              }
+            },
+            "num": "V"
+          },
+          {
+            "key": "cao-su-kcn",
+            "label": "Cao su & KCN",
+            "tickers": "GVR",
+            "cells": {
+              "w31": {
+                "t": "",
+                "s": "hold"
+              },
+              "w32": {
+                "t": "",
+                "s": "hold"
+              },
+              "w33": {
+                "t": "GVR: Lướt sóng thoái vốn",
+                "s": "warn",
+                "n": 1
+              },
+              "w34": {
+                "t": "",
+                "s": "hold"
+              }
+            },
+            "num": "VI"
+          },
+          {
+            "key": "d-u-kh-",
+            "label": "Dầu khí",
+            "tickers": "GAS, BSR",
+            "cells": {
+              "w31": {
+                "t": "GAS: MUA TÍCH LŨY · BSR: Tránh",
+                "s": "up",
+                "n": 2
+              },
+              "w32": {
+                "t": "",
+                "s": "hold"
+              },
+              "w33": {
+                "t": "",
+                "s": "hold"
+              },
+              "w34": {
+                "t": "",
+                "s": "hold"
+              }
+            },
+            "num": "VII"
+          },
+          {
+            "key": "-i-n-h-t-ng",
+            "label": "Điện & Hạ tầng",
+            "tickers": "PC1, CII, POW",
+            "cells": {
+              "w31": {
+                "t": "PC1: CHỜ MUA 17–18",
+                "s": "up",
+                "n": 1
+              },
+              "w32": {
+                "t": "CII: Cầm, đợi 182x ra · POW: Mua nhẹ nếu cầm trên 60% tiền",
+                "s": "up",
+                "n": 2
+              },
+              "w33": {
+                "t": "",
+                "s": "hold"
+              },
+              "w34": {
+                "t": "",
+                "s": "hold"
+              }
+            },
+            "num": "VIII"
+          },
+          {
+            "key": "c-ng-ngh-vn",
+            "label": "Công nghệ VN",
+            "tickers": "FPT",
+            "cells": {
+              "w31": {
+                "t": "FPT: Tránh",
+                "s": "avoid",
+                "n": 1
+              },
+              "w32": {
+                "t": "FPT: Giải ngân rồi bán khi được kéo",
+                "s": "down",
+                "n": 1
+              },
+              "w33": {
+                "t": "FPT: Chỉ hồi kỹ thuật",
+                "s": "hold",
+                "n": 1
+              },
+              "w34": {
+                "t": "FPT: CẦM NGUYÊN — lướt sóng được",
+                "s": "hold",
+                "n": 1
+              }
+            },
+            "num": "IX"
+          },
+          {
+            "key": "b-n-l-ti-u-d-ng",
+            "label": "Bán lẻ & Tiêu dùng",
+            "tickers": "VNM, PNJ, MWG",
+            "cells": {
+              "w31": {
+                "t": "MWG: Tránh · PNJ: Tránh",
+                "s": "avoid",
+                "n": 2
+              },
+              "w32": {
+                "t": "VNM: CẦM — nhà nước còn 36% · PNJ: Có thể bị đánh ngược lên",
+                "s": "hold",
+                "n": 2
+              },
+              "w33": {
+                "t": "PNJ: Chỉ hồi kỹ thuật",
+                "s": "hold",
+                "n": 1
+              },
+              "w34": {
+                "t": "VNM: ĐÃ CHỐT LỜI 1/2 — lãi ~13% · PNJ: LƯỚT SÓNG — đã được cây trần",
+                "s": "down",
+                "n": 2
+              }
+            },
+            "num": "X"
+          },
+          {
+            "key": "logistics-h-ng-kh-ng",
+            "label": "Logistics & Hàng không",
+            "tickers": "SCS",
+            "cells": {
+              "w31": {
+                "t": "",
+                "s": "hold"
+              },
+              "w32": {
+                "t": "SCS: CẦM — đánh spring",
+                "s": "hold",
+                "n": 1
+              },
+              "w33": {
+                "t": "",
+                "s": "hold"
+              },
+              "w34": {
+                "t": "SCS: NẰM IM",
+                "s": "hold",
+                "n": 1
+              }
+            },
+            "num": "XI"
+          },
+          {
+            "key": "khai-kho-ng",
+            "label": "Khai khoáng",
+            "tickers": "MSR",
+            "cells": {
+              "w31": {
+                "t": "MSR: Chờ mua",
+                "s": "up",
+                "n": 1
+              },
+              "w32": {
+                "t": "",
+                "s": "hold"
+              },
+              "w33": {
+                "t": "",
+                "s": "hold"
+              },
+              "w34": {
+                "t": "",
+                "s": "hold"
+              }
+            },
+            "num": "XII"
+          },
+          {
+            "key": "manual-12",
+            "num": "",
+            "label": "Tỉ trọng tiền / cổ phiếu",
+            "tickers": "Toàn danh mục VN",
+            "isRatio": true,
+            "cells": {
+              "w31": {
+                "t": "60% tiền — 40% cổ phiếu (phòng thủ)",
+                "s": "wait"
+              },
+              "w32": {
+                "t": "ĐẢO CHIỀU 05/08 → mua full cổ phiếu",
+                "s": "up"
+              },
+              "w33": {
+                "t": "Full cổ phiếu — \"kế hoạch vẫn vậy\"",
+                "s": "hold"
+              },
+              "w34": {
+                "t": "Full cổ phiếu, chốt lời 1/2 VNM — \"không cần làm gì cả\"",
+                "s": "hold"
+              }
+            }
           }
-        }
+        ],
+        "count": 13
       },
       {
-        "key": "phanbon",
-        "num": "II",
-        "label": "Phân bón",
-        "tickers": "DCM, DPM",
-        "cells": {
-          "w31": {
-            "t": "Mua & nắm giữ — đã vào 70% vị thế",
-            "s": "up"
+        "key": "us",
+        "label": "Mỹ & thế giới",
+        "groups": [
+          {
+            "key": "ch-s-m-th-gi-i",
+            "label": "Chỉ số Mỹ & thế giới",
+            "tickers": "S&P 500 · US30, NI225, FTSE 100",
+            "cells": {
+              "w31": {
+                "t": "S&P 500 · US30: Giữ short · FTSE 100: Bán / short",
+                "s": "down",
+                "n": 2
+              },
+              "w32": {
+                "t": "S&P 500 · US30: SHORT · NI225: SHORT khi hồi",
+                "s": "down",
+                "n": 2
+              },
+              "w33": {
+                "t": "S&P 500 · US30: SHORT 2/3 vị thế — ưu tiên · NI225: SHORT NHẸ — vào 1/3",
+                "s": "down",
+                "n": 2
+              },
+              "w34": {
+                "t": "S&P 500 · US30: GIỮ SHORT — điều chỉnh tiếp tuần tới · NI225: ĐỢI HỒI RỒI SHORT",
+                "s": "down",
+                "n": 2
+              }
+            },
+            "num": "I"
           },
-          "w32": {
-            "t": "MUA MẠNH (05/08) → MUA VÀ HOLD (07/08) → mua thêm đánh spring (08/08)",
-            "s": "up"
+          {
+            "key": "us-tech-ti-u-d-ng",
+            "label": "US Tech — tiêu dùng",
+            "tickers": "AAPL, TSLA",
+            "cells": {
+              "w31": {
+                "t": "AAPL: Chốt lời short",
+                "s": "down",
+                "n": 1
+              },
+              "w32": {
+                "t": "AAPL: SHORT — còn rớt tiếp",
+                "s": "down",
+                "n": 1
+              },
+              "w33": {
+                "t": "AAPL: HOLD tới 290",
+                "s": "hold",
+                "n": 1
+              },
+              "w34": {
+                "t": "AAPL: GIỮ LỆNH BÁN · TSLA: KHÔNG ĐỤNG VÀO",
+                "s": "down",
+                "n": 2
+              }
+            },
+            "num": "II"
           },
-          "w33": {
-            "t": "CẦM DÀI HẠN — ưu tiên DCM (làm ăn tốt hơn), DPM mẫu hình đẹp hơn",
-            "s": "hold"
+          {
+            "key": "us-tech-internet",
+            "label": "US Tech — internet",
+            "tickers": "GOOGL, AMZN",
+            "cells": {
+              "w31": {
+                "t": "GOOGL: Short · AMZN: Chờ short",
+                "s": "down",
+                "n": 2
+              },
+              "w32": {
+                "t": "GOOGL: SHORT",
+                "s": "down",
+                "n": 1
+              },
+              "w33": {
+                "t": "GOOGL: CHỐT SHORT — ngưng short",
+                "s": "down",
+                "n": 1
+              },
+              "w34": {
+                "t": "GOOGL: BỎ QUA — khó short khó long",
+                "s": "avoid",
+                "n": 1
+              }
+            },
+            "num": "III"
           },
-          "w34": {
-            "t": "Điểm mua kỹ thuật vẫn đẹp → MUA NẰM IM, \"tiền bắt đầu vào\"",
-            "s": "up"
+          {
+            "key": "us-tech-ph-n-m-m",
+            "label": "US Tech — phần mềm",
+            "tickers": "WTC",
+            "cells": {
+              "w31": {
+                "t": "WTC: Đừng mua",
+                "s": "avoid",
+                "n": 1
+              },
+              "w32": {
+                "t": "",
+                "s": "hold"
+              },
+              "w33": {
+                "t": "",
+                "s": "hold"
+              },
+              "w34": {
+                "t": "",
+                "s": "hold"
+              }
+            },
+            "num": "IV"
+          },
+          {
+            "key": "b-n-d-n-chip-",
+            "label": "Bán dẫn (chip)",
+            "tickers": "INTC, MU, MRVL, AMD, NVDA",
+            "cells": {
+              "w31": {
+                "t": "INTC: Giữ lệnh short · MU: Giữ lệnh short · MRVL: Giữ lệnh short · AMD: Giữ lệnh short · +1 mã",
+                "s": "down",
+                "n": 5
+              },
+              "w32": {
+                "t": "AMD: Tiếp tục giữ short",
+                "s": "down",
+                "n": 1
+              },
+              "w33": {
+                "t": "AMD: SHORT khi lên · NVDA: SHORT — thêm ở 241",
+                "s": "down",
+                "n": 2
+              },
+              "w34": {
+                "t": "INTC: GIỮ SHORT · NVDA: GIỮ LỆNH BÁN",
+                "s": "down",
+                "n": 2
+              }
+            },
+            "num": "V"
+          },
+          {
+            "key": "b-nh-i-n-t-",
+            "label": "Bộ nhớ & Điện tử",
+            "tickers": "005930, SanDisk",
+            "cells": {
+              "w31": {
+                "t": "SanDisk: Đã chốt · 005930: Chờ bắt đáy",
+                "s": "down",
+                "n": 2
+              },
+              "w32": {
+                "t": "005930: Còn điều chỉnh",
+                "s": "hold",
+                "n": 1
+              },
+              "w33": {
+                "t": "005930: Hồi kỹ thuật rồi gãy tiếp",
+                "s": "hold",
+                "n": 1
+              },
+              "w34": {
+                "t": "005930: HỒI RỒI CHỊU TRẬN",
+                "s": "hold",
+                "n": 1
+              }
+            },
+            "num": "VI"
+          },
+          {
+            "key": "an-ninh-m-ng",
+            "label": "An ninh mạng",
+            "tickers": "PANW, FTNT, CRWD",
+            "cells": {
+              "w31": {
+                "t": "PANW: Chờ short · FTNT: Chờ short · CRWD: Chờ short",
+                "s": "down",
+                "n": 3
+              },
+              "w32": {
+                "t": "CRWD: BỔ SUNG phần đã chốt",
+                "s": "down",
+                "n": 1
+              },
+              "w33": {
+                "t": "PANW: GIỮ SHORT — vào thêm ít · CRWD: GIỮ SHORT — vào thêm ít",
+                "s": "down",
+                "n": 2
+              },
+              "w34": {
+                "t": "FTNT: GIỮ SHORT — đi cùng nhóm CRWD · CRWD: GIỮ SHORT — chưa chốt",
+                "s": "down",
+                "n": 2
+              }
+            },
+            "num": "VII"
+          },
+          {
+            "key": "ph-n-c-ng-cntt",
+            "label": "Phần cứng CNTT",
+            "tickers": "DELL, ANET",
+            "cells": {
+              "w31": {
+                "t": "DELL: Short · ANET: Không ưu tiên",
+                "s": "down",
+                "n": 2
+              },
+              "w32": {
+                "t": "DELL: GIỮ SHORT 1/2 · short thêm",
+                "s": "down",
+                "n": 1
+              },
+              "w33": {
+                "t": "DELL: GIỮ SHORT — \"hơi bướng và liên tục ngáo ngáo\"",
+                "s": "down",
+                "n": 1
+              },
+              "w34": {
+                "t": "DELL: SHORT NẾU KÉO LÊN",
+                "s": "down",
+                "n": 1
+              }
+            },
+            "num": "VIII"
+          },
+          {
+            "key": "h-ng-kh-ng-v-tr-",
+            "label": "Hàng không vũ trụ",
+            "tickers": "SpaceX",
+            "cells": {
+              "w31": {
+                "t": "SpaceX: Giữ short",
+                "s": "down",
+                "n": 1
+              },
+              "w32": {
+                "t": "SpaceX: SHORT LẠI",
+                "s": "down",
+                "n": 1
+              },
+              "w33": {
+                "t": "SpaceX: SHORT 1/3",
+                "s": "down",
+                "n": 1
+              },
+              "w34": {
+                "t": "SpaceX: SHORT THÊM khi hồi",
+                "s": "down",
+                "n": 1
+              }
+            },
+            "num": "IX"
+          },
+          {
+            "key": "qu-c-ph-ng",
+            "label": "Quốc phòng",
+            "tickers": "RTX · LMT",
+            "cells": {
+              "w31": {
+                "t": "RTX · LMT: Short",
+                "s": "down",
+                "n": 1
+              },
+              "w32": {
+                "t": "",
+                "s": "hold"
+              },
+              "w33": {
+                "t": "",
+                "s": "hold"
+              },
+              "w34": {
+                "t": "",
+                "s": "hold"
+              }
+            },
+            "num": "X"
+          },
+          {
+            "key": "qu-ai",
+            "label": "Quỹ AI",
+            "tickers": "VCX",
+            "cells": {
+              "w31": {
+                "t": "",
+                "s": "hold"
+              },
+              "w32": {
+                "t": "",
+                "s": "hold"
+              },
+              "w33": {
+                "t": "",
+                "s": "hold"
+              },
+              "w34": {
+                "t": "VCX: MUA MẠNH",
+                "s": "up",
+                "n": 1
+              }
+            },
+            "num": "XI"
+          },
+          {
+            "key": "truy-n-th-ng",
+            "label": "Truyền thông",
+            "tickers": "NFLX",
+            "cells": {
+              "w31": {
+                "t": "",
+                "s": "hold"
+              },
+              "w32": {
+                "t": "",
+                "s": "hold"
+              },
+              "w33": {
+                "t": "NFLX: Đã chốt lời — mua lại nếu về 74",
+                "s": "down",
+                "n": 1
+              },
+              "w34": {
+                "t": "NFLX: MUA THÊM NẾU LÙI",
+                "s": "up",
+                "n": 1
+              }
+            },
+            "num": "XII"
+          },
+          {
+            "key": "d-c-ph-m",
+            "label": "Dược phẩm",
+            "tickers": "CSL, MRNA",
+            "cells": {
+              "w31": {
+                "t": "CSL: Để đấy",
+                "s": "hold",
+                "n": 1
+              },
+              "w32": {
+                "t": "",
+                "s": "hold"
+              },
+              "w33": {
+                "t": "",
+                "s": "hold"
+              },
+              "w34": {
+                "t": "MRNA: SHORT — kỳ vọng ảo",
+                "s": "down",
+                "n": 1
+              }
+            },
+            "num": "XIII"
+          },
+          {
+            "key": "kim-lo-i-qu-",
+            "label": "Kim loại quý",
+            "tickers": "XAU/USD, XAG/USD",
+            "cells": {
+              "w31": {
+                "t": "XAU/USD: Chờ mua vùng sâu · XAG/USD: Chờ",
+                "s": "up",
+                "n": 2
+              },
+              "w32": {
+                "t": "XAU/USD: GIỮ — mục tiêu gần · XAG/USD: Hồi theo vàng",
+                "s": "hold",
+                "n": 2
+              },
+              "w33": {
+                "t": "XAU/USD: ĐÃ CHỐT 1/2 — giữ phần còn lại dài hạn",
+                "s": "down",
+                "n": 1
+              },
+              "w34": {
+                "t": "XAU/USD: VẪN CẦM — chưa bán",
+                "s": "down",
+                "n": 1
+              }
+            },
+            "num": "XIV"
+          },
+          {
+            "key": "d-u-n-ng-l-ng-th-gi-i",
+            "label": "Dầu & Năng lượng thế giới",
+            "tickers": "WTI, WDS",
+            "cells": {
+              "w31": {
+                "t": "WTI: Giữ vị thế mua · WDS: Chốt lời",
+                "s": "up",
+                "n": 2
+              },
+              "w32": {
+                "t": "WTI: MUA nếu về vùng thấp",
+                "s": "up",
+                "n": 1
+              },
+              "w33": {
+                "t": "WTI: Vùng cao lâu — hết sóng",
+                "s": "hold",
+                "n": 1
+              },
+              "w34": {
+                "t": "",
+                "s": "hold"
+              }
+            },
+            "num": "XV"
+          },
+          {
+            "key": "crypto",
+            "label": "Crypto",
+            "tickers": "BTC",
+            "cells": {
+              "w31": {
+                "t": "BTC: Tránh cả năm",
+                "s": "avoid",
+                "n": 1
+              },
+              "w32": {
+                "t": "BTC: GIỮ lệnh lướt",
+                "s": "hold",
+                "n": 1
+              },
+              "w33": {
+                "t": "BTC: GIỮ — đang lỗ 2.000/coin",
+                "s": "hold",
+                "n": 1
+              },
+              "w34": {
+                "t": "BTC: SHORT 2/3 — đang lỗ ~2.000/coin",
+                "s": "down",
+                "n": 1
+              }
+            },
+            "num": "XVI"
+          },
+          {
+            "key": "ngo-i-h-i",
+            "label": "Ngoại hối",
+            "tickers": "USD/JPY",
+            "cells": {
+              "w31": {
+                "t": "USD/JPY: Long khi về vùng thấp",
+                "s": "hold",
+                "n": 1
+              },
+              "w32": {
+                "t": "",
+                "s": "hold"
+              },
+              "w33": {
+                "t": "",
+                "s": "hold"
+              },
+              "w34": {
+                "t": "",
+                "s": "hold"
+              }
+            },
+            "num": "XVII"
+          },
+          {
+            "key": "b-n-l-ti-u-d-ng-qu-c-t-",
+            "label": "Bán lẻ & Tiêu dùng (quốc tế)",
+            "tickers": "AEON",
+            "cells": {
+              "w31": {
+                "t": "AEON: Mua nhỏ",
+                "s": "up",
+                "n": 1
+              },
+              "w32": {
+                "t": "",
+                "s": "hold"
+              },
+              "w33": {
+                "t": "",
+                "s": "hold"
+              },
+              "w34": {
+                "t": "",
+                "s": "hold"
+              }
+            },
+            "num": "XVIII"
+          },
+          {
+            "key": "ng-n-h-ng-m-c",
+            "label": "Ngân hàng Mỹ & Úc",
+            "tickers": "BAC, NAB, ANZ",
+            "cells": {
+              "w31": {
+                "t": "BAC: Short · NAB: Chốt lời · ANZ: Chốt lời",
+                "s": "down",
+                "n": 3
+              },
+              "w32": {
+                "t": "",
+                "s": "hold"
+              },
+              "w33": {
+                "t": "",
+                "s": "hold"
+              },
+              "w34": {
+                "t": "",
+                "s": "hold"
+              }
+            },
+            "num": "XIX"
+          },
+          {
+            "key": "khai-kho-ng-qu-c-t-",
+            "label": "Khai khoáng quốc tế",
+            "tickers": "BHP",
+            "cells": {
+              "w31": {
+                "t": "BHP: Không mua",
+                "s": "avoid",
+                "n": 1
+              },
+              "w32": {
+                "t": "",
+                "s": "hold"
+              },
+              "w33": {
+                "t": "",
+                "s": "hold"
+              },
+              "w34": {
+                "t": "",
+                "s": "hold"
+              }
+            },
+            "num": "XX"
           }
-        }
-      },
-      {
-        "key": "ctck",
-        "num": "III",
-        "label": "Chứng khoán (CTCK)",
-        "tickers": "TCX, SSI, VCI, VIX, MBS, HCM",
-        "cells": {
-          "w31": {
-            "t": "TRÁNH CẢ NHÓM — cắt sạch lệnh lướt sóng SSI, VCI, VIX",
-            "s": "avoid"
-          },
-          "w32": {
-            "t": "TCX giữ + bổ sung · SSI bổ sung · VIX đánh hồi phục · MBS cầm (vùng rẻ) · HCM đừng mua",
-            "s": "up"
-          },
-          "w33": {
-            "t": "",
-            "s": "hold"
-          },
-          "w34": {
-            "t": "SSI CẦM CHẶT (trong rổ FTSE) · VCI cứ cầm · HCM đừng đụng, vùng rất cao",
-            "s": "hold"
-          }
-        }
-      },
-      {
-        "key": "sxkd",
-        "num": "IV",
-        "label": "Sản xuất & kinh doanh",
-        "tickers": "VNM, SCS",
-        "cells": {
-          "w31": {
-            "t": "",
-            "s": "hold"
-          },
-          "w32": {
-            "t": "VNM CẦM (nhà nước còn 36%) · SCS CẦM, vừa đánh spring — \"cực phẩm rồi\"",
-            "s": "hold"
-          },
-          "w33": {
-            "t": "",
-            "s": "hold"
-          },
-          "w34": {
-            "t": "CHỐT LỜI 1/2 VNM (lãi ~13%) · SCS nằm im",
-            "s": "down"
-          }
-        }
-      },
-      {
-        "key": "luot",
-        "num": "V",
-        "label": "Lướt sóng VN",
-        "tickers": "FPT, PNJ, GVR, NVL, VIC/VHM",
-        "cells": {
-          "w31": {
-            "t": "FPT bán khi hồi · PNJ tránh · VIC/VHM tránh",
-            "s": "avoid"
-          },
-          "w32": {
-            "t": "FPT giải ngân rồi bán khi được kéo (85–90) · PNJ lướt 1/2 vị thế",
-            "s": "warn"
-          },
-          "w33": {
-            "t": "FPT, PNJ chỉ hồi kỹ thuật — không tích trữ · GVR lướt sóng thoái vốn · NVL lướt",
-            "s": "warn"
-          },
-          "w34": {
-            "t": "FPT + PNJ LƯỚT SÓNG (PNJ đã ăn cây trần) · VIC/VHM không khoái ở vùng cao",
-            "s": "up"
-          }
-        }
-      },
-      {
-        "key": "kimloai",
-        "num": "VI",
-        "label": "Kim loại quý",
-        "tickers": "Vàng (XAU), Bạc (XAG)",
-        "cells": {
-          "w31": {
-            "t": "Chờ mua vùng sâu — kịch bản quét 3.600–3.700",
-            "s": "wait"
-          },
-          "w32": {
-            "t": "ĐẢO CHIỀU 05/08: bỏ kịch bản chờ 3.000, MUA ngay — hội viên vào 4.078–4.080",
-            "s": "up"
-          },
-          "w33": {
-            "t": "ĐÃ CHỐT 1/2 — giữ phần còn lại dài hạn, chấp nhận rung lắc",
-            "s": "hold"
-          },
-          "w34": {
-            "t": "PHÒNG THỦ BẮT BUỘC ≥30% danh mục · mua thêm khi chênh trong nước còn 2–4tr · đích xa 5.300–5.600",
-            "s": "up"
-          }
-        }
-      },
-      {
-        "key": "nangluong",
-        "num": "VII",
-        "label": "Năng lượng & Crypto",
-        "tickers": "Dầu WTI, Bitcoin",
-        "cells": {
-          "w31": {
-            "t": "Dầu giữ vị thế mua · BTC tránh cả năm — \"không phải năm của Bitcoin\"",
-            "s": "hold"
-          },
-          "w32": {
-            "t": "Dầu mua nếu về vùng thấp · BTC MUA LƯỚT 65.200 (07/08)",
-            "s": "up"
-          },
-          "w33": {
-            "t": "Dầu vùng cao lâu, hết sóng · BTC giữ lệnh lướt, đang lỗ 2.000/coin",
-            "s": "warn"
-          },
-          "w34": {
-            "t": "BTC ĐẢO SANG SHORT: 1/2 (20/08) → 2/3 (23/08) — \"banana lần 3, hồi quang phản chiếu\"",
-            "s": "down"
-          }
-        }
-      },
-      {
-        "key": "quocte",
-        "num": "VIII",
-        "label": "Chỉ số & cổ phiếu Mỹ",
-        "tickers": "S&P 500/US30, NI225, AAPL, SpaceX, chip, cyber",
-        "cells": {
-          "w31": {
-            "t": "Giữ short S&P/US30 · short Apple, Intel, MU, Marvell, nhóm cyber",
-            "s": "down"
-          },
-          "w32": {
-            "t": "SHORT S&P 1/2 tại kháng cự · SpaceX short lại · thêm AMD, DELL, CRWD, GOOGL",
-            "s": "down"
-          },
-          "w33": {
-            "t": "SHORT 2/3 S&P — ưu tiên US500 hơn US30 · NI225 short 1/3 · chốt short GOOGL",
-            "s": "down"
-          },
-          "w34": {
-            "t": "GIỮ SHORT S&P — \"dư địa còn giảm\" · SpaceX short 2/3 · NVDA, CRWD, FTNT giữ short",
-            "s": "down"
-          }
-        }
-      },
-      {
-        "key": "tien",
-        "num": "",
-        "label": "Tỉ trọng tiền / cổ phiếu",
-        "isRatio": true,
-        "tickers": "Toàn danh mục VN",
-        "cells": {
-          "w31": {
-            "t": "60% tiền — 40% cổ phiếu (phòng thủ)",
-            "s": "wait"
-          },
-          "w32": {
-            "t": "ĐẢO CHIỀU 05/08 → mua full cổ phiếu",
-            "s": "up"
-          },
-          "w33": {
-            "t": "Full cổ phiếu — \"kế hoạch vẫn vậy\"",
-            "s": "hold"
-          },
-          "w34": {
-            "t": "Full cổ phiếu, chốt lời 1/2 VNM — \"không cần làm gì cả\"",
-            "s": "hold"
-          }
-        }
+        ],
+        "count": 20
       }
     ]
   }

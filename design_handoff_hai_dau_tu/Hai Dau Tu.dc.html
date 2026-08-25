@@ -1516,6 +1516,13 @@ input::placeholder{color:var(--ink-3);}
       <sc-if value="{{ tkIsWeek }}" hint-placeholder-val="{{ false }}">
         <div style="display:flex; flex-direction:column; gap:14px;">
           <div style="font-size:12.5px; color:var(--ink-2); line-height:1.6; max-width:900px;">{{ wbNote }}</div>
+          <div class="no-print">
+            <div class="nav-scroll tk-segment" style="display:inline-flex;" role="tablist" aria-label="Chọn thị trường">
+              <sc-for list="{{ wbMkts }}" as="wm" hint-placeholder-count="2">
+                <div onClick="{{ wm.onClick }}" role="tab" tabindex="0" class="tk-seg-btn" style="background:{{ wm.bg }}; color:{{ wm.color }}; font-weight:{{ wm.weight }};">{{ wm.label }}</div>
+              </sc-for>
+            </div>
+          </div>
           <div class="wb-wrap">
             <table class="wb">
               <thead>
@@ -2301,7 +2308,7 @@ class Component extends DCLogic {
     let logged = false;
     try { logged = localStorage.getItem('hdt_auth') === '1'; } catch (e) {}
     const firstTk = (window.HDT_DATA && window.HDT_DATA.tickers && window.HDT_DATA.tickers[0]) || {};
-    this.state = { logged, screen: 'dashboard', pwError: false, srcType: 0, added: [], updIdx: 0, expertId: 'thai-pham', q: '', assetKey: 'vn', callsExpert: 'all', chartSym: '', chartLabel: '', scExpert: 'all', tickerKey: firstTk.key || '', bncOnly: false, bncPrices: {}, vnBars: {}, tkView: 'industry', tkRegion: 'all', tkIndustry: 'all', tkBasket: 'all', tkTrade: 'all', ctxTopic: 0, mkt: 'vn', aiOpen: '', tkTab: 'list' };
+    this.state = { logged, screen: 'dashboard', pwError: false, srcType: 0, added: [], updIdx: 0, expertId: 'thai-pham', q: '', assetKey: 'vn', callsExpert: 'all', chartSym: '', chartLabel: '', scExpert: 'all', tickerKey: firstTk.key || '', bncOnly: false, bncPrices: {}, vnBars: {}, tkView: 'industry', tkRegion: 'all', tkIndustry: 'all', tkBasket: 'all', tkTrade: 'all', ctxTopic: 0, mkt: 'vn', aiOpen: '', tkTab: 'list', wbMkt: 'vn' };
     this.pwRef = React.createRef();
     this.nameRef = React.createRef();
     this.channelRef = React.createRef();
@@ -4015,7 +4022,15 @@ return {
       thBg: w.now ? 'var(--ink)' : 'var(--hair)',
       thColor: w.now ? 'var(--white)' : 'var(--ink-2)'
     }));
-    const wbRows = (WB.groups || []).map(g => ({
+    const wbMkts = (WB.markets || []).map(m => ({
+      label: m.label + ' · ' + (m.groups || []).length + ' nhóm',
+      bg: s.wbMkt === m.key ? 'var(--white)' : 'transparent',
+      color: s.wbMkt === m.key ? 'var(--ink)' : 'var(--ink-2)',
+      weight: s.wbMkt === m.key ? '600' : '400',
+      onClick: () => this.setState({ wbMkt: m.key })
+    }));
+    const wbCurMkt = (WB.markets || []).find(m => m.key === s.wbMkt) || (WB.markets || [])[0] || { groups: [] };
+    const wbRows = (wbCurMkt.groups || []).map(g => ({
       label: g.label, num: g.num || '', hasNum: !!g.num, tickers: g.tickers || '',
       rowBg: g.isRatio ? 'var(--hair)' : 'transparent',
       cells: (WB.weeks || []).map(w => {
@@ -4037,7 +4052,7 @@ return {
 
     return {
       tkTabs, tkIsList: s.tkTab === 'list', tkIsWeek: s.tkTab === 'week',
-      wbWeeks, wbRows, wbUpdated: WB.updated || '', wbNote: WB.note || '',
+      wbWeeks, wbRows, wbMkts, wbUpdated: WB.updated || '', wbNote: WB.note || '',
       isAi: s.screen === 'ai', aiUpdated: AI.updated, aiNote: AI.note, aiEntryRef: AI.entryRef || '',
       aiGroups, hasAiPop: !!aiPop, aiPop: aiPop || {},
       closeAi: () => this.setState({ aiOpen: '' }),

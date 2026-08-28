@@ -275,3 +275,112 @@ Mốc phân định trong 4 tuần: **82.000** (ông bồi short) và **76.029**
 ### Một điều ông làm mà tôi đã ghi trước là sẽ xảy ra
 
 Ông giữ short BTC qua ba tuần giá đi ngược mà **không tự chấm sai dòng cũ lần nào** — đúng điểm yếu I2 đã ghi trong thư viện. Tôi thì đã tự chấm sai bốn dòng trong bốn ngày. Chưa biết ai kiếm được tiền hơn, nhưng về mặt phương pháp thì đây là chỗ tôi cố tình làm khác hình mẫu, và cần giữ.
+
+---
+
+# Nhận định mù #3 — 2026-08-28 (thứ Sáu, sau phiên) · hạn chấm 25/09
+
+**Mù từ:** chưa quét kênh, chưa đọc bất kỳ nội dung nào phát sau 24/08. Viết xong bảng này rồi mới chạy `scan_channels`.
+
+## Chấm giữa kỳ bảng #2 (hạn chính thức 21/09)
+
+| Dòng #2 | Gọi 24/08 | Thực tế 28/08 | Trạng thái |
+|---|---|---|---|
+| 1 · Vàng ↑ tiếp | 4.728, target 4.765, mốc hỏng 4.655 | **4.635 — đã thủng 4.655** | **NỬA — sai nhịp lần hai** |
+| 2 · BTC ↑ tin cậy thấp | 79.585, mốc hỏng 76.029 | 79.960 (+2,1% tuần) | ĐÚNG, đang chạy |
+| 3 · VN-Index ↑ | 1.789, mốc hỏng 1.768 | **1.830 (+62 điểm/tuần)** | ĐÚNG rõ |
+| 4 · Lợi suất neo cao | 30Y 5,23% | 5,18% — dưới lại 5,2% | LỆCH NHẸ |
+| 5 · DXY ↓ yếu tiếp | 98,99 | 99,15 — **tuần đầu tiên TĂNG** | ĐANG ĐẢO — theo dõi |
+| 6 · CK Mỹ → nghiêng xuống | 7.648 | 7.731 (+0,7% tuần) | LỆCH — may là đã để tin cậy thấp |
+
+### Bài học vàng: tôi đang gọi thứ mình không có công cụ để gọi
+
+Hai lần liên tiếp tôi sai về **NHỊP** của vàng, và sai theo hai chiều ngược nhau:
+- #1: "chờ nhịp về 4.43–4.46 rồi mua" → nhịp không bao giờ đến, giá bay thẳng lên 4.73.
+- #2: "tăng tiếp, không chờ chiết khấu nữa" → giá quay đầu, thủng luôn mốc hỗ trợ tôi đặt.
+
+Sửa từ chiều gấu sang chiều tăng cũng vẫn sai. Nghĩa là vấn đề không nằm ở chiều mà ở chỗ **tôi không có
+công cụ nào đo được nhịp của vàng** — `detect_zones` cho vùng cản/hỗ trợ, không cho thời điểm.
+
+→ **Quy ước mới từ #3: với vàng chỉ gọi HƯỚNG và mốc cấu trúc, KHÔNG gọi nhịp và không đặt điểm vào.**
+Bỏ hẳn cột "vào" cho tài sản nào mà bốn công cụ không đo được nhịp.
+
+### Dòng 5 là dòng cần canh nhất tuần này
+
+DXY tăng 0,4% — tuần đầu tiên tăng kể từ khi tôi dựng A9. A9 là mô hình nền của cả ba dòng vàng, BTC và
+VN-Index. Điều kiện tắt tôi đã ghi là "đóng tuần trên 101"; nay mới 99,15 nên chưa tắt, nhưng đây là dấu
+hiệu sớm. Nếu DXY lên tiếp mà vàng vẫn giảm thì A9 vẫn đúng — chỉ là chiều gió đổi.
+
+## BẢNG HƯỚNG #3 (4 tuần tới, tới 25/09)
+
+| # | Tài sản | Hướng | Tin cậy | Lý do + mốc kiểm chứng |
+|---|---|---|---|---|
+| 1 | **Vàng** | ↑ hướng, KHÔNG gọi nhịp | vừa | 4.635, vẫn trên MA200 (4.514) và MA40 tuần (4.535) — cấu trúc tăng chưa hỏng dù đã thủng 4.655. Cản 4.765–4.880 vẫn nguyên. **Mốc hỏng cấu trúc thật: đóng tuần dưới 4.514.** Không đưa điểm vào theo quy ước mới. |
+| 2 | **VN-Index** | ↑ tiếp | vừa | 1.830, đã chạy 62 điểm trong tuần. Độ rộng cải thiện ba tuần liền: trên MA50 28,8% → 38,7% → 42,9%; downtrend 60,7% → 52,9% → 50,0%. Ngoại mua ròng 3/5 phiên tuần này. **Cờ đỏ: khối lượng GIẢM DẦN khi giá tăng — 669 → 643 → 587 → 484tr.** Mốc hỏng: đóng dưới 1.788. |
+| 3 | **Bitcoin** | ↑ | thấp-vừa | 79.960, đứng ngay dưới cản 82.430–82.792 (chỉ chạm 2 lần — yếu). Trên MA200 69.223 và MA40 tuần 74.217. Nâng nhẹ tin cậy vì đã đúng một nhịp. Mốc hỏng: thủng 76.029. |
+| 4 | **DXY** | → đảo chiều tạm, chưa gọi hướng | thấp | 99,15 sau tuần đầu tiên tăng. **Đây là biến gốc của A9** — dòng 1, 2, 3 đều treo vào nó. Đóng tuần trên 101 → A9 tắt, viết lại cả ba. |
+| 5 | **Lợi suất Mỹ dài hạn** | → neo quanh 5,2%, bỏ phần "dốc thêm" | vừa | 30Y 5,18%, chênh 30Y−10Y co từ 0,57 → 0,54 → 0,52 qua ba tuần. Phần "dốc thêm" tôi gọi ở #1 nay chính thức bỏ — đường cong PHẲNG dần, ba tuần liên tục. Tự chấm phần đó SAI. |
+| 6 | **CK Mỹ** | → đi ngang | thấp | 7.731. Đã lệch nhẹ so với #2. Giữ tin cậy thấp: A9 (đô yếu nâng cả cổ phiếu) và A3 (lợi suất ép định giá) vẫn đối nhau, chưa bên nào thắng rõ. |
+| 7 | **Dầu** | ↓ về mép dưới band | vừa | WTI 83,34 (−4,3% tuần), Brent 88,39 (−6,4%). Đây là tuần giảm mạnh nhất từ khi theo dõi. Band 78–90 vẫn giữ nhưng đang trôi về mép dưới — nếu thủng 78 thì cả luận điểm "giá dầu neo cao vì lợi ích chính trị" phải xem lại. |
+| 8 | **Phân bón VN** | ↑ | vừa | Giữ nguyên: giá URE vùng đáy chu kỳ, nền giá phẳng. Không có dữ kiện mới ngược. |
+
+**Điều kiện tự sửa ghi trước:**
+- DXY đóng tuần trên 101 → A9 tắt, viết lại dòng 1, 2, 3.
+- VN-Index đóng dưới 1.788 → dòng 2 chấm SAI ngay.
+- Vàng đóng tuần dưới 4.514 → dòng 1 chấm SAI (mốc cấu trúc, không phải mốc nhịp).
+- WTI thủng 78 → dòng 7 chuyển thành đảo hướng, và mô hình B (petrodollar) phải xem lại.
+
+## Dự đoán nội dung Tập 47 của Thái Phạm (chưa xem)
+
+1. Giữ nguyên 100% cổ phiếu, giọng còn phấn khởi hơn Tập 46 — VN-Index đã thêm 62 điểm. Nhiều khả năng.
+2. Vàng: ông sẽ KHÔNG chốt (bài học từ lần đoán sai ở #2 — đừng gán khung mean-reversion cho ông).
+   Nhiều khả năng ông giải thích nhịp giảm là "đánh nhau quanh vùng 4.760" đúng như đã hẹn.
+3. BTC: vẫn short, vẫn chưa tự chấm sai, có thể đã bồi ở 82.000 nếu giá chạm. Nhiều khả năng.
+4. Short CK Mỹ đang lỗ thêm — đây là chỗ đáng xem nhất: ông xử lý thế nào khi vị thế đi ngược 3 tuần.
+5. Có thể xuất hiện mã mới nhóm chứng khoán hoặc ngân hàng ăn theo dòng FTSE.
+
+## Đối chiếu #3 với nội dung tuần (đọc sau khi đã viết bảng) — 28/08
+
+### Phần dự đoán nội dung: 4 đúng / 1 sai một nửa
+
+| # | Tôi đoán trước | Thực tế | Chấm |
+|---|---|---|---|
+| 1 | Giữ 100% cổ phiếu, giọng phấn khởi hơn | "Nắm chặt bank, chứng, sản xuất, phân bón" — không đổi | **ĐÚNG** |
+| 2 | Vàng: KHÔNG chốt; giải thích nhịp giảm là "đánh nhau quanh 4.760 như đã hẹn" | "Sau khi đạt 4.700 như kế hoạch thì chuyện tích lũy 2–3 tuần ở vùng 4.500–4.700 cũng là đúng như dự liệu" | **ĐÚNG gần như nguyên văn** |
+| 3 | BTC vẫn short, chưa tự chấm sai, có thể bồi ở 82.000 | Vẫn short, chưa tự chấm sai. Nhưng KHÔNG bồi — ông **khóa hedge** | **ĐÚNG một nửa** |
+| 4 | Short CK Mỹ đang lỗ thêm — xem ông xử lý thế nào | "Chứng Mỹ ngọt", "mọi thứ đi đúng kế hoạch trừ Dell". Chỉ nhóm Cyber lõm | **SAI tiền đề** |
+| 5 | Có thể có mã mới nhóm chứng khoán hoặc ngân hàng | Có mã mới, nhưng là **SZC và PC1** — BĐS khu công nghiệp | **ĐÚNG phần "có", SAI phần ngành** |
+
+### Điều tôi hoàn toàn không nghĩ tới: HEDGE
+
+Bảng #3 của tôi mở đầu bằng đúng một câu tự thú: *"tôi không có công cụ nào đo được nhịp của vàng"*,
+và kết luận là **bỏ hẳn việc gọi nhịp**. Cùng tuần đó Thái Phạm gặp đúng bài toán ấy — biết hướng dài
+hạn còn lên, không đoán được nhịp ngắn — và ông không chọn giữa giữ hay bán mà mở ra lựa chọn thứ ba.
+
+- 26/08 vàng chạm 4.700: **khóa hedge** (mua short bằng đúng lượng đang giữ).
+- 27/08 giá lùi về 4,63: "Vàng hedged thành công."
+- 28/08: **thả hedge**, để vị thế mua chạy tiếp. Cùng tút đó **khóa hedge BTC** theo chiều ngược lại,
+  phòng cú kéo giết short quanh bài phát biểu Warsh, với điều kiện thả ghi rõ: "khi nào Warsh phát biểu
+  xong, giá phản ánh tin thì ta thả ra".
+
+→ Mô hình mới cho thư viện (nhóm H — quản trị vị thế):
+
+> **H7 — Không đoán được nhịp thì HEDGE, đừng chọn giữa giữ và bán.** Khi hướng dài hạn có bằng chứng
+> dày nhưng nhịp ngắn hạn không đo được bằng công cụ nào, có phương án thứ ba: mở vị thế đối ứng bằng
+> đúng lượng đang giữ để khóa lãi, rồi thả ra khi biến số gây nhiễu đã qua. Điều kiện bắt buộc để dùng:
+> (a) phải nêu trước ĐIỀU KIỆN THẢ gắn với một sự kiện cụ thể, không phải cảm tính; (b) tài khoản cho
+> phép hai chiều — không áp dụng được cho vàng vật chất hay cổ phiếu Việt Nam; (c) chấp nhận phí giữ
+> hai vị thế. Ca mẫu: Thái Phạm 26–28/08/2026, dùng đúng công cụ này ngược chiều cho vàng và BTC trong
+> cùng một tút.
+
+**Đây là lần đầu trong dự án tôi tìm ra thứ mình THIẾU chứ không phải thứ mình SAI.** Ba lần trước là
+lỗi suy luận (áp sai nhóm, sai mô hình, mượn số của người khác). Lần này bảng của tôi không sai — nó
+chỉ nghèo hơn, vì tôi chỉ có hai nút bấm còn ông có ba.
+
+### Chỗ tôi vẫn nhát hơn và lần này là đúng
+
+Dòng 6 (CK Mỹ) tôi để "đi ngang, tin cậy thấp" và ghi lý do là A9 với A3 đang đối nhau. S&P tuần này
++0,7% lên 7.731 trong khi ông giữ nguyên short — nhưng ông vẫn viết "chứng Mỹ ngọt", nghĩa là các lệnh
+short cổ phiếu riêng lẻ của ông đang ăn dù chỉ số lên. **Bài học: chỉ số và rổ cổ phiếu riêng lẻ có
+thể đi ngược nhau — tôi đang gọi hướng cho chỉ số rồi ngầm suy ra cho cả nhóm, đó là một bước nhảy
+chưa được kiểm chứng.** Từ #4 tách riêng hai dòng: chỉ số Mỹ, và nhóm công nghệ/cyber Mỹ.

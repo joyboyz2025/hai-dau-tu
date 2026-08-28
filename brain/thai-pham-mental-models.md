@@ -199,6 +199,24 @@ Margin làm mờ lý trí; đánh ít đánh chắc ("không phải ngày nào c
 **H7. "Ăn ít no lâu — trường tồn > tối đa"**
 Luôn có mặt ở mọi sóng với 20-30% còn hơn 40-50% rồi ra đảo; "mấy người được tiền bạc thọ"; mọi so sánh với người kiếm nhanh hơn đều vô nghĩa nếu họ không trường tồn (parable "One Buffett mới": 300tr → 25 tỷ → liquidate về 0; anh bạn DCA Bitcoin kẹp 90k).
 
+### H7 — Không đoán được nhịp thì HEDGE, đừng chọn giữa giữ và bán (thêm 28/08/2026)
+
+Khi hướng dài hạn có bằng chứng dày nhưng nhịp ngắn hạn không đo được bằng công cụ nào, tồn tại phương
+án thứ ba ngoài giữ và bán: mở vị thế đối ứng bằng đúng lượng đang giữ để khóa lãi, rồi thả ra khi biến
+số gây nhiễu đã qua.
+
+Điều kiện bắt buộc:
+- (a) Phải nêu TRƯỚC điều kiện thả, gắn với một sự kiện cụ thể chứ không phải cảm tính.
+- (b) Tài khoản phải cho phép giao dịch hai chiều — KHÔNG áp dụng được cho vàng vật chất hay cổ phiếu Việt Nam.
+- (c) Chấp nhận phí giữ hai vị thế, và rủi ro thả sai thời điểm.
+
+Ca mẫu (Thái Phạm 26–28/08/2026): vàng chạm 4.700 → khóa hedge → giá lùi về 4,63 → thả hedge. Cùng tút
+28/08, dùng đúng công cụ đó NGƯỢC CHIỀU cho BTC: đang giữ short thì mua một lượng đối ứng để khóa,
+phòng cú kéo quanh bài phát biểu chủ tịch Fed, điều kiện thả là "khi giá phản ánh tin xong".
+
+**Vì sao đáng ghi:** đây là thứ Claude THIẾU chứ không phải làm SAI. Bảng nhận định mù #3 tự kết luận
+"không có công cụ đo nhịp vàng nên bỏ hẳn việc gọi nhịp" — đúng, nhưng nghèo. H7 là nút bấm thứ ba.
+
 ## I. META-PHƯƠNG PHÁP
 
 **I1. Kịch bản hóa + xác suất nói miệng (output chuẩn)**

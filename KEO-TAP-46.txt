@@ -1,0 +1,371 @@
+════════════════════════════════════════════════════════════════════════════════
+  TRÍCH KÈO — TẬP 46 (ĐỘC QUYỀN HỘI VIÊN 2026) · 23/08/2026
+  Thái Phạm · gộp cả Tập 22 hội viên chứng khoán nước ngoài
+  https://www.youtube.com/watch?v=t7G-e9CQgIM
+────────────────────────────────────────────────────────────────────────────────
+  Trích nguyên văn từ transcript. Chỗ nào phụ đề tự động đọc không rõ thì ghi
+  [PHỤ ĐỀ MỜ] — KHÔNG đoán hộ. Câu trong ngoặc kép là lời ông nói.
+════════════════════════════════════════════════════════════════════════════════
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  BỐI CẢNH ÔNG DỰNG KÈO TRÊN — đọc trước khi đọc mốc giá                       │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+  • Nợ công Mỹ vượt 40.000 tỷ đô. Riêng hai nhiệm kỳ Trump góp 30% tổng nợ công
+    lịch sử, chỉ trong 6 năm.
+  • 2026 đáo hạn trái phiếu 30 năm ~5.500 tỷ; 2027 thêm hơn 4.000 tỷ. Nhật, Anh,
+    Trung Quốc đã xả 140 tỷ đô trong 4 tháng.
+  • Lợi suất 10 năm và 30 năm vượt đỉnh tháng 7/2007 — mốc trước khủng hoảng.
+  • Dự trữ dầu chiến lược Mỹ thấp nhất 50 năm; theo radar gần như không tàu nào
+    qua eo biển Hormuz.
+  • Bầu cử giữa nhiệm kỳ còn 80 ngày: 82% hạ viện và trên 51% thượng viện
+    nghiêng về Dân chủ.
+  • FTSE đưa 27 mã Việt Nam vào rổ, 1,3 tỷ đô giải ngân tới tháng 9/2027.
+
+  Câu chốt của ông về mảng Mỹ:
+    "Chứng Mỹ thì sẽ sập thôi. Nước Mỹ nói chung hết bài rồi. Muốn giải quyết
+     cái bài này chỉ có chiến tranh thôi. Chiến tranh hoặc là khủng hoảng."
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  1 · CHỈ SỐ MỸ                                                               │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+  US500 (S&P 500) ................................................. SHORT
+    VÀO   : đợi hồi phục về ~7.750 rồi short
+    RA    : chốt lời 7.500 · xa hơn 7.000 nếu Anthropic niêm yết xong
+    LÝ DO : "Cá nhân tôi vẫn cho rằng S&P 500 và có lẽ là Nasdaq sẽ tiếp tục có
+            một tuần điều chỉnh trong tuần tới." Vị thế ông thiên về short.
+            Kịch bản lớn: thị trường cầm cự tới khi Anthropic niêm yết tháng 10
+            rồi mới có cú điều chỉnh mạnh, để dọn đường đón OpenAI.
+
+  US30 / USTech ................................................... SHORT
+    RA    : chốt lời 28.000
+    LÝ DO : "Down zone thì trông thì điều chỉnh nhưng sẽ điều chỉnh ít hơn."
+    [PHỤ ĐỀ MỜ] Câu "mốc take profit hoàn toàn có thể nằm ở mức 28.000" đứng
+    NGAY TRƯỚC câu về US500, nên nó thuộc về công cụ nói trước đó. Không xác
+    định chắc được là US30 hay USTech — 28.000 khớp USTech hơn (US30 các tập
+    trước ông để cắt lỗ quanh 54.000).
+
+  Cách đánh ở sàn Mỹ: "Nếu các bạn đánh ở sàn Mỹ thì vẫn có thể đánh SPY,
+  hoặc là QQQ. QQQ chính là chỉ số Nasdaq 100."
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  2 · CỔ PHIẾU MỸ — LỆNH MỚI MỞ TRONG TẬP NÀY                                 │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+  MRNA (Moderna) .................................................. SHORT ⭐MỚI
+    VÀO   : đặt lệnh short vùng ~150  [PHỤ ĐỀ MỜ: đọc là "khoảng 100 150"]
+    LÝ DO : Giá tăng gấp 2,5 lần chỉ vì công bố thử nghiệm giai đoạn ba thành
+            công cho thuốc chống ung thư. Nhưng còn tám thử nghiệm nữa — tổng
+            cộng chín. "Bây giờ anh mới thử nghiệm thành công có một thử nghiệm
+            thôi. Vậy thì để tiếp tục tăng lên mấy trăm phần trăm như thế thì
+            nó rất là vô lý, nó thuần dựa trên một cái kỳ vọng ảo."
+            Ví von của ông: chạy được 5 km ở tốc độ sub-3 không có nghĩa là
+            giữ được tốc độ đó suốt 42 km.
+
+  VCX (quỹ Fundrise Innovation Fund) ............................... MUA ⭐MỚI
+    VÀO   : vùng 40 — và giá đã về đúng đó
+    RA    : 160–200 nếu OpenAI niêm yết ở định giá 2.000 tỷ đô
+    LÝ DO : Quỹ nắm khoảng 75% tài sản là cổ phần Anthropic, Claude và OpenAI.
+            Anthropic đang được định giá ~1.900 tỷ đô, OpenAI ~1.200 tỷ.
+            "Nếu các bạn nhớ là tôi bảo con này mà về lại vùng 40 thì tôi mua
+             — đúng nó về 40."
+            Điểm đáng chú ý về phương pháp: ông nói mẫu hình VCX giống hệt
+            SpaceX sau IPO ("nó cũng sẽ nằm liệt như con này thôi") và dùng
+            chính điều đó làm căn cứ MUA — trong khi ông đang SHORT SpaceX.
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  3 · CỔ PHIẾU MỸ — LỆNH ĐANG GIỮ                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+  AAPL ......... GIỮ LỆNH BÁN     RA: về ~290
+                 "Apple tiếp tục bán cho tôi, giữ lệnh bán."
+
+  NVDA ......... GIỮ LỆNH BÁN     RA: về 200
+                 "Nvidia tiếp tục giữ lệnh bán, lệnh bán thời gian tới về 200."
+
+  INTC ......... GIỮ SHORT        RA: 70 · phải lấp lại gap trước
+                 "Một số bạn hỏi tôi có sợ gì Intel không? Tôi không. Cứ giữ
+                  lệnh short thôi."
+
+  CRWD ......... GIỮ SHORT        VÀO: đã bổ sung ở 224 · RA: 160–170
+                 Ông chốt lời 1/2 quanh 28/7, phần còn lại bị "thịt" khi giá
+                 vượt đỉnh, nên đã bổ sung lại ở 224. "Các anh chị hỏi tôi chốt
+                 lời chưa? Tôi vẫn hold, không có gì thay đổi hết."
+
+  FTNT ......... GIỮ SHORT        RA: 130
+                 "Fortinet thì các bạn sẽ đi theo CrowdStrike, nó đi cùng một
+                  nhóm với nhau."
+
+  PANW ......... GIỮ SHORT        "Y chang con CrowdStrike, không có gì thay đổi."
+
+  SNDK ......... GIỮ SHORT        "Khá phức tạp hơn nhưng tôi vẫn kỳ vọng nó
+                 tương tự như con MU, cứ giữ short thôi."
+
+  MU ........... GIỮ SHORT
+
+  MRVL ......... GIỮ SHORT        "Marvell cũng giữ short thôi. Vùng này không mua."
+
+  AMZN ......... GIỮ (hold)
+
+  MSFT ......... GIỮ SHORT
+
+  DELL ......... SHORT KHI HỒI    VÀO: nếu có cú kéo lên 460
+                 "Các bạn vẫn có thể short được tuần tới nếu nó có cú kéo lên
+                  ở 460 thì các bạn cứ short cho thôi."
+
+  SPCX ......... SHORT THÊM       VÀO: khi hồi lên 140–146
+                 "Đầu tiên tôi nghĩ nó có thể về lại vùng 165, nhưng có lẽ nó
+                  lên được vùng 140–141 cho đến 146 là có thể tiếp tục short.
+                  Tại thời điểm này tôi vẫn đặt vị thế short."
+
+  AMD .......... BÁN KHI HỒI      VÀO: đợi hồi phục ~500 rồi bán
+                 "Các anh chị có thể tiếp tục bán nhưng đừng bán vội vã."
+
+  NFLX ......... MUA THÊM NẾU LÙI VÀO: vùng 77
+                 Trả lời trực tiếp câu hỏi của một hội viên trong tập.
+
+  GOOGL ........ BỎ QUA
+                 "Nhìn Google thì cũng khó rồi, khó short khó long. Tốt nhất
+                  là bỏ qua."
+
+  TSLA ......... KHÔNG ĐỤNG VÀO
+
+  [KHÔNG XÁC ĐỊNH ĐƯỢC MÃ — 2 kèo]
+  • "Ron thì tôi short ở vùng này là khá là ngon 220, giờ kiếm ăn được rồi."
+    → phụ đề đọc "Ron", không đủ căn cứ suy ra mã. Mốc: short quanh 220.
+  • "Tôi đang để ý con platinum. Nếu nó lấp lại cái gap nhỏ này khoảng 16.4 thì
+    tôi sẽ vào lệnh mua long."
+    → "platinum" + gap 16,4 không khớp giá bạch kim; không suy ra được.
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  4 · NHẬT · HÀN · ÚC                                                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+  NI225 (Japan 225) ... SHORT KHI HỒI
+    LÝ DO : "Chứng khoán Nhật sẽ tiếp tục điều chỉnh, nhưng mức độ điều chỉnh
+            sẽ nhẹ hơn." Phải đợi nó chạy lên vùng cao rồi mới short.
+            [PHỤ ĐỀ MỜ] mốc vào đọc không rõ.
+
+  SoftBank ............ ĐỪNG ĐỤNG
+    "Đừng đụng vào cái thằng SoftBank này. Bây giờ cũng không còn nhiều dư địa
+     nữa. Giai đoạn này short long đều khó hết."
+
+  KOSPI ............... HỒI PHỤC LÊN 7.370   [số theo đúng phụ đề]
+
+  005930 (Samsung) .... HỒI RỒI CHỊU TRẬN    RA: ~297.500 KRW
+    "Samsung sẽ hồi phục vùng này, hồi phục xong rồi nó sẽ tiếp tục chịu trận
+     ở vùng khoảng 297.500."
+
+  SK Hynix ............ BÁN                  RA: ~285.000 KRW
+    "Cái thằng SK này thì các bạn cứ khoảng 285.000 các bạn bán cho tôi."
+
+  AEON ................ GIỮ BÌNH THƯỜNG      "Không vấn đề gì hết."
+
+  Toyota .............. BÁN Ở 3.200 YÊN
+    "Về cơ bản không có nhiều kỳ vọng, ngoài chuyện lên 3.200 yên là bán được."
+
+  ── ÚC ──
+  BHP ....... KHÔNG MUA      "Vùng này chẳng thèm mua được."
+  CBA ....... KHÔNG MUA      "Thì càng không."
+  CSL ....... CHỐT LỜI       "Hồi phục này thì chắc là phải chốt lời thôi."
+  WDS ....... CHỐT LỜI       "Hồi phục này chốt lời đi."
+  NAB ....... ĐỪNG MUA
+  ANZ ....... GIỮ ĐƯỢC
+  WTC ....... GIỮ THÔI
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  5 · VÀNG                                                                    │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+  XAU/USD .............................................. VẪN CẦM, CHƯA BÁN
+    GIÁ VỐN : 4.070–4.080
+    RA      : ba chặng —
+              (1) lên vùng ~4.760
+              (2) đánh nhau quanh vùng đó khoảng 2 tháng
+              (3) tiếp tục vượt đỉnh, đích 6.000
+    LÝ DO   : "Mọi người hỏi tôi là anh đã bán chưa? Tôi vẫn cầm."
+              "Nếu như chính trường nước Mỹ mà náo động, ông Trump tiếp tục
+               quậy nát nước Mỹ thì vàng sẽ vượt đỉnh lên 6.000 là bình thường,
+               không dừng lại ở 5.000 đâu."
+              Gốc luận điểm: nợ công Mỹ không có đường thoát.
+
+  VÀNG VẬT CHẤT VIỆT NAM ............................... MUA BÌNH THƯỜNG
+    GIÁ     : bán ra 147,6 triệu/lượng · chênh thế giới chỉ còn 1 TRIỆU/lượng
+    LÝ DO   : "Lúc mà chênh đến 20 triệu một lượng quý vị còn vẫn còn hỏi mua
+               được không đúng không? Thì 1 triệu là quá hời."
+    THƯƠNG HIỆU: "Mua thương hiệu gì cũng được. SJC rồi Bảo Tín Minh Châu hay
+               là DOJI. Thậm chí PNJ mà cơ quan chức năng bảo vàng thật, mua
+               được bán được thì cứ mua."
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  6 · BITCOIN                                                                 │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+  BTC ..................................................... SHORT 2/3 VỊ THẾ
+    VÀO   : nhiều mức — 70.000 · 72.000 · và vùng hiện tại (tổng 2/3)
+    VÀO THÊM : 82.000 cho phần còn lại
+    TÌNH TRẠNG: đang lỗ khoảng 2.000 đô mỗi coin (ông tự thuật)
+    MỐC CẢN : "Vùng tắc nghẽn nếu có thì nó là vùng 88.000. Thế nhưng rất khó
+              để lên vùng 88.000."
+    LÝ DO   : Hai tầng.
+              (1) Mẫu hình: "banana chuối lần ba, và mỗi đợt banana như thế nó
+                  sẽ kết thúc. Tôi nghĩ nó sẽ kết thúc sớm thôi." Nhịp lên
+                  hiện tại "là để giết short thôi".
+              (2) Dòng tiền quốc gia — đây mới là tầng chính:
+                  "Với những đạo luật ông Trump đưa ra thì nó đồng hóa Bitcoin
+                   và thị trường crypto với đồng đô la, với petrodollar. Trung
+                   Quốc hay tất cả các quốc gia khác không tham gia cuộc chơi
+                   này bởi vì mua Bitcoin hay mua crypto thì không khác gì mua
+                   đô của Mỹ và là một cách thoát nợ cho nước Mỹ. Họ đâu có dốt."
+                  Các nước đang bán trái phiếu Mỹ và đa dạng hóa dự trữ bằng
+                  vàng, thanh toán bằng nhân dân tệ.
+    KẾT LUẬN: "Tôi cho rằng nó sẽ tiếp tục đi xuống thôi. Không có cửa gì đi
+              tiếp đâu."
+
+    ⚠ ĐỐI CHIẾU: Chứng khoán 5 phút cùng tuần đọc NGƯỢC HẲN — BTC lặp mẫu hình
+    "nêm ở đáy" của vàng, mẫu hình anh nói có tỷ lệ thành công cao nhất. Nhưng
+    chính anh cũng không mua thêm, vì đã ngừng nạp tiền vào crypto từ cuối 2025
+    do siết P2P.
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  7 · CHỨNG KHOÁN VIỆT NAM                                                    │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+  ── THAY ĐỔI DUY NHẤT CỦA TUẦN ──
+
+  VNM ................................................. ĐÃ CHỐT LỜI 1/2
+    LÃI   : ~13% (ông mua từ "cây thứ hai", không phải đáy)
+    LÝ DO : Hai lý do cộng lại —
+            (1) "Vinamilk không được nằm vào trong danh sách của FTSE."
+            (2) Từ tút 21/08: sau chiến dịch kỷ niệm 50 năm thì tiêu thụ của
+                người dân yếu, doanh số quý 3 và quý 4 dự kiến kém — ông ghi
+                rõ đây là phỏng đoán của mình.
+
+  ── HÀNG LƯỚT SÓNG (dòng mới ông chèn thêm vào bảng danh mục) ──
+
+  PNJ ................................................. LƯỚT SÓNG
+    VÀO   : 35–36 (mốc ông đã nêu tuần trước)
+    RA    : kỳ vọng hồi lên vùng 50
+    HIỆN  : đã được một cây trần
+    LÝ DO : "Nó sẽ còn hồi phục, tin tức các thứ nó ra kệ nó."
+    ⚠ ĐỐI CHIẾU: CK 5 phút gọi PNJ là "hàng linh tinh, bỏ đi" vì doanh nghiệp
+    đang có vấn đề về hoạt động — dù thừa nhận đồ thị đẹp.
+
+  FPT ................................................. CẦM NGUYÊN + LƯỚT SÓNG
+    VÀO   : "Thậm chí các bạn có thể mua 69–70 là bình thường."
+    LÝ DO : "FPT thì cứ cầm nguyên thôi."
+
+  ── NHÓM CHỨNG KHOÁN (nằm trong rổ FTSE) ──
+
+  SSI ....... CẦM CHẶT · được một cây TRẦN phiên 21/08
+              "SSI nó nằm trong cái danh sách mà được FTSE đưa vào."
+  TCX ....... CẦM CHẶT · chỉ tăng 3,8% · cũng nằm trong danh sách
+              "Các anh chị thấy tôi chọn hàng chuẩn chưa?"
+  VCI ....... CỨ CẦM
+  VND ....... GIỮ BÌNH THƯỜNG
+  VIX ....... GIỮ BÌNH THƯỜNG (nếu đang kẹp)
+  HCM ....... ĐỪNG ĐỤNG VÀO ⚠
+              "Con HCM này nó ở vùng rất cao. Đừng có đụng vào. Bởi vì đụng
+               vào thế này thì không còn dư địa tăng."
+  [PHỤ ĐỀ MỜ] Ông còn nhắc một mã đọc là "VCK" (gần trần, yếu hơn SSI) —
+  không suy ra chắc được là mã nào.
+
+  ── NGÂN HÀNG ──
+
+  HDB ....... CẦM CHẶT ⭐ ĐƯỢC ƯU TIÊN NHẤT
+    RA    : vượt đỉnh 30 → đích 36
+    LÝ DO : "HDBank đội của anh Điền và chị Thảo đánh con này nét chưa? Những
+             mẫu hình như này khi nó tích lũy đủ lâu thì nó có thể tăng được
+             35%... Nó tích nền giá phẳng như này nó lên kinh lắm. Là 36 luôn."
+            "Techcombank thì lên xuống có vẻ thị trường hơn, nhưng tôi đánh
+             giá cao HDBank hơn."
+
+  VCB · BID · CTG ....... CẦM CHẶT · đều nằm trong rổ FTSE
+    "Cầm chặt cho tôi, chẳng có lý do gì phải bán cả."
+
+  TCB ....... CẦM · có thể cơ cấu 1/2 hoặc 1/3 sang HDB
+
+  EIB · VBB (hai bank nhỏ) ....... CẦM · GIÁ VỐN ~21
+    "Tôi vẫn đang cầm một chút hàng ở vùng khoảng 21 thì tôi cứ cầm thôi."
+    Ai sốt ruột hơn thì cơ cấu bớt sang HDB, VCB, BID, CTG.
+
+  ── PHÂN BÓN (KHÔNG nằm trong rổ FTSE nhưng vẫn mua) ──
+
+  DCM · DPM ....... MUA NẰM IM
+    LÝ DO : "Chẳng có lý do gì các anh chị không cầm những cổ phiếu này dài hạn
+             cả. Quá đẹp luôn. Nhìn tiền bắt đầu vào đạm Cà Mau, tiền bắt đầu
+             vào đạm Phú Mỹ. Nền giá phẳng này quá đẹp. Mua nằm im cho tôi."
+    ⚠ ĐỐI CHIẾU: CK 5 phút cùng hướng nhưng lý do khác — giá URE thế giới đã
+    về ~400 đô từ vùng 800–900, tức vùng đáy chu kỳ. Anh đã vào 30% lệnh DPM.
+
+  ── GIỮ NGUYÊN ──
+
+  SCS ....... NẰM IM
+    "SCS tôi nằm im. Nằm im không quan tâm đến thời thế và thời giá."
+
+  ── TRÁNH — DÙ BA MÃ ĐẦU NẰM TRONG RỔ FTSE ──
+
+  VIC · VHM ....... KHÔNG MUA Ở VÙNG CAO ⚠
+    "Tôi không khoái VIC VHM lắm ở trên vùng cao này. Nếu tây vào nó mua VIC và
+     VHM ở cái vùng giá này thì coi như là bị úp bô. Chẳng có cổ phiếu nào quái
+     đản mà nó lại nằm ngang làm xiên làm sẹo như thế này."
+
+  HPG ....... KHÔNG THAM GIA ⚠
+    "Cuối 2026 này Vingroup họ sẽ có cái thép, họ sẽ cạnh tranh, và gần như là
+     Hòa Phát cũng mất rất nhiều khách hàng tại Việt Nam nên thôi nhá."
+
+  HCM ....... ĐỪNG ĐỤNG (xem nhóm chứng khoán ở trên)
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  8 · LỊCH ÔNG NÊU TRONG TẬP                                                  │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+  26/08 (T4) ... Dữ liệu PCE Mỹ
+                 "Tôi vẫn kỳ vọng là chẳng có gì thay đổi, sẽ giảm bớt rồi các
+                  kiểu để mà Fed giữ nguyên lãi suất."
+  28/08 (T6) ... Kevin Warsh — tân chủ tịch Fed — phát biểu
+                 "Ông này phát biểu lờ nhờ không đưa ra định hướng gì, nói năng
+                  thì theo kiểu hô hào. Nghe cho nó vui."
+  Tuần tới ..... EU trừng phạt Iran → "về cơ bản sẽ làm vàng tiếp tục tăng thôi"
+  Tháng 10 ..... Anthropic niêm yết → mốc bản lề của kịch bản chứng khoán Mỹ
+  T9/2026 →
+  T9/2027 ...... FTSE giải ngân 1,3 tỷ đô vào 27 mã Việt Nam
+  Tháng 11 ..... Bầu cử giữa nhiệm kỳ Mỹ — còn 80 ngày
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  9 · CÂU CHỐT VỀ TƯ THẾ DANH MỤC                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+  "Hiện nay chúng ta đang 100% cổ phiếu và tôi kiên định với các anh chị 100%
+   cổ phiếu trong suốt 3 tuần gần đây, không có bán ra cũng như không có hoạt
+   động rung lắc gì về mặt tâm lý cả."
+
+  "Nhìn vào tuần này, đây là tuần 34, tôi thấy chẳng có lý do gì phải thay đổi
+   danh mục cả. Ngoại trừ tôi yêu cầu các anh chị chốt lời 1/2 Vinamilk và yêu
+   cầu các anh chị có thể lướt sóng thêm với PNJ và FPT."
+
+  "Ba tuần nay thông điệp của tôi rất rõ ràng, chẳng có bán gì hết đúng không
+   ạ? Mà tình hình thế giới anh chị bảo Hàn nó thế, Nhật nó thế. Thì tôi luôn
+   kiên định. Cái lãi thì nó có lãi chút chút hoặc là không lỗ, nhưng về cơ bản
+   tôi cảm thấy khá là tự tin."
+
+  Dự phóng tuần tới:
+  "Cái vụ FTSE này nó vào và nó sẽ làm thì anh em sẽ ok. Người ta đạp xuống
+   người ta ăn hàng, ăn hàng xong người ta kéo lên."
+
+════════════════════════════════════════════════════════════════════════════════
+  TỔNG: 44 mã/công cụ có kèo · 2 kèo không xác định được mã · 5 chỗ phụ đề mờ
+  Nguồn: transcript đầy đủ tập 46 (30.216 ký tự), tải bằng cookie hội viên.
+  Đây là ghi chép lại lời chuyên gia, KHÔNG phải khuyến nghị đầu tư.
+════════════════════════════════════════════════════════════════════════════════

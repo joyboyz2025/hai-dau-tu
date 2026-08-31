@@ -384,3 +384,58 @@ Dòng 6 (CK Mỹ) tôi để "đi ngang, tin cậy thấp" và ghi lý do là A9
 short cổ phiếu riêng lẻ của ông đang ăn dù chỉ số lên. **Bài học: chỉ số và rổ cổ phiếu riêng lẻ có
 thể đi ngược nhau — tôi đang gọi hướng cho chỉ số rồi ngầm suy ra cho cả nhóm, đó là một bước nhảy
 chưa được kiểm chứng.** Từ #4 tách riêng hai dòng: chỉ số Mỹ, và nhóm công nghệ/cyber Mỹ.
+
+## Chấm giữa kỳ #3 — 30/08 (2 ngày sau khi viết)
+
+**Không viết bảng mù #4.** Bảng #3 mới viết 28/08, hạn chấm 25/09, và bảng hướng là công cụ 4 tuần —
+viết lại sau hai ngày thì không còn là dự báo mà là phản ứng. Kỳ này chỉ cập nhật số và chấm điều kiện.
+
+| Dòng #3 | Gọi 28/08 | Thực tế 30/08 | Trạng thái |
+|---|---|---|---|
+| 1 · Vàng ↑, mốc hỏng đóng tuần dưới 4.514 | 4.635 | **4.467 — dưới 4.514** | **ĐIỀU KIỆN ĐÃ KÍCH HOẠT** |
+| 2 · VN-Index ↑, mốc hỏng 1.788 | 1.830 | 1.830 (nghỉ lễ) | ĐÚNG, đang chạy |
+| 3 · BTC ↑, mốc hỏng 76.029 | 79.960 | 77.716 (−1,6% tuần) | ĐÚNG nhưng yếu đi |
+| 4 · DXY → đảo chiều tạm | 99,15 | **99,58 — tuần thứ hai TĂNG** | Đang xác nhận chiều đảo |
+| 5 · Lợi suất → neo quanh 5,2%, bỏ "dốc thêm" | 5,18% | 5,19%, chênh 0,52đ | ĐÚNG |
+| 6 · CK Mỹ → đi ngang | 7.731 | 7.712 | ĐÚNG |
+| 7 · Dầu ↓ về mép dưới band | WTI 83,34 | WTI 85,46 (+0,5%) | LỆCH — bật lại, chưa thủng 78 |
+
+### Dòng 1: điều kiện kích hoạt, nhưng A9 KHÔNG hỏng
+
+Vàng 4.467 đã xuống dưới MA200 (4.514) — đúng mốc hỏng cấu trúc tôi ghi trước. Theo quy ước phải chấm
+**SAI** cho dòng vàng của #3.
+
+**Nhưng chỗ này đáng nói hơn con điểm.** Ngày 28/08 tôi ghi nguyên văn: *"Nếu DXY lên tiếp mà vàng vẫn
+giảm thì A9 vẫn đúng — chỉ là chiều gió đổi."* Đúng vậy: DXY tăng tuần thứ hai liên tiếp (99,15 → 99,58)
+và vàng giảm 3,7%. **Mô hình A9 vẫn vận hành đúng, chỉ là biến gốc đảo chiều.** Đây là lần đầu một dự
+đoán có điều kiện của tôi khớp chính xác cả hai vế.
+
+→ Bài học: **chấm điểm phải tách hai tầng — dòng hướng SAI không có nghĩa mô hình nền SAI.** Trước nay
+tôi gộp hai thứ làm một. Từ #4 chấm riêng: (a) dòng hướng đúng/sai, (b) mô hình nền còn vận hành không.
+
+### Đối chiếu với Tập 47: chỗ tôi và ông cùng bó tay
+
+Tôi bỏ gọi nhịp vàng từ #3 vì "không có công cụ nào đo được nhịp". Tập 47 cho thấy ông cũng vậy — ông có
+công cụ (hedge) nhưng **vẫn phải đoán thời điểm thả, và đã đoán sai, mất khoảng 100 giá** khi thả ở 4.550
+rồi vàng rơi tiếp về 4,47.
+
+Ghép với ca hedge BTC thành công cùng tuần (khóa trước Warsh, giá giảm, bảo vệ được vị thế short):
+
+> **Bổ sung cho H7:** hedge giải được bài toán "không biết nhịp" ở chiều KHÓA, nhưng đẩy toàn bộ rủi ro
+> sang quyết định THẢ. Nó không loại bỏ việc phải đoán thời điểm — nó chỉ dời thời điểm đó đi. Điều kiện
+> thả gắn với một sự kiện xác định (như "sau khi Warsh phát biểu") thì ăn; điều kiện thả theo cảm nhận về
+> giá (như vàng ở 4.550) thì hỏng. **Chỉ dùng H7 khi có sự kiện làm mốc thả.**
+
+### Ghi nhận: dự đoán nội dung Tập 47 (viết trong #3)
+
+| Tôi đoán | Thực tế | Chấm |
+|---|---|---|
+| Giữ 100% cổ phiếu, giọng phấn khởi hơn | Giữ nguyên, "không cần cơ cấu cơ tiếc gì cả" | ĐÚNG |
+| Vàng: KHÔNG chốt, giải thích nhịp giảm là tích lũy như đã hẹn | Không chốt vị thế gốc; giải thích đúng như vậy — nhưng thêm phần tự nhận bỏ hedge sớm | ĐÚNG, thiếu phần tự phê |
+| BTC vẫn short, chưa tự chấm sai, có thể bồi ở 82.000 | Vẫn short, không bồi (giá không tới 82k), bỏ 2/3 hedge | ĐÚNG một nửa |
+| Short CK Mỹ đang lỗ — xem ông xử lý | Giữ chặt, viện dẫn rủi ro tập trung NVDA+MSFT | ĐÚNG |
+| Có mã mới nhóm chứng khoán hoặc ngân hàng | Mã mới là ADM (nông sản Mỹ) và GDX (ETF vàng) | SAI ngành |
+
+Bốn tuần liền tôi đoán sai phần NGÀNH của mã mới. Ba lần trước cũng vậy (SZC/PC1 thay vì chứng khoán).
+→ Ghi nhận: **tôi đang dự đoán mã mới theo ngành đang nóng, còn ông chọn theo luận điểm vĩ mô mới xuất
+hiện trong tuần.** Lần này là lạm phát lương thực → nông sản Mỹ. Sửa cách đoán từ #4.

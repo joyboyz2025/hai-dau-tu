@@ -217,6 +217,19 @@ phòng cú kéo quanh bài phát biểu chủ tịch Fed, điều kiện thả l
 **Vì sao đáng ghi:** đây là thứ Claude THIẾU chứ không phải làm SAI. Bảng nhận định mù #3 tự kết luận
 "không có công cụ đo nhịp vàng nên bỏ hẳn việc gọi nhịp" — đúng, nhưng nghèo. H7 là nút bấm thứ ba.
 
+### H7b — Giới hạn của hedge: nó dời rủi ro sang quyết định THẢ (bổ sung 30/08/2026)
+
+Hedge giải được bài toán "không biết nhịp" ở chiều KHÓA, nhưng không loại bỏ việc phải đoán thời điểm —
+nó chỉ dời thời điểm đó sang lúc thả. Bằng chứng trong đúng một tuần của cùng một người:
+
+- **Ăn:** BTC — khóa hedge 28/08 với điều kiện thả gắn vào một SỰ KIỆN xác định ("khi Warsh phát biểu
+  xong, giá phản ánh tin"). Warsh diều hâu, BTC giảm từ 79.960 xuống 77.716, vị thế short được bảo vệ.
+- **Hỏng:** Vàng — thả hedge ở vùng 4.550 theo cảm nhận về giá chứ không theo sự kiện. Vàng rơi tiếp về
+  4.467. Ông tự thuật mất khoảng 100 giá.
+
+→ **Quy tắc dùng H7: chỉ khóa hedge khi đã xác định được SỰ KIỆN làm mốc thả.** Không có sự kiện thì
+không có điều kiện thả khách quan, và khi đó hedge chỉ đổi một lần đoán nhịp thành hai lần đoán nhịp.
+
 ## I. META-PHƯƠNG PHÁP
 
 **I1. Kịch bản hóa + xác suất nói miệng (output chuẩn)**

@@ -439,3 +439,114 @@ Ghép với ca hedge BTC thành công cùng tuần (khóa trước Warsh, giá g
 Bốn tuần liền tôi đoán sai phần NGÀNH của mã mới. Ba lần trước cũng vậy (SZC/PC1 thay vì chứng khoán).
 → Ghi nhận: **tôi đang dự đoán mã mới theo ngành đang nóng, còn ông chọn theo luận điểm vĩ mô mới xuất
 hiện trong tuần.** Lần này là lạm phát lương thực → nông sản Mỹ. Sửa cách đoán từ #4.
+
+---
+
+# Nhận định mù #4 — 2026-09-08 (thứ Ba, sau phiên) · hạn chấm 06/10
+
+**Mù từ:** chưa quét kênh, chưa đọc bất kỳ nội dung nào phát sau 30/08. Tập 48 dự kiến đã ra 06/09 — chưa xem.
+
+**Vì sao viết bảng mới khi #3 còn hạn tới 25/09:** không phải vì đã 11 ngày, mà vì **một mô hình nền đã
+vỡ**. Band dầu 78–90 tôi dùng từ bảng #1 nay không còn giá trị — WTI 93,85, vượt hẳn mép trên, và máy vùng
+giá xác nhận trend UPTREND (trên cả MA50 81,45 lẫn MA200 78,98). Khi công cụ nền hỏng thì phải dựng lại,
+không đợi hết hạn.
+
+## Chấm #3 trước (theo quy ước I2 — đổi hướng thì chấm dòng cũ trước)
+
+| Dòng #3 | Gọi 28/08 | Thực tế 08/09 | Chấm |
+|---|---|---|---|
+| 1 · Vàng ↑, hỏng dưới 4.514 | 4.635 | 4.434 | **SAI** (đã chấm 30/08) |
+| 2 · VN-Index ↑, hỏng 1.788 | 1.830 | 1.830 | ĐÚNG kỹ thuật, nhưng đi ngang 10 phiên |
+| 3 · BTC ↑, hỏng 76.029 | 79.960 | 78.349 | ĐÚNG, còn biên |
+| 4 · DXY → chưa gọi hướng | 99,15 | 98,97 (−0,7% tuần) | ĐÚNG khi không gọi — nó quay đầu |
+| 5 · Lợi suất → neo 5,2%, BỎ "dốc thêm" | 5,18% | 5,25%; chênh 0,52 → **0,48** | **ĐÚNG cả hai vế** |
+| 6 · CK Mỹ → đi ngang | 7.731 | 7.718 | **ĐÚNG** |
+| 7 · Dầu ↓ về mép dưới band | WTI 83,34 | **WTI 93,85 (+20%/tháng)** | **SAI HẲN — sai cả chiều lẫn mô hình** |
+| 8 · Phân bón ↑ | — | (chưa có số riêng) | đang chạy |
+
+### Dòng 7 sai nặng nhất từ đầu dự án — và sai theo kiểu mới
+
+Ba lần sai trước đều là sai NHỊP hoặc sai NHÓM. Lần này tôi sai **chiều**, và sai vì bám vào một mô hình
+đã hết hạn dùng. Band 78–90 được dựng từ dữ liệu tháng 8; tôi vẫn dùng nó ngày 28/08 để kết luận "trôi về
+mép dưới" dựa trên một tuần giảm 4,3%. Thực tế đó là nhịp chỉnh trong một uptrend chưa bị phá.
+
+Chỗ tôi bỏ qua: **`detect_zones` đã có sẵn câu trả lời.** Nếu chạy nó cho CL=F ngày 28/08 thì đã thấy giá
+vẫn trên MA200 — tức uptrend chưa hỏng. Tôi đọc band từ CONFIG của `fetch_macro` (một ngưỡng viết tay từ
+trước) thay vì hỏi máy vùng giá. **Đây là biến thể của đúng lỗi BTC hồi 21/08: dùng số có sẵn thay vì hỏi
+công cụ.** Lần đó là mượn số của chuyên gia; lần này là mượn số của chính mình từ quá khứ.
+
+→ **Quy ước mới từ #4: mọi ngưỡng band/vùng phải được xác nhận lại bằng `detect_zones` trong CÙNG kỳ viết
+bảng. Ngưỡng trong CONFIG chỉ là gợi ý, không phải bằng chứng.** Và phải cập nhật CONFIG band dầu.
+
+## BẢNG HƯỚNG #4 (4 tuần tới, tới 06/10)
+
+| # | Tài sản | Hướng | Tin cậy | Lý do + mốc kiểm chứng |
+|---|---|---|---|---|
+| 1 | **Dầu** | ↑ đã đổi hướng | vừa | WTI 93,85, TREND UPTREND theo máy (trên MA50 81,45 và MA200 78,98). Kháng cự tiếp 101,67–102,44 (chạm 2 lần — yếu). Hỗ trợ 79,62–80,56. **Mốc hỏng: đóng tuần dưới 80,56.** Band cũ 78–90 chính thức bỏ. |
+| 2 | **Lợi suất Mỹ dài hạn** | ⚠ neo cao, đường cong PHẲNG tiếp | cao | 30Y 5,25% (trên lại 5,2%), 10Y 4,77% sát đỉnh T11/2023. Chênh 30Y−10Y co bốn kỳ liên tiếp: 0,57 → 0,54 → 0,52 → **0,48**. Dòng duy nhất của tôi đúng liên tục từ #1. Cờ hiệu 5,4% chưa chạm. |
+| 3 | **VN-Index** | → đi ngang, nghiêng xuống | vừa | 1.830, đi ngang 10 phiên kể từ 1.832 ngày 28/08. **Ba trụ đều xấu đi**: khối lượng cạn dần 562 → 403tr; độ rộng đảo chiều (trên MA50 42,9% → 35,1%, downtrend 50,0% → 54,7%); khối ngoại bán ròng mạnh trở lại, phiên 03/09 −1.520 tỷ, lũy kế 20 phiên −6.669 tỷ (từ −2.078). **Hạ từ ↑ xuống →. Mốc hỏng: vượt 1.853 thì tôi sai; thủng 1.788 thì xác nhận.** |
+| 4 | **Vàng** | → chờ, KHÔNG gọi nhịp | thấp-vừa | 4.434, vẫn dưới MA200 (4.522) và MA40 tuần (4.538). Đang tựa vào hỗ trợ 4.285–4.400 (chạm 5 lần, gần nhất 02/09). Giữ quy ước từ #3: chỉ gọi hướng, không gọi nhịp, không đặt điểm vào. **Mốc đảo lại: đóng tuần trên 4.522.** |
+| 5 | **Bitcoin** | ↑ giữ | thấp-vừa | 78.349, TREND UPTREND (trên MA50 69.957 và MA200 69.866). Đứng dưới cản 81.347–82.792 (chạm 4 lần, gần nhất 03/09 — đã test và bị đẩy lại). Mốc hỏng: thủng 76.248. |
+| 6 | **DXY** | → chưa gọi hướng | thấp | 98,97 sau khi tăng hai tuần rồi quay đầu giảm 0,7%. Hai tuần trước tôi cố tình KHÔNG gọi hướng và đó là quyết định đúng. Giữ nguyên thái độ đó. A9 vẫn sống; điều kiện tắt vẫn là đóng tuần trên 101. |
+| 7 | **CK Mỹ** | → đi ngang | vừa | S&P 7.718, gần như đứng yên ba tuần. Nâng tin cậy từ "thấp" lên "vừa" vì đã đúng hai kỳ liên tiếp — và vì lý do tôi đưa (A9 và A3 đối nhau) đang được xác nhận: lợi suất lên nhưng chỉ số không gãy. |
+| 8 | **Phân bón VN** | ↑ giữ | vừa | Hai lý do độc lập vẫn đứng: chu kỳ URE ở vùng đáy, và sóng nông sản. Nay có thêm lý do thứ ba từ dòng 1 — dầu tăng 20%/tháng đẩy chi phí đầu vào phân đạm, thường kéo giá bán lên theo. |
+
+**Điều kiện tự sửa ghi trước:**
+- WTI đóng tuần dưới 80,56 → dòng 1 chấm SAI ngay.
+- VN-Index vượt 1.853 → dòng 3 chấm SAI (tôi hạ hướng quá sớm).
+- Vàng đóng tuần trên 4.522 → dòng 4 phải chuyển lại thành ↑.
+- DXY đóng tuần trên 101 → A9 tắt, viết lại dòng 4, 5 và 8.
+
+## Dự đoán nội dung Tập 48 (chưa xem)
+
+Lần này sửa cách đoán theo bài học 30/08 — đoán theo **biến vĩ mô mới của tuần**, không theo ngành nóng.
+Biến mới rõ nhất: **dầu vượt 93**.
+
+1. Dầu sẽ là chủ đề chính, và ông sẽ nói "đúng như tôi đã nói" — vì ông giữ quan điểm dầu neo cao suốt.
+   Nhiều khả năng.
+2. Mã mới, nếu có, thuộc nhóm hưởng lợi từ dầu: dầu khí Mỹ hoặc dầu khí Việt Nam (GAS, PVS, PVD, BSR).
+   Đây là chỗ tôi đặt cược cho lần sửa cách đoán.
+3. Vàng: vẫn không chốt vị thế gốc; có thể đã mua thêm ở vùng 4.300 như đã hẹn (giá đã chạm 4.34x).
+4. Chứng Việt: khối ngoại bán ròng mạnh trở lại là dữ kiện ông khó bỏ qua — nhưng ông sẽ vẫn nói giữ.
+5. Fed 16/9 sẽ là mốc ông nhắc nhiều nhất trong phần vĩ mô.
+
+## Chấm dự đoán nội dung Tập 48 — 4/5 đúng
+
+| # | Đoán trước | Thực tế Tập 48 (06/09) | Chấm |
+|---|---|---|---|
+| 1 | Dầu là chủ đề chính | Đúng — Mỹ bắn 3 tàu dầu Iran, diesel 5,85 $/gallon là trục cả tập | **ĐÚNG** |
+| 2 | Mã mới thuộc nhóm dầu khí (Mỹ hoặc VN) | **SAI** — mã mới là MOS (Mosaic) và CTVA (Corteva): **phân bón**, không phải dầu khí | **SAI** |
+| 3 | Không chốt vị thế vàng gốc | Đúng — còn nâng khuyến nghị lên 30–35% tài sản cho một thập kỷ | **ĐÚNG** |
+| 4 | Sẽ nêu khối ngoại bán ròng nhưng vẫn nói giữ | Đúng — không đổi mã nào trong danh mục VN | **ĐÚNG** |
+| 5 | Fed 16/9 là mốc nhắc nhiều nhất phần vĩ mô | Đúng | **ĐÚNG** |
+
+### Dòng 2 sai lần thứ SÁU liên tiếp — và lần này tôi đã biết luật mà vẫn đoán sai
+
+Ngày 30/08 tôi đã ghi bài học: *ông chọn mã mới theo **luận điểm vĩ mô mới của tuần**, không theo ngành
+nóng*. Lần này tôi áp dụng đúng luật đó — biến mới là dầu vượt 93 — và vẫn sai, vì tôi dừng ở **mắt xích
+đầu tiên** của chuỗi nhân quả.
+
+Chuỗi thật của ông: dầu tăng → chi phí vận tải tăng → giá lương thực tăng → nông dân tăng sản xuất →
+**phân bón hưởng lợi**. Ông mua mắt xích thứ tư, tôi đoán mắt xích thứ nhất.
+
+Đây cũng là mã tôi đã có sẵn trong tay mà không nối được: dòng 8 bảng #4 của tôi ghi *"dầu tăng 20%/tháng
+đẩy chi phí đầu vào phân đạm"* — tôi đã thấy quan hệ dầu→phân bón, nhưng chỉ áp cho DCM/DPM ở Việt Nam,
+không nghĩ tới việc ông sẽ mua phiên bản Mỹ của cùng luận điểm.
+
+→ **Luật A10 (mới): khi đoán mã mới của ông, đi XUỐNG chuỗi nhân quả ít nhất hai mắt xích từ biến vĩ mô,
+và hỏi thêm "có phiên bản Mỹ của luận điểm này không". Đừng dừng ở thứ đang tăng.**
+
+### Đối chiếu bảng hướng #4 với Tập 48
+
+| Dòng #4 của tôi | Ông nói gì | Quan hệ |
+|---|---|---|
+| 1 · Dầu ↑ | "Đừng có dại. Đừng nhìn thấy nó cao cao, chạm kháng cự mà sale." Cao đến hết tháng 11 | **CÙNG CHIỀU** — ông mạnh hơn |
+| 3 · VN-Index → nghiêng xuống | Không gọi hướng chỉ số, nhưng đưa số VIC gánh 33/21 điểm | **BỔ TRỢ** — ông cho tôi bằng chứng cho luận điểm độ rộng xấu |
+| 4 · Vàng → chờ, không gọi nhịp | Nâng lên 30–35% tài sản một thập kỷ | **KHÁC TẦNG** — ông nói tỷ trọng, tôi nói hướng 4 tuần. Không mâu thuẫn |
+| 5 · BTC ↑ giữ | Vẫn short, cắt lỗ nếu vượt 89–90k | **NGƯỢC CHIỀU** — mốc hỏng của tôi (76.248) và của ông (89–90k) tạo một biên rõ ràng để chấm |
+| 7 · CK Mỹ → đi ngang | Phân phối rõ, đánh biên độ, nghiêng long VIX | **CÙNG CHIỀU** — cả hai đều không gọi gãy |
+| 8 · Phân bón ↑ | Mua MOS và CTVA; DCM/DPM "cầm rất chặt" | **CÙNG CHIỀU** — và ông mở rộng luận điểm ra thị trường Mỹ |
+
+Dòng 5 là chỗ đáng theo dõi nhất: đây là lần đầu tôi và ông **ngược hẳn chiều nhau trên cùng một tài sản
+với mốc kiểm chứng rõ ở cả hai phía**. BTC 78.349. Nếu nó thủng 76.248 thì tôi sai; nếu vượt 89.000 thì
+ông cắt lỗ. Khoảng giữa 76k–89k là vùng chưa ai đúng.

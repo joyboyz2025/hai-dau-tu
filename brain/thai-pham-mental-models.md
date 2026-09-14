@@ -269,6 +269,23 @@ Một kèo chính KHÔNG chặt vì một bước sâu — chặt vì NHIỀU LO
 
 ---
 
+### I-bis. Mô hình về CHÍNH ÔNG khi đoán nội dung video (thêm 08–14/09/2026)
+
+**A10 — Mã mới đi xuống chuỗi nhân quả.** Biến vĩ mô mới của tuần → ông không mua thứ đang tăng mà mua mắt
+xích thứ ba, thứ tư, và thường là phiên bản Mỹ. Bằng chứng: dầu vượt 93 → MOS, CTVA, ADM (phân bón/nông sản
+Mỹ), không phải dầu khí. Khi đoán: đi xuống ít nhất hai mắt xích và hỏi "có phiên bản Mỹ không".
+
+**A11 — Ông phản ứng với cùng dữ liệu tôi đang đọc.** Chuỗi "giữ nguyên N tuần" không phải bằng chứng cho tuần
+N+1. Nếu bảng hướng của Claude đã hạ một thị trường và giá xác nhận, mặc định ông cũng đổi. Bằng chứng: Tập 49
+về 40% tiền mặt đúng tuần dòng VN-Index của bảng #4 được xác nhận (1.830 → 1.788, độ rộng 35% → 28%).
+
+**A12 — Hai lớp, hai tốc độ.** Lớp luận điểm (vàng tăng dài hạn nhờ M2, dầu neo cao tới bầu cử, Vin-Index, nợ
+công Mỹ) gần như không đổi trong nhiều tháng. Lớp chiến thuật (short hay không short dầu, tỷ trọng tiền,
+Fed tăng hay không) đổi theo giá và theo xác suất thị trường — ông nhường khi xác suất vượt ~80% ("thị trường
+thường không sai đâu") dù trái nhận định của mình vài ngày trước. Bằng chứng: 06/09 "đừng short dầu" → 13/09
+"short được, cắt 110"; 09/09 "Fed tăng hết sức khó" → 13/09 "khả năng cao tăng". Khi đoán: đừng bê câu
+chiến thuật tuần trước sang tuần này như thể nó là luận điểm.
+
 ## J. ĐIỀU KIỆN BIÊN CỦA TIN KINH TẾ (nguồn: slide giáo trình VWA, user đưa 21/08/2026)
 
 Đây là mô hình **CỔNG CHẶN**, không phải mô hình dự báo. Nó đứng TRƯỚC nhóm A/B: trả lời câu hỏi

@@ -550,3 +550,90 @@ và hỏi thêm "có phiên bản Mỹ của luận điểm này không". Đừn
 Dòng 5 là chỗ đáng theo dõi nhất: đây là lần đầu tôi và ông **ngược hẳn chiều nhau trên cùng một tài sản
 với mốc kiểm chứng rõ ở cả hai phía**. BTC 78.349. Nếu nó thủng 76.248 thì tôi sai; nếu vượt 89.000 thì
 ông cắt lỗ. Khoảng giữa 76k–89k là vùng chưa ai đúng.
+
+---
+
+# Chấm giữa kỳ bảng #4 — 2026-09-14 (thứ Hai, sau phiên) · hạn chấm vẫn 06/10
+
+**Mù từ:** chưa quét kênh, chưa đọc gì phát sau 08/09.
+
+**Không viết bảng #5.** Không mô hình nền nào vỡ trong tuần — dầu đi đúng chiều dòng 1, và quy tắc 08/09 là
+chỉ viết lại sớm khi mô hình nền hỏng, không phải khi sốt ruột.
+
+| Dòng #4 | Gọi 08/09 | 14/09 | Chấm giữa kỳ |
+|---|---|---|---|
+| 1 · Dầu ↑, hỏng dưới 80,56 | WTI 93,85 | **101,85 (+11,3%/tuần)** · Brent 106,19 | **ĐANG ĐÚNG** — đã chạm kháng cự 101,67–102,44 mà máy báo, `detect_zones` nay đẩy cản kế lên 109,47–110,93 + gap 104,45–106,76 |
+| 2 · Lợi suất neo cao, cong phẳng tiếp | 30Y 5,25 · chênh 0,48 | **30Y 5,35 · 10Y 4,96 · chênh 0,39** | **ĐANG ĐÚNG cả hai vế** — kỳ thứ năm liên tiếp chênh co lại. 30Y cách cờ hiệu 5,4% chỉ 0,05đ |
+| 3 · VN-Index → nghiêng xuống, hỏng trên 1.853, xác nhận dưới 1.788 | 1.830,44 | **1.788,23** · MA50 28,5% · downtrend 60,5% | **ĐANG ĐÚNG — đứng đúng mép xác nhận** (1.788,23 vs 1.788). Phiên 11/09 −34 điểm với thanh khoản 628tr. Chưa thủng hẳn nên chưa gọi là xác nhận |
+| 4 · Vàng → chờ, không gọi nhịp, đảo lại trên 4.522 | 4.434 | **4.338** · dưới MA200 4.528 | ĐÚNG KHI KHÔNG GỌI — giảm thêm 2,1%; nếu tôi gọi nhịp hồi thì đã sai lần ba |
+| 5 · BTC ↑, hỏng dưới 76.248 | 78.349 | **79.383** — chạm hỗ trợ 73.776–76.248 ngày 11/09 rồi bật | ĐANG ĐÚNG, còn biên mỏng. Cản 81.347–82.792 vẫn chưa qua |
+| 6 · DXY → không gọi | 98,97 | 99,50 | trung tính |
+| 7 · CK Mỹ → đi ngang | 7.718 | **7.620 (−1,3%)** — vẫn trên MA50 7.610 | NỬA — còn trong biên ngang nhưng lệch xuống; `detect_zones` báo cụm đỉnh 7.757–7.817 chạm 4 lần (mẫu E3) |
+| 8 · Phân bón VN ↑ | — | DCM 32,45 (ngay dưới cản 32,62–33,75) · DPM 22,05 | chưa rõ — DPM đã mất cây break 03/09 như CK5p nói |
+
+**Ghi chú về VN-Index:** khối ngoại lũy kế 20 phiên −5.704 tỷ (từ −6.669) — bớt xấu một chút, phiên 14/09 mua
+ròng +815 tỷ dồn vào bank (VPB, MBB, TCB, VCB) và FPT. Nhưng độ rộng xấu đi nhanh hơn chỉ số: tỷ lệ mã trên
+MA50 từ 35,1% xuống 28,5% trong 4 phiên. VIC vẫn UPTREND ở 241,4 — tức phần "Vin-Index" chưa buông mà phần
+còn lại đã rơi tiếp.
+
+**Ghi chú Polymarket (J1 kiểm):** lãi suất cuối 2026 — 4,0%: 33% · 4,25%: 32% · ≥4,5%: 19% · giữ 3,75%: 6%.
+Thị trường gần như chắc chắn Fed tăng ít nhất một lần trong năm. Kèo C1-07 "Fed đứng im cả 2026" trong
+`calendar.js` đang chú thích số cũ 72,5% — cần sửa sau phiên 16/9.
+
+## Dự đoán nội dung Tập 49 (chưa xem) — áp luật A10
+
+Biến vĩ mô mới của tuần: **WTI vượt 100 và Brent vượt 106** · **10Y gần 5%** · **FOMC 16/9 ngay trước mặt**.
+
+1. **Dầu 100 là chủ đề mở đầu**, và ông sẽ dẫn lại câu "đừng short dầu" của Tập 48. Nhiều khả năng.
+2. **Mã mới (A10 — đi xuống ≥2 mắt xích):** không phải dầu khí, không phải phân bón (đã mua). Chuỗi kế tiếp
+   của dầu 100: dầu đắt → nhiên liệu hàng không đắt → **hàng không bị đè** (short airline Mỹ); hoặc dầu đắt
+   → năng lượng thay thế → **uranium/hạt nhân, than**. Phiên bản Mỹ. Tôi cược: một vị thế SHORT hàng không
+   hoặc một vị thế LONG uranium. Tin cậy thấp — đây là lần đầu áp A10.
+3. **Fed 16/9:** ông vẫn nói không tăng — nhưng sẽ rào trước kiểu "nếu tăng thì là sai lầm".
+4. **VN:** VN-Index −2,3% trong tuần. Ông sẽ nói giữ, và dùng lại luận điểm VIC để giải thích vì sao chỉ số
+   chưa sập dù phần lớn cổ phiếu giảm.
+5. **Vàng 4.338:** chạm đúng vùng ông từng hẹn mua (4.300). Ông sẽ báo **đã mua thêm hoặc sắp mua**, không bán.
+
+## Chấm dự đoán nội dung Tập 49 — 1/5 đúng (tệ nhất từ đầu dự án)
+
+| # | Đoán trước | Thực tế Tập 49 (13/09) + tút 09–11/09 | Chấm |
+|---|---|---|---|
+| 1 | Dầu 100 mở đầu, nhắc lại "đừng short dầu" | Mở đầu là **Fed 87%**. Dầu nói ở giữa — và **ĐẢO chiến thuật**: "sót được rồi", cắt lỗ ở 110 | **SAI** |
+| 2 | Mã mới: short hàng không hoặc long uranium | Không. Mã mới: short SoftBank, long NFLX ở 75, short AMD ở 620 | **SAI** |
+| 3 | Vẫn nói Fed không tăng, rào trước | 09/09 vẫn nói "hết sức khó". 13/09 **đổi hẳn**: "khả năng cao là tăng… thị trường thường không sai đâu" — dù không ủng hộ | **SAI** |
+| 4 | VN: giữ nguyên, dùng luận điểm VIC | **Chuyển sang phòng thủ: tiền 40% / cổ 60%.** Bán hết chứng khoán (SSI, TCX, VCK), bán lướt sóng (FPT, PNJ, BCM), đổi BVB/EIB sang VCB/BID/TCB/HDB. Chỉ giữ phân bón, bank lớn, SCS | **SAI HẲN** |
+| 5 | Vàng: không bán, mua thêm | Giữ long, hedge full, thả hedge ở 4.150 đúng ngày Fed | **ĐÚNG** |
+
+### Vì sao sai — và lần này lỗi không nằm ở thiếu dữ liệu
+
+**Chính bảng #4 của tôi đã hạ VN-Index xuống "nghiêng xuống" và giá đã xác nhận** (1.830 → 1.788, độ rộng
+trên MA50 35% → 28%). Tôi thấy thị trường xấu đi — nhưng khi mô phỏng Thái Phạm, tôi lại ngoại suy chuỗi
+"giữ nguyên tuần thứ tám" thành tuần thứ chín. Tôi không mang nhận định thị trường của chính mình vào mô hình
+về ông. Ông phản ứng với CÙNG dữ liệu tôi đang nhìn.
+
+Hai điều ông cho thấy mà thư viện mô hình chưa có:
+1. **Ông nhường thị trường khi xác suất vượt ~80%**, kể cả trái luận điểm của mình: 09/09 Fed "hết sức khó
+   tăng" → CPI lõi 0,3% vs dự báo 0,2% + PPI 5,4% → 13/09 "khả năng cao tăng, thị trường thường không sai".
+   Luận điểm dài hạn (vàng vẫn tăng) giữ nguyên; chỉ lớp chiến thuật đổi.
+2. **Mốc tâm lý bị thủng + độ rộng xấu áp đảo = nâng tiền mặt**, không phải "giữ vì dài hạn". Ông dẫn 76–80%
+   mã downtrend và thanh khoản thật chỉ ~8.000 tỷ: "không đánh lướt sóng được".
+
+→ **Luật A11 (mới): trước khi đoán ông giữ hay đổi, đọc lại bảng hướng của CHÍNH MÌNH. Nếu một dòng đã hạ
+hướng và giá đã xác nhận, mặc định là ông cũng sẽ phản ứng — chuỗi "giữ nguyên N tuần" không phải bằng
+chứng cho tuần N+1.**
+
+→ **Luật A12 (mới): tách lớp của ông trước khi đoán.** Lớp luận điểm (vàng tăng dài hạn, dầu neo cao tới T11,
+Vin-Index) hiếm khi đổi. Lớp chiến thuật (short hay đừng short dầu, tỷ trọng tiền, Fed tăng hay không) đổi
+theo giá và xác suất thị trường. Dự đoán "đừng short dầu" của tôi là bê lớp chiến thuật tuần trước sang
+tuần này như thể nó là luận điểm.
+
+### Đối chiếu bảng #4 với Tập 49
+
+| Dòng #4 | Ông | Quan hệ |
+|---|---|---|
+| 1 · Dầu ↑ | Luận điểm vẫn "neo cao tới T11", nhưng **short chiến thuật**, cắt ở 110 | **NGƯỢC chiến thuật, CÙNG luận điểm** |
+| 2 · Lợi suất neo cao | "30Y tiệm cận thời điểm khủng hoảng 2008… có thể khủng hoảng mini kiểu 1997" | CÙNG CHIỀU — ông mạnh hơn nhiều |
+| 3 · VN-Index nghiêng xuống | Nâng tiền mặt lên 40% | **CÙNG CHIỀU — lần đầu hành động của ông khớp dòng VN của tôi** |
+| 4 · Vàng chờ | Hedge full, chờ thả ở 4.150 sau Fed | CÙNG — cả hai không gọi nhịp lên trước Fed |
+| 5 · BTC ↑, hỏng 76.248 | Short, chốt lời ở 73.000 | **NGƯỢC** — mốc chốt lời của ông nằm DƯỚI mốc hỏng của tôi. Nếu BTC chạm 73k thì ông ăn và tôi sai |
+| 7 · CK Mỹ ngang | Short US500 7.750–7.780, đóng short US30 | Ông nghiêng xuống, tôi ngang |

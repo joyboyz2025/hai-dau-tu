@@ -16,11 +16,28 @@
 > 6. Khi đối chiếu với video chuyên gia: mỗi độ lệch phân loại (a) thiếu DỮ LIỆU → build công cụ,
 >    (b) thiếu MÔ HÌNH → bổ sung thư viện, (c) Claude đúng chuyên gia sai → ghi nhận.
 
+> 7. **(16/09) CHỈ MỘT BẢNG ĐANG CHẠY.** Bảng mới chỉ được viết khi bảng cũ tới hạn, HOẶC khi một mô hình
+>    nền vỡ — khi đó các dòng bảng cũ vẫn chấm tại hạn của chính nó, nhưng không còn là "bảng hiện hành".
+>    Các bảng #1–#3 viết chồng nhau trước quy ước này được giữ nguyên và chấm theo hạn riêng.
+> 8. **(16/09) Mọi mốc hỏng phải ghi cơ sở**: `đóng ngày` hoặc `đóng tuần`. Không ghi = mặc định đóng ngày.
+> 9. **(16/09) ĐIỂM CHÍNH THỨC LÀ ĐIỂM MÁY**: mỗi dòng mới phải được thêm vào `brain/boards.json` ngay khi
+>    viết (loại dự báo, mốc hỏng, cơ sở). Chạy `node score_boards.js --write` mỗi kỳ update. Máy chấm song
+>    song mốc so sánh "đà" (hướng 20 phiên trước ngày viết) — Claude chỉ có giá trị khi điểm cao hơn mốc này.
+>    Chấm tay trong sổ chỉ để giải thích vì sao đúng/sai.
+
 ## Sổ điểm hướng (cộng dồn)
 
-| Entry | Ngày | Số dòng hướng | Đúng | Sai | Nửa | Ghi chú |
+<!-- score:start — khối này do score_boards.js --write ghi đè, đừng sửa tay -->
+_Cập nhật 2026-09-16. Chi tiết từng dòng: brain/scoreboard.md._
+
+| Bảng | Viết | Hạn | Trạng thái | Dòng | Claude | Mốc "đà" |
 |---|---|---|---|---|---|---|
-| #1 | 20/08 | 14 | — | — | — | chấm ngày 19/09 |
+| #1 | 20/08 | 19/09 | tạm | 13 | 4Đ 4N 5S · **46%** | 46% |
+| #2 | 24/08 | 21/09 | tạm | 9 | 2Đ 2N 5S · **33%** | 33% |
+| #3 | 28/08 | 25/09 | tạm | 8 | 3Đ 2N 3S · **50%** | 50% |
+| #4 | 08/09 | 06/10 | tạm | 7 | 5Đ 1N 1S · **79%** | 79% |
+| **Tổng** | | | | 37 | **50%** | 50% |
+<!-- score:end -->
 
 ---
 

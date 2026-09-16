@@ -637,3 +637,19 @@ tuần này như thể nó là luận điểm.
 | 4 · Vàng chờ | Hedge full, chờ thả ở 4.150 sau Fed | CÙNG — cả hai không gọi nhịp lên trước Fed |
 | 5 · BTC ↑, hỏng 76.248 | Short, chốt lời ở 73.000 | **NGƯỢC** — mốc chốt lời của ông nằm DƯỚI mốc hỏng của tôi. Nếu BTC chạm 73k thì ông ăn và tôi sai |
 | 7 · CK Mỹ ngang | Short US500 7.750–7.780, đóng short US30 | Ông nghiêng xuống, tôi ngang |
+
+---
+
+# Kiểm giữa kỳ bảng #4 — 2026-09-16 (thứ Tư, trước giờ Fed) · chưa quét kênh
+
+| Dòng | 14/09 | 16/09 | Ghi |
+|---|---|---|---|
+| 1 · Dầu ↑ | 101,85 | **103,89** (Brent 107,43) | đang đúng — đã vượt cụm 101,67–102,44 |
+| 2 · Lợi suất neo cao, phẳng tiếp | chênh 0,39 | 30Y 5,34 · 10Y 4,97 · **chênh 0,37** | đang đúng, kỳ thứ sáu co lại |
+| 3 · VN-Index nghiêng xuống, xác nhận dưới 1.788 | 1.788,23 | **1.810,11** — bật từ đúng mép 1.788 | CHƯA xác nhận; hai phiên hồi +22. Độ rộng MA50 28,5% → 33%, khối ngoại mua ròng 3 phiên liền (+815, +709, +234) |
+| 5 · BTC ↑, hỏng dưới 76.248 | 79.383 | **75.920** | **ĐIỀU KIỆN HỎNG ĐÃ KÍCH HOẠT** (giá dưới mốc). Chưa có quy ước đóng tuần cho dòng này nên chấm SAI ngay, không chờ. Thái Phạm (short, chốt 73.000) đang đúng hơn tôi |
+| 7 · CK Mỹ ngang | 7.620 | 7.586 | lệch xuống tiếp |
+
+**Không viết bảng mới**: dòng BTC hỏng là một dòng, không phải mô hình nền. A9 vẫn sống (DXY 99,7 < 101).
+Bài học nhỏ: dòng BTC không ghi rõ "đóng tuần" như các dòng khác — từ nay mọi mốc hỏng phải ghi cơ sở (giá
+đóng ngày hay đóng tuần) ngay lúc viết.

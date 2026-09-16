@@ -26,7 +26,8 @@ const WEEKS = [
   { key: 'w34', label: 'Tuần 34', from: '2026-08-17', to: '2026-08-23', ep: 'Tập 46' },
   { key: 'w35', label: 'Tuần 35', from: '2026-08-24', to: '2026-08-30', ep: 'Tập 47' },
   { key: 'w36', label: 'Tuần 36', from: '2026-08-31', to: '2026-09-06', ep: 'Tập 48' },
-  { key: 'w37', label: 'Tuần 37', from: '2026-09-07', to: '2026-09-13', ep: 'Tập 49' }
+  { key: 'w37', label: 'Tuần 37', from: '2026-09-07', to: '2026-09-13', ep: 'Tập 49' },
+  { key: 'w38', label: 'Tuần 38', from: '2026-09-14', to: '2026-09-20', ep: 'Tút 15–16/09' }
 ];
 
 // ── Gom ngành thành nhóm hiển thị ────────────────────────────────────────────
@@ -117,7 +118,8 @@ const MANUAL = {
       w34: { t: 'Full cổ phiếu, chốt lời 1/2 VNM — "không cần làm gì cả"', s: 'hold' },
       w35: { t: 'Full cổ phiếu, chốt hết VNM — "không cần cơ cấu gì cả"', s: 'hold' },
       w36: { t: 'Full cổ phiếu — không đổi mã nào; vàng lên 30–35% tổng tài sản', s: 'hold' },
-      w37: { t: 'ĐẢO CHIỀU 13/09 → 40% tiền — 60% cổ phiếu (phòng thủ)', s: 'down' }
+      w37: { t: 'ĐẢO CHIỀU 13/09 → 40% tiền — 60% cổ phiếu (phòng thủ)', s: 'down' },
+      w38: { t: '40% tiền — "kiên định, y chang hôm Chủ nhật"', s: 'hold' }
     }
   }]
 };

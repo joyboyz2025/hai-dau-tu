@@ -1,67 +1,491 @@
 {
-  "_note": "SỔ CÁI MÁY ĐỌC của các bảng hướng mù (brain/claude-calls.md). score_boards.js đọc file này để chấm tự động. Mỗi dòng: series (nguồn giá), call (loại dự báo), break (mốc hỏng — BẮT BUỘC ghi basis: close = giá đóng ngày, week = giá đóng tuần), manual (kết quả đã chấm tay trong sổ, để đối chiếu). Loại call: up | down | side | side_down | range [lo,hi] | hold_above level | curve_flat | curve_steep | none (không gọi hướng — không tính điểm).",
-  "boards": [
+ "_note": "SỔ CÁI MÁY ĐỌC của các bảng hướng mù (brain/claude-calls.md). score_boards.js đọc file này để chấm tự động. Mỗi dòng: series (nguồn giá), call (loại dự báo), break (mốc hỏng — BẮT BUỘC ghi basis: close = giá đóng ngày, week = giá đóng tuần), manual (kết quả đã chấm tay trong sổ, để đối chiếu). Loại call: up | down | side | side_down | range [lo,hi] | hold_above level | curve_flat | curve_steep | none (không gọi hướng — không tính điểm).",
+ "boards": [
+  {
+   "id": "#1",
+   "written": "2026-08-20",
+   "due": "2026-09-19",
+   "lines": [
     {
-      "id": "#1", "written": "2026-08-20", "due": "2026-09-19",
-      "lines": [
-        { "n": 1, "asset": "Vàng", "series": "gold", "call": "up", "conf": "vừa", "manual": "SAI nhịp (21/08) — hướng lên vẫn đúng" },
-        { "n": 2, "asset": "CK Mỹ (S&P)", "series": "spx", "call": "down", "conf": "vừa" },
-        { "n": 3, "asset": "Công nghệ Mỹ (Nasdaq 100)", "series": "yahoo:^NDX", "call": "down", "conf": "cao" },
-        { "n": "4a", "asset": "Lợi suất 30Y neo cao", "series": "us30y", "call": "hold_above", "level": 5.2, "conf": "cao" },
-        { "n": "4b", "asset": "Đường cong 30Y−10Y dốc thêm", "series": "curve", "call": "curve_steep", "conf": "cao", "manual": "SAI — đường cong phẳng lại (bỏ vế này ở #3)" },
-        { "n": 5, "asset": "DXY", "series": "dxy", "call": "down", "conf": "vừa" },
-        { "n": 6, "asset": "Dầu WTI", "series": "wti", "call": "range", "lo": 80, "hi": 92, "conf": "cao" },
-        { "n": 7, "asset": "Bitcoin", "series": "btc", "call": "down", "conf": "vừa", "break": { "dir": "above", "level": 72500, "basis": "close" }, "manual": "SAI (21/08)" },
-        { "n": 8, "asset": "VN-Index", "series": "vn:VNINDEX", "call": "range", "lo": 1700, "hi": 1780, "conf": "thấp-vừa", "manual": "SAI biên (24/08)" },
-        { "n": 10, "asset": "Thép VN (HPG·NKG·HSG)", "series": "basket:HPG,NKG,HSG", "call": "down", "conf": "cao" },
-        { "n": 11, "asset": "Cổ phiếu chứng khoán VN", "series": "basket:SSI,VCI,MBS,SHS,VIX", "call": "down", "conf": "vừa" },
-        { "n": 12, "asset": "BĐS VN (trừ Vin)", "series": "basket:NVL,DIG,DXG,KDH", "call": "down", "conf": "vừa" },
-        { "n": 13, "asset": "Dầu khí VN (GAS·BSR)", "series": "basket:GAS,BSR", "call": "up", "conf": "vừa" },
-        { "n": 14, "asset": "Phân bón (DCM·DPM)", "series": "basket:DCM,DPM", "call": "side", "conf": "vừa" }
-      ],
-      "unscored": ["9 · Ngân hàng VN phân hóa — không có thước đo hướng"]
+     "n": 1,
+     "asset": "Vàng",
+     "series": "gold",
+     "call": "up",
+     "conf": "vừa",
+     "manual": "SAI nhịp (21/08) — hướng lên vẫn đúng"
     },
     {
-      "id": "#2", "written": "2026-08-24", "due": "2026-09-21",
-      "lines": [
-        { "n": 1, "asset": "Vàng", "series": "gold", "call": "up", "conf": "vừa", "manual": "NỬA — sai nhịp lần hai (28/08)" },
-        { "n": 2, "asset": "Bitcoin", "series": "btc", "call": "up", "conf": "thấp", "break": { "dir": "below", "level": 76029, "basis": "close" } },
-        { "n": 3, "asset": "VN-Index", "series": "vn:VNINDEX", "call": "up", "conf": "vừa", "break": { "dir": "below", "level": 1768, "basis": "close" } },
-        { "n": 4, "asset": "Lợi suất 30Y neo cao", "series": "us30y", "call": "hold_above", "level": 5.2, "conf": "cao" },
-        { "n": 5, "asset": "DXY", "series": "dxy", "call": "down", "conf": "cao", "break": { "dir": "above", "level": 101, "basis": "week" } },
-        { "n": 6, "asset": "CK Mỹ (S&P)", "series": "spx", "call": "side_down", "conf": "thấp-vừa" },
-        { "n": 7, "asset": "Dầu WTI", "series": "wti", "call": "range", "lo": 78, "hi": 90, "conf": "cao" },
-        { "n": 8, "asset": "Phân bón (DCM·DPM)", "series": "basket:DCM,DPM", "call": "up", "conf": "vừa" },
-        { "n": 9, "asset": "Thép VN (HPG·NKG·HSG)", "series": "basket:HPG,NKG,HSG", "call": "side", "conf": "thấp" }
-      ]
+     "n": 2,
+     "asset": "CK Mỹ (S&P)",
+     "series": "spx",
+     "call": "down",
+     "conf": "vừa"
     },
     {
-      "id": "#3", "written": "2026-08-28", "due": "2026-09-25",
-      "lines": [
-        { "n": 1, "asset": "Vàng", "series": "gold", "call": "up", "conf": "vừa", "break": { "dir": "below", "level": 4514, "basis": "week" }, "manual": "SAI (30/08)" },
-        { "n": 2, "asset": "VN-Index", "series": "vn:VNINDEX", "call": "up", "conf": "vừa", "break": { "dir": "below", "level": 1788, "basis": "close" } },
-        { "n": 3, "asset": "Bitcoin", "series": "btc", "call": "up", "conf": "thấp-vừa", "break": { "dir": "below", "level": 76029, "basis": "close" } },
-        { "n": 4, "asset": "DXY", "series": "dxy", "call": "none", "conf": "thấp" },
-        { "n": "5a", "asset": "Lợi suất 30Y neo quanh 5,2%", "series": "us30y", "call": "hold_above", "level": 5.1, "conf": "vừa" },
-        { "n": "5b", "asset": "Đường cong 30Y−10Y không dốc thêm", "series": "curve", "call": "curve_flat", "conf": "vừa" },
-        { "n": 6, "asset": "CK Mỹ (S&P)", "series": "spx", "call": "side", "conf": "thấp" },
-        { "n": 7, "asset": "Dầu WTI", "series": "wti", "call": "down", "conf": "vừa", "manual": "SAI HẲN (08/09)" },
-        { "n": 8, "asset": "Phân bón (DCM·DPM)", "series": "basket:DCM,DPM", "call": "up", "conf": "vừa" }
-      ]
+     "n": 3,
+     "asset": "Công nghệ Mỹ (Nasdaq 100)",
+     "series": "yahoo:^NDX",
+     "call": "down",
+     "conf": "cao"
     },
     {
-      "id": "#4", "written": "2026-09-08", "due": "2026-10-06",
-      "lines": [
-        { "n": 1, "asset": "Dầu WTI", "series": "wti", "call": "up", "conf": "vừa", "break": { "dir": "below", "level": 80.56, "basis": "week" } },
-        { "n": "2a", "asset": "Lợi suất 30Y neo cao", "series": "us30y", "call": "hold_above", "level": 5.2, "conf": "cao" },
-        { "n": "2b", "asset": "Đường cong 30Y−10Y phẳng tiếp", "series": "curve", "call": "curve_flat", "conf": "cao" },
-        { "n": 3, "asset": "VN-Index", "series": "vn:VNINDEX", "call": "side_down", "conf": "vừa", "break": { "dir": "above", "level": 1853, "basis": "close" } },
-        { "n": 4, "asset": "Vàng", "series": "gold", "call": "none", "conf": "thấp-vừa" },
-        { "n": 5, "asset": "Bitcoin", "series": "btc", "call": "up", "conf": "thấp-vừa", "break": { "dir": "below", "level": 76248, "basis": "close" }, "manual": "SAI (16/09) — mốc hỏng kích hoạt" },
-        { "n": 6, "asset": "DXY", "series": "dxy", "call": "none", "conf": "thấp" },
-        { "n": 7, "asset": "CK Mỹ (S&P)", "series": "spx", "call": "side", "conf": "vừa" },
-        { "n": 8, "asset": "Phân bón (DCM·DPM)", "series": "basket:DCM,DPM", "call": "up", "conf": "vừa" }
-      ]
+     "n": "4a",
+     "asset": "Lợi suất 30Y neo cao",
+     "series": "us30y",
+     "call": "hold_above",
+     "level": 5.2,
+     "conf": "cao"
+    },
+    {
+     "n": "4b",
+     "asset": "Đường cong 30Y−10Y dốc thêm",
+     "series": "curve",
+     "call": "curve_steep",
+     "conf": "cao",
+     "manual": "SAI — đường cong phẳng lại (bỏ vế này ở #3)"
+    },
+    {
+     "n": 5,
+     "asset": "DXY",
+     "series": "dxy",
+     "call": "down",
+     "conf": "vừa"
+    },
+    {
+     "n": 6,
+     "asset": "Dầu WTI",
+     "series": "wti",
+     "call": "range",
+     "lo": 80,
+     "hi": 92,
+     "conf": "cao"
+    },
+    {
+     "n": 7,
+     "asset": "Bitcoin",
+     "series": "btc",
+     "call": "down",
+     "conf": "vừa",
+     "break": {
+      "dir": "above",
+      "level": 72500,
+      "basis": "close"
+     },
+     "manual": "SAI (21/08)"
+    },
+    {
+     "n": 8,
+     "asset": "VN-Index",
+     "series": "vn:VNINDEX",
+     "call": "range",
+     "lo": 1700,
+     "hi": 1780,
+     "conf": "thấp-vừa",
+     "manual": "SAI biên (24/08)"
+    },
+    {
+     "n": 10,
+     "asset": "Thép VN (HPG·NKG·HSG)",
+     "series": "basket:HPG,NKG,HSG",
+     "call": "down",
+     "conf": "cao"
+    },
+    {
+     "n": 11,
+     "asset": "Cổ phiếu chứng khoán VN",
+     "series": "basket:SSI,VCI,MBS,SHS,VIX",
+     "call": "down",
+     "conf": "vừa"
+    },
+    {
+     "n": 12,
+     "asset": "BĐS VN (trừ Vin)",
+     "series": "basket:NVL,DIG,DXG,KDH",
+     "call": "down",
+     "conf": "vừa"
+    },
+    {
+     "n": 13,
+     "asset": "Dầu khí VN (GAS·BSR)",
+     "series": "basket:GAS,BSR",
+     "call": "up",
+     "conf": "vừa"
+    },
+    {
+     "n": 14,
+     "asset": "Phân bón (DCM·DPM)",
+     "series": "basket:DCM,DPM",
+     "call": "side",
+     "conf": "vừa"
     }
-  ]
+   ],
+   "unscored": [
+    "9 · Ngân hàng VN phân hóa — không có thước đo hướng"
+   ]
+  },
+  {
+   "id": "#2",
+   "written": "2026-08-24",
+   "due": "2026-09-21",
+   "lines": [
+    {
+     "n": 1,
+     "asset": "Vàng",
+     "series": "gold",
+     "call": "up",
+     "conf": "vừa",
+     "manual": "NỬA — sai nhịp lần hai (28/08)"
+    },
+    {
+     "n": 2,
+     "asset": "Bitcoin",
+     "series": "btc",
+     "call": "up",
+     "conf": "thấp",
+     "break": {
+      "dir": "below",
+      "level": 76029,
+      "basis": "close"
+     }
+    },
+    {
+     "n": 3,
+     "asset": "VN-Index",
+     "series": "vn:VNINDEX",
+     "call": "up",
+     "conf": "vừa",
+     "break": {
+      "dir": "below",
+      "level": 1768,
+      "basis": "close"
+     }
+    },
+    {
+     "n": 4,
+     "asset": "Lợi suất 30Y neo cao",
+     "series": "us30y",
+     "call": "hold_above",
+     "level": 5.2,
+     "conf": "cao"
+    },
+    {
+     "n": 5,
+     "asset": "DXY",
+     "series": "dxy",
+     "call": "down",
+     "conf": "cao",
+     "break": {
+      "dir": "above",
+      "level": 101,
+      "basis": "week"
+     }
+    },
+    {
+     "n": 6,
+     "asset": "CK Mỹ (S&P)",
+     "series": "spx",
+     "call": "side_down",
+     "conf": "thấp-vừa"
+    },
+    {
+     "n": 7,
+     "asset": "Dầu WTI",
+     "series": "wti",
+     "call": "range",
+     "lo": 78,
+     "hi": 90,
+     "conf": "cao"
+    },
+    {
+     "n": 8,
+     "asset": "Phân bón (DCM·DPM)",
+     "series": "basket:DCM,DPM",
+     "call": "up",
+     "conf": "vừa"
+    },
+    {
+     "n": 9,
+     "asset": "Thép VN (HPG·NKG·HSG)",
+     "series": "basket:HPG,NKG,HSG",
+     "call": "side",
+     "conf": "thấp"
+    }
+   ]
+  },
+  {
+   "id": "#3",
+   "written": "2026-08-28",
+   "due": "2026-09-25",
+   "lines": [
+    {
+     "n": 1,
+     "asset": "Vàng",
+     "series": "gold",
+     "call": "up",
+     "conf": "vừa",
+     "break": {
+      "dir": "below",
+      "level": 4514,
+      "basis": "week"
+     },
+     "manual": "SAI (30/08)"
+    },
+    {
+     "n": 2,
+     "asset": "VN-Index",
+     "series": "vn:VNINDEX",
+     "call": "up",
+     "conf": "vừa",
+     "break": {
+      "dir": "below",
+      "level": 1788,
+      "basis": "close"
+     }
+    },
+    {
+     "n": 3,
+     "asset": "Bitcoin",
+     "series": "btc",
+     "call": "up",
+     "conf": "thấp-vừa",
+     "break": {
+      "dir": "below",
+      "level": 76029,
+      "basis": "close"
+     }
+    },
+    {
+     "n": 4,
+     "asset": "DXY",
+     "series": "dxy",
+     "call": "none",
+     "conf": "thấp"
+    },
+    {
+     "n": "5a",
+     "asset": "Lợi suất 30Y neo quanh 5,2%",
+     "series": "us30y",
+     "call": "hold_above",
+     "level": 5.1,
+     "conf": "vừa"
+    },
+    {
+     "n": "5b",
+     "asset": "Đường cong 30Y−10Y không dốc thêm",
+     "series": "curve",
+     "call": "curve_flat",
+     "conf": "vừa"
+    },
+    {
+     "n": 6,
+     "asset": "CK Mỹ (S&P)",
+     "series": "spx",
+     "call": "side",
+     "conf": "thấp"
+    },
+    {
+     "n": 7,
+     "asset": "Dầu WTI",
+     "series": "wti",
+     "call": "down",
+     "conf": "vừa",
+     "manual": "SAI HẲN (08/09)"
+    },
+    {
+     "n": 8,
+     "asset": "Phân bón (DCM·DPM)",
+     "series": "basket:DCM,DPM",
+     "call": "up",
+     "conf": "vừa"
+    }
+   ]
+  },
+  {
+   "id": "#4",
+   "written": "2026-09-08",
+   "due": "2026-10-06",
+   "lines": [
+    {
+     "n": 1,
+     "asset": "Dầu WTI",
+     "series": "wti",
+     "call": "up",
+     "conf": "vừa",
+     "break": {
+      "dir": "below",
+      "level": 80.56,
+      "basis": "week"
+     }
+    },
+    {
+     "n": "2a",
+     "asset": "Lợi suất 30Y neo cao",
+     "series": "us30y",
+     "call": "hold_above",
+     "level": 5.2,
+     "conf": "cao"
+    },
+    {
+     "n": "2b",
+     "asset": "Đường cong 30Y−10Y phẳng tiếp",
+     "series": "curve",
+     "call": "curve_flat",
+     "conf": "cao"
+    },
+    {
+     "n": 3,
+     "asset": "VN-Index",
+     "series": "vn:VNINDEX",
+     "call": "side_down",
+     "conf": "vừa",
+     "break": {
+      "dir": "above",
+      "level": 1853,
+      "basis": "close"
+     }
+    },
+    {
+     "n": 4,
+     "asset": "Vàng",
+     "series": "gold",
+     "call": "none",
+     "conf": "thấp-vừa"
+    },
+    {
+     "n": 5,
+     "asset": "Bitcoin",
+     "series": "btc",
+     "call": "up",
+     "conf": "thấp-vừa",
+     "break": {
+      "dir": "below",
+      "level": 76248,
+      "basis": "close"
+     },
+     "manual": "SAI (16/09) — mốc hỏng kích hoạt"
+    },
+    {
+     "n": 6,
+     "asset": "DXY",
+     "series": "dxy",
+     "call": "none",
+     "conf": "thấp"
+    },
+    {
+     "n": 7,
+     "asset": "CK Mỹ (S&P)",
+     "series": "spx",
+     "call": "side",
+     "conf": "vừa"
+    },
+    {
+     "n": 8,
+     "asset": "Phân bón (DCM·DPM)",
+     "series": "basket:DCM,DPM",
+     "call": "up",
+     "conf": "vừa"
+    }
+   ]
+  },
+  {
+   "id": "#5",
+   "written": "2026-09-22",
+   "due": "2026-10-20",
+   "lines": [
+    {
+     "n": 1,
+     "asset": "Dầu WTI",
+     "series": "wti",
+     "call": "range",
+     "lo": 80.56,
+     "hi": 102.44,
+     "conf": "vừa",
+     "break": {
+      "dir": "below",
+      "level": 80.56,
+      "basis": "week"
+     }
+    },
+    {
+     "n": "2a",
+     "asset": "Lợi suất 30Y neo cao",
+     "series": "us30y",
+     "call": "hold_above",
+     "level": 5.2,
+     "conf": "cao"
+    },
+    {
+     "n": "2b",
+     "asset": "Đường cong 30Y−10Y phẳng tiếp",
+     "series": "curve",
+     "call": "curve_flat",
+     "conf": "vừa"
+    },
+    {
+     "n": 3,
+     "asset": "VN-Index",
+     "series": "vn:VNINDEX",
+     "call": "range",
+     "lo": 1777,
+     "hi": 1874,
+     "conf": "vừa",
+     "break": {
+      "dir": "below",
+      "level": 1777,
+      "basis": "close"
+     }
+    },
+    {
+     "n": 4,
+     "asset": "Vàng",
+     "series": "gold",
+     "call": "down",
+     "conf": "thấp-vừa",
+     "break": {
+      "dir": "above",
+      "level": 4627,
+      "basis": "week"
+     }
+    },
+    {
+     "n": 5,
+     "asset": "Bitcoin",
+     "series": "btc",
+     "call": "up",
+     "conf": "vừa",
+     "break": {
+      "dir": "below",
+      "level": 83862,
+      "basis": "week"
+     }
+    },
+    {
+     "n": 6,
+     "asset": "DXY",
+     "series": "dxy",
+     "call": "up",
+     "conf": "thấp-vừa",
+     "break": {
+      "dir": "below",
+      "level": 99,
+      "basis": "week"
+     }
+    },
+    {
+     "n": 7,
+     "asset": "CK Mỹ (S&P)",
+     "series": "spx",
+     "call": "side",
+     "conf": "vừa"
+    },
+    {
+     "n": 8,
+     "asset": "Phân bón (DCM·DPM)",
+     "series": "basket:DCM,DPM",
+     "call": "up",
+     "conf": "vừa"
+    }
+   ]
+  }
+ ]
 }

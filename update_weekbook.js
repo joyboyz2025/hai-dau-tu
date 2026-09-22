@@ -27,7 +27,8 @@ const WEEKS = [
   { key: 'w35', label: 'Tuần 35', from: '2026-08-24', to: '2026-08-30', ep: 'Tập 47' },
   { key: 'w36', label: 'Tuần 36', from: '2026-08-31', to: '2026-09-06', ep: 'Tập 48' },
   { key: 'w37', label: 'Tuần 37', from: '2026-09-07', to: '2026-09-13', ep: 'Tập 49' },
-  { key: 'w38', label: 'Tuần 38', from: '2026-09-14', to: '2026-09-20', ep: 'Tút 15–16/09' }
+  { key: 'w38', label: 'Tuần 38', from: '2026-09-14', to: '2026-09-20', ep: 'Tập 50' },
+  { key: 'w39', label: 'Tuần 39', from: '2026-09-21', to: '2026-09-27', ep: 'Tút 21–22/09' }
 ];
 
 // ── Gom ngành thành nhóm hiển thị ────────────────────────────────────────────
@@ -119,7 +120,8 @@ const MANUAL = {
       w35: { t: 'Full cổ phiếu, chốt hết VNM — "không cần cơ cấu gì cả"', s: 'hold' },
       w36: { t: 'Full cổ phiếu — không đổi mã nào; vàng lên 30–35% tổng tài sản', s: 'hold' },
       w37: { t: 'ĐẢO CHIỀU 13/09 → 40% tiền — 60% cổ phiếu (phòng thủ)', s: 'down' },
-      w38: { t: '40% tiền — "kiên định, y chang hôm Chủ nhật"', s: 'hold' }
+      w38: { t: 'ĐẢO CHIỀU 19/09 → 75% cổ phiếu — 25% tiền (dồn bank lớn)', s: 'up' },
+      w39: { t: '75% cổ phiếu — "bank vẫn y chang"; kèo lướt MSN/MWG/VNM (~20% vốn)', s: 'up' }
     }
   }]
 };

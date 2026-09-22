@@ -30,13 +30,20 @@ const strip = s => String(s || '').toLowerCase().replace(/đ/g, 'd').normalize('
 // theo từng TỪ, nên "ETF công ty khai khoáng vàng" của LCG Huy khớp nhầm vào mã Vàng
 // chỉ vì có chữ "vàng" — trong khi anh ấy nói rõ là KHÔNG mua vàng, chỉ mua cổ phiếu
 // công ty đào vàng. Nhãn lớp tài sản luôn phải thắng phép dò mờ.
-const NOT_A_TICKER = /^(vn[- ]?index|nhom |chung khoan (han|nhat)|ngan hang|chung khoan|dau tu cong|bds|ban le|ma chua xac dinh|danh muc|etf (cong ty|thi truong|khai khoang))/;
+const NOT_A_TICKER = /^(vn[- ]?index|nhom |chung khoan (han|nhat)|ngan hang|chung khoan|dau tu cong|bds|ban le|ma chua xac dinh|danh muc|etf (cong ty|thi truong|khai khoang)|quy mo )/;
 
+// Bỏ dấu làm "Bạc" (silver) và ký hiệu "BAC" (Bank of America) cùng thành "bac" —
+// 22/09 kèo mua bạc bị gắn vào BAC. Nên: ký hiệu viết đúng nguyên dạng thắng trước,
+// rồi tới alias, cuối cùng mới tới ký hiệu đã bỏ dấu.
+const bySymbol = {};
+D.tickers.forEach(t => { if (t.symbol && !bySymbol[t.symbol]) bySymbol[t.symbol] = t; });
 const idx = {};
-D.tickers.forEach(t => [t.symbol, ...(t.aliases || [])].forEach(a => {
+D.tickers.forEach(t => (t.aliases || []).forEach(a => {
   const k = strip(a); if (k && !idx[k]) idx[k] = t;
 }));
+D.tickers.forEach(t => { const k = strip(t.symbol); if (k && !idx[k]) idx[k] = t; });
 const findTk = name => {
+  if (bySymbol[String(name).trim()]) return bySymbol[String(name).trim()];
   const k = strip(name);
   if (idx[k]) return idx[k];
   for (const w of k.split(' ')) if (idx[w]) return idx[w];

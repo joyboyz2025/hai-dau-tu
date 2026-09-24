@@ -28,16 +28,16 @@
 ## Sổ điểm hướng (cộng dồn)
 
 <!-- score:start — khối này do score_boards.js --write ghi đè, đừng sửa tay -->
-_Cập nhật 2026-09-22. Chi tiết từng dòng: brain/scoreboard.md._
+_Cập nhật 2026-09-24. Chi tiết từng dòng: brain/scoreboard.md._
 
 | Bảng | Viết | Hạn | Trạng thái | Dòng | Claude | Mốc "đà" |
 |---|---|---|---|---|---|---|
 | #1 | 20/08 | 19/09 | đã tới hạn | 13 | 2Đ 7N 4S · **42%** | 65% |
 | #2 | 24/08 | 21/09 | đã tới hạn | 9 | 1Đ 3N 5S · **28%** | 44% |
-| #3 | 28/08 | 25/09 | tạm | 8 | 4Đ 1N 3S · **56%** | 69% |
+| #3 | 28/08 | 25/09 | tạm | 8 | 4Đ 0N 4S · **50%** | 63% |
 | #4 | 08/09 | 06/10 | tạm | 7 | 4Đ 2N 1S · **71%** | 79% |
-| #5 | 22/09 | 20/10 | tạm | 9 | 4Đ 5N 0S · **72%** | 67% |
-| **Tổng** | | | | 46 | **52%** | 64% |
+| #5 | 22/09 | 20/10 | tạm | 9 | 4Đ 5N 0S · **72%** | 61% |
+| **Tổng** | | | | 46 | **51%** | 62% |
 <!-- score:end -->
 
 ---
@@ -799,3 +799,34 @@ Nguồn đối chiếu: Tập 50 (hội viên, 19/09), video công khai 17/09 v�
 
 Hai dòng ngược (vàng, BTC) là nơi bảng #5 sẽ thật sự đo được ai đúng: cả hai dòng đều theo luật A13 (đà), cả hai
 đều đối đầu với luận điểm cấu trúc của ông.
+
+---
+
+# Kiểm giữa kỳ bảng #5 — 2026-09-24 (thứ Năm) · chưa quét kênh · hạn chấm vẫn 20/10
+
+**Mù từ:** chưa đọc bất kỳ nội dung nào phát sau lượt update 22/09.
+
+| Dòng #5 | 22/09 | 24/09 | Ghi |
+|---|---|---|---|
+| 1 · Dầu ↔ 80,56–102,44 | WTI 90,68 | **91,41** (Brent 97,39) | trong biên, đang đúng |
+| 2a · 30Y ≥ 5,2% | 5,34 | **5,29** | đang đúng |
+| 2b · Đường cong phẳng tiếp | chênh 0,33 | **0,33** | đứng yên — kỳ đầu tiên không co thêm sau bảy kỳ |
+| 3 · VN-Index ↔ 1.777–1.874 | 1.816,93 | **1.788,72** | trong biên nhưng đã rơi 28 điểm trong hai phiên, **cách mốc hỏng 1.777 chỉ 12 điểm** |
+| 4 · Vàng ↓ | 4.376 | **4.327** (−1,6%/tuần) | đang đúng |
+| 5 · BTC ↑ | 86.184 | **84.350** | vẫn trên mốc hỏng 83.862 nhưng chỉ 0,6% — dòng mong manh nhất |
+| 6 · DXY ↑ | 100,44 | **101,09** | đang đúng, nhưng xem ghi chú A9 bên dưới |
+| 7 · S&P → | 7.770 | **7.706** | đi ngang, đang đúng |
+| 8 · Phân bón ↑ | DCM 33,95 · DPM 22,9 | theo dõi tiếp | — |
+
+**A9 sắp chạm điều kiện tắt.** DXY 101,09 là lần đầu trên 101 kể từ khi đặt mốc. Điều kiện viết trong bảng #5 là
+**đóng TUẦN trên 101**, hôm nay mới là thứ Năm — nên chưa tắt. Nếu thứ Sáu đóng tuần trên 101 thì phải viết lại
+dòng 4 (vàng) theo đúng quy ước đã ghi trước, không được lờ đi.
+
+**Hai dòng cần theo sát:** VN-Index (còn 12 điểm tới mốc hỏng) và BTC (còn 0,6%). Cả hai đều có cơ sở ĐÓNG
+(ngày cho VN-Index, tuần cho BTC) nên không chấm sớm — ghi lại đây để lần sau không có chuyện "quên là đã
+biết trước".
+
+**Khối ngoại đảo chiều lần nữa:** lũy kế 20 phiên từ −168 tỷ (22/09) xuống **−1.643 tỷ**, riêng phiên 23/09 bán
+ròng 1.128 tỷ. Đây là dữ kiện đi ngược lý do tôi dùng để bỏ vế "nghiêng xuống" của VN-Index ở bảng #5 — nếu
+dòng 3 hỏng thì nguyên nhân gần như chắc chắn nằm ở đây, không phải ở độ rộng (36,9% trên MA50, gần như
+không đổi so với 37,4%).

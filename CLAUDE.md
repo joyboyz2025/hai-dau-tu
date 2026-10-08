@@ -27,6 +27,14 @@ vercel.json            # rewrites + Cache-Control no-cache cho data.js
 | `ck-5-phut` | Chứng khoán 5 phút | Nhận định phiên/tuần, thanh khoản, tín hiệu | gần như hàng ngày |
 | `quang-dung` | @DauTuChungKhoanCungQuangDung (148K sub, thêm 02/08) | **Định giá doanh nghiệp theo ngành + đọc chính sách vĩ mô** — bóc báo cáo tài chính, không dùng đồ thị | 2–4 bài/tháng, mỗi bài 35–55 phút |
 | `lcg-huy` | @lcghuy (thêm 03/08) | **ETF, quỹ chỉ số, quỹ mở** — nói về TỶ TRỌNG phân bổ và tiêu chí chọn quỹ; ở Canada, làm quản lý rủi ro ngân hàng | thứ Tư & Chủ nhật, ~20–35 phút |
+| `standard-chartered` | Báo cáo PDF (thêm 08/10) | **"Top of Mind List" hàng tháng của WS Global CIO Office** — danh sách cổ phiếu Mỹ/Âu/Á/Nhật kèm xếp hạng CFRA, GIÁ MỤC TIÊU và hệ số định giá, tầm nhìn 12 tháng | 1 báo cáo/tháng, user tự đưa file PDF |
+
+- **Standard Chartered là nguồn khác kiểu hoàn toàn — đọc kỹ trước khi dựng (thêm 08/10)**:
+  1. **Không phải YouTube**: user thả file PDF (vd `~/Downloads/Top of Mind Monthly_Oct 2026.pdf`). Máy KHÔNG có `pdftotext`/poppler — dùng `pypdf` (đã cài): `python3 -c "import pypdf; ..."` xuất text ra scratchpad rồi đọc. Trang 2 (lưới chủ đề) bị vỡ chữ khi trích; dựng lại cơ cấu chủ đề từ các tiêu đề mục theo khu vực ở trang 4–44.
+  2. **`sourceType: 'report'`** — đã thêm vào `SOURCE_TYPE` trong HTML (nền xanh mòng két). Dòng disclaimer cuối trang Hôm nay đã đổi "5 chuyên gia" → "6 chuyên gia".
+  3. **Đây là nguồn DUY NHẤT có giá mục tiêu chính thức** → `tradeLevels` dùng `entry` = giá tại ngày chốt báo cáo, `target` = price target, `stop` = "—" (báo cáo không đặt cắt lỗ). Giá trị lớn nhất của nguồn này là ĐỐI CHIẾU với lệnh short cổ phiếu Mỹ của Thái Phạm — tháng 10/2026 có sáu mã đối đầu trực tiếp (AMD, MSFT, MU, SanDisk, AAPL, META).
+  4. **Phạm vi đã chốt với user (08/10)**: chỉ lấy mã trùng Sổ mã + vài ý tưởng mới nổi bật (~15–20 mã), KHÔNG dựng hết ~60 mã của cả bốn khu vực.
+  5. Số liệu trong báo cáo đã kiểm chéo khớp mặt bằng giá trong sổ (MU ~1.065, SanDisk ~1.730 trùng mốc cắt lỗ short của Thái Phạm) — chép nguyên văn, đừng "sửa cho hợp lý".
 
 - **LCG Huy có ba điểm khác hẳn 4 kênh kia, đừng ép vào khuôn cũ**:
   1. **Không có mốc giá.** Kèo của anh là TỶ TRỌNG ("giữ 50% danh mục"), không entry/target/stop. `tradeLevels` vẫn dựng được nhưng để `entry`/`target`/`stop` là câu chữ mô tả, TUYỆT ĐỐI không bịa số.

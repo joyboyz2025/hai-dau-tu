@@ -28,16 +28,17 @@
 ## Sổ điểm hướng (cộng dồn)
 
 <!-- score:start — khối này do score_boards.js --write ghi đè, đừng sửa tay -->
-_Cập nhật 2026-09-24. Chi tiết từng dòng: brain/scoreboard.md._
+_Cập nhật 2026-10-08. Chi tiết từng dòng: brain/scoreboard.md._
 
 | Bảng | Viết | Hạn | Trạng thái | Dòng | Claude | Mốc "đà" |
 |---|---|---|---|---|---|---|
 | #1 | 20/08 | 19/09 | đã tới hạn | 13 | 2Đ 7N 4S · **42%** | 65% |
 | #2 | 24/08 | 21/09 | đã tới hạn | 9 | 1Đ 3N 5S · **28%** | 44% |
-| #3 | 28/08 | 25/09 | tạm | 8 | 4Đ 0N 4S · **50%** | 63% |
-| #4 | 08/09 | 06/10 | tạm | 7 | 4Đ 2N 1S · **71%** | 79% |
-| #5 | 22/09 | 20/10 | tạm | 9 | 4Đ 5N 0S · **72%** | 61% |
-| **Tổng** | | | | 46 | **51%** | 62% |
+| #3 | 28/08 | 25/09 | đã tới hạn | 8 | 4Đ 0N 4S · **50%** | 63% |
+| #4 | 08/09 | 06/10 | đã tới hạn | 7 | 3Đ 3N 1S · **64%** | 64% |
+| #5 | 22/09 | 20/10 | tạm | 9 | 5Đ 2N 2S · **67%** | 61% |
+| #6 | 08/10 | 05/11 | tạm | 9 | 5Đ 4N 0S · **78%** | 61% |
+| **Tổng** | | | | 55 | **54%** | 60% |
 <!-- score:end -->
 
 ---
@@ -830,3 +831,70 @@ biết trước".
 ròng 1.128 tỷ. Đây là dữ kiện đi ngược lý do tôi dùng để bỏ vế "nghiêng xuống" của VN-Index ở bảng #5 — nếu
 dòng 3 hỏng thì nguyên nhân gần như chắc chắn nằm ở đây, không phải ở độ rộng (36,9% trên MA50, gần như
 không đổi so với 37,4%).
+
+---
+
+# Nhận định mù #6 — 2026-10-08 (thứ Năm, sau phiên) · hạn chấm 05/11
+
+**Mù từ:** chưa đọc bất kỳ nội dung nào của 5 kênh phát sau lượt update 24/09 (32 video mới đã tải phụ đề nhưng CHƯA đọc). Đã đọc 3 trang đầu báo cáo Standard Chartered (danh sách cổ phiếu Top of Mind tháng 10) — không phải nguồn vĩ mô, không dùng cho bảng này.
+
+**Viết sớm trước hạn 20/10 — có cớ, ghi rõ ở đây:** bảng #5 đã có hai dòng kích hoạt mốc hỏng (VN-Index đóng 1.775,09 ngày 24/09 dưới 1.777; BTC đóng tuần 05/10 ở 82.839 dưới 83.862) **và** điều kiện tắt mô hình nền A9 đã xảy ra (DXY đóng trên 101). Theo luật 08/09: hết hạn thì chấm, mô hình nền vỡ thì viết lại ngay.
+
+## Chấm bảng #5 (điểm máy, chấm tạm tại 08/10)
+
+| Dòng | Gọi | Kết quả máy |
+|---|---|---|
+| 1 · Dầu WTI ↔ 80,56–102,44 | 94,59 → 90,70 | **ĐÚNG** |
+| 2a · 30Y ≥ 5,2% | 5,29 → 5,64 | **ĐÚNG** |
+| 2b · Đường cong phẳng tiếp | 0,33 → 0,37 | **SAI** |
+| 3 · VN-Index ↔ 1.777–1.874 | 1.817 → 1.744 | **SAI** (mốc hỏng kích hoạt 24/09) |
+| 4 · Vàng ↓ | 4.376 → 4.143 | **ĐÚNG** |
+| 5 · Bitcoin ↑ | 86.172 → 82.752 | **NỬA** (đóng tuần dưới mốc hỏng) |
+| 6 · DXY ↑ | 100,6 → 102,26 | **ĐÚNG** |
+| 7 · S&P → | 7.765 → 7.802 | **ĐÚNG** |
+| 8 · Phân bón ↑ | −1,0% | **NỬA** |
+
+Năm đúng, hai sai, hai nửa — bảng tốt nhất từ đầu dự án về số dòng đúng. Nhưng hai dòng sai đều là **dòng tôi tự hạ tin cậy xuống "vừa" khi viết**, và cả hai sai vì cùng một thứ tôi không lường: **lợi suất Mỹ nhảy 0,47 điểm trong một tháng** (10Y 4,80 → 5,27). Cú đó vừa bẻ đường cong dốc trở lại (2b), vừa hút vốn ngoại khỏi Việt Nam (dòng 3) — khối ngoại bán ròng **9.247 tỷ trong 20 phiên**, so với −1.643 tỷ lúc viết bảng #5.
+
+## A9 ĐÃ TẮT — và đây là chỗ phải thành thật
+
+Mô hình A9 ("đô mạnh → vàng yếu") có điều kiện tắt viết sẵn: DXY đóng tuần trên 101. DXY nay 102,26. **A9 tắt.** Nhưng cần nói rõ: dòng vàng ↓ của bảng #5 vẫn ĐÚNG (−5,3%). Nghĩa là tôi đúng kết quả nhưng mô hình giải thích đã hết hiệu lực — đúng kiểu "chấm hai tầng" của bài học 30/08.
+
+Thay A9 bằng **A14 (mới): trong chu kỳ lợi suất thực tăng, vàng và đô KHÔNG phải cặp đối nghịch — cả hai cùng là hàm của lợi suất thực.** Bằng chứng tháng này: 10Y danh nghĩa +0,47 điểm, DXY +3,5%, vàng −6,7%. Khi lợi suất thực tăng thì đô hút vốn và vàng mất sức hấp dẫn CÙNG LÚC; không có vế "đô mạnh gây ra vàng yếu". Điều kiện hỏng của A14: một tháng mà lợi suất 10Y tăng trên 0,2 điểm trong khi vàng tăng trên 3%.
+
+## Snapshot dữ liệu (08/10)
+
+- **Lợi suất:** 10Y **5,27%** (+0,47đ/tháng) · 30Y **5,64%** · chênh **0,37** (mở rộng trở lại sau bảy kỳ co)
+- **DXY 102,26** (+3,5%/tháng)
+- **Vàng 4.143** — DOWNTREND theo máy (dưới MA50 4.374 và MA200 4.549); cản 4.171–4.300 (chạm 6 lần), đỡ 4.046–4.143 (3 lần) rồi 3.901–3.997 (7 lần)
+- **WTI 90,70** — vẫn UPTREND (trên MA50 89,02 và MA200 83,05); cản 101,67–102,44; đỡ 88,66–88,71 rồi 79,62–80,56. **Brent 103,15** — chênh Brent−WTI 12,5 đô, rất rộng
+- **BTC 82.752** — MA50 80.270, MA200 71.727 (vẫn uptrend theo MA) nhưng đã **thủng mốc đóng tuần**; gap down 83.427→85.120 ngay TRÊN giá; cản 87.146–87.364; đỡ 73.776–76.248 (chạm 7 lần)
+- **S&P 7.802**
+- **VN-Index 1.743,60** — DOWNTREND (dưới MA50 1.779 và MA200 1.797); cản 1.772–1.814 (chạm 6 lần), đỡ 1.635–1.687 (chạm 6 lần). Độ rộng xấu đi: trên MA50 **30,1%** (từ 36,9%), downtrend **55,8%**. Khối ngoại 20 phiên **−9.247 tỷ**, có phiên 02/10 bán 3.262 tỷ và 06/10 bán 2.619 tỷ
+- **Polymarket:** không có đợt cắt lãi nào trong 2026: 95,6%
+
+## BẢNG HƯỚNG #6 (4 tuần, tới 05/11)
+
+| # | Tài sản | Hướng | Tin cậy | Lý do + mốc |
+|---|---|---|---|---|
+| 1 | **VN-Index** | ↓ | vừa | Lần đầu tôi gọi ↓ VN-Index. A13 (theo đà): giá dưới cả MA50 lẫn MA200, độ rộng 30,1%, khối ngoại bán 9.247 tỷ/20 phiên và đang tăng tốc. Đích tham chiếu là cụm đỡ 1.635–1.687 (chạm 6 lần). **Hỏng: đóng NGÀY trên 1.814** (mép trên cụm kháng cự). |
+| 2a | **Lợi suất 30Y** | ≥ 5,2% | cao | Mô hình thắng đà tám kỳ liền; 5,64% và vẫn đang leo. |
+| 2b | **Đường cong 30Y−10Y** | dốc lên (mở rộng) | thấp-vừa | Đảo vế so với #5 sau khi sai: đà đã đổi sang mở rộng (0,33 → 0,37). Tin cậy thấp vì mới một kỳ. |
+| 3 | **Vàng** | ↓ | vừa | Nâng tin cậy từ thấp-vừa lên vừa: nay máy đọc DOWNTREND thật (dưới cả hai MA), không chỉ là đà. **Hỏng: đóng TUẦN trên 4.300.** |
+| 4 | **Bitcoin** | ↔ 76.248–87.364 | vừa | Bỏ hướng ↑ sau khi thủng mốc tuần, nhưng KHÔNG lật sang ↓ vì giá vẫn trên MA50 và MA200. Dùng đúng hai cụm máy làm biên. **Hỏng: đóng TUẦN dưới 76.248.** |
+| 5 | **DXY** | ↑ | vừa | Đà +3,5%/tháng, chênh lệch lãi suất nghiêng về đô. **Hỏng: đóng TUẦN dưới 100.** |
+| 6 | **Dầu WTI** | ↔ 88,66–102,44 | thấp-vừa | Uptrend chưa hỏng nhưng kẹt dưới cản 101,67–102,44 ba tuần. Biến số tôi không đo được: chênh Brent−WTI 12,5 đô là bất thường. **Hỏng: đóng TUẦN dưới 79,62.** |
+| 7 | **CK Mỹ (S&P)** | → | vừa | Dòng thắng đà liên tục; 10Y trên 5,2% giữ trần định giá (A3), đà ngắn hạn giữ đáy. |
+| 8 | **Phân bón (DCM·DPM)** | ↔ | thấp-vừa | **Hạ từ ↑ xuống đi ngang**: DCM trung tính (trên MA50, dưới MA200), DPM downtrend thật. Luận điểm chu kỳ ure chưa hỏng nhưng giá không xác nhận. |
+
+**Điều kiện tự sửa ghi trước:** VN-Index đóng ngày trên 1.814 → dòng 1 SAI · vàng đóng tuần trên 4.300 → dòng 3 SAI · BTC đóng tuần dưới 76.248 → dòng 4 SAI · DXY đóng tuần dưới 100 → dòng 5 SAI · WTI đóng tuần dưới 79,62 → dòng 6 SAI.
+
+## Dự đoán nội dung Tập 52 (chưa xem) — áp A10, A11, A12, A13
+
+Biến mới của hai tuần: **lợi suất 10Y vượt 5,2%** · **VN-Index thủng 1.750** · **khối ngoại bán 9.247 tỷ** · **vàng −6,7%** · **BVH +12% kể từ khi ông gọi mua**.
+
+1. **VN (A11 — đọc bảng của chính mình):** dòng VN-Index của tôi vừa lật sang ↓ và giá đã xác nhận. Nhưng A12 nói lớp luận điểm của ông (bank rẻ vì lãi suất cao) hiếm khi đổi. → Dự đoán: ông **GIỮ nguyên tỷ trọng bank ≥50%**, không hạ tiền mặt, và giải thích cú giảm bằng khối ngoại + lợi suất Mỹ chứ không bằng "thị trường hỏng". Xác suất ông nâng tiền mặt trở lại: thấp. Tin cậy vừa.
+2. **Lợi suất:** đây đúng là chủ đề tiêu đề Tập 52 ("10Y vượt 5,2%"). Ông sẽ nối sang luận điểm đảo nợ 2027 và nhắc lại cảnh báo khủng hoảng mini. Gần chắc.
+3. **Vàng:** ông giữ "tích lũy tới hết tháng 11 rồi lên", và vì giá đã về vùng ông từng gọi mua, ông sẽ nói **đang mua thêm**. Tin cậy vừa.
+4. **BTC:** sau khi bỏ nửa short ở 82.000 (23/09), giá nay 82.752 — gần đúng vùng đó. Dự đoán ông **không mở long**, giữ phần short còn lại hoặc đứng ngoài. Tin cậy thấp-vừa.
+5. **Mã mới (A10 + bài học 24/09 — không dựa vào chuỗi vĩ mô, dựa vào tài sản "anh em" và danh sách khối ngoại):** BVH đang lãi 12% nên ông sẽ khoe và giữ; mã mới nếu có nhiều khả năng vẫn thuộc nhóm hưởng lãi suất cao — **bảo hiểm còn lại (PVI/BMI/MIG) hoặc một ngân hàng chưa có trong danh mục**. Tin cậy thấp.

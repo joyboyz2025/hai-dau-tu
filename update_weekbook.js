@@ -28,7 +28,9 @@ const WEEKS = [
   { key: 'w36', label: 'Tuần 36', from: '2026-08-31', to: '2026-09-06', ep: 'Tập 48' },
   { key: 'w37', label: 'Tuần 37', from: '2026-09-07', to: '2026-09-13', ep: 'Tập 49' },
   { key: 'w38', label: 'Tuần 38', from: '2026-09-14', to: '2026-09-20', ep: 'Tập 50' },
-  { key: 'w39', label: 'Tuần 39', from: '2026-09-21', to: '2026-09-27', ep: 'Tập 51' }
+  { key: 'w39', label: 'Tuần 39', from: '2026-09-21', to: '2026-09-27', ep: 'Tập 51 · 52' },
+  { key: 'w40', label: 'Tuần 40', from: '2026-09-28', to: '2026-10-04', ep: 'Tập 53' },
+  { key: 'w41', label: 'Tuần 41', from: '2026-10-05', to: '2026-10-11', ep: 'Tút 06–08/10' }
 ];
 
 // ── Gom ngành thành nhóm hiển thị ────────────────────────────────────────────
@@ -121,7 +123,9 @@ const MANUAL = {
       w36: { t: 'Full cổ phiếu — không đổi mã nào; vàng lên 30–35% tổng tài sản', s: 'hold' },
       w37: { t: 'ĐẢO CHIỀU 13/09 → 40% tiền — 60% cổ phiếu (phòng thủ)', s: 'down' },
       w38: { t: 'ĐẢO CHIỀU 19/09 → 75% cổ phiếu — 25% tiền (dồn bank lớn)', s: 'up' },
-      w39: { t: '75% cổ / 25% tiền — NÂNG riêng nhóm bank lên ít nhất 50% tài khoản (Tập 51)', s: 'up' }
+      w39: { t: '75% cổ / 25% tiền — NÂNG riêng nhóm bank lên ít nhất 50% tài khoản (Tập 51)', s: 'up' },
+      w40: { t: 'ĐẢO CHIỀU 03/10 → 40% tiền — 60% cổ phiếu; bỏ hết hàng lướt', s: 'down' },
+      w41: { t: '60% cổ phiếu — "giữ vững trận địa"; thêm chủ đề bảo hiểm BVH + PVI ~20% NAV', s: 'hold' }
     }
   }]
 };

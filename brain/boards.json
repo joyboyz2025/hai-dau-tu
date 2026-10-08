@@ -486,6 +486,106 @@
      "conf": "vừa"
     }
    ]
+  },
+  {
+   "id": "#6",
+   "written": "2026-10-08",
+   "due": "2026-11-05",
+   "lines": [
+    {
+     "n": 1,
+     "asset": "VN-Index",
+     "series": "vn:VNINDEX",
+     "call": "down",
+     "conf": "vừa",
+     "break": {
+      "dir": "above",
+      "level": 1814,
+      "basis": "close"
+     }
+    },
+    {
+     "n": "2a",
+     "asset": "Lợi suất 30Y neo cao",
+     "series": "us30y",
+     "call": "hold_above",
+     "level": 5.2,
+     "conf": "cao"
+    },
+    {
+     "n": "2b",
+     "asset": "Đường cong 30Y−10Y",
+     "series": "curve",
+     "call": "curve_steep",
+     "conf": "thấp-vừa"
+    },
+    {
+     "n": 3,
+     "asset": "Vàng",
+     "series": "gold",
+     "call": "down",
+     "conf": "vừa",
+     "break": {
+      "dir": "above",
+      "level": 4300,
+      "basis": "week"
+     }
+    },
+    {
+     "n": 4,
+     "asset": "Bitcoin",
+     "series": "btc",
+     "call": "range",
+     "lo": 76248,
+     "hi": 87364,
+     "conf": "vừa",
+     "break": {
+      "dir": "below",
+      "level": 76248,
+      "basis": "week"
+     }
+    },
+    {
+     "n": 5,
+     "asset": "DXY",
+     "series": "dxy",
+     "call": "up",
+     "conf": "vừa",
+     "break": {
+      "dir": "below",
+      "level": 100,
+      "basis": "week"
+     }
+    },
+    {
+     "n": 6,
+     "asset": "Dầu WTI",
+     "series": "wti",
+     "call": "range",
+     "lo": 88.66,
+     "hi": 102.44,
+     "conf": "thấp-vừa",
+     "break": {
+      "dir": "below",
+      "level": 79.62,
+      "basis": "week"
+     }
+    },
+    {
+     "n": 7,
+     "asset": "CK Mỹ (S&P)",
+     "series": "spx",
+     "call": "side",
+     "conf": "vừa"
+    },
+    {
+     "n": 8,
+     "asset": "Phân bón (DCM·DPM)",
+     "series": "basket:DCM,DPM",
+     "call": "side",
+     "conf": "thấp-vừa"
+    }
+   ]
   }
  ]
 }

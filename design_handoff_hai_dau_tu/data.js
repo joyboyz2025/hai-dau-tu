@@ -7065,6 +7065,32 @@ window.HDT_DATA = {
           ],
           "sections": [
             {
+              "title": "Chi tiết từng mã: xếp hạng, giá mục tiêu và lý do",
+              "signal": "up",
+              "sigLabel": "TỪNG CON MỘT",
+              "para": "Toàn bộ số liệu chốt ngày 30/09/2026, tầm nhìn 12 tháng, xếp hạng của CFRA. Thứ tự theo upside giảm dần. Sáu mã có chữ ĐỐI CHIẾU là nơi báo cáo đứng ngược vị thế short của Thái Phạm.",
+              "bullets": [
+                "SanDisk — Strong Buy, mục tiêu 2.663 (giá 1.729,76, upside 54%). P/E dự phóng 7,7 lần với ROE 88,4%. Tên mới tháng này. Investor Day tháng 8 định hướng doanh thu tăng kép 15–19% giai đoạn FY28–FY30, trái kỳ vọng thị trường là suy giảm. Giá mục tiêu vẫn chiết khấu 26% so với nhóm Micron/SK Hynix/WD/Seagate. ĐỐI CHIẾU: Thái Phạm short, cắt lỗ 1.920.",
+                "Vertiv — Strong Buy, mục tiêu 375 (giá 248,34, upside 51%). P/E dự phóng 29,1 lần, ROE 48%. Hạ tầng điện và tản nhiệt cho trung tâm dữ liệu; backlog kỷ lục, nhu cầu vượt khả năng giao hàng; đối tác Intel, Nvidia, Ballard.",
+                "Micron — Buy, mục tiêu 1.500 (giá 1.065,08, upside 41%). P/E dự phóng 6,7 lần với ROE 73,9%. Thị trường bộ nhớ thiếu cung tới ít nhất 2027; 16 hợp đồng khách hàng không thể hủy, hậu thuẫn bởi hơn 22 tỷ đô tiền đặt cọc. ĐỐI CHIẾU: Thái Phạm short, cắt lỗ 1.131.",
+                "GE Vernova — Strong Buy, mục tiêu 1.350 (giá 962,49, upside 40%). P/E dự phóng 39,3 lần, ROE 43,1%. Backlog bằng khoảng bốn năm doanh thu; định giá 54 lần EPS FY27 được biện minh bằng vị thế dẫn đầu tuabin khí.",
+                "Newmont — Strong Buy, mục tiêu 158 (giá 117,09, upside 35%). P/E dự phóng 11,4 lần. Nhà sản xuất vàng lớn nhất thế giới, 12 mỏ; FCF quý 2 kỷ lục 2,2 tỷ đô; đã giải quyết tranh chấp Nevada Gold Mines với Barrick.",
+                "Amazon — Strong Buy, mục tiêu 335 (giá 246,67, upside 36%). P/E dự phóng 19 lần. Upside cao nhất nhóm mega-cap; giá mục tiêu 31 lần EPS GAAP 2027, cao hơn nhóm so sánh 24 lần nhưng bù bằng tăng trưởng EPS kép 25%.",
+                "Broadcom — Buy, mục tiêu 450 (giá 355,10, upside 27%). P/E dự phóng 19,1 lần, ROE 59%. Doanh thu bán dẫn AI quý 7 đạt 16,7 tỷ đô (+221%); hướng dẫn lên 115 tỷ đô FY27 rồi 230 tỷ đô FY28 nhờ sáu khách hàng XPU hyperscale.",
+                "Meta — Strong Buy, mục tiêu 900 (giá 738,79, upside 22%). P/E dự phóng 19,7 lần. Giá mục tiêu 22 lần EPS 2028, thấp hơn trung bình 10 năm 26 lần; rủi ro tự nêu là capex cao và lợi nhuận quý 3 dự giảm 18%. ĐỐI CHIẾU: Thái Phạm short, cắt lỗ 755.",
+                "Alphabet — Buy, mục tiêu 410 (giá 340,92, upside 20%). P/E dự phóng 20,3 lần. Mã duy nhất báo cáo chấp nhận trả bội số cao hơn lịch sử (25 lần so với 22–23 lần) vì thành công AI và thị phần Cloud; cộng giá trị cổ phần tại Anthropic.",
+                "Nvidia — Strong Buy, mục tiêu 270 (giá 227,21, upside 19%). P/E dự phóng 16,6 lần, ROE 86,7%. Giá mục tiêu chỉ 15 lần EPS CY28 — thấp hơn cả nhóm so sánh, tức báo cáo cho rằng thị trường đang chiết khấu chứ không phải thổi giá. Doanh thu quý 2 96,2 tỷ đô (+106%).",
+                "AMD — Strong Buy, mục tiêu 700 (giá 607,57, upside 15%). P/E dự phóng 45,1 lần — cao nhất nhóm. Đối thủ full-stack của Nvidia, hệ thống Helios rack-scale đã xuất hàng; biên hoạt động kỷ lục 27%. ĐỐI CHIẾU: Thái Phạm short, cắt lỗ 655.",
+                "Amphenol — Buy, mục tiêu 95 (giá 84,34, upside 13%). P/E dự phóng 27 lần. Đầu nối và cáp tốc độ cao; giá mục tiêu đã điều chỉnh sau chia tách 2:1 hoàn tất trong tháng 9 — đừng điều chỉnh lần nữa khi đối chiếu.",
+                "Lumentum — Buy, mục tiêu 1.100 (giá 973,49, upside 13%). P/E dự phóng 39,3 lần. Tên mới tháng này. Quý 4 doanh thu lần đầu vượt 1 tỷ đô (+109%), biên gộp non-GAAP lần đầu vượt 50%; định giá 34,8 lần EV/EBITDA FY27 so với trung bình 5 năm 31,9 lần.",
+                "Corning — Buy, mục tiêu 175 (giá 158,71, upside 10%). P/E dự phóng 38,9 lần. Tên mới tháng này. Hợp đồng nhiều năm tối đa 6 tỷ đô với Meta cho sợi quang; cảnh báo định giá 40,5 lần EPS 2027 so với trung bình ba năm 22,5 lần.",
+                "Analog Devices — Buy, mục tiêu 435 (giá 398,22, upside 9%). P/E dự phóng 24,2 lần. Định giá đã ở trung bình lịch sử; điểm mới là thương vụ 1,5 tỷ đô mua Empower Semiconductor, công nghệ tụ silicon gỡ nút thắt mật độ công suất cho chip AI.",
+                "Microsoft — Strong Buy, mục tiêu 550 (giá 508,96, upside 8%). P/E dự phóng 24,5 lần. Giá mục tiêu dùng P/E 22 lần EPS CY28, thấp xa trung bình lịch sử 31 lần. ĐỐI CHIẾU: Thái Phạm short, cắt lỗ 528.",
+                "Apple — Buy, mục tiêu 350 (giá 329,40, upside 6% — thấp nhất). P/E dự phóng P/E 34,2 lần, ROE 116,3%. Giá mục tiêu đã dùng bội số cao hơn lịch sử mà upside vẫn thấp nhất danh sách. ĐỐI CHIẾU: Thái Phạm cũng nghiêng short nhưng đợi 340 — hai bên gần như cùng kết luận.",
+                "GLD và GDX (không xếp hạng): giữ mục tiêu vàng 4.750 đô trong 3 tháng và 5.000 đô trong 12 tháng, ưu tiên cổ phiếu khai thác hơn vàng miếng nhờ đòn bẩy biên lợi nhuận."
+              ]
+            },
+            {
               "title": "Bốn chủ đề của phần cổ phiếu Mỹ",
               "signal": "up",
               "sigLabel": "CƠ CẤU DANH SÁCH",
@@ -10096,6 +10122,11 @@ window.HDT_DATA = {
           "title": "Kịch bản 30/07",
           "body": "BCTC công bố 30/07 là điểm quyết định. Hai kịch bản: hoặc gap-up đánh lừa rồi \"đỏ ngòm\" (kiểu Broadcom/Oracle), hoặc gãy thẳng. Nếu guidance Q3 yếu → \"gãy đau, gãy sâu luôn, về lại chen line\" — lúc đó mới là vùng cho ai muốn mua. Chiến lược vị thế: chỉ short 1/2 ở 320–330, giữ 1/2 sức mua để vào sau tin; giữ vị thế đến tháng 8–9 mới có ăn. Tuyệt đối không nhảy vào mua trước báo cáo.",
           "expertId": "thai-pham"
+        },
+        {
+          "expertId": "standard-chartered",
+          "title": "Upside thấp nhất toàn danh sách Mỹ — chỗ hai nguồn gần như cùng ý",
+          "body": "Buy, giá mục tiêu 350 đô so với 329,40 — upside 6%, thấp nhất danh sách. Đáng chú ý là giá mục tiêu đã dùng P/E 31,5 lần EPS CY28, tức CAO hơn trung bình lịch sử 28–29 lần, vậy mà upside vẫn chỉ 6% — nghĩa là giá hiện tại đã phản ánh gần hết. Động lực còn lại: iPhone Duo nâng cấu trúc sản phẩm cao cấp và Siri AI ra mắt tại WWDC. ĐỐI CHIẾU: Thái Phạm cũng nghiêng short Apple nhưng đợi 340 mới vào — hai bên gần như cùng kết luận từ hai hướng khác nhau."
         }
       ],
       "orders": [
@@ -10600,6 +10631,11 @@ window.HDT_DATA = {
           "title": "Trong bức tranh bán dẫn",
           "body": "Tập 38 nhắc AMD ngắn gọn nhưng rõ: \"AMD cũng có thể hồi phục chút xíu, lại gãy thôi\" — cùng khuôn với Intel (đích ~77) và cả nhóm semis đã qua đỉnh kéo rướn. Call gốc \"semiconductor kéo rướn sẽ chỉnh mạnh\" từ 12/06 đã được scorecard ghi nhận ĐÚNG. Với người ngoài cuộc, đây là mã theo dõi xác nhận xu hướng nhóm hơn là kèo vào mới.",
           "expertId": "thai-pham"
+        },
+        {
+          "expertId": "standard-chartered",
+          "title": "Đối thủ full-stack của Nvidia — nhưng P/E 45 lần là chỗ trả giá",
+          "body": "Strong Buy, giá mục tiêu 700 đô so với 607,57 — upside 15%, tương đương 30 lần EPS 2028. Báo cáo coi AMD là đối thủ \"full-stack\" đáng tin cậy của Nvidia với hệ thống Helios rack-scale đã xuất hàng từ quý 3. Doanh thu quý 2 đạt 11,5 tỷ đô (+50%), biên lợi nhuận hoạt động kỷ lục 27%. P/E dự phóng 45,1 lần — cao nhất nhóm AI trong danh sách. ĐỐI CHIẾU: Thái Phạm short AMD với cắt lỗ 655."
         }
       ],
       "orders": [
@@ -10882,6 +10918,13 @@ window.HDT_DATA = {
           "sig": "up",
           "date": "01/10",
           "line": "Từ Top of Mind · tháng 10 (01/10). Điểm vào: 246.67. Mục tiêu: 335."
+        }
+      ],
+      "thesis": [
+        {
+          "expertId": "standard-chartered",
+          "title": "Upside cao nhất nhóm mega-cap — trả giá cao hơn nhóm so sánh có lý do",
+          "body": "Strong Buy, giá mục tiêu 335 đô so với 246,67 — upside 36%, cao nhất trong nhóm vốn hóa lớn. Giá mục tiêu tương đương 31 lần EPS GAAP 2027, cao hơn mức 24 lần của nhóm so sánh, nhưng được bù bằng tăng trưởng EPS kép 25% giai đoạn 2024–2026 nhờ AWS, chip tự thiết kế, tự động hóa thương mại điện tử và quảng cáo. P/E dự phóng 19 lần. Thái Phạm cũng long mã này từ 07/10 — một trong ba chỗ hai nguồn cùng phía."
         }
       ]
     },
@@ -15326,6 +15369,11 @@ window.HDT_DATA = {
           "expertId": "thai-pham",
           "title": "Đợi test lại rồi mua — không đuổi giá",
           "body": "Tập 47: \"Tôi ở Mỹ thì tôi đang đợi con VanEck Gold Miners nó test lại cho tôi vùng 92. Vùng 92 hoặc là 91 thì tôi sẽ mua lại.\" Đây là cách ông tham gia sóng vàng bằng cổ phiếu công ty khai khoáng thay vì hợp đồng vàng — khác với vị thế long XAU/USD ông đang giữ từ 4.080. Lưu ý ông dùng chữ \"mua LẠI\", tức từng có vị thế ở đây trước đó."
+        },
+        {
+          "expertId": "standard-chartered",
+          "title": "Ưu tiên cổ phiếu mỏ hơn vàng miếng",
+          "body": "ETF cổ phiếu khai thác vàng, không có xếp hạng riêng. Báo cáo kỳ vọng nhóm khai thác Mỹ và Canada vượt trội so với vàng miếng nhờ đòn bẩy biên lợi nhuận: khi giá vàng tăng, chi phí khai thác gần như cố định nên lợi nhuận giãn nhanh hơn. Giá tham chiếu 89,07 đô ngày 30/09."
         }
       ],
       "potential": 4,
@@ -15700,6 +15748,11 @@ window.HDT_DATA = {
           "title": "Kèo mua ngược dòng rổ short",
           "body": "Trong khi gần như toàn bộ danh sách Mỹ là short/tránh, Google từ Tập 37 được đặt kèo MUA với điều kiện giá đợi về ~320. Tập 38 bổ sung bối cảnh ngắn hạn: Google vừa phát hành hút 85 tỷ đô khỏi thị trường và \"sẽ giảm chung với US500\" — tức nhịp chỉnh chưa xong, kiên nhẫn đợi về vùng mục tiêu thay vì mua đuổi.",
           "expertId": "thai-pham"
+        },
+        {
+          "expertId": "standard-chartered",
+          "title": "Mã duy nhất báo cáo chấp nhận trả bội số CAO HƠN lịch sử",
+          "body": "Buy, giá mục tiêu 410 đô so với 340,92 — upside 20%. Điểm khác thường: giá mục tiêu dùng 25 lần EPS 2028, cao hơn trung bình lịch sử 22–23 lần, vì theo báo cáo Alphabet đang chứng minh thành công với AI và giành thị phần Cloud. Chiến lược full-stack từ chip TPU tới Gemini, cộng giá trị từ cổ phần tại Anthropic — ứng viên IPO trong các quý tới. Đây cũng là mã Thái Phạm long dài."
         }
       ],
       "orders": [
@@ -18136,6 +18189,11 @@ window.HDT_DATA = {
           "expertId": "thai-pham",
           "title": "Nằm trong nhóm trụ được giữ giá — và đó chính là rủi ro",
           "body": "Tập 47 nêu số liệu rủi ro tập trung: từ ngày 13/8, S&P 500 tăng 1.750 tỷ đô vốn hóa thì riêng Nvidia và Microsoft đóng góp tới 1.420 tỷ, trong khi các cổ phiếu công nghệ khác bốc hơi 22,3 tỷ. Ông đọc đây là \"đội nhà cái cố giữ những cổ phiếu trụ công nghệ vốn hóa lớn — Google, Amazon, Microsoft — trong khi để cho các cổ phiếu vốn hóa lớn khác điều chỉnh\". Vị thế của ông với MSFT là giữ short: \"Amazon và Microsoft thì vẫn còn, đặc biệt các bạn đang cầm Microsoft short thì cứ giữ thôi.\""
+        },
+        {
+          "expertId": "standard-chartered",
+          "title": "Strong Buy nhưng upside chỉ 8% — và giá mục tiêu đã dùng bội số thấp hơn lịch sử",
+          "body": "Giá mục tiêu 550 đô so với 508,96 — upside 8%, thấp thứ nhì danh sách Mỹ. Giá mục tiêu dựa trên P/E 22 lần EPS CY28 (25,33 đô), thấp xa trung bình lịch sử khoảng 31 lần — tức báo cáo đã thận trọng sẵn. Luận điểm: đa dạng hóa nguồn kiếm tiền từ AI qua cloud, Copilot, OpenAI và Search; rủi ro nằm ở capex cao và mức độ tập trung khách hàng. ĐỐI CHIẾU: Thái Phạm short MSFT với cắt lỗ 528, tức chỉ dưới giá hiện tại khoảng 4%."
         }
       ],
       "potential": 2,
@@ -18494,6 +18552,11 @@ window.HDT_DATA = {
           "title": "Luận điểm bộ nhớ/AI",
           "body": "Nằm trong thesis lớn: dư thừa công suất AI bắt đầu (XAI, Meta phải cho thuê lại), người mua sẽ tính lại việc trả giá đắt cho RAM/chip nhớ của Nvidia, SK Hynix, Micron khi có lựa chọn Trung Quốc rẻ hơn (mô hình Kimi K3 ngang Fable 5/GPT-5.6 với 60% giá). Chu kỳ bán dẫn: \"mỗi cổ phiếu có mùa nở hoa và mùa lụi tàn\".",
           "expertId": "thai-pham"
+        },
+        {
+          "expertId": "standard-chartered",
+          "title": "Thiếu cung bộ nhớ tới ít nhất 2027 — và 22 tỷ đô tiền đặt cọc",
+          "body": "Buy, giá mục tiêu 1.500 đô so với 1.065,08 — upside 41%. P/E dự phóng 6,7 lần với ROE 73,9%, tức rẻ nhất nhì toàn danh sách trong khi sinh lời cao nhất. Lý do báo cáo cho rằng tính chu kỳ của ngành nhớ đã giảm: 16 hợp đồng khách hàng chiến lược không thể hủy, được hậu thuẫn bởi hơn 22 tỷ đô tiền đặt cọc. ĐỐI CHIẾU: Thái Phạm đang short Micron với cắt lỗ 1.131 — tức chỉ cách giá hiện tại khoảng 6%."
         }
       ],
       "orders": [
@@ -19549,6 +19612,11 @@ window.HDT_DATA = {
           "title": "Vì sao đứng ngoài cả hai chiều",
           "body": "Từ Tập 37 Thái Phạm đã xếp Nvidia vào diện \"tránh — đụng MA200 bật, khó ăn\"; Tập 38 mô tả trạng thái \"ngày kéo ngày giảm\" và sẽ giảm chung với chỉ số. Nhưng luận điểm dài hạn mới là phần đáng đọc: nhu cầu RAM/chip đắt tiền của Nvidia đứng trước hai câu hỏi — dư thừa công suất AI (XAI, Meta đầu tư xong phải cho thuê lại) và lựa chọn Trung Quốc giá rẻ (Kimi K3 của Alibaba/Tencent ngang Fable 5/GPT-5.6 với 60% giá); \"Jensen Huang bán quốc xẻng thì phải ca ngợi câu chuyện thế kỷ, nhưng người mua phải đặt câu hỏi về tương lai.\"",
           "expertId": "thai-pham"
+        },
+        {
+          "expertId": "standard-chartered",
+          "title": "Báo cáo cho rằng Nvidia đang bị chiết khấu, không phải bong bóng",
+          "body": "Strong Buy, giá mục tiêu 270 đô so với 227,21 — upside 19%. Lập luận ngược số đông: giá mục tiêu chỉ tương đương 15 lần EPS CY28 (17,76 đô), thấp hơn cả nhóm so sánh lẫn trung bình lịch sử — tức thị trường đang chiết khấu vì lo ngại tính bền vững của chi tiêu AI. Quý 2 doanh thu 96,2 tỷ đô (+106% so với cùng kỳ), riêng trung tâm dữ liệu 89 tỷ đô, ROE dự phóng 86,7%. ĐỐI CHIẾU: Thái Phạm nêu đúng mã này trong cảnh báo rủi ro tập trung — Nvidia cùng Apple chiếm 15% vốn hóa S&P 500."
         }
       ],
       "orders": [
@@ -21532,6 +21600,13 @@ window.HDT_DATA = {
           "sig": "up",
           "date": "01/10",
           "line": "Từ Top of Mind · tháng 10 (01/10). Điểm vào: 1729.76. Mục tiêu: 2663."
+        }
+      ],
+      "thesis": [
+        {
+          "expertId": "standard-chartered",
+          "title": "Tên mới tháng 10 — rẻ nhất danh sách theo P/E",
+          "body": "Strong Buy, giá mục tiêu 2.663 đô so với 1.729,76 ngày 30/09 — upside 54%, lớn nhất nhóm Mỹ sau Vertiv. P/E dự phóng chỉ 7,7 lần trong khi ROE 88,4%. Investor Day tháng 8 định hướng doanh thu tăng trưởng kép 15–19% giai đoạn FY28–FY30, trái với kỳ vọng của thị trường là suy giảm từ FY30; biên gộp và biên hoạt động non-GAAP quanh 80% và 75%. Giá mục tiêu tương đương 12,5 lần EPS FY27, tức vẫn chiết khấu 26% so với bội số 17 lần của nhóm Micron, SK Hynix, WD và Seagate. ĐỐI CHIẾU: Thái Phạm đang short mã này với cắt lỗ 1.920 (Tập 53, 03/10)."
         }
       ]
     },
@@ -26678,7 +26753,13 @@ window.HDT_DATA = {
         "vertiv"
       ],
       "oneLiner": "Hạ tầng điện và tản nhiệt cho trung tâm dữ liệu; backlog kỷ lục. Ý tưởng upside cao thứ hai trong danh sách Mỹ của Standard Chartered.",
-      "thesis": [],
+      "thesis": [
+        {
+          "expertId": "standard-chartered",
+          "title": "Upside cao nhất danh sách Mỹ — hạ tầng điện cho trung tâm dữ liệu",
+          "body": "Strong Buy, giá mục tiêu 375 đô so với 248,34 — upside 51%. Vertiv làm hệ thống điện và tản nhiệt cho trung tâm dữ liệu; backlog đơn hàng kỷ lục cho thấy nhu cầu vượt khả năng giao hàng. Đối tác chiến lược gồm Intel, Nvidia và Ballard. Định giá không rẻ: P/E dự phóng 29,1 lần, P/B 12 lần, nhưng ROE 48%. Đây là mã thể hiện rõ nhất luận điểm trung tâm của báo cáo — nút thắt của AI đang dịch từ năng lực tính toán sang điện."
+        }
+      ],
       "orders": [
         {
           "expertId": "standard-chartered",
@@ -26714,7 +26795,13 @@ window.HDT_DATA = {
         "ge vernova"
       ],
       "oneLiner": "Thiết bị điện cho lưới và trung tâm dữ liệu; backlog tương đương khoảng 4 năm doanh thu.",
-      "thesis": [],
+      "thesis": [
+        {
+          "expertId": "standard-chartered",
+          "title": "Backlog bằng 4 năm doanh thu — trả giá cao cho tầm nhìn lợi nhuận",
+          "body": "Strong Buy, giá mục tiêu 1.350 đô so với 962,49 — upside 40%; thuộc \"Real Economy 11 List\" của Standard Chartered. Backlog đơn hàng tương đương khoảng bốn năm doanh thu nên tầm nhìn lợi nhuận rất rõ. Định giá cao (54 lần EPS FY27) được biện minh bằng vị thế dẫn đầu tuabin khí trong bối cảnh nhu cầu điện cho trung tâm dữ liệu AI tăng vọt. P/E dự phóng 39,3 lần, ROE 43,1%."
+        }
+      ],
       "orders": [
         {
           "expertId": "standard-chartered",
@@ -26750,7 +26837,13 @@ window.HDT_DATA = {
         "lumentum"
       ],
       "oneLiner": "Quang học cho trung tâm dữ liệu; doanh thu quý lần đầu vượt 1 tỷ đô, biên gộp non-GAAP vượt 50%.",
-      "thesis": [],
+      "thesis": [
+        {
+          "expertId": "standard-chartered",
+          "title": "Tên mới — quý đầu tiên vượt 1 tỷ đô doanh thu",
+          "body": "Buy, giá mục tiêu 1.100 đô so với 973,49 — upside 13%. Quý 4 (kết thúc tháng 6/2026) doanh thu lần đầu vượt 1 tỷ đô, tăng 109% so với cùng kỳ; biên gộp non-GAAP lần đầu vượt 50%. Mất cân bằng cung–cầu giúp Lumentum chốt được hợp đồng nhiều năm với các hyperscaler. Định giá đã căng: 34,8 lần EV/EBITDA FY27 so với trung bình 5 năm 31,9 lần."
+        }
+      ],
       "orders": [
         {
           "expertId": "standard-chartered",
@@ -26786,7 +26879,13 @@ window.HDT_DATA = {
         "corning"
       ],
       "oneLiner": "Sợi quang và kết nối; thỏa thuận nhiều năm tối đa 6 tỷ đô với Meta.",
-      "thesis": [],
+      "thesis": [
+        {
+          "expertId": "standard-chartered",
+          "title": "Tên mới — hợp đồng tối đa 6 tỷ đô với Meta cho sợi quang",
+          "body": "Buy, giá mục tiêu 175 đô so với 158,71 — upside 10%, thấp trong danh sách. Luận điểm cốt lõi là thỏa thuận nhiều năm tối đa 6 tỷ đô với Meta cho sợi quang và kết nối; báo cáo coi công suất sợi quang là nút thắt tiếp theo sau tính toán và điện. Cảnh báo định giá: 40,5 lần EPS 2027 so với trung bình ba năm khoảng 22,5 lần."
+        }
+      ],
       "orders": [
         {
           "expertId": "standard-chartered",
@@ -26822,7 +26921,13 @@ window.HDT_DATA = {
         "newmont"
       ],
       "oneLiner": "Nhà sản xuất vàng lớn nhất thế giới, 12 mỏ, FCF quý 2 kỷ lục 2,2 tỷ đô, tiền ròng 3,4 tỷ.",
-      "thesis": [],
+      "thesis": [
+        {
+          "expertId": "standard-chartered",
+          "title": "Nhà sản xuất vàng lớn nhất thế giới — dòng tiền kỷ lục",
+          "body": "Strong Buy, giá mục tiêu 158 đô so với 117,09 — upside 35%. Mười hai mỏ, dòng tiền tự do quý 2 kỷ lục 2,2 tỷ đô, tiền ròng 3,4 tỷ đô và còn 4,3 tỷ đô trong hạn mức mua lại cổ phiếu 6 tỷ đô. Thỏa thuận tháng 8 với Barrick đã giải quyết tranh chấp liên doanh Nevada Gold Mines. P/E dự phóng 11,4 lần. Báo cáo ưu tiên cổ phiếu khai thác hơn vàng miếng vì đòn bẩy biên lợi nhuận."
+        }
+      ],
       "orders": [
         {
           "expertId": "standard-chartered",
@@ -26858,7 +26963,13 @@ window.HDT_DATA = {
         "spdr gold"
       ],
       "oneLiner": "ETF tiếp xúc trực tiếp giá vàng — cách Standard Chartered khuyến nghị nắm vàng trong danh mục.",
-      "thesis": [],
+      "thesis": [
+        {
+          "expertId": "standard-chartered",
+          "title": "Mục tiêu vàng 5.000 đô trong 12 tháng",
+          "body": "ETF nắm vàng vật chất, không có xếp hạng riêng. Standard Chartered giữ mục tiêu giá vàng 4.750 đô một ounce trong 3 tháng và 5.000 đô trong 12 tháng. Lưu ý thời điểm: mục tiêu này chốt ngày 30/09, trước nhịp giảm đầu tháng 10 — vàng đã về 4.143 ngày 08/10, và Thái Phạm thì chuyển sang chờ chân sóng 5 ở 3.600–3.700. Đây là mâu thuẫn lớn nhất giữa hai nguồn trong sổ."
+        }
+      ],
       "orders": [
         {
           "expertId": "standard-chartered",
@@ -27040,7 +27151,13 @@ window.HDT_DATA = {
         "avego"
       ],
       "oneLiner": "Mã hiếm hoi Thái Phạm long dài và Standard Chartered cũng để Buy: doanh thu bán dẫn AI quý 7 đạt 16,7 tỷ đô (+221% so với cùng kỳ).",
-      "thesis": [],
+      "thesis": [
+        {
+          "expertId": "standard-chartered",
+          "title": "Doanh thu AI gấp đôi mỗi năm — sáu khách hàng XPU hyperscale",
+          "body": "Buy, giá mục tiêu 450 đô so với 355,10 — upside 27%. Doanh thu bán dẫn AI quý 7 đạt 16,7 tỷ đô, tăng 221% so với cùng kỳ. Hướng dẫn dài hạn: doanh thu AI gấp đôi lên 115 tỷ đô trong FY27 rồi gấp đôi lần nữa lên 230 tỷ đô FY28, dựa trên sáu khách hàng XPU hyperscale gồm Alphabet, Meta, Anthropic và OpenAI. P/E dự phóng 19,1 lần, ROE 59%. Thái Phạm cũng đang long AVGO (cắt lỗ lướt 341)."
+        }
+      ],
       "orders": [
         {
           "expertId": "thai-pham",
@@ -27126,7 +27243,13 @@ window.HDT_DATA = {
         "meta platforms"
       ],
       "oneLiner": "Một trong sáu mã hai nguồn đối đầu trực tiếp: Thái Phạm short với cắt lỗ 755, Standard Chartered để Strong Buy với giá mục tiêu 900 (upside 22%).",
-      "thesis": [],
+      "thesis": [
+        {
+          "expertId": "standard-chartered",
+          "title": "Giá mục tiêu rẻ hơn trung bình 10 năm — nhưng capex là rủi ro báo cáo tự nêu",
+          "body": "Strong Buy, giá mục tiêu 900 đô so với 738,79 — upside 22%. Giá mục tiêu tương đương 22 lần EPS 2028 (40,37 đô), thấp hơn trung bình 10 năm là 26 lần. Kỳ vọng Meta Business Agent và Muse Spark mở nguồn thu mới. Rủi ro báo cáo tự nêu: capex cao, và dự báo lợi nhuận quý 3 giảm 18% so với cùng kỳ. ĐỐI CHIẾU: Thái Phạm short META với cắt lỗ 755."
+        }
+      ],
       "orders": [
         {
           "expertId": "thai-pham",
